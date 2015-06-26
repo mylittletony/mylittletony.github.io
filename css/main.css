@@ -1,0 +1,722 @@
+html {
+    /* position: relative; */
+    /* min-height: 100%; */
+}
+body {
+  /* margin-bottom: 400px; */
+  /* height: 100%!important; */
+  /* -webkit-font-smoothing: antialiased; */
+}
+
+h2 {
+  /* color: #333; */
+}
+
+h3 {
+  color: #17ab5b;
+}
+
+label {
+  color: #BAB9B9;
+}
+
+@media only screen and (min-width: 1024px) {
+
+  body {
+    /* background-color: grey!important; */
+  }
+
+  .ct-logo {
+    margin: 0px;
+  }
+
+  .ct-logo img {
+    width: 220px;
+  }
+
+  ul.title-area {
+    margin-left: 0;
+    padding: 15px 0 10px 20px;
+  }
+
+  .tour-feature {
+    padding: 40px 0;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #DDDDDD;
+  }
+
+  .tour-hero {
+    padding: 80px 0;
+    margin-bottom: 1px;
+  }
+
+  .tour {
+    margin-top: 80px;
+  }
+
+  .tour-location-ipad {
+    width: 700px;
+    margin: 0 auto;
+  }
+
+  .tour-location-ipad-maps {
+    width: 500px;
+    margin: 40px auto 0 auto;
+  }
+
+  .tour-feature img {
+    margin-bottom: 40px;
+  }
+
+  tour h1 {
+    margin-bottom: 40px;
+  }
+
+  tour h2 {
+    margin-bottom: 40px;
+  }
+
+  .tour h3 {
+    /* margin: 20px; */
+  }
+
+  tour p {
+    margin-bottom: 30px;
+  }
+
+  .tour-2-network-wide img {
+    margin-top: 40px;
+    width: 800px;
+    /* background-color: #2a2039; */
+    /* margin: -40px 0 20px 0; */
+    /* padding: 0 0 80px 0; */
+  }
+
+  tour .seamless-roaming {
+    padding: 80px 0;
+  }
+
+  tour .wide-panel {
+    padding: 80px 0;
+  }
+
+  .snr-wrapper {
+    position: relative;
+    width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px 0 0 0;
+  }
+
+  .snr-inner {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 1px;
+  }
+
+  .tour-compatible-devices {
+    padding: 0px 0;
+  }
+
+  .tour-compatible-devices h3 {
+    margin: 40px 0 20px 0;
+  }
+
+  .phone-tour {
+    min-height: 400px;
+    width: 1000px;
+    position: relative;
+  }
+
+  .tour-phone-1 img {
+    width: 200px;
+    padding-top: 180px;
+    margin-left: 50px;
+  }
+
+  .tour-phone-2 {
+    width: 300px;
+    margin-left: 0px;
+  }
+
+  .tour-phone-3 {
+    width: 200px;
+    padding-top: 180px;
+    margin-left: 50px;
+  }
+
+  .captive-portal-icons {
+    padding: 20px 0 0 0;
+  }
+
+  .captive-portal-img-1 img {
+    width: 150px;
+    margin-left: 75px;
+    padding: 40px 0 0 0;
+  }
+
+  .captive-portal-img-2 img {
+    width: 150px;
+    margin-left: 75px;
+  }
+
+  .captive-portal-img-3 img {
+    margin-left: 75px;
+    padding: 20px 0 0 0;
+    width: 150px;
+  }
+
+  .tour-voucher-icon img {
+    width: 81px;
+    padding: 80px 0 20px 0;
+  }
+
+  .tour-passy-icon img {
+    width: 81px;
+    padding: 40px 0 20px 0;
+  }
+
+  .tour-social-icon img {
+    width: 81px;
+    padding: 80px 0 20px 0;
+  }
+
+  .tour-clickthrough-icon img {
+    width: 61px;
+    padding: 40px 0 20px 0;
+  }
+
+  .login-methods {
+    padding: 40px 0;
+  }
+
+  .plans-outer h1 {
+    font-size: 33px;
+    color: white;
+    opacity: 0.8;
+  }
+
+  .plans-outer h2 {
+    font-size: 49px;
+    color: white;
+  }
+
+  .plans-outer p {
+    color: white;
+  }
+
+  .plans-outer ul {
+    font-size: 18px;;
+    line-height: 2.6rem;
+    color: #FFF;
+  }
+
+  .partners-ipad img {
+    margin-top: 40px;
+    width: 600px;
+  }
+
+  partners .callout {
+    padding: 0px 0 50px 0;
+    border-bottom: 1px solid #CCC;
+    margin: 0 0 80px 0;
+  }
+
+  .firmware-header-img {
+    background-image: url('https://d3e9l1phmgx8f2.cloudfront.net/images/www/firmware-install-access-point.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 672px;
+    padding-bottom: 2rem;
+    height: 400px;
+    margin-top: -40px;
+  }
+
+  .firmware-header-img h1 {
+    color: #fff;
+  }
+
+  .firmware-header-img h2 {
+    color: #fff;
+  }
+
+
+}
+
+@media only screen and (max-width: 40em) {
+
+  body {
+    /* background-color: grey!important; */
+  }
+
+  /* .off-canvas-wrap, .inner-wrap, .main-section { height:90%; } */
+  /* .main-section { overflow-y: auto; } */
+
+  .main-nav {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .ct-logo {
+    margin: 0px;
+  }
+
+  .ct-logo img {
+    width: 170px;
+  }
+
+  ul.title-area {
+    margin-left: 0;
+    padding: 5px 0 10px 0px;
+  }
+
+  tour h1 {
+    font-size: 28px;
+  }
+
+  tour h2 {
+    font-size: 22px;
+  }
+
+  .tour h3 {
+    /* margin: 40px; */
+    font-size: 18px;
+  }
+
+  .tour-feature img {
+    margin: 20px 0;
+  }
+
+  .tour-feature {
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 1px solid #DDDDDD;
+  }
+
+  .hero {
+    padding: 30px 0;
+    margin: 0 0 20px 0;
+  }
+
+  .tour-hero {
+    padding: 20px 0;
+    margin-bottom: 1px;
+  }
+
+  .tour-hero h1 {
+    font-size: 24px;
+  }
+
+  .wide-panel {
+    background-color: #017fdd;
+    margin: 0 0 1px 0;
+    padding: 40px 0;
+  }
+
+  .wide-panel h2 {
+    color: white;
+  }
+
+  .wide-panel p {
+    opacity: 0.7;
+    color: white;
+  }
+
+  .snr-wrapper {
+    margin: 0;
+    padding: 40px 0;
+  }
+
+  .tour-compatible-devices {
+    padding: 40px 0;
+  }
+
+  .tour-voucher-icon img {
+    width: 61px;
+    padding: 40px 0 20px 0;
+  }
+
+  .tour-passy-icon img {
+    width: 81px;
+    padding: 40px 0 20px 0;
+  }
+
+  .tour-social-icon img {
+    width: 61px;
+    padding: 40px 0 20px 0;
+  }
+
+  .tour-clickthrough-icon img {
+    width: 61px;
+    padding: 40px 0 20px 0;
+  }
+
+  .login-methods {
+    padding: 40px 0;
+  }
+
+  .plans-outer h1 {
+    font-size: 33px;
+    color: white;
+    opacity: 0.8;
+  }
+
+  .plans-outer h2 {
+    font-size: 46px;
+    color: white;
+  }
+
+  .plans-outer p {
+    color: white;
+  }
+
+  .plans-outer ul {
+    font-size: 18px;;
+    line-height: 2.2rem;
+    color: #FFF;
+  }
+
+  partners h1 {
+    font-size: 33px;
+  }
+
+  partners h3 {
+    font-size: 20px;
+    margin: 40px 0;
+  }
+
+  partners .callout h1 {
+    margin-bottom: 20px;
+  }
+
+  partners .callout {
+    padding: 0px 0 50px 0;
+    border-bottom: 1px solid #CCC;
+    margin: 0 0 40px 0;
+  }
+
+  .home-header h1 {
+    color: white;
+  }
+
+  .firmware-header-img h1 {
+    color: #454545;
+  }
+
+}
+
+@media only screen and (min-width: 40.063em) {
+
+  /* body { */
+  /*   background-color: blue!important; */
+  /* } */
+
+  .tour-feature {
+    padding: 40px 0;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #DDDDDD;
+  }
+
+  .tour-hero {
+    padding: 80px 0;
+    margin-bottom: 1px;
+  }
+
+  .text-white {
+    color: white!important;
+  }
+
+  .tour {
+    margin-top: 80px;
+  }
+
+  .tour-location-ipad {
+    width: 700px;
+    /* height: 422px; */
+    margin: 0 auto;
+  }
+
+  .tour-location-ipad img {
+    height: 422px;
+  }
+
+  .tour-location-ipad-maps {
+    width: 500px;
+    margin: 40px auto 0 auto;
+  }
+
+  .tour-feature img {
+    margin-bottom: 40px;
+  }
+
+  tour h1 {
+    /* font-size: 33px; */
+  }
+
+  tour h2 {
+    margin-bottom: 40px;
+  }
+
+  .tour h3 {
+    margin: 40px 0 60px 0;
+  }
+
+  .hero {
+    padding: 80px 0;
+    margin: 0 0 40px 0;
+  }
+
+  tour .wide-panel {
+    padding: 80px 0;
+  }
+
+  .snr-wrapper {
+    height: 700px;
+    position: relative;
+    width: 700px;
+    margin: 0 auto 20px auto;
+    text-align: center;
+    padding: 40px 0 0 0;
+  }
+
+  .snr-inner {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 1px;
+  }
+
+  .tour-voucher-icon img {
+    width: 61px;
+    padding: 40px 0 20px 0;
+  }
+
+  .tour-passy-icon img {
+    width: 81px;
+    padding: 40px 0 20px 0;
+  }
+
+  .tour-social-icon img {
+    width: 51px;
+    padding: 40px 0 20px 0;
+  }
+
+  .tour-clickthrough-icon img {
+    width: 51px;
+    padding: 30px 0 20px 0;
+  }
+
+  .login-methods {
+    padding: 40px 0;
+  }
+
+  .plans-outer h1 {
+    font-size: 24px;
+    color: white;
+    opacity: 0.8;
+  }
+
+  .plans-outer h2 {
+    font-size: 46px;
+    color: white;
+  }
+
+  .plans-outer p {
+    color: white;
+  }
+
+  .plans-outer ul {
+    font-size: 14px;;
+    line-height: 2.2rem;
+    color: #FFF;
+  }
+
+  partners h3 {
+    /* margin: 40px 0; */
+  }
+
+}
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+
+  body {
+    /* background-color: blue!important; */
+  }
+
+  .ct-logo {
+    margin: 0px;
+  }
+
+  .ct-logo img {
+    width: 220px;
+  }
+
+  ul.title-area {
+    margin-left: 15px;
+    padding: 15px 0 15px 20px;
+  }
+
+  tour h1 {
+    font-size: 33px;
+  }
+
+  .tour h3 {
+    margin: 40px;
+    font-size: 20px;
+  }
+
+  .tour-feature img {
+    margin-bottom: 20px;
+  }
+
+  .tour-feature {
+    padding: 30px 0;
+  }
+
+  .hero h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+
+  .hero {
+    padding: 30px 0;
+    margin: 0 0 40px 0;
+  }
+
+  .tour-2-network-wide img {
+    margin-top: 40px;
+    width: 800px;
+    /* background-color: #2a2039; */
+    /* margin: -40px 0 20px 0; */
+    /* padding: 0 0 80px 0; */
+  }
+
+  .captive-portal-icons {
+    display: none;
+  }
+
+  .tour-feature h3 {
+    color: #017fdd;
+  }
+
+  partners .callout {
+    padding: 0px 0 50px 0;
+    border-bottom: 1px solid #CCC;
+    margin: 0 0 40px 0;
+  }
+
+}
+
+.blue-blue {
+  background-color: #017fdd;
+  width: 100%;
+}
+
+.green-green {
+  background-color: #17ab5b;
+  width: 100%;
+}
+
+.green-green h2 {
+  opacity: 0.7;
+}
+
+.green-green p {
+  opacity: 0.6;
+  color: white;
+}
+
+.green-green a {
+  color: white;
+}
+
+.green-green a:hover {
+  border-bottom: 1px dashed white;
+}
+
+.text-white {
+  color: white;
+}
+
+.compatible-table th {
+  text-align: center;
+  color: #017fdd;
+  font-size: 18px;
+  padding: 20px;
+}
+
+.compatible-table td {
+  text-align: center;
+  color: #5D5D5D;
+  padding: 20px;
+}
+
+.plans-outer {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  min-height: 500px;
+  padding: 20px 5px;
+  margin-bottom: 20px;
+}
+
+.plans-outer.blue ul {
+  opacity: 0.6;
+}
+
+.plans-outer.green ul {
+  opacity: 0.8;
+}
+
+plans .blue {
+  background-color: #017fdd;
+}
+
+plans .green {
+  background-color: #17ab5b;
+}
+
+plans .signup {
+  margin-top: 40px;
+  opacity: 0.8;
+  color: #017fdd;
+}
+.plans-faq {
+  padding: 20px 0;
+}
+
+table {
+  width: 100%;
+}
+
+#footer {
+  display: none;
+  width: 100%;
+  background-color: #41a0a3;
+  color: white;
+  padding: 40px 20px;
+}
+
+#footer a {
+  color: white;
+}
+
+.contact, .about, .monster, .terms {
+  margin-bottom: 100px;
+  min-height: 800px;
+}
+
+.top-bar {
+  box-shadow: 0 0 2px rgba(0,0,0,.14),0 2px 8px rgba(0,0,0,.28);
+}
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+td.plans {
+  font-size: 18px;
+  color: #5C5C5C;
+  line-height: 30px;
+}
