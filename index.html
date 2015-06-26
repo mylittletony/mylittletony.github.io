@@ -10,7 +10,7 @@ description: Full stack wifi platform for every business
         <div class="row">
           <div class="small-12 medium-7 columns ct-is-container">
             <h1>Wi-Fi That Works</h1>
-            <h2>Cucumber Tony is&nbsp;<typed-home></typed-home></h2>
+            <h2>Cucumber Tony is&nbsp;<span class="typed"></span></h2>
           </div>
         </div>
         <div class="row">
@@ -156,10 +156,19 @@ description: Full stack wifi platform for every business
     <div class="row">
       <div class="small-12 text-right columns">
         <h3 class="text-white show-for-medium-up">Next</h3>
-        <h1 class="text-white"><a href="/#/tour/cloud-wifi-management">Take a tour of CT <i class="fa fa-chevron-circle-right"></i></a><span class="typed-cursor">__</span> </h1>
+        <h1 class="text-white"><a href="/tour/cloud-wifi-management.html">Take a tour of CT <i class="fa fa-chevron-circle-right"></i></a><span class="typed-cursor">__</span> </h1>
       </div>
     </div>
   </div>
 
 </home>
 
+<script>
+  $(function(){
+      $(".typed").typed({
+        strings: ['custom firmware to manage your WiFi devices remotely', 'a platform to set-up and run reliable Wi-Fi networks', 'full-stack Wi-Fi. It\'s the only platform you\'ll ever need'],
+        typeSpeed: 40,
+        loop: false
+      });
+  });
+</script>

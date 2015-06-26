@@ -12,7 +12,7 @@ description: Cloud managed OpenWrt Firmware
         <div class="row">
           <div class="small-12 medium-7 columns ct-is-container">
             <h1>Download the firmware for free</h1>
-            <h2>Install it on your <typed-firmware></typed-firmware></h2>
+            <h2>Install it on your <span class="typed"></span></h2>
           </div>
         </div>
         <div class="row">
@@ -109,4 +109,13 @@ description: Cloud managed OpenWrt Firmware
 
 </tour>
 
+<script>
+  $(function(){
+      $(".typed").typed({
+        strings: ['Ubiquiti', 'Netgear', 'TP-Link', 'Engenius', 'D-Link', 'Western Digital'],
+        typeSpeed: 60,
+        loop: true
+      });
+  });
+</script>
 
