@@ -67,12 +67,12 @@
 <script src="{{ "/js/fastclick.js" | prepend: site.baseurl }}"></script>
 <script src="{{ "/js/foundation.min.js" | prepend: site.baseurl }}"></script>
 <script src="{{ "/js/foundation.offcanvas.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/js/jquery.cookie.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/js/app.js" | prepend: site.baseurl }}"></script>
 
 <script>
-  $( document ).ready(function() {
-    $(document).foundation();
-    console.log('done');
-  });
+  $(document).ct();
+  $(document).foundation();
 </script>
 
 <script>
