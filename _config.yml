@@ -15,4 +15,4 @@ url: "http://ctapp.op" # the base hostname & protocol for your site
 
 markdown: redcarpet
 pygments: true
-baseurl: http://www.ctapp.io
+# baseurl: /
