@@ -22,7 +22,6 @@
     '</div>';
 
   var email;
-  // var url = 'http://127.0.0.1:8080';
   var url = 'https://api.polkaspots.com';
 
   var regForm = function() {
@@ -62,7 +61,6 @@
             // alert('failure');
           },
           success: success,
-          // dataType: JSON
       });
     });
 
