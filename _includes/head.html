@@ -15,6 +15,7 @@
 
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %} | Cucumber Tony</title>
     <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="keywords" content="{{ page.keywords }}">
 
     <link rel="stylesheet" href="{{ "/css/normalize.css" | prepend: site.baseurl }}">
     <link rel="stylesheet" href="{{ "/css/jekyll.css" | prepend: site.baseurl }}">
