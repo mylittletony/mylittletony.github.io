@@ -8,7 +8,7 @@ keywords: WiFi Splash Page, WiFi Captive Portal, WiFi Welcome Page, Design, Styl
 
 <h2>Why have a splash page?</h2>
 
-Your splash page is the gateway to your Wi-Fi hotspot. It’s part of the captive portal that authenticates users (checks that they’re allowed to use your Wi-Fi) and keeps your hotspot secure and legally compliant.
+Your splash page is the gateway to your Wi-Fi hotspot. It’s part of the captive portal that authenticates users (checks that they’re allowed to use your Wi-Fi) and keeps your hotspot secure and legally compliant. 
 
 Every guest to your Wi-Fi hotspot sees this page before they access the Internet; first impressions are everything. 
 
