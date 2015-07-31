@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Splash Page Style Guide
+title:  Splash page style guide
 date:   2015-07-24
 categories: tutorials
 keywords: WiFi Splash Page, WiFi Captive Portal, WiFi Welcome Page, Design, Style Guide
