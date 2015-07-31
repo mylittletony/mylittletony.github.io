@@ -3,7 +3,7 @@ layout: post
 title:  Splash page style guide
 date:   2015-07-24
 categories: tutorials
-keywords: WiFi Splash Page, WiFi Captive Portal, WiFi Welcome Page, Design, Style Guide
+keywords: WiFi Splash Page, WiFi Captive Portal, WiFi Welcome Page, WiFi Splash page html5, WiFi splash page example, wifi splash page template
 ---
 
 <h2>Why have a splash page?</h2>
