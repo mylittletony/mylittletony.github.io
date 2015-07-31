@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Installing firmare on a UniFi access point
+title:  Installing firmware on a UniFi access point
 date:   2015-07-31
 categories: tutorials
 keywords: Unifi captive portal, Unifi splash page hosting, Unifi splash page not working, Unifi splash page template, Unifi splash page free, Unifi splash page html, Unifi firmware, OpenWRT, tftp, how to flash Unifi, ssh, ubiquity
