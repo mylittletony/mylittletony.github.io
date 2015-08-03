@@ -141,10 +141,10 @@ The following entries are needed for <b>Facebook</b> social access:
 The following entries are needed for <b>Google</b> social access:
 
 <ul>
-<li>.accounts.google.com</li>
-<li>.googleapis.com</li>
-<li>.googleusercontent.com</li>
-<li>.gstatic.com</li>
+<li>&#42;.accounts.google.com</li>
+<li>&#42;.googleapis.com</li>
+<li>&#42;.googleusercontent.com</li>
+<li>&#42;.gstatic.com</li>
 </ul>
 
 And then save the changes by clicking <b>OK</b>
