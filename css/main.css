@@ -269,6 +269,24 @@ documentation ul {
     color: #fff;
   }
 
+  .unifi-firmware-header-img {
+    background-image: url('/images/pages/unifi-ap-cloud.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 672px;
+    padding-bottom: 2rem;
+    height: 400px;
+    margin-top: -40px;
+  }
+
+  .unifi-firmware-header-img h1 {
+    color: #fff;
+  }
+
+  .unifi-firmware-header-img h3 {
+    color: #fff;
+  }
 
 }
 
