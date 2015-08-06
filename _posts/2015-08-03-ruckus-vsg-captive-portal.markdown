@@ -7,7 +7,8 @@ keywords: Ruckus, Ruckus Virtual SmartZone, Captive Portal, Zone Director, Splas
 ---
 
 <h3>Getting the Cucumber Dashboard working with your Ruckus Virtual SmartZone</h3>
-<p>The Ruckus Virtual SmartZone is a really fantastic piece of kit. This walk-through demonstrates how to integrate it with our splash pages. You'll also retreieve a list of online / offline wireless client. And, even view the status of your Ruckus APs! All from a single dashboad - manage your Unifi, TP-Link, Netgear, OpenWRT and Ruckus devices from a single site.</p>
+<p>The Ruckus Virtual SmartZone is a really fantastic piece of kit. This walk-through demonstrates how to integrate it with our splash pages, view your Ruckus wireless clients and, even view the status of your Ruckus APs!</p>
+<p>Manage all your networks from a single dashboard - your Unifi, TP-Link, Netgear, OpenWRT and Ruckus devices in a single location.</p>
 <p>The whole set-up takes about half and hour - the Ruckus VSG can be a little tricky to get working first time round.</p>
 <hr>
 <h3>Things you need:</h3>
