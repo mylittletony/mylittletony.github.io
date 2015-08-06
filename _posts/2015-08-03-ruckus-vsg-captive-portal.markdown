@@ -1,19 +1,20 @@
 ---
 layout: post
-title:  Ruckus VSG Captive Portal
+title:  Ruckus Virtual SmartZone Integration
 date:   2015-08-03
 categories: tutorials
-keywords: Ruckus, VSG, Captive Portal, Zone Director, Splash Pages, 
+keywords: Ruckus, Ruckus Virtual SmartZone, Captive Portal, Zone Director, Splash Pages, 
 ---
 
-<h3>Draft. Getting the Cucumber Splash Working with your VSG</h3>
+<h3>Getting the Cucumber Dashboard working with your Ruckus Virtual SmartZone</h3>
+<p>The Ruckus Virtual SmartZone is a really fantastic piece of kit. This walk-through demonstrates how to integrate it with our splash pages. You'll also retreieve a list of online / offline wireless client. And, even view the status of your Ruckus APs! All from a single dashboad - manage your Unifi, TP-Link, Netgear, OpenWRT and Ruckus devices from a single site.</p>
+<p>The whole set-up takes about half and hour - the Ruckus VSG can be a little tricky to get working first time round.</p>
 <hr>
-<p>Things you need:</p>
+<h3>Things you need:</h3>
 <ul>
-<li>Ruckus VSG (trial ok)</li>
+<li>Publicly available Ruckus VSG (trial ok)</li>
 <li>Compatible Ruckus AP</li>
 <li>Cucumber account</li>
-<li>A public IP</li>
 </ul>
 
 <h2>Add your Access Points to your Cucumber dashboard.</h2>
@@ -105,6 +106,7 @@ keywords: Ruckus, VSG, Captive Portal, Zone Director, Splash Pages,
 <div class="text-center">
   <img src="/images/community/tutorials/wlan-1.png" width="800px">
 </div>
+
 <h3>Northbound API</h3>
 <p>You need to change the password for your northbound API.</p>
 <p>Click Configuration > System > Northbound Portal Interface. Enter your password.</p>
@@ -113,20 +115,76 @@ keywords: Ruckus, VSG, Captive Portal, Zone Director, Splash Pages,
   <img src="/images/community/tutorials/ruckus-northbound-api-1.png" width="800px">
 </div>
 
+<h3>Create an Admin Account</h3>
+<p>We'll use this to communicate with your Ruckus VSG and provide a list of online wireless clients and the status of your access points. You can use your normal credentials however we recommend creating a second role, just for the API access.</p>
+<p>Click configuration > Administrators. Click create a new Admin account and fill in your details.</p>
+
+<div class="text-center">
+  <img src="/images/community/tutorials/ruckus-new-admin.png" width="800px">
+</div>
+
+<p>Next, you should create a new role for the user. We'd recommend the following as a minimum.</p>
+
+<div class="text-center">
+  <img src="/images/community/tutorials/ruckus-permissions.png" width="800px">
+</div>
+<p>Assign the user to a role. Click on Configuration > Management Domains. Then click the Add Account and Assign Role button. You will need to choose the user you just created and assign to the role for the API.</p>
+
+<div class="text-center">
+  <img src="/images/community/tutorials/ruck-admin-domains.png" width="800px">
+</div>
+
+<h3>Add your credentials to your Cucumber WiFi dashboard</h3>
+
 <p>Go back to your Cucumber dashboard. In your Location settings, scroll down until you see the Ruckus VSG section.</p>
-<p>Enter your VSH public IP or hostname and also your Northbound API password. Hit save!</p>
+<p>Enter your VSH public IP or hostname and also your Northbound API password. You should also add your admin user and password. After you click save, we'll run a test on your server.</p>
+<p><b>Please ensure you use https for security reasons.</b></p>
+
 <div class="text-center">
   <img src="/images/community/tutorials/ruckus-northbound-api.png" width="800px">
 </div>
 
-<p>Your VSG must be accessible from the Tinternet. Please do not enter a port number. To confirm the changes, visit your splash pages. You will see the Ruckus logo and your VSG Host.</p>
+<p>Your VSG must be accessible from the Tinternet. Please do not enter a port number. If all went well, you will see a confirmation messgae on the page.</p>
 
 <div class="text-center">
-  <img src="/images/community/tutorials/ruckus-dog.png" width="800px">
+  <img src="/images/community/tutorials/ruckus-api-success.png" width="800px">
+</div>
+
+<h3>Create a splash page for your Ruckus Gateway</h3>
+
+<p>Still in your Cucumber dashboard, click on Splash Pages and then hit create new. Fill in a few details, choose from a number of access types including Social logins, click through and email capture.</p>
+
+<h3>Test Your Splash Pages</h3>
+
+<p>Connect to your Ruckus Wi-Fi network and navigate to a website. Watch out for https sites - sometimes they don't redirect correctly.</p>
+
+<div class="text-center">
+  <img src="https://d3e9l1phmgx8f2.cloudfront.net/images/www/phone-1.png" width="300px">
+</div>
+
+<h3>Verify you can see your clients and access points</h3>
+
+<p>Now you've added your API credentials, you can check the status of your access points and clients.</p>
+
+<p>To view your clients, click on Clients in the left-hand menu. Your Ruckus clients are identified by the Dog Icon on the right hand side. You can see all your different clients online in the same place!</p>
+
+<div class="text-center">
+  <img src="/images/community/tutorials/ruckus-clients-list.png" width="800px">
+</div>
+
+<p>Your boxes will appear in your Boxes list and you can see their current status, IP information and more.</p>
+
+<div class="text-center">
+  <img src="/images/community/tutorials/ruckus-access-point-status.png" width="800px">
+</div>
+
+<div class="text-center">
+  <img src="/images/community/tutorials/ruckus-access-point-status-1.png" width="800px">
 </div>
 
 <h3>ALL DONE</h3>
-<p>That should be all you need. Connect to the WiFi network and login. If we cannot access your VSG, we will send you an email. You must update your settings accordingly.</p>
+<p>That's all you need to do! We hope you enjoyed the tutorial. If you need some help, please get in touch! You can chat to us using the support widget within your Dashboard.</p>
+
 <br><br>
 <div class="text-center">
 <p>Sign-up for a Cucumber dashboard. It's free for unlimited access points!</p>
