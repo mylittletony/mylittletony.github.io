@@ -2,8 +2,8 @@
 layout: post
 title:  Installing firmware on a UniFi access point
 date:   2015-07-31
-categories: tutorials
-keywords: Unifi captive portal, Unifi splash page hosting, Unifi splash page not working, Unifi splash page template, Unifi splash page free, Unifi splash page html, Unifi firmware, OpenWRT, tftp, how to flash Unifi, ssh, ubiquity
+categories: documentation
+keywords: install firmware on unifi ap, wifi firmware, unifi firmware update
 ---
 
 <h3>Option One - TFTP</h3>
@@ -22,6 +22,8 @@ You will need:
 <li>A download of the PolkaSpots firmware</li>
 </ul>
 
+<hr>
+
 Let's get flashing...
 
 1 - Connect your access point to your PC. Connect one end of the Ethernet to the LAN port on the PoE adapter and the other end to the Ethernet port on your computer.
@@ -30,10 +32,10 @@ Let's get flashing...
 
 3 - You will now need to put your AP into recovery mode. As you connect the Ethernet cable to your access point to power it up, press and hold the restart button using a sharp point (e.g. a paperclip) until the lights on the box cycle between the following colours:
 
-Unifi UAP - Green > Orange > Off
-Unifi Outdoor - Green > Orange > Off
-Unifi Pro - Blue > White > Off
-Unifi Outdoor+ - Blue > White > Off
+<b>Unifi UAP</b> - Green > Orange > Off <br>
+<b>Unifi Outdoor</b> - Green > Orange > Off <br>
+<b>Unifi Pro</b> - Blue > White > Off <br>
+<b>Unifi Outdoor+</b> - Blue > White > Off <br>
 
 <div class="text-center">
 <img src="/images/community/tutorials/unifi-flash/box-recover.gif">
