@@ -2,7 +2,7 @@
 layout: post
 title:  Compatible Hardware
 date:   2015-07-31
-categories: tutorials
+categories: documentation
 keywords: Compatible hardware, firmware, access points, routers, Unifi, ubiquity, meraki, ruckus, mikrotik, radius, captive portal
 ---
 You have three ways to get your hands on a box.
