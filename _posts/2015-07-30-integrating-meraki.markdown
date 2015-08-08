@@ -2,7 +2,7 @@
 layout: post
 title:  Setting up a splash page for a Meraki network
 date:   2015-07-30
-categories: tutorials
+categories: documentation
 keywords: Meraki captive portal, Meraki splash page not working, Meraki splash page template, Meraki splash page free, Meraki splash page html, Meraki splash page hosting
 ---
 
