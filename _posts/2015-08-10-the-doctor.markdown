@@ -11,7 +11,9 @@ To run the script, follow these steps:
 <ol>
 <li>Connect to the Access Point via either it's private network, directly through a cable, or over your WAN using your box's IP (you will not be able to access any of the local portal on the public WiFi)</li>
 
-<li>Enter the following into your browser's address bar: polka.box/doctor. <br> If this doesn't work, enter the local IP of your box and add /doctor to the end.</li>
+<li>Enter the following into your browser's address bar: <br>
+<a href="polka.box/doctor">polka.box/doctor</a> <br>
+If this doesn't work, enter the local IP of your box and add /doctor to the end.</li>
 
 <li>If you aren't already logged in, it will prompt you for a username and password.<br>
 - The username for the local portal is currently always polkaspots.<br>
@@ -29,4 +31,4 @@ To run the script, follow these steps:
 <img src="/images/community/tutorials/local-portal/doctor-download.png">
 </div>
 
-<li>This will save all the information into a small text file, so it can be passed on to the Support Team for diagnosis.</li>
+<li>This will save all the information into a small text file. You can send this to us via the support widget in your Cucumber Wi-Fi dashboard.</li>
