@@ -9,7 +9,7 @@ keywords: Ruckus, Ruckus Virtual SmartZone, Captive Portal, Zone Director, Splas
 <h3>Getting the Cucumber Dashboard working with your Ruckus Virtual SmartZone</h3>
 <p>The Ruckus Virtual SmartZone is a really fantastic piece of kit. This walk-through demonstrates how to integrate it with our splash pages, view your Ruckus wireless clients and, even view the status of your Ruckus APs!</p>
 <p>Manage all your networks from a single dashboard - your Unifi, TP-Link, Netgear, OpenWRT and Ruckus devices in a single location.</p>
-<p>The whole set-up takes about half and hour - the Ruckus VSG can be a little tricky to get working first time round.</p>
+<p>The whole set-up takes about half an hour - the Ruckus VSG can be a little tricky to get working first time round.</p>
 <hr>
 <h3>Things you need:</h3>
 <ul>
@@ -39,14 +39,14 @@ keywords: Ruckus, Ruckus Virtual SmartZone, Captive Portal, Zone Director, Splas
   <img src="/images/community/tutorials/ruckus-radius-1.png" width="800px">
 </div>
 
-<h3>News, get your Ruckus VSG setup.</h3>
+<h3>Next, get your Ruckus VSG setup.</h3>
 <p>Login to your VSG and create a zone if you don't have one. You don't have to create a new one.</p>
 
 <h3>Accounting and Authentication Radius Servers</h3>
 
 <p>Configuration > Service and Profiles > Authentication</p>
 
-<p>Create a new server and fill in the followin fields. You will need the information you just found in Cucumber. </p>
+<p>Create a new server and fill in the following fields. You will need the information you just found in Cucumber. </p>
 <ul>
 <li>IP Address: 146.148.7.43</li>
 <li>Port: 1812</li>
@@ -145,7 +145,7 @@ keywords: Ruckus, Ruckus Virtual SmartZone, Captive Portal, Zone Director, Splas
   <img src="/images/community/tutorials/ruckus-northbound-api.png" width="800px">
 </div>
 
-<p>Your VSG must be accessible from the Tinternet. Please do not enter a port number. If all went well, you will see a confirmation messgae on the page.</p>
+<p>Your VSG must be accessible from the internet. Please do not enter a port number. If all went well, you will see a confirmation message on the page.</p>
 
 <div class="text-center">
   <img src="/images/community/tutorials/ruckus-api-success.png" width="800px">
