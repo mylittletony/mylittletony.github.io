@@ -17,7 +17,12 @@ keywords: Ruckus, Ruckus Virtual SmartZone, Captive Portal, Zone Director, Splas
 <li>Compatible Ruckus AP</li>
 <li>Cucumber account</li>
 </ul>
-
+<h2>Open Your Firewall Ports</h2>
+<p>You must have a public facing VSG with the following ports open:</p>
+<ul>
+<li>9443 for the splash pages</li>
+<li>7443 for the VSZ integration</li>
+</ul>
 <h2>Add your Access Points to your Cucumber dashboard.</h2>
 <p>You'll need to add each one. Once you've done this, you will need to make a note of some credentials which are needed when your set up your VSG.</p>
 <p>Make sure you create a splash page too. And, if you're setting up zones, please ensure the boxes are all added to the correct zone. There's documentation about doing this in the green sidebar within your dash.</p>
