@@ -1,0 +1,62 @@
+---
+layout: post
+title: EnGenius ESR900 Setup
+description: Documentation for Cucumber Tony's Cloud Wi-Fi Platform
+---
+
+<hr>
+
+<p>Here's what you'll receive:</p>
+
+<ul>
+<li>Instruction Card
+<li>1x Engenius AP
+<li>1x Power cable
+<li>1x Mounting Screws
+<li>1x Ethernet Cable
+</ul>
+
+<p>Here's some stuff you'll need:</p>
+
+<ul>
+<li>Power socket
+<li>A working broadband connection
+<li>Your modem
+<li>Cucumber Tony account
+</ul>
+ 
+<div class="text-center">
+<img src="/images/setup/engenius-esr900/engenius-content.JPG">
+</div>
+
+<h3>Plugging it all in</h3>
+
+<hr>
+
+<p>First off, connect your Ethernet cable between a LAN port on your modem, and the WAN port on your EnGenius AP.</p>
+
+<div class="text-center">
+<img src="/images/setup/engenius-esr900/wan-lan.png">
+</div>
+
+<p>Next, plug the power supply into a power socket, and then connect it to your EnGenius - this will turn the access point on.</p>
+
+<div class="text-center">
+<img src="/images/setup/engenius-esr900/power-supply.png">
+</div>
+
+<p>When it's all plugged in, it should look similar to the image below. Your EnGenius AP will light up when you've turned on the power supply.</p>
+
+<div class="text-center">
+<img src="/images/setup/engenius-esr900/engenius-complete.JPG">
+</div>
+
+<h2>Congrats! Now you just need to head into your Cucumber Tony dashboard and add in your lovely new box!</h2>
+
+<hr>
+
+<p>If you only have one spare port at the back of your modem and need extra ports for other devices, it is advised to buy a switch.</p>
+
+<h3><b>WARNING</b></h3>
+
+<p><b>Please use the power supply provided to you. An incorrect power supply may cause the fuse in the box to blow, breaking your box and warranty.</b></p>
