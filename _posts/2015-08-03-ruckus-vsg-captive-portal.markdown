@@ -20,8 +20,8 @@ keywords: Ruckus, Ruckus Virtual SmartZone, Captive Portal, Zone Director, Splas
 <h2>Open Your Firewall Ports</h2>
 <p>You must have a public facing VSG with the following ports open:</p>
 <ul>
-<li>9443 for the splash pages</li>
-<li>7443 for the VSZ integration</li>
+<li>9443 & 7443 for the VSZ integration</li>
+<li>8090, 8099, 8100, 8111, 9997, 9998 to ensure the splash pages work</li>
 </ul>
 <h2>Add your Access Points to your Cucumber dashboard.</h2>
 <p>You'll need to add each one. Once you've done this, you will need to make a note of some credentials which are needed when your set up your VSG.</p>
@@ -191,6 +191,11 @@ keywords: Ruckus, Ruckus Virtual SmartZone, Captive Portal, Zone Director, Splas
 <h3>ALL DONE</h3>
 <p>That's all you need to do! We hope you enjoyed the tutorial. If you need some help, please get in touch! You can chat to us using the support widget within your Dashboard.</p>
 
+<h3>Troubleshooting</h3>
+<p><b>Why captive portal redirection is not working in vSCG?</b></p>
+<p>The wireless clients were able to get an IP address, however they are not able to get the redirection page when they open the web browser.</p>
+<p>Make sure the ports required at the top of this document have been added.</p>
+<p>For more information, visit the Ruckus support pages <a href="https://support.ruckuswireless.com/answers/000003379">here</a>.</p>
 <br><br>
 <div class="text-center">
 <p>Sign-up for a Cucumber dashboard. It's free for unlimited access points!</p>
