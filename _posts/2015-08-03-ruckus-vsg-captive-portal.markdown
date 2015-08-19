@@ -194,7 +194,7 @@ keywords: Ruckus, Ruckus Virtual SmartZone, Captive Portal, Zone Director, Splas
 <h3>Troubleshooting</h3>
 <p><b>Why captive portal redirection is not working in vSCG?</b></p>
 <p>The wireless clients were able to get an IP address, however they are not able to get the redirection page when they open the web browser.</p>
-<p>Make sure the ports required at the top of this document have been added.</p>
+<p>Solution: Add the ports required at the top of this document have been added to your firewall.</p>
 <p>For more information, visit the Ruckus support pages <a href="https://support.ruckuswireless.com/answers/000003379">here</a>.</p>
 <br><br>
 <div class="text-center">
