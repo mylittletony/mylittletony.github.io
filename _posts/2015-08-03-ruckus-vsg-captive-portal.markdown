@@ -3,7 +3,7 @@ layout: post
 title:  Ruckus Virtual SmartZone Integration
 date:   2015-08-03
 categories: tutorials
-keywords: Ruckus, Ruckus Virtual SmartZone, Captive Portal, Zone Director, Splash Pages, 
+keywords: Ruckus, Ruckus Virtual SmartZone, Captive Portal, Zone Director, Splash Pages,
 ---
 
 <h3>Getting the Cucumber Dashboard working with your Ruckus Virtual SmartZone</h3>
@@ -17,10 +17,19 @@ keywords: Ruckus, Ruckus Virtual SmartZone, Captive Portal, Zone Director, Splas
 <li>Compatible Ruckus AP</li>
 <li>Cucumber account</li>
 </ul>
+
+### PLEASE DO NOT
+
+Please don't use the built-in radius test tool in your VSZ. This sends a partial request to our servers. After doing so, Cucumber Tonywill block access for security reasons.
+
+The only way to fix this is to contact us.
+
+### Lets go....
+
 <h2>Open Your Firewall Ports</h2>
 <p>You must have a public facing VSG with the following ports open:</p>
 <ul>
-<li>9443 & 7443 for the VSZ integration</li>
+<li>9080, 9443 & 7443 for the VSZ integration</li>
 <li>8090, 8099, 8100, 8111, 9997, 9998 to ensure the splash pages work</li>
 </ul>
 <h2>Add your Access Points to your Cucumber dashboard.</h2>
@@ -49,7 +58,9 @@ keywords: Ruckus, Ruckus Virtual SmartZone, Captive Portal, Zone Director, Splas
 
 <h3>Accounting and Authentication Radius Servers</h3>
 
-<p>Configuration > Service and Profiles > Authentication</p>
+```
+Configuration > Service and Profiles > Authentication
+```
 
 <p>Create a new server and fill in the following fields. You will need the information you just found in Cucumber. </p>
 <ul>
@@ -69,7 +80,9 @@ keywords: Ruckus, Ruckus Virtual SmartZone, Captive Portal, Zone Director, Splas
 
 <h3>Create a Hotspot</h3>
 
-<p>Configuration > AP Zones > Your Zone > Hotspot WISPr > Create New</p>
+```
+Configuration > AP Zones > Your Zone > Hotspot WISPr > Create New
+```
 
 <p>You can either use our default url <b>app.my-wifi.co</b> or you can use your own brand. For example, if your brand name is Tony Time, the url will be tony-time.my-wifi.co. You can find this in your branding settings within your Cucumber dashboard.
 <div class="text-center">
@@ -115,7 +128,10 @@ keywords: Ruckus, Ruckus Virtual SmartZone, Captive Portal, Zone Director, Splas
 
 <h3>Northbound API</h3>
 <p>You need to change the password for your northbound API.</p>
-<p>Click Configuration > System > Northbound Portal Interface. Enter your password.</p>
+
+```
+Click Configuration > System > Northbound Portal Interface. Enter your password.
+```
 
 <div class="text-center">
   <img src="/images/community/tutorials/ruckus-northbound-api-1.png" width="800px">
@@ -191,11 +207,74 @@ keywords: Ruckus, Ruckus Virtual SmartZone, Captive Portal, Zone Director, Splas
 <h3>ALL DONE</h3>
 <p>That's all you need to do! We hope you enjoyed the tutorial. If you need some help, please get in touch! You can chat to us using the support widget within your Dashboard.</p>
 
-<h3>Troubleshooting</h3>
-<p><b>Why captive portal redirection is not working in vSCG?</b></p>
-<p>The wireless clients were able to get an IP address, however they are not able to get the redirection page when they open the web browser.</p>
-<p>Solution: Add the ports required at the top of this document have been added to your firewall.</p>
-<p>For more information, visit the Ruckus support pages <a href="https://support.ruckuswireless.com/answers/000003379">here</a>.</p>
+## Troubleshooting & Questions
+### Why captive portal redirection is not working in vSCG?
+
+The wireless clients were able to get an IP address, however they are not able to get the redirection page when they open the web browser.
+
+Solution: Add the ports required at the top of this document have been added to your firewall.
+
+For more information, visit the Ruckus support pages <a href="https://support.ruckuswireless.com/answers/000003379">here</a>.</p>
+
+## Green Screen
+If you are seeing a green screen when you login, usually the messages will help you find the problem.
+
+### Cannot Connect to VSZ Server
+
+<div class="text-center">
+  <img src="/images/community/tutorials/cannot-connect-to-vsz-1.jpg" width="200px">
+</div>
+
+Why?! This is because our servers are unable to connect to your Ruckus server. And this is usually a firewall issue.
+
+* Confirm the host in your settings is correct.
+* Confirm you have added 9443, 7443, 8090, 8099, 8100, 8111, 9080, 9997 & 9998 to your firewall
+
+If you're sure these are ok, open a terminal and try and telnet to your host:
+
+```
+telnet your-host 9443
+telnet your-host 9080
+```
+
+The response should look like this:
+
+```
+Trying 23.21.142.138...
+Connected to my.fab.host.
+Escape character is '^]'.
+```
+
+If it doesn't, your ports are not open.
+
+We insist you use SSL but it's a good test to telnet to 9080.
+
+### Failed to Communicate With VSZ 5 Times
+
+If you're seeing this, it means we've tried 5 times to access your VSZ and failed. You should follow the steps above to fixed this issue.
+
+The only way to reset this error is to **change the host** in your location settings within your Cucumber dashboard.
+
+### Can't login - In a Loop ###
+
+You can see the login page but when you login, it sends you back to the login page. Here's what you can do:
+
+* Swap the access type to clickthrough to rule out password issues
+* Ensure your radius secrets match the ones in your VSZ radius settings
+* Ensure your Nas-Id from your Cucumber Wi-Fi account matches the one in your VSZ
+
+<div class="text-center">
+  <img src="/images/community/tutorials/vsz-radius-secret-1.png" width="800px">
+</div>
+
+<div class="text-center">
+  <img src="/images/community/tutorials/vsz-radius-nas-id.png" width="800px">
+</div>
+
+### What IPs does CT traffic come from?
+
+Traffic comes from a number of servers and the IPs rotate frequently. We therefore recommend allowing access to the ports from all IPs.
+
 <br><br>
 <div class="text-center">
 <p>Sign-up for a Cucumber dashboard. It's free for unlimited access points!</p>

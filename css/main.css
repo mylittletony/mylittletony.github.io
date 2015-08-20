@@ -756,9 +756,6 @@ table {
 .top-bar {
   box-shadow: 0 0 2px rgba(0,0,0,.14),0 2px 8px rgba(0,0,0,.28);
 }
-[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
-  display: none !important;
-}
 
 td.plans {
   font-size: 18px;
@@ -774,5 +771,6 @@ code {
   /* color: #333333; */
   /* font-family: Consolas,"Liberation Mono",Courier,monospace; */
   /* font-weight: normal; */
-  /* padding: 0.125rem 0.3125rem 0.0625rem; */
+  /* padding-top: 10px!important; */
+  /* padding: 0.125rem 0.3125rem 0.0625rem 10px!important; */
 }
