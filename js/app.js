@@ -10,7 +10,7 @@
     '<input class=\'register\' name=\'email\' type=\'email\' placeholder=\'Enter your email to sign-up\' ng-model=\'user.email\' required>' +
     '</div>' +
     '<div class=\'small-2 columns\'>' +
-    '<button ng-disabled="creating || myForm.$invalid || myForm.$pristine" class="submit button postfix success" id=""><span></span><span class="creating">Go</span></button>'+
+    '<button class="submit button postfix success" id=""><span></span><span class="creating">Go</span></button>'+
     '</div>' +
     '</div>' +
     '</div>' +
@@ -22,6 +22,7 @@
     '</div>';
 
   var email;
+  // var url = 'http://127.0.0.1:8080';
   var url = 'https://api.polkaspots.com';
 
   var regForm = function() {
@@ -41,13 +42,13 @@
 
     var success = function() {
       var a = { d: new Date().getTime(), e: email };
-      cookies = JSON.stringify(a)
+      cookies = JSON.stringify(a);
       $.cookie('invited', cookies, { expires: 1, path: '/' });
       $('#main-form').html('');
       $('#success').html(successTemplate);
     };
 
-    $( "#register" ).submit(function( event ) {
+    $(document).on("submit", "#register",  function( event ) {
       event.preventDefault();
       var values = $(this).serialize();
       email = $('input[name="email"]').val();
@@ -58,28 +59,25 @@
           data: $(this).serialize(),
           beforeSend: beforeSend,
           error: function(){
-            // alert('failure');
           },
           success: success,
       });
     });
 
-    $( ".reset" ).click(function( event ) {
+    $(document).on("click", ".reset", function( event ) {
       $.removeCookie('invited', { path: '/' });
       $('#main-form').html(formTemplate);
       $('#success').html('');
       event.preventDefault();
     });
 
-  }
+  };
 
   $.fn.ct = function () {
 
     if ( $('.register-user').length ) {
-      // $('.register-user').each(function(index, element) {
-        regForm();
-      // });
-    };
+      regForm();
+    }
 
 
   };
