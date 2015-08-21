@@ -2,7 +2,7 @@
 layout: post
 title:  Ruckus Virtual SmartZone Integration
 date:   2015-08-03
-categories: tutorials
+categories: documentation
 keywords: Ruckus, Ruckus Virtual SmartZone, Captive Portal, Zone Director, Splash Pages, 
 ---
 
