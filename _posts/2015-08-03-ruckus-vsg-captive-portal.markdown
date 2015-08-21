@@ -271,6 +271,14 @@ You can see the login page but when you login, it sends you back to the login pa
   <img src="/images/community/tutorials/vsz-radius-nas-id.png" width="800px">
 </div>
 
+If none of these worked, login to your Cucumber Wi-Fi dashboard and head over to the splash page in question.
+
+At the top of the top, it should show your VSZ host. If you cannot see this, go back to your location settings and re-save the VSZ settings. That should resync the settings.
+
+<div class="text-center">
+  <img src="/images/community/tutorials/vsz-radius-missing-1.png" width="800px">
+</div>
+
 ### What IPs does CT traffic come from?
 
 Traffic comes from a number of servers and the IPs rotate frequently. We therefore recommend allowing access to the ports from all IPs.
