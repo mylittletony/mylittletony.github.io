@@ -169,7 +169,7 @@ Now go ahead and add your box into your dashboard if you havent already.
 
 2 - Type in the terminal:
 
-<blockquote>ubnt@ip-address</blockquote>
+<blockquote>ssh ubnt@ip-address</blockquote>
 
 Sometimes the default user may not be ubnt - it may be admin or whatever you've set up on the UniFi controller.
 
