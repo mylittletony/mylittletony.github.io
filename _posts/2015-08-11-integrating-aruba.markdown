@@ -6,7 +6,7 @@ categories: documentation
 keywords: Aruba captive portal, Aruba splash page hosting, Aruba splash page not working, Aruba splash page template, Aruba splash page free, Aruba splash page html
 ---
 
-1. Add your Access Points into Cucumber Tony by adding their MAC addresses, following this guide.
+Add your Access Points into Cucumber Tony by adding their MAC addresses, following this guide.
 
 When you have added these to Cucumber Tony, go into the settings page of your box, scrolling down for the section labelled PolkaSpots Settings
 
@@ -32,9 +32,9 @@ Clicking this will open a box with details that you will need to refer back to a
 <img src="/images/community/tutorials/aruba-guide/radius-info.png">
 </div>
 
-<blockquote><b>Double Check your NAS ID
+###<b>Double Check your NAS ID</b>
 
-If you do not enter a NAS, or you enter a wrong NAS, you will be blocked out and will not be able to authenticate, and will need to contact support.</b></blockquote>
+### If you do not enter a NAS, or you enter a wrong NAS, you will be blocked out and will not be able to authenticate, and will need to contact support.
 
 Open your Aruba network portal and under Networks, click new.
 
@@ -44,10 +44,8 @@ Open your Aruba network portal and under Networks, click new.
 
 Enter the following settings:
 
-<ul>
-<li>Name - e.g Polkaspots Wi-Fi
-<li>Usage - Guest
-</ul>
++ Name - e.g Polkaspots Wi-Fi
++ Usage - Guest
 
 Once this is done, click Next to continue.
 
@@ -57,10 +55,8 @@ Once this is done, click Next to continue.
 
 Continue to the VLAN tab, and set the following:
 
-<ul>
-<li>Client IP assignment - Virtual Controller Managed
-<li>Client VLAN assignment - Default
-</ul>
++ Client IP assignment - Virtual Controller Managed
++ Client VLAN assignment - Default
 
 Once this is done, click Next to continue.
 
@@ -76,17 +72,15 @@ Continue to Security, and set the splash page type to External
 
 Under Captive Portal Profile, select new, and use the following configuration:
 
-<ul>
-<li>Name - e.g PolkaPortal
-<li>Type - Radius Authentication
-<li>IP or hostname - my-brand.my-wifi.co ( replace “my-brand” with your <li>specific brand name )
-<li>URL - /
-<li>Port - 80
-<li>Use https - Disabled
-<li>Captive Portal Failure - Deny internet
-<li>Automatic URL Whitelisting - Enabled
-<li>Redirect URL - Optional
-</ul>
++ Name - e.g PolkaPortal
++ Type - Radius Authentication
++ IP or hostname - my-brand.my-wifi.co ( replace “my-brand” with your <li>specific brand name )
++ URL - /
++ Port - 80
++ Use https - Disabled
++ Captive Portal Failure - Deny internet
++ Automatic URL Whitelisting - Enabled
++ Redirect URL - Optional
 
 Once that is done, click OK to save.
 
@@ -96,16 +90,15 @@ Once that is done, click OK to save.
 
 Create a new profile in Auth server 1 using the following settings:
 
-<ul>
-<li>Type: RADIUS
-<li>Name: e.g PolkaAuth1
-<li>IP address: (Refer to radius settings previously)
-<li>Auth port: 1812
-<li>Acct port: 1813
-<li>Shared key: (Refer to radius settings previously)
-<li>Retype key: (As above)
-<li>NAS Identifier: Head to your boxes in Cucumber Tony and go into their settings.Then scroll down under Advanced Settings, and click on edit advanced settings. Click into Radius NAS ID and retrieve this
-</ul>
+
++ Type: RADIUS
++ Name: e.g PolkaAuth1
++ IP address: (Refer to radius settings previously)
++ Auth port: 1812
++ Acct port: 1813
++ Shared key: (Refer to radius settings previously)
++ Retype key: (As above)
++ NAS Identifier: Head to your boxes in Cucumber Tony and go into their settings.Then scroll down under Advanced Settings, and click on edit advanced settings. Click into Radius NAS ID and retrieve this
 
 <div class="text-center">
 <img src="/images/community/tutorials/aruba-guide/nas-id.png">
@@ -113,54 +106,43 @@ Create a new profile in Auth server 1 using the following settings:
 
 Once this is done, click OK to save.
 
-
-
 To change the whitelist click on "Blacklist: 0 Whitelist: 0" and the below screen will open up.
 
 Click New and enter the Walled Garden URLs as listed here:
 
-<ul>
-<li>&#42;.my-wifi.co</li>
-<li>&#42;.polkaspots.com</li>
-<li>&#42;.wirelessisp.co</li>
-<li>&#42;.ctapp.io</li>
-<li>&#42;.cucumberwifi.io</li>
-<li>d3e9l1phmgx8f2.cloudfront.net</li>
-<li>d247kqobagyqjh.cloudfront.net</li>
-</ul>
++ &#42;.my-wifi.co
++ &#42;.polkaspots.com
++ &#42;.wirelessisp.co
++ &#42;.ctapp.io
++ &#42;.cucumberwifi.io
++ d3e9l1phmgx8f2.cloudfront.net
++ d247kqobagyqjh.cloudfront.net
 
 The following entries are not mandatory, but there are some reported issues with the <b>iOS captive portal popup</b> that these help resolve:
 
-<ul>
-<li>&#42;.ibook.info</li>
-<li>&#42;.appleiphonecell.com</li>
-<li>&#42;.apple.com</li>
-<li>&#42;.airport.us</li>
-<li>&#42;.thinkdifferent.us</li>
-<li>&#42;.itools.info</li>
-<li>&#42;.filepicker.io</li>
-<li>&#42;.akamaiedge.net</li>
-<li>&#42;.akamaitechnologies.com</li>
-<li>apple.com.edgekey.net</li>
-</ul>
++ &#42;.ibook.info
++ &#42;.appleiphonecell.com
++ &#42;.apple.com
++ &#42;.airport.us
++ &#42;.thinkdifferent.us
++ &#42;.itools.info
++ &#42;.filepicker.io
++ &#42;.akamaiedge.net
++ &#42;.akamaitechnologies.com
++ apple.com.edgekey.net
 
 The following entries are needed for <b>Facebook</b> social access:
 
-<ul>
-<li>connect.facebook.net</li>
-<li>&#42;.facebook.com</li>
-<li>&#42;.akamaihd.net</li>
-<li>&#42;.fbcdn.net</li>
-</ul>
++ connect.facebook.net
++ &#42;.facebook.com
++ &#42;.akamaihd.net
 
 The following entries are needed for <b>Google</b> social access:
 
-<ul>
-<li>&#42;.accounts.google.com</li>
-<li>&#42;.googleapis.com</li>
-<li>&#42;.googleusercontent.com</li>
-<li>&#42;.gstatic.com</li>
-</ul>
++ &#42;.accounts.google.com
++ &#42;.googleapis.com
++ &#42;.googleusercontent.com
++ &#42;.gstatic.com
 
 Once that is done, click OK to save.
 
@@ -182,10 +164,8 @@ Set access rules to Role-Based, select the default role (should be automatically
 
 Using the fields provided, create the following two rules:
 
-<ul>
-<li>Access Control > Network > https > allow > to domain name > polkaspots.com
-<li>Access Control > Network > any > allow > to all destinations
-</ul>
++ Access Control > Network > https > allow > to domain name > polkaspots.com
++ Access Control > Network > any > allow > to all destinations
 
 <div class="text-center">
 <img src="/images/community/tutorials/aruba-guide/new-rule.png">

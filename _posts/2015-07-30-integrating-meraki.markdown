@@ -21,11 +21,10 @@ Under <b>Splash Page</b>, you'll need to select the <b>Sign-on with</b> option. 
 </div>
 
 Scroll down and look for <b>RADIUS for splash page</b>. Click on <b>Add a server</b> and enter the following details in the necessary fields:
-<ul>
-<li>Host: 146.148.7.43</li>
-<li>Port: 1812</li>
-<li>Secret: LocIAeonShieSEpodE57</li>
-</ul>
+
++ Host: 146.148.7.43
++ Port: 1812
++ Secret: LocIAeonShieSEpodE57
 
 You should have an option underneath that shows <b>RADIUS accounting</b>. Make sure the option in the field is on <b>RADIUS accounting is enabled</b>.
 
@@ -36,49 +35,50 @@ You should have an option underneath that shows <b>RADIUS accounting</b>. Make s
 </div>
 
 Now change the accounting servers to the following:
-<ul>
-<li>Host: 146.148.7.43</li>
-<li>Port: 1813</li>
-<li>Secret: LocIAeonShieSEpodE57</li>
-</ul>
+
++ Host: 146.148.7.43
++ Port: 1813
++ Secret: LocIAeonShieSEpodE57
 
 <div class="text-center">
 <img src="/images/community/tutorials/meraki-guide/radius-for-splash.png">
 </div>
 
 Scroll further down and look for <b>Walled Garden</b>. Make sure <b>Walled garden</b> is enabled and add the following to the <b>Walled garden ranges</b>:
-<ul>
-<li>&#42;.my-wifi.co</li>
-<li>&#42;.polkaspots.com</li>
-<li>&#42;.wirelessisp.co</li>
-<li>&#42;.ctapp.io</li>
-<li>&#42;.cucumberwifi.io</li>
-<li>d3e9l1phmgx8f2.cloudfront.net</li>
-<li>d247kqobagyqjh.cloudfront.net</li>
-</ul>
+
++ &#42;.my-wifi.co
++ &#42;.polkaspots.com
++ &#42;.wirelessisp.co
++ &#42;.ctapp.io
++ &#42;.cucumberwifi.io
++ d3e9l1phmgx8f2.cloudfront.net
++ d247kqobagyqjh.cloudfront.net
 
 The following entries are not mandatory, but there are some reported issues with the <b>iOS captive portal popup</b> that these help resolve:
 
-<ul>
-<li>&#42;.ibook.info</li>
-<li>&#42;.appleiphonecell.com</li>
-<li>&#42;.apple.com</li>
-<li>&#42;.airport.us</li>
-<li>&#42;.thinkdifferent.us</li>
-<li>&#42;.itools.info</li>
-<li>&#42;.filepicker.io</li>
-<li>&#42;.akamaiedge.net</li>
-<li>&#42;.akamaitechnologies.com</li>
-<li>apple.com.edgekey.net</li>
-</ul>
++ &#42;.ibook.info
++ &#42;.appleiphonecell.com
++ &#42;.apple.com
++ &#42;.airport.us
++ &#42;.thinkdifferent.us
++ &#42;.itools.info
++ &#42;.filepicker.io
++ &#42;.akamaiedge.net
++ &#42;.akamaitechnologies.com
++ apple.com.edgekey.net
 
 The following entries are needed for <b>Facebook</b> social access:
 
-<ul>
-<li>connect.facebook.net</li>
-<li>&#42;.facebook.com</li>
-<li>&#42;.akamaihd.net</li>
-</ul>
++ connect.facebook.net
++ &#42;.facebook.com
++ &#42;.akamaihd.net
+
+The following entries are needed for <b>Google</b> social access:
+
++ &#42;.accounts.google.com
++ &#42;.googleapis.com
++ &#42;.googleusercontent.com
++ &#42;.gstatic.com
 
 If you have errors when copying these in, try typing them out manually.
 
@@ -163,7 +163,7 @@ For multiple SSID's, enable the SSID's you want in your Meraki SSID settings, th
 </div>
 
 
-<h3><b>IMPORTANT MESSAGE</b></h3>
+###<b>IMPORTANT MESSAGE</b>
 
 You may get alerts from Meraki about the servers being unreachable. If this happens, then you will need to retreive a set of IP addreses from your dashboard and email them in to us.
 
@@ -176,8 +176,9 @@ It will look like the following:
 </div>
 
 Secondly, you may need to ask Meraki a few things:
-<ol>
-<li>To enable hostnames in the list of allowed walled gardens</li>
-<li>To enable radius accounting otherwise you get zero data</li>
-</ol>
-<br>
+
+1. To enable hostnames in the list of allowed walled gardens
+2. To enable radius accounting otherwise you get zero data
+
+
+

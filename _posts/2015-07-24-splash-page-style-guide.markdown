@@ -6,7 +6,7 @@ categories: tutorials
 keywords: WiFi Splash Page, WiFi Captive Portal, WiFi Welcome Page, WiFi Splash page html5, WiFi splash page example, wifi splash page template
 ---
 
-<h2>Why have a splash page?</h2>
+##Why have a splash page?
 
 Your splash page is the gateway to your Wi-Fi hotspot. It’s part of the captive portal that authenticates users (checks that they’re allowed to use your Wi-Fi) and keeps your hotspot secure and legally compliant. 
 
@@ -14,13 +14,13 @@ Every guest to your Wi-Fi hotspot sees this page before they access the Internet
 
 So, as well as a bit of security, it’s an opportunity to talk to your WiFi users. A simple welcome message waves a nice ‘hello’ to everyone.
 
-<h2>Designing your splash page</h2>
+##Designing your splash page
 
 <div class="text-center">
 <img src="/images/community/tutorials/responsive-layout.png">
 </div>
 
-<h3>Keep it simple</h3> 
+###Keep it simple
 
 The main purpose of the splash page is to let your guests connect to your Wi-Fi, so this should be your main focus.
 
@@ -28,7 +28,7 @@ Keep the login method nice and clear. Too much extra content and it’ll end up 
 
 If you want to offer more content, use a second page or redirect users to a web page once they’ve connected to the Internets.
 
-<h3>Make it responsive</h3>
+###Make it responsive
 
 <div class="text-center">
 <img src="/images/community/tutorials/bad-layout.png">

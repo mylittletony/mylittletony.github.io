@@ -104,48 +104,40 @@ You will now see the Walled Garden entries. Click <b>Create New</b> to add the e
 </div>
 
 add the following to the <b>Walled garden</b>:
-<ul>
-<li>&#42;.my-wifi.co</li>
-<li>&#42;.polkaspots.com</li>
-<li>&#42;.wirelessisp.co</li>
-<li>&#42;.ctapp.io</li>
-<li>&#42;.cucumberwifi.io</li>
-<li>d3e9l1phmgx8f2.cloudfront.net</li>
-<li>d247kqobagyqjh.cloudfront.net</li>
-</ul>
+
++ &#42;.my-wifi.co
++ &#42;.polkaspots.com
++ &#42;.wirelessisp.co
++ &#42;.ctapp.io
++ &#42;.cucumberwifi.io
++ d3e9l1phmgx8f2.cloudfront.net
++ d247kqobagyqjh.cloudfront.net
 
 The following entries are not mandatory, but there are some reported issues with the <b>iOS captive portal popup</b> that these help resolve:
 
-<ul>
-<li>&#42;.ibook.info</li>
-<li>&#42;.appleiphonecell.com</li>
-<li>&#42;.apple.com</li>
-<li>&#42;.airport.us</li>
-<li>&#42;.thinkdifferent.us</li>
-<li>&#42;.itools.info</li>
-<li>&#42;.filepicker.io</li>
-<li>&#42;.akamaiedge.net</li>
-<li>&#42;.akamaitechnologies.com</li>
-<li>apple.com.edgekey.net</li>
-</ul>
++ &#42;.ibook.info
++ &#42;.appleiphonecell.com
++ &#42;.apple.com
++ &#42;.airport.us
++ &#42;.thinkdifferent.us
++ &#42;.itools.info
++ &#42;.filepicker.io
++ &#42;.akamaiedge.net
++ &#42;.akamaitechnologies.com
++ apple.com.edgekey.net
 
 The following entries are needed for <b>Facebook</b> social access:
 
-<ul>
-<li>connect.facebook.net</li>
-<li>&#42;.facebook.com</li>
-<li>&#42;.akamaihd.net</li>
-<li>&#42;.fbcdn.net</li>
-</ul>
++ connect.facebook.net
++ &#42;.facebook.com
++ &#42;.akamaihd.net
 
 The following entries are needed for <b>Google</b> social access:
 
-<ul>
-<li>&#42;.accounts.google.com</li>
-<li>&#42;.googleapis.com</li>
-<li>&#42;.googleusercontent.com</li>
-<li>&#42;.gstatic.com</li>
-</ul>
++ &#42;.accounts.google.com
++ &#42;.googleapis.com
++ &#42;.googleusercontent.com
++ &#42;.gstatic.com
 
 And then save the changes by clicking <b>OK</b>
 
@@ -162,11 +154,10 @@ Click <b>WLANs</b> on the sidebar, and under WLANs click <b>Create New</b>
 A selection of fields will now have appeared which will need to be filled with the following information:
 
 <ul>
-<li>Name/ESSID: e.g PolkaFly</li>
-<li>ESSID: e.g PolkaFly</li>
-<li>Type: Hotspot Service (WISPr)</li>
-<li>Hotspot Services: PolkaSpotsHS (the Hotspot Service created in step 6)</li>
-</ul>
++ Name/ESSID: e.g PolkaFly
++ ESSID: e.g PolkaFly
++ Type: Hotspot Service (WISPr)
++ Hotspot Services: PolkaSpotsHS (the Hotspot Service created in step 6)
 
 Then save your changes by clicking <b>OK</b>
 
@@ -176,20 +167,22 @@ Then save your changes by clicking <b>OK</b>
 
 Because there are no options to change these settings in the GUI, you will need to <b>SSH</b> in to the Ruckus <b>ZoneDirector</b>, which is done by entering the following:
 
-<blockquote>ssh root@DEVICE_IP</blockquote>
+```
+ssh root@DEVICE_IP
+```
 
 Replace DEVICE_IP with the IP of your zone director, and login with your username and password that you used to log into the ZoneDirector.
 
 Once you have established an SSH connection, enter the commands below, one by one:
 
-<blockquote>
-enable<br>
-config<br>
-wlan "PolkaFly" <b>(name of essid in step 10)</b><br>
-called-station-id-type ap-mac<br>
-nasid-type mac-addr<br>
+```
+enable
+config
+wlan "PolkaFly" (name of essid in step 10)
+called-station-id-type ap-mac
+nasid-type mac-addr
 end
-</blockquote>
+```
 
 <div class="text-center">
 <img src="/images/community/tutorials/ruckus-zd-guide/ssh-console.png">

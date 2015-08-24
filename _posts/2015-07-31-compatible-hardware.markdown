@@ -7,14 +7,14 @@ keywords: Compatible hardware, firmware, access points, routers, Unifi, ubiquity
 ---
 You have three ways to get your hands on a box.
 
-<h3>Option 1. Buy a box</h3>
+###Option 1. Buy a box
 <hr>
 
 If you don't want to install the firmware yourself you can buy a box from us that already has the firmware installed. It will arrive in the post ready to plug in. No configuration required.
 
 You can buy a box from within your account - <a href="https://my.ctapp.io/#/shop">click here</a>
 
-<h3>Option 2. Integrating via your radius settings (Meraki, Ruckus and more)</h3>
+###Option 2. Integrating via your radius settings (Meraki, Ruckus and more)
 <hr>
 
 If you have a box that includes radius settings you can use the Cucumber Tony splash page and captive portal to manage your public Wi-Fi connection.
@@ -23,14 +23,14 @@ You don't need to install firmware on your box, and can continue to use the cont
 
 You will miss the management and reporting features in Cucumber Tony though - like how many users are connected and RF signal strength.
 
-<h3>Option 3. Downloading the firmware</h3>
+###Option 3. Downloading the firmware
 <hr>
 
 Installing the Cucumber Tony firmware on your access point gives you full control of it. You'll be able to utilise all the features available in your dashboard.
 
 It's simple to download the firmware on your access point. Just choose your access point and follow the instructions.
 
-<h3>List of compatible boxes</h3>
+###List of compatible boxes
 <hr>
 
 Here are the boxes you can control and monitor using the Cucumber Tony dashboard. 

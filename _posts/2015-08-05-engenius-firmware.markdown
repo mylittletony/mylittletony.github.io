@@ -8,12 +8,10 @@ keywords: install firmware on engenius ap, wifi firmware, engenius firmware upda
 
 To set up an EnGenius box, here's what you'll need:
 
-<ul>
-<li>A computer with ethernet ports</li>
-<li>An Engenius access point and power supply</li>
-<li>1 x Ethernet cable</li>
-<li>A download of the PolkaSpoSts firmware</li>
-</ul>
++ A computer with ethernet ports
++ An Engenius access point and power supply
++ 1 x Ethernet cable
++ A download of the PolkaSpoSts firmware
 
 <hr>
 
@@ -55,6 +53,6 @@ Because of this, the countdown will not actually end, and you will not get any E
 
 Please wait 5 or so minutes, and you will know that the firmware install has been successful when you can see <b>__Private Wi-Fi__</b> being broadcasted. <b><i>(You do not need to connect to this SSID).</i></b>
 
-<h2>Your box is now ready to be added into Cucumber Tony!</h2>
+##Your box is now ready to be added into Cucumber Tony!
 
 

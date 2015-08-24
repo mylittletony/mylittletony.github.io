@@ -8,12 +8,10 @@ keywords: tp link firmware update tftp, tplink firmware flash tftp
 
 To set up a TP-Link box, here's what you'll need:
 
-<ul>
-<li>A computer with ethernet ports</li>
-<li>A TP-Link access point and power supply</li>
-<li>1 x Ethernet cable</li>
-<li>A download of the PolkaSpots firmware</li>
-</ul>
++ A computer with ethernet ports
++ A TP-Link access point and power supply
++ 1 x Ethernet cable
++ A download of the PolkaSpots firmware
 
 <hr>
 
@@ -21,7 +19,7 @@ Plug in your power supply and connect it to your <b>TP-Link</b>, then press the 
 
 Next, connect one end of the Ethernet cable to the <b>LAN port</b> of your <b>TP-Link</b>, and the other end of it to a <b>LAN port</b> on your <b>computer</b>.
 
-Open up your web browser and navigate to <B>192.168.0.1</b> to open the <b>Local Portal</b> of the TP-Link box.
+Open up your web browser and navigate to <b>192.168.0.1</b> to open the <b>Local Portal</b> of the TP-Link box.
 
 Log into your portal using your username and password (default admin - admin)
 
@@ -59,12 +57,11 @@ Once completed, your box will start restarting, please wait for this to complete
 <img src="/images/community/tutorials/tplink-flash/restarting.png">
 </div>
 
-
 Once you reach this, your box should soon start broadcasting a New PolkaSpots SSID. 
 
 The browser will not refresh as it no longer has the TP-Link portal installed on it, so simply close off the page.
 
-<h2>If you haven't already, your box is now ready to be added into Cucumber Tony!<h2>
+##If you haven't already, your box is now ready to be added into Cucumber Tony!
 
 
 

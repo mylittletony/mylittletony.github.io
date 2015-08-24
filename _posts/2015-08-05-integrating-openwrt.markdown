@@ -34,7 +34,7 @@ Once here, scroll down to <b>Advanced Settings</b> under the <b>Captive Portal</
 
 <hr>
 
-<h3>Attention OpenMesh Users</h3>
+###Attention OpenMesh Users
 
 You will need to split the UAM urls to use with the OpenMesh network.
 
