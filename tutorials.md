@@ -2,6 +2,7 @@
 layout: default
 title: Learn about Cloud managed guest wifi
 permalink: /community/tutorials/index.html
+redirect_from: "/documentation/"
 ---
 <div class="row">
   <div class="container">
