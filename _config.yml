@@ -17,3 +17,6 @@ permalink: /community/tutorials/:title.html
 markdown: redcarpet
 # pygments: true
 # baseurl: /
+
+gems:
+    - jekyll-redirect-from
