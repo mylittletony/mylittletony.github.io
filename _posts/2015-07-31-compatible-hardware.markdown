@@ -3,7 +3,7 @@ layout: post
 title:  Compatible Hardware
 date:   2015-07-31
 categories: documentation
-keywords: Compatible hardware, firmware, access points, routers, Unifi, ubiquity, meraki, ruckus, mikrotik, radius, captive portal 
+keywords: Compatible hardware, firmware, access points, routers, Unifi, ubiquity, meraki, ruckus, mikrotik, radius, captive portal, flash
 ---
 
 <h3>List of compatible boxes</h3>
