@@ -4,6 +4,7 @@ title:  Setting up a splash page for an Aruba network
 date:   2015-08-11
 categories: documentation
 keywords: Aruba captive portal, Aruba splash page hosting, Aruba splash page not working, Aruba splash page template, Aruba splash page free, Aruba splash page html
+thumbnail: /images/community/thumbnails/aruba-setup.png
 ---
 
 1. Add your Access Points into Cucumber Tony by adding their MAC addresses, following this guide.

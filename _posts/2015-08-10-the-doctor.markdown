@@ -4,6 +4,7 @@ title:  Running the Doctor script
 date:   2015-08-10
 categories: documentation
 keywords: script, support, diagnosis, doctor, local portal
+thumbnail: /images/community/thumbnails/doctor.png
 ---
 
 To run the script, follow these steps:
