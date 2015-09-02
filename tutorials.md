@@ -16,7 +16,7 @@ redirect_from: "/documentation/"
 
   <div class="col-xs-6 col-md-4">
     {% if post.thumbnail %}
-    <img src="{{ post.thumbnail }}" style="height: 200px" align="center" />
+    <img src="{{ post.thumbnail }}" style= align="center" />
     {% else %}
     <img src="/images/community/thumbnails/rf-power.png" style="height: 200px" align="center" />
     {% endif %}
