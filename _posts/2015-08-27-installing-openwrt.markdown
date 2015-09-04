@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  How to put OpenWRT on an access point
-date:   2015-09-04
+date:   2015-08-27
 categories: tutorials
 keywords: OpenWRT captive portal, OpenWRT splash page not working, OpenWRT splash page template, OpenWRT splash page free, OpenWRT splash page html, OpenWRT splash page hosting, OpenMesh captive portal, OpenMesh splash page not working, OpenMesh splash page template, OpenMesh splash page free, OpenMesh splash page html, OpenMesh splash page hosting, DD-WRT
 thumbnail: /images/community/thumbnails/openwrt.png
