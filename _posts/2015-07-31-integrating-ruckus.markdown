@@ -230,8 +230,8 @@ Do this for all of your Ruckus Access Points.
 You can see the login page but when you login, it sends you back to the login page. Here's what you can do:
 
 - Swap the access type to clickthrough to rule out password issues
-- Ensure your radius secrets match the ones in your Ruckus radius settings
-- Ensure your Nas-Id from your Cucumber Wi-Fi account matches the one in your VSZ
+- Ensure your radius secrets match the ones in your zone director radius settings
+- Ensure your Nas-Id from your Cucumber Wi-Fi account matches the one in your zone director
 - Make sure that your SSID entered through SSH matches the one you entered into your zone director
 
 If you do connect with an incorrect secret/nas_id then our servers will lock you out as a security measure.
