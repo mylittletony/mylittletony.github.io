@@ -88,6 +88,12 @@ Configuration > AP Zones > Your Zone > Hotspot WISPr > Create New
 <div class="text-center">
   <img src="/images/community/tutorials/hotspot-wispr.png" width="800px">
 </div>
+Ensure you Redirected Mac Format is as so:
+
+```
+aa-bb-cc-dd-ee-ff
+```
+
 <p>Before you save, you need to add some walled gardens. Enter the following.</p>
 <ul>
 <li>&#42;.my-wifi.co</li>
@@ -139,7 +145,10 @@ Click Configuration > System > Northbound Portal Interface. Enter your password.
 
 <h3>Create an Admin Account</h3>
 <p>We'll use this to communicate with your Ruckus VSG and provide a list of online wireless clients and the status of your access points. You can use your normal credentials however we recommend creating a second role, just for the API access.</p>
-<p>Click configuration > Administrators. Click create a new Admin account and fill in your details.</p>
+
+```
+Click configuration > Administrators. Click create a new Admin account and fill in your details.
+```
 
 <div class="text-center">
   <img src="/images/community/tutorials/ruckus-new-admin.png" width="800px">
