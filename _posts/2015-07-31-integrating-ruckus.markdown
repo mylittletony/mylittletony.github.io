@@ -225,8 +225,7 @@ Do this for all of your Ruckus Access Points.
 <br>
 
 ##Troubleshooting & Questions
-###Can't login - In a Loop
-
+###Can't login - Stuck in a Loop <hr>
 You can see the login page but when you login, it sends you back to the login page. Here's what you can do:
 
 - Swap the access type to clickthrough to rule out password issues
@@ -238,3 +237,28 @@ If you do connect with an incorrect secret/nas_id then our servers will lock you
 
 If this happens to you, just drop us a message.
 
+###Can I use multiple splash pages? <hr>
+Yes you can, and there are three ways to do it in CT.
+
+**1. Tags**
+
+We can intercept the tags sent in the url and present a page depending on them. This is currently in alpha.
+
+**2. Hard coded url**
+
+You can hardcode the specific splash pages to your Splash Page URLs.
+
+To do this you will need your splash page's unique ID from CT.
+You can find this in Location > Settings > Scroll down to Address Details > Unique ID
+
+Then, add this to the Splash URL you entered in the ZD:
+
+http://app.my-wifi.co/long-id-of-the-splash
+
+**3. CT Zones**
+
+This is the quickest of the options, simply create two zones in CT and add an SSID to each zone (which will have the splash page you want assosciated with it).
+
+Then assign your boxes to the right zone.
+
+This way don't have to change anything in the ZD.
