@@ -261,4 +261,4 @@ This is the quickest of the options, simply create two zones in CT and add an SS
 
 Then assign your boxes to the right zone.
 
-This way don't have to change anything in the ZD.
+This way you don't have to change anything in the ZD.
