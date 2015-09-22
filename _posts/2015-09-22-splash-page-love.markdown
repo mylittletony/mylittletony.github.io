@@ -5,7 +5,7 @@ date: 2015-07-24
 categories: showcase
 tags: showcase
 keywords: WiFi Splash Page, WiFi Captive Portal, WiFi Welcome Page, WiFi Splash page html5, WiFi splash page example, wifi splash page template
-permalink: /community/showcase/:title.html
+permalink: /community/showcase/:title
 ---
 
 <h2>What can you make with Cucumber Tony?</h2>
