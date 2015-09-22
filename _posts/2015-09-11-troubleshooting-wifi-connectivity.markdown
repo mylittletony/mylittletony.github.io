@@ -6,7 +6,6 @@ categories: tutorials
 keywords: WiFi Splash Page, WiFi Captive Portal, WiFi Welcome Page, WiFi security,
 thumbnail: /images/community/thumbnails/nowifi.png
 tags: tutorials
-permalink: /community/tutorials/:title.html
 ---
 
 ##How do I tell if wireless issues are down to my device, router, or broadband?
