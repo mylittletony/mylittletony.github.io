@@ -18,59 +18,69 @@ Take a look at some of the splash pages made with Cucumber Tony
 
 <div class="text-center">
   <img src="/images/community/splash-pages/benito.png">
+  <p><small>100% created with CT.</small></p>
 </div>
 
 <hr>
 
 <div class="text-center">
-<img src="/images/community/splash-pages/boxpark.png">
+  <img src="/images/community/splash-pages/boxpark.png">
+  <p><small>With added styling from an external stylesheet, all managed from CT.</small></p>
 </div>
 
 <hr>
 
 <div class="text-center">
-<img src="/images/community/splash-pages/chifafa.png">
+  <img src="/images/community/splash-pages/chifafa.png">
+  <p><small>100% created with CT's magic.</small></p>
 </div>
 
 <hr>
 
 <div class="text-center">
-<img src="/images/community/splash-pages/derby.png">
+  <img src="/images/community/splash-pages/derby.png">
+  <p><small>100% Cucumber.</small></p>
 </div>
 
 <hr>
 
 <div class="text-center">
-<img src="/images/community/splash-pages/grill.png">
+  <img src="/images/community/splash-pages/grill.png">
+  <p><small>100% Cucumber.</small></p>
 </div>
 
 <hr>
 
 <div class="text-center">
-<img src="/images/community/splash-pages/harbour.png">
+  <img src="/images/community/splash-pages/harbour.png">
+  <p><small>100% Cucumber.</small></p>
 </div>
 
 <hr>
 
 <div class="text-center">
-<img src="/images/community/splash-pages/holo.png">
+  <img src="/images/community/splash-pages/holo.png">
+  <p><small>100% Cucumber with some added CSS love.</small></p>
 </div>
 
 <hr>
 
 <div class="text-center">
-<img src="/images/community/splash-pages/marlowe.png">
+  <img src="/images/community/splash-pages/marlowe.png">
+  <p><small>100% lovin' the Cucumber.</small></p>
 </div>
 
 <hr>
 
 <div class="text-center">
-<img src="/images/community/splash-pages/mocha.png">
+  <img src="/images/community/splash-pages/mocha.png">
+  <p><small>100% Cucumber love.</small></p>
 </div>
 
 <hr>
 
 <div class="text-center">
-<img src="/images/community/splash-pages/snocastle.png">
+  <img src="/images/community/splash-pages/snocastle.png">
+  <p><small>100% Cucumber magic.</small></p>
 </div>
 ---
