@@ -1,4 +1,3 @@
----
 layout: post
 title:  Splash page examples
 date:   2015-09-22
@@ -71,7 +70,3 @@ Take a look at some of the splash pages made with Cucumber Tony
 <div class="text-center">
 <img src="/images/community/splash-pages/snocastle.png">
 </div>
-
-
-
-
