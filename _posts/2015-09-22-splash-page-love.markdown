@@ -1,22 +1,23 @@
+---
 layout: post
-title:  Splash page examples
-date:   2015-09-22
+title: Splash Page Magic
+date: 2015-07-24
 categories: showcase
-tags: poops
+tags: showcase
 keywords: WiFi Splash Page, WiFi Captive Portal, WiFi Welcome Page, WiFi Splash page html5, WiFi splash page example, wifi splash page template
 permalink: /community/showcase/:title.html
 ---
 
-<h2>What can I make with Cucumber Tony?</h2>
+<h2>What can you make with Cucumber Tony?</h2>
 
-Your splash page is the gateway to your Wi-Fi hotspot. Every guest to your Wi-Fi hotspot sees this page before they access the Internet; first impressions are everything.
+Your splash page is the gateway to your Wi-Fi hotspot. It's a page of joy and love. Every guest in your Wi-Fi hotspot sees this page before they access the Internet; first impressions are everything.
 
 Take a look at some of the splash pages made with Cucumber Tony
 
 <hr>
 
 <div class="text-center">
-<img src="/images/community/splash-pages/benito.png">
+  <img src="/images/community/splash-pages/benito.png">
 </div>
 
 <hr>
@@ -72,3 +73,4 @@ Take a look at some of the splash pages made with Cucumber Tony
 <div class="text-center">
 <img src="/images/community/splash-pages/snocastle.png">
 </div>
+---

@@ -3,9 +3,11 @@ html {
     /* min-height: 100%; */
 }
 body {
-  /* margin-bottom: 400px; */
-  /* height: 100%!important; */
-  /* -webkit-font-smoothing: antialiased; */
+  -webkit-font-smoothing: antialiased;
+}
+
+p {
+  line-height: 1.85;
 }
 
 h2 {
@@ -38,13 +40,17 @@ label {
 }
 
 documentation li a {
-  color: #5D5D5D;
+  color: #555459;
 }
 
 documentation ul {
   list-style-type: none;
   margin-left: 0px;
-  line-height: 2.2rem;
+  line-height: 3.2rem;
+}
+
+.community-image {
+  margin: 20px 0;
 }
 
 @media only screen and (min-width: 1024px) {

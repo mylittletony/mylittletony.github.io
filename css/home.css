@@ -92,12 +92,23 @@
   }
 
   .benitos-hat {
-    position:absolute;
-    height: 560px;
-    right: -679px;
-    width: 1076px;
+    background-size: 900px 687px;
+    background-repeat: no-repeat;
+    width: 555px;
+    margin-top: -40px;
+    margin-bottom: -40px;
+    height: 659px;
+    /* background-image: url('https://d3e9l1phmgx8f2.cloudfront.net/images/www/home-CT-in-ipad.png'); */
     background: url('https://d3e9l1phmgx8f2.cloudfront.net/images/www/ct-benitos-hat-wifi.jpg') no-repeat;
-    margin-top: -80px;
+
+    /* position:absolute; */
+    /* height: 560px; */
+    /* right: -679px; */
+    /* left: 0px; */
+    /* /1* width: 100%; *1/ */
+    /* background: url('https://d3e9l1phmgx8f2.cloudfront.net/images/www/ct-benitos-hat-wifi.jpg') no-repeat; */
+    /* margin-top: -80px; */
+    /* overflow: hidden; */
   }
 
   .home-integrations {
