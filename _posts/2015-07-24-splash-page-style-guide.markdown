@@ -9,9 +9,9 @@ permalink: /community/tutorials/:title.html
 
 <h2>Why have a splash page?</h2>
 
-Your splash page is the gateway to your Wi-Fi hotspot. It’s part of the captive portal that authenticates users (checks that they’re allowed to use your Wi-Fi) and keeps your hotspot secure and legally compliant. 
+Your splash page is the gateway to your Wi-Fi hotspot. It’s part of the captive portal that authenticates users (checks that they’re allowed to use your Wi-Fi) and keeps your hotspot secure and legally compliant.
 
-Every guest to your Wi-Fi hotspot sees this page before they access the Internet; first impressions are everything. 
+Every guest to your Wi-Fi hotspot sees this page before they access the Internet; first impressions are everything.
 
 So, as well as a bit of security, it’s an opportunity to talk to your WiFi users. A simple welcome message waves a nice ‘hello’ to everyone.
 
@@ -21,7 +21,7 @@ So, as well as a bit of security, it’s an opportunity to talk to your WiFi use
 <img src="/images/community/tutorials/responsive-layout.png">
 </div>
 
-<h3>Keep it simple</h3> 
+<h3>Keep it simple</h3>
 
 The main purpose of the splash page is to let your guests connect to your Wi-Fi, so this should be your main focus.
 
