@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Splash page examples
-date:   2015-07-24
+date:   2015-09-22
 categories: tutorials
 keywords: WiFi Splash Page, WiFi Captive Portal, WiFi Welcome Page, WiFi Splash page html5, WiFi splash page example, wifi splash page template
 ---
