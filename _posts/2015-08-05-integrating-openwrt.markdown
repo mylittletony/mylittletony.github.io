@@ -4,6 +4,7 @@ title:  Setting up a splash page for OpenWRT/OpenMesh
 date:   2015-08-05
 categories: documentation
 keywords: OpenWRT captive portal, OpenWRT splash page not working, OpenWRT splash page template, OpenWRT splash page free, OpenWRT splash page html, OpenWRT splash page hosting, OpenMesh captive portal, OpenMesh splash page not working, OpenMesh splash page template, OpenMesh splash page free, OpenMesh splash page html, OpenMesh splash page hosting, DD-WRT
+permalink: /community/tutorials/:title.html
 ---
 
 You can use the Cucumber Tony dashboard, splash pages and radius servers including our Facebook logins with your OpenWRT, DD-WRT, OpenMesh and other boxes.

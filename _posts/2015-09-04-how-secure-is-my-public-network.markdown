@@ -5,6 +5,8 @@ date:   2015-09-04
 categories: tutorials
 keywords: WiFi Splash Page, WiFi Captive Portal, WiFi Welcome Page, WiFi security, 
 thumbnail: /images/community/thumbnails/secure-wifi.png
+tags: tutorials
+permalink: /community/tutorials/:title.html
 ---
 
 In this day and age, there are a lot of threats from the digital world. So if you are going to open up your network to the public and offer WiFi access, there are a few things that you should do to help protect yourself from these would be dangers.

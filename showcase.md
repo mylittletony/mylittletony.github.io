@@ -15,6 +15,9 @@ redirect_from: "/documentation/"
 
 <div class="row">
   <div class="small-12 columns">
-    lkasjdflkajsdf
+    {% for post in site.tags %}
+      <li>{{ post }}</li>
+    {% endfor %}
   </div>
 </div>
+
