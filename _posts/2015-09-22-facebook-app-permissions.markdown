@@ -140,7 +140,7 @@ Once your application is approved, you should head off and check you can now che
 
 ### More Information
 
-Facebook removed the checkin end point as of Graph API version 2.0. Checkins have been deprecated in favor of attaching place information to posts, or tagging places in Open Graph stories.
+Facebook removed the checkin end point as of Graph API version 2.0. Checkins have been depreciated in favor of attaching place information to posts, or tagging places in Open Graph stories.
 
 So, to checkin, you now need to tag a place in your Open Graph story.
 
