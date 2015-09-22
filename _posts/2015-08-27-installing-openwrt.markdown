@@ -6,12 +6,11 @@ categories: tutorials
 keywords: OpenWRT captive portal, OpenWRT splash page not working, OpenWRT splash page template, OpenWRT splash page free, OpenWRT splash page html, OpenWRT splash page hosting, OpenMesh captive portal, OpenMesh splash page not working, OpenMesh splash page template, OpenMesh splash page free, OpenMesh splash page html, OpenMesh splash page hosting, DD-WRT
 thumbnail: /images/community/thumbnails/openwrt.png
 tags: tutorials
-permalink: /community/tutorials/:title.html
 ---
 
 Installing custom firmware onto your WiFi router will help you bring the best out in your device. It can help boost your WiFi signal, add a number of advanced features, as well as increase the security.
 
-OpenWRT is one of the most popular custom firmware options for your WiFi routers/access points. It is essentially a Linux distribution for your router, allowing you to install packages from a software repository. It’s a really powerful tool. We built the entire Cucumber Tony platform on top of it.
+OpenWRT is one of the most popular custom firmware options for your WiFi routers/access points. It is essentially a Linux distribution for your router, allowing you to install packages from a software repository. It's a really powerful tool. We built the entire Cucumber Tony platform on top of it.
 
 ###Why should you bother?
 
@@ -35,7 +34,7 @@ But for this example, we are going to run through the very basic setup of OpenWR
 - Look for System Tools, and then select Firmware Upgrade. Select the firmware you downloaded and then click Upgrade.
 - Once that has finished, connect to http://192.168.1.1 to open the OpenWRT web interface.
 
-Once you have got to this point, take some time to explore the interface and see what’s on offer. You can get status reports, graphs, and configure your network settings, as well as a lot of other things.
+Once you have got to this point, take some time to explore the interface and see what's on offer. You can get status reports, graphs, and configure your network settings, as well as a lot of other things.
 
 From here, you can add and remove packages you want, and customise your router to do what you want it to do.
 
@@ -43,14 +42,14 @@ There are lots of guides on the OpenWRT wiki on how to configure specific elemen
 
 ###Things to consider
 
-OpenWRT can add a considerable amount of extra features and improve your router’s capabilities to the point that they can match feature sets of some expensive enterprise-class routers.
+OpenWRT can add a considerable amount of extra features and improve your router's capabilities to the point that they can match feature sets of some expensive enterprise-class routers.
 
-However, if you only intend to use the most basic features, there isn’t really much point of going through the process of setting up OpenWRT. Some packages require some configuration through the Command Line Interface, so if you are not comfortable using that then you may not be able to achieve what you want.
+However, if you only intend to use the most basic features, there isn't really much point of going through the process of setting up OpenWRT. Some packages require some configuration through the Command Line Interface, so if you are not comfortable using that then you may not be able to achieve what you want.
 
 On top of this, you can run the risk of rendering your router useless through bricking if you are not careful.
 
 Ultimately, whether or not OpenWRT is right for you is entirely down to you.
 
-Do you want the freedom and flexibility to be able to customise your Router’s feature set (albeit some would argue at the cost of user friendliness) to exactly what you want? If the answer is yes, then give it a go.
+Do you want the freedom and flexibility to be able to customise your Router's feature set (albeit some would argue at the cost of user friendliness) to exactly what you want? If the answer is yes, then give it a go.
 
 <br>

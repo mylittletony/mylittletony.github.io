@@ -4,7 +4,6 @@ title:  Setting up a splash page for a Ruckus ZD network
 date:   2015-07-31
 categories: documentation
 keywords: Ruckus captive portal, Ruckus splash page hosting, Ruckus splash page not working, Ruckus splash page template, Ruckus splash page free, Ruckus splash page html
-permalink: /community/tutorials/:title.html
 ---
 
 In order to use Ruckus with the Cucumber Tony logins and radius, you'll need to make some changes in your Ruckus Zone Director.

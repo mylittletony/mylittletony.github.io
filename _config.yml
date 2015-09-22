@@ -11,6 +11,8 @@ url: "http://www.cucumberwifi.io" # the base hostname & protocol for your site
 # Build settings
 # markdown: kramdown
 
+permalink: /community/tutorials/:title.html
+
 markdown: redcarpet
 # pygments: true
 # baseurl: /
