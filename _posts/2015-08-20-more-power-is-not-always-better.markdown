@@ -5,6 +5,7 @@ date:   2015-08-20
 categories: tutorials
 keywords: WiFi Splash Page, WiFi Captive Portal, WiFi Welcome Page, WiFi Splash page html5, WiFi splash page example, wifi splash page template
 thumbnail: /images/community/thumbnails/rf-power.png
+permalink: /community/tutorials/:title.html
 ---
 
 #Which access point gives the best coverage? 

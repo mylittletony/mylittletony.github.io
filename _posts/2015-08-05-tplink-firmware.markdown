@@ -4,6 +4,7 @@ title:  Installing firmware on a TP-Link access point
 date:   2015-08-05
 categories: documentation
 keywords: tp link firmware update tftp, tplink firmware flash tftp
+permalink: /community/tutorials/:title.html
 ---
 
 To set up a TP-Link box, here's what you'll need:

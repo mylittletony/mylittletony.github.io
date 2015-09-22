@@ -4,6 +4,7 @@ title:  Installing firmware on an Engenius access point
 date:   2015-08-05
 categories: documentation
 keywords: install firmware on engenius ap, wifi firmware, engenius firmware update
+permalink: /community/tutorials/:title.html
 ---
 
 To set up an EnGenius box, here's what you'll need:

@@ -4,6 +4,7 @@ title:  Compatible Hardware
 date:   2015-07-31
 categories: documentation
 keywords: wifi hotspot software, wifi firmware download, update Unifi firmware, meraki captive portal, ruckus captive portal, wifi radius server
+permalink: /community/tutorials/:title.html
 ---
 
 <h3>List of compatible boxes</h3>

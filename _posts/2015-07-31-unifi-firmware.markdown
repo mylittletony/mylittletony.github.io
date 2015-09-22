@@ -4,6 +4,7 @@ title:  Installing firmware on a UniFi access point
 date:   2015-07-31
 categories: documentation
 keywords: install firmware on unifi ap, wifi firmware, unifi firmware update
+permalink: /community/tutorials/:title.html
 ---
 
 <h3>Option One - TFTP</h3>

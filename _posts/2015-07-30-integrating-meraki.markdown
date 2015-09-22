@@ -4,6 +4,7 @@ title:  Setting up a splash page for a Meraki network
 date:   2015-07-30
 categories: documentation
 keywords: Meraki captive portal, Meraki splash page not working, Meraki splash page template, Meraki splash page free, Meraki splash page html, Meraki splash page hosting
+permalink: /community/tutorials/:title.html
 ---
 
 In order to use Meraki with the Cucumber Tony logins and radius, you'll need to make some changes in your Meraki portal.
