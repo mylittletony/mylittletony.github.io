@@ -43,6 +43,10 @@ documentation li a {
   color: #555459;
 }
 
+documentation p {
+  margin-bottom: 30px!important;
+}
+
 documentation ul {
   list-style-type: none;
   margin-left: 0px;

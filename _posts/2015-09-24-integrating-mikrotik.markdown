@@ -71,15 +71,16 @@ Scroll down to advanced settings, and replace the radius NAS ID with the same MA
 <img src="/images/community/tutorials/mikrotik/10b.png">
 </div>
 
-11\. Back in winbox, go to IP on the left sidebar and then select Hotspot. 
+11\. Back in winbox, go to IP on the left sidebar and then select Hotspot.
 
 <div class="text-center">
 <img src="/images/community/tutorials/mikrotik/11a.png">
 </div>
 
 Click on hotspot setup and you will only need to change the following: <br>
+```
 Hotspot interface: bridge-local
-
+```
 <div class="text-center">
 <img src="/images/community/tutorials/mikrotik/11b.png">
 </div>
@@ -96,9 +97,7 @@ Hotspot interface: bridge-local
 <img src="/images/community/tutorials/mikrotik/13a.png">
 </div>
 
-Then under the radius tab, enable radius
-<br>Ensure that the mac format is xx:xx:xx:xx:xx
-<br>And ensure that accounting is enabled
+Then under the radius tab, enable radius. The mac format must be **XX-XX-XX-XX-XX-XX** and **accounting should be enabled**. Otherwise you'll get no datas.
 
 <div class="text-center">
 <img src="/images/community/tutorials/mikrotik/13b.png">
@@ -106,22 +105,38 @@ Then under the radius tab, enable radius
 
 14\. Then under walled garden, click the + to add, and add the walled garden entries from the <a href="https://my.ctapp.io/?data-elevio-article=18499#/">walled garden list</a>
 
-enter the walled garden domains under Dst. Host
+Enter the walled garden domains under Dst. Host.
 
 <div class="text-center">
 <img src="/images/community/tutorials/mikrotik/14.png">
 </div>
 
-15\. Go into Files, and find the file named hotspot/login.html and remove it
+15\. Go into Files, and find the file named hotspot/login.html and remove it.
 
 <div class="text-center">
 <img src="/images/community/tutorials/mikrotik/15a.png">
 </div>
 
-Then find the file you downloaded previously, and drag and drop it into the hotspot directory where you removed the previous file
+Then find the file you downloaded previously, and drag and drop it into the hotspot directory where you removed the previous file.
 
 <div class="text-center">
 <img src="/images/community/tutorials/mikrotik/15b.png">
 </div>
 
 At this point you are now set up and can log in through the splash page.
+
+## When things go wrong
+
+### Can't login - in a loop
+
+This is usually caused by incorrect radius settings. If you've entered the details incorrectly, sometimes Mikrotik refuse to update and won't even try and log you in. You'll go round in circles.
+
+If you're sure your settings match the ones in CT, the only way (we know about) to get the device to authenticate is to delete the radius and add it in again.
+
+If you happen to know how to fix this, tell us and we'll give you 50% off for three months! No joke.
+
+## Sign-up, Cucumber is free for unlimited access points
+<a href="https://my.ctapp.io/#/create" class="button success">Sign Up</a>
+
+Sign-up for Cucumber Tony, it's free for unlimited access points. Some awesome is also included.
+<hr>
