@@ -97,6 +97,12 @@ Hotspot interface: bridge-local
 <img src="/images/community/tutorials/mikrotik/13a.png">
 </div>
 
+Then under the Logins tab, make sure that **HTTP PAP** is the only option enabled next to **Login By**.
+
+<div class="text-center">
+<img src="/images/community/tutorials/mikrotik/13login.png">
+</div>
+
 Then under the radius tab, enable radius. The mac format must be **XX-XX-XX-XX-XX-XX** and **accounting should be enabled**. Otherwise you'll get no datas.
 
 <div class="text-center">
