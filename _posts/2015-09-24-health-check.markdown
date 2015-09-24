@@ -33,8 +33,6 @@ To run the Health Check, follow these steps:
 <img src="/images/community/tutorials/health-check/4.png">
 </div>
 
-<hr>
-
 <h2>What is it?</h2>
 <hr>
 <p>The Health Check runs a selection of checks on your box to see if there are any potential issues. The things it checks are as follows:
@@ -48,8 +46,6 @@ To run the Health Check, follow these steps:
 <li><b>In Sync</b> - This checks if your box's configuration matches up to what it should be in Cucumber Tony</li>
 </ul>
 
-<br>
-
 <h2>Common issues</h2>
 <hr>
 <p><strong>Your box MTU is too high. Reduce this or increase on your modem.</strong>
@@ -57,11 +53,11 @@ To run the Health Check, follow these steps:
 <p>To change the MTU settings on the box just follow these steps:
 </p>
 <ul>
-	<li>Head into Boxes on the left hand sidebar</li>
-	<li>Click on the box that you want to make changes on</li>
-	<li>Click on Settings across the top of the page</li>
-	<li>Scroll down for a section called Connectivity Settings</li>
-	<li>You will find a field for changing your MTU here</li>
+<li>Head into Boxes on the left hand sidebar</li>
+<li>Click on the box that you want to make changes on</li>
+<li>Click on Settings across the top of the page</li>
+<li>Scroll down for a section called Connectivity Settings</li>
+<li>You will find a field for changing your MTU here</li>
 </ul>
 <p>We recommend dropping your MTU on the box by 8 from that of your network.
 </p>
