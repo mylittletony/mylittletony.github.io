@@ -7,10 +7,16 @@ keywords: script, support, diagnosis, doctor, local portal
 thumbnail: /images/community/thumbnails/doctor.png
 ---
 
+###Note: You have to be on the same network as the Access Point to connect to the local portal.
+
 To run the script, follow these steps:
 
 <ol>
-<li>Connect to the Access Point via either it's private network, directly through a cable, or over your WAN using your box's IP (you will not be able to access any of the local portal on the public WiFi)</li>
+<li>Connect to the Access Point using one of these methods:<br>
+The private network<br>
+Directly via ethernet cable<br>
+Over your WAN using your box's IP<br> 
+(**It doesn't work on the public WiFi network**)</li>
 
 <li>Enter the following into your browser's address bar: <br>
 <a href="polka.box/doctor">polka.box/doctor</a> <br>
