@@ -5,7 +5,7 @@ date: 2015-09-25
 categories: showcase
 tags: showcase
 keywords: WiFi Splash Page, WiFi Captive Portal, WiFi Welcome Page, WiFi Splash page html5, WiFi splash page example, wifi splash page template
-permalink: /community/showcase/captive-portals
+permalink: /community/showcase/how-trident-used-ct
 ---
 
 The Ruckus virtual smartzone gateway integration went live a few weeks back so we spoke to Trident Group who were one of the first to start using it to see how things are working out.
