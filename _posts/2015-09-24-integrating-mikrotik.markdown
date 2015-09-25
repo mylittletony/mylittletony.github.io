@@ -141,8 +141,24 @@ If you're sure your settings match the ones in CT, the only way (we know about) 
 
 If you happen to know how to fix this, tell us and we'll give you 50% off for three months! No joke.
 
+### On a Mac or Linux Puter
+
+This is really sucky. We're 50/50 mac and Linux users over here and we've found the clients to be aweful. Here's a link to a Mac version of Winbox to manage the Mikrotik:
+
+<a href="/downloads/MikrotikWinBox3.dmg">Winbox Dowload Mac</a>
+
+Even so, there are two issues with these (the mac and Linux version):
+
+1. Can't drag and drop the files.
+2. Can't access the interface if splash is running
+
+The first we can't solve. The second you can resolve by creating another network (sometimes) and or logging in via the splash.
+
 ## Sign-up, Cucumber is free for unlimited access points
+
 <a href="https://my.ctapp.io/#/create" class="button success">Sign Up</a>
 
 Sign-up for Cucumber Tony, it's free for unlimited access points. Some awesome is also included.
+
+
 <hr>
