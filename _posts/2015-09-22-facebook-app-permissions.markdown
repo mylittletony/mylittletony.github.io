@@ -136,8 +136,6 @@ Once your application is approved, you should head off and check you can now che
   <img src="/images/community/tutorials/facebook-logins/facebook-captive-portal-20.png" width="800px">
 </div>
 
-
-
 ### More Information
 
 Facebook removed the checkin end point as of Graph API version 2.0. Checkins have been depreciated in favor of attaching place information to posts, or tagging places in Open Graph stories.
@@ -149,6 +147,8 @@ So, to checkin, you now need to tag a place in your Open Graph story.
 If you have a specific requirement other than the publish_action, please get in touch and we can discuss adding more features to CT.
 
 Enjoy! Remember, if you don't want to do all this, you can use our application. It's all set up for you. 
+
+### Come join Cucumber
 
 <a href="https://my.ctapp.io/#/create" class="button success">Sign Up</a>
 
