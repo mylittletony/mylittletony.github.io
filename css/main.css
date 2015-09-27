@@ -64,7 +64,7 @@ documentation ul {
   }
 
   .ct-logo {
-    margin: 0px;
+    margin-top: -3px;
   }
 
   .ct-logo img {
@@ -784,3 +784,9 @@ code {
   /* padding-top: 10px!important; */
   /* padding: 0.125rem 0.3125rem 0.0625rem 10px!important; */
 }
+
+table td.plans-header {
+  background-color: grey!important;
+  color: white;
+}
+
