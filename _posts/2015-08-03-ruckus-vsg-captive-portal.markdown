@@ -6,6 +6,9 @@ categories: documentation
 keywords: Ruckus, Ruckus Virtual SmartZone, Captive Portal, Zone Director, Splash Pages,
 description: Ruckus Captive Portal, Setting up a captive portal for the Ruckus Smart Zone Gateway
 ---
+<div class="alert-box success">
+Stuck? Until the end of October 2015, we'll set everything up for you. Just drop us a line from your Cucumber dashboard :)
+</div>
 
 <h3>Getting the Cucumber Dashboard working with your Ruckus Virtual SmartZone</h3>
 <p>The Ruckus Virtual SmartZone is a really fantastic piece of kit. This walk-through demonstrates how to integrate it with our splash pages, view your Ruckus wireless clients and, even view the status of your Ruckus APs!</p>
