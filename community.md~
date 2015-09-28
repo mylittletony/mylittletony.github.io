@@ -3,6 +3,7 @@ permalink: /community/showcase/:title.html
 layout: default
 title: Learn about Cloud managed guest wifi
 permalink: /community/index.html
+redirect_from: "/documentation/"
 ---
 <documentation>
   <div class="row">
