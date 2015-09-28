@@ -296,6 +296,44 @@ At the top of the top, it should show your VSZ host. If you cannot see this, go 
 
 Traffic comes from a number of servers and the IPs rotate frequently. We therefore recommend allowing access to the ports from all IPs.
 
+### Problems connecting your APs to your VSZ.
+
+This is the biggest issue customers have right now. To get your APs connected, follow these steps:
+
+**Reset your AP.**
+
+Stick a pin in the back of the device and wait for 10 seconds.
+
+**SSH to your AP**
+
+```
+ssh super@ip-of-the-device
+```
+
+Enter super and sp-admin as the default passwords.
+
+**Change your VSZ Host**
+
+Type this on the command line after you've logged in.
+
+```
+set scg ip ip-of-your-vsz
+```
+
+Hit return and confirm the changes were made with:
+
+```
+get scg
+```
+
+**Move your AP from staging to production**
+
+When you login to your VSZ, you'll probably notice the AP is in the staging list. All you need to do is move it to your production zone.
+
+### Is this compatible with CloudRuckus?
+
+You bet. The Cucumber dashboard works with any Smart Zone Gateway. Just enter your details as described above.
+
 <br><br>
 <div class="text-center">
 <p>Sign-up for a Cucumber dashboard. It's free for unlimited access points!</p>
