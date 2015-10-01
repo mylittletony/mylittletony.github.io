@@ -1,0 +1,34 @@
+---
+layout: default
+title: Cucumber Tony Documentation
+description: Documentation for Cucumber Tony's Cloud Wi-Fi Platform
+---
+<div class="row">
+  <div class="small-12 medium-8 columns">
+    <h1>Quick Network Setup</h1>
+    <hr>
+    <h2>Sign Up</h2>
+    <p>To get started with Cucumber Tony, head over to <a href="my.ctapp.io">my.ctapp.io</a> and once here, click <b>Sign Up</b>, enter your email address and then click on the <b>Sign-up for free</b> button.</p>
+    <div class="text-center">
+		<img src="/images/community/documentation/ct-register.gif">
+		</div>
+    <p>You'll be sent a registration link by email, simply open it up and click on the link, which will start you on your account creation in Cucumber Tony.</p>
+		<hr>
+		<h2>Your First Location</h2>
+		<div class="text-center">
+		<img src="/images/community/documentation/first-location.gif">
+		</div>
+    <p>You will now have to fill in a few bits of information, including things like your Location name and custom brand.</p>
+    <p>Just follow the steps in the setup one by one as shown above, until you reach your location dashboard.</p>
+    <div class="doc-buttons">
+		  <div class="button-left">
+      <a href="/documentation/" class="large button">Back</a>
+    </div>
+    <div class="button-right">
+      <a href="/documentation/guest-wifi.html" class="large button">Next</a>
+    </div>
+  </div>
+  <div class="small-12 medium-4 columns">
+    {% include sidebar.html %}
+  </div>
+</div>
