@@ -66,26 +66,17 @@
   margin-right: auto;
 }
 
-.button-left {
-	float: left;
+
+.doc-buttons {
+	text-align: center;
 }
 
-.button-align-right {
-	text-align: right;
+.button-left {
+	display: inline-block;
+	padding: 20px;
 }
 
 .button-right {
-	float: right;
-}
-
-.button-align-left {
-	text-align: left;
-}
-
-.button-nav {
-	text-align: center;
-  padding-top: 40px;
-  position: relative;
-  background: url(../img/article-footer.png) top center no-repeat;
-  margin: 40px -20px 10px;
+	display: inline-block;
+	padding: 20px;
 }
