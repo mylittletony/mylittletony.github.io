@@ -28,7 +28,7 @@ Jonathan is the IT guy at Vospers motors. He has been using Cucumber Tony since 
 
 ###What do you love about Cucumber?
 
->The support. It’s by far the best support I’ve had from a company. The development of the platform has been immense. I can chat to someone who knows their stuff in a view minutes. You can see the transformation from a few years back, and all through that process the team have been there making changes and fixes as soon as you mention them.
+>The support. It’s by far the best support I’ve had from a company. The development of the platform has been immense. I can chat to someone who knows their stuff in a few minutes. You can see the transformation from a few years back, and all through that process the team have been there making changes and fixes as soon as you mention them.
 
 ###Anything else you’d like to add?
 
@@ -52,3 +52,4 @@ You can be like Jonathan and join the Cucumber community. Just create a dashboar
 <hr>
 
 </div>
+
