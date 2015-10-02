@@ -1,11 +1,14 @@
 <h2>Getting Started</h2>
 
+<hr>
 
 <a href="/documentation/"><p>Welcome</p></a>
 <a href="/documentation/network-setup.html"><p>Quick Network Setup</p></a>
 <a href="/documentation/guest-wifi.html"><p>Basic Guest WiFi Config</p></a>
-<a href="/documentation/ap-setup.html"><p>Access Point Setup</p></a>
+<a href="/documentation/firmware-download.html"><p>Firmware Download</p></a>
+<a href="/documentation/third-party-integration.html"><p>Third Party Integration</p></a>
 
+<!--
 <br>
 
 <h2>Your Network</h2>
@@ -18,3 +21,10 @@
 <h2>Troubleshooting</h2>
 
 <a href="#"><p>TBC</p></a>
+-->
+
+<hr>
+
+<div class="text-center">
+<a href="/documentation/help" class="button">Sign Up</a><br>
+</div>
