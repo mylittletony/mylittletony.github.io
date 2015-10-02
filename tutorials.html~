@@ -39,8 +39,19 @@ permalink: /community/tutorials/index.html
           </li>
         {% endfor %}
       </ul>
-      <hr>
-      <p><a href="/community/">Back to Community</a></p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="small-12 columns">
+      <h2>Documentation</h2>
+      <ul>
+        {% for post in site.categories.documentation %}
+          <li>
+            <a href="{{ post.url }}">{{ post.title }}</a>
+          </li>
+        {% endfor %}
+      </ul>
     </div>
   </div>
 </documentation>
