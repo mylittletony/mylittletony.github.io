@@ -15,10 +15,10 @@ permalink: /community/index.html
     <div class="small-12 columns text-center">
       <div class="row">
         <div class="small-12 medium-4 columns">
-          <a href="">
+          <a href="/documentation/">
             <img src="/images/community/documentation.png" class="community-image">
           </a>
-          <p>Read the manual (coming soon)</p>
+          <p>Read the manual</p>
         </div>
         <div class="small-12 medium-4 columns">
           <a href="/community/tutorials/">
