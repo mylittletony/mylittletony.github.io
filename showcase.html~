@@ -20,8 +20,7 @@ permalink: /community/showcase/index.html
           </li>
         {% endfor %}
       </ul>
-      <hr>
-      <p><a href="/community/">Back to Community</a></p>
+      <p>That's all for now.</p>
     </div>
   </div>
 
