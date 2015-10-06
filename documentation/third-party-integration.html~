@@ -19,8 +19,8 @@ description: Documentation for Cucumber Tony's Cloud Wi-Fi Platform
     </ul>
     <p>Select the box you have from above and follow the guide to integrate with it. Once you have done this, if you haven't already added your box, add it by following <a href="https://cucumberwifi.io/?data-elevio-article=7107">this guide.</a></p>
     <br><br>
-    <div class="doc-buttons">
-		  <div class="button-left">
+    <div class="doc-button-center">
+		  <div class="doc-button">
 		    <a href="/documentation/firmware-download.html" class="large button">Back</a>
 		  </div>
 		</div>

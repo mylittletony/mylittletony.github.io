@@ -6,12 +6,14 @@ description: Documentation for Cucumber Tony's Cloud Wi-Fi Platform
 <div class="row">
   <div class="small-12 medium-8 columns">
     <h1>Welcome</h1>
+    <hr>
     <p>This site aims to be a comprehensive guide to Cucumber Tony. We'll cover topics such as getting your network set up, monitoring your access points, as well as managing and monitoring small or large WiFi networks</p>
     <br>
     <h1>What is Cucumber Tony</h1>
+    <hr>
     <p>Cucumber Tony is a cloud based WiFi platform. It gives you control over your WiFi access points...</p>
-      <div class="doc-buttons">
-		    <div class="button-right">
+      <div class="doc-button-center">
+		    <div class="doc-button">
 		      <a href="/documentation/network-setup.html" class="large button">Next</a>
 		    </div>
 		  </div>
