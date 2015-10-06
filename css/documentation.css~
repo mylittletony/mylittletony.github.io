@@ -1,32 +1,5 @@
-.sidebar {
-  padding: 10px;
-  float: right;
-  width: 25%;
-}
-
-.col-md-4 {
-  position: relative;
-  min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px;
-  float: left;
-}
-
-.col-md-8 {
-  float: left;
-  width: 75%;
-  padding-right: 15px;
-  padding-left: 15px;
-}
-
-.doc-button-double {
-  width: 35%;
-  margin: auto;
-}
-
-.doc-button {
-  width: 20%;
-  margin: auto;
+.documentation img {
+  margin: 20px 0;
 }
 
 .blog-previews {
@@ -40,30 +13,15 @@
   width: 100%;
 }
 
-.col-xs-6 {
-  float: left;
-  position: relative;
-  width: 50%;
-  min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px;
-  text-align: center;
-}
-
-.col-md-4 {
-  float: left;
-  position: relative;
-  width: 33.33333333%;
-  min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px;
-  text-align: center;
-}
-
 .document-column {
   width: 78%;
   margin-left: auto;
   margin-right: auto;
+}
+
+
+.doc-buttons {
+	text-align: center;
 }
 
 .button-left {
@@ -71,19 +29,7 @@
 	padding: 20px;
 }
 
-.button-align-right {
-	text-align: right;
-}
-
 .button-right {
 	display: inline-block;
 	padding: 20px;
-}
-
-.button-align-left {
-	text-align: left;
-}
-
-.doc-buttons {
-	text-align: center;
 }
