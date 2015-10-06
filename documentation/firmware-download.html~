@@ -6,6 +6,7 @@ description: Documentation for Cucumber Tony's Cloud Wi-Fi Platform
 <div class="row">
 	<div class="small-12 medium-8 columns">
     <h1>Firmware Download</h1>
+    <hr>
     <p>This section covers devices that can be flashed with our firmware. If you are looking for third party integration, please look at the next step</p>
     <p>The devices that we have firmware support for are as follows:</p>
     <ul>
