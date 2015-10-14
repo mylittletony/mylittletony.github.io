@@ -790,3 +790,8 @@ table td.plans-header {
   color: white;
 }
 
+.alert-box.info {
+    background-color: #F2F1F1;
+    border-color: #74bfdd;
+    color: #4f4f4f;
+}
