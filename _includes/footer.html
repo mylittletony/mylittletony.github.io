@@ -23,6 +23,7 @@
             <li><a href="/about">About Us</a></li>
             <li><a href="/contact">Contact The Team</a></li>
             <li><a href="/wifi-partners">Partners & Resellers</a></li>
+            <li><a href="/non-profits-and-charities">Nonprofits & Charities</a></li>
             <li><a href="https://medium.com/guest-wifi">Blog</a></li>
           </ul>
         </div>
@@ -54,10 +55,10 @@
   function GetURLParameter(sParam) {
     var sPageURL = window.location.search.substring(1);
     var sURLVariables = sPageURL.split('&');
-    for (var i = 0; i < sURLVariables.length; i++) 
+    for (var i = 0; i < sURLVariables.length; i++)
     {
       var sParameterName = sURLVariables[i].split('=');
-      if (sParameterName[0] == sParam) 
+      if (sParameterName[0] == sParam)
       {
         return sParameterName[1];
       }
@@ -113,6 +114,7 @@ ga('send', 'pageview');
 <!-- <img height="1" width="1" style="display:none;" alt="" src="https://analytics.twitter.com/i/adsct?txn_id=l6fp7&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" /> -->
 <!-- <img height="1" width="1" style="display:none;" alt="" src="//t.co/i/adsct?txn_id=l6fp7&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" /> -->
 <!-- </noscript> -->
+
 <script type="text/javascript">
   $( document ).ready(function() {
     var footer = $('#footer');
@@ -126,6 +128,7 @@ ga('send', 'pageview');
     }
   });
 </script>
+<script src="/js/tony.js"></script>
 <script>
 window.intercomSettings = {
     app_id: 'zklfhs87'

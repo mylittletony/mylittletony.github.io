@@ -65,7 +65,7 @@ To run the Health Check, follow these steps:
 <br><br>
 <div class="text-center">
 <p>Sign-up for a Cucumber dashboard. It's free for unlimited access points!</p>
-<a href="https://my.ctapp.io/#/create" class="button large success">Join</a>
+<a href="https://my.ctapp.io/#/create" class="button large success dst">Join</a>
 </div>
 <br><br>
 <br><br>
