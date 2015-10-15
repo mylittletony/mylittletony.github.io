@@ -28,7 +28,7 @@ thumbnail: /images/community/thumbnails/aruba-setup.png
 <img src="/images/community/tutorials/mikrotik/winbox-mac.png">
 </div>
 
-5\. Then using a web browser, go into your Cucumber Tony dashboard and <a href="https://my.ctapp.io/?data-elevio-article=7107#/">add the box in</a> using the MAC address you retrieved
+5\. Then using a web browser, go into your Cucumber Tony dashboard and <a href="https://my.ctapp.io/?data-elevio-article=7107#/" class="dst">add the box in</a> using the MAC address you retrieved
 
 6\. Click on the radius settings button on your box page in CT and keep note of the information
 
@@ -109,7 +109,7 @@ Then under the radius tab, enable radius. The mac format must be **XX-XX-XX-XX-X
 <img src="/images/community/tutorials/mikrotik/winbox-accounting.png">
 </div>
 
-14\. Then under walled garden, click the + to add, and add the walled garden entries from the <a href="https://my.ctapp.io/?data-elevio-article=18499#/">walled garden list</a>
+14\. Then under walled garden, click the + to add, and add the walled garden entries from the <a href="https://my.ctapp.io/?data-elevio-article=18499#/" class="dst">walled garden list</a>
 
 Enter the walled garden domains under Dst. Host.
 
@@ -154,7 +154,7 @@ The first we can't solve. The second you can resolve by creating another network
 
 ## Sign-up, Cucumber is free for unlimited access points
 
-<a href="https://my.ctapp.io/#/create" class="button success">Sign Up</a>
+<a href="https://my.ctapp.io/#/create" class="button success dst">Sign Up</a>
 
 Sign-up for Cucumber Tony, it's free for unlimited access points. Some awesome is also included.
 

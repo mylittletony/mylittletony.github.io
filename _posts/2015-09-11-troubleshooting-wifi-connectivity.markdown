@@ -39,6 +39,6 @@ Run your checks on your modem, and if that turns up nothing, then it is time to 
 
 <hr>
 
-*To see how Cucumber Tony can help you diagnose and maintain your WiFi networks, <a href="https://my.ctapp.io/#/">head on over and give it a go.</a>*
+*To see how Cucumber Tony can help you diagnose and maintain your WiFi networks, <a href="https://my.ctapp.io/#/" class="dst">head on over and give it a go.</a>*
 
 <br>
