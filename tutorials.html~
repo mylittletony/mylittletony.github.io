@@ -12,14 +12,14 @@ permalink: /community/tutorials/index.html
     </div>
   </div>
 
-  <!-- <div class="row">
+  <div class="row">
     <div class="small-12 columns">
-      {% for post in site.posts limit:3 %}
+      {% for post in site.categories.tutorials limit:3 %}
       <div class="small-12 medium-4 columns">
         {% if post.thumbnail %}
         <img src="{{ post.thumbnail }}" style= align="center" />
         {% else %}
-        <img src="/images/community/thumbnails/rf-power.png" style="height: 200px" align="center" />
+        <img src="/images/community/thumbnails/rf-power.png" align="center" />
         {% endif %}
         <a href="{{ BASE_PATH }}{{ post.url }}"><h3 style=color:#868686;>{{ post.title }}</h3></a>
       </div>
@@ -27,7 +27,6 @@ permalink: /community/tutorials/index.html
     <hr/>
     </div>
   </div>
-  -->
 
   <div class="row">
     <div class="small-12 columns">
@@ -39,19 +38,8 @@ permalink: /community/tutorials/index.html
           </li>
         {% endfor %}
       </ul>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="small-12 columns">
-      <h2>Documentation</h2>
-      <ul>
-        {% for post in site.categories.documentation %}
-          <li>
-            <a href="{{ post.url }}">{{ post.title }}</a>
-          </li>
-        {% endfor %}
-      </ul>
+      <hr>
+      <p><a href="/community/">Back to Community</a></p>
     </div>
   </div>
 </documentation>
