@@ -101,7 +101,7 @@ You have three ways to get your hands on a box.
 
 If you don't want to install the firmware yourself you can buy a box from us that already has the firmware installed. It will arrive in the post ready to plug in. No configuration required.
 
-You can buy a box from within your account - <a href="https://my.ctapp.io/#/shop">click here</a>
+You can buy a box from within your account - <a href="https://my.ctapp.io/#/shop" class="dst">click here</a>
 
 <h3>Option 2. Integrating via your radius settings (Meraki, Ruckus and more)</h3>
 <hr>

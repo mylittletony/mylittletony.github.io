@@ -63,7 +63,7 @@ Here’s how he does it.
 
 <h2>Come join Cucumber</h2>
 
-<a href="https://my.ctapp.io/#/create" class="button success">Sign Up</a><br>
+<a href="https://my.ctapp.io/#/create" class="button success dst">Sign Up</a><br>
 
 <p>Sign-up for Cucumber Tony, it's free for unlimited access points :)</p>
 

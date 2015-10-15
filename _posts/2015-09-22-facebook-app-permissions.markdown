@@ -150,7 +150,7 @@ Enjoy! Remember, if you don't want to do all this, you can use our application. 
 
 ### Come join Cucumber
 
-<a href="https://my.ctapp.io/#/create" class="button success">Sign Up</a>
+<a href="https://my.ctapp.io/#/create" class="button success dst">Sign Up</a>
 
 Sign-up for Cucumber Tony, it's free for unlimited access points and social logins :)
 <hr>
