@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Things you should know before you buy broadband
-date:   2015-10-16
+date:   2015-10-15
 categories: tutorials
 keywords: WiFi Splash Page, WiFi Captive Portal, WiFi Welcome Page, WiFi Splash page html5, WiFi splash page example, wifi splash page template
 thumbnail: /images/community/thumbnails/broadband.png
