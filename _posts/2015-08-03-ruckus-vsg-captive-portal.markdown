@@ -272,9 +272,9 @@ The only way to reset this error is to **change the host** in your location sett
 
 You can see the login page but when you login, it sends you back to the login page. Here's what you can do:
 
-* Swap the access type to clickthrough to rule out password issues
-* Ensure your radius secrets match the ones in your VSZ radius settings
-* Ensure your Nas-Id from your Cucumber Wi-Fi account matches the one in your VSZ
+- &#8226; Swap the access type to clickthrough to rule out password issues
+- &#8226; Ensure your radius secrets match the ones in your VSZ radius settings
+- &#8226; Ensure your Nas-Id from your Cucumber Wi-Fi account matches the one in your VSZ
 
 <div class="text-center">
   <img src="/images/community/tutorials/vsz-radius-secret-1.png" width="800px">
