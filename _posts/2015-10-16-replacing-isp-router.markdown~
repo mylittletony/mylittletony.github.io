@@ -25,7 +25,17 @@ It all depends entirely on what you want your router to do for you.
 
 All you will need to do is ensure that you get your correct ADSL settings from your provider, and put them into your new device.
 
-How to do this varies between the individual devices, but it is a relatively simple process.
+How to do this varies between the individual devices, but it is a relatively simple process;
+
+1. Retrieve your ADSL configuration details from one of two options.
+  * Contact your ISP and request the details
+  * Login to your Router and retrieve them from here (This will only work on some routers as others hide your password for extra security)
+  
+2. Connect up your new router, and then using the details you retrieved from your ISP/previous router, enter them into the correct fields
+
+<div class="text-center">
+<img src="/images/community/tutorials/adsl-login.png">
+</div>
 
 However, some ISPs (such as Sky Broadband) will not let you have the ADSL username and password to use your own router. There are ways around this, but it might not be for everyone, and it might end up breaching your contract with your ISP so make sure you check first.
 
@@ -55,4 +65,4 @@ If you really want to make the most out of your broadband speeds, the router is 
 
 <hr>
 
-</div>y
+</div>
