@@ -109,7 +109,9 @@ Then under the radius tab, enable radius. The mac format must be **XX-XX-XX-XX-X
 <img src="/images/community/tutorials/mikrotik/winbox-accounting.png">
 </div>
 
-14\. Then under walled garden, click the + to add, and add the walled garden entries from the <a href="https://my.ctapp.io/?data-elevio-article=18499#/" class="dst">walled garden list</a>
+14\. Then under walled garden, click the + to add, and add the walled garden entries.
+
+You can find the most up to date list of <b><span data-elevio-article="18499">Walled Gardens here.</span></b>
 
 Enter the walled garden domains under Dst. Host.
 
