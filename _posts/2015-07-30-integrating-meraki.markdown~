@@ -48,7 +48,7 @@ Now change the accounting servers to the following:
 
 Scroll further down and look for <b>Walled Garden</b>. Make sure <b>Walled garden</b> is enabled and add the Walled Garden entries to the <b>Walled garden ranges</b>.
 
-You can find the most up to date list of <b><span data-elevio-article="18499">Walled Gardens here.</span></b>
+You can find the most up to date list of <span data-elevio-article="18499">Walled Gardens here.</span>
 
 If you have errors when copying these in, try typing them out manually.
 

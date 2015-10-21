@@ -99,26 +99,8 @@ aa-bb-cc-dd-ee-ff
 ```
 
 <p>Before you save, you need to add some walled gardens. Enter the following.</p>
-<ul>
-<li>&#42;.my-wifi.co</li>
-<li>&#42;.polkaspots.com</li>
-<li>&#42;.wirelessisp.co</li>
-<li>&#42;.ctapp.io</li>
-<li>&#42;.cucumberwifi.io</li>
-<li>d3e9l1phmgx8f2.cloudfront.net</li>
-<li>d247kqobagyqjh.cloudfront.net</li>
-</ul>
-<p>If you're using Social logins, you will also need these:</p>
-<ul>
-<li>connect.facebook.net</li>
-<li>&#42;.facebook.com</li>
-<li>&#42;.fbcdn.net</li>
-<li>&#42;.akamaihd.net</li>
-<li>&#42;.accounts.google.com</li>
-<li>&#42;.googleapis.com</li>
-<li>&#42;.googleusercontent.com</li>
-<li>&#42;.gstatic.com</li>
-</ul>
+
+You can find the most up to date list of <b><span data-elevio-article="18499">Walled Gardens here.</span></b>
 
 <div class="text-center">
   <img src="/images/community/tutorials/walledgardens.png" width="800px">
