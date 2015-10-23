@@ -7,7 +7,7 @@ keywords: Aruba captive portal, Aruba splash page hosting, Aruba splash page not
 thumbnail: /images/community/thumbnails/aruba-setup.png
 ---
 
-1. Add your Access Points into Cucumber Tony by adding their MAC addresses, following this guide.
+Using a web browser, go into your Cucumber Tony dashboard and <a href="https://my.ctapp.io/?data-elevio-article=7107#/" class="dst">add the box in</a> using the MAC address of your Access Point.
 
 When you have added these to Cucumber Tony, go into the settings page of your box, scrolling down for the section labelled PolkaSpots Settings
 
@@ -161,4 +161,20 @@ You should now be left with the following screen, which means you have configure
 
 <div class="text-center">
 <img src="/images/community/tutorials/aruba-guide/aruba-ui.png">
+</div>
+
+<hr>
+
+*Cucumber Tony is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities.Or you can utlise the captive portal solution with your existing infrastucture. Create a free account and check it here <a href="https://cucumberwifi.io">cucumberwifi.io</a>*
+
+<div class="text-center">
+
+<h2>Come join Cucumber</h2>
+
+<a href="https://my.ctapp.io/#/create" class="button success dst">Sign Up</a><br>
+
+<p>Sign-up for Cucumber Tony, it's free for unlimited access points :)</p>
+
+<hr>
+
 </div>
