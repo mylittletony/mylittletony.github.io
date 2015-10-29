@@ -68,7 +68,7 @@
 	top:1px;
 }
 
-.home-header-img {
+.cafe-header-img {
   background-image: url(/images/pages/working-in-cafes-london.jpg);
   background-repeat: no-repeat;
   background-position: center;
