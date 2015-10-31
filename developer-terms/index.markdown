@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Cucumber WiFi End User Terms
-keywords: WiFi cloud management, cloud wifi, professional wifi platform, Cucumber Tony WiFi, wifi hotspot software, unifi firmware
+title: Cucumber WiFi Developer Terms
+keywords: WiFi API, developer wifi, professional wifi platform, Cucumber Tony WiFi, wifi hotspot software, unifi firmware
 
 ---
 
