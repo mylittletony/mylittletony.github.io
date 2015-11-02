@@ -66,6 +66,12 @@ https://auth.ctapp.io/oauth/authorize?client_id=XXX&response_type=code&redirect_
 - XXX is your App ID, obtained from your Cucumber dash.
 - YYY is your callback URL, this must match your Cucumber App Settings.
 
+It's hugely important that you encode the redirect URL, otherwise you'll see an error. The request should look like this:
+
+```
+https://auth.ctapp.io/oauth/authorize?client_id=18273618253765123&redirect_uri=https%3A%2F%2Fwww.great-site.com&response_type=code
+```
+
 After visiting the URL, login with your Cucumber credentials and you should be sent to a confirmation page.
 
 <div class="text-center">
@@ -245,11 +251,31 @@ And there you go!
 
 ------------------------------------------------
 
+## Common Problems
+
+### The redirect uri included is not valid.
+
+If you're using curl to test, please make sure your redirect URL is properly encoded. For example, the request should look like this:
+
+```
+https://auth.ctapp.io/oauth/authorize?client_id=18273618253765123&redirect_uri=https%3A%2F%2Fwww.great-site.com&response_type=code
+```
+
+You should also ensure your redirect url matches the callback url you've set in your application settings. Make sure there's no trailing slashes etc.
+
+<div class="text-center">
+<img src="/images/community/tutorials/ct-api-oauth-4.png" width='600px'>
+</div>
+
+<hr>
+
+## Read the API docs
+
 Don't forget, the API docs are here:
 
 http://docs.polkaspots.apiary.io/#
 
-<hr>
+--------------------------------------------------
 
 *Cucumber Tony is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities.Or you can utlise the captive portal solution with your existing infrastucture. Create a free account and check it here <a href="https://cucumberwifi.io">cucumberwifi.io</a>*
 
