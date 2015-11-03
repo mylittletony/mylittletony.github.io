@@ -18,9 +18,9 @@ To use your external captive portal solution with Cucumber Tony just follow thes
 
 2. Scroll down to the **Captive Portal** section, and the **Advanced Settings** header under that.
 
-3. Unselect **Use Cucumber Tony Splash** and you will see two new fields appear.
+3. Unselect **Use Cucumber Tony Splash** & **Use Cucumber Tony Radius** and you will see new fields appear.
 
-4. Enter in the **Captive Portal URL** and the **Captive Portal UAM Secret** and then save your changes.
+4. Enter the required information into the fields and then save your changes.
 
 <hr>
 
