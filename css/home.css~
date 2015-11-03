@@ -242,7 +242,7 @@
   }
 
   .home-integrations {
-    padding: 40px 0 60px 0;
+    padding: 40px 0 40px 0;
     margin-bottom: -20px;
     background-color: #017fdd;
     color: white;
