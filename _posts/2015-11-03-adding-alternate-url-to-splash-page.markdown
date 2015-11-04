@@ -6,7 +6,7 @@ categories: documentation
 keywords: captive portal, splash page, external, public, URL
 ---
 
-To use your external captive portal solution with Cucumber Tony just follow these simple steps.
+To use an Alternative Splash URL with Cucumber Tony just follow these simple steps.
 
 <div class="text-center">
 <img src="/images/community/tutorials/external-captive-portal/externalsplash.gif">
