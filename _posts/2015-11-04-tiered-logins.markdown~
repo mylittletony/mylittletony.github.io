@@ -1,0 +1,57 @@
+---
+layout: post
+title:  Tiered Logins
+date:   2015-11-04
+categories: documentation
+keywords: multiple splash pages, splash page, captive portal, wifi
+---
+
+Tiered Logins will allow you to achieve setups such as having a splash page with 1 hour free WiFi, and once that has run out they can get a new splash page with paid voucher access.
+
+To set up Tiered Logins on your SSID you will need to first create the different splash pages you want the users to see, and the access restrictions that you want applied to them.
+
+Once you have done this, you will need to adjust the weights of the splash pages.
+
+The highest weight will be the splash that is displayed first.
+
+To do this just follow these steps:
+
+<div class="text-center">
+<img src="/images/community/tutorials/tiered-logins/tiered-logins.gif">
+</div>
+
+1. Head into your **Location** on your dashboard.
+
+2. Select **Splash Pages** on the left sidebar. You will see the weight listed under your different splash pages. Click **Edit** on the SSID you want to change the weight on.
+
+2. Scroll down to the section titled **Advanced Settings** and click to view the settings.
+
+3. Adjust the **Weight** field to what you want. Splash pages with a larger weight will be shown before splash pages with a smaller weight.
+
+4. **Save** your changes.
+
+<hr>
+
+This can be useful in situations such as when using Google+ Social Logins with the default Cucumber Tony credentials. 
+
+In this situation, you will need to use the default splash URL to login, but you might have already branded your location previously.
+
+This allows you to manually set the URL back to it's default.
+
+_**Note:** In this case you should not make any changes to the **Captive Portal UAM Secret**_
+
+<hr>
+
+*Cucumber Tony is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities.Or you can utlise the captive portal solution with your existing infrastucture. Create a free account and check it here <a href="https://cucumberwifi.io">cucumberwifi.io</a>*
+
+<div class="text-center">
+
+<h2>Come join Cucumber</h2>
+
+<a href="https://my.ctapp.io/#/create" class="button success">Sign Up</a><br>
+
+<p>Sign-up for Cucumber Tony, it's free for unlimited access points :)</p>
+
+<hr>
+
+</div>
