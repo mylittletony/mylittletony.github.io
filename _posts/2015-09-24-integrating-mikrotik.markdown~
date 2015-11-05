@@ -10,9 +10,13 @@ thumbnail: /images/community/thumbnails/aruba-setup.png
 >Note: you may lose internet connectivity during some stages of this process if the MikroTik is your only uplink. It will return once you have finished the process.
 
 
-1\. Download Winbox <br>
+1\. Download the resources needed:<br>
+**Winbox:** <br>
 <a href="http://www.mikrotik.com/download">Windows</a> <br>
-<a href="http://www.facchinibr.net/wp/29/05/2013/mikrotik-winbox-mac-osx-download/">Mac</a>
+<a href="http://www.facchinibr.net/wp/29/05/2013/mikrotik-winbox-mac-osx-download/">Mac</a><br>
+<br>
+**HTML File:**<br>
+<a href="http://www.cucumberwifi.io/downloads/microtik.zip">microtik.zip</a> <br>
 
 2\. Connect to your MikroTik device via ethernet cable
 
@@ -36,9 +40,8 @@ thumbnail: /images/community/thumbnails/aruba-setup.png
 <img src="/images/community/tutorials/mikrotik/ct-radius.png">
 </div>
 
-7\. Download <a href="http://www.cucumberwifi.io/downloads/microtik.zip">this file</a> <br>
-Then extract the zip file and retrieve the microik-login.html file
-rename the file to login.html
+7\. Locate the .zip file you downloaded in Step 1, and then extract it to retrieve the microtik-login.html file <br>
+Rename the file to login.html
 
 <div class="text-center">
 <img src="/images/community/tutorials/mikrotik/mikrotik-html.png">
@@ -109,7 +112,9 @@ Then under the radius tab, enable radius. The mac format must be **XX-XX-XX-XX-X
 <img src="/images/community/tutorials/mikrotik/winbox-accounting.png">
 </div>
 
-14\. Then under walled garden, click the + to add, and add the walled garden entries from the <a href="https://my.ctapp.io/?data-elevio-article=18499#/" class="dst">walled garden list</a>
+14\. Then under walled garden, click the + to add, and add the walled garden entries.
+
+You can find the most up to date list of <b><span data-elevio-article="18499">Walled Gardens here.</span></b>
 
 Enter the walled garden domains under Dst. Host.
 
