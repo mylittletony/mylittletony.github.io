@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  How to replace your ISP router and how it will bring you better Wi-Fi
+title:  How to replace your ISP's router and how it will bring you better Wi-Fi
 date:   2015-10-16
 categories: tutorials
 keywords: WiFi Splash Page, WiFi Captive Portal, WiFi Welcome Page, WiFi Splash page html5, WiFi splash page example, wifi splash page template
