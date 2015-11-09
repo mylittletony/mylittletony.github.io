@@ -90,11 +90,13 @@ https://auth.ctapp.io/oauth/token
 
 Ensure you include the following params:
 
-- - client_id: The client ID issued in the first step.
-- - client_secret: The client secret issued in the first step.
-- - redirect_uri: The callback URI we defined previously.
-- - grant_type: This is **authorization_code**.
-- - code: The authorization code received in the previous step.
+<pre>
+client_id: The client ID issued in the first step.
+client_secret: The client secret issued in the first step.
+redirect_uri: The callback URI we defined previously.
+grant_type: This is **authorization_code**.
+code: The authorization code received in the previous step.
+</pre>
 
 For example, using curl:
 
@@ -176,10 +178,12 @@ Your access token WILL expire reguarly and without notice. Sometimes daily. In o
 
 Do another POST request with the following params:
 
-- - client_id: The client ID issued in the first step.
-- - client_secret: The client secret issued in the first step.
-- - grant_type: This is **refresh_token**.
-- - refresh_token: The refresh token your received in the previous step.
+<pre>
+client_id: The client ID issued in the first step.
+client_secret: The client secret issued in the first step.
+grant_type: This is **refresh_token**.
+refresh_token: The refresh token your received in the previous step.
+</pre>
 
 For example:
 
