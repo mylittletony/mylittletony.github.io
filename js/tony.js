@@ -45,7 +45,7 @@ $( document ).ready(function() {
 });
 
 var generateId = function() {
-  return '_' + Math.random().toString(36).substr(2, 9).toUpperCase();
+  return Math.random().toString(36).substr(2, 9).toUpperCase();
 };
 
 init();
