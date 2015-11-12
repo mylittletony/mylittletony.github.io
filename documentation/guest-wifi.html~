@@ -22,11 +22,11 @@ description: Documentation for Cucumber Tony's Cloud Wi-Fi Platform
     <p>From here, you can change your primary access type by selecting an option from the drop down menu. For the most basic option select Clickthrough and save your changes.</p>
     <p>There are a number of other more advanced options here that will be covered in later sections.</p>
     <div id="doc-buttons-container" class="show-for-medium-up">
-      <div class="doc-buttons">
-		    <div class="button-left">
+      <div class="doc-button-center">
+		    <div class="doc-button">
 		      <a href="/documentation/network-setup.html" class="large button">Back</a>
 		    </div>
-		    <div class="button-right">
+		    <div class="doc-button">
 		      <a href="/documentation/firmware-download.html" class="large button">Next</a>
 		    </div>
 		  </div>
