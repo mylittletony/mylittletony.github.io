@@ -5,6 +5,9 @@ date:   2015-11-04
 categories: documentation
 keywords: multiple splash pages, splash page, captive portal, wifi
 ---
+<div class="text-center">
+<h3>What is Tiered Logins?</h3>
+</div>
 
 Tiered Logins will allow you to achieve setups such as having a splash page with 1 hour free WiFi, and once that has run out they can get a new splash page with paid voucher access.
 
@@ -14,11 +17,13 @@ Once you have done this, you will need to adjust the weights of the splash pages
 
 The highest weight will be the splash that is displayed first.
 
-To do this just follow these steps:
+<hr>
 
 <div class="text-center">
-<img src="/images/community/tutorials/tiered-logins/tiered-logins.gif">
+<h3>How to set up Tiered Logins</h3>
+<iframe width="960" height="540" src="https://www.youtube.com/embed/nPskK-OyySo?rel=0&amp;color=white&amp;showinfo=0&amp;autohide=1" frameborder="0" allowfullscreen></iframe>
 </div>
+<br>
 
 1. Head into your **Location** on your dashboard.
 
