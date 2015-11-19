@@ -5,7 +5,16 @@ date:   2015-11-04
 categories: documentation
 keywords: multiple splash pages, splash page, captive portal, wifi
 ---
+<div class="text-center">
+<h3>What is Tiered Logins?</h3>
+</div>
 
+
+<div class="text-center">
+<h3>How to set up Tiered Logins</h3>
+<iframe width="960" height="540" src="https://www.youtube.com/embed/nPskK-OyySo?rel=0&amp;color=white&amp;showinfo=0&amp;autohide=1" frameborder="0" allowfullscreen></iframe>
+</div>
+<br>
 Tiered Logins will allow you to achieve setups such as having a splash page with 1 hour free WiFi, and once that has run out they can get a new splash page with paid voucher access.
 
 To set up Tiered Logins on your SSID you will need to first create the different splash pages you want the users to see, and the access restrictions that you want applied to them.
@@ -14,7 +23,9 @@ Once you have done this, you will need to adjust the weights of the splash pages
 
 The highest weight will be the splash that is displayed first.
 
-To do this just follow these steps:
+<hr>
+
+You will also find text instructions below:
 
 <div class="text-center">
 <img src="/images/community/tutorials/tiered-logins/tiered-logins.gif">
@@ -29,16 +40,6 @@ To do this just follow these steps:
 3. Adjust the **Weight** field to what you want. Splash pages with a larger weight will be shown before splash pages with a smaller weight.
 
 4. **Save** your changes.
-
-<hr>
-
-This can be useful in situations such as when using Google+ Social Logins with the default Cucumber Tony credentials. 
-
-In this situation, you will need to use the default splash URL to login, but you might have already branded your location previously.
-
-This allows you to manually set the URL back to it's default.
-
-_**Note:** In this case you should not make any changes to the **Captive Portal UAM Secret**_
 
 <hr>
 
