@@ -6,16 +6,15 @@ categories: documentation
 keywords: local portal, local, portal, troubleshoot, doctor, checkup, health, status, diagnose
 ---
 
-To access the local portal, connect to the Access Point via either it's private network, directly through a cable, or over your WAN using your box's IP (you will not be able to access any of the local portal on the public WiFi)
+To access the local portal, connect to the Access Point via one of it's SSIDs.
 
-Then enter either the local IP of the box, or the following into your browser's address bar: http://polka.box
+Then enter either the interface IP of that SSID, which you can retrieve from your SSID list in Cucumber Tony.
 
 If you aren't already logged in, it will prompt you for a username and password.
 
 The username for the local portal is currently always polkaspots.
 
 Your password is the serial number of the box that you are trying to connect to, which you can locate through Cucumber Tony on the box's information page as shown below.
-
 
 <div class="text-center">
 <img src="/images/community/tutorials/local-portal/localportal.gif">
