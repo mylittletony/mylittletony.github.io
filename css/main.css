@@ -58,6 +58,42 @@ documentation ul {
   margin: 20px 0;
 }
 
+.openwrt-header-img {
+  background-image: url('/images/community/openwrt/openwrt-board.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 672px;
+  padding-bottom: 2rem;
+  height: 600px;
+  margin-top: -40px;
+}
+
+.openwrt-header-img h2 {
+  font-family: "Courier New", Courier, monospace!important;
+}
+
+.openwrt-header-img h1 {
+  font-family: "Courier New", Courier, monospace!important;
+}
+
+.home-openwrt {
+  padding: 89px 0 0 0;
+  margin-bottom: -20px;
+}
+
+.home-openwrt h1 {
+  font-size: 44px;
+  margin-bottom: 33px;
+}
+
+.test {
+  background-color: white;
+  padding: 40px;
+  height: 400px;
+}
+
+
 @media only screen and (min-width: 1024px) {
 
   body {
