@@ -87,12 +87,11 @@ documentation ul {
   margin-bottom: 33px;
 }
 
-.test {
+.openwrt-panel {
   background-color: white;
   padding: 40px;
   height: 400px;
 }
-
 
 @media only screen and (min-width: 1024px) {
 
@@ -339,12 +338,36 @@ documentation ul {
 
 @media only screen and (max-width: 40em) {
 
+  /* iphone */
+
   body {
-    /* background-color: grey!important; */
+    /* background-color: red!important; */
   }
 
-  /* .off-canvas-wrap, .inner-wrap, .main-section { height:90%; } */
-  /* .main-section { overflow-y: auto; } */
+  .openwrt-header-img {
+    background-image: none;
+    /* background-repeat: no-repeat; */
+    /* background-position: center; */
+    /* background-size: cover; */
+    min-height: 72px;
+    /* padding-bottom: 2rem; */
+    height: 10px;
+    margin-top: -40px;
+  }
+
+  .openwrt-panel {
+    background-color: white;
+    padding: 20px;
+    height: 400px;
+  }
+
+  .home-openwrt h1 {
+    font-size: 28px;
+  }
+
+  .home-openwrt p {
+    font-family: "Courier New", Courier, monospace!important;
+  }
 
   .main-nav {
     text-align: center;
