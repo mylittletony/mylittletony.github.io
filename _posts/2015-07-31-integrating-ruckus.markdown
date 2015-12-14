@@ -104,48 +104,8 @@ You will now see the Walled Garden entries. Click <b>Create New</b> to add the e
 </div>
 
 add the following to the <b>Walled garden</b>:
-<ul>
-<li>&#42;.my-wifi.co</li>
-<li>&#42;.polkaspots.com</li>
-<li>&#42;.wirelessisp.co</li>
-<li>&#42;.ctapp.io</li>
-<li>&#42;.cucumberwifi.io</li>
-<li>d3e9l1phmgx8f2.cloudfront.net</li>
-<li>d247kqobagyqjh.cloudfront.net</li>
-</ul>
 
-The following entries are not mandatory, but there are some reported issues with the <b>iOS captive portal popup</b> that these help resolve:
-
-<ul>
-<li>&#42;.ibook.info</li>
-<li>&#42;.appleiphonecell.com</li>
-<li>&#42;.apple.com</li>
-<li>&#42;.airport.us</li>
-<li>&#42;.thinkdifferent.us</li>
-<li>&#42;.itools.info</li>
-<li>&#42;.filepicker.io</li>
-<li>&#42;.akamaiedge.net</li>
-<li>&#42;.akamaitechnologies.com</li>
-<li>apple.com.edgekey.net</li>
-</ul>
-
-The following entries are needed for <b>Facebook</b> social access:
-
-<ul>
-<li>connect.facebook.net</li>
-<li>&#42;.facebook.com</li>
-<li>&#42;.akamaihd.net</li>
-<li>&#42;.fbcdn.net</li>
-</ul>
-
-The following entries are needed for <b>Google</b> social access:
-
-<ul>
-<li>&#42;.accounts.google.com</li>
-<li>&#42;.googleapis.com</li>
-<li>&#42;.googleusercontent.com</li>
-<li>&#42;.gstatic.com</li>
-</ul>
+You can find the most up to date list of <b><span data-elevio-article="18499">Walled Gardens here.</span></b>
 
 And then save the changes by clicking <b>OK</b>
 
@@ -228,10 +188,10 @@ Do this for all of your Ruckus Access Points.
 ###Can't login - Stuck in a Loop <hr>
 You can see the login page but when you login, it sends you back to the login page. Here's what you can do:
 
-- Swap the access type to clickthrough to rule out password issues
-- Ensure your radius secrets match the ones in your zone director radius settings
-- Ensure your Nas-Id from your Cucumber Wi-Fi account matches the one in your zone director
-- Make sure that your SSID entered through SSH matches the one you entered into your zone director
+- &#8226; Swap the access type to clickthrough to rule out password issues
+- &#8226; Ensure your radius secrets match the ones in your zone director radius settings
+- &#8226; Ensure your Nas-Id from your Cucumber Wi-Fi account matches the one in your zone director
+- &#8226; Make sure that your SSID entered through SSH matches the one you entered into your zone director
 
 If you do connect with an incorrect secret/nas_id then our servers will lock you out as a security measure.
 
@@ -262,3 +222,19 @@ This is the quickest of the options, simply create two zones in CT and add an SS
 Then assign your boxes to the right zone.
 
 This way you don't have to change anything in the ZD.
+
+<hr>
+
+*Cucumber Tony is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities.Or you can utlise the captive portal solution with your existing infrastucture. Create a free account and check it here <a href="https://cucumberwifi.io">cucumberwifi.io</a>*
+
+<div class="text-center">
+
+<h2>Come join Cucumber</h2>
+
+<a href="https://my.ctapp.io/#/create" class="button success dst">Sign Up</a><br>
+
+<p>Sign-up for Cucumber Tony, it's free for unlimited access points :)</p>
+
+<hr>
+
+</div>

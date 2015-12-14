@@ -3,7 +3,7 @@ layout: post
 title:  How to improve your WiFi signal
 date:   2015-06-26 22:29:01
 categories: tutorials
-keywords: Improve WiFi signal, Install WiFi Access point, Plan Wifi network
+keywords: Improve WiFi signal, extend WiFi signal, Install WiFi Access point, Plan Wifi network
 ---
 
 <h2>Introduction</h2>

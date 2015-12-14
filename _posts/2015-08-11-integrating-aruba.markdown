@@ -7,7 +7,7 @@ keywords: Aruba captive portal, Aruba splash page hosting, Aruba splash page not
 thumbnail: /images/community/thumbnails/aruba-setup.png
 ---
 
-1. Add your Access Points into Cucumber Tony by adding their MAC addresses, following this guide.
+Using a web browser, go into your Cucumber Tony dashboard and <a href="https://my.ctapp.io/?data-elevio-article=7107#/" class="dst">add the box in</a> using the MAC address of your Access Point.
 
 When you have added these to Cucumber Tony, go into the settings page of your box, scrolling down for the section labelled PolkaSpots Settings
 
@@ -120,48 +120,7 @@ To change the whitelist click on "Blacklist: 0 Whitelist: 0" and the below scree
 
 Click New and enter the Walled Garden URLs as listed here:
 
-<ul>
-<li>&#42;.my-wifi.co</li>
-<li>&#42;.polkaspots.com</li>
-<li>&#42;.wirelessisp.co</li>
-<li>&#42;.ctapp.io</li>
-<li>&#42;.cucumberwifi.io</li>
-<li>d3e9l1phmgx8f2.cloudfront.net</li>
-<li>d247kqobagyqjh.cloudfront.net</li>
-</ul>
-
-The following entries are not mandatory, but there are some reported issues with the <b>iOS captive portal popup</b> that these help resolve:
-
-<ul>
-<li>&#42;.ibook.info</li>
-<li>&#42;.appleiphonecell.com</li>
-<li>&#42;.apple.com</li>
-<li>&#42;.airport.us</li>
-<li>&#42;.thinkdifferent.us</li>
-<li>&#42;.itools.info</li>
-<li>&#42;.filepicker.io</li>
-<li>&#42;.akamaiedge.net</li>
-<li>&#42;.akamaitechnologies.com</li>
-<li>apple.com.edgekey.net</li>
-</ul>
-
-The following entries are needed for <b>Facebook</b> social access:
-
-<ul>
-<li>connect.facebook.net</li>
-<li>&#42;.facebook.com</li>
-<li>&#42;.akamaihd.net</li>
-<li>&#42;.fbcdn.net</li>
-</ul>
-
-The following entries are needed for <b>Google</b> social access:
-
-<ul>
-<li>&#42;.accounts.google.com</li>
-<li>&#42;.googleapis.com</li>
-<li>&#42;.googleusercontent.com</li>
-<li>&#42;.gstatic.com</li>
-</ul>
+You can find the most up to date list of <b><span data-elevio-article="18499">Walled Gardens here.</span></b>
 
 Once that is done, click OK to save.
 
@@ -202,4 +161,20 @@ You should now be left with the following screen, which means you have configure
 
 <div class="text-center">
 <img src="/images/community/tutorials/aruba-guide/aruba-ui.png">
+</div>
+
+<hr>
+
+*Cucumber Tony is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities.Or you can utlise the captive portal solution with your existing infrastucture. Create a free account and check it here <a href="https://cucumberwifi.io">cucumberwifi.io</a>*
+
+<div class="text-center">
+
+<h2>Come join Cucumber</h2>
+
+<a href="https://my.ctapp.io/#/create" class="button success dst">Sign Up</a><br>
+
+<p>Sign-up for Cucumber Tony, it's free for unlimited access points :)</p>
+
+<hr>
+
 </div>

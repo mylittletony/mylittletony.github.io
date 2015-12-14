@@ -7,17 +7,17 @@ keywords: Ruckus, Ruckus Virtual SmartZone, Captive Portal, Zone Director, Splas
 description: Ruckus Captive Portal, Setting up a captive portal for the Ruckus Smart Zone Gateway
 ---
 <div class="alert-box success">
-Stuck? Until the end of October 2015, we'll set everything up for you. Just drop us a line from your Cucumber dashboard :)
+Stuck? Until the end of November 2015, we'll set everything up for you. Just drop us a line from your Cucumber dashboard :)
 </div>
 
 <h3>Getting the Cucumber Dashboard working with your Ruckus Virtual SmartZone</h3>
 <p>The Ruckus Virtual SmartZone is a really fantastic piece of kit. This walk-through demonstrates how to integrate it with our splash pages, view your Ruckus wireless clients and, even view the status of your Ruckus APs!</p>
 <p>Manage all your networks from a single dashboard - your Unifi, TP-Link, Netgear, OpenWRT and Ruckus devices in a single location.</p>
-<p>The whole set-up takes about half an hour - the Ruckus VSG can be a little tricky to get working first time round.</p>
+<p>The whole set-up takes about half an hour - the Ruckus VSZ can be a little tricky to get working first time round.</p>
 <hr>
 <h3>Things you need:</h3>
 <ul>
-<li>Publicly available Ruckus VSG (trial ok)</li>
+<li>Publicly available Ruckus VSZ (trial ok)</li>
 <li>Compatible Ruckus AP</li>
 <li>Cucumber account</li>
 </ul>
@@ -31,13 +31,13 @@ The only way to fix this is to contact us.
 ### Lets go....
 
 <h2>Open Your Firewall Ports</h2>
-<p>You must have a public facing VSG with the following ports open:</p>
+<p>You must have a public facing VSZ with the following ports open:</p>
 <ul>
 <li>9080, 9443 & 7443 for the VSZ integration</li>
 <li>8090, 8099, 8100, 8111, 9997, 9998 to ensure the splash pages work</li>
 </ul>
 <h2>Add your Access Points to your Cucumber dashboard.</h2>
-<p>You'll need to add each one. Once you've done this, you will need to make a note of some credentials which are needed when your set up your VSG.</p>
+<p>You'll need to add each one. Once you've done this, you will need to make a note of some credentials which are needed when your set up your VSZ.</p>
 <p>Make sure you create a splash page too. And, if you're setting up zones, please ensure the boxes are all added to the correct zone. There's documentation about doing this in the green sidebar within your dash.</p>
 <h3>Get your Nas ID</h3>
 <p>Firstly change the box type to Ruckus on the settings page. Click the advanced settings link to reveal your unique NasID. This is unique to your account. <b>You must use the same NAS id for all your locations.</b></p>
@@ -57,8 +57,8 @@ The only way to fix this is to contact us.
   <img src="/images/community/tutorials/ruckus-radius-1.png" width="800px">
 </div>
 
-<h3>Next, get your Ruckus VSG setup.</h3>
-<p>Login to your VSG and create a zone if you don't have one. You don't have to create a new one.</p>
+<h3>Next, get your Ruckus VSZ setup.</h3>
+<p>Login to your VSZ and create a zone if you don't have one. You don't have to create a new one.</p>
 
 <h3>Accounting and Authentication Radius Servers</h3>
 
@@ -99,26 +99,8 @@ aa-bb-cc-dd-ee-ff
 ```
 
 <p>Before you save, you need to add some walled gardens. Enter the following.</p>
-<ul>
-<li>&#42;.my-wifi.co</li>
-<li>&#42;.polkaspots.com</li>
-<li>&#42;.wirelessisp.co</li>
-<li>&#42;.ctapp.io</li>
-<li>&#42;.cucumberwifi.io</li>
-<li>d3e9l1phmgx8f2.cloudfront.net</li>
-<li>d247kqobagyqjh.cloudfront.net</li>
-</ul>
-<p>If you're using Social logins, you will also need these:</p>
-<ul>
-<li>connect.facebook.net</li>
-<li>&#42;.facebook.com</li>
-<li>&#42;.fbcdn.net</li>
-<li>&#42;.akamaihd.net</li>
-<li>&#42;.accounts.google.com</li>
-<li>&#42;.googleapis.com</li>
-<li>&#42;.googleusercontent.com</li>
-<li>&#42;.gstatic.com</li>
-</ul>
+
+You can find the most up to date list of <b><span data-elevio-article="18499">Walled Gardens here.</span></b>
 
 <div class="text-center">
   <img src="/images/community/tutorials/walledgardens.png" width="800px">
@@ -148,7 +130,7 @@ Click Configuration > System > Northbound Portal Interface. Enter your password.
 </div>
 
 <h3>Create an Admin Account</h3>
-<p>We'll use this to communicate with your Ruckus VSG and provide a list of online wireless clients and the status of your access points. You can use your normal credentials however we recommend creating a second role, just for the API access.</p>
+<p>We'll use this to communicate with your Ruckus VSZ and provide a list of online wireless clients and the status of your access points. You can use your normal credentials however we recommend creating a second role, just for the API access.</p>
 
 ```
 Click configuration > Administrators. Click create a new Admin account and fill in your details.
@@ -171,7 +153,7 @@ Click configuration > Administrators. Click create a new Admin account and fill 
 
 <h3>Add your credentials to your Cucumber WiFi dashboard</h3>
 
-<p>Go back to your Cucumber dashboard. In your Location settings, scroll down until you see the Ruckus VSG section.</p>
+<p>Go back to your Cucumber dashboard. In your Location settings, scroll down until you see the Ruckus VSZ section.</p>
 <p>Enter your VSH public IP or hostname and also your Northbound API password. You should also add your admin user and password. After you click save, we'll run a test on your server.</p>
 <p><b>Please ensure you use https for security reasons.</b></p>
 
@@ -179,7 +161,7 @@ Click configuration > Administrators. Click create a new Admin account and fill 
   <img src="/images/community/tutorials/ruckus-northbound-api.png" width="800px">
 </div>
 
-<p>Your VSG must be accessible from the internet. Please do not enter a port number. If all went well, you will see a confirmation message on the page.</p>
+<p>Your VSZ must be accessible from the internet. Please do not enter a port number. If all went well, you will see a confirmation message on the page.</p>
 
 <div class="text-center">
   <img src="/images/community/tutorials/ruckus-api-success.png" width="800px">
@@ -272,9 +254,9 @@ The only way to reset this error is to **change the host** in your location sett
 
 You can see the login page but when you login, it sends you back to the login page. Here's what you can do:
 
-* Swap the access type to clickthrough to rule out password issues
-* Ensure your radius secrets match the ones in your VSZ radius settings
-* Ensure your Nas-Id from your Cucumber Wi-Fi account matches the one in your VSZ
+- &#8226; Swap the access type to clickthrough to rule out password issues
+- &#8226; Ensure your radius secrets match the ones in your VSZ radius settings
+- &#8226; Ensure your Nas-Id from your Cucumber Wi-Fi account matches the one in your VSZ
 
 <div class="text-center">
   <img src="/images/community/tutorials/vsz-radius-secret-1.png" width="800px">
@@ -337,7 +319,7 @@ You bet. The Cucumber dashboard works with any Smart Zone Gateway. Just enter yo
 <br><br>
 <div class="text-center">
 <p>Sign-up for a Cucumber dashboard. It's free for unlimited access points!</p>
-<a href="https://my.ctapp.io/#/create" class="button large success">Join</a>
+<a href="https://my.ctapp.io/#/create" class="button large success dst">Join</a>
 </div>
 <br><br>
 <br><br>

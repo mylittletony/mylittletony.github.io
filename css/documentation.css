@@ -68,13 +68,31 @@
 	top:1px;
 }
 
-.home-header-img {
-  background-image: url(/images/pages/working-in-cafes-london.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  min-height: 672px;
-  padding-bottom: 2rem;
-  height: 400px;
-  margin-top: -40px;
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+
+  .cafe-header-img {
+    background-image: url(/images/pages/working-in-cafes-london.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 672px;
+    padding-bottom: 2rem;
+    height: 400px;
+    margin-top: -40px;
+  }
+
+}
+
+@media only screen and (min-width: 1024px) {
+
+  .cafe-header-img {
+    background-image: url(/images/pages/working-in-cafes-london.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 672px;
+    padding-bottom: 2rem;
+    height: 400px;
+    margin-top: -40px;
+  }
 }

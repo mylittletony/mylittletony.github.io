@@ -46,39 +46,9 @@ Now change the accounting servers to the following:
 <img src="/images/community/tutorials/meraki-guide/radius-for-splash.png">
 </div>
 
-Scroll further down and look for <b>Walled Garden</b>. Make sure <b>Walled garden</b> is enabled and add the following to the <b>Walled garden ranges</b>:
-<ul>
-<li>&#42;.my-wifi.co</li>
-<li>&#42;.polkaspots.com</li>
-<li>&#42;.wirelessisp.co</li>
-<li>&#42;.ctapp.io</li>
-<li>&#42;.cucumberwifi.io</li>
-<li>d3e9l1phmgx8f2.cloudfront.net</li>
-<li>d247kqobagyqjh.cloudfront.net</li>
-</ul>
+Scroll further down and look for <b>Walled Garden</b>. Make sure <b>Walled garden</b> is enabled and add the Walled Garden entries to the <b>Walled garden ranges</b>.
 
-The following entries are not mandatory, but there are some reported issues with the <b>iOS captive portal popup</b> that these help resolve:
-
-<ul>
-<li>&#42;.ibook.info</li>
-<li>&#42;.appleiphonecell.com</li>
-<li>&#42;.apple.com</li>
-<li>&#42;.airport.us</li>
-<li>&#42;.thinkdifferent.us</li>
-<li>&#42;.itools.info</li>
-<li>&#42;.filepicker.io</li>
-<li>&#42;.akamaiedge.net</li>
-<li>&#42;.akamaitechnologies.com</li>
-<li>apple.com.edgekey.net</li>
-</ul>
-
-The following entries are needed for <b>Facebook</b> social access:
-
-<ul>
-<li>connect.facebook.net</li>
-<li>&#42;.facebook.com</li>
-<li>&#42;.akamaihd.net</li>
-</ul>
+You can find the most up to date list of <b><span data-elevio-article="18499">Walled Gardens here.</span></b>
 
 If you have errors when copying these in, try typing them out manually.
 
