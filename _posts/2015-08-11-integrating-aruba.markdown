@@ -7,21 +7,21 @@ keywords: Aruba captive portal, Aruba splash page hosting, Aruba splash page not
 thumbnail: /images/community/thumbnails/aruba-setup.png
 ---
 
-Using a web browser, go into your Cucumber Tony dashboard and <a href="https://my.ctapp.io/?data-elevio-article=7107#/" class="dst">add the box in</a> using the MAC address of your Access Point.
+Using a web browser, go into your Cucumber Tony dashboard and <a href="/documentation/add-box.html" class="dst">add the box in</a> using the MAC address of your Access Point.
 
-When you have added these to Cucumber Tony, go into the settings page of your box, scrolling down for the section labelled PolkaSpots Settings
+When you have added these to Cucumber Tony, go into the settings page of your box, scrolling down for the section labelled Cucumber Tony Settings
 
 <div class="text-center">
 <img src="/images/community/tutorials/aruba-guide/box-settings.png">
 </div>
 
-Untick I'm a PolkaSpots Box, and select your box type from the droplist then update your changes
+Untick I'm a Cucumber Tony Box, and select your box type from the droplist then update your changes
 
 <div class="text-center">
 <img src="/images/community/tutorials/aruba-guide/nonct-box.png">
 </div>
 
-Head back to boxes and click on the box you just set to a non PolkaSpots Box. You should now see a green Radius Settings button.
+Head back to boxes and click on the box you just set to a non Cucumber Tony Box. You should now see a green Radius Settings button.
 
 <div class="text-center">
 <img src="/images/community/tutorials/aruba-guide/radius-settings.png">

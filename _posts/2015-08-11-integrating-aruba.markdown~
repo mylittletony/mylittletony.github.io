@@ -7,7 +7,7 @@ keywords: Aruba captive portal, Aruba splash page hosting, Aruba splash page not
 thumbnail: /images/community/thumbnails/aruba-setup.png
 ---
 
-1. Using a web browser, go into your Cucumber Tony dashboard and <a href="https://my.ctapp.io/?data-elevio-article=7107#/" class="dst">add the box in</a> using the MAC address of your Access Point.
+Using a web browser, go into your Cucumber Tony dashboard and <a href="https://my.ctapp.io/?data-elevio-article=7107#/" class="dst">add the box in</a> using the MAC address of your Access Point.
 
 When you have added these to Cucumber Tony, go into the settings page of your box, scrolling down for the section labelled PolkaSpots Settings
 
