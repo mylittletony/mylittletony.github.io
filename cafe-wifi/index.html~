@@ -1,0 +1,48 @@
+---
+layout: default
+title: London Cafés
+description: A review site of cafés in London
+keywords: wifi, cafe, coffee, café, review, rating
+---
+<home>
+  <div class="cafe-header-img">
+    <div class="row home-header">
+      <div class="small-12 columns">
+        <div class="row">
+          <div class="small-12 medium-5 columns ct-is-container">
+            <h1>Work from cafés</h1>
+            <h2>A review site of cafés in London with good WiFi and working vibes.</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr id="next" class="show-for-small-only">
+
+  <div class="row home-integrations">
+    <div class="small-12 columns">
+      <div class="row">
+        <div class="text-center small-12 medium-12 columns">
+          <h1>Where would you like to work?</h1>
+          <hr>
+          <ul class="columns small-centered medium-centered small-12 medium-8 small-block-grid-2">
+ 						<li><a href="/cafe-wifi/west-london.html" class="cafeButton">West<br>London</a></p></li>
+ 						<li><a href="/cafe-wifi/central-london.html" class="cafeButton">Central<br>London</a></p></li>
+ 						<li><a href="/cafe-wifi/south-london.html" class="cafeButton">South<br>London</a></p></li>
+ 						<li><a href="/cafe-wifi/east-london.html" class="cafeButton">East<br>London</a></p></li>
+					</ul>
+          <p>This site is run by Cucumber Wi-Fi. A Wi-Fi management platform for small businesses. If you'd like to know more about the stuff we make check out our website cucumberwifi.io</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</home>
+
+<div class="row">
+	<div class="small-12 medium-12 columns">
+		<hr>
+		<h6>For a list of resources used to compile these lists <a href="/café-wifi/café-sources.html">click here<a></h6>
+	</div>
+</div>
