@@ -15,7 +15,7 @@ permalink: /community/index.html
     <div class="small-12 columns text-center">
       <div class="row">
         <div class="small-12 medium-4 columns">
-          <a href="/documentation/">
+          <a href="http://docs.cucumberwifi.io/">
             <img src="/images/community/documentation.png" class="community-image">
           </a>
           <p>Read the manual</p>
