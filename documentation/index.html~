@@ -40,7 +40,7 @@ redirect_from:
     <p>We have relocated our documentation to a new help center, click the link below.</p>
     <div class="doc-button-center">
 		  <div class="doc-button">
-		    <a href="/documentation/network-setup.html" class="large button">Documentation</a>
+		    <a href="http://docs.cucumberwifi.io/" class="large button">Documentation</a>
 		  </div>
 	  </div>
   </div>
