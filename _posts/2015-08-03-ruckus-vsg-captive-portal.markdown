@@ -6,15 +6,25 @@ categories: documentation
 keywords: Ruckus, Ruckus Virtual SmartZone, Captive Portal, Zone Director, Splash Pages,
 description: Ruckus Captive Portal, Setting up a captive portal for the Ruckus Smart Zone Gateway
 ---
-<div class="alert-box success">
-Stuck? Until the end of November 2015, we'll set everything up for you. Just drop us a line from your Cucumber dashboard :)
-</div>
 
 <h3>Getting the Cucumber Dashboard working with your Ruckus Virtual SmartZone</h3>
-<p>The Ruckus Virtual SmartZone is a really fantastic piece of kit. This walk-through demonstrates how to integrate it with our splash pages, view your Ruckus wireless clients and, even view the status of your Ruckus APs!</p>
-<p>Manage all your networks from a single dashboard - your Unifi, TP-Link, Netgear, OpenWRT and Ruckus devices in a single location.</p>
-<p>The whole set-up takes about half an hour - the Ruckus VSZ can be a little tricky to get working first time round.</p>
+<p>The Ruckus Virtual SmartZone is a really fantastic piece of kit. This walk-through demonstrates how to integrate it with our splash pages, view your Ruckus wireless clients and, even view the status of your Ruckus APs!<br>
+<img src="/images/community/splash-pages/boxpark.png">
+</p>
 <hr>
+
+<div class="text-center">
+  <h1>Full Guide</h1>
+  <p>For the full in-depth guide on how to set up your Ruckus vSZ click the button below</p>
+  <div class="doc-button-center">
+		<div class="doc-button">
+		  <a href="http://docs.cucumberwifi.io/article/89-ruckus-vsz-captive-portal-integration" target="_blank" class="large button">Ruckus vSZ Guide</a>
+	  </div>
+  </div>
+  <hr>
+</div>
+
+
 <h3>Things you need:</h3>
 <ul>
 <li>Publicly available Ruckus VSZ (trial ok)</li>

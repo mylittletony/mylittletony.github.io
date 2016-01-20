@@ -17,7 +17,9 @@ permalink: /community/tutorials/index.html
       {% for post in site.categories.tutorials limit:3 %}
       <div class="small-12 medium-4 columns">
         {% if post.thumbnail %}
-        <img src="{{ post.thumbnail }}" style= align="center" />
+        <a href="{{ BASE_PATH }}{{ post.url }}">
+					<img src="{{ post.thumbnail }}" style= align="center" />
+				</a>
         {% else %}
         <img src="/images/community/thumbnails/rf-power.png" align="center" />
         {% endif %}
