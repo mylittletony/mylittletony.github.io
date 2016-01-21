@@ -3,7 +3,6 @@ layout: post
 title: Saving Time With Tony
 date: 2015-09-25
 categories: showcase
-tags: showcase
 keywords: WiFi Splash Page, WiFi Captive Portal, WiFi Welcome Page, WiFi Splash page html5, WiFi splash page example, wifi splash page template
 permalink: /community/showcase/saving-time-with-tony
 ---

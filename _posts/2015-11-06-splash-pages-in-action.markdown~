@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Splash Pages in Action
-date: 2015-11-04
+date: 2015-11-06
 categories: showcase
 tags: showcase
 keywords: WiFi Splash Page, WiFi Captive Portal, WiFi Welcome Page, WiFi Splash page html5, WiFi splash page example, wifi splash page template
