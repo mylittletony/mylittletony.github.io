@@ -5,7 +5,8 @@ date: 2015-09-22
 categories: tutorials
 keywords: Social Logins, Social Wi-Fi, Facebook Wi-Fi, Facebook App Permissions
 thumbnail: /images/community/thumbnails/facebook-permissions.png
-tags: tutorials
+tags: Tutorials
+description: A guide walking you through applying for the correct permissions to set up a Facebook logins app.
 ---
 
 ##How do I set up my own Facebook App?

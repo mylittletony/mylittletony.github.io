@@ -2,6 +2,9 @@
 layout: default
 title: Learn about Cloud managed guest wifi
 permalink: /community/tutorials/index.html
+redirect_from:
+  - /community/
+  - /community/showcase/
 ---
 <documentation>
   <div class="row">
@@ -26,22 +29,31 @@ permalink: /community/tutorials/index.html
         <a href="{{ BASE_PATH }}{{ post.url }}"><h3 style=color:#868686;>{{ post.title }}</h3></a>
       </div>
       {% endfor %}
-    <hr/>
+    <hr>
     </div>
   </div>
 
-  <div class="row">
+	<div class="row">
     <div class="small-12 columns">
-      <h2>Tutorials</h2>
-      <ul>
-        {% for post in site.categories.tutorials %}
-          <li>
-            <a href="{{ post.url }}">{{ post.title }}</a>
-          </li>
-        {% endfor %}
-      </ul>
+      {% for tag in site.tags %}
+ 		  {% assign t = tag | first %}
+  		{% assign posts = tag | last %}
+			<h2> {{ t }} </h2>
+			<ul>
+			{% for post in posts %}
+		  {% if post.tags contains t %}
+		  	<li>
+    		<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+    		{{ post.description }} <br>
+    		<small>{{ post.date | date: "%-d-%B-%Y" }}</small>
+    		<hr>
+  			</li>
+  		{% endif %}
+			{% endfor %}
+			</ul>
+			{% endfor %}
       <hr>
-      <p><a href="/community/">Back to Community</a></p>
     </div>
   </div>
+
 </documentation>

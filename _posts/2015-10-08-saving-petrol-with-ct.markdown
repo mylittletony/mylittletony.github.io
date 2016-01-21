@@ -3,7 +3,6 @@ layout: post
 title: Cucumber Wi-Fi&#58; How a Wi-Fi web app is cutting petrol use.
 date: 2015-10-08
 categories: showcase
-tags: showcase
 keywords: WiFi Splash Page, WiFi Captive Portal, WiFi Welcome Page, WiFi Splash page html5, WiFi splash page example, wifi splash page template
 permalink: /community/showcase/saving-petrol-with-ct
 ---

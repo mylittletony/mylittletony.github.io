@@ -6,6 +6,8 @@ author: Siddhant Garg
 categories: tutorials
 keywords: WiFi Splash Page, WiFi Captive Portal, WiFi Welcome Page, WiFi Splash page html5, WiFi splash page example, wifi splash page template
 thumbnail: /images/community/thumbnails/netflix-usa.png
+tags: Tutorials
+description: Simple steps to get access to Netflix US.
 ---
 
 Netflix is a service which is available worldwide, but Netflix in the US has loads more content. The first thing you need to know about watching American Netflix from the UK, is that it’s free as long as you are a subscribed member of Netflix. So how can I watch the US version of Netflix in the UK you ask? Keep on reading. 

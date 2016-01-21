@@ -1,10 +1,12 @@
 ---
 layout: post
-title:  How to replace your ISP's router and how it will bring you better Wi-Fi
+title:  How to replace your ISP's router
 date:   2015-10-16
 categories: tutorials
 keywords: WiFi Splash Page, WiFi Captive Portal, WiFi Welcome Page, WiFi Splash page html5, WiFi splash page example, wifi splash page template
 thumbnail: /images/community/thumbnails/router.png
+tags: Tutorials
+description: How replacing your old router might bring you better Wi-Fi.
 ---
 
 Do you find yourself struggling with your internet speeds from time to time? Well it might not actually be an issue with your broadband.

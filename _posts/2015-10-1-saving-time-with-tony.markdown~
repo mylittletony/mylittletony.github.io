@@ -5,7 +5,7 @@ date: 2015-09-25
 categories: showcase
 tags: showcase
 keywords: WiFi Splash Page, WiFi Captive Portal, WiFi Welcome Page, WiFi Splash page html5, WiFi splash page example, wifi splash page template
-permalink: /community/showcase/how-trident-used-ct
+permalink: /community/showcase/saving-time-with-tony
 ---
 
 ##How Cucumber Tony Saves Vospers Motors Hours of IT Management Time.
@@ -28,7 +28,7 @@ Jonathan is the IT guy at Vospers motors. He has been using Cucumber Tony since 
 
 ###What do you love about Cucumber?
 
->The support. It’s by far the best support I’ve had from a company. The development of the platform has been immense. I can chat to someone who knows their stuff in a view minutes. You can see the transformation from a few years back, and all through that process the team have been there making changes and fixes as soon as you mention them.
+>The support. It’s by far the best support I’ve had from a company. The development of the platform has been immense. I can chat to someone who knows their stuff in a few minutes. You can see the transformation from a few years back, and all through that process the team have been there making changes and fixes as soon as you mention them.
 
 ###Anything else you’d like to add?
 
@@ -45,10 +45,11 @@ You can be like Jonathan and join the Cucumber community. Just create a dashboar
 
 <h2>Come join Cucumber</h2>
 
-<a href="https://my.ctapp.io/#/create" class="button success">Sign Up</a><br>
+<a href="https://my.ctapp.io/#/create" class="button success dst">Sign Up</a><br>
 
 <p>Sign-up for Cucumber Tony, it's free for unlimited access points :)</p>
 
 <hr>
 
 </div>
+
