@@ -4,6 +4,7 @@ title:  Installing firmware on an OpenMesh access point
 date:   2015-11-09
 categories: documentation
 keywords: install firmware on OpenMesh ap, wifi firmware, OpenMesh firmware update
+tags: OpenWRT
 ---
 
 You will need:
@@ -44,12 +45,12 @@ Then plug in your OpenMesh box and power it up.
 You should then see something similar to this in the console:
 
 ```
-[MA:C-:AD:DR:ES:S ]: type 'OM2P router' detected
-[MA:C-:AD:DR:ES:S ]: OM2P router: tftp client asks for 'fwupgrade.cfg', serving fwupgrade.cfg portion of: openwrt-ar71xx-generic-om2p-squashfs-factory.bin (1 blocks) ...
-[MA:C-:AD:DR:ES:S ]: OM2P router: tftp client asks for 'kernel', serving kernel portion of: openwrt-ar71xx-generic-om2p-squashfs-factory.bin (1993 blocks) ...
-[MA:C-:AD:DR:ES:S ]: OM2P router: tftp client asks for 'rootfs', serving rootfs portion of: openwrt-ar71xx-generic-om2p-squashfs-factory.bin (4609 blocks) ...
-[MA:C-:AD:DR:ES:S ]: OM2P router: image successfully transmitted - writing image to flash ...
-[MA:C-:AD:DR:ES:S ]: OM2P router: flash complete. Device ready to unplug.
+[ac:86:74:13:65:c8]: type 'OM2P router' detected
+[ac:86:74:13:65:c8]: OM2P router: tftp client asks for 'fwupgrade.cfg', serving fwupgrade.cfg portion of: /home/ps-support/Downloads/openwrt-15.05-ar71xx-generic-om2p-squashfs-factory.bin (1 blocks) ...
+[ac:86:74:13:65:c8]: OM2P router: tftp client asks for 'kernel', serving kernel portion of: /home/ps-support/Downloads/openwrt-15.05-ar71xx-generic-om2p-squashfs-factory.bin (2146 blocks) ...
+[ac:86:74:13:65:c8]: OM2P router: tftp client asks for 'rootfs', serving rootfs portion of: /home/ps-support/Downloads/openwrt-15.05-ar71xx-generic-om2p-squashfs-factory.bin (4609 blocks) ...
+[ac:86:74:13:65:c8]: OM2P router: image successfully transmitted - writing image to flash ...
+[ac:86:74:13:65:c8]: OM2P router: flash complete. Device ready to unplug.
 ```
 
 5 - Then go ahead and add your box into your Cucumber Tony dashboard.

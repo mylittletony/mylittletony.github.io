@@ -4,7 +4,9 @@ title: Applying for the correct Facebook Permissions
 date: 2015-09-22
 categories: tutorials
 keywords: Social Logins, Social Wi-Fi, Facebook Wi-Fi, Facebook App Permissions
-tags: tutorials
+thumbnail: /images/community/thumbnails/facebook-permissions.png
+tags: Tutorials
+description: A guide walking you through applying for the correct permissions to set up a Facebook logins app
 ---
 
 ##How do I set up my own Facebook App?
@@ -150,7 +152,7 @@ Enjoy! Remember, if you don't want to do all this, you can use our application. 
 
 ### Come join Cucumber
 
-<a href="https://my.ctapp.io/#/create" class="button success">Sign Up</a>
+<a href="https://my.ctapp.io/#/create" class="button success dst">Sign Up</a>
 
 Sign-up for Cucumber Tony, it's free for unlimited access points and social logins :)
 <hr>

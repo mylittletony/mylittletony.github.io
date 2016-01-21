@@ -6,7 +6,7 @@ categories: tutorials
 keywords: Slack, WiFi, WiFi monitor, wifi platform, slack wifi integration
 thumbnail: /images/community/thumbnails/slack_rgb.png
 tags: Tutorials
-description: A guide covering how to integrate Slack with your Cucumber Tony dashboard.
+
 ---
 
 Now it's possible for Cucumber Tony to notify you when one of your WiFi routers runs into problems. If you don't know what Slack is, go and [sign-up for an account here](https://slack.com).

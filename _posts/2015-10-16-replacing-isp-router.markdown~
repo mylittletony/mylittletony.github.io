@@ -1,10 +1,11 @@
 ---
 layout: post
-title:  How to replace your ISP router and how it will bring you better Wi-Fi
+title:  How to replace your ISP's router and how it will bring you better Wi-Fi
 date:   2015-10-16
 categories: tutorials
 keywords: WiFi Splash Page, WiFi Captive Portal, WiFi Welcome Page, WiFi Splash page html5, WiFi splash page example, wifi splash page template
 thumbnail: /images/community/thumbnails/router.png
+tags: Tutorials
 ---
 
 Do you find yourself struggling with your internet speeds from time to time? Well it might not actually be an issue with your broadband.
@@ -28,8 +29,8 @@ All you will need to do is ensure that you get your correct ADSL settings from y
 How to do this varies between the individual devices, but it is a relatively simple process;
 
 1. Retrieve your ADSL configuration details from one of two options.
-  * Contact your ISP and request the details
-  * Login to your Router and retrieve them from here (This will only work on some routers as others hide your password for extra security)
+  - &#8226;Contact your ISP and request the details
+  - &#8226;Login to your Router and retrieve them from here (This will only work on some routers as others hide your password for extra security)
   
 2. Connect up your new router, and then using the details you retrieved from your ISP/previous router, enter them into the correct fields
 
