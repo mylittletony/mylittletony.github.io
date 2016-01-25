@@ -528,6 +528,12 @@ documentation ul {
   /*   background-color: blue!important; */
   /* } */
 
+  .top-bar-section li:not(.has-form) a:not(.button) {
+    background: #FAFAFA;
+    line-height: 4rem;
+    padding: 0 2rem;
+  }
+
   .tour-feature {
     padding: 40px 0;
     margin-bottom: 20px;
@@ -854,4 +860,7 @@ table td.plans-header {
     background-color: #F2F1F1;
     border-color: #74bfdd;
     color: #4f4f4f;
+}
+
+@media only screen and (min-width: 40.0625em)
 }
