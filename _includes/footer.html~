@@ -7,14 +7,14 @@
           <ul class="no-bullet">
             <li><a href="/wifi-firmware">Compatible Hardware</a></li>
             <li><a href="/tour/cloud-wifi-management.html">Remote management</a></li>
-            <li><a href="/tour/enterprise-wifi.html">Enterprise Features</a></li>
             <li><a href="/tour/branded-social-wifi.html">Branded Guest WiFi</a></li>
+            <li><a href="/tour/enterprise-wifi.html">Enterprise Features</a></li>
+            <li><a href="https://discuss.cucumberwifi.io/" target="_blank">Discussion Groups</a></li>
             <li><a href="/community/showcase/captive-portals">Splash Examples</a></li>
-						<li><a href="http://docs.cucumberwifi.io/" target="_blank">Documentation</a></li>
+            <li><a href="http://docs.cucumberwifi.io/" target="_blank">Documentation</a></li>
             <li><a href="/community/">Community</a></li>
             <li><a href="/community/tutorials/">Tutorials</a></li>
             <li><a href="https://my.ctapp.io/#/shop">Buy APs</a></li>
-            <li><a href="https://discuss.cucumberwifi.io/" target="_blank">Forum</a></li>
             <li><a href="http://docs.polkaspots.apiary.io/" target="_blank">API</a></li>
           </ul>
         </div>
@@ -131,13 +131,13 @@ ga('send', 'pageview');
   });
 </script>
 <script src="/js/tony.js"></script>
-<script>
-window.intercomSettings = {
-    app_id: 'zklfhs87'
-};
-/* Replace 'APP_ID' with your app ID */
-(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/APP_ID';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()
-</script>
+<!-- <script> -->
+<!-- window.intercomSettings = { -->
+<!--     app_id: 'zklfhs87' -->
+<!-- }; -->
+<!-- /* Replace 'APP_ID' with your app ID */ -->
+<!-- (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/APP_ID';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})() -->
+<!-- </script> -->
 
 <!-- Google Tag Manager -->
 <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-WXSC5L"
@@ -148,7 +148,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-WXSC5L');</script>
 <!-- End Google Tag Manager -->
-<script>
-  var _elev = window._elev || {};(function() {var i,e;i=document.createElement("script"),i.type='text/javascript';i.async=1,i.src="https://static.elev.io/js/v3.js",e=document.getElementsByTagName("script")[0],e.parentNode.insertBefore(i,e);})();
-  _elev.account_id = '5538eac84ebbe';
-</script>
+<!-- <script> -->
+<!--   var _elev = window._elev || {};(function() {var i,e;i=document.createElement("script"),i.type='text/javascript';i.async=1,i.src="https://static.elev.io/js/v3.js",e=document.getElementsByTagName("script")[0],e.parentNode.insertBefore(i,e);})(); -->
+<!--   _elev.account_id = '5538eac84ebbe'; -->
+<!-- </script> -->
