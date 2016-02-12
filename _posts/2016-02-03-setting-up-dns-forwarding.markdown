@@ -29,7 +29,9 @@ If you are connecting via terminal, then just SSH to your OpenWRT device using t
 ssh root@192.168.1.1
 ```
 
-Setting up DNS forwarding Once you are logged into your OpenWRT device, run the following command to edit your DHCP file:
+##Setting up DNS forwarding##
+
+Once you are logged into your OpenWRT device, run the following command to edit your DHCP file:
 
 ```
 vi /etc/config/dhcp

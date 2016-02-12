@@ -6,7 +6,7 @@ categories: tutorials
 keywords: OpenWRT captive portal, OpenWRT splash page not working, OpenWRT splash page template, OpenWRT splash page free, OpenWRT splash page html, OpenWRT splash page hosting, OpenMesh captive portal, OpenMesh splash page not working, OpenMesh splash page template, OpenMesh splash page free, OpenMesh splash page html, OpenMesh splash page hosting, DD-WRT
 thumbnail: /images/community/thumbnails/openwrt.png
 tags: OpenWRT
-description: Set up DNS rules for specific domains.
+description: Set up DNS rules for specific domains - bypass Netflix restrictions!
 ---
 
 There are a number of reasons for wanting to change your DNS, whether you want to benefit from speed & reliability improvements, set up parental controls, or want to access geoblocked content.
