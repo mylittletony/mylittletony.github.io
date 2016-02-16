@@ -58,6 +58,46 @@ documentation ul {
   margin: 20px 0;
 }
 
+.meraki-header-img {
+  background-image: url('/images/community/meraki/meraki-box.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 672px;
+  padding-bottom: 2rem;
+  height: 600px;
+  margin-top: -40px;
+}
+
+.meraki-header-img h3 {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.meraki-header-img h2 {
+	color: #e4e4e4;
+}
+
+.meraki-header-img h1 {
+	color: #e4e4e4;
+}
+
+.home-meraki {
+  padding: 89px 0 0 0;
+  margin-bottom: -20px;
+}
+
+.home-meraki h1 {
+  font-size: 44px;
+  margin-bottom: 33px;
+}
+
+.meraki-panel {
+	background: rgba(0, 0, 0, .5);
+  padding: 40px;
+  height: 400px;
+}
+
 .openwrt-header-img {
   background-image: url('/images/community/openwrt/openwrt-board.jpg');
   background-repeat: no-repeat;
@@ -343,6 +383,39 @@ documentation ul {
   body {
     /* background-color: red!important; */
   }
+  
+  .home-header h1 {
+    color: white;
+  }
+  
+  .meraki-header-img {
+    background-image: none;
+    /* background-repeat: no-repeat; */
+    /* background-position: center; */
+    /* background-size: cover; */
+    min-height: 72px;
+    /* padding-bottom: 2rem; */
+    height: 10px;
+    margin-top: -40px;
+  }
+  
+  .meraki-header-img h2 {
+    color: #454545;
+  }
+
+  .meraki-panel {
+    background-color: white;
+    padding: 20px;
+    height: 400px;
+  }
+  
+  .meraki-panel h1 {
+    color: #454545;
+  }
+
+  .home-meraki h1 {
+    font-size: 28px;
+  }
 
   .openwrt-header-img {
     background-image: none;
@@ -512,9 +585,6 @@ documentation ul {
     margin: 0 0 40px 0;
   }
 
-  .home-header h1 {
-    color: white;
-  }
 
   .firmware-header-img h1 {
     color: #454545;
