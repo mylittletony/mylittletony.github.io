@@ -1,6 +1,6 @@
 html {
-    /* position: relative; */
-    /* min-height: 100%; */
+  /* position: relative; */
+  /* min-height: 100%; */
 }
 body {
   -webkit-font-smoothing: antialiased;
@@ -56,6 +56,55 @@ documentation ul {
 
 .community-image {
   margin: 20px 0;
+}
+
+.meraki-header-img {
+  background-image: url('/images/community/meraki/meraki-box.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 672px;
+  padding-bottom: 2rem;
+  height: 600px;
+  margin-top: -40px;
+}
+
+.meraki-header-img h3 {
+  text-align: center;
+  padding-top: 25px;
+}
+
+.meraki-header-img h2 {
+  color: #e4e4e4;
+}
+
+.meraki-header-img h1 {
+  color: #e4e4e4;
+}
+
+.home-meraki {
+  padding: 89px 0 0 0;
+  margin-bottom: -20px;
+}
+
+.home-meraki h1 {
+  font-size: 44px;
+  margin-bottom: 33px;
+}
+
+meraki h3 {
+  margin-bottom: 33px;
+}
+
+.meraki-panel {
+  background: rgba(0, 0, 0, .5);
+  padding: 40px;
+  height: 200px;
+  margin-bottom: 160px;
+}
+
+hr.meraki-hr {
+	visibility: hidden;
 }
 
 .openwrt-header-img {
@@ -344,6 +393,44 @@ documentation ul {
     /* background-color: red!important; */
   }
 
+	hr.meraki-hr {
+		visibility: visible;
+	}
+
+  .home-header h1 {
+    color: white;
+  }
+
+  .meraki-header-img {
+    background-image: none;
+    /* background-repeat: no-repeat; */
+    /* background-position: center; */
+    /* background-size: cover; */
+    min-height: 72px;
+    /* padding-bottom: 2rem; */
+    height: 10px;
+    margin-top: -40px;
+  }
+
+  .meraki-header-img h2 {
+    color: #454545;
+  }
+
+  .meraki-panel {
+    background-color: white;
+    padding: 50px 15px 15px 15px;
+    height: 200px;
+    margin-bottom: 0px;
+  }
+
+  .meraki-panel h1 {
+    color: #454545;
+  }
+
+  .home-meraki h1 {
+		display: none;
+  }
+
   .openwrt-header-img {
     background-image: none;
     /* background-repeat: no-repeat; */
@@ -512,9 +599,6 @@ documentation ul {
     margin: 0 0 40px 0;
   }
 
-  .home-header h1 {
-    color: white;
-  }
 
   .firmware-header-img h1 {
     color: #454545;
@@ -857,9 +941,9 @@ table td.plans-header {
 }
 
 .alert-box.info {
-    background-color: #F2F1F1;
-    border-color: #74bfdd;
-    color: #4f4f4f;
+  background-color: #F2F1F1;
+  border-color: #74bfdd;
+  color: #4f4f4f;
 }
 
 @media only screen and (min-width: 40.0625em)

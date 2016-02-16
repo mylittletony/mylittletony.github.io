@@ -1,0 +1,55 @@
+---
+layout: default
+title: WiFi, OpenWrt, Cloud Management
+description: Cloud manage your OpenWrt devices
+keywords: OpenWrt install, how to install openwrt, openwrt in the cloud, set up openwrt
+---
+
+<meraki>
+
+<div class="meraki-header-img">
+  <div class="row home-header">
+    <div class="small-12 columns">
+      <div class="row">
+        <div class="small-12 medium-7 columns meraki-panel">
+          <h1>Got an unlicensed Meraki?</h1>
+          <h2>Set them free with Cucumber Tony</h2>
+        </div>
+      </div>
+      <div class="row show-for-medium-up">
+        <div class="small-12 columns">
+          <h3>Give your Meraki APs a new lease of life.</h3>
+          <div class="row text-center">
+            <div class="small-12 medium-8 large-6 medium-centered columns">
+              <a href="https://my.ctapp.io/#/create?ref=meraki" class="button success large" style="font-size: 40px">Sign-up Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr id="next" class="show-for-small-only">
+
+<div class="row home-meraki">
+  <div class="small-12 columns">
+    <div class="row">
+      <div class="small-12 medium-6 columns">
+        <h1>Cloud-manage your Meraki APs with Cucumber</h1>
+        <p>Got a pile of Meraki MR12, MR16 or MR18s lying around gathering dust?</p>
+        <!-- <p>Not sure what to do with them?</p> -->
+        <p><b>Set them free</b>. Manage them from the cloud with Cucumber. It's easy to do and shouldn't take more than 15 minutes. Time well spent...</p>
+        <a href="https://my.ctapp.io/#/create?ref=meraki" class="large button dst success">Read the docs</a>
+        <p>You can sign-up for free <a href="https://my.ctapp.io/#/create?ref=meraki" class="" style="">here</a>.</p>
+      </div>
+      <div class="small-12 medium-6 columns">
+        <div class="home-ct-ipad"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+</meraki>
