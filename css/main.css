@@ -104,7 +104,7 @@ meraki h3 {
 }
 
 hr.meraki-hr {
-	visibility: hidden;
+  visibility: hidden;
 }
 
 .openwrt-header-img {
@@ -393,9 +393,9 @@ hr.meraki-hr {
     /* background-color: red!important; */
   }
 
-	hr.meraki-hr {
-		visibility: visible;
-	}
+  hr.meraki-hr {
+    visibility: visible;
+  }
 
   .home-header h1 {
     color: white;
@@ -428,7 +428,7 @@ hr.meraki-hr {
   }
 
   .home-meraki h1 {
-		display: none;
+    display: none;
   }
 
   .openwrt-header-img {
