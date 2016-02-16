@@ -8,12 +8,9 @@ url: "http://www.cucumberwifi.io" # the base hostname & protocol for your site
 # twitter_username: jekyllrb
 # github_username:  jekyll
 
-# Build settings
-# markdown: kramdown
-
 permalink: /community/tutorials/:title.html
 
-markdown: redcarpet
+# markdown: redcarpet
 # pygments: true
 # baseurl: /
 
