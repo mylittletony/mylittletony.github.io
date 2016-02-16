@@ -71,7 +71,7 @@ documentation ul {
 
 .meraki-header-img h3 {
   text-align: center;
-  padding-top: 20px;
+  padding-top: 25px;
 }
 
 .meraki-header-img h2 {
@@ -101,6 +101,10 @@ meraki h3 {
   padding: 40px;
   height: 200px;
   margin-bottom: 160px;
+}
+
+hr.meraki-hr {
+	visibility: hidden;
 }
 
 .openwrt-header-img {
@@ -389,6 +393,10 @@ meraki h3 {
     /* background-color: red!important; */
   }
 
+	hr.meraki-hr {
+		visibility: visible;
+	}
+
   .home-header h1 {
     color: white;
   }
@@ -410,8 +418,9 @@ meraki h3 {
 
   .meraki-panel {
     background-color: white;
-    padding: 20px;
-    height: 400px;
+    padding: 50px 15px 15px 15px;
+    height: 200px;
+    margin-bottom: 0px;
   }
 
   .meraki-panel h1 {
@@ -419,7 +428,7 @@ meraki h3 {
   }
 
   .home-meraki h1 {
-    font-size: 28px;
+		display: none;
   }
 
   .openwrt-header-img {
