@@ -1,0 +1,28 @@
+---
+layout: default
+title: Case Studies | Cucumber Tony
+permalink: /case-studies/
+---
+<documentation>
+  <div class="row">
+    <div class="small-12 columns">
+      <h1>Case Studies</h1>
+      <h3>Take a look at what our customers have to say about their experience with Cucumber.</h3>
+      <hr/>
+    </div>
+  </div>
+
+	<div class="row">
+    <div class="small-12 columns">
+      {% for post in site.categories.casestudy %}
+		  	<ul>
+    		<h3><a href="{{ post.url }}"><img src="{{ post.thumbnail }}" width="auto" height="auto" style="max-height: 50px" align="center" /></a></h3>
+    		{{ post.description }} <br>
+    		<hr class="cs-hr">
+  			</ul>
+			</ul>
+			{% endfor %}
+    </div>
+  </div>
+
+</documentation>
