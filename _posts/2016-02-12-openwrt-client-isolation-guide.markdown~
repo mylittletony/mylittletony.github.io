@@ -51,7 +51,7 @@ config 'wifi-iface'
         option 'ssid'       'MyWifiAP'
         option 'encryption' 'psk2'
         option 'key'        'secret passphrase'
-        **option 'isolate'    '1'**
+        option 'isolate'    '1'
 ```
         
 After saving your change, run the following command to restart your wireless interfaces and apply the change:

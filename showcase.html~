@@ -16,11 +16,12 @@ permalink: /community/showcase/index.html
       <ul>
         {% for post in site.tags.showcase %}
           <li>
-            <a href="{{ post.url }}">{{ post.title }}</a>
+            <a href="{{ post.url }}"><h1>{{ post.title }}</h1></a>
           </li>
         {% endfor %}
       </ul>
-      <p>That's all for now.</p>
+      <hr>
+      <p><a href="/community/">Back to Community</a></p>
     </div>
   </div>
 
