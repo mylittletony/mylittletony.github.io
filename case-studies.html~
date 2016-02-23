@@ -16,7 +16,7 @@ permalink: /case-studies/
     <div class="small-12 columns">
       {% for post in site.categories.casestudy %}
 		  	<ul>
-    		<h3><a href="{{ post.url }}"><img src="{{ post.thumbnail }}" width="200px" style="max-height: 50px" align="center" /></a></h3>
+    		<h3><a href="{{ post.url }}"><img src="{{ post.thumbnail }}" width="auto" height="auto" style="max-height: 50px" align="center" /></a></h3>
     		{{ post.description }} <br>
     		<hr class="cs-hr">
   			</ul>
