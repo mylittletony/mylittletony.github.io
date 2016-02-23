@@ -145,6 +145,17 @@ hr.meraki-hr {
 .cs-portrait.text-center {
 	margin-bottom: 5px;
 	}
+	
+.cs-hr {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	}
+	
+.integration-logo {
+	margin-top: 10px;
+	margin-bottom: 20px;
+	max-height: 50px;
+	}
 
 @media only screen and (min-width: 1024px) {
 
