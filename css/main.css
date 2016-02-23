@@ -142,6 +142,15 @@ hr.meraki-hr {
   height: 400px;
 }
 
+.cs-portrait.text-center {
+	margin-bottom: 5px;
+	}
+	
+.cs-hr {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	}
+
 @media only screen and (min-width: 1024px) {
 
   body {
