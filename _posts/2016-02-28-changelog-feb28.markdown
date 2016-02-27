@@ -5,7 +5,7 @@ date: 2016-02-27
 categories: changelog
 ---
 
-***Splash Page Timeout**
+**Splash Page Timeout**
 
 You can now set a timeout for your splash pages when using timed access. 
 
