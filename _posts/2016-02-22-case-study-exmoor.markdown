@@ -4,7 +4,6 @@ title:  Exmoor National Park
 date:   2016-02-21
 categories: casestudy
 keywords: casestudy
-tags: casestudy
 thumbnail: /images/case-studies/exmoor/exmoor-logo.png
 permalink: /case-studies/exmoor-national-park
 description: “It's IT and things do go wrong so I like being able to speak to the support team. They're really helpful and will fix something for me on the spot if they can.”
