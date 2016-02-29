@@ -4,7 +4,6 @@ title:  Force 36
 date:   2016-02-22
 categories: casestudy
 keywords: casestudy
-tags: casestudy
 thumbnail: /images/case-studies/force-36/force-36-logo.png
 permalink: /case-studies/force-36
 description: “Cucumber has saved us so many man hours we couldn't not use it.”

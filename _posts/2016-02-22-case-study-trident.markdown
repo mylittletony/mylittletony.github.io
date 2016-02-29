@@ -4,7 +4,6 @@ title:  Trident
 date:   2016-02-22
 categories: casestudy
 keywords: casestudy
-tags: casestudy
 thumbnail: /images/case-studies/trident/trident-logo.png
 permalink: /case-studies/trident
 description: “Our favourite thing is the simple interface. The Ruckus vSZ is complex, the Cucumber dashboard makes managing networks so much easier.”
