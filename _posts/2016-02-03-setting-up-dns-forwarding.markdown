@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  OpenWRT — How to set up DNS Forwarding
+title:  How to set up DNS Forwarding
 date:   2016-02-03
 categories: tutorials
 keywords: OpenWRT captive portal, OpenWRT splash page not working, OpenWRT splash page template, OpenWRT splash page free, OpenWRT splash page html, OpenWRT splash page hosting, OpenMesh captive portal, OpenMesh splash page not working, OpenMesh splash page template, OpenMesh splash page free, OpenMesh splash page html, OpenMesh splash page hosting, DD-WRT
@@ -13,7 +13,7 @@ There are a number of reasons for wanting to change your DNS, whether you want t
 
 But sometimes you might not want all of your traffic routed through a custom DNS server, especially if you just want to do something simple like access US Netflix outside of the US. There is a really easy option to set up in OpenWRT that allows you to set DNS servers to be used only with specific domains.
 
-##SSH to your OpenWRT device##
+##SSH to your OpenWRT device
 
 If you are using Windows then start PuTTY and click Session on the left side, select SSH from the options, and then enter in the IP Address of your OpenWRT box into the Host Name field. 
 
@@ -45,25 +45,24 @@ list server ‘/domain_name/dns_address’
 
 Find the dnsmasq section and add in your rules, it should look something like the following:
 
-```
-config 'dnsmasq'
-	option domainneeded	 1
-	option boguspriv	 1
-	option filterwin2k	 0
-	option localise_queries	 1
-	option rebind_protection 1
-	option rebind_localhost  0
-	option local        	 '/lan/'
-	option domain	         'lan'
-	option expandhosts	 1
-	option nonegcache	 0
-	option authoritative	 1
-	option readethers        1
-	option leasefile	 '/tmp/dhcp.leases'
-	option resolvfile	 '/tmp/resolv.conf.auto'
-	list server '/netflix.com/111.118.175.56'
-	list server '/netflix.com/118.127.33.48'
-```
+    config 'dnsmasq'
+            option domainneeded	 1
+            option boguspriv	 1
+            option filterwin2k	 0
+            option localise_queries  1
+            option rebind_protection 1
+            option rebind_localhost  0
+            option local        	 '/lan/'
+            option domain	         'lan'
+            option expandhosts	 1
+            option nonegcache	 0
+            option authoritative	 1
+            option readethers        1
+            option leasefile	 '/tmp/dhcp.leases'
+            option resolvfile	 '/tmp/resolv.conf.auto'
+            list server              '/netflix.com/111.118.175.56'
+            list server              '/netflix.com/118.127.33.48'
+
 
 Once you have added your rules, save your changes.
 
@@ -78,11 +77,9 @@ It is as easy as that. Whenever you access that domain, it will be through that 
 ###(Optional) Using the web GUI###
 This can all be done using the web GUI by navigating through Network > DHCP and DNS > Sever Settings > General Settings, and entering the rules in the following format under DNS Forwardings:
 
-```
-/domain_name/dns_address
-e.g
-/netflix.com/118.127.33.48
-```
+    /domain_name/dns_address
+    e.g
+    /netflix.com/118.127.33.48
 
 <hr>
 
@@ -100,4 +97,3 @@ e.g
 <hr>
 
 </div>
-

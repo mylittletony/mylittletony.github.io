@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  OpenWRT — Adding a Web Interface
+title:  Adding a Web Interface
 date:   2016-01-20
 categories: tutorials
 keywords: OpenWRT captive portal, OpenWRT splash page not working, OpenWRT splash page template, OpenWRT splash page free, OpenWRT splash page html, OpenWRT splash page hosting, OpenMesh captive portal, OpenMesh splash page not working, OpenMesh splash page template, OpenMesh splash page free, OpenMesh splash page html, OpenMesh splash page hosting, DD-WRT
@@ -19,19 +19,15 @@ To start off with, your device will need internet access. The first step is to S
 
 Once you have gained access via SSH enter the following commands:
 
-```
-opkg update
-opkg install luci
-```
+    opkg update
+    opkg install luci
 
 This will install the LuCI package onto your device. Once this is complete, you will need to run two more commands. The first to start up your web server, and the second to set it to run whenever the device is rebooted.
 
 The commands are as follows:
 
-```
-/etc/init.d/uhttpd start
-/etc/init.d/uhttpd enable
-```
+    /etc/init.d/uhttpd start
+    /etc/init.d/uhttpd enable
 
 Now you should be able to open the LuCI web interface by connecting to your device and navigating to http://192.168.1.1/ with your browser.
 
@@ -53,4 +49,3 @@ Now have a play around with the web interface and see all the changes you can ma
 <hr>
 
 </div>
-

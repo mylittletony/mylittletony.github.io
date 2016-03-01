@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  OpenWRT — How to enable Client Isolation
+title:  How to enable Client Isolation
 date:   2016-02-12
 categories: tutorials
 keywords: OpenWRT captive portal, OpenWRT splash page not working, OpenWRT splash page template, OpenWRT splash page free, OpenWRT splash page html, OpenWRT splash page hosting, OpenMesh captive portal, OpenMesh splash page not working, OpenMesh splash page template, OpenMesh splash page free, OpenMesh splash page html, OpenMesh splash page hosting, DD-WRT
@@ -11,7 +11,7 @@ description: Prevent clients on your network from accessing eachother.
 
 Client Isolation is a feature that will, as the name suggests, isolate each client on the network from each other. This will prevent them from communicating and accessing each other, providing a layer of security to your network.
 
-##SSH to your OpenWRT device##
+##SSH to your OpenWRT device
 
 If you are using Windows then start PuTTY and click Session on the left side, select SSH from the options, and then enter in the IP Address of your OpenWRT box into the Host Name field. 
 
@@ -27,7 +27,7 @@ If you are connecting via terminal, then just SSH to your OpenWRT device using t
 ssh root@192.168.1.1
 ```
 
-##Enabling Client Isolation##
+##Enabling Client Isolation
 
 Once you are logged into your OpenWRT device, run the following command to edit your wireless config file by running the following command:
 
@@ -39,28 +39,28 @@ You will want to add the following option to your wireless config:
 
 ```
 option isolate 1
-
 ```
+
 For the wireless config that you want to enable isolation on, add that option in. It should look something like the following:
 
-```
-config 'wifi-iface'
-        option 'device'     'wl0'
-        option 'network'    'lan'
-        option 'mode'       'ap'
-        option 'ssid'       'MyWifiAP'
-        option 'encryption' 'psk2'
-        option 'key'        'secret passphrase'
-        option 'isolate'    '1'
-```
-        
+
+    config 'wifi-iface'
+            option 'device'     'wl0'
+            option 'network'    'lan'
+            option 'mode'       'ap'
+            option 'ssid'       'MyWifiAP'
+            option 'encryption' 'psk2'
+            option 'key'        'secret passphrase'
+            option 'isolate'    '1'
+
+
 After saving your change, run the following command to restart your wireless interfaces and apply the change:
 
 ```
 wifi
 ```
 
-###(Optional) Using the web GUI###
+###(Optional) Using the web GUI
 This can all be done using the web GUI by navigating through Network > Wifi > and ticking the AP-Isolation box
 
 <hr>
@@ -79,4 +79,3 @@ This can all be done using the web GUI by navigating through Network > Wifi > an
 <hr>
 
 </div>
-
