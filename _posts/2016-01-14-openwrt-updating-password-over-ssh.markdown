@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  OpenWRT — Updating your password over SSH
+title:  Updating your password over SSH
 date:   2016-01-14
 categories: tutorials
 keywords: OpenWRT captive portal, OpenWRT splash page not working, OpenWRT splash page template, OpenWRT splash page free, OpenWRT splash page html, OpenWRT splash page hosting, OpenMesh captive portal, OpenMesh splash page not working, OpenMesh splash page template, OpenMesh splash page free, OpenMesh splash page html, OpenMesh splash page hosting, DD-WRT
@@ -56,4 +56,3 @@ You will be asked to confirm your old password, at which point you will be able 
 <hr>
 
 </div>
-
