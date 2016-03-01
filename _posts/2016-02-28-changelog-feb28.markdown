@@ -7,7 +7,7 @@ categories: changelog
 
 **Splash Page Timeout**
 <br><br>
-dYou can now set a timeout for your splash pages when using timed access. 
+You can now set a timeout for your splash pages when using timed access. 
 <br><br>
 This allows you to control the amount of time before the splash is seen again. For example, you set up two splash pages - clickthrough and vouchers. You want the clickthrough to appear for 2 hours per day. After which they need to use a voucher code.
 <br><br>
@@ -22,4 +22,3 @@ You can now trigger an event when someone logs in.
 - Fixes the redirect URL that wasn't saving previously
 <br>
 - Fixes the blank error message on the login pages
-
