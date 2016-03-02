@@ -7,11 +7,11 @@ keywords: WiFi Splash Page, WiFi Captive Portal, WiFi Welcome Page, WiFi Splash 
 permalink: /community/showcase/captive-portals
 ---
 
-<h2>What can you make with Cucumber Tony?</h2>
-
 Your splash page is the gateway to your Wi-Fi hotspot. It's a page of joy and love. Every guest in your Wi-Fi hotspot sees this page before they access the Internet; first impressions are everything.
 
 Take a look at some of the splash pages made with Cucumber Tony
+
+<a href="/community/showcase/splash-pages-in-action"> Click here to see them in action.</a>
 
 <hr>
 
