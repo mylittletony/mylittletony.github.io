@@ -11,11 +11,20 @@ Your splash page is the gateway to your Wi-Fi hotspot. It's a page of joy and lo
 
 Take a look at some of the login types in action with Cucumber Tony.
 
+<a href="/community/showcase/captive-portals"> Click here to see what else you can design.</a>
+
 <hr>
 
 <div class="text-center">
-<h3>Password Protected Login</h3>
-<iframe width="960" height="540" src="https://www.youtube.com/embed/C0wA-6pQGNc?rel=0&amp;color=white&amp;showinfo=0&amp;autohide=1" frameborder="0" allowfullscreen></iframe>
+<h3>Welcome Page Login</h3>
+<iframe width="960" height="540" src="https://www.youtube.com/embed/ppIVlMH_8CM?rel=0&amp;color=white&amp;showinfo=0&amp;autohide=1" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<hr>
+
+<div class="text-center">
+<h3>Social Login</h3>
+<iframe width="960" height="540" src="https://www.youtube.com/embed/Km85SDaTcP4?rel=0&amp;color=white&amp;showinfo=0&amp;autohide=1" frameborder="0" allowfullscreen></iframe>
 </div>
 
 <hr>
@@ -28,8 +37,8 @@ Take a look at some of the login types in action with Cucumber Tony.
 <hr>
 
 <div class="text-center">
-<h3>Social Login</h3>
-<iframe width="960" height="540" src="https://www.youtube.com/embed/Km85SDaTcP4?rel=0&amp;color=white&amp;showinfo=0&amp;autohide=1" frameborder="0" allowfullscreen></iframe>
+<h3>Password Protected Login</h3>
+<iframe width="960" height="540" src="https://www.youtube.com/embed/C0wA-6pQGNc?rel=0&amp;color=white&amp;showinfo=0&amp;autohide=1" frameborder="0" allowfullscreen></iframe>
 </div>
 
 <hr>
@@ -48,4 +57,3 @@ Take a look at some of the login types in action with Cucumber Tony.
 <hr>
 
 </div>
-
