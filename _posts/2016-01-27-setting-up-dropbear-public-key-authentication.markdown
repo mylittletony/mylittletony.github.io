@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Setting up Dropbear public key authentication
+title:  Setting up Dropbear Public Key Authentication
 date:   2016-01-27
 categories: tutorials
 keywords: OpenWRT captive portal, OpenWRT splash page not working, OpenWRT splash page template, OpenWRT splash page free, OpenWRT splash page html, OpenWRT splash page hosting, OpenMesh captive portal, OpenMesh splash page not working, OpenMesh splash page template, OpenMesh splash page free, OpenMesh splash page html, OpenMesh splash page hosting, DD-WRT
@@ -16,24 +16,18 @@ First off make sure that you have an SSH client on your computer. For Windows yo
 To create your key we will be using ssh-keygen, or if you are a Windows user, use puttygen.exe.
 Just use the following command to generate your ssh-key.
 
-```
-ssh-keygen
-```
+`ssh-keygen`
 
 ## Add your key to your OpenWRT device
 
 To add the key to the authorized_keys file on your OpenWRT device, on your PC enter the following command, replacing 192.168.1.1 with your OpenWRT device IP.
 
-```
-ssh-copy-id  root@192.168.1.1
-```
+`ssh-copy-id  root@192.168.1.1`
 
 The key is added to the /root/.ssh/authorized_keys file on your OpenWRT device.
 Next we want to add the key to dropbear, so SSH into our OpenWRT device and enter the following command.
 
-```
-cp /root/.ssh/authorized_keys /etc/dropbear/
-```
+`cp /root/.ssh/authorized_keys /etc/dropbear/`
 
 We need to make sure that the permissions are set correctly, so enter in the following commands.
 
@@ -56,9 +50,7 @@ If you are using Windows then start PuTTY and follow these steps:
 
 If you are connecting via terminal, then just SSH to your OpenWRT device using the following command, where 192.168.1.1 is your OpenWRT device’s IP address.
 
-```
-ssh root@192.168.1.1
-```
+`ssh root@192.168.1.1`
 
 ### (Optional) Added security
 

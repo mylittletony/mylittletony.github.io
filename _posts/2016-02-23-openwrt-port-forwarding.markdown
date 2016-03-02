@@ -13,7 +13,7 @@ Port forwarding will let you open paths through your firewall, forwarding extern
 
 So whether you’re looking to set up remote management, or a gamer, the following guide will walk you through the steps you need.
 
-##SSH to your OpenWRT device##
+## SSH to your OpenWRT device
 
 If you are using Windows then start PuTTY and click Session on the left side, select SSH from the options, and then enter in the IP Address of your OpenWRT box into the Host Name field.
 
@@ -25,11 +25,9 @@ Once you’ve done this just click on Open to start up the SSH connection.
 
 If you are connecting via terminal, then just SSH to your OpenWRT device using the following command, where 192.168.1.1 is your OpenWRT device’s IP address.
 
-```
-ssh root@192.168.1.1
-```
+`ssh root@192.168.1.1`
 
-##Setting up your port forward
+## Setting up your port forward
 
 Your firewall config can be found at the following location:
 
