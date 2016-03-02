@@ -45,6 +45,7 @@ list server ‘/domain_name/dns_address’
 
 Find the dnsmasq section and add in your rules, it should look something like the following:
 
+<<<<<<< Updated upstream
     config 'dnsmasq'
             option domainneeded	 1
             option boguspriv	 1
@@ -63,6 +64,27 @@ Find the dnsmasq section and add in your rules, it should look something like th
             list server              '/netflix.com/111.118.175.56'
             list server              '/netflix.com/118.127.33.48'
 
+=======
+```
+config 'dnsmasq'
+        option domainneeded      1
+        option boguspriv         1
+        option filterwin2k       0
+        option localise_queries  1
+        option rebind_protection 1
+        option rebind_localhost  0
+        option local             '/lan/'
+        option domain            'lan'
+        option expandhosts       1
+        option nonegcache        0
+        option authoritative     1
+        option readethers        1
+        option leasefile         '/tmp/dhcp.leases'
+        option resolvfile        '/tmp/resolv.conf.auto'
+        list server '/netflix.com/111.118.175.56'
+        list server '/netflix.com/118.127.33.48'
+```
+>>>>>>> Stashed changes
 
 Once you have added your rules, save your changes.
 
