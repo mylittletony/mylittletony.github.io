@@ -10,18 +10,18 @@ description: â€œCucumber has saved us so many man hours we couldn't not use it.â
 ---
 
 <div class="row">
-  <div class="small-3 columns">
+  <div class="small-12 medium-3 columns">
 		<div class="text-center">
 			<img class="cs-portrait text-center" src="/images/case-studies/force-36/force-36-richard.png" width="120px">
 			<p>Richard Swain <br> <small>Commercial Director</small></p>
 			<img src="/images/case-studies/force-36/force-36-logo.png" width="200px">
 		</div>
   </div>
-  <div class="small-9 columns">
+  <div class="small-12 medium-9 columns">
   	<a href="/case-studies/">< Back to Case Studies</a>
   	<h1>How Force 36 Use Cucumber</h1>
 		<p>Richard from Force 36 IT Consultants tells us why they use Cucumber to manage wireless networks.</p>
-		
+
 		<hr>
 
 		<h2>Hi Richard, so who are Force 36?</h2>

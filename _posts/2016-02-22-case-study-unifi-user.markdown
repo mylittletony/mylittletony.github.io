@@ -10,21 +10,21 @@ description: “The extra functionality has really changed how we run the Wi-Fi 
 ---
 
 <div class="row">
-  <div class="small-3 columns">
+  <div class="small-12 medium-3 columns">
 		<div class="text-center">
 			<img class="cs-portrait text-center" src="/images/case-studies/other/anonymous.png" width="120px">
 			<p>Anonymous <br> <small>IT Manager</small></p>
 		</div>
   </div>
-  <div class="small-9 columns">
+  <div class="small-12 medium-9 columns">
   	<a href="/case-studies/">< Back to Case Studies</a>
   	<h1>Using Cucumber To Manage UniFi</h1>
 		<p>We asked one avid user why he uses Cucumber to manage his Ubiquiti UniFi network. He asked that he remained anonymous to avoid revealing any information to his competition. He said: </p>
-		
+
 		<div class="text-center">
 		<h3>“...if my competition got hold of Cucumber Wi-Fi I’d loose my edge — it’s saves me hours of time, I don’t want them getting their hands on it.”</h3>
 		</div>
-		
+
 		<hr>
 
 		<h2>What does your business use Cucumber for?</h2>

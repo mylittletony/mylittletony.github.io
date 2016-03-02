@@ -10,18 +10,18 @@ description: “Our favourite thing is the simple interface. The Ruckus vSZ is c
 ---
 
 <div class="row">
-  <div class="small-3 columns">
+  <div class="small-12 medium-3 columns">
 		<div class="text-center">
 			<img class="cs-portrait text-center" src="/images/case-studies/trident/trident-david.png" width="120px">
 			<p>David Bell <br> <small>Business Manager</small></p>
 			<img src="/images/case-studies/trident/trident-logo.png" width="200px">
 		</div>
   </div>
-  <div class="small-9 columns">
+  <div class="small-12 medium-9 columns">
   	<a href="/case-studies/">< Back to Case Studies</a>
   	<h1>How Trident Group Use Cucumber</h1>
 		<p>Trident have a Ruckus Virtual Smart Zone network and use Cucumber to manage it. David tells us why they use Cucumber alongside their Ruckus vSZ.</p>
-		
+
 		<hr>
 
 		<h2>Hi David, so who are Trident?</h2>
