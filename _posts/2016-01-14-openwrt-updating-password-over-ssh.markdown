@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Updating your password over SSH
+title:  Updating Your Password Over SSH
 date:   2016-01-14
 categories: tutorials
 keywords: OpenWRT captive portal, OpenWRT splash page not working, OpenWRT splash page template, OpenWRT splash page free, OpenWRT splash page html, OpenWRT splash page hosting, OpenMesh captive portal, OpenMesh splash page not working, OpenMesh splash page template, OpenMesh splash page free, OpenMesh splash page html, OpenMesh splash page hosting, DD-WRT
@@ -28,15 +28,11 @@ This will open a command line interface asking you to provide a username and pas
 
 To get to this point from Linux or Mac, open your Terminal and type the below, where **root** is the username, and the **IP** is the IP of your OpenWRT device, and then confirm your password.
 
-```
-ssh root@IP
-```
+`ssh root@IP`
 
 Once you have logged in successfully, enter the below into the command line interface.
 
-```
-passwd
-```
+`passwd`
 
 You will be asked to confirm your old password, at which point you will be able to set a new password for your account.
 
