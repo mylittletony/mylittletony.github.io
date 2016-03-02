@@ -10,14 +10,14 @@ description: "I can't think of one thing I liked in Meraki that I didn't get in 
 ---
 
 <div class="row">
-<div class="small-3 columns">
+<div class="small-12 medium-3 columns">
 <div class="text-center">
-<img class="cs-portrait text-center" src="/images/case-studies/vospers/frog.png" width="120px">
+<img class="cs-portrait text-center" src="/images/case-studies/vospers/vospers-jonathan.png" width="120px">
 <p>Jonathan Brickell <br> <small>Senior IT Technician</small></p>
 <img src="/images/case-studies/vospers/vospers-logo.png" width="200px">
 </div>
 </div>
-<div class="small-9 columns">
+<div class="small-12 medium-9 columns">
 <a href="/case-studies/">< Back to Case Studies</a>
 <h1>How Vospers Use Cucumber</h1>
 <p>Jonathan has been using Cucumber Tony since day one. He tells us why his network is still growing and how it's changed things for the better at Vospers.</p>

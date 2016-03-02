@@ -10,14 +10,14 @@ description: “Without Cucumber we wouldn't be able to offer tailored marketing
 ---
 
 <div class="row">
-  <div class="small-3 columns">
+  <div class="small-12 medium-3 columns">
 		<div class="text-center">
 			<img class="cs-portrait text-center" src="/images/case-studies/invisinet/invisinet-rob.png" width="120px">
 			<p>Rob Linsay <br> <small>Project Co-Ordinator</small></p>
 			<img src="/images/case-studies/invisinet/invisinet-logo.png" width="200px">
 		</div>
   </div>
-  <div class="small-9 columns">
+  <div class="small-12 medium-9 columns">
   	<a href="/case-studies/">< Back to Case Studies</a>
   	<h1>How Invisinet Use Cucumber</h1>
 		<p>Rob from Invisnet tells us how he uses Cucumber and why?</p>

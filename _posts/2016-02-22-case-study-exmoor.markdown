@@ -10,18 +10,18 @@ description: “It's IT and things do go wrong so I like being able to speak to 
 ---
 
 <div class="row">
-  <div class="small-3 columns">
+  <div class="small-12 medium-3 columns">
 		<div class="text-center">
 			<img class="cs-portrait text-center" src="/images/case-studies/exmoor/exmoor-jonathan.png" width="120px">
 			<p>Jonathan Coole <br> <small>Infrastructure Technician</small></p>
 			<img src="/images/case-studies/exmoor/exmoor-logo.png" width="200px">
 		</div>
   </div>
-  <div class="small-9 columns">
+  <div class="small-12 medium-9 columns">
   	<a href="/case-studies/">< Back to Case Studies</a>
   	<h1>How Exmoor National Park Use Cucumber</h1>
 		<p>Jon is responsible for the ICT at Exmoor National Park. We’re quite jealous of his job as he gets to work in the park which is beautiful. He talks to us about why they use Cucumber.</p>
-		
+
 		<hr>
 
 		<h2>Who are Exmoor National Park?</h2>
