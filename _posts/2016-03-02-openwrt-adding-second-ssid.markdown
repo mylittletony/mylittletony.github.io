@@ -13,7 +13,7 @@ This guide will show you how to set up a second (and in turn multiple) SSID for 
 
 In this example we will be creating an SSID for guest access, separate from your own private SSID.
 
-##SSH to your OpenWRT device
+## SSH to your OpenWRT device
 
 If you are using Windows then start PuTTY and click Session on the left side, select SSH from the options, and then enter in the IP Address of your OpenWRT box into the Host Name field.
 
@@ -25,11 +25,9 @@ Once you’ve done this just click on Open to start up the SSH connection.
 
 If you are connecting via terminal, then just SSH to your OpenWRT device using the following command, where 192.168.1.1 is your OpenWRT device’s IP address.
 
-```
-ssh root@192.168.1.1
-```
+`ssh root@192.168.1.1`
 
-##Create a new network interface
+## Create a new network interface
 
 First we need to define a new interface in our network config, so run the following command:
 
@@ -42,7 +40,7 @@ Now that you have the network config file open, we can add in the following new 
             option 'ipaddr' '10.0.0.1'
             option 'netmask' '255.255.255.0'
 
-##Create a new network
+## Create a new network
 
 Next up we want to create the new guest network/SSID. Run the following command:
 
@@ -68,7 +66,7 @@ You should end up with something like the following:
             option 'encryption' 'none'
             option 'isolate'    1
 
-##Define a new DHCP pool
+## Define a new DHCP pool
 
 If you want DHCP on your guest network, then we will need to make a couple additions to the DHCP config.
 
@@ -86,7 +84,7 @@ This will open the DHCP config where you will need to add in the following:
 
 Set option ‘interface’ to the name of the network interface you created at the start.
 
-##Define firewall rules
+## Define firewall rules
 
 Now we need to secure the public guest network. So run the following command to open the firewall config:
 
@@ -160,7 +158,7 @@ To restart the processes run the following commands:
     /etc/init.d/firewall restart
     /etc/init.d/network restart
 
-###(Optional) Limit guest broadband connection
+### (Optional) Limit guest broadband connection
 
 If you are running a public connection for users it is advised, but not necessary, to limit their broadband usage to limit abuse of your network.
 There is a handy package you can install to manage this easily. Run the following command:
