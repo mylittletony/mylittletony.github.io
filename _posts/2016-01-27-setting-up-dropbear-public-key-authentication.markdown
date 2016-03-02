@@ -11,7 +11,8 @@ description: Making SSH access faster and more secure.
 
 First off make sure that you have an SSH client on your computer. For Windows you will want to download PuTTY.
 
-##Generating your Key
+## Generating your Key
+
 To create your key we will be using ssh-keygen, or if you are a Windows user, use puttygen.exe.
 Just use the following command to generate your ssh-key.
 
@@ -19,7 +20,8 @@ Just use the following command to generate your ssh-key.
 ssh-keygen
 ```
 
-##Add your key to your OpenWRT device
+## Add your key to your OpenWRT device
+
 To add the key to the authorized_keys file on your OpenWRT device, on your PC enter the following command, replacing 192.168.1.1 with your OpenWRT device IP.
 
 ```
@@ -38,7 +40,8 @@ We need to make sure that the permissions are set correctly, so enter in the fol
     chmod 700 /etc/dropbear
     chmod 600 /etc/dropbear/authorized_keys
 
-##SSH to your OpenWRT device using your key
+## SSH to your OpenWRT device using your key
+
 If everything was done correctly you can now log into your device using the key, not asking you for a password.
 If you are using Windows then start PuTTY and follow these steps:
 
@@ -57,7 +60,8 @@ If you are connecting via terminal, then just SSH to your OpenWRT device using t
 ssh root@192.168.1.1
 ```
 
-###(Optional) Added security
+### (Optional) Added security
+
 One additional change you can make to increase security is disable Dropbear’s password login.
 
 To do this, while connected via SSH to your OpenWRT device, enter the following commands
