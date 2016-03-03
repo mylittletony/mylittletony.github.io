@@ -12,7 +12,7 @@ description: â€œOverall Cucumber is a very solid platform with amazing support.â
 <div class="row">
 <div class="small-12 medium-3 columns">
 <div class="text-center">
-<img class="cs-portrait text-center" src="/images/case-studies/other/anonymous.png" width="120px">
+<img class="cs-portrait text-center" src="/images/case-studies/unifi-comparison/dan-bunyard.png" width="120px">
 <p>Dan Bunyard<br> <small>Networking Connoisseur</small></p>
 </div>
 </div>
