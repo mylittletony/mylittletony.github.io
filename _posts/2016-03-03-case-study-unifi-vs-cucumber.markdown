@@ -1,7 +1,7 @@
 ---
 layout: case-study
 title:  Cucumber Dashboard VS UniFi Controller
-date:   2016-02-22
+date:   2016-02-21
 categories: casestudy
 keywords: casestudy
 thumbnail: /images/case-studies/other/anonymous.png
