@@ -4,7 +4,7 @@ title:  Cucumber Dashboard VS UniFi Controller
 date:   2016-02-21
 categories: casestudy
 keywords: casestudy
-thumbnail: /images/case-studies/other/anonymous.png
+thumbnail: /images/case-studies/unifi-comparison/dan-bunyard.png
 permalink: /case-studies/cucumber-vs-unifi
 description: “Overall Cucumber is a very solid platform with amazing support.”
 ---
