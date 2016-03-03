@@ -21,7 +21,7 @@ description: â€œOverall Cucumber is a very solid platform with amazing support.â
 
 <p>This report was submitted to us by one of our users on their views on the differences between the <b>Cucumber Dashboard</b> and the <b>UniFi Controller</b>.</p>
 
-<p>It was submitted on 10/02/2015, and so is a reflection of the feature-set at that time, as well as their own personal opinions. Changes may have been made to both the Cucumber dashboard and UniFi controller since then.</p>
+<p>It was submitted on 10/Feb/2016, and so is a reflection of the feature-set at that time, as well as their own personal opinions. Changes may have been made to both the Cucumber dashboard and UniFi controller since then.</p>
 
 <hr>
 
