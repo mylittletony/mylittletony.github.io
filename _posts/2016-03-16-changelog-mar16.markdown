@@ -7,4 +7,4 @@ categories: changelog
 
 **Bug Fixes**
 <br><br>
--Fixed firewall issue with repeater mode
+- Fixed firewall issue with repeater mode
