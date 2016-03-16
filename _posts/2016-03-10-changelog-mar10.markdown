@@ -8,5 +8,5 @@ categories: changelog
 **Firmware Changelog**
 <br><br>
 b_160226_00
-<br>
+<br><br>
 Firmware release for Outdoor+ to fix the issue where clients could not connect to the AP due to the High-Selectivity Receiver.
