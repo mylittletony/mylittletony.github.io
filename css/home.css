@@ -27,7 +27,11 @@
   .home-header h2 {
     color: #626262;
   }
-  
+
+  .powercloud-header-img h2 {
+    color: #e4e4e4;
+  }
+
   .meraki-header-img h2 {
     color: #e4e4e4;
   }
@@ -336,7 +340,11 @@
     font-size: 28px;
     line-height: 52px;
   }
-  
+
+  .powercloud-header-img h2 {
+    color: #e4e4e4;
+  }
+
   .meraki-header-img h2 {
     color: #e4e4e4;
   }

@@ -58,6 +58,55 @@ documentation ul {
   margin: 20px 0;
 }
 
+.powercloud-header-img {
+  background-image: url('/images/community/powercloud/powercloud.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 672px;
+  padding-bottom: 2rem;
+  height: 600px;
+  margin-top: -40px;
+}
+
+.powercloud-header-img h3 {
+  text-align: center;
+  padding-top: 25px;
+}
+
+.powercloud-header-img h2 {
+  color: #e4e4e4;
+}
+
+.powercloud-header-img h1 {
+  color: #e4e4e4;
+}
+
+.home-powercloud {
+  padding: 89px 0 0 0;
+  margin-bottom: -20px;
+}
+
+.home-powercloud h1 {
+  font-size: 44px;
+  margin-bottom: 33px;
+}
+
+powercloud h3 {
+  margin-bottom: 33px;
+}
+
+.powercloud-panel {
+  background: rgba(0, 0, 0, .5);
+  padding: 40px;
+  height: 200px;
+  margin-bottom: 160px;
+}
+
+hr.powercloud-hr {
+  visibility: hidden;
+}
+
 .meraki-header-img {
   background-image: url('/images/community/meraki/meraki-box.jpg');
   background-repeat: no-repeat;
@@ -145,12 +194,12 @@ hr.meraki-hr {
 .cs-portrait.text-center {
 	margin-bottom: 5px;
 	}
-	
+
 .cs-hr {
 	padding-top: 10px;
 	padding-bottom: 10px;
 	}
-	
+
 .integration-logo {
 	margin-top: 10px;
 	margin-bottom: 30px;
@@ -414,6 +463,36 @@ hr.meraki-hr {
 
   .home-header h1 {
     color: white;
+  }
+
+  .powercloud-header-img {
+    background-image: none;
+    /* background-repeat: no-repeat; */
+    /* background-position: center; */
+    /* background-size: cover; */
+    min-height: 72px;
+    /* padding-bottom: 2rem; */
+    height: 10px;
+    margin-top: -40px;
+  }
+
+  .powercloud-header-img h2 {
+    color: #454545;
+  }
+
+  .powercloud-panel {
+    background-color: white;
+    padding: 50px 15px 15px 15px;
+    height: 200px;
+    margin-bottom: 0px;
+  }
+
+  .powercloud-panel h1 {
+    color: #454545;
+  }
+
+  .home-powercloud h1 {
+    display: none;
   }
 
   .meraki-header-img {
