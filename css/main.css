@@ -59,7 +59,6 @@ documentation ul {
 }
 
 .powercloud-header-img {
-  background-image: url('/images/community/powercloud/powercloud.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -108,7 +107,6 @@ hr.powercloud-hr {
 }
 
 .meraki-header-img {
-  background-image: url('/images/community/meraki/meraki-box.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
