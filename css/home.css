@@ -278,11 +278,33 @@
 
 }
 
+@media only screen and (max-width: 40.063em) {
+
+  .meraki-ct-ipad {
+    display: none;
+  }
+
+  .powercloud-ct-ipad {
+    display: none;
+  }
+
+}
+
 @media only screen and (min-width: 40.063em) {
 
   /* body { */
   /*   background-color: blue!important; */
   /* } */
+
+  .meraki-ct-ipad {
+    width: 555px;
+    height: 659px;
+  }
+
+  .powercloud-ct-ipad {
+    width: 555px;
+    height: 659px;
+  }
 
   .home-ct-ipad {
     background-size: 900px 687px;
