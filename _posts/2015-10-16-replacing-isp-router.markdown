@@ -32,10 +32,10 @@ How to do this varies between the individual devices, but it is a relatively sim
 1. Retrieve your ADSL configuration details from one of two options.
   - &#8226;Contact your ISP and request the details
   - &#8226;Login to your Router and retrieve them from here (This will only work on some routers as others hide your password for extra security)
-  
+
 2. Connect up your new router, and then using the details you retrieved from your ISP/previous router, enter them into the correct fields
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/adsl-login.png">
 </div>
 
@@ -57,7 +57,7 @@ If you really want to make the most out of your broadband speeds, the router is 
 
 *Cucumber Tony is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities.Or you can utlise the captive portal solution with your existing infrastucture. Create a free account and check it here <a href="https://cucumberwifi.io">cucumberwifi.io</a>*
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 
 <h2>Come join Cucumber</h2>
 

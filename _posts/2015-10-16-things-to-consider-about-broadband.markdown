@@ -17,7 +17,7 @@ Here are some things to think about before you sign up for a contract with an IS
 
 Speed is normally measured in mega bytes per second (Mbps). It’s often referred to as your bandwidth e.g. how much bandwidth you have determines how fast the internet will go.
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 	<img src="/images/community/tutorials/broadband/speed-test.jpeg">
 </div>
 
@@ -27,13 +27,13 @@ The speed you get is determined by the service you buy and what’s available in
 
 You may have seen boxes like this hanging around on street corners.
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 	<img src="/images/community/tutorials/broadband/exchange-point.jpeg">
 </div>
 
 These are exchange points. They’re full of wires like this.
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 	<img src="/images/community/tutorials/broadband/exchange-point-open.jpeg">
 </div>
 
@@ -66,7 +66,7 @@ When you sign up to an internet service you need to make sure it’s going to gi
 
 *Cucumber Tony is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities.Or you can utlise the captive portal solution with your existing infrastucture. Create a free account and check it here <a href="https://cucumberwifi.io">cucumberwifi.io</a>*
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 
 <h2>Come join Cucumber</h2>
 

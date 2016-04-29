@@ -9,15 +9,14 @@ permalink: /case-studies/vospers
 description: “I can't think of one thing I liked in Meraki that I didn't get in Cucumber for a fraction of the price.”
 ---
 
-<div class="row">
-<div class="small-12 medium-3 columns">
-<div class="text-center">
+<div class="mdl-grid">
+<div class="mdl-cell mdl-cell--3-col mdl-typography--text-center">
 <img class="cs-portrait text-center" src="/images/case-studies/vospers/vospers-jonathan.png" width="120px">
 <p>Jonathan Brickell <br> <small>Senior IT Technician</small></p>
 <img src="/images/case-studies/vospers/vospers-logo.png" width="200px">
 </div>
-</div>
-<div class="small-12 medium-9 columns">
+
+<div class="mdl-cell mdl-cell--9-col">
 <a href="/case-studies/">< Back to Case Studies</a>
 <h1>How Vospers Use Cucumber</h1>
 <p>Jonathan has been using Cucumber Tony since day one. He tells us why his network is still growing and how it's changed things for the better at Vospers.</p>
@@ -36,7 +35,7 @@ description: “I can't think of one thing I liked in Meraki that I didn't get i
 
 <p>Having one pane of glass for all our wireless networks. Now we can create new network SSIDs and passwords across the whole estate in a few clicks. It saves the team a lot of hours setting up and diagnosing issues. If a user has a problem connecting I can quickly check the network status to see if it's a problem with the WiFi or their device.</p>
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <h3>"I can't think of one thing I liked in Meraki that I didn't get in Cucumber for a fraction of the price."</h3>
 </div>
 
@@ -50,7 +49,7 @@ description: “I can't think of one thing I liked in Meraki that I didn't get i
 
 <hr>
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <p><i>Cucumber Tony is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities. Or you can utilise the captive portal solution with your existing infrastructure. Create a free account and check it here <a href="https://cucumberwifi.io">cucumberwifi.io</a></i></p>
 <div class="text-center">
 <h2>Come join Cucumber</h2>

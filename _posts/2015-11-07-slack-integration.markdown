@@ -21,13 +21,13 @@ Now it's possible for Cucumber Tony to notify you when one of your WiFi routers 
 
 This is how easy it is to add it. It only takes a second and you'll get notifications immediately.
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/slack-integration.gif" width="600px">
 </div>
 
 Choose your channel when you add your integration. When you've added it, you can choose which events you want to receive.
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/slack-notifications.png" width="600px">
 </div>
 
@@ -37,7 +37,7 @@ That's all for now.
 
 *Cucumber Tony is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities.Or you can utlise the captive portal solution with your existing infrastucture. Create a free account and check it here <a href="https://cucumberwifi.io">cucumberwifi.io</a>*
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 
 <h2>Come join Cucumber</h2>
 

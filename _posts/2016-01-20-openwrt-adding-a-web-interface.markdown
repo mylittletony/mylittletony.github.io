@@ -11,7 +11,7 @@ description: How to add the LuCI web interface to OpenWRT.
 
 Configuring every aspect of your OpenWRT device through it’s CLI isn’t for everyone. But with all of the packages available for OpenWRT you are able to add a web interface to help you manage your device through a more user friendly method. We are going to take a look at **LuCI**.
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
   <img src="/images/community/tutorials/openwrt/luci-interface.png" width="750px">
 </div>
 
@@ -38,7 +38,7 @@ Now have a play around with the web interface and see all the changes you can ma
 *Cucumber Tony is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities. Or you can utilise the captive portal solution with your existing infrastructure. Create a free account and check it here <a href="https://cucumberwifi.io">cucumberwifi.io</a>*
 
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 
 <h2>Come join Cucumber</h2>
 
