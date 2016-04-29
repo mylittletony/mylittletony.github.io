@@ -25,46 +25,43 @@ Open up your web browser and navigate to <B>192.168.0.1</b> to open the <b>Local
 
 Log into your portal using your username and password (default admin - admin)
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/tplink-flash/tplink-login.png">
 </div>
 
 Click on System tools on the left hand sidebar to expand the options
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/tplink-flash/system-tools.png">
 </div>
 
 Click on Firmware Upgrade so you can upload the PolkaSpots firmware to your box
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/tplink-flash/tools-firmware.png">
 </div>
 
 Click on Choose File and select the firmware you downloaded in preparation, then click on Upgrade.
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/tplink-flash/firmware-upload.png">
 </div>
 
 The firmware install process will start, wait for this process to complete
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/tplink-flash/firmware-progress.png">
 </div>
 
 Once completed, your box will start restarting, please wait for this to complete
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/tplink-flash/restarting.png">
 </div>
 
 
-Once you reach this, your box should soon start broadcasting a New PolkaSpots SSID. 
+Once you reach this, your box should soon start broadcasting a New PolkaSpots SSID.
 
 The browser will not refresh as it no longer has the TP-Link portal installed on it, so simply close off the page.
 
 <h2>If you haven't already, your box is now ready to be added into Cucumber Tony!<h2>
-
-
-

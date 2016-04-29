@@ -13,7 +13,7 @@ description: Ruckus Captive Portal, Setting up a captive portal for the Ruckus S
 </p>
 <hr>
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
   <h1>Full Guide</h1>
   <p>For the full in-depth guide on how to set up your Ruckus vSZ click the button below</p>
   <div class="doc-button-center">
@@ -52,18 +52,18 @@ The only way to fix this is to contact us.
 <h3>Get your Nas ID</h3>
 <p>Firstly change the box type to Ruckus on the settings page. Click the advanced settings link to reveal your unique NasID. This is unique to your account. <b>You must use the same NAS id for all your locations.</b></p>
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
   <img src="/images/community/tutorials/settings-1.png" width="800px">
 </div>
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
   <img src="/images/community/tutorials/settings-2.png" width="800px">
 </div>
 
 <h3>Radius secret</h3>
 <p>Click <b>Radius Settings</b> on the home page for your box.</p>
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
   <img src="/images/community/tutorials/ruckus-radius-1.png" width="800px">
 </div>
 
@@ -82,13 +82,13 @@ Configuration > Service and Profiles > Authentication
 <li>Port: 1812</li>
 <li>Secret: enter your secret</li>
 </ul>
-<div class="text-center">
+<div class="mdl-typography--text-center">
   <img src="/images/community/tutorials/auth.png" width="800px">
 </div>
 
 <p>Next create your accounting server with the same details as above but replace the port with 1813.</p>
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
   <img src="/images/community/tutorials/accounting.png" width="800px">
 </div>
 
@@ -99,7 +99,7 @@ Configuration > AP Zones > Your Zone > Hotspot WISPr > Create New
 ```
 
 <p>You can either use our default url <b>app.my-wifi.co</b> or you can use your own brand. For example, if your brand name is Tony Time, the url will be tony-time.my-wifi.co. You can find this in your branding settings within your Cucumber dashboard.
-<div class="text-center">
+<div class="mdl-typography--text-center">
   <img src="/images/community/tutorials/hotspot-wispr.png" width="800px">
 </div>
 Ensure you Redirected Mac Format is as so:
@@ -112,7 +112,7 @@ aa-bb-cc-dd-ee-ff
 
 You can find the most up to date list of <b><span data-elevio-article="18499">Walled Gardens here.</span></b>
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
   <img src="/images/community/tutorials/walledgardens.png" width="800px">
 </div>
 
@@ -124,7 +124,7 @@ You can find the most up to date list of <b><span data-elevio-article="18499">Wa
 
 <p>Enter the accounting and authentication servers you created just now. You must select "Use the controller as a proxy"</p>
 </ul>
-<div class="text-center">
+<div class="mdl-typography--text-center">
   <img src="/images/community/tutorials/wlan-1.png" width="800px">
 </div>
 
@@ -135,7 +135,7 @@ You can find the most up to date list of <b><span data-elevio-article="18499">Wa
 Click Configuration > System > Northbound Portal Interface. Enter your password.
 ```
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
   <img src="/images/community/tutorials/ruckus-northbound-api-1.png" width="800px">
 </div>
 
@@ -146,18 +146,18 @@ Click Configuration > System > Northbound Portal Interface. Enter your password.
 Click configuration > Administrators. Click create a new Admin account and fill in your details.
 ```
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
   <img src="/images/community/tutorials/ruckus-new-admin.png" width="800px">
 </div>
 
 <p>Next, you should create a new role for the user. We'd recommend the following as a minimum.</p>
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
   <img src="/images/community/tutorials/ruckus-permissions.png" width="800px">
 </div>
 <p>Assign the user to a role. Click on Configuration > Management Domains. Then click the Add Account and Assign Role button. You will need to choose the user you just created and assign to the role for the API.</p>
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
   <img src="/images/community/tutorials/ruck-admin-domains.png" width="800px">
 </div>
 
@@ -167,13 +167,13 @@ Click configuration > Administrators. Click create a new Admin account and fill 
 <p>Enter your VSH public IP or hostname and also your Northbound API password. You should also add your admin user and password. After you click save, we'll run a test on your server.</p>
 <p><b>Please ensure you use https for security reasons.</b></p>
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
   <img src="/images/community/tutorials/ruckus-northbound-api.png" width="800px">
 </div>
 
 <p>Your VSZ must be accessible from the internet. Please do not enter a port number. If all went well, you will see a confirmation message on the page.</p>
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
   <img src="/images/community/tutorials/ruckus-api-success.png" width="800px">
 </div>
 
@@ -185,7 +185,7 @@ Click configuration > Administrators. Click create a new Admin account and fill 
 
 <p>Connect to your Ruckus Wi-Fi network and navigate to a website. Watch out for https sites - sometimes they don't redirect correctly.</p>
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
   <img src="https://d3e9l1phmgx8f2.cloudfront.net/images/www/phone-1.png" width="300px">
 </div>
 
@@ -195,17 +195,17 @@ Click configuration > Administrators. Click create a new Admin account and fill 
 
 <p>To view your clients, click on Clients in the left-hand menu. Your Ruckus clients are identified by the Dog Icon on the right hand side. You can see all your different clients online in the same place!</p>
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
   <img src="/images/community/tutorials/ruckus-clients-list.png" width="800px">
 </div>
 
 <p>Your boxes will appear in your Boxes list and you can see their current status, IP information and more.</p>
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
   <img src="/images/community/tutorials/ruckus-access-point-status.png" width="800px">
 </div>
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
   <img src="/images/community/tutorials/ruckus-access-point-status-1.png" width="800px">
 </div>
 
@@ -226,7 +226,7 @@ If you are seeing a green screen when you login, usually the messages will help 
 
 ### Cannot Connect to VSZ Server
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
   <img src="/images/community/tutorials/cannot-connect-to-vsz-1.jpg" width="200px">
 </div>
 
@@ -268,11 +268,11 @@ You can see the login page but when you login, it sends you back to the login pa
 - &#8226; Ensure your radius secrets match the ones in your VSZ radius settings
 - &#8226; Ensure your Nas-Id from your Cucumber Wi-Fi account matches the one in your VSZ
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
   <img src="/images/community/tutorials/vsz-radius-secret-1.png" width="800px">
 </div>
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
   <img src="/images/community/tutorials/vsz-radius-nas-id.png" width="800px">
 </div>
 
@@ -280,7 +280,7 @@ If none of these worked, login to your Cucumber Wi-Fi dashboard and head over to
 
 At the top of the top, it should show your VSZ host. If you cannot see this, go back to your location settings and re-save the VSZ settings. That should resync the settings.
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
   <img src="/images/community/tutorials/vsz-radius-missing-1.png" width="800px">
 </div>
 
@@ -327,7 +327,7 @@ When you login to your VSZ, you'll probably notice the AP is in the staging list
 You bet. The Cucumber dashboard works with any Smart Zone Gateway. Just enter your details as described above.
 
 <br><br>
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <p>Sign-up for a Cucumber dashboard. It's free for unlimited access points!</p>
 <a href="https://my.ctapp.io/#/create" class="button large success dst">Join</a>
 </div>

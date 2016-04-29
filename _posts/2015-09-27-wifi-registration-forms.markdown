@@ -17,17 +17,17 @@ If you have selected "Require Registration", they will need to enter a username 
 
 ## Step 1. Create a Splash Page
 
-In your Cucumber dashboard, create a new splash page (you can use an existing one if you want). 
+In your Cucumber dashboard, create a new splash page (you can use an existing one if you want).
 
 Make sure you've set the access type to 'Registration'. Click the Edit Form button.
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
   <img src="/images/community/tutorials/wifi-hotspot-registration-1.png" width="800px">
 </div>
 
 You should see a screen similar to this:
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
   <img src="/images/community/tutorials/wifi-hotspot-registration-2.png" width="800px">
 </div>
 
@@ -69,7 +69,7 @@ The options can be confusing to start with, we'll tell you what they mean here.
 
 To change the order of the fields, simply drap them around!
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
   <img src="/images/community/tutorials/registration-form-order.gif" width="400px">
 </div>
 
@@ -77,7 +77,7 @@ To change the order of the fields, simply drap them around!
 
 If you want some multiple-choice questions, you can use a checkbox but you're better off with radio buttons. Set them up like this, it's a blast!
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
   <img src="/images/community/tutorials/reg-radio-buttons.gif" width="400px">
 </div>
 
@@ -90,7 +90,7 @@ The default view shows all your records. If you want to see your custom fields, 
 In the guest's page, you can view their details, usage history and leave some notes about the customer.
 
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
   <img src="/images/community/tutorials/guest-lists.gif" width="400px">
 </div>
 
@@ -100,7 +100,7 @@ To sync your emails with MailChimp, all you need to do is enable the newsletter 
 
 If you want to sync you custom fields with MailChimp, you need to be on a paid plan. If you're on a paid plan, please make sure the 'Merge Fieds' option is enabled. This only works with MailChimp at the moment.
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
   <img src="/images/community/tutorials/registration-fields-merge-fields-mailchimp.png" width="800px">
 </div>
 
@@ -112,7 +112,7 @@ You should be good to go, let us know if you need assistance with this!
 
 ### What if they turn up with a new device.
 
-If you've selected "Require Registration", they will be able to sign-in with their chosen username and password. 
+If you've selected "Require Registration", they will be able to sign-in with their chosen username and password.
 
 If not, they will have to register again. There's no way for us to tell who they are.
 
@@ -151,7 +151,7 @@ You bet! Simply visit your reports page and hit the download button. You'll be a
 
 *Cucumber Tony is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities.Or you can utlise the captive portal solution with your existing infrastucture. Create a free account and check it here <a href="https://cucumberwifi.io">cucumberwifi.io</a>*
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 
 <h2>Come join Cucumber</h2>
 

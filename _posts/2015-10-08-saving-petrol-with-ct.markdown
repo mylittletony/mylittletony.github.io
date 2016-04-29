@@ -11,7 +11,7 @@ Jon is the IT guy at Exmoor National Park. We’re quite jealous of his job as h
 
 Seriously look how amazing it is…
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 	<img src="/images/community/showcase/exmoor-park.jpeg">
 Image by <a href="https://www.flickr.com/photos/fhmira/">F Mira</a> via Flickr
 </div>
@@ -20,7 +20,7 @@ Image by <a href="https://www.flickr.com/photos/fhmira/">F Mira</a> via Flickr
 Anyway the visitors there still need Wi-Fi and it’s his job to run the guest Wi-Fi network across five visitor centres. These are spread around all corners of the park with about 25 miles in between each one.
 Because Jon manages his Wi-Fi using the Cucumber web interface he doesn’t have to drive to each site to make a change or fix an issue.
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 	<img src="/images/community/showcase/ct-interface.png">
 </div>
 
@@ -58,7 +58,7 @@ Here’s how he does it.
 
 *Cucumber Tony is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities.Or you can utlise the captive portal solution with your existing infrastucture. Create a free account and check it here <a href="https://cucumberwifi.io">cucumberwifi.io</a>*
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 
 <h2>Come join Cucumber</h2>
 

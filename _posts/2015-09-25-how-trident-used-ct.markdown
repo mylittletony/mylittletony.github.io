@@ -48,7 +48,7 @@ If you want to set up your own Ruckus vSZ with the Cucumber interface and captiv
 
 
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 
 <h2>Come join Cucumber</h2>
 

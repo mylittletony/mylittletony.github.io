@@ -29,19 +29,19 @@ Connect to the Access Point using one of these methods:<br>
 - Your password is the serial number of the box, as so:
 </li>
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/serial-number.gif" width="800px">
 </div>
 
 <li>The doctor page should load and immediately begin running it's checks, which can take a few minutes.</li>
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/local-portal/doctor-script.png">
 </div>
 
 <li>Test results will begin to populate on screen, and once finished a green download button will appear at the bottom.</li>
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/local-portal/doctor-download.png">
 </div>
 

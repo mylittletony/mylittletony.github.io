@@ -17,7 +17,7 @@ We’ll assume you’re running Windows for now and start off with PuTTY (If not
 
 If you haven’t already, <a href="http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html">download PuTTY</a> and run it. It should look something like this:
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
   <img src="/images/community/tutorials/openwrt/puttyconfig.png" width="400px">
 </div>
 
@@ -41,7 +41,7 @@ You will be asked to confirm your old password, at which point you will be able 
 *Cucumber Tony is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities. Or you can utilise the captive portal solution with your existing infrastructure. Create a free account and check it here <a href="https://cucumberwifi.io">cucumberwifi.io</a>*
 
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 
 <h2>Come join Cucumber</h2>
 

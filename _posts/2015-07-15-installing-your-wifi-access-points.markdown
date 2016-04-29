@@ -16,11 +16,11 @@ Where you place your WiFi Access Point (AP) can have a bigger impact on your WiF
 
 <h2>What area do you plan to cover?</h2>
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/wifi-floor-plan.jpg">
 </div>
 
-A floor plan is always handy when planning out areas you wish to offer Wi-Fi. 
+A floor plan is always handy when planning out areas you wish to offer Wi-Fi.
 You should start by using the plan and making an estimate of the area that you want to cover.
 
 This will help you visualise the actual space you need to cover, and what areas you might not need to cover at all, as well as potential obstacles and obstructions to the Wi-Fi signal.
@@ -31,11 +31,11 @@ You are never going to see the coverage or distance figure that the manufactures
 
 Every time that your WiFi signal passes through a wall or any other obstacle the signal will decrease, reducing the quality for the end user.
 
-Other factors also affect signal performance, including reflecting surfaces like metal and glass. These reflect the WiFi signal and disturb performance. Keep your AP away from these if you can. For example don't put your AP under a metal counter, the signal will be reflected back and will not penetrate the metal surface. 
+Other factors also affect signal performance, including reflecting surfaces like metal and glass. These reflect the WiFi signal and disturb performance. Keep your AP away from these if you can. For example don't put your AP under a metal counter, the signal will be reflected back and will not penetrate the metal surface.
 
 <h2>Things to avoid doing</h2>
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/wifi-restaurant.jpg">
 </div>
 
@@ -67,7 +67,7 @@ If possible, it's best to bolt your AP to a wall, a lot of APs now come with wal
 
 The more the merrier, right? Not always the case.
 
-If you cram lots of APs into small areas or venues, you are going to have trouble with things like adjacent and co-channel interference, as well as aggressive roaming from one AP to another. 
+If you cram lots of APs into small areas or venues, you are going to have trouble with things like adjacent and co-channel interference, as well as aggressive roaming from one AP to another.
 
 All of which add up to a poor user experience.
 
@@ -75,7 +75,7 @@ If you have a multiple AP deployment try to plan them in such a way that at any 
 
 <h3>More Tools</h3>
 
-Cucumber Tony has loads of tools built-in to improve your Wi-Fi signal and security. 
+Cucumber Tony has loads of tools built-in to improve your Wi-Fi signal and security.
 
 It's free for unlimited locations and access points.
 

@@ -37,7 +37,7 @@ Fill-in all the fields, they're all required.
 
 Click the create button to save your App.
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/ct-api-oauth-1.png" width='600px'>
 </div>
 
@@ -49,13 +49,13 @@ You can use the access token to authorise your API calls. Alongside the access t
 
 Make a note of your App ID and App Secret. Do not let anyone else have your secret!
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/ct-api-oauth-2.png" width='600px'>
 </div>
 
 ## Requesting the Grant / Code
 
-If you're using plain old curl, this is how you get your code. 
+If you're using plain old curl, this is how you get your code.
 
 Open a browser and open the following URL, replacing the values with your details:
 
@@ -74,7 +74,7 @@ https://auth.ctapp.io/oauth/authorize?client_id=18273618253765123&redirect_uri=h
 
 After visiting the URL, login with your Cucumber credentials and you should be sent to a confirmation page.
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/ct-api-oauth-3.png" width='600px'>
 </div>
 
@@ -267,7 +267,7 @@ https://auth.ctapp.io/oauth/authorize?client_id=18273618253765123&redirect_uri=h
 
 You should also ensure your redirect url matches the callback url you've set in your application settings. Make sure there's no trailing slashes etc.
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/ct-api-oauth-4.png" width='600px'>
 </div>
 
@@ -283,7 +283,7 @@ http://docs.polkaspots.apiary.io/#
 
 *Cucumber Tony is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities.Or you can utlise the captive portal solution with your existing infrastucture. Create a free account and check it here <a href="https://cucumberwifi.io">cucumberwifi.io</a>*
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 
 <h2>Come join Cucumber</h2>
 

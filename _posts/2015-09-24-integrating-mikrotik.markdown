@@ -22,13 +22,13 @@ thumbnail: /images/community/thumbnails/aruba-setup.png
 
 3\. Launch winbox and find your device in the neighbours tab and double click the MAC address, then click connect
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/mikrotik/winbox-connect.png">
 </div>
 
 4\. Go to quick setup on the left sidebar and retrieve the MAC address under internet
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/mikrotik/winbox-mac.png">
 </div>
 
@@ -36,47 +36,47 @@ thumbnail: /images/community/thumbnails/aruba-setup.png
 
 6\. Click on the radius settings button on your box page in CT and keep note of the information
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/mikrotik/ct-radius.png">
 </div>
 
 7\. Locate the .zip file you downloaded in Step 1, and then extract it to retrieve the microtik-login.html file <br>
 Rename the file to login.html
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/mikrotik/mikrotik-html.png">
 </div>
 
 8\. In winbox, go to the radius section on the left sidebar, and add a new radius setting using the radius info you retrieved earlier from Cucumber Tony in step 6
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/mikrotik/winbox-add-radius.png">
 </div>
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/mikrotik/winbox-radius.png">
 </div>
 
 9\. Copy the MAC address that you added into CT and go to System > Identity and paste in the MAC address as your identity and click OK
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/mikrotik/winbox-identity.png">
 </div>
 
 10\. Go back into your box page on CT and go into your box settings at the top of the page.
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/mikrotik/ct-box-settings.png">
 </div>
 
 Scroll down to advanced settings, and replace the radius NAS ID with the same MAC address from before and click update
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/mikrotik/ct-nas.png">
 </div>
 
 11\. Back in winbox, go to IP on the left sidebar and then select Hotspot.
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/mikrotik/winbox-hotspot.png">
 </div>
 
@@ -84,31 +84,31 @@ Click on hotspot setup and you will only need to change the following: <br>
 ```
 Hotspot interface: bridge-local
 ```
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/mikrotik/winbox-interface.png">
 </div>
 
 12\. Under hotspot servers, double click on hotspot 1 and change the name to the mac address used previously, then click OK
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/mikrotik/hotspot-mac.png">
 </div>
 
 13\. Under server profiles, select hsprof1 and change the name to the mac address used previously, then click ok
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/mikrotik/server-mac.png">
 </div>
 
 Then under the Logins tab, make sure that **HTTP PAP** is the only option enabled next to **Login By**.
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/mikrotik/winbox-login.png">
 </div>
 
 Then under the radius tab, enable radius. The mac format must be **XX-XX-XX-XX-XX-XX** and **accounting should be enabled**. Otherwise you'll get no datas.
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/mikrotik/winbox-accounting.png">
 </div>
 
@@ -118,19 +118,19 @@ You can find the most up to date list of <b><span data-elevio-article="18499">Wa
 
 Enter the walled garden domains under Dst. Host.
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/mikrotik/winbox-walledgarden.png">
 </div>
 
 15\. Go into Files, and find the file named hotspot/login.html and remove it.
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/mikrotik/winbox-html.png">
 </div>
 
 Then find the file you downloaded previously, and drag and drop it into the hotspot directory where you removed the previous file.
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/mikrotik/replace-html.png">
 </div>
 
