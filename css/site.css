@@ -810,3 +810,13 @@
     padding: 0px;
   }
 }
+
+.terms-page {
+  background: #FAFAFA;
+}
+
+.terms-card {
+  padding: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
