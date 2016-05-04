@@ -33,7 +33,7 @@
 /*.home-header-img {
   position: relative;
   background: linear-gradient(rgba(1, 127, 221, 0.70), rgba(1, 127, 221, 0.70)),url(http://cdn.slashgear.com/wp-content/uploads/2012/10/google-datacenter-tech-05.jpg);
-  background-color: #FF6D00;
+  background-color: #017fdd;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -49,10 +49,10 @@
   position: absolute;
   z-index: 0;
   width: 100%;
-  background-color: #FF6D00;
+  background-color: #017fdd;
   top: 0;
   left: 0;
-  height: 100%;
+  height: 850px;
 }
 
 .home-header-text {
@@ -187,7 +187,7 @@
 .mat-banner {
   position: relative;
   z-index: 6;
-  padding-top: 30px;
+  padding-top: 40px;
   padding-bottom: 40px;
   border-bottom: 1px solid rgb(224, 224, 224);
 }
@@ -259,7 +259,7 @@
 .get-started {
   position: relative;
   z-index: 3;
-  background-color: #FF6D00;
+  background-color: #017fdd;
   margin-top: -20px;
   padding-top: 90px;
   padding-bottom: 90px;
@@ -488,15 +488,12 @@
 
 .plans-page {
   padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgb(224, 224, 224);
 }
 
 .plans-card-row {
   margin-top: -150px;
-  margin-bottom: 50px;
-}
-
-.plans-card {
   margin-bottom: 50px;
 }
 
@@ -665,7 +662,7 @@
   background-image: url('/images/pages/ct-map.png');
   /*background-image: url('http://images.imagewallpaper.net/20160131/black-digital-world-map-1920x1080.jpg');*/
   /*background-image: radial-gradient(circle farthest-corner at right top, #00ffff 0%, #03a9f4 25%, #017fdd 60%, #1a2565 100%);*/
-  background-color: #FF6D00;
+  background-color: #017fdd;
   background-repeat: no-repeat;
   background-position: left;
   background-size: cover;
@@ -675,7 +672,7 @@
 
 .home-about-banner {
   height: 400px;
-  background-color: #FF6D00;
+  background-color: #017fdd;
   color: white;
 }
 
@@ -788,3 +785,28 @@
 .material-icons.md-36 { font-size: 36px; }
 .material-icons.md-48 { font-size: 48px; }
 .material-icons.md-64 { font-size: 64px; }
+
+.features-table {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 749px) {
+  .mdl-data-table {
+    white-space: normal;
+  }
+}
+
+.features-table-heading {
+  background: #E0E0E0;
+}
+
+@media (max-width: 520px) {
+  .features-table td {
+    padding: 12px 0 0 0;
+    font-size: 11px;
+  }
+  .features-table th {
+    padding: 0px;
+  }
+}
