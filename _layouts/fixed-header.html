@@ -12,6 +12,16 @@ layout: default
       <div class="mdl-layout-spacer"></div>
       <!-- Navigation. We hide it in small screens. -->
       <nav class="mdl-navigation mdl-layout--large-screen-only">
+
+        <a style="cursor:pointer;" id="features-list" class="mdl-navigation__link">Features</a>
+        <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="features-list">
+          <a href="/features/management/"><li class="mdl-menu__item">Management</li></a>
+          <a href="/features/networks/"><li class="mdl-menu__item">Networks</li></a>
+          <a href="/features/branding/"><li class="mdl-menu__item">Branding</li></a>
+          <a href="/features/reports/"><li class="mdl-menu__item">Reports</li></a>
+          <a href="/features/integrations/"><li class="mdl-menu__item">Integrations</li></a>
+          <a href="/features/guests/"><li class="mdl-menu__item">Guest Login</li></a>
+        </ul>
         <a class="mdl-navigation__link" href="/discover/">Discover</a>
         <a class="mdl-navigation__link" href="/plans/">Plans</a>
         <a class="mdl-navigation__link" target="_blank" href="https://discuss.cucumberwifi.io/">Discuss</a>
@@ -22,6 +32,7 @@ layout: default
   </header>
   <div class="mdl-layout__drawer mdl-layout--small-screen-only mdl-shadow--4dp">
     <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="/discover/">Features</a>
       <a class="mdl-navigation__link" href="/discover/">Discover</a>
       <a class="mdl-navigation__link" href="/plans/">Plans</a>
       <a class="mdl-navigation__link" target="_blank" href="https://discuss.cucumberwifi.io/">Discuss</a>

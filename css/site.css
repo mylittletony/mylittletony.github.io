@@ -49,7 +49,7 @@
   position: absolute;
   z-index: 0;
   width: 100%;
-  background-color: #017fdd;
+  background-color: #16AC5B;
   top: 0;
   left: 0;
   height: 850px;
@@ -564,6 +564,7 @@
 
 .plan-features-list li {
   list-style-type: none;
+  color: rgba(0,0,0, 0.54);
 }
 
 .about-us-banner {
@@ -694,7 +695,7 @@
 }
 
 .home-about-banner a {
-  text-decoration: none;
+  color: white;
 }
 
 @media (max-width: 479px) {
@@ -809,6 +810,14 @@
   .features-table th {
     padding: 0px;
   }
+}
+
+.features-table td {
+  text-align: center;
+}
+
+.features-table i {
+  color: rgba(0,0,0, 0.54);
 }
 
 .terms-page {

@@ -4,7 +4,7 @@
       "value": 90,
       "density": {
         "enable": true,
-        "value_area": 750
+        "value_area": 500
       }
     },
     "color": {
@@ -75,7 +75,7 @@
         "mode": "repulse"
       },
       "onclick": {
-        "enable": false,
+        "enable": true,
         "mode": "push"
       },
       "resize": true
