@@ -50,6 +50,7 @@
   z-index: 0;
   width: 100%;
   background-color: #16AC5B;
+  /*background-color: #FF4A00;*/
   top: 0;
   left: 0;
   height: 850px;
@@ -190,6 +191,12 @@
   padding-top: 40px;
   padding-bottom: 40px;
   border-bottom: 1px solid rgb(224, 224, 224);
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.mat-banner p {
+  color: rgba(0,0,0, 0.54);
 }
 
 .mat-banner img {
@@ -486,6 +493,10 @@
   margin-top: 100px;
 }
 
+.plans-main button {
+  margin-top: 20px;
+}
+
 .plans-page {
   padding-top: 60px;
   padding-bottom: 10px;
@@ -575,6 +586,11 @@
   background-color: #017fdd;
   color: white;
   height: 400px;
+  background-image: url('/images/pages/shoreditch-fence.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
 }
 
 .about-us-card {
@@ -584,6 +600,10 @@
   padding-left: 50px;
   padding-right: 50px;
   padding-bottom: 20px;
+}
+
+.about-us-card p {
+  color: rgba(0,0,0, 0.54);
 }
 
 .about-us {
@@ -719,7 +739,7 @@
 }
 
 .discover-banner {
-  background-image: url('/images/pages/ct-cafe-g.jpg');
+  background-image: url('/images/pages/access-point-arrow.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -884,4 +904,39 @@
   background-color: #017fdd;
   color: white;
   height: 400px;
+}
+
+.features-banner {
+  background-color: #017fdd;
+  height: 400px;
+  color: white;
+  line-height: 30px;
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+@media (max-width: 479px) {
+  .features-banner h1 {
+    font-size: 36px;
+  }
+
+  .features-banner h2 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.features-page {
+  background-color: #FAFAFA;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.features-card {
+  margin-top: -100px;
+  margin-bottom: 100px;
+}
+
+.mdl-menu a {
+  text-decoration: none;
 }
