@@ -7176,7 +7176,7 @@ input.mdl-button[type="submit"] {
               flex-shrink: 0;
       padding: 16px 40px;
       margin: 0;
-      color: #757575; }
+      color: #0000; }
       @media screen and (max-width: 1024px) {
         .mdl-layout__drawer .mdl-navigation .mdl-navigation__link {
           padding: 16px 16px; } }
