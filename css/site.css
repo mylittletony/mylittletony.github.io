@@ -763,6 +763,10 @@ margin-top: -80px;
   max-height: 350px;
 }
 
+.header-card a:hover {
+  color: #607D8B;
+}
+
 .header-card img {
   max-width: 120px;
   max-height: 120px;
@@ -963,10 +967,7 @@ margin-top: -80px;
   margin-bottom: 5px;
 }
 
-.mdl-layout__drawer .mdl-navigation .navigation-subheader-list {
-  padding-left: 10px;
-}
-
 .mdl-layout__drawer .mdl-navigation .navigation-subheader-list .mdl-navigation__link {
   color: #757575;
+  padding-left: 30px;
 }
