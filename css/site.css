@@ -230,9 +230,32 @@ margin-top: -80px;
   }
 }
 
-.contact-card {
+.contact-main {
+  background-color: #017fdd;
+  height: 400px;
+  padding-top: 40px;
+  padding-bottom: 60px;
+  color: white;
+  line-height: 30px;
+}
+
+.contact-main a {
+  color: white;
+}
+
+.contact-main h2 {
   margin-top: 100px;
-  margin-bottom: 100px;
+}
+
+.contact-main button {
+  margin-top: 20px;
+}
+
+.contact-card {
+  position: relative;
+  z-index: 6;
+  margin-top: -120px;
+  margin-bottom: 20px;
 }
 
 /*.contact-us {
@@ -770,7 +793,7 @@ margin-top: -80px;
 }
 
 .hardware-banner {
-  background-image: url('/images/pages/meraki-box.png');
+  background-image: url('/images/pages/laptop.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
