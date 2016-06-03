@@ -1,6 +1,6 @@
 # Site settings
 title: Full-stack Wi-Fi Platform
-email: hey@cucumberwifi.io
+email: hello@polkaspots.com
 description: > # this means to ignore newlines until "baseurl:"
   Cucumber Tony is full-stack Wi-Fi. It's the only platform you'll ever need.
 baseurl: "" # the subpath of your site, e.g. /blog/
