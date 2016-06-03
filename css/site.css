@@ -201,12 +201,13 @@ margin-top: -80px;
 
 .mat-banner {
   position: relative;
-  z-index: 6;
+  z-index: 5;
   padding-top: 40px;
   padding-bottom: 40px;
   border-bottom: 1px solid rgb(224, 224, 224);
   padding-left: 40px;
   padding-right: 40px;
+  background-color: white;
 }
 
 .mat-banner p {
@@ -316,6 +317,10 @@ margin-top: -80px;
 .get-started-card {
   padding-left: 20px;
   padding-right: 20px;
+}
+
+.get-started-card p {
+  color: rgba(0,0,0, 0.54);
 }
 
 .get-started button {
