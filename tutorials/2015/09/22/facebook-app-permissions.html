@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Applying for the correct Facebook Permissions</title>
+  <meta name="description" content="How do I set up my own Facebook App?">
+  <link rel="icon" type="image/png" href="/images/favicon.ico">
+  <link rel="stylesheet" href="/css/material.css">
+  <link rel="stylesheet" href="/css/site.css">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,700,300' type='text/css'>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="canonical" href="https://cucumberwifi.io/tutorials/2015/09/22/facebook-app-permissions.html">
+  <link rel="alternate" type="application/rss+xml" title="Full-stack Wi-Fi Platform" href="https://cucumberwifi.io/feed.xml" />
+
+  <script src="/js/material.js"></script>
+
+</head>
+
+
+<body>
+
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header mdl-layout__header--scroll mdl-shadow--4dp">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <div class="ct-logo">
+        <a href="/"><img src="/images/pages/cucumber-wifi.svg"></a>
+      </div>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation. We hide it in small screens. -->
+      <nav class="mdl-navigation mdl-layout--large-screen-only">
+        <a class="mdl-navigation__link" href="/discover/">Discover</a>
+        <a style="cursor:pointer;" id="features-list" class="mdl-navigation__link">Features</a>
+        <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="features-list">
+          <a href="/features/management/"><li class="mdl-menu__item">Management</li></a>
+          <a href="/features/networks/"><li class="mdl-menu__item">Networks</li></a>
+          <a href="/features/branding/"><li class="mdl-menu__item">Branding</li></a>
+          <a href="/features/reports/"><li class="mdl-menu__item">Reports</li></a>
+          <a href="/features/integrations/"><li class="mdl-menu__item">Integrations</li></a>
+          <a href="/features/guests/"><li class="mdl-menu__item">Guest Login</li></a>
+        </ul>
+        <a class="mdl-navigation__link" href="/compatible-hardware/">Devices</a>
+        <a class="mdl-navigation__link" href="/plans/">Plans</a>
+        <a class="mdl-navigation__link" target="_blank" href="https://discuss.cucumberwifi.io/">Discuss</a>
+        <a class="mdl-navigation__link" href="https://my.ctapp.io/#/create">Sign-up</a>
+        <a class="mdl-navigation__link" href="https://my.ctapp.io/#/login">Login</a>
+      </nav>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer mdl-layout--small-screen-only mdl-shadow--4dp">
+    <nav class="mdl-navigation">
+      <span class="sidebar-logo"><img src="/images/pages/cucumber-wifi.svg"></span>
+      <a class="mdl-navigation__link" href="/discover/">Discover</a>
+      <span class="mdl-navigation__link" href="/discover/">Features</span>
+      <hr>
+      <div class="navigation-subheader-list">
+        <a class="mdl-navigation__link" href="/features/management">Management</a>
+        <a class="mdl-navigation__link" href="/features/networks/">Networks</a>
+        <a class="mdl-navigation__link" href="/features/branding/">Branding</a>
+        <a class="mdl-navigation__link" href="/features/reports/">Reports</a>
+        <a class="mdl-navigation__link" href="/features/integrations/">Integrations</a>
+        <a class="mdl-navigation__link" href="/features/guests">Guest Login</a>
+        <a class="mdl-navigation__link" href="/compatible-hardware/">Devices</a>
+      </div>
+      <hr>
+      <a class="mdl-navigation__link" href="/plans/">Plans</a>
+      <a class="mdl-navigation__link" target="_blank" href="https://discuss.cucumberwifi.io/">Discuss</a>
+      <a class="mdl-navigation__link" href="https://my.ctapp.io/#/create">Sign-up</a>
+      <a class="mdl-navigation__link" href="https://my.ctapp.io/#/login">Login</a>
+    </nav>
+  </div>
+  <main class="mdl-layout__content">
+    <div class="community mdl-grid">
+  <div class="community-post center-cell mdl-cell mdl-cell--9-col mdl-card mdl-shadow--4dp">
+      <h1>Applying for the correct Facebook Permissions</h1>
+      <p>Sep 22, 2015</p>
+    <h2 id="how-do-i-set-up-my-own-facebook-app">How do I set up my own Facebook App?</h2>
+
+<p>Facebook logins work out of the box with Cucumber Tony. However, some people want to use their own application. The benefits of this include:</p>
+
+<ul>
+  <li>Your customers see your logo, not ours</li>
+  <li>You can control the permissions</li>
+</ul>
+
+<p>There’s some information about checkins about the bottom of this page.</p>
+
+<h3 id="getting-started">Getting Started.</h3>
+
+<p>First up, you need a Facebook account. Once you have this, head over to the Facebook developer portal and create an account. The developer site is here:</p>
+
+<p><a href="https://developers.facebook.com">https://developers.facebook.com</a></p>
+
+<h3 id="create-an-app">Create an App.</h3>
+
+<p>Click the <em>My Apps</em> button, then click <em>Add New App</em></p>
+
+<div class="mdl-typography--text-center">
+  <img src="/images/community/tutorials/facebook-logins/facebook-captive-portal-1.png" width="300px" />
+</div>
+
+<p>On the following screen, select the website option.</p>
+
+<div class="mdl-typography--text-center">
+  <img src="/images/community/tutorials/facebook-logins/facebook-captive-portal-2.png" width="800px" />
+</div>
+
+<p>Enter a name for your new application. Make it clear, keep it simple. Click <strong>Create New Facebook App ID</strong>.</p>
+
+<p>Choose a category and then click <strong>Create App ID</strong></p>
+
+<div class="mdl-typography--text-center">
+  <img src="/images/community/tutorials/facebook-logins/facebook-captive-portal-3.png" width="800px" />
+</div>
+
+<div class="mdl-typography--text-center">
+  <img src="/images/community/tutorials/facebook-logins/facebook-captive-portal-4.png" width="800px" />
+</div>
+
+<p>Scroll down and enter the url for your login pages - it must match your actual login pages. For example, acme.my-wifi.co</p>
+
+<div class="mdl-typography--text-center">
+  <img src="/images/community/tutorials/facebook-logins/facebook-captive-portal-5.png" width="800px" />
+</div>
+
+<p>Once this is done, refresh the page and select your application from the <em>My Apps</em> dropdown. It will look something like this.</p>
+
+<div class="mdl-typography--text-center">
+  <img src="/images/community/tutorials/facebook-logins/facebook-captive-portal-6.png" width="800px" />
+</div>
+
+<h3 id="the-settings">The Settings.</h3>
+
+<p>Fill-in your settings, exactly as per the screenshots below. Make sure you’re using the correct url - you can use the brand you’ve already probably set-up in your Cucumber dashboard. It has to match your login pages.</p>
+
+<p>You’ll also need to add your own logo and support email.</p>
+
+<div class="mdl-typography--text-center">
+  <img src="/images/community/tutorials/facebook-logins/facebook-captive-portal-7.png" width="800px" />
+</div>
+
+<h3 id="add-application-to-cucumber-tony">Add Application To Cucumber Tony</h3>
+
+<p>You’re almost done, you can now test your application.</p>
+
+<p>Login to your dashboard and navigate to one of your locations. Click splash pages (or create a new one)!</p>
+
+<ul>
+  <li>
+    <p>Enable social logins and scroll down to the Facebook options.</p>
+  </li>
+  <li>
+    <p>Uncheck <strong>Use our credentials</strong></p>
+  </li>
+  <li>
+    <p>Enter your App ID in the box (you’ll find this in your Facebook developer portal).</p>
+  </li>
+</ul>
+
+<div class="mdl-typography--text-center">
+  <img src="/images/community/tutorials/facebook-logins/facebook-captive-portal-8.png" width="800px" />
+</div>
+
+<h3 id="testing-testing-testing">Testing Testing Testing</h3>
+
+<p>Open up a login page and make sure you can see the social login screen. Click Facebook and login - you should see a new popup prompting you to enter your credentials. If this doesn’t work, please check you have entered your URL correctly and that your App ID matches your Facebook App.</p>
+
+<p><strong>Please note, you will not be able to checkin yet. You need to apply to Facebook for this privilege.</strong></p>
+
+<h3 id="status-and-review">Status and Review</h3>
+
+<p>Ok, happy that your new application is working? You probably want your users to checkin now.</p>
+
+<p>To checkin at a location, you now need to tag a place in your Open Graph story (more info on this at the bottom). You don’t need to worry too much about the logistics, we’ll do that for you. All you need is the correct permissions for your application.</p>
+
+<p>In your Facebook developer’s portal, head over to <strong>Status &amp; Review</strong>. Please make sure your Application is live. An email is required to activate it.</p>
+
+<p>Once this is done, make sure the Approved Items are all green and then click the <strong>Start a New Application</strong> button.</p>
+
+<div class="mdl-typography--text-center">
+  <img src="/images/community/tutorials/facebook-logins/facebook-captive-portal-9.png" width="800px" />
+</div>
+
+<p>You need to apply for <strong>publish_actions</strong>. If the following banner appears, please make sure you’ve actually logged in once via the new app.</p>
+
+<div class="mdl-typography--text-center">
+  <img src="/images/community/tutorials/facebook-logins/facebook-captive-portal-10.png" width="800px" />
+</div>
+
+<p>Fill-in all the required information on the following page. In the <strong>Facebook Login Integration</strong> box, explain the following:</p>
+
+<ul>
+  <li>You’re a Wi-Fi hotspot provider.</li>
+  <li>You’re allowing the users to checkin after they have logged in.</li>
+  <li>Mention that checkins are optional and any messages are optional too.</li>
+</ul>
+
+<p>If you have the time, please take some screenshots of your login pages and the checkin form.</p>
+
+<p><strong>It’s really important you’re clear that the user doesn’t have to checkin. If you don’t say this, your application may be refused.</strong></p>
+
+<p>Once you’re done, click submit. Get yourself some tea and wait. It may take a couple of days to get your Application approved.</p>
+
+<div class="mdl-typography--text-center">
+  <img src="/images/community/tutorials/facebook-logins/facebook-captive-portal-11.png" width="800px" />
+</div>
+
+<h3 id="test-test-test">Test Test Test</h3>
+
+<p>Once your application is approved, you should head off and check you can now checkin! Your developer portal should also look like this:</p>
+
+<div class="mdl-typography--text-center">
+  <img src="/images/community/tutorials/facebook-logins/facebook-captive-portal-20.png" width="800px" />
+</div>
+
+<h3 id="more-information">More Information</h3>
+
+<p>Facebook removed the checkin end point as of Graph API version 2.0. Checkins have been depreciated in favor of attaching place information to posts, or tagging places in Open Graph stories.</p>
+
+<p>So, to checkin, you now need to tag a place in your Open Graph story.</p>
+
+<p><strong>Facebook don’t allow you to force like pages any more</strong>. It’s not a good way to encourage usage.</p>
+
+<p>If you have a specific requirement other than the publish_action, please get in touch and we can discuss adding more features to CT.</p>
+
+<p>Enjoy! Remember, if you don’t want to do all this, you can use our application. It’s all set up for you.</p>
+
+<h3 id="come-join-cucumber">Come join Cucumber</h3>
+
+<p><a href="https://my.ctapp.io/#/create" class="button success dst">Sign Up</a></p>
+
+<p>Sign-up for Cucumber Tony, it’s free for unlimited access points and social logins :)</p>
+<hr />
+
+
+  </div>
+</div>
+
+    <footer class="mdl-mega-footer">
+
+  <div class="mdl-grid">
+    <div class="center-cell mdl-cell mdl-cell--10-col">
+
+      <div class=" mdl-mega-footer__middle-section">
+
+        <div class="mdl-mega-footer__drop-down-section">
+          <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+          <h1 class="mdl-mega-footer__heading">Product</h1>
+          <ul class="mdl-mega-footer__link-list">
+            <li><a href="/plans/">Plans</a></li>
+            <li><a href="/discover/">Discover</a></li>
+            <li><a href="/compatible-hardware/">Compatible Hardware</a></li>
+          </ul>
+        </div>
+
+        <div class="mdl-mega-footer__drop-down-section">
+          <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+          <h1 class="mdl-mega-footer__heading">Helpful</h1>
+          <ul class="mdl-mega-footer__link-list">
+            <li><a href="http://docs.polkaspots.apiary.io/" target="_blank">API</a></li>
+            <li><a href="http://docs.cucumberwifi.io/" target="_blank">Docs</a></li>
+            <li><a href="http://status.ctapp.io/" target="_blank">Status</a></li>
+            <li><a href="https://discuss.cucumberwifi.io/" target="_blank">Discuss</a></li>
+            <li><a href="/community/tutorials/">Tutorials</a></li>
+          </ul>
+        </div>
+
+        <div class="mdl-mega-footer__drop-down-section">
+          <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+          <h1 class="mdl-mega-footer__heading">Company</h1>
+          <ul class="mdl-mega-footer__link-list">
+            <li><a href="https://medium.com/guest-wifi" target="_blank">Blog</a></li>
+            <li><a href="/about/">About Us</a></li>
+            <li><a href="/contact/">Contact Us</a></li>
+            <li><a href="/case-studies/">Case Studies</a></li>
+          </ul>
+        </div>
+
+        <!-- <div class="mdl-mega-footer__drop-down-section">
+          <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+          <h1 class="mdl-mega-footer__heading">FAQ</h1>
+          <ul class="mdl-mega-footer__link-list">
+            <li><a href="#">Questions</a></li>
+            <li><a href="#">Answers</a></li>
+            <li><a href="#">Contact us</a></li>
+          </ul>
+        </div> -->
+
+      </div>
+
+      <div class="mdl-mega-footer__middle-section footer-social">
+        <a href="https://twitter.com/cucumbertony" target="_blank">
+          <img class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" src="/images/pages/social/twitter.png"
+        </a>
+        <a href="https://www.linkedin.com/company/cucumber-tony" target="_blank">
+          <img class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" src="/images/pages/social/linkedin.png"
+        </a>
+        <a href="https://www.facebook.com/cucumbertony/" target="_blank">
+          <img class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" src="/images/pages/social/facebook.png"
+        </a>
+        <a href="https://www.youtube.com/channel/UCpPkREGXYrlontKXB3B3t9A" target="_blank">
+          <img class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" src="/images/pages/social/youtube.png"
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+</footer>
+
+  </main>
+</div>
+
+
+</body>
+
+</html>

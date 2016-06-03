@@ -1,9 +1,81 @@
----
-layout: fixed-header
-title: Case Studies | Cucumber Tony
-permalink: /case-studies/
----
-<div class="page-content">
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Case Studies | Cucumber Tony</title>
+  <meta name="description" content="Cucumber Tony is full-stack Wi-Fi. It's the only platform you'll ever need.
+">
+  <link rel="icon" type="image/png" href="/images/favicon.ico">
+  <link rel="stylesheet" href="/css/material.css">
+  <link rel="stylesheet" href="/css/site.css">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,700,300' type='text/css'>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="canonical" href="https://cucumberwifi.io/case-studies/">
+  <link rel="alternate" type="application/rss+xml" title="Full-stack Wi-Fi Platform" href="https://cucumberwifi.io/feed.xml" />
+
+  <script src="/js/material.js"></script>
+
+</head>
+
+
+<body>
+
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header mdl-layout__header--scroll mdl-shadow--4dp">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <div class="ct-logo">
+        <a href="/"><img src="/images/pages/cucumber-wifi.svg"></a>
+      </div>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation. We hide it in small screens. -->
+      <nav class="mdl-navigation mdl-layout--large-screen-only">
+        <a class="mdl-navigation__link" href="/discover/">Discover</a>
+        <a style="cursor:pointer;" id="features-list" class="mdl-navigation__link">Features</a>
+        <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="features-list">
+          <a href="/features/management/"><li class="mdl-menu__item">Management</li></a>
+          <a href="/features/networks/"><li class="mdl-menu__item">Networks</li></a>
+          <a href="/features/branding/"><li class="mdl-menu__item">Branding</li></a>
+          <a href="/features/reports/"><li class="mdl-menu__item">Reports</li></a>
+          <a href="/features/integrations/"><li class="mdl-menu__item">Integrations</li></a>
+          <a href="/features/guests/"><li class="mdl-menu__item">Guest Login</li></a>
+        </ul>
+        <a class="mdl-navigation__link" href="/compatible-hardware/">Devices</a>
+        <a class="mdl-navigation__link" href="/plans/">Plans</a>
+        <a class="mdl-navigation__link" target="_blank" href="https://discuss.cucumberwifi.io/">Discuss</a>
+        <a class="mdl-navigation__link" href="https://my.ctapp.io/#/create">Sign-up</a>
+        <a class="mdl-navigation__link" href="https://my.ctapp.io/#/login">Login</a>
+      </nav>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer mdl-layout--small-screen-only mdl-shadow--4dp">
+    <nav class="mdl-navigation">
+      <span class="sidebar-logo"><img src="/images/pages/cucumber-wifi.svg"></span>
+      <a class="mdl-navigation__link" href="/discover/">Discover</a>
+      <span class="mdl-navigation__link" href="/discover/">Features</span>
+      <hr>
+      <div class="navigation-subheader-list">
+        <a class="mdl-navigation__link" href="/features/management">Management</a>
+        <a class="mdl-navigation__link" href="/features/networks/">Networks</a>
+        <a class="mdl-navigation__link" href="/features/branding/">Branding</a>
+        <a class="mdl-navigation__link" href="/features/reports/">Reports</a>
+        <a class="mdl-navigation__link" href="/features/integrations/">Integrations</a>
+        <a class="mdl-navigation__link" href="/features/guests">Guest Login</a>
+        <a class="mdl-navigation__link" href="/compatible-hardware/">Devices</a>
+      </div>
+      <hr>
+      <a class="mdl-navigation__link" href="/plans/">Plans</a>
+      <a class="mdl-navigation__link" target="_blank" href="https://discuss.cucumberwifi.io/">Discuss</a>
+      <a class="mdl-navigation__link" href="https://my.ctapp.io/#/create">Sign-up</a>
+      <a class="mdl-navigation__link" href="https://my.ctapp.io/#/login">Login</a>
+    </nav>
+  </div>
+  <main class="mdl-layout__content">
+    <div class="page-content">
 
   <div class="casestudies-main mdl-grid">
     <div class="center-cell mdl-cell mdl-cell--middle mdl-cell--10-col mdl-typography--text-center">
@@ -14,13 +86,138 @@ permalink: /case-studies/
 
   <div class="casestudies-list mdl-grid">
     <div class="casestudies-card center-cell mdl-cell mdl-card mdl-cell--10-col mdl-card mdl-shadow--4dp">
-      {% for post in site.categories.casestudy %}
+      
       <li>
-        <h3><a href="{{ post.url }}"><img src="{{ post.thumbnail }}" width="auto" height="auto" style="max-height: 50px" align="center" /></a></h3>
-        {{ post.description }} <br>
+        <h3><a href="/case-studies/vospers"><img src="/images/case-studies/vospers/vospers-logo.png" width="auto" height="auto" style="max-height: 50px" align="center" /></a></h3>
+        “I can't think of one thing I liked in Meraki that I didn't get in Cucumber for a fraction of the price.” <br>
       </li>
-      {% endfor %}
+      
+      <li>
+        <h3><a href="/case-studies/trident"><img src="/images/case-studies/trident/trident-logo.png" width="auto" height="auto" style="max-height: 50px" align="center" /></a></h3>
+        “Our favourite thing is the simple interface. The Ruckus vSZ is complex, the Cucumber dashboard makes managing networks so much easier.” <br>
+      </li>
+      
+      <li>
+        <h3><a href="/case-studies/rds-global"><img src="/images/case-studies/rds/rds-logo.png" width="auto" height="auto" style="max-height: 50px" align="center" /></a></h3>
+        “Cucumber gives us point and shoot deployment, control over the network and a front end that we can present to customers. All in one solution.” <br>
+      </li>
+      
+      <li>
+        <h3><a href="/case-studies/invisinet"><img src="/images/case-studies/invisinet/invisinet-logo.png" width="auto" height="auto" style="max-height: 50px" align="center" /></a></h3>
+        “Without Cucumber we wouldn't be able to offer tailored marketing solutions to our customers.” <br>
+      </li>
+      
+      <li>
+        <h3><a href="/case-studies/force-36"><img src="/images/case-studies/force-36/force-36-logo.png" width="auto" height="auto" style="max-height: 50px" align="center" /></a></h3>
+        “Cucumber has saved us so many man hours we couldn't not use it.” <br>
+      </li>
+      
+      <li>
+        <h3><a href="/case-studies/derby-city-council"><img src="/images/case-studies/derby/derby-logo.png" width="auto" height="auto" style="max-height: 50px" align="center" /></a></h3>
+        “We have a social responsibility to make the Wi-Fi good quality, secure and accessible for all.” <br>
+      </li>
+      
+      <li>
+        <h3><a href="/case-studies/benitos-hat"><img src="/images/case-studies/benitos/benitos-logo.png" width="auto" height="auto" style="max-height: 50px" align="center" /></a></h3>
+        “We wanted to stand out from the crowd and brand the welcome splash page and network name to Benito’s.” <br>
+      </li>
+      
+      <li>
+        <h3><a href="/case-studies/cucumber-vs-unifi"><img src="/images/case-studies/unifi-comparison/dan-bunyard.png" width="auto" height="auto" style="max-height: 50px" align="center" /></a></h3>
+        “Overall Cucumber is a very solid platform with amazing support.” <br>
+      </li>
+      
+      <li>
+        <h3><a href="/case-studies/exmoor-national-park"><img src="/images/case-studies/exmoor/exmoor-logo.png" width="auto" height="auto" style="max-height: 50px" align="center" /></a></h3>
+        “It's IT and things do go wrong so I like being able to speak to the support team. They're really helpful and will fix something for me on the spot if they can.” <br>
+      </li>
+      
+      <li>
+        <h3><a href="/case-studies/unifi-user"><img src="/images/case-studies/other/anonymous.png" width="auto" height="auto" style="max-height: 50px" align="center" /></a></h3>
+        “The extra functionality has really changed how we run the Wi-Fi networks in the office. We're always talking about how great Cucumber Tony is -- Seriously.” <br>
+      </li>
+      
     </div>
   </div>
 
 </div>
+
+    <footer class="mdl-mega-footer">
+
+  <div class="mdl-grid">
+    <div class="center-cell mdl-cell mdl-cell--10-col">
+
+      <div class=" mdl-mega-footer__middle-section">
+
+        <div class="mdl-mega-footer__drop-down-section">
+          <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+          <h1 class="mdl-mega-footer__heading">Product</h1>
+          <ul class="mdl-mega-footer__link-list">
+            <li><a href="/plans/">Plans</a></li>
+            <li><a href="/discover/">Discover</a></li>
+            <li><a href="/compatible-hardware/">Compatible Hardware</a></li>
+          </ul>
+        </div>
+
+        <div class="mdl-mega-footer__drop-down-section">
+          <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+          <h1 class="mdl-mega-footer__heading">Helpful</h1>
+          <ul class="mdl-mega-footer__link-list">
+            <li><a href="http://docs.polkaspots.apiary.io/" target="_blank">API</a></li>
+            <li><a href="http://docs.cucumberwifi.io/" target="_blank">Docs</a></li>
+            <li><a href="http://status.ctapp.io/" target="_blank">Status</a></li>
+            <li><a href="https://discuss.cucumberwifi.io/" target="_blank">Discuss</a></li>
+            <li><a href="/community/tutorials/">Tutorials</a></li>
+          </ul>
+        </div>
+
+        <div class="mdl-mega-footer__drop-down-section">
+          <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+          <h1 class="mdl-mega-footer__heading">Company</h1>
+          <ul class="mdl-mega-footer__link-list">
+            <li><a href="https://medium.com/guest-wifi" target="_blank">Blog</a></li>
+            <li><a href="/about/">About Us</a></li>
+            <li><a href="/contact/">Contact Us</a></li>
+            <li><a href="/case-studies/">Case Studies</a></li>
+          </ul>
+        </div>
+
+        <!-- <div class="mdl-mega-footer__drop-down-section">
+          <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+          <h1 class="mdl-mega-footer__heading">FAQ</h1>
+          <ul class="mdl-mega-footer__link-list">
+            <li><a href="#">Questions</a></li>
+            <li><a href="#">Answers</a></li>
+            <li><a href="#">Contact us</a></li>
+          </ul>
+        </div> -->
+
+      </div>
+
+      <div class="mdl-mega-footer__middle-section footer-social">
+        <a href="https://twitter.com/cucumbertony" target="_blank">
+          <img class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" src="/images/pages/social/twitter.png"
+        </a>
+        <a href="https://www.linkedin.com/company/cucumber-tony" target="_blank">
+          <img class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" src="/images/pages/social/linkedin.png"
+        </a>
+        <a href="https://www.facebook.com/cucumbertony/" target="_blank">
+          <img class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" src="/images/pages/social/facebook.png"
+        </a>
+        <a href="https://www.youtube.com/channel/UCpPkREGXYrlontKXB3B3t9A" target="_blank">
+          <img class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" src="/images/pages/social/youtube.png"
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+</footer>
+
+  </main>
+</div>
+
+
+</body>
+
+</html>

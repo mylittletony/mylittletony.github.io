@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Using the Cucumber WiFi API</title>
+  <meta name="description" content="This guide will show you how to setup your own application to use the Cucumber Tony API. The API will let you do loads of handy things, like create locations...">
+  <link rel="icon" type="image/png" href="/images/favicon.ico">
+  <link rel="stylesheet" href="/css/material.css">
+  <link rel="stylesheet" href="/css/site.css">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,700,300' type='text/css'>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="canonical" href="https://cucumberwifi.io/documentation/2015/10/29/using-the-ct-api.html">
+  <link rel="alternate" type="application/rss+xml" title="Full-stack Wi-Fi Platform" href="https://cucumberwifi.io/feed.xml" />
+
+  <script src="/js/material.js"></script>
+
+</head>
+
+
+<body>
+
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header mdl-layout__header--scroll mdl-shadow--4dp">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <div class="ct-logo">
+        <a href="/"><img src="/images/pages/cucumber-wifi.svg"></a>
+      </div>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation. We hide it in small screens. -->
+      <nav class="mdl-navigation mdl-layout--large-screen-only">
+        <a class="mdl-navigation__link" href="/discover/">Discover</a>
+        <a style="cursor:pointer;" id="features-list" class="mdl-navigation__link">Features</a>
+        <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="features-list">
+          <a href="/features/management/"><li class="mdl-menu__item">Management</li></a>
+          <a href="/features/networks/"><li class="mdl-menu__item">Networks</li></a>
+          <a href="/features/branding/"><li class="mdl-menu__item">Branding</li></a>
+          <a href="/features/reports/"><li class="mdl-menu__item">Reports</li></a>
+          <a href="/features/integrations/"><li class="mdl-menu__item">Integrations</li></a>
+          <a href="/features/guests/"><li class="mdl-menu__item">Guest Login</li></a>
+        </ul>
+        <a class="mdl-navigation__link" href="/compatible-hardware/">Devices</a>
+        <a class="mdl-navigation__link" href="/plans/">Plans</a>
+        <a class="mdl-navigation__link" target="_blank" href="https://discuss.cucumberwifi.io/">Discuss</a>
+        <a class="mdl-navigation__link" href="https://my.ctapp.io/#/create">Sign-up</a>
+        <a class="mdl-navigation__link" href="https://my.ctapp.io/#/login">Login</a>
+      </nav>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer mdl-layout--small-screen-only mdl-shadow--4dp">
+    <nav class="mdl-navigation">
+      <span class="sidebar-logo"><img src="/images/pages/cucumber-wifi.svg"></span>
+      <a class="mdl-navigation__link" href="/discover/">Discover</a>
+      <span class="mdl-navigation__link" href="/discover/">Features</span>
+      <hr>
+      <div class="navigation-subheader-list">
+        <a class="mdl-navigation__link" href="/features/management">Management</a>
+        <a class="mdl-navigation__link" href="/features/networks/">Networks</a>
+        <a class="mdl-navigation__link" href="/features/branding/">Branding</a>
+        <a class="mdl-navigation__link" href="/features/reports/">Reports</a>
+        <a class="mdl-navigation__link" href="/features/integrations/">Integrations</a>
+        <a class="mdl-navigation__link" href="/features/guests">Guest Login</a>
+        <a class="mdl-navigation__link" href="/compatible-hardware/">Devices</a>
+      </div>
+      <hr>
+      <a class="mdl-navigation__link" href="/plans/">Plans</a>
+      <a class="mdl-navigation__link" target="_blank" href="https://discuss.cucumberwifi.io/">Discuss</a>
+      <a class="mdl-navigation__link" href="https://my.ctapp.io/#/create">Sign-up</a>
+      <a class="mdl-navigation__link" href="https://my.ctapp.io/#/login">Login</a>
+    </nav>
+  </div>
+  <main class="mdl-layout__content">
+    <div class="community mdl-grid">
+  <div class="community-post center-cell mdl-cell mdl-cell--9-col mdl-card mdl-shadow--4dp">
+      <h1>Using the Cucumber WiFi API</h1>
+      <p>Oct 29, 2015</p>
+    <p>This guide will show you how to setup your own application to use the Cucumber Tony API. The API will let you do loads of handy things, like create locations, generate vouchers and reboot your boxes.</p>
+
+<p><strong>If you’re not a developer, please forget this exists.</strong></p>
+
+<p>Anything that can be done in the dashboard (and more) can be done using the API.</p>
+
+<h2 id="getting-started">Getting Started</h2>
+
+<p>We use the Oauth2 for our authenticaion mechanism. Oauth is an authorisation framework that’s used all over the web. It enables applications to obtain limited access to user accounts, data or HTTP services like Facebook, Google, Twitter and millions more.</p>
+
+<p>If you don’t know anything about Oauth, there’s a load of resources online.</p>
+
+<p>In this guide, we’ll walk you through creating an Application on Cucumber Tony, authorising some requests using Curl. We’ll obtain an access token and then show you how to use it to get some location info.</p>
+
+<h2 id="create-an-application">Create an Application</h2>
+
+<p>Firstly, make sure you’ve created a Cucumber WiFi account. After you’ve logged in, please visit:</p>
+
+<p>https://my.ctapp.io/#/apps</p>
+
+<p>Click “New Application”.</p>
+
+<p>Fill-in all the fields, they’re all required.</p>
+
+<ul>
+  <li>
+    <ul>
+      <li>Application Name: this will be seen on any user-facing authorisation screens. Keep it short and descriptive.</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>Callback URL: the site we’ll send the user to after they’ve logged in. Must be https.</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>Application Website: the site that contains your details and information about your service.</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>Description: some details about your site.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Click the create button to save your App.</p>
+
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/ct-api-oauth-1.png" width="600px" />
+</div>
+
+<h2 id="authentication-example">Authentication Example</h2>
+
+<p>You’ll need your App ID and App Secret to authorise your requests. You use these details to create a unique code and then exchange this for an access token.</p>
+
+<p>You can use the access token to authorise your API calls. Alongside the access token, you will also receive a refresh token which you can use to refresh the access token when it’s expired.</p>
+
+<p>Make a note of your App ID and App Secret. Do not let anyone else have your secret!</p>
+
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/ct-api-oauth-2.png" width="600px" />
+</div>
+
+<h2 id="requesting-the-grant--code">Requesting the Grant / Code</h2>
+
+<p>If you’re using plain old curl, this is how you get your code.</p>
+
+<p>Open a browser and open the following URL, replacing the values with your details:</p>
+
+<p><code>
+https://auth.ctapp.io/oauth/authorize?client_id=XXX&amp;response_type=code&amp;redirect_url=YYY
+</code></p>
+
+<ul>
+  <li>XXX is your App ID, obtained from your Cucumber dash.</li>
+  <li>YYY is your callback URL, this must match your Cucumber App Settings.</li>
+</ul>
+
+<p>It’s hugely important that you encode the redirect URL, otherwise you’ll see an error. The request should look like this:</p>
+
+<p><code>
+https://auth.ctapp.io/oauth/authorize?client_id=18273618253765123&amp;redirect_uri=https%3A%2F%2Fwww.great-site.com&amp;response_type=code
+</code></p>
+
+<p>After visiting the URL, login with your Cucumber credentials and you should be sent to a confirmation page.</p>
+
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/ct-api-oauth-3.png" width="600px" />
+</div>
+
+<h2 id="exchange-the-code-for-an-access-token">Exchange the Code for an Access Token</h2>
+
+<p>After confirming you authorize the app to access your account, you will be redirected back to your site. Grab the code from the URL.</p>
+
+<p>You will need to do a POST request to:</p>
+
+<p><code>
+https://auth.ctapp.io/oauth/token
+</code></p>
+
+<p>Ensure you include the following params:</p>
+
+<pre>
+client_id: The client ID issued in the first step.
+client_secret: The client secret issued in the first step.
+redirect_uri: The callback URI we defined previously.
+grant_type: This is **authorization_code**.
+code: The authorization code received in the previous step.
+</pre>
+
+<p>For example, using curl:</p>
+
+<p><code>
+curl -F grant_type=authorization_code \
+                   -F client_id=f52d8b42e20c1d2808468f5a90f3a838316876aaf1db9efa320d42a65e853a49 \
+                   -F client_secret=e67534a389c215959e6e72451dfc53e9e922b2e58ae18d26e3403c26610b36f7 \
+                   -F code=223085fc4382abfde011c2c32eb354889533db2d10c2cf84f0e1a39373481a37 \
+                   -F redirect_uri=http://my.great.app \
+                   -X POST https://auth.ctapp.io/oauth/token
+</code></p>
+
+<p>The response will look like this:</p>
+
+<p><code>
+{
+  "access_token": "461becda8d301b32b7caaf14772b42ba71a341818462301e0ab5bf2826ea1885",
+  "token_type": "bearer",
+  "expires_in": 7200,
+  "refresh_token": "595a01d24a3d57d3a9217c08b81c937b73fad462ba14388f418d46f7a41f6e8b",
+  "created_at": 1446315704
+}
+</code></p>
+
+<h3 id="accessing-cucumber">Accessing Cucumber</h3>
+
+<p>Now you have your access token, you can use this to authorise your requests. Simply add this token to your HTTP headers:</p>
+
+<p><code>
+Authorization: Bearer 461becda8d301b32b7caaf14772b42ba71a341818462301e0ab5bf2826ea1885
+</code></p>
+
+<p>For example, if you want to get a list of your locations:</p>
+
+<p><code>
+curl https://api.ctapp.io/api/v1/locations -H 'Authorization: Bearer a9303468170b75ad64cff5c6d0541378c13366219322b5cfb174d065ba8e13e6'
+</code></p>
+
+<p><strong>You must use api.ctapp.io for all requests</strong></p>
+
+<p><code>
+{
+  "locations": [
+  {
+    "id": "1813",
+      "archived": false,
+      "location_name": "Stuff got real",
+      "slug": "stuff-got-real-iajpng9akeztfqknmlfusw",
+      "location_address": "One Long Road",
+      "street": null,
+      "phone1": null,
+      "location_website": null,
+      "location_type": null,
+      "development_mode": "Beta",
+      "daily_limit": true,
+      "created_at": 1418395686,
+      "updated_at": 1440330154,
+      "user_id": 103,
+      "lat": 40.4039,
+      "lng": -121.971,
+      "clients_total": 4,
+      "clients_online": 0,
+      "boxes_count": 17,
+      "meraki_secret": null
+  },
+    ],
+    "_links": {
+      "current_page": 1,
+      "total_pages": 1,
+      "next_page": null,
+      "total_entries": 3,
+      "size": 15
+    }
+}
+</code>
+### Using the Refresh Token</p>
+
+<p>Your access token WILL expire reguarly and without notice. Sometimes daily. In order to deal with this, you can use your refresh token to request a new access token.</p>
+
+<p>Do another POST request with the following params:</p>
+
+<pre>
+client_id: The client ID issued in the first step.
+client_secret: The client secret issued in the first step.
+grant_type: This is **refresh_token**.
+refresh_token: The refresh token your received in the previous step.
+</pre>
+
+<p>For example:</p>
+
+<p><code>
+curl -F grant_type=refresh_token \
+-F client_id=f52d8b42e20c1d2808468f5a90f3a838316876aaf1db9efa320d42a65e853a49 \
+-F client_secret=e67534a389c215959e6e72451dfc53e9e922b2e58ae18d26e3403c26610b36f7 \
+-F refresh_token=595a01d24a3d57d3a9217c08b81c937b73fad462ba14388f418d46f7a41f6e8b \
+-X POST http://localhost:8080/oauth/token
+</code></p>
+
+<p>Some people might run a cron job to retreive this token on a daily basis. Others will save the token and only refresh when the access_token gets rejected (this is how we do it).</p>
+
+<h2 id="doing-it-with-ruby">Doing it with Ruby</h2>
+
+<p>Ok, so now we’ve done it with Curl, we’ll show you how to do with Ruby and the Oauth2 gem. Make sure you’ve installed oauth2:</p>
+
+<p><code>
+gem install oauth2
+</code></p>
+
+<p>Open up a Rails or irb console.</p>
+
+<h3 id="create-a-client">Create a Client</h3>
+
+<p><code>
+client = OAuth2::Client.new(app_id, app_secret, :site =&gt; 'https://auth.ctapp.io')
+</code></p>
+
+<p>That should give you something like this:</p>
+
+<p><code>
+#&lt;OAuth2::Client:0x007fc76195cad8 @id="f52d8b42e20c1d2808468f5a90f3a838316876aaf1db9efa320d42a65e853a49", @secret="e67534a389c215959e6e72451dfc53e9e922b2e58ae18d26e3403c26610b36f7", @site="http://127.0.0.1:8080", @options={:authorize_url=&gt;"/oauth/authorize", :token_url=&gt;"/oauth/token", :token_method=&gt;:post, :connection_opts=&gt;{}, :connection_build=&gt;nil, :max_redirects=&gt;5, :raise_errors=&gt;true}&gt;
+</code></p>
+
+<h3 id="get-the-url">Get the URL</h3>
+
+<p><code>
+client.auth_code.authorize_url(redirect_uri: callback)
+</code></p>
+
+<p>Where callback is your callback URL - it must match.</p>
+
+<p>The output will look like this:</p>
+
+<p><code>
+=&gt; "https://auth.ctapp.io/oauth/authorize?client_id=f52d8b42e20c1d2808468f5a90f3a838316876aaf1db9efa320d42a65e853a49&amp;redirect_uri=http%3A%2F%2Fmy.great.app&amp;response_type=code"
+</code></p>
+
+<p>Paste this into your browser. Login as before and confirm the authorisation.</p>
+
+<h3 id="exchanging-the-code">Exchanging the Code</h3>
+
+<p>You should be redirected back to your site. Grab the code from the URL.</p>
+
+<p><code>
+token = client.auth_code.get_token(code, :redirect_uri =&gt; callback)
+</code></p>
+
+<p>That should return an object. To get the access token, just use:</p>
+
+<p><code>
+token.token
+=&gt; 66d3af95e474eb7eba7111e9644247dab60f2fe8f18d53bc968caaf1110e9595
+</code></p>
+
+<p>And there you go!</p>
+
+<hr />
+
+<h2 id="common-problems">Common Problems</h2>
+
+<h3 id="the-redirect-uri-included-is-not-valid">The redirect uri included is not valid.</h3>
+
+<p>If you’re using curl to test, please make sure your redirect URL is properly encoded. For example, the request should look like this:</p>
+
+<p><code>
+https://auth.ctapp.io/oauth/authorize?client_id=18273618253765123&amp;redirect_uri=https%3A%2F%2Fwww.great-site.com&amp;response_type=code
+</code></p>
+
+<p>You should also ensure your redirect url matches the callback url you’ve set in your application settings. Make sure there’s no trailing slashes etc.</p>
+
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/ct-api-oauth-4.png" width="600px" />
+</div>
+
+<hr />
+
+<h2 id="read-the-api-docs">Read the API docs</h2>
+
+<p>Don’t forget, the API docs are here:</p>
+
+<p>http://docs.polkaspots.apiary.io/#</p>
+
+<hr />
+
+<p><em>Cucumber Tony is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities.Or you can utlise the captive portal solution with your existing infrastucture. Create a free account and check it here <a href="https://cucumberwifi.io">cucumberwifi.io</a></em></p>
+
+<div class="mdl-typography--text-center">
+
+<h2>Come join Cucumber</h2>
+
+<a href="https://my.ctapp.io/#/create" class="button success">Sign Up</a><br />
+
+<p>Sign-up for Cucumber Tony, it's free for unlimited access points :)</p>
+
+<hr />
+
+</div>
+
+  </div>
+</div>
+
+    <footer class="mdl-mega-footer">
+
+  <div class="mdl-grid">
+    <div class="center-cell mdl-cell mdl-cell--10-col">
+
+      <div class=" mdl-mega-footer__middle-section">
+
+        <div class="mdl-mega-footer__drop-down-section">
+          <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+          <h1 class="mdl-mega-footer__heading">Product</h1>
+          <ul class="mdl-mega-footer__link-list">
+            <li><a href="/plans/">Plans</a></li>
+            <li><a href="/discover/">Discover</a></li>
+            <li><a href="/compatible-hardware/">Compatible Hardware</a></li>
+          </ul>
+        </div>
+
+        <div class="mdl-mega-footer__drop-down-section">
+          <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+          <h1 class="mdl-mega-footer__heading">Helpful</h1>
+          <ul class="mdl-mega-footer__link-list">
+            <li><a href="http://docs.polkaspots.apiary.io/" target="_blank">API</a></li>
+            <li><a href="http://docs.cucumberwifi.io/" target="_blank">Docs</a></li>
+            <li><a href="http://status.ctapp.io/" target="_blank">Status</a></li>
+            <li><a href="https://discuss.cucumberwifi.io/" target="_blank">Discuss</a></li>
+            <li><a href="/community/tutorials/">Tutorials</a></li>
+          </ul>
+        </div>
+
+        <div class="mdl-mega-footer__drop-down-section">
+          <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+          <h1 class="mdl-mega-footer__heading">Company</h1>
+          <ul class="mdl-mega-footer__link-list">
+            <li><a href="https://medium.com/guest-wifi" target="_blank">Blog</a></li>
+            <li><a href="/about/">About Us</a></li>
+            <li><a href="/contact/">Contact Us</a></li>
+            <li><a href="/case-studies/">Case Studies</a></li>
+          </ul>
+        </div>
+
+        <!-- <div class="mdl-mega-footer__drop-down-section">
+          <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+          <h1 class="mdl-mega-footer__heading">FAQ</h1>
+          <ul class="mdl-mega-footer__link-list">
+            <li><a href="#">Questions</a></li>
+            <li><a href="#">Answers</a></li>
+            <li><a href="#">Contact us</a></li>
+          </ul>
+        </div> -->
+
+      </div>
+
+      <div class="mdl-mega-footer__middle-section footer-social">
+        <a href="https://twitter.com/cucumbertony" target="_blank">
+          <img class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" src="/images/pages/social/twitter.png"
+        </a>
+        <a href="https://www.linkedin.com/company/cucumber-tony" target="_blank">
+          <img class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" src="/images/pages/social/linkedin.png"
+        </a>
+        <a href="https://www.facebook.com/cucumbertony/" target="_blank">
+          <img class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" src="/images/pages/social/facebook.png"
+        </a>
+        <a href="https://www.youtube.com/channel/UCpPkREGXYrlontKXB3B3t9A" target="_blank">
+          <img class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" src="/images/pages/social/youtube.png"
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+</footer>
+
+  </main>
+</div>
+
+
+</body>
+
+</html>
