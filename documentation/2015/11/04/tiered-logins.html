@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tiered Logins</title>
+  <meta name="description" content="What is Tiered Logins?">
+  <link rel="icon" type="image/png" href="/images/favicon.ico">
+  <link rel="stylesheet" href="/css/material.css">
+  <link rel="stylesheet" href="/css/site.css">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,700,300' type='text/css'>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="canonical" href="https://cucumberwifi.io/documentation/2015/11/04/tiered-logins.html">
+  <link rel="alternate" type="application/rss+xml" title="Full-stack Wi-Fi Platform" href="https://cucumberwifi.io/feed.xml" />
+
+  <script src="/js/material.js"></script>
+
+</head>
+
+
+<body>
+
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header mdl-layout__header--scroll mdl-shadow--4dp">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <div class="ct-logo">
+        <a href="/"><img src="/images/pages/cucumber-wifi.svg"></a>
+      </div>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation. We hide it in small screens. -->
+      <nav class="mdl-navigation mdl-layout--large-screen-only">
+        <a class="mdl-navigation__link" href="/discover/">Discover</a>
+        <a style="cursor:pointer;" id="features-list" class="mdl-navigation__link">Features</a>
+        <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="features-list">
+          <a href="/features/management/"><li class="mdl-menu__item">Management</li></a>
+          <a href="/features/networks/"><li class="mdl-menu__item">Networks</li></a>
+          <a href="/features/branding/"><li class="mdl-menu__item">Branding</li></a>
+          <a href="/features/reports/"><li class="mdl-menu__item">Reports</li></a>
+          <a href="/features/integrations/"><li class="mdl-menu__item">Integrations</li></a>
+          <a href="/features/guests/"><li class="mdl-menu__item">Guest Login</li></a>
+        </ul>
+        <a class="mdl-navigation__link" href="/compatible-hardware/">Devices</a>
+        <a class="mdl-navigation__link" href="/plans/">Plans</a>
+        <a class="mdl-navigation__link" target="_blank" href="https://discuss.cucumberwifi.io/">Discuss</a>
+        <a class="mdl-navigation__link" href="https://my.ctapp.io/#/create">Sign-up</a>
+        <a class="mdl-navigation__link" href="https://my.ctapp.io/#/login">Login</a>
+      </nav>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer mdl-layout--small-screen-only mdl-shadow--4dp">
+    <nav class="mdl-navigation">
+      <span class="sidebar-logo"><img src="/images/pages/cucumber-wifi.svg"></span>
+      <a class="mdl-navigation__link" href="/discover/">Discover</a>
+      <span class="mdl-navigation__link" href="/discover/">Features</span>
+      <hr>
+      <div class="navigation-subheader-list">
+        <a class="mdl-navigation__link" href="/features/management">Management</a>
+        <a class="mdl-navigation__link" href="/features/networks/">Networks</a>
+        <a class="mdl-navigation__link" href="/features/branding/">Branding</a>
+        <a class="mdl-navigation__link" href="/features/reports/">Reports</a>
+        <a class="mdl-navigation__link" href="/features/integrations/">Integrations</a>
+        <a class="mdl-navigation__link" href="/features/guests">Guest Login</a>
+        <a class="mdl-navigation__link" href="/compatible-hardware/">Devices</a>
+      </div>
+      <hr>
+      <a class="mdl-navigation__link" href="/plans/">Plans</a>
+      <a class="mdl-navigation__link" target="_blank" href="https://discuss.cucumberwifi.io/">Discuss</a>
+      <a class="mdl-navigation__link" href="https://my.ctapp.io/#/create">Sign-up</a>
+      <a class="mdl-navigation__link" href="https://my.ctapp.io/#/login">Login</a>
+    </nav>
+  </div>
+  <main class="mdl-layout__content">
+    <div class="community mdl-grid">
+  <div class="community-post center-cell mdl-cell mdl-cell--9-col mdl-card mdl-shadow--4dp">
+      <h1>Tiered Logins</h1>
+      <p>Nov 4, 2015</p>
+    <div class="mdl-typography--text-center">
+<h3>What is Tiered Logins?</h3>
+</div>
+
+<p>Tiered Logins will allow you to achieve setups such as having a splash page with 1 hour free WiFi, and once that has run out they can get a new splash page with paid voucher access.</p>
+
+<p>To set up Tiered Logins on your SSID you will need to first create the different splash pages you want the users to see, and the access restrictions that you want applied to them.</p>
+
+<p>Once you have done this, you will need to adjust the weights of the splash pages.</p>
+
+<p>The highest weight will be the splash that is displayed first.</p>
+
+<hr />
+
+<div class="mdl-typography--text-center">
+<h3>How to set up Tiered Logins</h3>
+<iframe width="960" height="540" src="https://www.youtube.com/embed/nPskK-OyySo?rel=0&amp;color=white&amp;showinfo=0&amp;autohide=1" frameborder="0" allowfullscreen=""></iframe>
+</div>
+<p><br /></p>
+
+<ol>
+  <li>
+    <p>Head into your <strong>Location</strong> on your dashboard.</p>
+  </li>
+  <li>
+    <p>Select <strong>Splash Pages</strong> on the left sidebar. You will see the weight listed under your different splash pages. Click <strong>Edit</strong> on the SSID you want to change the weight on.</p>
+  </li>
+  <li>
+    <p>Scroll down to the section titled <strong>Advanced Settings</strong> and click to view the settings.</p>
+  </li>
+  <li>
+    <p>Adjust the <strong>Weight</strong> field to what you want. Splash pages with a larger weight will be shown before splash pages with a smaller weight.</p>
+  </li>
+  <li>
+    <p><strong>Save</strong> your changes.</p>
+  </li>
+</ol>
+
+<hr />
+
+<p><em>Cucumber Tony is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities.Or you can utlise the captive portal solution with your existing infrastucture. Create a free account and check it here <a href="https://cucumberwifi.io">cucumberwifi.io</a></em></p>
+
+<div class="mdl-typography--text-center">
+
+<h2>Come join Cucumber</h2>
+
+<a href="https://my.ctapp.io/#/create" class="button success">Sign Up</a><br />
+
+<p>Sign-up for Cucumber Tony, it's free for unlimited access points :)</p>
+
+<hr />
+
+</div>
+
+  </div>
+</div>
+
+    <footer class="mdl-mega-footer">
+
+  <div class="mdl-grid">
+    <div class="center-cell mdl-cell mdl-cell--10-col">
+
+      <div class=" mdl-mega-footer__middle-section">
+
+        <div class="mdl-mega-footer__drop-down-section">
+          <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+          <h1 class="mdl-mega-footer__heading">Product</h1>
+          <ul class="mdl-mega-footer__link-list">
+            <li><a href="/plans/">Plans</a></li>
+            <li><a href="/discover/">Discover</a></li>
+            <li><a href="/compatible-hardware/">Compatible Hardware</a></li>
+          </ul>
+        </div>
+
+        <div class="mdl-mega-footer__drop-down-section">
+          <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+          <h1 class="mdl-mega-footer__heading">Helpful</h1>
+          <ul class="mdl-mega-footer__link-list">
+            <li><a href="http://docs.polkaspots.apiary.io/" target="_blank">API</a></li>
+            <li><a href="http://docs.cucumberwifi.io/" target="_blank">Docs</a></li>
+            <li><a href="http://status.ctapp.io/" target="_blank">Status</a></li>
+            <li><a href="https://discuss.cucumberwifi.io/" target="_blank">Discuss</a></li>
+            <li><a href="/community/tutorials/">Tutorials</a></li>
+          </ul>
+        </div>
+
+        <div class="mdl-mega-footer__drop-down-section">
+          <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+          <h1 class="mdl-mega-footer__heading">Company</h1>
+          <ul class="mdl-mega-footer__link-list">
+            <li><a href="https://medium.com/guest-wifi" target="_blank">Blog</a></li>
+            <li><a href="/about/">About Us</a></li>
+            <li><a href="/contact/">Contact Us</a></li>
+            <li><a href="/case-studies/">Case Studies</a></li>
+          </ul>
+        </div>
+
+        <!-- <div class="mdl-mega-footer__drop-down-section">
+          <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+          <h1 class="mdl-mega-footer__heading">FAQ</h1>
+          <ul class="mdl-mega-footer__link-list">
+            <li><a href="#">Questions</a></li>
+            <li><a href="#">Answers</a></li>
+            <li><a href="#">Contact us</a></li>
+          </ul>
+        </div> -->
+
+      </div>
+
+      <div class="mdl-mega-footer__middle-section footer-social">
+        <a href="https://twitter.com/cucumbertony" target="_blank">
+          <img class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" src="/images/pages/social/twitter.png"
+        </a>
+        <a href="https://www.linkedin.com/company/cucumber-tony" target="_blank">
+          <img class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" src="/images/pages/social/linkedin.png"
+        </a>
+        <a href="https://www.facebook.com/cucumbertony/" target="_blank">
+          <img class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" src="/images/pages/social/facebook.png"
+        </a>
+        <a href="https://www.youtube.com/channel/UCpPkREGXYrlontKXB3B3t9A" target="_blank">
+          <img class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" src="/images/pages/social/youtube.png"
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+</footer>
+
+  </main>
+</div>
+
+
+</body>
+
+</html>

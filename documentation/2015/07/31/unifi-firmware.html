@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Installing firmware on a UniFi access point</title>
+  <meta name="description" content="Option One - TFTP">
+  <link rel="icon" type="image/png" href="/images/favicon.ico">
+  <link rel="stylesheet" href="/css/material.css">
+  <link rel="stylesheet" href="/css/site.css">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,700,300' type='text/css'>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="canonical" href="https://cucumberwifi.io/documentation/2015/07/31/unifi-firmware.html">
+  <link rel="alternate" type="application/rss+xml" title="Full-stack Wi-Fi Platform" href="https://cucumberwifi.io/feed.xml" />
+
+  <script src="/js/material.js"></script>
+
+</head>
+
+
+<body>
+
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header mdl-layout__header--scroll mdl-shadow--4dp">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <div class="ct-logo">
+        <a href="/"><img src="/images/pages/cucumber-wifi.svg"></a>
+      </div>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation. We hide it in small screens. -->
+      <nav class="mdl-navigation mdl-layout--large-screen-only">
+        <a class="mdl-navigation__link" href="/discover/">Discover</a>
+        <a style="cursor:pointer;" id="features-list" class="mdl-navigation__link">Features</a>
+        <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="features-list">
+          <a href="/features/management/"><li class="mdl-menu__item">Management</li></a>
+          <a href="/features/networks/"><li class="mdl-menu__item">Networks</li></a>
+          <a href="/features/branding/"><li class="mdl-menu__item">Branding</li></a>
+          <a href="/features/reports/"><li class="mdl-menu__item">Reports</li></a>
+          <a href="/features/integrations/"><li class="mdl-menu__item">Integrations</li></a>
+          <a href="/features/guests/"><li class="mdl-menu__item">Guest Login</li></a>
+        </ul>
+        <a class="mdl-navigation__link" href="/compatible-hardware/">Devices</a>
+        <a class="mdl-navigation__link" href="/plans/">Plans</a>
+        <a class="mdl-navigation__link" target="_blank" href="https://discuss.cucumberwifi.io/">Discuss</a>
+        <a class="mdl-navigation__link" href="https://my.ctapp.io/#/create">Sign-up</a>
+        <a class="mdl-navigation__link" href="https://my.ctapp.io/#/login">Login</a>
+      </nav>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer mdl-layout--small-screen-only mdl-shadow--4dp">
+    <nav class="mdl-navigation">
+      <span class="sidebar-logo"><img src="/images/pages/cucumber-wifi.svg"></span>
+      <a class="mdl-navigation__link" href="/discover/">Discover</a>
+      <span class="mdl-navigation__link" href="/discover/">Features</span>
+      <hr>
+      <div class="navigation-subheader-list">
+        <a class="mdl-navigation__link" href="/features/management">Management</a>
+        <a class="mdl-navigation__link" href="/features/networks/">Networks</a>
+        <a class="mdl-navigation__link" href="/features/branding/">Branding</a>
+        <a class="mdl-navigation__link" href="/features/reports/">Reports</a>
+        <a class="mdl-navigation__link" href="/features/integrations/">Integrations</a>
+        <a class="mdl-navigation__link" href="/features/guests">Guest Login</a>
+        <a class="mdl-navigation__link" href="/compatible-hardware/">Devices</a>
+      </div>
+      <hr>
+      <a class="mdl-navigation__link" href="/plans/">Plans</a>
+      <a class="mdl-navigation__link" target="_blank" href="https://discuss.cucumberwifi.io/">Discuss</a>
+      <a class="mdl-navigation__link" href="https://my.ctapp.io/#/create">Sign-up</a>
+      <a class="mdl-navigation__link" href="https://my.ctapp.io/#/login">Login</a>
+    </nav>
+  </div>
+  <main class="mdl-layout__content">
+    <div class="community mdl-grid">
+  <div class="community-post center-cell mdl-cell mdl-cell--9-col mdl-card mdl-shadow--4dp">
+      <h1>Installing firmware on a UniFi access point</h1>
+      <p>Jul 31, 2015</p>
+    <h3>Option One - TFTP</h3>
+<hr />
+
+<p>There are two ways of installing the firmware on a UniFi access point. This is option one and involves physically resetting the unit. If you don’t have the access points in front of you use option two.</p>
+
+<p>You can install the PolkaSpots firmware on the Ubiquiti UniFi Pro, Ubiquiti UniFi UAP, Ubiquiti UniFi UAP LongRange and Ubiquiti UniFi Outdoor. If you have bought your box from PolkaSpots you don’t need to install the firmware - we’ve already done this for you.</p>
+
+<p>You will need:</p>
+<ul>
+<li>A computer with ethernet ports</li>
+<li>A UniFi access point</li>
+<li>2 x Ethernet cables</li>
+<li>Access to the terminal on your PC</li>
+<li>A download of the PolkaSpots firmware</li>
+</ul>
+
+<hr />
+
+<p>Let’s get flashing…</p>
+
+<p>1 - Connect your access point to your PC. Connect one end of the Ethernet to the LAN port on the PoE adapter and the other end to the Ethernet port on your computer.</p>
+
+<p>2 - Plug the second Ethernet cable into the other port POE adapter. The other end of the cable will plug into your UniFi access point.</p>
+
+<p>3 - You will now need to put your AP into recovery mode. As you connect the Ethernet cable to your access point to power it up, press and hold the restart button using a sharp point (e.g. a paperclip) until the lights on the box cycle between the following colours:</p>
+
+<p><b>Unifi UAP</b> - Green &gt; Orange &gt; Off <br />
+<b>Unifi Outdoor</b> - Green &gt; Orange &gt; Off <br />
+<b>Unifi Pro</b> - Blue &gt; White &gt; Off <br />
+<b>Unifi Outdoor+</b> - Blue &gt; White &gt; Off <br /></p>
+
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/unifi-flash/box-recover.gif" />
+</div>
+
+<h3>4.1 - Windows TFTP instructions (MAC users, further down to 4.2):</h3>
+
+<p>a. Go to your Windows Control Panel and Click on Network and Internet (Names may vary depending on Windows Version)</p>
+
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/unifi-flash/control-panel.png" />
+</div>
+
+<p>b. Click on Network and Sharing Centre (Names may vary depending on Windows Version)</p>
+
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/unifi-flash/network-sharing.png" />
+</div>
+
+<p>c. Click on Change Adapter Settings</p>
+
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/unifi-flash/adapter-settings.png" />
+</div>
+
+<p>d. Right click on your Ethernet adapter and select properties</p>
+
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/unifi-flash/ethernet-prop.png" />
+</div>
+
+<p>e. Select Internet Protocol Version 4 (TCP/IPv4) and select Properties</p>
+
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/unifi-flash/ip4.png" />
+</div>
+
+<p>f. Select Use the following IP addresses, input the IP and Subnet and click OK</p>
+
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/unifi-flash/ip-range.png" />
+</div>
+
+<p>g. Download TFTP2.exe <a href="https://s3.amazonaws.com/elevio-article-assets/5538eac84ebbe/553a66479bf5a_tftp2.exe">from here</a> and run it. In the Server field add 192.168.1.20 (this is the IP of the Ubiquiti device in failsafe mode)</p>
+
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/unifi-flash/tftp2.png" />
+</div>
+
+<p>h. In the File row, click on the 3 dots button and select the firmware downloaded from Cucumber Tony. Then Click Upgrade.</p>
+
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/unifi-flash/tftp-upgrade.png" />
+</div>
+
+<p>If everything is set up correctly and the box is in failsafe mode, the status bar should get to full.</p>
+
+<h3>4.2 - MAC TFTP instructions:</h3>
+
+<p>a. On your computer, set your IP network settings to ‘manual’.</p>
+
+<p>On a Apple computer go to System Preferences&gt; Networks&gt; select Ethernet on the left and on the setting for IPV4 select ‘Manually’ from the drop down menu. You will need to unlock the padlock on the bottom left to do this.</p>
+
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/unifi-flash/apple-network.png" />
+</div>
+
+<p>b. Now change your IP address to 192.168.1.30, and click Apply once the changes have been made.</p>
+
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/unifi-flash/apple-ip.png" />
+</div>
+
+<p>c. Now open the terminal on your computer. If you’re using a Windows machine you’ll need to use an application like Putty.</p>
+
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/unifi-flash/apple-terminal.png" />
+</div>
+
+<p>d. Go to the location that you have the firmware saved (default is the Download folder) via the terminal by typing e.g:</p>
+
+<blockquote>cd Downloads</blockquote>
+
+<p>e. Make sure that you file is in there by typing:</p>
+
+<blockquote>ls</blockquote>
+
+<p>You should see the name of your firmware image with a ‘.bin’ at the end</p>
+
+<p>Copy the entire name to your clipboard, including .bin</p>
+
+<p>f. Type in your terminal:</p>
+
+<blockquote>
+tftp 192.168.1.20<br />
+bin<br />
+trace<br />
+put FIRMWARE-NAME.bin
+</blockquote>
+
+<p><b>Replace FIRMWARE-NAME.bin with the name of the file you previously downloaded</b></p>
+
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/unifi-flash/tftp-terminal.png" />
+</div>
+
+<p>5 - Press return. Lines of code should appear rapidly in your terminal.</p>
+
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/unifi-flash/tftp-finish.png" />
+</div>
+
+<p>The lights on the box will now flash as the firmware installs and the box updates itself. When the lights stop flashing and turn solid, the install is complete.</p>
+
+<p>You have successfully installed Stinky Panda on your UniFi access point.</p>
+
+<p>Now go ahead and add your box into your dashboard if you havent already.</p>
+
+<h3>Option Two - UniFi Controller</h3>
+<hr />
+
+<p><b>Please note: Flashing over SSH may not work with UniFi version v3.2.7 and above</b></p>
+
+<p>1 - Open the terminal on your computer. If you’re using a Windows machine you’ll need to use an application to do this.</p>
+
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/unifi-flash/apple-terminal.png" />
+</div>
+
+<p>2 - Type in the terminal:</p>
+
+<blockquote>ssh ubnt@ip-address</blockquote>
+
+<p>Sometimes the default user may not be ubnt - it may be admin or whatever you’ve set up on the UniFi controller.</p>
+
+<p>The default password is ubnt (again, you may have changed this).</p>
+
+<p>3 - After logging in to your access point type:</p>
+
+<blockquote>
+cd /tmp
+<br />
+wget http://FIRMWARE-URL-PROVIDED-BY-POLKASPOTS
+</blockquote>
+
+<p>To get the firmware URL, follow the normal steps to download the firmware, but rather than left clicking on the final step to download it, right click and copy the URL.</p>
+
+<p>Please ensure that you change the beginning to <b>http://</b> otherwise you will get certificate errors.</p>
+
+<p>4 - Make sure that you have downloaded the image by typing in the same window:</p>
+
+<blockquote>ls</blockquote>
+
+<p>You should see the name of your firmware - for example “firmware.bin”. Please note, this will be different depending on what firmware version you download.</p>
+
+<p>Please make a note of it, you will need it for the next step.</p>
+
+<p>5 - Now type the following into the terminal:</p>
+
+<blockquote>fwupdate.real -m FIRMWARE-NAME.bin -d</blockquote>
+
+<p>Replace FIRMWARE-NAME.bin with the name of the file you previously downloaded</p>
+
+<p>The installation should now begin. Please do not disconnect your box from electrical supply.</p>
+
+<p>6 - Press return. Lines of code should appear rapidly in your terminal.</p>
+
+<p>The lights on the box will now flash as the firmware installs and the box updates itself. When the lights stop flashing and turn solid, the install is complete.</p>
+
+<p>You have successfully installed the Stinky Panda firmware.</p>
+
+<p>Now go ahead and add your box into your dashboard if you haven’t already.</p>
+
+  </div>
+</div>
+
+    <footer class="mdl-mega-footer">
+
+  <div class="mdl-grid">
+    <div class="center-cell mdl-cell mdl-cell--10-col">
+
+      <div class=" mdl-mega-footer__middle-section">
+
+        <div class="mdl-mega-footer__drop-down-section">
+          <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+          <h1 class="mdl-mega-footer__heading">Product</h1>
+          <ul class="mdl-mega-footer__link-list">
+            <li><a href="/plans/">Plans</a></li>
+            <li><a href="/discover/">Discover</a></li>
+            <li><a href="/compatible-hardware/">Compatible Hardware</a></li>
+          </ul>
+        </div>
+
+        <div class="mdl-mega-footer__drop-down-section">
+          <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+          <h1 class="mdl-mega-footer__heading">Helpful</h1>
+          <ul class="mdl-mega-footer__link-list">
+            <li><a href="http://docs.polkaspots.apiary.io/" target="_blank">API</a></li>
+            <li><a href="http://docs.cucumberwifi.io/" target="_blank">Docs</a></li>
+            <li><a href="http://status.ctapp.io/" target="_blank">Status</a></li>
+            <li><a href="https://discuss.cucumberwifi.io/" target="_blank">Discuss</a></li>
+            <li><a href="/community/tutorials/">Tutorials</a></li>
+          </ul>
+        </div>
+
+        <div class="mdl-mega-footer__drop-down-section">
+          <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+          <h1 class="mdl-mega-footer__heading">Company</h1>
+          <ul class="mdl-mega-footer__link-list">
+            <li><a href="https://medium.com/guest-wifi" target="_blank">Blog</a></li>
+            <li><a href="/about/">About Us</a></li>
+            <li><a href="/contact/">Contact Us</a></li>
+            <li><a href="/case-studies/">Case Studies</a></li>
+          </ul>
+        </div>
+
+        <!-- <div class="mdl-mega-footer__drop-down-section">
+          <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+          <h1 class="mdl-mega-footer__heading">FAQ</h1>
+          <ul class="mdl-mega-footer__link-list">
+            <li><a href="#">Questions</a></li>
+            <li><a href="#">Answers</a></li>
+            <li><a href="#">Contact us</a></li>
+          </ul>
+        </div> -->
+
+      </div>
+
+      <div class="mdl-mega-footer__middle-section footer-social">
+        <a href="https://twitter.com/cucumbertony" target="_blank">
+          <img class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" src="/images/pages/social/twitter.png"
+        </a>
+        <a href="https://www.linkedin.com/company/cucumber-tony" target="_blank">
+          <img class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" src="/images/pages/social/linkedin.png"
+        </a>
+        <a href="https://www.facebook.com/cucumbertony/" target="_blank">
+          <img class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" src="/images/pages/social/facebook.png"
+        </a>
+        <a href="https://www.youtube.com/channel/UCpPkREGXYrlontKXB3B3t9A" target="_blank">
+          <img class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" src="/images/pages/social/youtube.png"
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+</footer>
+
+  </main>
+</div>
+
+
+</body>
+
+</html>

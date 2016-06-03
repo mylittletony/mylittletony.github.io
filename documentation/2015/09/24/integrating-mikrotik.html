@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Setting up a splash page for a MikroTik network</title>
+  <meta name="description" content="  Note: you may lose internet connectivity during some stages of this process if the MikroTik is your only uplink. It will return once you have finished the ...">
+  <link rel="icon" type="image/png" href="/images/favicon.ico">
+  <link rel="stylesheet" href="/css/material.css">
+  <link rel="stylesheet" href="/css/site.css">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,700,300' type='text/css'>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="canonical" href="https://cucumberwifi.io/documentation/2015/09/24/integrating-mikrotik.html">
+  <link rel="alternate" type="application/rss+xml" title="Full-stack Wi-Fi Platform" href="https://cucumberwifi.io/feed.xml" />
+
+  <script src="/js/material.js"></script>
+
+</head>
+
+
+<body>
+
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header mdl-layout__header--scroll mdl-shadow--4dp">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <div class="ct-logo">
+        <a href="/"><img src="/images/pages/cucumber-wifi.svg"></a>
+      </div>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation. We hide it in small screens. -->
+      <nav class="mdl-navigation mdl-layout--large-screen-only">
+        <a class="mdl-navigation__link" href="/discover/">Discover</a>
+        <a style="cursor:pointer;" id="features-list" class="mdl-navigation__link">Features</a>
+        <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="features-list">
+          <a href="/features/management/"><li class="mdl-menu__item">Management</li></a>
+          <a href="/features/networks/"><li class="mdl-menu__item">Networks</li></a>
+          <a href="/features/branding/"><li class="mdl-menu__item">Branding</li></a>
+          <a href="/features/reports/"><li class="mdl-menu__item">Reports</li></a>
+          <a href="/features/integrations/"><li class="mdl-menu__item">Integrations</li></a>
+          <a href="/features/guests/"><li class="mdl-menu__item">Guest Login</li></a>
+        </ul>
+        <a class="mdl-navigation__link" href="/compatible-hardware/">Devices</a>
+        <a class="mdl-navigation__link" href="/plans/">Plans</a>
+        <a class="mdl-navigation__link" target="_blank" href="https://discuss.cucumberwifi.io/">Discuss</a>
+        <a class="mdl-navigation__link" href="https://my.ctapp.io/#/create">Sign-up</a>
+        <a class="mdl-navigation__link" href="https://my.ctapp.io/#/login">Login</a>
+      </nav>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer mdl-layout--small-screen-only mdl-shadow--4dp">
+    <nav class="mdl-navigation">
+      <span class="sidebar-logo"><img src="/images/pages/cucumber-wifi.svg"></span>
+      <a class="mdl-navigation__link" href="/discover/">Discover</a>
+      <span class="mdl-navigation__link" href="/discover/">Features</span>
+      <hr>
+      <div class="navigation-subheader-list">
+        <a class="mdl-navigation__link" href="/features/management">Management</a>
+        <a class="mdl-navigation__link" href="/features/networks/">Networks</a>
+        <a class="mdl-navigation__link" href="/features/branding/">Branding</a>
+        <a class="mdl-navigation__link" href="/features/reports/">Reports</a>
+        <a class="mdl-navigation__link" href="/features/integrations/">Integrations</a>
+        <a class="mdl-navigation__link" href="/features/guests">Guest Login</a>
+        <a class="mdl-navigation__link" href="/compatible-hardware/">Devices</a>
+      </div>
+      <hr>
+      <a class="mdl-navigation__link" href="/plans/">Plans</a>
+      <a class="mdl-navigation__link" target="_blank" href="https://discuss.cucumberwifi.io/">Discuss</a>
+      <a class="mdl-navigation__link" href="https://my.ctapp.io/#/create">Sign-up</a>
+      <a class="mdl-navigation__link" href="https://my.ctapp.io/#/login">Login</a>
+    </nav>
+  </div>
+  <main class="mdl-layout__content">
+    <div class="community mdl-grid">
+  <div class="community-post center-cell mdl-cell mdl-cell--9-col mdl-card mdl-shadow--4dp">
+      <h1>Setting up a splash page for a MikroTik network</h1>
+      <p>Sep 24, 2015</p>
+    <blockquote>
+  <p>Note: you may lose internet connectivity during some stages of this process if the MikroTik is your only uplink. It will return once you have finished the process.</p>
+</blockquote>
+
+<p>1. Download the resources needed:<br />
+<strong>Winbox:</strong> <br />
+<a href="http://www.mikrotik.com/download">Windows</a> <br />
+<a href="http://www.facchinibr.net/wp/29/05/2013/mikrotik-winbox-mac-osx-download/">Mac</a><br />
+<br />
+<strong>HTML File:</strong><br />
+<a href="http://www.cucumberwifi.io/downloads/microtik.zip">microtik.zip</a> <br /></p>
+
+<p>2. Connect to your MikroTik device via ethernet cable</p>
+
+<p>3. Launch winbox and find your device in the neighbours tab and double click the MAC address, then click connect</p>
+
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/mikrotik/winbox-connect.png" />
+</div>
+
+<p>4. Go to quick setup on the left sidebar and retrieve the MAC address under internet</p>
+
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/mikrotik/winbox-mac.png" />
+</div>
+
+<p>5. Then using a web browser, go into your Cucumber Tony dashboard and <a href="https://my.ctapp.io/?data-elevio-article=7107#/" class="dst">add the box in</a> using the MAC address you retrieved</p>
+
+<p>6. Click on the radius settings button on your box page in CT and keep note of the information</p>
+
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/mikrotik/ct-radius.png" />
+</div>
+
+<p>7. Locate the .zip file you downloaded in Step 1, and then extract it to retrieve the microtik-login.html file <br />
+Rename the file to login.html</p>
+
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/mikrotik/mikrotik-html.png" />
+</div>
+
+<p>8. In winbox, go to the radius section on the left sidebar, and add a new radius setting using the radius info you retrieved earlier from Cucumber Tony in step 6</p>
+
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/mikrotik/winbox-add-radius.png" />
+</div>
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/mikrotik/winbox-radius.png" />
+</div>
+
+<p>9. Copy the MAC address that you added into CT and go to System &gt; Identity and paste in the MAC address as your identity and click OK</p>
+
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/mikrotik/winbox-identity.png" />
+</div>
+
+<p>10. Go back into your box page on CT and go into your box settings at the top of the page.</p>
+
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/mikrotik/ct-box-settings.png" />
+</div>
+
+<p>Scroll down to advanced settings, and replace the radius NAS ID with the same MAC address from before and click update</p>
+
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/mikrotik/ct-nas.png" />
+</div>
+
+<p>11. Back in winbox, go to IP on the left sidebar and then select Hotspot.</p>
+
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/mikrotik/winbox-hotspot.png" />
+</div>
+
+<p>Click on hotspot setup and you will only need to change the following: <br />
+<code>
+Hotspot interface: bridge-local
+</code></p>
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/mikrotik/winbox-interface.png" />
+</div>
+
+<p>12. Under hotspot servers, double click on hotspot 1 and change the name to the mac address used previously, then click OK</p>
+
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/mikrotik/hotspot-mac.png" />
+</div>
+
+<p>13. Under server profiles, select hsprof1 and change the name to the mac address used previously, then click ok</p>
+
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/mikrotik/server-mac.png" />
+</div>
+
+<p>Then under the Logins tab, make sure that <strong>HTTP PAP</strong> is the only option enabled next to <strong>Login By</strong>.</p>
+
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/mikrotik/winbox-login.png" />
+</div>
+
+<p>Then under the radius tab, enable radius. The mac format must be <strong>XX-XX-XX-XX-XX-XX</strong> and <strong>accounting should be enabled</strong>. Otherwise you’ll get no datas.</p>
+
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/mikrotik/winbox-accounting.png" />
+</div>
+
+<p>14. Then under walled garden, click the + to add, and add the walled garden entries.</p>
+
+<p>You can find the most up to date list of <b><span data-elevio-article="18499">Walled Gardens here.</span></b></p>
+
+<p>Enter the walled garden domains under Dst. Host.</p>
+
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/mikrotik/winbox-walledgarden.png" />
+</div>
+
+<p>15. Go into Files, and find the file named hotspot/login.html and remove it.</p>
+
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/mikrotik/winbox-html.png" />
+</div>
+
+<p>Then find the file you downloaded previously, and drag and drop it into the hotspot directory where you removed the previous file.</p>
+
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/mikrotik/replace-html.png" />
+</div>
+
+<p>At this point you are now set up and can log in through the splash page.</p>
+
+<h2 id="when-things-go-wrong">When things go wrong</h2>
+
+<h3 id="cant-login---in-a-loop">Can’t login - in a loop</h3>
+
+<p>This is usually caused by incorrect radius settings. If you’ve entered the details incorrectly, sometimes Mikrotik refuse to update and won’t even try and log you in. You’ll go round in circles.</p>
+
+<p>If you’re sure your settings match the ones in CT, the only way (we know about) to get the device to authenticate is to delete the radius and add it in again.</p>
+
+<p>If you happen to know how to fix this, tell us and we’ll give you 50% off for three months! No joke.</p>
+
+<h3 id="on-a-mac-or-linux-puter">On a Mac or Linux Puter</h3>
+
+<p>This is really sucky. We’re 50/50 mac and Linux users over here and we’ve found the clients to be aweful.</p>
+
+<p>Even so, there are two issues with these (the mac and Linux version):</p>
+
+<ol>
+  <li>Can’t drag and drop the files.</li>
+  <li>Can’t access the interface if splash is running</li>
+</ol>
+
+<p>The first we can’t solve. The second you can resolve by creating another network (sometimes) and or logging in via the splash.</p>
+
+<h2 id="sign-up-cucumber-is-free-for-unlimited-access-points">Sign-up, Cucumber is free for unlimited access points</h2>
+
+<p><a href="https://my.ctapp.io/#/create" class="button success dst">Sign Up</a></p>
+
+<p>Sign-up for Cucumber Tony, it’s free for unlimited access points. Some awesome is also included.</p>
+
+<hr />
+
+
+  </div>
+</div>
+
+    <footer class="mdl-mega-footer">
+
+  <div class="mdl-grid">
+    <div class="center-cell mdl-cell mdl-cell--10-col">
+
+      <div class=" mdl-mega-footer__middle-section">
+
+        <div class="mdl-mega-footer__drop-down-section">
+          <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+          <h1 class="mdl-mega-footer__heading">Product</h1>
+          <ul class="mdl-mega-footer__link-list">
+            <li><a href="/plans/">Plans</a></li>
+            <li><a href="/discover/">Discover</a></li>
+            <li><a href="/compatible-hardware/">Compatible Hardware</a></li>
+          </ul>
+        </div>
+
+        <div class="mdl-mega-footer__drop-down-section">
+          <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+          <h1 class="mdl-mega-footer__heading">Helpful</h1>
+          <ul class="mdl-mega-footer__link-list">
+            <li><a href="http://docs.polkaspots.apiary.io/" target="_blank">API</a></li>
+            <li><a href="http://docs.cucumberwifi.io/" target="_blank">Docs</a></li>
+            <li><a href="http://status.ctapp.io/" target="_blank">Status</a></li>
+            <li><a href="https://discuss.cucumberwifi.io/" target="_blank">Discuss</a></li>
+            <li><a href="/community/tutorials/">Tutorials</a></li>
+          </ul>
+        </div>
+
+        <div class="mdl-mega-footer__drop-down-section">
+          <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+          <h1 class="mdl-mega-footer__heading">Company</h1>
+          <ul class="mdl-mega-footer__link-list">
+            <li><a href="https://medium.com/guest-wifi" target="_blank">Blog</a></li>
+            <li><a href="/about/">About Us</a></li>
+            <li><a href="/contact/">Contact Us</a></li>
+            <li><a href="/case-studies/">Case Studies</a></li>
+          </ul>
+        </div>
+
+        <!-- <div class="mdl-mega-footer__drop-down-section">
+          <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+          <h1 class="mdl-mega-footer__heading">FAQ</h1>
+          <ul class="mdl-mega-footer__link-list">
+            <li><a href="#">Questions</a></li>
+            <li><a href="#">Answers</a></li>
+            <li><a href="#">Contact us</a></li>
+          </ul>
+        </div> -->
+
+      </div>
+
+      <div class="mdl-mega-footer__middle-section footer-social">
+        <a href="https://twitter.com/cucumbertony" target="_blank">
+          <img class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" src="/images/pages/social/twitter.png"
+        </a>
+        <a href="https://www.linkedin.com/company/cucumber-tony" target="_blank">
+          <img class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" src="/images/pages/social/linkedin.png"
+        </a>
+        <a href="https://www.facebook.com/cucumbertony/" target="_blank">
+          <img class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" src="/images/pages/social/facebook.png"
+        </a>
+        <a href="https://www.youtube.com/channel/UCpPkREGXYrlontKXB3B3t9A" target="_blank">
+          <img class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" src="/images/pages/social/youtube.png"
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+</footer>
+
+  </main>
+</div>
+
+
+</body>
+
+</html>

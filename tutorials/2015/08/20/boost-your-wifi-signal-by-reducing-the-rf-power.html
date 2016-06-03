@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>How to get the best WiFi Coverage</title>
+  <meta name="description" content="A lot of people ask us which access point will give them best coverage, and they&#8217;re always surprised when we don&#8217;t point to one with the highest ...">
+  <link rel="icon" type="image/png" href="/images/favicon.ico">
+  <link rel="stylesheet" href="/css/material.css">
+  <link rel="stylesheet" href="/css/site.css">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,700,300' type='text/css'>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="canonical" href="https://cucumberwifi.io/tutorials/2015/08/20/boost-your-wifi-signal-by-reducing-the-rf-power.html">
+  <link rel="alternate" type="application/rss+xml" title="Full-stack Wi-Fi Platform" href="https://cucumberwifi.io/feed.xml" />
+
+  <script src="/js/material.js"></script>
+
+</head>
+
+
+<body>
+
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header mdl-layout__header--scroll mdl-shadow--4dp">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <div class="ct-logo">
+        <a href="/"><img src="/images/pages/cucumber-wifi.svg"></a>
+      </div>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation. We hide it in small screens. -->
+      <nav class="mdl-navigation mdl-layout--large-screen-only">
+        <a class="mdl-navigation__link" href="/discover/">Discover</a>
+        <a style="cursor:pointer;" id="features-list" class="mdl-navigation__link">Features</a>
+        <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="features-list">
+          <a href="/features/management/"><li class="mdl-menu__item">Management</li></a>
+          <a href="/features/networks/"><li class="mdl-menu__item">Networks</li></a>
+          <a href="/features/branding/"><li class="mdl-menu__item">Branding</li></a>
+          <a href="/features/reports/"><li class="mdl-menu__item">Reports</li></a>
+          <a href="/features/integrations/"><li class="mdl-menu__item">Integrations</li></a>
+          <a href="/features/guests/"><li class="mdl-menu__item">Guest Login</li></a>
+        </ul>
+        <a class="mdl-navigation__link" href="/compatible-hardware/">Devices</a>
+        <a class="mdl-navigation__link" href="/plans/">Plans</a>
+        <a class="mdl-navigation__link" target="_blank" href="https://discuss.cucumberwifi.io/">Discuss</a>
+        <a class="mdl-navigation__link" href="https://my.ctapp.io/#/create">Sign-up</a>
+        <a class="mdl-navigation__link" href="https://my.ctapp.io/#/login">Login</a>
+      </nav>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer mdl-layout--small-screen-only mdl-shadow--4dp">
+    <nav class="mdl-navigation">
+      <span class="sidebar-logo"><img src="/images/pages/cucumber-wifi.svg"></span>
+      <a class="mdl-navigation__link" href="/discover/">Discover</a>
+      <span class="mdl-navigation__link" href="/discover/">Features</span>
+      <hr>
+      <div class="navigation-subheader-list">
+        <a class="mdl-navigation__link" href="/features/management">Management</a>
+        <a class="mdl-navigation__link" href="/features/networks/">Networks</a>
+        <a class="mdl-navigation__link" href="/features/branding/">Branding</a>
+        <a class="mdl-navigation__link" href="/features/reports/">Reports</a>
+        <a class="mdl-navigation__link" href="/features/integrations/">Integrations</a>
+        <a class="mdl-navigation__link" href="/features/guests">Guest Login</a>
+        <a class="mdl-navigation__link" href="/compatible-hardware/">Devices</a>
+      </div>
+      <hr>
+      <a class="mdl-navigation__link" href="/plans/">Plans</a>
+      <a class="mdl-navigation__link" target="_blank" href="https://discuss.cucumberwifi.io/">Discuss</a>
+      <a class="mdl-navigation__link" href="https://my.ctapp.io/#/create">Sign-up</a>
+      <a class="mdl-navigation__link" href="https://my.ctapp.io/#/login">Login</a>
+    </nav>
+  </div>
+  <main class="mdl-layout__content">
+    <div class="community mdl-grid">
+  <div class="community-post center-cell mdl-cell mdl-cell--9-col mdl-card mdl-shadow--4dp">
+      <h1>How to get the best WiFi Coverage</h1>
+      <p>Aug 20, 2015</p>
+    <p>A lot of people ask us which access point will give them best coverage, and they’re always surprised when we don’t point to one with the highest power outage.</p>
+
+<p>Wi-Fi coverage is not as simple as blasting out a signal and hoping for the best, so we had a chat with Wi-Fi engineer Andrew, on why you might want to turn your Wi-Fi signal down not up.</p>
+
+<h3 id="its-not-the-size-its-how-you-use-it"><em>It’s not the size, it’s how you use it.</em></h3>
+
+<p>Hi Andrew. Can you explain to us what the power rating of an access point actually means?</p>
+
+<blockquote>
+  <p>The high power/long range access points are for the most part manufacturer marketing catch phrases. TX is how power is measured. The maximum TX power allowed under the 2.4 Ghz spectrum is 20dBm - 100mW EIRP in EU. Anything over this breaks the guidelines set by the ETSI.
+The extra money that you pay for the long range, is just wasted in EU.</p>
+</blockquote>
+
+<p>Ok, so we should just choose an AP with a maximum of 100mW?</p>
+
+<blockquote>
+  <p>Not quite. You should choose a power setting to suit your environment. Increasing the power output of your AP over a certain level can actually decrease the overall performance.</p>
+</blockquote>
+
+<p>Ah, so you’re saying you can actually extend the signal too far?</p>
+
+<blockquote>
+  <p>Exactly. Overpowering is one of the most common problems we see in Wi-Fi networks. Bigger isn’t always better if you know what I mean.</p>
+</blockquote>
+
+<blockquote>
+  <p>First off, as you are extending the coverage, your AP will be able to hear more interfering devices.</p>
+</blockquote>
+
+<blockquote>
+  <p>You will be competing with more APs for air time. Every AP sends out the question “Am I clear to send?”. If the air is free it will send, if not it will repeat until there’s room. This is hard work for your little AP.</p>
+</blockquote>
+
+<blockquote>
+  <p>The biggest problem is with devices not being able to connect even though they think they’re in range. People will see 1-2 Wi-Fi bars on their devices but not actually be able to connect to the internet.</p>
+</blockquote>
+
+<blockquote>
+  <p>It’s like a ghost signal.</p>
+</blockquote>
+
+<p>Weird. Surely if the device has signal bars showing it can connect? <image of="" low="" signal="" bars="" on="" phone=""></image></p>
+
+<blockquote>
+  <p>No, just seeing the signal isn’t enough, it has to be able to respond. Connecting to Wi-Fi is like a conversation between access point and device. When an APs sends out a signal, it waits for a device to call back. It’s called “positive acknowledgement”.</p>
+</blockquote>
+
+<blockquote>
+  <p>This ‘ghost signal’ is basically the device seeing the signal but not being able to respond. Because you increased the AP’s power it will be able to ‘shout’ louder. However it’s unlikely the device at the edge of the signal will be able to shout back as loudly, and the AP won’t hear the response.</p>
+</blockquote>
+
+<blockquote>
+  <p>The end user will see a signal of 1 - 2 bars but won’t actually connect.</p>
+</blockquote>
+
+<p>So bottom line; more Wi-Fi signal power is not always better. Gotcha. Anything else you want to add?</p>
+
+<blockquote>
+  <p>Take your neighbours Wi-Fi signal Wi-Fi into consideration if you can.</p>
+</blockquote>
+
+<blockquote>
+  <p>Increasing your Wi-Fi power output will mean that they will see your AP’s signal where they normally wouldn’t. And your AP will try to compete for the same air time, decreasing their performance as well as yours.</p>
+</blockquote>
+
+<blockquote>
+  <p>There’s no need to up your Wi-Fi power to the point you are covering areas you do not need to.</p>
+</blockquote>
+
+<p>Any tips on how you can you measure if your signal is going too far?</p>
+
+<blockquote>
+  <p>There are lots of apps out there to help you measure the signal strength and interference in an area.</p>
+</blockquote>
+<app image="" of="" inference="">
+
+&gt;These don't cover the 'ghost signal' we mentioned. This is can be a real problem. When someone sees bars of signal on their phone but can't connect they blame the internet, the splash access page or captive portal, their phone, everything but the signal. It wastes a lot of diagnosis time.
+
+&gt;When we built the Cucumber Tony platform I was really keen to include RF signal measurements. These show how strong the connection is for each user. It measures the quality of the connection from the user's point of view.
+
+&gt;It displays the overall quality of your radio, the average SNR, interference level, average data rate and couple of other things. This plus the option to view it back in time, gives you an indicator of the overall Wi-Fi performances. Based on that you can take actions like moving the AP, decreasing the power output, selecting a channel that is not so congested and so on.
+
+&gt;It measures the quality of the connection from the user's point of view.
+
+&gt;It makes a big difference to the quality of your Wi-Fi network.
+
+<image of="" rf="" graphs="">
+
+</image></app>
+
+  </div>
+</div>
+
+    <footer class="mdl-mega-footer">
+
+  <div class="mdl-grid">
+    <div class="center-cell mdl-cell mdl-cell--10-col">
+
+      <div class=" mdl-mega-footer__middle-section">
+
+        <div class="mdl-mega-footer__drop-down-section">
+          <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+          <h1 class="mdl-mega-footer__heading">Product</h1>
+          <ul class="mdl-mega-footer__link-list">
+            <li><a href="/plans/">Plans</a></li>
+            <li><a href="/discover/">Discover</a></li>
+            <li><a href="/compatible-hardware/">Compatible Hardware</a></li>
+          </ul>
+        </div>
+
+        <div class="mdl-mega-footer__drop-down-section">
+          <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+          <h1 class="mdl-mega-footer__heading">Helpful</h1>
+          <ul class="mdl-mega-footer__link-list">
+            <li><a href="http://docs.polkaspots.apiary.io/" target="_blank">API</a></li>
+            <li><a href="http://docs.cucumberwifi.io/" target="_blank">Docs</a></li>
+            <li><a href="http://status.ctapp.io/" target="_blank">Status</a></li>
+            <li><a href="https://discuss.cucumberwifi.io/" target="_blank">Discuss</a></li>
+            <li><a href="/community/tutorials/">Tutorials</a></li>
+          </ul>
+        </div>
+
+        <div class="mdl-mega-footer__drop-down-section">
+          <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+          <h1 class="mdl-mega-footer__heading">Company</h1>
+          <ul class="mdl-mega-footer__link-list">
+            <li><a href="https://medium.com/guest-wifi" target="_blank">Blog</a></li>
+            <li><a href="/about/">About Us</a></li>
+            <li><a href="/contact/">Contact Us</a></li>
+            <li><a href="/case-studies/">Case Studies</a></li>
+          </ul>
+        </div>
+
+        <!-- <div class="mdl-mega-footer__drop-down-section">
+          <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+          <h1 class="mdl-mega-footer__heading">FAQ</h1>
+          <ul class="mdl-mega-footer__link-list">
+            <li><a href="#">Questions</a></li>
+            <li><a href="#">Answers</a></li>
+            <li><a href="#">Contact us</a></li>
+          </ul>
+        </div> -->
+
+      </div>
+
+      <div class="mdl-mega-footer__middle-section footer-social">
+        <a href="https://twitter.com/cucumbertony" target="_blank">
+          <img class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" src="/images/pages/social/twitter.png"
+        </a>
+        <a href="https://www.linkedin.com/company/cucumber-tony" target="_blank">
+          <img class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" src="/images/pages/social/linkedin.png"
+        </a>
+        <a href="https://www.facebook.com/cucumbertony/" target="_blank">
+          <img class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" src="/images/pages/social/facebook.png"
+        </a>
+        <a href="https://www.youtube.com/channel/UCpPkREGXYrlontKXB3B3t9A" target="_blank">
+          <img class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" src="/images/pages/social/youtube.png"
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+</footer>
+
+  </main>
+</div>
+
+
+</body>
+
+</html>
