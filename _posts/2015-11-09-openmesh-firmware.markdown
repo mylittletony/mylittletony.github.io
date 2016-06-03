@@ -59,7 +59,7 @@ You should then see something similar to this in the console:
 *Cucumber Tony is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities. Or you can utilise the captive portal solution with your existing infrastructure. Create a free account and check it here <a href="https://cucumberwifi.io">cucumberwifi.io</a>*
 
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 
 <h2>Come join Cucumber</h2>
 
@@ -70,4 +70,3 @@ You should then see something similar to this in the console:
 <hr>
 
 </div>
-

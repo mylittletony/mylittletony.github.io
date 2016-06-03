@@ -11,25 +11,25 @@ To run the Health Check, follow these steps:
 
 1\. Head into your location in Cucumber Tony and select Boxes on the left hand sidebar.
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/health-check/1.png">
 </div>
 
 2\. Select the box that you want to run the check on.
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/health-check/2.png">
 </div>
 
 3\. Scroll down under the Tools column and click on the Checkup button.
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/health-check/3.png">
 </div>
 
 4\. Once you have run it, you will get a status message below the button which you can click on to see a summary of the health check.
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/health-check/4.png">
 </div>
 
@@ -63,7 +63,7 @@ To run the Health Check, follow these steps:
 </p>
 <hr>
 <br><br>
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <p>Sign-up for a Cucumber dashboard. It's free for unlimited access points!</p>
 <a href="https://my.ctapp.io/#/create" class="button large success dst">Join</a>
 </div>

@@ -31,7 +31,7 @@ It takes less than a minute to set this up, however you will need to do some wor
 
 <p><b>You can only add a custom domain on the paid plans, please make sure you've upgraded your account first.</b></p>
 <p>Navigate to your account settings and click branding. You should see something like this:</p>
-<div class="text-center">
+<div class="mdl-typography--text-center">
   <img src="/images/community/tutorials/branded-wifi-setup.jpg" width="800px">
 </div>
 
@@ -43,7 +43,7 @@ It takes less than a minute to set this up, however you will need to do some wor
 <p>Once you've figured who your provider is, you will need to change your newly created domain's settings.</p>
 <p>Create a new cname pointing at <b>cname.ctapp.io</b>. This is what the settings for 123reg might look like.</p>
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
   <img src="/images/community/tutorials/123-reg-cname.jpg" width="800px">
 </div>
 
@@ -52,17 +52,17 @@ It takes less than a minute to set this up, however you will need to do some wor
 <p>Open a browser and head over to the domain you just added. If you see a page like this, you've added the wrong CNAME or your changes weren't save. Please go back to your settings and make sure things match.</p>
 
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
   <img src="/images/community/tutorials/broken-cname.png" width="800px">
 </div>
 
 <p>If you have set things up correctly, you will probably get an error - this is because the certificate for cname.ctapp.io doesn't match your domain. This is totally expected!</p>
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
   <img src="/images/community/tutorials/broken-ssl-1.png" width="800px">
 </div>
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
   <img src="/images/community/tutorials/broken-ssl-2.png" width="800px">
 </div>
 
@@ -75,13 +75,13 @@ It takes less than a minute to set this up, however you will need to do some wor
 
 <p>Go create a new <a href="https://cloudflare.com">Cloudflare</a> account, it won't take long.</p>
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
   <img src="/images/community/tutorials/cloudflare-add-site.png" width="800px">
 </div>
 
 <p>Once the scan is complete, you'll need to make sure all your domains are present as we're going to move our DNS over to Cloudflare. If you're not sure what you're doing, drop them a line.</p>
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
   <img src="/images/community/tutorials/cloudflare-dns-1.png" width="800px">
 </div>
 
@@ -98,7 +98,7 @@ You should see a notice about using **dns flattening**. This is ok and what you 
 
 Next, head over to the Crypto section and enable flexible SSL.
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
   <img src="/images/community/tutorials/cloudflare-crypto.png" width="800px">
 </div>
 
@@ -106,8 +106,8 @@ And that should be you done. Check you can access your domain without any SSL wa
 
 <hr>
 
-<div class="text-center">
-Enjoy! Remember, if you don't want to do all this, you can use our application. It's all set up for you. 
+<div class="mdl-typography--text-center">
+Enjoy! Remember, if you don't want to do all this, you can use our application. It's all set up for you.
 
 <h2><a href="https://my.ctapp.io/#/create" class="button large success dst">Sign Up</a></h2>
 

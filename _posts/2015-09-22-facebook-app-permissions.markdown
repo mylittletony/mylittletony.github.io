@@ -28,13 +28,13 @@ First up, you need a Facebook account. Once you have this, head over to the Face
 
 Click the *My Apps* button, then click *Add New App*
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
   <img src="/images/community/tutorials/facebook-logins/facebook-captive-portal-1.png" width="300px">
 </div>
 
 On the following screen, select the website option.
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
   <img src="/images/community/tutorials/facebook-logins/facebook-captive-portal-2.png" width="800px">
 </div>
 
@@ -42,23 +42,23 @@ Enter a name for your new application. Make it clear, keep it simple. Click **Cr
 
 Choose a category and then click **Create App ID**
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
   <img src="/images/community/tutorials/facebook-logins/facebook-captive-portal-3.png" width="800px">
 </div>
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
   <img src="/images/community/tutorials/facebook-logins/facebook-captive-portal-4.png" width="800px">
 </div>
 
 Scroll down and enter the url for your login pages - it must match your actual login pages. For example, acme.my-wifi.co
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
   <img src="/images/community/tutorials/facebook-logins/facebook-captive-portal-5.png" width="800px">
 </div>
 
 Once this is done, refresh the page and select your application from the *My Apps* dropdown. It will look something like this.
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
   <img src="/images/community/tutorials/facebook-logins/facebook-captive-portal-6.png" width="800px">
 </div>
 
@@ -68,7 +68,7 @@ Fill-in your settings, exactly as per the screenshots below. Make sure you're us
 
 You'll also need to add your own logo and support email.
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
   <img src="/images/community/tutorials/facebook-logins/facebook-captive-portal-7.png" width="800px">
 </div>
 
@@ -84,7 +84,7 @@ Login to your dashboard and navigate to one of your locations. Click splash page
 
 - Enter your App ID in the box (you'll find this in your Facebook developer portal).
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
   <img src="/images/community/tutorials/facebook-logins/facebook-captive-portal-8.png" width="800px">
 </div>
 
@@ -104,13 +104,13 @@ In your Facebook developer's portal, head over to **Status & Review**. Please ma
 
 Once this is done, make sure the Approved Items are all green and then click the **Start a New Application** button.
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
   <img src="/images/community/tutorials/facebook-logins/facebook-captive-portal-9.png" width="800px">
 </div>
 
 You need to apply for **publish_actions**. If the following banner appears, please make sure you've actually logged in once via the new app.
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
   <img src="/images/community/tutorials/facebook-logins/facebook-captive-portal-10.png" width="800px">
 </div>
 
@@ -126,7 +126,7 @@ If you have the time, please take some screenshots of your login pages and the c
 
 Once you're done, click submit. Get yourself some tea and wait. It may take a couple of days to get your Application approved.
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
   <img src="/images/community/tutorials/facebook-logins/facebook-captive-portal-11.png" width="800px">
 </div>
 
@@ -134,7 +134,7 @@ Once you're done, click submit. Get yourself some tea and wait. It may take a co
 
 Once your application is approved, you should head off and check you can now checkin! Your developer portal should also look like this:
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
   <img src="/images/community/tutorials/facebook-logins/facebook-captive-portal-20.png" width="800px">
 </div>
 
@@ -148,7 +148,7 @@ So, to checkin, you now need to tag a place in your Open Graph story.
 
 If you have a specific requirement other than the publish_action, please get in touch and we can discuss adding more features to CT.
 
-Enjoy! Remember, if you don't want to do all this, you can use our application. It's all set up for you. 
+Enjoy! Remember, if you don't want to do all this, you can use our application. It's all set up for you.
 
 ### Come join Cucumber
 

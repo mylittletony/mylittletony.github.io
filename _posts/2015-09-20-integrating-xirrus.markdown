@@ -11,31 +11,31 @@ Using a web browser, go into your Cucumber Tony dashboard and <a href="https://m
 
 When you have added these to Cucumber Tony, go into the settings page of your box, scrolling down for the section labelled PolkaSpots Settings
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/xirrus-guide/box-settings.png">
 </div>
 
 Untick I'm a PolkaSpots Box, and select your box type from the droplist then update your changes
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/xirrus-guide/nonct-box.png">
 </div>
 
 Head back to boxes and click on the box you just set to a non PolkaSpots Box. You should now see a green Radius Settings button.
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/xirrus-guide/radius-settings.png">
 </div>
 
 Clicking this will open a box with details that you will need to refer back to at later stages.
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/xirrus-guide/radius-info.png">
 </div>
 
 Connect to your Xirrus device portal and navigate to the security heading
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/xirrus-guide/xirrus-security.png">
 </div>
 
@@ -67,13 +67,13 @@ RADIUS Attribute Formatting:
 
 And then save your changes.
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/xirrus-guide/external-radius.png">
 </div>
 
-Navigate to the SSIDs heading and then to the SSID Management sub heading. Once here, create a new SSID or use an existing one and tick the WPR settingThis will open the Web Page Redirect Configuration settings. 
+Navigate to the SSIDs heading and then to the SSID Management sub heading. Once here, create a new SSID or use an existing one and tick the WPR settingThis will open the Web Page Redirect Configuration settings.
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/xirrus-guide/ssid-management.png">
 </div>
 
@@ -87,7 +87,7 @@ Then add the Walled Garden URLs to the whitelist by entering them into the box s
 
 You can find the most up to date list of <b><span data-elevio-article="18499">Walled Gardens here.</span></b>
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/xirrus-guide/walled-gardens.png">
 </div>
 
@@ -95,7 +95,7 @@ You can find the most up to date list of <b><span data-elevio-article="18499">Wa
 
 *Cucumber Tony is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities.Or you can utlise the captive portal solution with your existing infrastucture. Create a free account and check it here <a href="https://cucumberwifi.io">cucumberwifi.io</a>*
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 
 <h2>Come join Cucumber</h2>
 

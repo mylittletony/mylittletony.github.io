@@ -15,28 +15,28 @@ Take a look at some of the login types in action with Cucumber Tony.
 
 <hr>
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <h3>Welcome Page Login</h3>
 <iframe width="960" height="540" src="https://www.youtube.com/embed/ppIVlMH_8CM?rel=0&amp;color=white&amp;showinfo=0&amp;autohide=1" frameborder="0" allowfullscreen></iframe>
 </div>
 
 <hr>
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <h3>Social Login</h3>
 <iframe width="960" height="540" src="https://www.youtube.com/embed/Km85SDaTcP4?rel=0&amp;color=white&amp;showinfo=0&amp;autohide=1" frameborder="0" allowfullscreen></iframe>
 </div>
 
 <hr>
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <h3>Email Login</h3>
 <iframe width="960" height="540" src="https://www.youtube.com/embed/bnF7E6G9HMA?rel=0&amp;color=white&amp;showinfo=0&amp;autohide=1" frameborder="0" allowfullscreen></iframe>
 </div>
 
 <hr>
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <h3>Password Protected Login</h3>
 <iframe width="960" height="540" src="https://www.youtube.com/embed/C0wA-6pQGNc?rel=0&amp;color=white&amp;showinfo=0&amp;autohide=1" frameborder="0" allowfullscreen></iframe>
 </div>
@@ -46,7 +46,7 @@ Take a look at some of the login types in action with Cucumber Tony.
 *Cucumber Tony is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities. Or you can utilise the captive portal solution with your existing infrastructure. Create a free account and check it here <a href="https://cucumberwifi.io">cucumberwifi.io</a>*
 
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 
 <h2>Come join Cucumber</h2>
 

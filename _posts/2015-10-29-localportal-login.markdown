@@ -16,7 +16,7 @@ The username for the local portal is polkaspots.
 
 Your password is the serial number of the box that you are trying to connect to, which you can locate through Cucumber Tony on the box's information page as shown below.
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/local-portal/localportal.gif">
 </div>
 
@@ -38,7 +38,7 @@ As well as this, there are several options on the sidebar to select from.
 
 *Cucumber Tony is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities.Or you can utlise the captive portal solution with your existing infrastucture. Create a free account and check it here <a href="https://cucumberwifi.io">cucumberwifi.io</a>*
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 
 <h2>Come join Cucumber</h2>
 

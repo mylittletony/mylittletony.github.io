@@ -39,7 +39,7 @@ We need to make sure that the permissions are set correctly, so enter in the fol
 If everything was done correctly you can now log into your device using the key, not asking you for a password.
 If you are using Windows then start PuTTY and follow these steps:
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
   <img src="/images/community/tutorials/openwrt/puttyconfig.png" width="400px">
 </div>
 
@@ -66,7 +66,7 @@ To do this, while connected via SSH to your OpenWRT device, enter the following 
 *Cucumber Tony is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities. Or you can utilise the captive portal solution with your existing infrastructure. Create a free account and check it here <a href="https://cucumberwifi.io">cucumberwifi.io</a>*
 
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 
 <h2>Come join Cucumber</h2>
 

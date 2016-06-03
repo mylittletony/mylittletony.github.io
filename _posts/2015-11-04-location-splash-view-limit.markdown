@@ -14,13 +14,13 @@ Only the location owner can change this limit, so you do not have to worry about
 
 To set a Splash View Limit for a location of yours, follow these steps:
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/location-splash-limit/location-quotas.gif">
 </div>
 
 1. Head into your **Location** on your dashboard.
 
-2. Select **Settings** on the left sidebar. 
+2. Select **Settings** on the left sidebar.
 
 3. Scroll down to the section titled **Splash Settings** and you will see the **Splash View Limit** field.
 
@@ -30,7 +30,7 @@ To set a Splash View Limit for a location of yours, follow these steps:
 
 *Cucumber Tony is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities.Or you can utlise the captive portal solution with your existing infrastucture. Create a free account and check it here <a href="https://cucumberwifi.io">cucumberwifi.io</a>*
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 
 <h2>Come join Cucumber</h2>
 

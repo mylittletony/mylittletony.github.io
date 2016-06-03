@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  How to access Netflix US 
+title:  How to access Netflix US
 date:   2015-10-08
 author: Siddhant Garg
 categories: tutorials
@@ -10,7 +10,7 @@ tags: Tutorials
 description: Simple steps to get access to Netflix US.
 ---
 
-Netflix is a service which is available worldwide, but Netflix in the US has loads more content. The first thing you need to know about watching American Netflix from the UK, is that it’s free as long as you are a subscribed member of Netflix. So how can I watch the US version of Netflix in the UK you ask? Keep on reading. 
+Netflix is a service which is available worldwide, but Netflix in the US has loads more content. The first thing you need to know about watching American Netflix from the UK, is that it’s free as long as you are a subscribed member of Netflix. So how can I watch the US version of Netflix in the UK you ask? Keep on reading.
 
 The logic behind using American Netflix is that you need to trick Netflix’s servers into thinking you’re accessing its services from inside the U.S. Faking your location to make it appear as if you’re in America can be done several different ways.
 
@@ -25,12 +25,12 @@ In this article we will be looking at accessing American Netflix using Hola! Fir
 <div class="documentation img">
 	<img src="/images/community/tutorials/hola/hola-chrome.png">
 </div>
- 
+
 **Step 1** - To download the plugin, go to hola.org and click on download/get it for free. Install the plugin. If you're using Chrome, click on options (the three horizontal bars) then Extensions. In the Chrome web store, search for Hola Unblocker, and then click the Free button in the extensions section of the results.
 
 **Step 2** - Now go to Netflix.com, chances are that the plugin will notice and offer to switch you to the US or do it automatically. If the connection doesn't work, click on the little icon at the top right corner of your browser window and there should be an option to try another server.
 
-**Step 3** - If you want to go back to the UK Netflix – just switch off Hola and reload the page. Voila. This plugin allows you to access content of any part of the world from anywhere. 
+**Step 3** - If you want to go back to the UK Netflix – just switch off Hola and reload the page. Voila. This plugin allows you to access content of any part of the world from anywhere.
 
 ###Trying to access US Netflix on Xbox, PlayStation, iPad, Apple Tv, and more?
 
@@ -38,15 +38,15 @@ For this you will need to fiddle with DNS (Domain Name Servers) settings. Head t
 
 DroidKit offers a various DNS numbers that can be used, or you can also easily search the internet for these. This method may take a bit longer as it requires trial and error seeing some DNS numbers may not work.
 
-If you fail to get any of the free ones working, you can use a paid service called Unblock US. 
+If you fail to get any of the free ones working, you can use a paid service called Unblock US.
 
-Hope this article was helpful! 
+Hope this article was helpful!
 
 <hr>
 
 *Cucumber Tony is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities.Or you can utlise the captive portal solution with your existing infrastucture. Create a free account and check it here <a href="https://cucumberwifi.io">cucumberwifi.io</a>*
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 
 <h2>Come join Cucumber</h2>
 

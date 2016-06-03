@@ -5,7 +5,7 @@ date:   2015-11-04
 categories: documentation
 keywords: multiple splash pages, splash page, captive portal, wifi
 ---
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <h3>What is Tiered Logins?</h3>
 </div>
 
@@ -19,7 +19,7 @@ The highest weight will be the splash that is displayed first.
 
 <hr>
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <h3>How to set up Tiered Logins</h3>
 <iframe width="960" height="540" src="https://www.youtube.com/embed/nPskK-OyySo?rel=0&amp;color=white&amp;showinfo=0&amp;autohide=1" frameborder="0" allowfullscreen></iframe>
 </div>
@@ -39,7 +39,7 @@ The highest weight will be the splash that is displayed first.
 
 *Cucumber Tony is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities.Or you can utlise the captive portal solution with your existing infrastucture. Create a free account and check it here <a href="https://cucumberwifi.io">cucumberwifi.io</a>*
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 
 <h2>Come join Cucumber</h2>
 

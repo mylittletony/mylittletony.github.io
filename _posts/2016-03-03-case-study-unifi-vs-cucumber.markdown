@@ -9,14 +9,13 @@ permalink: /case-studies/cucumber-vs-unifi
 description: ‚ÄúOverall Cucumber is a very solid platform with amazing support.‚Äù
 ---
 
-<div class="row">
-<div class="small-12 medium-3 columns">
-<div class="text-center">
+<div class="mdl-grid">
+<div class="mdl-cell mdl-cell--3-col mdl-typography--text-center">
 <img class="cs-portrait text-center" src="/images/case-studies/unifi-comparison/dan-bunyard.png" width="120px">
-<p>Dan Bunyard<br> <small>Networking Connoisseur</small></p>
+<p>Dan Bunyard<br><small>Networking Connoisseur</small></p>
 </div>
-</div>
-<div class="small-12 medium-9 columns">
+
+<div class="mdl-cell mdl-cell--9-col">
 <a href="/case-studies/">< Back to Case Studies</a>
 
 <p>This report was submitted to us by one of our users on their views on the differences between the <b>Cucumber Dashboard</b> and the <b>UniFi Controller</b>.</p>
@@ -39,12 +38,12 @@ description: ‚ÄúOverall Cucumber is a very solid platform with amazing support.‚
 
 <p>Not much to see here, both are very similar and offer great insights to the clients connected to your network:</p>
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
   <i><small>UniFi Controller Client List</small></i>
   <br>
   <img src="/images/case-studies/unifi-comparison/unifi-clients.png">
 </div>
-<div class="text-center">
+<div class="mdl-typography--text-center">
   <i><small>Cucumber Dashboard Client List</small></i>
   <br>
   <img src="/images/case-studies/unifi-comparison/ct-clients.png">
@@ -87,7 +86,7 @@ description: ‚ÄúOverall Cucumber is a very solid platform with amazing support.‚
 <h3>Cons:</h3>
 <ul>
 <li>- No time-based SSIDs, as in ability to disabled SSIDs during certain time periods.  This is something UniFi does well:</li>
-  <div class="text-center">
+  <div class="mdl-typography--text-center">
     <i><small>UniFi Timed SSIDs</small></i>
     <br>
     <img src="/images/case-studies/unifi-comparison/unifi-timed-ssid.png">
@@ -116,7 +115,7 @@ description: ‚ÄúOverall Cucumber is a very solid platform with amazing support.‚
 <li>- No SNMP</li>
 <li>- No syslog without a paid plan</li>
 <li>- No type of RSSI/floor plan maps to show estimated coverage. UniFi has at least basic capabilities:</li>
-  <div class="text-center">
+  <div class="mdl-typography--text-center">
     <i><small>UniFi Floorplan</small></i>
     <br>
     <img src="/images/case-studies/unifi-comparison/unifi-map.png">
@@ -136,9 +135,9 @@ description: ‚ÄúOverall Cucumber is a very solid platform with amazing support.‚
 
 <hr>
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <p><i>Cucumber Tony is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities. Or you can utilise the captive portal solution with your existing infrastructure. Create a free account and check it here <a href="https://cucumberwifi.io">cucumberwifi.io</a></i></p>
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <h2>Come join Cucumber</h2>
 <a href="https://my.ctapp.io/#/create" class="button success dst">Sign Up</a><br>
 <p>Sign-up for Cucumber Tony, it's free for unlimited access points :)</p>

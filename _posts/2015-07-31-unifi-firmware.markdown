@@ -37,7 +37,7 @@ Let's get flashing...
 <b>Unifi Pro</b> - Blue > White > Off <br>
 <b>Unifi Outdoor+</b> - Blue > White > Off <br>
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/unifi-flash/box-recover.gif">
 </div>
 
@@ -45,49 +45,49 @@ Let's get flashing...
 
 a. Go to your Windows Control Panel and Click on Network and Internet (Names may vary depending on Windows Version)
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/unifi-flash/control-panel.png">
 </div>
 
 b. Click on Network and Sharing Centre (Names may vary depending on Windows Version)
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/unifi-flash/network-sharing.png">
 </div>
 
 c. Click on Change Adapter Settings
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/unifi-flash/adapter-settings.png">
 </div>
 
 d. Right click on your Ethernet adapter and select properties
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/unifi-flash/ethernet-prop.png">
 </div>
 
 e. Select Internet Protocol Version 4 (TCP/IPv4) and select Properties
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/unifi-flash/ip4.png">
 </div>
 
 f. Select Use the following IP addresses, input the IP and Subnet and click OK
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/unifi-flash/ip-range.png">
 </div>
 
 g. Download TFTP2.exe <a href="https://s3.amazonaws.com/elevio-article-assets/5538eac84ebbe/553a66479bf5a_tftp2.exe">from here</a> and run it. In the Server field add 192.168.1.20 (this is the IP of the Ubiquiti device in failsafe mode)
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/unifi-flash/tftp2.png">
 </div>
 
 h. In the File row, click on the 3 dots button and select the firmware downloaded from Cucumber Tony. Then Click Upgrade.
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/unifi-flash/tftp-upgrade.png">
 </div>
 
@@ -99,19 +99,19 @@ a. On your computer, set your IP network settings to 'manual'.
 
 On a Apple computer go to System Preferences> Networks> select Ethernet on the left and on the setting for IPV4 select 'Manually' from the drop down menu. You will need to unlock the padlock on the bottom left to do this.
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/unifi-flash/apple-network.png">
 </div>
 
 b. Now change your IP address to 192.168.1.30, and click Apply once the changes have been made.
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/unifi-flash/apple-ip.png">
 </div>
 
 c. Now open the terminal on your computer. If you're using a Windows machine you'll need to use an application like Putty.
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/unifi-flash/apple-terminal.png">
 </div>
 
@@ -139,13 +139,13 @@ put FIRMWARE-NAME.bin
 
 <b>Replace FIRMWARE-NAME.bin with the name of the file you previously downloaded</b>
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/unifi-flash/tftp-terminal.png">
 </div>
 
 5 - Press return. Lines of code should appear rapidly in your terminal.
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/unifi-flash/tftp-finish.png">
 </div>
 
@@ -163,7 +163,7 @@ Now go ahead and add your box into your dashboard if you havent already.
 
 1 - Open the terminal on your computer. If you're using a Windows machine you'll need to use an application to do this.
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/unifi-flash/apple-terminal.png">
 </div>
 
@@ -211,5 +211,3 @@ The lights on the box will now flash as the firmware installs and the box update
 You have successfully installed the Stinky Panda firmware.
 
 Now go ahead and add your box into your dashboard if you haven't already.
-
-
