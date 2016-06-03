@@ -11,5 +11,5 @@ github_username:  jekyll
 # Build settings
 markdown: kramdown
 
-gems:
-  - jekyll-redirect-from
+gems: ['kramdown', 'jekyll-redirect-from']
+exclude: ['config.ru', 'Gemfile', 'Gemfile.lock', 'vendor', 'Procfile', 'Rakefile']
