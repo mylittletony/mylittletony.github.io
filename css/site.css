@@ -825,6 +825,10 @@ margin-top: -80px;
   height: 400px;
 }
 
+.card-icons {
+  color: rgba(0,0,0, 0.54);
+}
+
 .header-card {
   position: relative;
   z-index: 6;
@@ -857,9 +861,12 @@ margin-top: -80px;
 .supported-hardware img {
   max-height: 50px;
   max-width: 150px;
+  height: auto;
+  width: 100%;
 }
 
-@media (max-width: 479px) {
+
+@media (max-width: 839px) {
   .supported-hardware img {
     padding-top: 10px;
     padding-bottom: 10px;
