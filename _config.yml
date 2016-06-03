@@ -5,14 +5,12 @@ description: > # this means to ignore newlines until "baseurl:"
   Cucumber Tony is full-stack Wi-Fi. It's the only platform you'll ever need.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://cucumberwifi.io" # the base hostname & protocol for your site
-# twitter_username: jekyllrb
-# github_username:  jekyll
+twitter_username: jekyllrb
+github_username:  jekyll
 
-permalink: /community/tutorials/:title.html
+# Build settings
+markdown: kramdown
 
-# markdown: redcarpet
-# pygments: true
-# baseurl: /
 
 gems:
   - jekyll-redirect-from

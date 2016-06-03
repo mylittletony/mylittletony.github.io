@@ -19,7 +19,7 @@ If you are using Windows then start PuTTY and click Session on the left side, se
 
 Once you’ve done this just click on Open to start up the SSH connection.
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
   <img src="/images/community/tutorials/openwrt/puttyconfig.png" width="400px">
 </div>
 
@@ -77,7 +77,7 @@ This can all be done using the web GUI by navigating through Network > DHCP and 
 *Cucumber Tony is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities. Or you can utilise the captive portal solution with your existing infrastructure. Create a free account and check it here <a href="https://cucumberwifi.io">cucumberwifi.io</a>*
 
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 
 <h2>Come join Cucumber</h2>
 

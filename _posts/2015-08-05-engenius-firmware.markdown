@@ -25,25 +25,25 @@ Open up your web browser and navigate to <b>192.168.0.1</b> to open the <b>Local
 
 If it's a new box, click on <b>Network Setting</b> to go into the settings of your box. If not, then skip to the next step.
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/engenius-flash/network-setting.png">
 </div>
 
 Once you have access to the local portal, click on the <b>cog symbol</b> at the top right of the page, which will open the settings.
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/engenius-flash/engenius-cog.png">
 </div>
 
 Next, on the left sidebar click on <b>Tools</b> to expand it, and then click on <b>Firmware</b>, which will open the Firmware page.
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/engenius-flash/tools-firmware.png">
 </div>
 
 Click on <B>Choose File</b> and select the Stinky Panda firmware you downloaded in preparation from Cucumber Tony, and click <b>Apply</b>.
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/engenius-flash/upload-firmware.png">
 </div>
 
@@ -56,5 +56,3 @@ Because of this, the countdown will not actually end, and you will not get any E
 Please wait 5 or so minutes, and you will know that the firmware install has been successful when you can see <b>__Private Wi-Fi__</b> being broadcasted. <b><i>(You do not need to connect to this SSID).</i></b>
 
 <h2>Your box is now ready to be added into Cucumber Tony!</h2>
-
-

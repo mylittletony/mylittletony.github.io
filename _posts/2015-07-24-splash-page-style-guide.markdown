@@ -18,7 +18,7 @@ So, as well as a bit of security, it’s an opportunity to talk to your WiFi use
 
 <h2>Designing your splash page</h2>
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/responsive-layout.png">
 </div>
 
@@ -32,7 +32,7 @@ If you want to offer more content, use a second page or redirect users to a web 
 
 <h3>Make it responsive</h3>
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/bad-layout.png">
 </div>
 
@@ -41,6 +41,3 @@ This is an example of a non-responsive splash page. You do not want this.
 The vast majority of hotspot users are from mobile devices, so it is important that your splash page works well with these devices.
 
 When your guests have to zoom into a tiny form field to enter their details and connect, it’s a right faff. A page that’s optimised for mobile will be pared down to fit the page perfectly, making it 100% fat finger proof.
-
-
-

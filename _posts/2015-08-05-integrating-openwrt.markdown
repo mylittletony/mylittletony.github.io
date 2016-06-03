@@ -12,13 +12,13 @@ To begin with, head over to your location in Cucumber Tony and add your box into
 
 Once this is added, open your box’s page and you will see a large button titled <b>Radius Settings</b>.
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/openwrt-guide/radius-button.png">
 </div>
 
 You will be shown a page with all the radius settings information needed. You will be using this as reference for information used in configuring your box.
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/openwrt-guide/radius-settings.png">
 </div>
 
@@ -45,6 +45,3 @@ Instead of entering <b>http://app.my-wifi.co/123456890</b> as your UAM URL, do t
 <b>UAM URL:</b>  LocationID/
 
 Make sure you replace the id with your ID and don't forget the / at the end. The Location ID is a long number.
-
-
-

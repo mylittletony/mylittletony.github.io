@@ -8,7 +8,7 @@ keywords: captive portal, splash page, external, public, URL
 
 To use an Alternative Splash URL with Cucumber Tony just follow these simple steps.
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/external-captive-portal/externalsplash.gif">
 </div>
 
@@ -24,7 +24,7 @@ To use an Alternative Splash URL with Cucumber Tony just follow these simple ste
 
 <hr>
 
-This can be useful in situations such as when using Google+ Social Logins with the default Cucumber Tony credentials. 
+This can be useful in situations such as when using Google+ Social Logins with the default Cucumber Tony credentials.
 
 In this situation, you will need to use the default splash URL to login, but you might have already branded your location previously.
 
@@ -36,7 +36,7 @@ _**Note:** In this case you should not make any changes to the **Captive Portal 
 
 *Cucumber Tony is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities.Or you can utlise the captive portal solution with your existing infrastucture. Create a free account and check it here <a href="https://cucumberwifi.io">cucumberwifi.io</a>*
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 
 <h2>Come join Cucumber</h2>
 

@@ -11,25 +11,25 @@ Using a web browser, go into your Cucumber Tony dashboard and <a href="/document
 
 When you have added these to Cucumber Tony, go into the settings page of your box, scrolling down for the section labelled Cucumber Tony Settings
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/aruba-guide/box-settings.png">
 </div>
 
 Untick I'm a Cucumber Tony Box, and select your box type from the droplist then update your changes
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/aruba-guide/nonct-box.png">
 </div>
 
 Head back to boxes and click on the box you just set to a non Cucumber Tony Box. You should now see a green Radius Settings button.
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/aruba-guide/radius-settings.png">
 </div>
 
 Clicking this will open a box with details that you will need to refer back to at later stages.
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/aruba-guide/radius-info.png">
 </div>
 
@@ -39,7 +39,7 @@ If you do not enter a NAS, or you enter a wrong NAS, you will be blocked out and
 
 Open your Aruba network portal and under Networks, click new.
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/aruba-guide/aruba-new.png">
 </div>
 
@@ -52,7 +52,7 @@ Enter the following settings:
 
 Once this is done, click Next to continue.
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/aruba-guide/wlan-settings.png">
 </div>
 
@@ -65,13 +65,13 @@ Continue to the VLAN tab, and set the following:
 
 Once this is done, click Next to continue.
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/aruba-guide/vlan-assignment.png">
 </div>
 
 Continue to Security, and set the splash page type to External
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/aruba-guide/external-splash.png">
 </div>
 
@@ -91,7 +91,7 @@ Under Captive Portal Profile, select new, and use the following configuration:
 
 Once that is done, click OK to save.
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/aruba-guide/captive-portal.png">
 </div>
 
@@ -108,7 +108,7 @@ Create a new profile in Auth server 1 using the following settings:
 <li>NAS Identifier: Head to your boxes in Cucumber Tony and go into their settings.Then scroll down under Advanced Settings, and click on edit advanced settings. Click into Radius NAS ID and retrieve this
 </ul>
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/aruba-guide/nas-id.png">
 </div>
 
@@ -124,19 +124,19 @@ You can find the most up to date list of <b><span data-elevio-article="18499">Wa
 
 Once that is done, click OK to save.
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/aruba-guide/walled-gardens.png">
 </div>
 
 After completing these settings, you should be left with the following screen. Progress by clicking Next
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/aruba-guide/security-next.png">
 </div>
 
 Set access rules to Role-Based, select the default role (should be automatically created matching your SSID), and click New under Access rules.
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/aruba-guide/access-rules.png">
 </div>
 
@@ -147,19 +147,19 @@ Using the fields provided, create the following two rules:
 <li>Access Control > Network > any > allow > to all destinations
 </ul>
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/aruba-guide/new-rule.png">
 </div>
 
 Once you have created the rules, tick the pre-authentication box and make sure that it has your Role selected, and then select finish.
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/aruba-guide/pre-auth.png">
 </div>
 
 You should now be left with the following screen, which means you have configured your device.
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/aruba-guide/aruba-ui.png">
 </div>
 
@@ -167,7 +167,7 @@ You should now be left with the following screen, which means you have configure
 
 *Cucumber Tony is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities.Or you can utlise the captive portal solution with your existing infrastucture. Create a free account and check it here <a href="https://cucumberwifi.io">cucumberwifi.io</a>*
 
-<div class="text-center">
+<div class="mdl-typography--text-center">
 
 <h2>Come join Cucumber</h2>
 
