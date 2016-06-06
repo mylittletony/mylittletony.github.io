@@ -13,3 +13,6 @@ markdown: kramdown
 
 gems: ['kramdown', 'jekyll-redirect-from']
 exclude: ['config.ru', 'Gemfile', 'Gemfile.lock', 'vendor', 'Procfile', 'Rakefile']
+
+permalink: /community/tutorials/:title.html
+
