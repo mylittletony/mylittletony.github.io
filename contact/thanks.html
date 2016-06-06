@@ -2,7 +2,33 @@
 layout: fixed-header
 title: Contact Us | Cucumber Tony
 ---
+<script>
+function gifbg() {
+   var imgCount = 1;
+   var dir = '/images/pages/gifs/';
+   var randomCount = (Math.floor(Math.random() * imgCount));
+   var images = ['type.gif'];
+   document.getElementById('banner').setAttribute("style", "background: linear-gradient(rgba(0, 0, 0, 0.30),rgba(0, 0, 0, 0.30)), url(" + dir + images[randomCount] + ");background-repeat: no-repeat;background-repeat: no-repeat;background-position: center;background-size: cover;");
+}
+window.onload = gifbg;
+</script>
+
 <div class="page-content">
+
+  <div id="banner" class="missing-page mdl-grid">
+    <div class="missing-page-text mdl-card-wide center-cell mdl-card mdl-cell--6-col mdl-cell--middle mdl-typography--text-center">
+      <span style="position:relative;top:50%;transform:translateY(-50%);">
+        <h1>Thanks for getting in touch!</h1>
+        <p>We'll get back to you as soon as we can</p>
+        <p><a href="/" style="color:white;">Return home</a>
+      </span>
+    </div>
+  </div>
+
+</div>
+
+
+<!-- <div class="page-content">
 
   <div class="contact-main mdl-grid">
     <div class="center-cell mdl-cell mdl-cell--10-col mdl-typography--text-center">
@@ -25,4 +51,4 @@ title: Contact Us | Cucumber Tony
     </div>
   </div>
   <p class="mdl-typography--text-center"><small>Genuine emails and company names will move you to the top of the contact list.</small></p>
-</div>
+</div> -->
