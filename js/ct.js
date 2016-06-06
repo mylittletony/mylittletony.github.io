@@ -1,7 +1,7 @@
 // Change the starting prices here //
 
 // The number of APs to start with
-var v = 10;
+var v = 50;
 
 // The initial starting prices per AP for both plans in USD
 var perApPriceBiz  = 600;
@@ -30,6 +30,10 @@ var bizAllowed  = 10;
 // Set the exchange rates //
 var usdfx = 0.67;
 var eurfx = 0.79;
+
+// Set the step //
+var step = 10;
+var max  = 500;
 
 function setCurrency() {
 
@@ -156,6 +160,41 @@ function init() {
   calculateTotal();
 }
 
+function setStep() {
+
+  if (v <= 150) {
+    document.getElementById('calc-more').style.display = 'none';
+    document.getElementById('calc-message').style.display = 'block';
+    step = 10;
+  } else if ( v > 150 && v < 500) {
+    step = 50;
+  } else if (v >= 500 && v < 1000) {
+    document.getElementById('calc-message').style.display = 'none';
+    document.getElementById('calc-more').style.display = 'block';
+    step = 250;
+  } else if (v > 1000 && v < 2500) {
+    step = 250;
+  } else {
+    step = 500;
+  }
+  document.querySelector('.mdl-slider').step = step;
+}
+
+function setTotals() {
+  var j, x;
+  x = document.getElementsByClassName("totalAps");
+  for (j = 0; j < x.length; j++) {
+    x[j].innerHTML = v;
+  }
+}
+
+function myFunction(e) {
+  e.preventDefault();
+  v = document.querySelector('.mdl-textfield__input').value;
+  setTotals();
+  init();
+}
+
 function tonySlider() {
 
   var prev = null;
@@ -176,11 +215,8 @@ function tonySlider() {
 
   document.querySelector('.mdl-slider').addEventListener('change',function(value){
     v = document.querySelector('.mdl-slider').value;
-    var j, x;
-    x = document.getElementsByClassName("totalAps");
-    for (j = 0; j < x.length; j++) {
-      x[j].innerHTML = v;
-    }
+    setTotals();
+    setStep();
     init();
   });
 
@@ -188,6 +224,8 @@ function tonySlider() {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
+  document.querySelector('.mdl-slider').step  = step;
+  document.querySelector('.mdl-slider').max   = max;
   document.querySelector('.mdl-slider').value = v;
   tonySlider();
 });

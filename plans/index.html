@@ -53,7 +53,7 @@ permalink: /plans/
           <div class="plan-features-list mdl-typography--text-center">
             <ul>
               <li>Includes 10 APs</li>
-              <li>$6 per AP/mo</li>
+              <li>From $4 per AP/mo</li>
               <li>Standard Support</li>
               <li>Unlimited History</li>
               <li>Paid Wi-Fi</li>
@@ -75,7 +75,7 @@ permalink: /plans/
           <div class="plan-features-list mdl-typography--text-center">
             <ul>
               <li>Includes 75 APs</li>
-              <li>From $3.65 per AP/mo</li>
+              <li>From $2.95 per AP/mo</li>
               <li>Standard Support</li>
               <li>Unlimited History</li>
               <li>White Label Features</li>
@@ -97,7 +97,7 @@ permalink: /plans/
           <div class="plan-features-list mdl-typography--text-center">
             <ul>
               <li>Unlimited APs</li>
-              <li>From $2 per AP/mo</li>
+              <!-- <li>From $2 per AP/mo</li> -->
               <li>Premium Support</li>
               <li>Unlimited History</li>
               <li>Brand Management</li>
@@ -142,9 +142,20 @@ permalink: /plans/
             </table>
 
             <p>
-              <input id="what" class="mdl-slider mdl-js-slider" type="range" step="10" min="0" max="1000" tabindex="0"/>
+              <input id="what" class="mdl-slider mdl-js-slider" type="range" min="0" tabindex="0"/>
             </p>
-            <p>Monthly cost for <span class="totalAps">10</span> devices</p>
+            <p id='calc-message'>Monthly cost for <span class="totalAps">10</span> devices. </p>
+            
+            <div id="calc-more" style="display: none;">
+              <p style="font-weight: bold;">What's Your Name, What's Your Number?</p>
+
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="number" id="calc-man-val">
+                <label class="mdl-textfield__label" for="value">How many do you need?</label>
+              </div>
+              <button onclick="myFunction(event)" class="mdl-button mdl-js-button">Save</button>
+
+            </div>
 
             <div style="margin-top: 40px;">
               <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="flash1">
