@@ -1,7 +1,7 @@
 // Change the starting prices here //
 
 // The number of APs to start with
-var v = 50;
+var v = 10;
 
 // The initial starting prices per AP for both plans in USD
 var perApPriceBiz  = 600;
