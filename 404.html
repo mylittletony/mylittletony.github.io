@@ -1,0 +1,28 @@
+---
+layout: fixed-header
+title: 404 | Cucumber Tony
+---
+<script>
+function gifbg() {
+   var imgCount = 5;
+   var dir = '/images/pages/gifs/';
+   var randomCount = (Math.floor(Math.random() * imgCount));
+   var images = ['cucumber1.gif', 'cucumber2.gif', 'cucumber4.gif', 'cat1.gif', 'cat2.gif'];
+   document.getElementById('banner').setAttribute("style", "background: linear-gradient(rgba(0, 0, 0, 0.30),rgba(0, 0, 0, 0.30)), url(" + dir + images[randomCount] + ");background-repeat: no-repeat;background-repeat: no-repeat;background-position: center;background-size: cover;");
+}
+window.onload = gifbg;
+</script>
+
+<div class="page-content">
+
+  <div id="banner" class="missing-page mdl-grid">
+    <div class="missing-page-text mdl-card-wide center-cell mdl-card mdl-cell--6-col mdl-cell--middle mdl-typography--text-center">
+      <span style="position:relative;top:50%;transform:translateY(-50%);">
+        <h1>Well this is awkward...</h1>
+        <p>Looks like we can't find the page you're looking for.</p>
+        <p>Head home and start again, or follow one of the links at the top of the page.</p>
+      </span>
+    </div>
+  </div>
+
+</div>
