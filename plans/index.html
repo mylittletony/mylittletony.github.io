@@ -21,26 +21,6 @@ permalink: /plans/
     <div class="plans-card-row center-cell mdl-cell mdl-cell--9-col">
       <div class="mdl-grid">
 
-        <!-- <div class="plan-calc center-cell mdl-cell mdl-card mdl-cell--3-col mdl-shadow--4dp">
-        <div class="plan-calc-title mdl-typography--text-center">
-        <h4>AP Volume</h4>
-      </div>
-      <div class="plan-calc-body mdl-typography--text-center">
-      <div>
-      <h3>50</h3>
-    </div>
-    <div>
-    <small>Access Points</small>
-  </div>
-  <div class="plan-calc-slider">
-  <input class="mdl-slider mdl-js-slider" type="range" min="0" max="1000" value="0" tabindex="0">
-</div>
-</div>
-<div class="plan-calc-footer mdl-typography--text-center">
-<small>Monthly - Annually (Save %)</small>
-</div>
-</div> -->
-
         <div class="plans-card center-cell mdl-cell mdl-card mdl-cell--3-col mdl-shadow--4dp">
           <div class="plan-title-free mdl-typography--text-center">
             <h4>Home Plan</h4>
@@ -74,7 +54,7 @@ permalink: /plans/
             <ul>
               <li>Includes 10 APs</li>
               <li>$6 per AP/mo</li>
-              <li>Basic Support</li>
+              <li>Standard Support</li>
               <li>Unlimited History</li>
               <li>Paid Wi-Fi</li>
               <li>Admin Users</li>
@@ -131,18 +111,81 @@ permalink: /plans/
   </div>
 
   <div class="mdl-grid mat-banner">
+    <div class="mdl-cell mdl-cell--10-col center-cell  mdl-typography--text-center">
+      <form name="myForm">
+        <h2>Pricing Calculator</h2>
+        <p class="calc">Monthly cost for <span class="calcMassive totalAps">10</span> devices</p>
+        <div class="mdl-grid">
+
+          <div class="mdl-cell mdl-cell--12-col center-cell">
+
+            <table class="calc-table center-cell mdl-data-table mdl-js-data-table mdl-shadow--4dp">
+              <tr>
+                <td class="features-table-heading mdl-data-table__cell--non-numeric"></td>
+                <td class="features-table-heading mdl-data-table__cell--non-numeric"><b>Monthly Cost</b></td>
+                <td class="features-table-heading mdl-data-table__cell--non-numeric"><b>Per AP Cost</b></td>
+              </tr>
+              <tr>
+                <td class="mdl-data-table__cell--non-numeric">
+                  Business Plan
+                </td>
+                <td><span class="currency"></span><span id="biz-plan"></span></td>
+                <td><span class="currency"></span><span id="perApPriceBiz"></span></td>
+              </tr>
+              <tr>
+                <td class="mdl-data-table__cell--non-numeric">
+                  Premium Plan
+                </td>
+                <td><span class="currency"></span><span id="prem-plan"></span></td>
+                <td><span class="currency"></span><span id="perApPricePrem"></span></td>
+              </tr>
+            </table>
+
+            <p>
+              <input id="what" class="mdl-slider mdl-js-slider" type="range" step="10" min="0" max="1000" tabindex="0"/>
+            </p>
+            <p>Monthly cost for <span class="totalAps">10</span> devices</p>
+
+            <div style="margin-top: 40px;">
+              <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="flash1">
+                <input checked class="mdl-radio__button" id="flash1" name="currency" type="radio" value="USD">
+                <span class="mdl-radio__label">$USD</span>
+              </label>
+              <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="flash2">
+                <input class="mdl-radio__button" id="flash2" name="currency" type="radio" value="GBP">
+                <span class="mdl-radio__label">£GBP</span>
+              </label>
+              <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="flash3">
+                <input class="mdl-radio__button" id="flash3" name="currency" type="radio" value="EUR">
+                <span class="mdl-radio__label">€EURO</span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+      </form>
+    </div>
+
+  </div>
+  <div class="mdl-grid mat-banner">
     <div class="mdl-cell mdl-cell--10-col center-cell">
-      <h2 class="mdl-typography--text-center">FAQs</h2>
+      <h2 class="mdl-typography--text-center">Common Questions</h2>
       <div class="mdl-grid">
         <div class="mdl-cell mdl-cell--5-col center-cell">
           <h3>Are there any limits on the free plan?</h3>
-          <p>The free plan comes with a splash page view limit, and is missing advanced features.</p>
-
-          <h3>What are the differences between the plans?</h3>
-          <p>Features and AP cost. The main differences between the paid plans is the ability to completely brand and whitelable your management.</p>
+          <p>The free plan comes with a splash page view limit of 2,500. There's no admin users either. You can generate upto 250 vouchers per month.</p>
 
           <h3>What are splash page views?</h3>
           <p>Every time a guest user tries to connect to a Captive Portal network they will see a splash page. We count how many hits there are to your splash page per month.</p>
+
+          <h3>Are there API limits?</h3>
+          <p>The free account is limited at 10,000 requests per day. The business and premium plans are restricted to 50,000 and 100,000 daily. If you need more, please contact us.</p>
+
+          <h3>How am I charged?</h3>
+          <p>The service is charged monthly in advance. Any devices you add to your account will be charged to your card at the end of the month.</p>
+
+          <h3>Can I cancel anytime?</h3>
+          <p>You can cancel whenever you want, there are no contracts. If you're on a paid plan, you will be charged for any devices added to your account during the month.</p>
 
         </div>
         <div class="mdl-cell mdl-cell--5-col center-cell">
@@ -153,8 +196,15 @@ permalink: /plans/
           <h3>What are Integrations?</h3>
           <p>Connect your other WebApps with Cucumber. Eg. automatically sync your guests with your Salesforce account or send an alert to your Slack account if a box goes offline.</p>
 
+          <h3>What Support do I get?</h3>
+          <p>The free account comes with 30 days live support. Standard support includes 24/7 engineering support via the dashboard. Premium support includes telephone support.</p>
+
+          <h3>Is there an SLA</h3>
+          <p>There are no SLAs. We attempt to answer your queries as soon as possible. Support is limited to assistance with the dashboard, not the general networking help.</p>
+
           <h3>What are Zones?</h3>
           <p>Zones allow you break up your networks into logical groups within their location. Each zone can contain any number of boxes and SSIDs.</p>
+
         </div>
       </div>
     </div>
@@ -728,7 +778,7 @@ permalink: /plans/
           <td><i class="material-icons">check_box</i></td>
           <td><i class="material-icons">check_box</i></td>
         </tr>
- -->
+        -->
         <tr>
           <td colspan="5" class="features-table-heading mdl-data-table__cell--non-numeric"><b>Integrations</b></td>
         </tr>

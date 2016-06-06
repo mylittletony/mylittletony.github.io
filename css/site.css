@@ -894,14 +894,31 @@ margin-top: -80px;
   margin-bottom: 40px;
 }
 
+.calc-table {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.calc-table td {
+  text-align: center;
+  font-size: 24px;
+  padding-top: 36px;
+  padding-bottom: 36px;
+}
+
+.calc {
+  font-size: 24px;
+}
+
+.calcMassive {
+  font-size: 36px;
+  font-weight: bold;
+}
+
 @media (max-width: 749px) {
   .mdl-data-table {
     white-space: normal;
   }
-}
-
-.features-table-heading {
-  background: #E0E0E0;
 }
 
 @media (max-width: 520px) {
@@ -912,6 +929,27 @@ margin-top: -80px;
   .features-table th {
     padding: 0px;
   }
+
+  .calc-table td {
+    text-align: center;
+    font-size: 12px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  p.calc {
+    font-size: 16px;
+  }
+
+  p.calcMassive {
+    font-size: 22px;
+  }
+
+
+}
+
+.features-table-heading {
+  background: #E0E0E0;
 }
 
 .features-table td {
