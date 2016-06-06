@@ -1,9 +1,9 @@
 # Site settings
-title: Full-stack Wi-Fi Platform
-email: sin@cucumberwifi.io
+title: WiFi Orchestration Tool
+email: hello@cucumberwifi.io
 description: > # this means to ignore newlines until "baseurl:"
   Cucumber Tony is full-stack Wi-Fi. It's the only platform you'll ever need.
-baseurl: "/ctapp/" # the subpath of your site, e.g. /blog/
+baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://cucumberwifi.io" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
