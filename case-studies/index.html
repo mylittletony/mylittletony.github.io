@@ -1,0 +1,26 @@
+---
+layout: fixed-header
+title: Case Studies | Cucumber Tony
+permalink: /case-studies/
+---
+<div class="page-content">
+
+  <div class="casestudies-main mdl-grid">
+    <div class="center-cell mdl-cell mdl-cell--middle mdl-cell--10-col mdl-typography--text-center">
+      <h2>Case Studies</h2>
+      <h5>Take a look at what our customers have to say about their experience with Cucumber.</h5>
+    </div>
+  </div>
+
+  <div class="casestudies-list mdl-grid">
+    <div class="casestudies-card center-cell mdl-cell mdl-card mdl-cell--10-col mdl-card mdl-shadow--4dp">
+      {% for post in site.categories.casestudy %}
+      <li>
+        <h3><a href="{{ post.url }}"><img src="{{ post.thumbnail }}" width="auto" height="auto" style="max-height: 50px" align="center" /></a></h3>
+        {{ post.description }} <br>
+      </li>
+      {% endfor %}
+    </div>
+  </div>
+
+</div>

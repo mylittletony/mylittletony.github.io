@@ -1,0 +1,1047 @@
+.ct-logo {
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+}
+
+.ct-logo img {
+  width: 230px;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+}
+
+@media (max-width: 1025px) {
+  .ct-logo {
+    width: 100%;
+    padding-left: 0px;
+  }
+  .ct-logo img {
+    display: block;
+    margin: 0 auto;
+    padding-right: 72px;
+    padding-left: 0px;
+  }
+}
+
+.sidebar-title {
+  background-color: white;
+}
+
+.center-cell {
+  margin: 0 auto;
+}
+
+/*.home-header-img {
+position: relative;
+background: linear-gradient(rgba(1, 127, 221, 0.70), rgba(1, 127, 221, 0.70)),url(http://cdn.slashgear.com/wp-content/uploads/2012/10/google-datacenter-tech-05.jpg);
+background-color: #017fdd;
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+min-height: 800px;
+margin-top: -80px;
+}*/
+
+.home-header {
+  height: 800px;
+}
+
+#particles-js{
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  background-color: #16AC5B;
+  /*background-color: #FF4A00;*/
+  top: 0;
+  left: 0;
+  height: 850px;
+}
+
+.home-header-text {
+  color: white;
+  position: relative;
+  z-index: 1;
+}
+
+.home-header button {
+  height: 50px;
+  font-size: 24px
+}
+
+.home-header h2 {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+@media (max-width: 479px) {
+  .home-header h1 {
+    font-size: 36px;
+  }
+}
+
+.home-stats {
+  position: relative;
+  z-index: 6;
+  background-color: #ffffff;
+  border-bottom: 1px solid rgb(224, 224, 224);
+  color: rgba(0,0,0, 0.54);
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+
+.home-stats h4 {
+  margin: 0px
+}
+
+.home-features {
+  position: relative;
+  z-index: 5;
+  margin-bottom: 20px;
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+.home-features-card-image {
+
+  border-bottom: 1px solid rgb(224, 224, 224);
+}
+
+.home-features img {
+  max-height: 400px;
+  max-width: 100%;
+}
+
+.home-features button {
+  margin-top: 30px;
+}
+
+.home-features-body {
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+
+@media (max-width: 1077px) {
+  .home-features h4 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 1014px) {
+  .home-features h4 {
+    font-size: 20px;
+  }
+  .home-features span {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 952px) {
+  .home-features h4 {
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 920px) {
+  .home-features h4 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 890px) {
+  .home-features h4 {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 858px) {
+  .home-features h4 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 839px) {
+  .home-features h4 {
+    font-size: 24px;
+  }
+  .home-features span {
+    font-size: 16px;
+  }
+}
+
+.home-features .mdl-card__supporting-text{
+  width: auto;
+}
+
+.compatible-hardware {
+  position: relative;
+  z-index: 5;
+  padding-top: 40px;
+  padding-bottom: 60px;
+  background-color: #017fdd;
+  color: white;
+}
+
+.compatible-hardware table {
+  color: rgba(0,0,0, 0.87);
+  white-space: normal;
+}
+
+.mat-banner-list {
+  position: relative;
+  z-index: 6;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgb(224, 224, 224);
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.mat-banner-list h2 {
+  margin-top: 16px;
+}
+
+.mat-banner {
+  position: relative;
+  z-index: 5;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgb(224, 224, 224);
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: white;
+}
+
+.mat-banner p {
+  color: rgba(0,0,0, 0.54);
+}
+
+.mat-banner img {
+  max-width: 80%;
+}
+
+.mat-banner button {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  height: 40px;
+  font-size: 18px;
+}
+
+@media (max-width: 839px) {
+  .mat-banner {
+    text-align: center;
+  }
+}
+
+.contact-main {
+  background-color: #017fdd;
+  height: 400px;
+  padding-top: 40px;
+  padding-bottom: 60px;
+  color: white;
+  line-height: 30px;
+}
+
+.contact-main a {
+  color: white;
+}
+
+.contact-main h2 {
+  margin-top: 100px;
+}
+
+.contact-main button {
+  margin-top: 20px;
+}
+
+.contact-card {
+  position: relative;
+  z-index: 6;
+  margin-top: -120px;
+  margin-bottom: 20px;
+}
+
+/*.contact-us {
+  position: relative;
+  z-index: 5;
+  margin-bottom: 20px;
+  padding-top: 40px;
+  padding-bottom: 60px;
+  background-color: #FAFAFA;
+  color: white;
+}
+
+.contact-us p {
+  color: w;
+  text-align: center;
+}
+
+.contact-card button {
+  float: right;
+}
+
+.contact-card {
+  width: auto;
+  max-width: 400px;
+  min-width: 200px;
+}
+
+.contact-card input {
+  display: block;
+}
+
+.contact-title h3 {
+  margin-left: 8px;
+  margin-top: 0px;
+  margin-bottom: 16px;
+  color: rgba(0,0,0, 0.87);
+}
+
+.contact-title p {
+  margin-left: 8px;
+  color: rgba(0,0,0, 0.87);
+  text-align: left;
+}*/
+
+.features-tab {
+  cursor: pointer;
+}
+
+.get-started {
+  position: relative;
+  z-index: 3;
+  background-color: #017fdd;
+  margin-top: -20px;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.get-started-card {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.get-started-card p {
+  color: rgba(0,0,0, 0.54);
+}
+
+.get-started button {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  height: 40px;
+  font-size: 18px;
+}
+
+.home-integrations {
+  position: relative;
+  z-index: 4;
+  margin-top: -20px;
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
+
+.home-integrations img {
+  max-width: 100%;
+}
+
+.home-integrations button {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  height: 40px;
+  font-size: 18px;
+}
+
+@media (max-width: 839px) {
+  .home-integrations {
+    text-align: center;
+  }
+}
+
+.home-customers {
+  position: relative;
+  z-index: 3;
+  /*background-color: #F5F5F5;*/
+  margin-top: -20px;
+  padding-top: 70px;
+  padding-bottom: 50px;
+}
+
+.stat-card {
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 80px;
+  min-height: 50px;
+  min-width: 180px;
+  max-width: 250px;
+}
+
+.stat-card-top p {
+  font-size: 1.2em;
+  margin: 0px;
+}
+
+.stat-card-stat h2 {
+  margin: 0px;
+  text-align: center;
+}
+
+.stat-card-end p {
+  font-size: 1.2em;
+  text-align: center;
+  margin: 0px;
+}
+
+.footer-social {
+  padding-top: 0px;
+  margin-bottom: 0px;
+  text-align: right;
+}
+
+.footer-social a {
+  text-decoration: none;
+}
+
+.footer-social button {
+  color: rgb(224, 224, 224);
+}
+
+@media (max-width: 479px) {
+  .footer-social {
+    text-align: center;
+  }
+}
+
+.tutorial-main {
+  background-color: #017fdd;
+  height: 400px;
+  color: white;
+  line-height: 30px;
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+@media (max-width: 479px) {
+  .tutorial-main h1 {
+    font-size: 36px;
+  }
+
+  .tutorial-main h2 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.tutorial-list {
+  background-color: #FAFAFA;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.tutorial-card {
+  margin-top: -100px;
+  margin-bottom: 100px;
+}
+
+.tutorial-card h2 {
+  padding-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.tutorial-card h4 {
+  margin-bottom: 0px;
+  margin-top: 20px;
+}
+
+.tutorial-card ul {
+  padding-left: 0px;
+}
+
+.tutorial-card li {
+  list-style-type: none;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid rgb(224, 224, 224)
+}
+
+.tutorial-card a {
+  text-decoration: none;
+}
+
+.casestudies-main {
+  background-color: #017fdd;
+  height: 400px;
+  color: white;
+  line-height: 30px;
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+@media (max-width: 479px) {
+  .casestudies-main h1 {
+    font-size: 36px;
+  }
+
+  .casestudies-main h2 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.casestudies-list {
+  background: #FAFAFA;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.casestudies-card {
+  margin-top: -100px;
+  margin-bottom: 100px;
+}
+
+.casestudies-card h2 {
+  padding-left: 20px;
+}
+
+.casestudies-card ul {
+  padding-left: 0px;
+}
+
+.casestudies-card li {
+  list-style-type: none;
+  padding-left: 20px;
+  padding-bottom: 30px;
+  border-top: 1px solid rgb(224, 224, 224)
+}
+
+.case-study {
+  background: #FAFAFA;
+}
+
+.case-study-post {
+  padding-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.case-study-post img {
+  max-width: 100%;
+}
+
+.plans-main {
+  background-color: #017fdd;
+  height: 400px;
+  padding-top: 40px;
+  padding-bottom: 60px;
+  color: white;
+  line-height: 30px;
+}
+
+.plans-main h2 {
+  margin-top: 100px;
+}
+
+.plans-main button {
+  margin-top: 20px;
+}
+
+.plans-page {
+  padding-top: 60px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgb(224, 224, 224);
+}
+
+.plans-card {
+  margin-top: 50px;
+}
+
+.plans-card-row {
+  margin-top: -200px;
+  margin-bottom: 50px;
+}
+
+.plan-title-free {
+  background: #ffffff;
+}
+
+.plan-title-mid {
+  background: #ffffff;
+}
+
+.plan-title-top {
+  background: #ffffff;
+}
+
+.plan-calc-title {
+  background: #ffffff;
+}
+
+.plan-title-free h4, .plan-title-mid h4, .plan-title-top h4, .plan-calc-title h4 {
+  margin: 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgb(224, 224, 224);
+}
+
+.plan-calc {
+  height: 240px;
+}
+
+.plan-calc-body h3 {
+  margin-bottom: 0px;
+}
+
+.plan-calc-body {
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgb(224, 224, 224);
+}
+
+.plan-calc-slider {
+  padding-top: 20px;
+}
+
+.plan-calc-footer {
+  margin-top: 10px;
+}
+
+.plan-price {
+  border-bottom: 1px solid rgb(224, 224, 224);
+}
+
+.plan-features {
+  background: #F5F5F5;
+  border-bottom: 1px solid rgb(224, 224, 224);
+}
+
+.plan-features h5 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.plan-features-list ul {
+  padding-left: 0px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  margin: 0px;
+}
+
+.plan-features-list li {
+  list-style-type: none;
+  color: rgba(0,0,0, 0.54);
+  padding-bottom: 10px;
+}
+
+.about-us-banner {
+  position: relative;
+  z-index: 5;
+  padding-top: 40px;
+  padding-bottom: 60px;
+  background-color: #017fdd;
+  color: white;
+  height: 400px;
+  background-image: url('/images/pages/shoreditch-fence.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.about-us-card {
+  position: relative;
+  z-index: 6;
+  margin-top: -120px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 20px;
+}
+
+.about-us-card p {
+  color: rgba(0,0,0, 0.54);
+}
+
+.about-us {
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
+
+.profile-image {
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+}
+
+.profile-image-andrew {
+  background-image: url('/images/pages/staff/andrew.jpg');
+  background-size: cover;
+}
+
+.profile-image-simon {
+  background-image: url('/images/pages/staff/simon.jpg');
+  background-size: cover;
+}
+
+.profile-image-sin {
+  background-image: url('/images/pages/staff/sin.jpg');
+  background-size: cover;
+}
+
+.profile-image-zak {
+  background-image: url('/images/pages/staff/zak.jpg');
+  background-size: cover;
+}
+
+.profile-image-khadija {
+  background-image: url('/images/pages/staff/khadija.jpg');
+  background-size: cover;
+}
+
+.profile-bio h3 {
+  margin: 0px;
+  font-size: 20px;
+  font-weight: bold
+}
+
+.features-integrations {
+  position: relative;
+  z-index: 3;
+  /*background-color: #F5F5F5;*/
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgb(224, 224, 224);
+}
+
+.features-integrations img {
+  max-height: 30px;
+  max-width: 150px;
+}
+
+@media (max-width: 479px) {
+  .features-integrations img {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+.features-main {
+  background-color: #017fdd;
+  height: 300px;
+  color: white;
+  line-height: 30px;
+}
+
+@media (max-width: 479px) {
+  .features-main h1 {
+    font-size: 36px;
+  }
+
+  .features-main h2 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.features-list {
+  border-top: 1px solid rgb(224, 224, 224);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+@media (max-width: 839px) {
+  .features-list {
+    text-align: center;
+  }
+}
+
+.home-about-image {
+  position: relative;
+  /*background: linear-gradient(rgba(1, 127, 221, 0.70), rgba(1, 127, 221, 0.70)),url(http://cdn.slashgear.com/wp-content/uploads/2012/10/google-datacenter-tech-05.jpg);*/
+  background-image: url('/images/pages/ct-map.jpg');
+  /*background-image: url('http://images.imagewallpaper.net/20160131/black-digital-world-map-1920x1080.jpg');*/
+  /*background-image: radial-gradient(circle farthest-corner at right top, #00ffff 0%, #03a9f4 25%, #017fdd 60%, #1a2565 100%);*/
+  background-color: #017fdd;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
+  height: 500px;
+  margin-top: -80px;
+}
+
+.home-about-banner {
+  height: 400px;
+  background-color: #017fdd;
+  color: white;
+}
+
+@media (max-width: 479px) {
+  .home-about-banner {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+.home-about-banner h1, .home-about-banner h3, .home-about-banner h4 {
+  margin-bottom: 10px;
+  margin-top: 0px;
+}
+
+.home-about-banner h2 {
+  margin-bottom: 20px;
+  margin-top: 0px;
+}
+
+.home-about-banner a {
+  color: white;
+}
+
+@media (max-width: 479px) {
+  .home-about-banner h4 {
+    font-size: 20px;
+  }
+}
+
+.hardware-banner {
+  background-image: url('/images/pages/laptop.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 5;
+  padding-top: 40px;
+  padding-bottom: 60px;
+  background-color: #017fdd;
+  color: white;
+  height: 400px;
+}
+
+.discover-banner {
+  background-image: url('/images/pages/access-point-arrow.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 5;
+  padding-top: 40px;
+  padding-bottom: 60px;
+  background-color: #017fdd;
+  color: white;
+  height: 400px;
+}
+
+.card-icons {
+  color: rgba(0,0,0, 0.54);
+}
+
+.header-card {
+  position: relative;
+  z-index: 6;
+  margin-top: -120px;
+  max-height: 350px;
+}
+
+.header-card a:hover {
+  color: #607D8B;
+}
+
+.header-card img {
+  max-width: 120px;
+  max-height: 120px;
+}
+
+.header-card a {
+  text-decoration: none;
+}
+
+.supported-hardware {
+  position: relative;
+  z-index: 3;
+  /*background-color: #F5F5F5;*/
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgb(224, 224, 224);
+}
+
+.supported-hardware img {
+  max-height: 50px;
+  max-width: 150px;
+}
+
+
+@media (max-width: 839px) {
+  .supported-hardware img {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+.community-post {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.community {
+  background: #FAFAFA;
+}
+
+/*material icons*/
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+.material-icons.md-64 { font-size: 64px; }
+
+.features-table {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 749px) {
+  .mdl-data-table {
+    white-space: normal;
+  }
+}
+
+.features-table-heading {
+  background: #E0E0E0;
+}
+
+@media (max-width: 520px) {
+  .features-table td {
+    padding: 12px 0 0 0;
+    font-size: 11px;
+  }
+  .features-table th {
+    padding: 0px;
+  }
+}
+
+.features-table td {
+  text-align: center;
+}
+
+.features-table i {
+  color: rgba(0,0,0, 0.54);
+}
+
+.terms-page {
+  background: #FAFAFA;
+}
+
+.terms-card {
+  padding: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.meraki-banner {
+  background-image: url('/images/pages/meraki-box.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 5;
+  padding-top: 40px;
+  padding-bottom: 60px;
+  background-color: #017fdd;
+  color: white;
+  height: 400px;
+}
+
+.openwrt-banner {
+  background-image: url('/images/pages/rasp-pi-box.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 5;
+  padding-top: 40px;
+  padding-bottom: 60px;
+  background-color: #017fdd;
+  color: white;
+  height: 400px;
+}
+
+.powercloud-banner {
+  background-image: url('/images/pages/powercloud-box.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 5;
+  padding-top: 40px;
+  padding-bottom: 60px;
+  background-color: #017fdd;
+  color: white;
+  height: 400px;
+}
+
+.ruckus-banner {
+  background-image: url('/images/pages/orange-bg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 5;
+  padding-top: 40px;
+  padding-bottom: 60px;
+  background-color: #017fdd;
+  color: white;
+  height: 400px;
+}
+
+.features-banner {
+  background-color: #017fdd;
+  height: 400px;
+  color: white;
+  line-height: 30px;
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+@media (max-width: 479px) {
+  .features-banner h1 {
+    font-size: 36px;
+  }
+
+  .features-banner h2 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.features-page {
+  background-color: #FAFAFA;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.features-card {
+  margin-top: -100px;
+  margin-bottom: 100px;
+}
+
+.mdl-menu a {
+  text-decoration: none;
+}
+
+.community-post p {
+  color: rgba(0,0,0, 0.54);
+}
+
+.case-study-post p {
+  color: rgba(0,0,0, 0.54);
+}
+
+.sidebar-logo img {
+  max-width: 200px;
+  padding: 16px;
+}
+
+.mdl-navigation hr {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.mdl-layout__drawer .mdl-navigation .navigation-subheader-list .mdl-navigation__link {
+  color: #757575;
+  padding-left: 30px;
+}
