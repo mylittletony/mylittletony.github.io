@@ -4,8 +4,8 @@
 var v = 10;
 
 // The initial starting prices per AP for both plans in USD
-var perApPriceBiz  = 600;
-var perApPricePrem = 500;
+var startingBiz  = 600;
+var startingPrem = 500;
 
 // The initial plan price in USD
 var bizPlanDollar = 60;
@@ -65,27 +65,33 @@ function setCurrency() {
 
 function setPrices() {
 
-  if (v >= 0 && v < 250) {
-    perApPriceBiz  = 600;
-    perApPricePrem = 500;
-  } else if (v >= 250 && v < 500) {
-    perApPriceBiz  = 570;
-    perApPricePrem = 450;
-  } else if (v >= 500 && v < 1000) {
-    perApPriceBiz  = 542;
-    perApPricePrem = 405;
-  } else if (v >= 1000 && v < 2500) {
-    perApPriceBiz  = 514;
-    perApPricePrem = 365;
-  } else if (v >= 2500 && v < 5000) {
-    perApPriceBiz  = 489;
-    perApPricePrem = 328;
-  } else if (v >= 5000 && v < 10000) {
-    perApPriceBiz  = 464;
-    perApPricePrem = 295;
-  } else {
-    perApPriceBiz  = 414;
-    perApPricePrem = 266;
+  if (v >= 0 && v < 50) {
+    perApPriceBiz  = startingBiz;
+    perApPricePrem = startingPrem;
+  } else if (v >= 50 && v < 100) {
+    perApPriceBiz  = 500;
+    perApPricePrem = 400;
+  } else if (v >= 100 && v < 250) {
+    perApPriceBiz  = 450;
+    perApPricePrem = 350;
+  } else if (v >= 250) {
+    perApPriceBiz  = 400;
+    perApPricePrem = 325;
+  // } else if (v >= 500 && v < 1000) {
+  //   perApPriceBiz  = ;
+  //   perApPricePrem = 405;
+  // } else if (v >= 1000 && v < 2500) {
+    // perApPriceBiz  = 514;
+    // perApPricePrem = 365;
+  // } else if (v >= 2500 && v < 5000) {
+    // perApPriceBiz  = 489;
+    // perApPricePrem = 328;
+  // } else if (v >= 5000 && v < 10000) {
+    // perApPriceBiz  = 464;
+    // perApPricePrem = 295;
+  // } else {
+    // perApPriceBiz  = 414;
+    // perApPricePrem = 266;
   }
 
   switch(currency) {
