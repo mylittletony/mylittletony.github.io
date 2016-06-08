@@ -67,12 +67,20 @@ margin-top: -80px;
   font-size: 24px
 }
 
+.home-header h1 {
+  margin-top: 0px;
+}
+
 .home-header h2 {
   font-size: 20px;
   line-height: 30px;
 }
 
 @media (max-width: 479px) {
+  .home-header {
+    height: 550px;
+  }
+
   .home-header h1 {
     font-size: 36px;
   }
@@ -92,6 +100,19 @@ margin-top: -80px;
   margin: 0px
 }
 
+@media (max-width: 479px) {
+  .home-stats {
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+  .home-stats h4 {
+    font-size: 20px;
+  }
+  .home-stats h2 {
+    font-size: 20px;
+  }
+}
+
 .home-features {
   position: relative;
   z-index: 5;
@@ -101,7 +122,6 @@ margin-top: -80px;
 }
 
 .home-features-card-image {
-
   border-bottom: 1px solid rgb(224, 224, 224);
 }
 
@@ -387,6 +407,12 @@ margin-top: -80px;
   font-size: 1.2em;
   text-align: center;
   margin: 0px;
+}
+
+@media (max-width: 479px) {
+  .stat-card-end p {
+    font-size: 13px;
+  }
 }
 
 .footer-social {
@@ -958,6 +984,7 @@ margin-top: -80px;
 
 .features-table i {
   color: rgba(0,0,0, 0.54);
+  padding-top: 5px;
 }
 
 .terms-page {
