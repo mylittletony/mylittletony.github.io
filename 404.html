@@ -5,9 +5,9 @@ title: 404 | Cucumber Tony
 <script>
 function gifbg() {
    var imgCount = 5;
-   var dir = '/images/pages/gifs/';
+   var dir = 'https://d3e9l1phmgx8f2.cloudfront.net/images/gifs/';
    var randomCount = (Math.floor(Math.random() * imgCount));
-   var images = ['cucumber1.gif', 'cucumber2.gif', 'cucumber4.gif', 'cat1.gif', 'cat2.gif'];
+   var images = ['cucumber1.gif', 'cucumber2.gif', 'cucumber3.gif', 'cat1.gif', 'cat2.gif'];
    document.getElementById('banner').setAttribute("style", "background: linear-gradient(rgba(0, 0, 0, 0.30),rgba(0, 0, 0, 0.30)), url(" + dir + images[randomCount] + ");background-repeat: no-repeat;background-repeat: no-repeat;background-position: center;background-size: cover;");
 }
 window.onload = gifbg;

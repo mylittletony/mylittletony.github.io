@@ -3,6 +3,17 @@ layout: fixed-header
 title: Plans | Cucumber Tony
 permalink: /plans/
 ---
+
+<script>
+function navactive() {
+  var id1 = document.querySelector("#plans");
+  var id2 = document.querySelector("#plans-mobi");
+  id1.style.backgroundColor = "#EEEEEE";
+  id2.style.backgroundColor = "#EEEEEE";
+}
+window.onload = navactive;
+</script>
+
 <div class="page-content">
 
   <div class="plans-main mdl-grid">
@@ -145,7 +156,7 @@ permalink: /plans/
               <input id="what" class="mdl-slider mdl-js-slider" type="range" min="0" tabindex="0"/>
             </p>
             <p id='calc-message'>Monthly cost for <span class="totalAps">10</span> devices. </p>
-            
+
             <div id="calc-more" style="display: none;">
               <p style="font-weight: bold;">What's Your Name, What's Your Number?</p>
 
