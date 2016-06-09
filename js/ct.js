@@ -230,9 +230,12 @@ function tonySlider() {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-  document.querySelector('.mdl-slider').step  = step;
-  document.querySelector('.mdl-slider').max   = max;
-  document.querySelector('.mdl-slider').value = v;
-  tonySlider();
+  var elementExists = document.getElementById("calculator");
+  if (elementExists) {
+    document.querySelector('.mdl-slider').step  = step;
+    document.querySelector('.mdl-slider').max   = max;
+    document.querySelector('.mdl-slider').value = v;
+    tonySlider();
+  }
 });
 
