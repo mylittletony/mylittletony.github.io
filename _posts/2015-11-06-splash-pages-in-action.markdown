@@ -4,7 +4,10 @@ title: Splash Pages in Action
 date: 2015-11-06
 categories: showcase
 keywords: WiFi Splash Page, WiFi Captive Portal, WiFi Welcome Page, WiFi Splash page html5, WiFi splash page example, wifi splash page template
-permalink: /community/showcase/splash-pages-in-action
+permalink: /community/showcase/splash-pages-in-action.html
+redirect_from:
+  - /community/showcase/splash-pages-in-action
+  - /community/showcase/splash-pages-in-action/
 ---
 
 Your splash page is the gateway to your Wi-Fi hotspot. It's a page of joy and love. Every guest in your Wi-Fi hotspot sees this page before they access the Internet; first impressions are everything.

@@ -5,7 +5,10 @@ date:   2016-02-22
 categories: casestudy
 keywords: casestudy
 thumbnail: /images/case-studies/derby/derby-logo.png
-permalink: /case-studies/derby-city-council
+permalink: /case-studies/derby-city-council.html
+redirect_from:
+  - /case-studies/derby-city-council
+  - /case-studies/derby-city-council/
 description: “We have a social responsibility to make the Wi-Fi good quality, secure and accessible for all.”
 ---
 

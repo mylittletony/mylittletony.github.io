@@ -5,7 +5,10 @@ date:   2016-02-22
 categories: casestudy
 keywords: casestudy
 thumbnail: /images/case-studies/rds/rds-logo.png
-permalink: /case-studies/rds-global
+permalink: /case-studies/rds-global.html
+redirect_from:
+  - /case-studies/rds-global
+  - /case-studies/rds-global/
 description: “Cucumber gives us point and shoot deployment, control over the network and a front end that we can present to customers. All in one solution.”
 ---
 

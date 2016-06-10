@@ -5,7 +5,10 @@ date:   2016-02-20
 categories: casestudy
 keywords: casestudy
 thumbnail: /images/case-studies/other/anonymous.png
-permalink: /case-studies/unifi-user
+permalink: /case-studies/unifi-user.html
+redirect_from:
+  - /case-studies/unifi-user
+  - /case-studies/unifi-user/
 description: “The extra functionality has really changed how we run the Wi-Fi networks in the office. We're always talking about how great Cucumber Tony is -- Seriously.”
 ---
 

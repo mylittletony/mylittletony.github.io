@@ -5,7 +5,11 @@ date:   2016-02-22
 categories: casestudy
 keywords: casestudy
 thumbnail: /images/case-studies/invisinet/invisinet-logo.png
-permalink: /case-studies/invisinet
+permalink: /case-studies/invisinet.html
+redirect_from:
+  - /case-studies/invisinet
+  - /case-studies/invisinet/
+
 description: “Without Cucumber we wouldn't be able to offer tailored marketing solutions to our customers.”
 ---
 
