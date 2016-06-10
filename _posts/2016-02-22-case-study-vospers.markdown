@@ -5,7 +5,10 @@ date:   2016-02-22
 categories: casestudy
 keywords: casestudy
 thumbnail: /images/case-studies/vospers/vospers-logo.png
-permalink: /case-studies/vospers
+permalink: /case-studies/vospers.html
+redirect_from:
+  - /case-studies/vospers
+  - /case-studies/vospers/
 description: “I can't think of one thing I liked in Meraki that I didn't get in Cucumber for a fraction of the price.”
 ---
 

@@ -5,7 +5,10 @@ date:   2016-02-22
 categories: casestudy
 keywords: casestudy
 thumbnail: /images/case-studies/benitos/benitos-logo.png
-permalink: /case-studies/benitos-hat
+permalink: /case-studies/benitos-hat.html
+redirect_from:
+  - /case-studies/benitos-hat
+  - /case-studies/benitos-hat/
 description: “We wanted to stand out from the crowd and brand the welcome splash page and network name to Benito’s.”
 ---
 
