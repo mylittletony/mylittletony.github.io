@@ -8092,8 +8092,8 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
       background: linear-gradient(to left, transparent, transparent 16px, rgba(0,0,0, 0.26) 16px, rgba(0,0,0, 0.26) 0); }
     .mdl-slider.is-upgraded::-webkit-slider-thumb {
       -webkit-appearance: none;
-      width: 12px;
-      height: 12px;
+      width: 30px;
+      height: 30px;
       box-sizing: border-box;
       border-radius: 50%;
       background: #017fdd;
@@ -8103,8 +8103,8 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
       transition: transform 0.18s cubic-bezier(0.4, 0, 0.2, 1), border 0.18s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.18s cubic-bezier(0.4, 0, 0.2, 1), background 0.28s cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 0.18s cubic-bezier(0.4, 0, 0.2, 1); }
     .mdl-slider.is-upgraded::-moz-range-thumb {
       -moz-appearance: none;
-      width: 12px;
-      height: 12px;
+      width: 30px;
+      height: 30px;
       box-sizing: border-box;
       border-radius: 50%;
       background-image: none;
@@ -8117,19 +8117,19 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
     .mdl-slider.is-upgraded:active::-webkit-slider-thumb {
       background-image: none;
       background: #017fdd;
-      -webkit-transform: scale(1.5);
-              transform: scale(1.5); }
+      -webkit-transform: scale(1.3);
+              transform: scale(1.3); }
     .mdl-slider.is-upgraded:active::-moz-range-thumb {
       background-image: none;
       background: #017fdd;
-      transform: scale(1.5); }
+      transform: scale(1.3); }
     .mdl-slider.is-upgraded::-ms-thumb {
       width: 32px;
       height: 32px;
       border: none;
       border-radius: 50%;
       background: #017fdd;
-      transform: scale(0.375);
+      transform: scale(1.375);
       transition: background 0.28s cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 0.18s cubic-bezier(0.4, 0, 0.2, 1);
       transition: transform 0.18s cubic-bezier(0.4, 0, 0.2, 1), background 0.28s cubic-bezier(0.4, 0, 0.2, 1);
       transition: transform 0.18s cubic-bezier(0.4, 0, 0.2, 1), background 0.28s cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 0.18s cubic-bezier(0.4, 0, 0.2, 1); }
@@ -8239,16 +8239,17 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
 .mdl-slider__background-flex {
   background: transparent;
   position: absolute;
-  height: 2px;
+  height: 9px;
   width: calc(100% - 52px);
   top: 50%;
   left: 0;
-  margin: 0 26px;
+  margin: -3px 26px;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   overflow: hidden;
   border: 0;
+  border-radius: 2px;
   padding: 0;
   -webkit-transform: translate(0, -1px);
           transform: translate(0, -1px); }
