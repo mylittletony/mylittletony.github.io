@@ -13,11 +13,11 @@ var prePlanDollar = 350;
 
 // The initial plan price in GBP
 var bizPlanGB = 50;
-var prePlanGB = 350;
+var prePlanGB = 250;
 
 // The initial plan price in EURO
 var bizPlanEur = 50;
-var prePlanEur = 350;
+var prePlanEur = 320;
 
 // The starting currency //
 var currency = 'USD';
@@ -238,4 +238,3 @@ document.addEventListener('DOMContentLoaded', function() {
     tonySlider();
   }
 });
-
