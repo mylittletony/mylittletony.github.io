@@ -1133,6 +1133,72 @@ margin-top: -80px;
   margin-bottom: 100px;
 }
 
+.branding-banner {
+  background-color: #017fdd;
+  color: white;
+  height: 400px;
+  line-height: 30px;
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+@media (max-width: 479px) {
+  .branding-banner h1 {
+    font-size: 36px;
+  }
+
+  .branding-banner h2 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.branding-page {
+  background-color: #FAFAFA;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.branding-card {
+  margin-top: -100px;
+  margin-bottom: 100px;
+  padding-top: 20px;
+  padding-left: 40px;
+}
+
+.circle-div {
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+}
+
+.circle-div img {
+  height: 80px;
+  width: 80px;
+  padding-top: 35px;
+}
+
+.ct-branding-logo {
+  max-width: 100%;
+  height: auto;
+  max-height: 80px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #E0E0E0;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.ct-branding-logo-mono {
+  max-width: 100%;
+  height: auto;
+  max-height: 80px;
+  background-color:#E0E0E0;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+
 .mdl-menu a {
   text-decoration: none;
 }
