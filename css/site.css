@@ -433,6 +433,36 @@ margin-top: -80px;
   .footer-social {
     text-align: center;
   }
+  .social-header {
+    text-align: center;
+  }
+}
+
+.social-header {
+  margin-right: 105px;
+  color: #e0e0e0;
+  font-weight: 500;
+}
+
+@media (max-width: 479px) {
+  .social-header {
+    text-align: center;
+    margin-right: 15px;
+  }
+}
+
+.social-button {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.social-button-row {
+  margin-bottom: 10px;
+}
+
+.newsletter-button {
+  margin-bottom: -2px;
+  margin-left: -10px;
 }
 
 .tutorial-main {
