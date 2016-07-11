@@ -1194,12 +1194,15 @@ margin-top: -80px;
   margin-bottom: 100px;
   padding-top: 20px;
   padding-left: 40px;
+  padding-right: 40px;
 }
 
 .circle-div {
   border-radius: 50%;
   height: 150px;
   width: 150px;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 .circle-div img {
@@ -1216,7 +1219,6 @@ margin-top: -80px;
   border-width: 1px;
   border-color: #E0E0E0;
   border-radius: 5px;
-  padding: 20px;
 }
 
 .ct-branding-logo-mono {
@@ -1225,9 +1227,7 @@ margin-top: -80px;
   max-height: 80px;
   background-color:#E0E0E0;
   border-radius: 5px;
-  padding: 20px;
 }
-
 
 .mdl-menu a {
   text-decoration: none;
