@@ -1201,8 +1201,6 @@ margin-top: -80px;
   border-radius: 50%;
   height: 150px;
   width: 150px;
-  margin-left: 30px;
-  margin-right: 30px;
 }
 
 .circle-div img {
@@ -1214,19 +1212,6 @@ margin-top: -80px;
 .ct-branding-logo {
   max-width: 100%;
   height: auto;
-  max-height: 80px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #E0E0E0;
-  border-radius: 5px;
-}
-
-.ct-branding-logo-mono {
-  max-width: 100%;
-  height: auto;
-  max-height: 80px;
-  background-color:#E0E0E0;
-  border-radius: 5px;
 }
 
 .mdl-menu a {
