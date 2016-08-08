@@ -600,30 +600,23 @@ margin-top: -80px;
 }
 
 .plans-page {
-  padding-top: 60px;
+  padding-top: 10px;
   padding-bottom: 10px;
   border-bottom: 1px solid rgb(224, 224, 224);
 }
 
 .plans-card {
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 .plans-card-row {
-  margin-top: -200px;
+  /*margin-top: -200px;*/
   margin-bottom: 50px;
 }
 
-.plan-title-free {
-  background: #ffffff;
-}
-
-.plan-title-mid {
-  background: #ffffff;
-}
-
-.plan-title-top {
-  background: #ffffff;
+.plan-title {
+  background: #017fdd;
+  color: white;
 }
 
 .plan-calc-title {
@@ -972,7 +965,7 @@ margin-top: -80px;
 }
 
 .calc-table {
-  margin-top: 40px;
+  margin-top: 15px;
   margin-bottom: 40px;
 }
 
