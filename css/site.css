@@ -1097,6 +1097,20 @@ margin-top: -80px;
   height: 400px;
 }
 
+.unifi-banner {
+  background-image: url('/images/pages/unifi.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 5;
+  padding-top: 40px;
+  padding-bottom: 60px;
+  background-color: #017fdd;
+  color: white;
+  height: 400px;
+}
+
 .features-banner {
   height: 400px;
   line-height: 30px;
