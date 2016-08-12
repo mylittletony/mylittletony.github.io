@@ -1125,6 +1125,20 @@ margin-top: -80px;
   height: 250px;
 }
 
+.openmesh-banner {
+  /*background-image: url('/images/pages/meraki-box.png');*/
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 5;
+  padding-top: 40px;
+  padding-bottom: 60px;
+  background-color: #00af41;
+  color: white;
+  height: 250px;
+}
+
 .features-banner {
   height: 400px;
   line-height: 30px;
