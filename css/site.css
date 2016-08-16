@@ -1042,6 +1042,19 @@ margin-top: -80px;
   margin-bottom: 50px;
 }
 
+.plans-calc {
+  background-image: url('/images/pages/wall.JPG');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.plans-calc p {
+  color: rgba(0,0,0, 0.87);
+  font-weight: 500;
+}
+
 .meraki-banner {
   background-image: url('/images/pages/meraki-box.png');
   background-repeat: no-repeat;
@@ -1099,7 +1112,7 @@ margin-top: -80px;
 }
 
 .unifi-banner {
-  background-image: url('/images/pages/unifi.png');
+  background-image: url('/images/pages/unifi.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
