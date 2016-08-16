@@ -356,6 +356,7 @@ margin-top: -80px;
   margin-top: -20px;
   padding-top: 80px;
   padding-bottom: 60px;
+  background-color: white;
 }
 
 .home-integrations img {
@@ -868,7 +869,7 @@ margin-top: -80px;
 }
 
 .hardware-banner {
-  background-image: url('/images/pages/laptop.jpg');
+  background-image: url('/images/pages/devices.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
