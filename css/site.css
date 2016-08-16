@@ -1,3 +1,7 @@
+a {
+  text-decoration: none;
+}
+
 .ct-logo {
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
@@ -963,11 +967,13 @@ margin-top: -80px;
 .features-table {
   margin-top: 40px;
   margin-bottom: 40px;
+  border: none;
 }
 
 .calc-table {
   margin-top: 15px;
   margin-bottom: 40px;
+  border: none;
 }
 
 .calc-table td {
@@ -975,6 +981,7 @@ margin-top: -80px;
   font-size: 24px;
   padding-top: 36px;
   padding-bottom: 36px;
+  border-top: none;
 }
 
 .calc {
@@ -1020,7 +1027,8 @@ margin-top: -80px;
 }
 
 .features-table-heading {
-  background: #E0E0E0;
+  background: #017fdd;
+  color: white;
 }
 
 .features-table td {
@@ -1043,7 +1051,7 @@ margin-top: -80px;
 }
 
 .plans-calc {
-  background-image: url('/images/pages/wall.JPG');
+  background-image: url('/images/pages/wall.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
