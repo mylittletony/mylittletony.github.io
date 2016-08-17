@@ -1,3 +1,7 @@
+a {
+  text-decoration: none;
+}
+
 .ct-logo {
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
@@ -72,8 +76,8 @@ margin-top: -80px;
 }
 
 .home-header h2 {
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 24px;
+  line-height: 35px;
 }
 
 @media (max-width: 479px) {
@@ -248,6 +252,8 @@ margin-top: -80px;
 @media (max-width: 839px) {
   .mat-banner {
     text-align: center;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
 
@@ -356,6 +362,7 @@ margin-top: -80px;
   margin-top: -20px;
   padding-top: 80px;
   padding-bottom: 60px;
+  background-color: white;
 }
 
 .home-integrations img {
@@ -868,7 +875,7 @@ margin-top: -80px;
 }
 
 .hardware-banner {
-  background-image: url('/images/pages/laptop.jpg');
+  background-image: url('/images/pages/devices.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -903,7 +910,7 @@ margin-top: -80px;
   position: relative;
   z-index: 6;
   margin-top: -120px;
-  max-height: 350px;
+  padding: 20px;
 }
 
 .header-card a:hover {
@@ -931,6 +938,7 @@ margin-top: -80px;
 .supported-hardware img {
   max-height: 50px;
   max-width: 150px;
+  margin-top: 40px;
 }
 
 
@@ -962,11 +970,13 @@ margin-top: -80px;
 .features-table {
   margin-top: 40px;
   margin-bottom: 40px;
+  border: none;
 }
 
 .calc-table {
   margin-top: 15px;
   margin-bottom: 40px;
+  border: none;
 }
 
 .calc-table td {
@@ -974,6 +984,7 @@ margin-top: -80px;
   font-size: 24px;
   padding-top: 36px;
   padding-bottom: 36px;
+  border-top: none;
 }
 
 .calc {
@@ -1019,7 +1030,8 @@ margin-top: -80px;
 }
 
 .features-table-heading {
-  background: #E0E0E0;
+  background: #017fdd;
+  color: white;
 }
 
 .features-table td {
@@ -1041,8 +1053,21 @@ margin-top: -80px;
   margin-bottom: 50px;
 }
 
+.plans-calc {
+  background-image: url('/images/pages/wall.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.plans-calc p {
+  color: rgba(0,0,0, 0.87);
+  font-weight: 500;
+}
+
 .meraki-banner {
-  background-image: url('/images/pages/meraki-box.png');
+  background-image: url('/images/pages/meraki-box.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1052,7 +1077,7 @@ margin-top: -80px;
   padding-bottom: 60px;
   background-color: #017fdd;
   color: white;
-  height: 400px;
+  height: 250px;
 }
 
 .openwrt-banner {
@@ -1066,7 +1091,7 @@ margin-top: -80px;
   padding-bottom: 60px;
   background-color: #017fdd;
   color: white;
-  height: 400px;
+  height: 250px;
 }
 
 .powercloud-banner {
@@ -1080,11 +1105,11 @@ margin-top: -80px;
   padding-bottom: 60px;
   background-color: #017fdd;
   color: white;
-  height: 400px;
+  height: 250px;
 }
 
 .ruckus-banner {
-  background-image: url('/images/pages/orange-bg.png');
+  background-image: url('/images/pages/orange-bg.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1094,7 +1119,49 @@ margin-top: -80px;
   padding-bottom: 60px;
   background-color: #017fdd;
   color: white;
-  height: 400px;
+  height: 250px;
+}
+
+.unifi-banner {
+  background-image: url('/images/pages/unifi.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 5;
+  padding-top: 40px;
+  padding-bottom: 60px;
+  background-color: #017fdd;
+  color: white;
+  height: 250px;
+}
+
+.aerohive-banner {
+  background-image: url('/images/pages/devices.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 5;
+  padding-top: 40px;
+  padding-bottom: 60px;
+  background-color: #ffc324;
+  color: white;
+  height: 250px;
+}
+
+.openmesh-banner {
+  background-image: url('/images/pages/devices.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 5;
+  padding-top: 40px;
+  padding-bottom: 60px;
+  background-color: #00af41;
+  color: white;
+  height: 250px;
 }
 
 .features-banner {
