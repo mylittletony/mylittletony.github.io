@@ -908,7 +908,7 @@ margin-top: -80px;
   position: relative;
   z-index: 6;
   margin-top: -120px;
-  max-height: 350px;
+  padding: 20px;
 }
 
 .header-card a:hover {
@@ -936,6 +936,7 @@ margin-top: -80px;
 .supported-hardware img {
   max-height: 50px;
   max-width: 150px;
+  margin-top: 40px;
 }
 
 
