@@ -252,6 +252,8 @@ margin-top: -80px;
 @media (max-width: 839px) {
   .mat-banner {
     text-align: center;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
 
@@ -1065,7 +1067,7 @@ margin-top: -80px;
 }
 
 .meraki-banner {
-  background-image: url('/images/pages/meraki-box.png');
+  background-image: url('/images/pages/meraki-box.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1107,7 +1109,7 @@ margin-top: -80px;
 }
 
 .ruckus-banner {
-  background-image: url('/images/pages/orange-bg.png');
+  background-image: url('/images/pages/orange-bg.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1135,7 +1137,7 @@ margin-top: -80px;
 }
 
 .aerohive-banner {
-  /*background-image: url('/images/pages/meraki-box.png');*/
+  background-image: url('/images/pages/devices.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1149,7 +1151,7 @@ margin-top: -80px;
 }
 
 .openmesh-banner {
-  /*background-image: url('/images/pages/meraki-box.png');*/
+  background-image: url('/images/pages/devices.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
