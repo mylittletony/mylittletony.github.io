@@ -83,7 +83,7 @@ Once a location has been created, select your <b>location</b> and click on <b>Bo
 Select <b>I have a Meraki, Ruckus or another device</b> and add the <b>MAC address</b> you got from the Meraki Dashboard previously and click <b>Save</b>.
 
 <div class="mdl-typography--text-center">
-<img src="/images/community/tutorials/meraki-guide/meraki-box.png">
+<img src="/images/community/tutorials/meraki-guide/meraki-box.jpg">
 </div>
 
 Finally you'll need to change your splash page to use a <b>custom url</b>.
