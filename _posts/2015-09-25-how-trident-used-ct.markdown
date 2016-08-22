@@ -44,7 +44,7 @@ The guys at Cucumber were so friendly — it was a breath of fresh air how t
 
 If you want to set up your own Ruckus vSZ with the Cucumber interface and captive portal just follow <a href="https://cucumberwifi.io/community/tutorials/ruckus-vsg-captive-portal.html">these instructions</a>. Holla if you need us to assist.
 
-*Cucumber Tony is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities.Or you can utlise the captive portal solution with your existing infrastucture. Create a free account and check it here <a href="https://cucumberwifi.io">cucumberwifi.io</a>*
+*Cucumber Tony is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities.Or you can utlise the captive portal solution with your existing infrastructure. Create a free account and check it here <a href="https://cucumberwifi.io">cucumberwifi.io</a>*
 
 
 
