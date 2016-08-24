@@ -1053,6 +1053,10 @@ margin-top: -80px;
   margin-bottom: 50px;
 }
 
+.terms-card p {
+  font-size: 14px;
+}
+
 .plans-calc {
   background-image: url('/images/pages/wall.jpg');
   background-repeat: no-repeat;
