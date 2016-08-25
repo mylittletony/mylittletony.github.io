@@ -135,7 +135,7 @@ margin-top: -80px;
 }
 
 .home-features button {
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 .home-features-body {
@@ -337,12 +337,11 @@ margin-top: -80px;
   background-color: #017fdd;
   margin-top: -20px;
   padding-top: 90px;
-  padding-bottom: 90px;
+  padding-bottom: 110px;
 }
 
 .get-started-card {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 30px;
 }
 
 .get-started-card p {
@@ -505,13 +504,12 @@ margin-top: -80px;
 
 .tutorial-card h2 {
   padding-left: 20px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .tutorial-card h4 {
-  margin-bottom: 0px;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .tutorial-card ul {
@@ -521,7 +519,7 @@ margin-top: -80px;
 .tutorial-card li {
   list-style-type: none;
   padding-left: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
   border-top: 1px solid rgb(224, 224, 224)
 }
 
@@ -570,8 +568,9 @@ margin-top: -80px;
 
 .casestudies-card li {
   list-style-type: none;
-  padding-left: 20px;
-  padding-bottom: 30px;
+  padding-left: 40px;
+  padding-top: 40px;
+  padding-bottom: 60px;
   border-top: 1px solid rgb(224, 224, 224)
 }
 
@@ -580,9 +579,12 @@ margin-top: -80px;
 }
 
 .case-study-post {
-  padding-right: 20px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  padding-right: 40px;
+  padding-left: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 
 .case-study-post img {
@@ -781,13 +783,14 @@ margin-top: -80px;
   z-index: 3;
   /*background-color: #F5F5F5;*/
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 50px;
   border-bottom: 1px solid rgb(224, 224, 224);
 }
 
 .features-integrations img {
-  max-height: 30px;
+  max-height: 50px;
   max-width: 150px;
+  margin-top: 40px;
 }
 
 @media (max-width: 479px) {
@@ -950,10 +953,27 @@ margin-top: -80px;
 }
 
 .community-post {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.community-post img {
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+}
+
+.community-post p {
+  font-size: 16px;
+  color: rgba(0,0,0, 0.54);
+}
+
+.case-study-post p {
+  font-size: 16px;
+  color: rgba(0,0,0, 0.54);
 }
 
 .community {
@@ -1294,14 +1314,6 @@ margin-top: -80px;
 
 .mdl-menu a {
   text-decoration: none;
-}
-
-.community-post p {
-  color: rgba(0,0,0, 0.54);
-}
-
-.case-study-post p {
-  color: rgba(0,0,0, 0.54);
 }
 
 .sidebar-logo img {
