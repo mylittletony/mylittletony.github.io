@@ -1,17 +1,28 @@
 ---
-layout: fixed-header
-title: Tutorials | Cucumber Tony
+layout: community-header
+title: OpenWrt Tutorials | Cucumber Tony
 permalink: /community/tutorials/
 redirect_from:
-- /community/
-- /community/showcase/
+- /tutorials/
 ---
+
+<script>
+function navactive() {
+  var id1 = document.querySelector("#tutorials");
+  var id2 = document.querySelector("#tutorials-mobi");
+  id1.style.backgroundColor = "#EEEEEE";
+  id2.style.backgroundColor = "#EEEEEE";
+
+}
+window.onload = navactive;
+</script>
+
 <div class="page-content">
 
   <div class="tutorial-main mdl-grid">
     <div class="center-cell mdl-cell mdl-cell--middle mdl-cell--10-col mdl-typography--text-center">
-      <h2>WiFi Community Tutorials</h2>
-      <h5>Explore the tutorials and find all the resources you need to set up an amazing WiFi network.</h5>
+      <h2>OpenWrt Tutorials</h2>
+      <h5>Learn the same way we did, have some fun configuring home projects with OpenWrt.</h5>
     </div>
   </div>
 
@@ -52,7 +63,7 @@ redirect_from:
     </div>
   </div>
 
-  <div class="tutorial-list mdl-grid">
+  <!-- <div class="tutorial-list mdl-grid">
     <div class="tutorial-card center-cell mdl-cell mdl-cell--10-col mdl-card mdl-shadow--4dp">
       <h2>Tutorials</h2>
       {% for tag in site.tags %}
@@ -69,6 +80,6 @@ redirect_from:
         {% endfor %}
       {% endfor %}
     </div>
-  </div>
+  </div> -->
 
 </div>

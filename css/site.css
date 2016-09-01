@@ -527,6 +527,11 @@ margin-top: -80px;
   text-decoration: none;
 }
 
+.latest-tutorials li {
+ list-style-type:none;
+ margin-bottom: 20px;
+}
+
 .casestudies-main {
   background-color: #017fdd;
   height: 400px;
@@ -1369,5 +1374,17 @@ margin-top: -80px;
 @media (max-width: 479px) {
   .missing-page h1 {
     font-size: 36px;
+  }
+}
+
+.community-lastest-card {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+@media (max-width: 479px) {
+  .community-lastest-card {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
