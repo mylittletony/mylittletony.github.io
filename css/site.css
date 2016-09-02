@@ -985,6 +985,10 @@ margin-top: -80px;
   background: #FAFAFA;
 }
 
+.community-subheader {
+  padding-bottom:50px;
+}
+
 /*material icons*/
 .material-icons.md-18 { font-size: 18px; }
 .material-icons.md-24 { font-size: 24px; }
