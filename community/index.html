@@ -1,0 +1,106 @@
+---
+layout: community-header
+title: Community | Cucumber Tony
+permalink: /community/
+---
+
+<script>
+function navactive() {
+  var id1 = document.querySelector("#community");
+  var id2 = document.querySelector("#community-mobi");
+  id1.style.backgroundColor = "#EEEEEE";
+  id2.style.backgroundColor = "#EEEEEE";
+
+}
+window.onload = navactive;
+</script>
+
+<div class="page-content">
+
+  <div class="mat-banner center-cell" style="width:100%;padding-left:0px;padding-right:0px;">
+
+    <div class="center-cell mdl-cell--12-col mdl-card mdl-typography--text-center">
+      <h1 style="margin-bottom:0px;">Cucumber Community</h1>
+      <p class="community-subheader">Explore, learn and discuss all things Cucumber</p>
+      <div class="mdl-grid community-latest-row" style="width:60%;">
+        <div class="center-cell mdl-cell--4-col">
+          <img class="community-featured-img" src="/images/community/thumbnails/vospers.jpg" align="center"/>
+          <a href="/case-studies/vospers"><h4>Vospers Case Study</h4></a>
+        </div>
+        <div class="center-cell mdl-cell--4-col">
+          <img class="community-featured-img" src="/images/community/thumbnails/policy.jpg" align="center"/>
+          <a href="/community/showcase/policy-groups"><h4>Policy Groups Spotlight</h4></a>
+        </div>
+        <div class="center-cell mdl-cell--4-col">
+          <img class="community-featured-img" src="/images/community/thumbnails/openwrt.jpg" align="center"/>
+          <a href="/case-studies/benitos-hat"><h4>Benito's Case Study</h4></a>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div class="mat-banner mdl-grid">
+    <div class="center-cell mdl-cell mdl-cell--11-col">
+      <h2 class="mdl-typography--text-center">Showcase</h2>
+      <p class="mdl-typography--text-center community-subheader">We shine the spotlight on our customers and favourite features to show what Cucumber can do for you.</p>
+      <div class="mdl-grid mdl-cell--hide-tablet mdl-cell--hide-phone" style="font-style:italic;">
+        <div class="center-cell mdl-cell mdl-cell--6-col mdl-cell--7-col-tablet mdl-cell--7-col-phone mdl-cell--middle ">
+          <p>“I can't think of one thing I liked in Meraki that I didn't get in Cucumber for a fraction of the price.”</p>
+          <p><small>Jonathan Brickell - Senior IT Technician</small></p>
+        </div>
+        <div class="center-cell mdl-cell--middle mdl-cell mdl-cell--5-col mdl-typography--text-center">
+          <img src="/images/case-studies/vospers/vospers-logo.png">
+        </div>
+      </div>
+      <div class="mdl-grid mdl-cell--hide-tablet mdl-cell--hide-phone" style="margin-top:40px;font-style:italic;">
+        <div class="center-cell mdl-cell--middle mdl-cell mdl-cell--5-col mdl-typography--text-center">
+          <img src="/images/case-studies/trident/trident-logo.png">
+        </div>
+        <div class="center-cell mdl-cell mdl-cell--6-col mdl-cell--7-col-tablet mdl-cell--7-col-phone mdl-cell--middle ">
+          <p>“Our favourite thing is the simple interface. The Ruckus vSZ is complex, the Cucumber dashboard makes managing networks so much easier.”</p>
+          <p><small>David Bell - Business Manager</small></p>
+        </div>
+      </div>
+      <div class="center-cell mdl-cell mdl-cell--12-col mdl-typography--text-center">
+        <a href="/community/showcase">
+          <button class="signup-button mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+            Read More
+          </button>
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="mat-banner mdl-grid">
+    <div class="latest-tutorials center-cell mdl-cell mdl-cell--5-col mdl-typography--text-center">
+      <h2>LEDE/OpenWrt Tutorials</h2>
+      <p class="community-subheader">Want to learn how to play with OpenWrt?<br>We've got a collection of tutorials here to get you started.</p>
+      {% for tag in site.tags %}
+      {% assign t = tag | first %}
+      {% assign posts = tag | last %}
+      {% for post in posts limit:5 %}
+      {% if post.tags contains 'OpenWRT' %}
+      <li>
+        <hr style="border-color:rgb(224, 224, 224)">
+        <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+        <p><small>{{ post.description }}</small></p>
+        <p><small>{{ post.date | date: "%-d-%B-%Y" }}</small></p>
+      </li>
+      {% endif %}
+      {% endfor %}
+      {% endfor %}
+    </div>
+    <div class="center-cell mdl-cell mdl-cell--12-col mdl-typography--text-center">
+      <a href="/community/tutorials">
+        <button class="signup-button mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+          Read More
+        </button>
+      </a>
+    </div>
+  </div>
+
+</div>

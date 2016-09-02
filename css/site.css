@@ -527,6 +527,11 @@ margin-top: -80px;
   text-decoration: none;
 }
 
+.latest-tutorials li {
+ list-style-type:none;
+ margin-bottom: 20px;
+}
+
 .casestudies-main {
   background-color: #017fdd;
   height: 400px;
@@ -980,6 +985,10 @@ margin-top: -80px;
   background: #FAFAFA;
 }
 
+.community-subheader {
+  padding-bottom:50px;
+}
+
 /*material icons*/
 .material-icons.md-18 { font-size: 18px; }
 .material-icons.md-24 { font-size: 24px; }
@@ -1369,5 +1378,17 @@ margin-top: -80px;
 @media (max-width: 479px) {
   .missing-page h1 {
     font-size: 36px;
+  }
+}
+
+.community-latest-card {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+@media (max-width: 479px) {
+  .community-latest-card {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
