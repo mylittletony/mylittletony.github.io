@@ -17,25 +17,25 @@ window.onload = navactive;
 
 <div class="page-content">
 
-  <div class="mat-banner center-cell">
+  <div class="mat-banner center-cell" style="width:100%;padding-left:0px;padding-right:0px;">
 
     <div class="center-cell mdl-cell--12-col mdl-card mdl-typography--text-center">
       <h1 style="margin-bottom:0px;">Cucumber Community</h1>
-      <p class="community-subheader">Welcome to the things and stuff</p>
-      <div class="mdl-grid community-latest-row">
-        {% for post in site.categories.tutorials limit:3 %}
-        <div class="center-cell community-lastest-card">
-          {% if post.thumbnail %}
-          <a href="{{ BASE_PATH }}{{ post.url }}">
-            <!-- <img src="{{ post.thumbnail }}" style="max-width:250px;" align="center"/> -->
-            <img src="/images/community/thumbnails/facebook-permissions.png" style="max-width:350px;" align="center"/>
-          </a>
-          {% else %}
-          <img src="/images/community/thumbnails/facebook-permissions.png" align="center"/>
-          {% endif %}
-          <a href="{{ BASE_PATH }}{{ post.url }}"><h4>{{ post.title }}</h4></a>
+      <p class="community-subheader">Explore, learn and discuss all things Cucumber</p>
+      <div class="mdl-grid community-latest-row" style="width:60%;">
+        <div class="center-cell mdl-cell--4-col">
+          <img class="community-featured-img" src="/images/community/thumbnails/vospers.jpg" align="center"/>
+          <a href="/case-studies/vospers"><h4>Vospers Case Study</h4></a>
         </div>
-        {% endfor %}
+        <div class="center-cell mdl-cell--4-col">
+          <img class="community-featured-img" src="/images/community/thumbnails/policy.jpg" align="center"/>
+          <a href="/community/showcase/policy-groups"><h4>Policy Groups Spotlight</h4></a>
+        </div>
+        <div class="center-cell mdl-cell--4-col">
+          <img class="community-featured-img" src="/images/community/thumbnails/openwrt.jpg" align="center"/>
+          <a href="/case-studies/benitos-hat"><h4>Benito's Case Study</h4></a>
+        </div>
+
       </div>
     </div>
 

@@ -1381,13 +1381,13 @@ margin-top: -80px;
   }
 }
 
-.community-lastest-card {
+.community-latest-card {
   padding-left: 25px;
   padding-right: 25px;
 }
 
 @media (max-width: 479px) {
-  .community-lastest-card {
+  .community-latest-card {
     padding-left: 10px;
     padding-right: 10px;
   }
