@@ -6,7 +6,10 @@ categories: showcase
 tags: Features
 description: The simple way to manage who can and can't connect to your WiFi.
 keywords: WiFi Splash Page, WiFi Captive Portal, WiFi Welcome Page, WiFi Splash page html5, WiFi splash page example, wifi splash page template
-permalink: /community/showcase/policy-groups
+permalink: /community/showcase/policy-groups.html
+redirect_from:
+  - /community/showcase/policy-groups
+  - /community/showcase/policy-groups/
 ---
 
 Policy Groups are one of the most powerful features within your Cucumber dashboard. Combined with zones, they offer a simple, intuitive way to control access to your networks.
