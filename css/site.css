@@ -585,6 +585,7 @@ margin-top: -80px;
 
 .case-study-post {
   padding: 40px;
+  background: white;
 }
 
 @media (max-width: 479px) {
@@ -614,6 +615,7 @@ margin-top: -80px;
 .case-study-side {
   padding: 40px;
   display: table;
+  background: white;
 }
 
 .case-study-side p {
