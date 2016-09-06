@@ -503,7 +503,7 @@ margin-top: -80px;
 }
 
 .tutorial-card h2 {
-  padding-left: 20px;
+  padding-left: 40px;
   margin-top: 30px;
   margin-bottom: 30px;
 }
@@ -518,8 +518,8 @@ margin-top: -80px;
 
 .tutorial-card li {
   list-style-type: none;
-  padding-left: 20px;
-  padding-bottom: 30px;
+  padding-left: 40px;
+  padding-bottom: 40px;
   border-top: 1px solid rgb(224, 224, 224)
 }
 
@@ -564,7 +564,7 @@ margin-top: -80px;
 }
 
 .casestudies-card h2 {
-  padding-left: 20px;
+  padding-left: 40px;
 }
 
 .casestudies-card ul {
