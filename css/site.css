@@ -584,16 +584,56 @@ margin-top: -80px;
 }
 
 .case-study-post {
-  padding-right: 40px;
-  padding-left: 40px;
+  padding: 40px;
+}
+
+@media (max-width: 479px) {
+  .case-study-post {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+}
+
+.case-study-post h4 {
+  font-size: 24px;
+  font-weight: 200;
+  line-height: 32px;
+  margin-top: 24px;
+  margin-bottom: 16px;
+  font-style: italic;
   padding-top: 40px;
   padding-bottom: 40px;
-  margin-top: 60px;
-  margin-bottom: 60px;
 }
 
 .case-study-post img {
   max-width: 100%;
+}
+
+.case-study-side {
+  padding: 40px;
+  display: table;
+}
+
+.case-study-side p {
+  padding-top: 20px;
+}
+
+.case-study-side img {
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .case-study-side {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .case-study-side {
+    margin: 0 auto;
+  }
 }
 
 .plans-main {
@@ -744,7 +784,6 @@ margin-top: -80px;
   width: 100%;
   height: 100%;
 }
-
 
 .profile-image {
   border-radius: 50%;

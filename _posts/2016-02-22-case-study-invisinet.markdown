@@ -14,14 +14,14 @@ description: “Without Cucumber we wouldn't be able to offer tailored marketing
 ---
 
 <div class="mdl-grid">
-<div class="mdl-cell mdl-cell--3-col mdl-typography--text-center">
+<div class="case-study-side mdl-cell mdl-cell--3-col mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-typography--text-center mdl-shadow--4dp">
 <img class="cs-portrait text-center" src="/images/case-studies/invisinet/invisinet-rob.png" width="120px">
 <p>Rob Linsay <br> <small>Project Co-Ordinator</small></p>
 <img src="/images/case-studies/invisinet/invisinet-logo.png" width="200px">
 </div>
 
-<div class="mdl-cell mdl-cell--9-col">
-<a href="/case-studies/">< Back to Case Studies</a>
+<div class="case-study-post mdl-cell mdl-cell--9-col mdl-shadow--4dp">
+<a href="/community/showcase/">< Back to Case Studies</a>
 <h1>How Invisinet Use Cucumber</h1>
 <p>Rob from Invisnet tells us how he uses Cucumber and why?</p>
 
@@ -46,7 +46,7 @@ description: “Without Cucumber we wouldn't be able to offer tailored marketing
 <p>The platform allows us to constantly evolve with our clients’ needs. We can update splash pages and networks remotely and turn around new designs as and when a client needs.</p>
 
 <div class="mdl-typography--text-center">
-<h3>“Without Cucumber we wouldn’t be able to offer our tailored marketing solutions to our customers.”</h3>
+<h4>“Without Cucumber we wouldn’t be able to offer our tailored marketing solutions to our customers.”</h4>
 </div>
 
 <p>A client may be very focused on direct marketing and keen to let customers know that they are running a special offer on a certain day or very keen to increase footfall at their sister store. Cucumber lets us tailor the splash page and direct marketing emails to do this.</p>

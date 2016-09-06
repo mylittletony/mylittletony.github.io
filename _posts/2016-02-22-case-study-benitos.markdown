@@ -13,14 +13,14 @@ description: “We wanted to stand out from the crowd and brand the welcome spla
 ---
 
 <div class="mdl-grid">
-<div class="mdl-cell mdl-cell--3-col mdl-typography--text-center">
+<div class="case-study-side mdl-cell mdl-cell--3-col mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-typography--text-center mdl-shadow--4dp">
 <img class="cs-portrait text-center" src="/images/case-studies/benitos/benitos-walter.png" width="120px">
 <p>Walter Weinzettle <br> <small>Operations Manager</small></p>
 <img src="/images/case-studies/benitos/benitos-logo.png" width="200px">
 </div>
 
-<div class="mdl-cell mdl-cell--9-col">
-<a href="/case-studies/">< Back to Case Studies</a>
+<div class="case-study-post mdl-cell mdl-cell--9-col mdl-shadow--4dp">
+<a href="/community/showcase/">< Back to Case Studies</a>
 <h1>How Benito's Hat Use Cucumber</h1>
 <p>Walter is operations manager of a chain of Mexican restaurants. Benito’s serve by far the best burritos in town. Walters talks to us about why he uses Cucumber to run his Wi-Fi.</p>
 <hr>
@@ -31,7 +31,7 @@ description: “We wanted to stand out from the crowd and brand the welcome spla
 <h2>What problem does Cucumber fix for you?</h2>
 <p>One of our sites in King Cross station. It’s really busy and we compete with a lot of other businesses. Our Wi-Fi needed to stand out — so we looked for a solution we could manage and brand.</p>
 <div class="mdl-typography--text-center">
-<h3>“We wanted to stand out from the crowd and brand the welcome splash page and network name to Benito’s.”</h3>
+<h4>“We wanted to stand out from the crowd and brand the welcome splash page and network name to Benito’s.”</h4>
 </div>
 
 <hr>

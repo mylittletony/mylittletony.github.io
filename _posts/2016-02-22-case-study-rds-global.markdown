@@ -13,14 +13,14 @@ description: “Cucumber gives us point and shoot deployment, control over the n
 ---
 
 <div class="mdl-grid">
-<div class="mdl-cell mdl-cell--3-col mdl-typography--text-center">
+<div class="case-study-side mdl-cell mdl-cell--3-col mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-typography--text-center mdl-shadow--4dp">
 <img class="cs-portrait text-center" src="/images/case-studies/rds/rds-lee.png" width="120px">
 <p>Nigel Humphreys & Lee Webster</p>
 <img src="/images/case-studies/rds/rds-logo.png" width="200px">
 </div>
 
-<div class="mdl-cell mdl-cell--9-col">
-<a href="/case-studies/">< Back to Case Studies</a>
+<div class="case-study-post mdl-cell mdl-cell--9-col mdl-shadow--4dp">
+<a href="/community/showcase/">< Back to Case Studies</a>
 <h1>How RDS Global Use Cucumber</h1>
 <p>Nigel from RDS Global tells us why they use Cucumber to manage wireless networks, and how it’s improved their clients’ ROI.</p>
 
@@ -41,7 +41,7 @@ description: “Cucumber gives us point and shoot deployment, control over the n
 <p>Because the system makes it easy to separate guest and business internal traffic on the VLAN we can install one unified system. Previously clients had to purchase two networks and multiple access points for business and customer Wi-Fi. Now this can be done under one umbrella, giving customers a much better ROI. It also makes it easier for us to provide a professional and affordable network. We can do everything from filtering customer content and shaping traffic to creating a professional front end splash screen to improve their customer experience.</p>
 
 <div class="mdl-typography--text-center">
-<h3>“Cucumber gives us a unified solution, a fit all, tick box, point and shoot deployment with control over the network and a front end that we can present to customers.”</h3>
+<h4>“Cucumber gives us a unified solution, a fit all, tick box, point and shoot deployment with control over the network and a front end that we can present to customers.”</h4>
 </div>
 
 <h2>What’s your favourite feature?</h2>

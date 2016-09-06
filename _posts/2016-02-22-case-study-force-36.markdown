@@ -13,14 +13,14 @@ description: “Cucumber has saved us so many man hours we couldn't not use it.�
 ---
 
 <div class="mdl-grid">
-<div class="mdl-cell mdl-cell--3-col mdl-typography--text-center">
+<div class="case-study-side mdl-cell mdl-cell--3-col mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-typography--text-center mdl-shadow--4dp">
 <img class="cs-portrait text-center" src="/images/case-studies/force-36/force-36-richard.png" width="120px">
 <p>Richard Swain <br> <small>Commercial Director</small></p>
 <img src="/images/case-studies/force-36/force-36-logo.png" width="200px">
 </div>
 
-<div class="mdl-cell mdl-cell--9-col">
-<a href="/case-studies/">< Back to Case Studies</a>
+<div class="case-study-post mdl-cell mdl-cell--9-col mdl-shadow--4dp">
+<a href="/community/showcase/">< Back to Case Studies</a>
 <h1>How Force 36 Use Cucumber</h1>
 <p>Richard from Force 36 IT Consultants tells us why they use Cucumber to manage wireless networks.</p>
 
@@ -38,12 +38,12 @@ description: “Cucumber has saved us so many man hours we couldn't not use it.�
 
 <p>Originally we built our own radius server to create a login page. We hacked this together using ChilliSpot and some other OpenWrt opensource options out there. They were free which was great but managing them was intense. You needed to be onsite to monitor or make a change.</p>
 
-<p>After a while the project started to eat up hours of development time. We couldn’t afford to keep the project going or expand the network whilst running a radius server ourselves and monitoring performance without a remotel interface.</p>
+<p>After a while the project started to eat up hours of development time. We couldn’t afford to keep the project going or expand the network whilst running a radius server ourselves and monitoring performance without a remote interface.</p>
 
 <p>We looked for an alternative captive portal service and found Cucumber. It did the radius and captive portal set up out of the box and enabled us to manage the network off site. It saved us so many man hours we couldn’t not use it.</p>
 
 <div class="mdl-typography--text-center">
-<h3>“Cucumber has saved us so many man hours we couldn’t not use it.”</h3>
+<h4>“Cucumber has saved us so many man hours we couldn’t not use it.”</h4>
 </div>
 
 <h2>How have you set your network up using Cucumber?</h2>

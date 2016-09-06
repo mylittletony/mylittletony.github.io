@@ -13,17 +13,17 @@ description: â€œOverall Cucumber is a very solid platform with amazing support.â
 ---
 
 <div class="mdl-grid">
-<div class="mdl-cell mdl-cell--3-col mdl-typography--text-center">
+<div class="case-study-side mdl-cell mdl-cell--3-col mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-typography--text-center mdl-shadow--4dp">
 <img class="cs-portrait text-center" src="/images/case-studies/unifi-comparison/dan-bunyard.png" width="120px">
 <p>Dan Bunyard<br><small>Networking Connoisseur</small></p>
 </div>
 
-<div class="mdl-cell mdl-cell--9-col">
-<a href="/case-studies/">< Back to Case Studies</a>
+<div class="case-study-post mdl-cell mdl-cell--9-col mdl-shadow--4dp">
+<a href="/community/showcase/">< Back to Case Studies</a>
 
 <p>This report was submitted to us by one of our users on their views on the differences between the <b>Cucumber Dashboard</b> and the <b>UniFi Controller</b>.</p>
 
-<p>It was submitted on 10/Feb/2016, and so is a reflection of the feature-set at that time, as well as their own personal opinions. Changes may have been made to both the Cucumber dashboard and UniFi controller since then.</p>
+<p>It was <b>submitted on 10/Feb/2016</b>, and so is a reflection of the feature-set at that time, as well as their own personal opinions. Changes may have been made to both the Cucumber dashboard and UniFi controller since then.</p>
 
 <hr>
 

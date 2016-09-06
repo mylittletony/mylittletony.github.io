@@ -13,14 +13,14 @@ description: “We have a social responsibility to make the Wi-Fi good quality, 
 ---
 
 <div class="mdl-grid">
-<div class="mdl-cell mdl-cell--3-col mdl-typography--text-center">
+<div class="case-study-side mdl-cell mdl-cell--3-col mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-typography--text-center mdl-shadow--4dp">
 <img class="cs-portrait text-center" src="/images/case-studies/derby/derby-jo.png" width="120px">
 <p>Jo McKeirnan <br> <small>Digital Regeneration Manager</small></p>
 <img src="/images/case-studies/derby/derby-logo-alt.png" width="200px">
 </div>
 
-<div class="mdl-cell mdl-cell--9-col mdl-typography--text-center">
-<a href="/case-studies/">< Back to Case Studies</a>
+<div class="case-study-post mdl-cell mdl-cell--9-col mdl-shadow--4dp">
+<a href="/community/showcase/">< Back to Case Studies</a>
 <h1>How Derby City Council Use Cucumber</h1>
 <p>Jo manages a network of around 200 Meraki access points around Derby. He uses the Cucumber captive portal and the analytics platform which gives him full ownership and control over his Wi-Fi network.</p>
 

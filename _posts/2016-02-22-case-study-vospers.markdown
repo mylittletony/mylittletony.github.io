@@ -13,14 +13,14 @@ description: “I can't think of one thing I liked in Meraki that I didn't get i
 ---
 
 <div class="mdl-grid">
-<div class="mdl-cell mdl-cell--3-col mdl-typography--text-center">
+<div class="case-study-side mdl-cell mdl-cell--3-col mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-typography--text-center mdl-shadow--4dp">
 <img class="cs-portrait text-center" src="/images/case-studies/vospers/vospers-jonathan.png" width="120px">
 <p>Jonathan Brickell <br> <small>Senior IT Technician</small></p>
 <img src="/images/case-studies/vospers/vospers-logo.png" width="200px">
 </div>
 
-<div class="mdl-cell mdl-cell--9-col">
-<a href="/case-studies/">< Back to Case Studies</a>
+<div class="case-study-post mdl-cell mdl-cell--9-col mdl-shadow--4dp">
+<a href="/community/showcase/">< Back to Case Studies</a>
 <h1>How Vospers Use Cucumber</h1>
 <p>Jonathan has been using Cucumber Tony since day one. He tells us why his network is still growing and how it's changed things for the better at Vospers.</p>
 
@@ -39,7 +39,7 @@ description: “I can't think of one thing I liked in Meraki that I didn't get i
 <p>Having one pane of glass for all our wireless networks. Now we can create new network SSIDs and passwords across the whole estate in a few clicks. It saves the team a lot of hours setting up and diagnosing issues. If a user has a problem connecting I can quickly check the network status to see if it's a problem with the WiFi or their device.</p>
 
 <div class="mdl-typography--text-center">
-<h3>"I can't think of one thing I liked in Meraki that I didn't get in Cucumber for a fraction of the price."</h3>
+<h4>"I can't think of one thing I liked in Meraki that I didn't get in Cucumber for a fraction of the price."</h4>
 </div>
 
 <h2>Anything else?</h2>

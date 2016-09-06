@@ -13,18 +13,18 @@ description: “The extra functionality has really changed how we run the Wi-Fi 
 ---
 
 <div class="mdl-grid">
-<div class="mdl-cell mdl-cell--3-col mdl-typography--text-center">
+<div class="case-study-side mdl-cell mdl-cell--3-col mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-typography--text-center mdl-shadow--4dp">
 <img class="cs-portrait text-center" src="/images/case-studies/other/anonymous.png" width="120px">
 <p>Anonymous <br> <small>IT Manager</small></p>
 </div>
 
-<div class="mdl-cell mdl-cell--9-col">
-<a href="/case-studies/">< Back to Case Studies</a>
+<div class="case-study-post mdl-cell mdl-cell--9-col mdl-shadow--4dp">
+<a href="/community/showcase/">< Back to Case Studies</a>
 <h1>Using Cucumber To Manage UniFi</h1>
 <p>We asked one avid user why he uses Cucumber to manage his Ubiquiti UniFi network. He asked that he remained anonymous to avoid revealing any information to his competition. He said: </p>
 
 <div class="mdl-typography--text-center">
-<h3>“...if my competition got hold of Cucumber Wi-Fi I’d loose my edge — it’s saves me hours of time, I don’t want them getting their hands on it.”</h3>
+<h4>“...if my competition got hold of Cucumber Wi-Fi I’d loose my edge — it’s saves me hours of time, I don’t want them getting their hands on it.”</h4>
 </div>
 
 <hr>
@@ -38,7 +38,7 @@ description: “The extra functionality has really changed how we run the Wi-Fi 
 <p>We use Cucumber to manage all our UniFi APs. We used to run the UniFi software in an Amazon cloud server. Maintaining the network was a pain and we didn’t have much control. I had to click into each access point individually to see which one was online. With Cucumber I can see in a glance what’s happening.</p>
 
 <div class="mdl-typography--text-center">
-<h3>“With Cucumber I can see in a glance what’s happening. We use Cucumber to manage all our UniFi APs. We used to run the UniFi software in an Amazon cloud server. Maintaining the network was a pain. I had to click into each access point individually to see which one was online.”</h3>
+<h4>“With Cucumber I can see in a glance what’s happening. We use Cucumber to manage all our UniFi APs. We used to run the UniFi software in an Amazon cloud server. Maintaining the network was a pain. I had to click into each access point individually to see which one was online.”</h4>
 </div>
 
 <h2>What problem does Cucumber fix for you?</h2>

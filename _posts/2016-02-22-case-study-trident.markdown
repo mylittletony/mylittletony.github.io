@@ -13,14 +13,14 @@ description: “Our favourite thing is the simple interface. The Ruckus vSZ is c
 ---
 
 <div class="mdl-grid">
-<div class="mdl-cell mdl-cell--3-col mdl-typography--text-center">
+<div class="case-study-side mdl-cell mdl-cell--3-col mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-typography--text-center mdl-shadow--4dp">
 <img class="cs-portrait text-center" src="/images/case-studies/trident/trident-david.png" width="120px">
 <p>David Bell <br> <small>Business Manager</small></p>
 <img src="/images/case-studies/trident/trident-logo.png" width="200px">
 </div>
 
-<div class="mdl-cell mdl-cell--9-col">
-<a href="/case-studies/">< Back to Case Studies</a>
+<div class="case-study-post mdl-cell mdl-cell--9-col mdl-shadow--4dp">
+<a href="/community/showcase/">< Back to Case Studies</a>
 <h1>How Trident Group Use Cucumber</h1>
 <p>Trident have a Ruckus Virtual Smart Zone network and use Cucumber to manage it. David tells us why they use Cucumber alongside their Ruckus vSZ.</p>
 
@@ -39,7 +39,7 @@ description: “Our favourite thing is the simple interface. The Ruckus vSZ is c
 <p>Having a Cucumber dashboard means we can manage different vendor access points. We’re looking at some APs we can install the Cucumber Tony firmware on. The Ubiquity UniFi for example would suit some clients on a lower budget who don’t need high end kit like Ruckus or Meraki. This way we could offer clients a bigger range of solutions and one to match any budget.</p>
 
 <div class="mdl-typography--text-center">
-<h3>“Our favourite thing is the simple interface. The Ruckus vSZ is complex, the Cucumber dashboard helps make it such a better user experience.”</h3>
+<h4>“Our favourite thing is the simple interface. The Ruckus vSZ is complex, the Cucumber dashboard helps make it such a better user experience.”</h4>
 </div>
 
 <h2>What were you looking to solve with Cucumber?</h2>
