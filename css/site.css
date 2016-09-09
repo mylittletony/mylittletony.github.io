@@ -532,6 +532,18 @@ margin-top: -80px;
  margin-bottom: 20px;
 }
 
+.highlighter-rouge {
+  color: rgba(0,0,0, 0.87);
+  background: #ECEFF1;
+  border: 1px solid #CFD8DC;
+  border-radius: 4px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
 .casestudies-main {
   background-color: #017fdd;
   height: 400px;
