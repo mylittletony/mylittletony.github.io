@@ -7,6 +7,11 @@ keywords: MikroTik captive portal, MikroTik splash page hosting, MikroTik splash
 thumbnail: /images/community/thumbnails/aruba-setup.png
 ---
 
+<hr>
+<h3>This doc is outdated. Please view our new documents here:<br>
+<a href="http://docs.cucumberwifi.io/article/106-mikrotik-splash-page-setup">docs.cucumberwifi.io</a></h3>
+<hr>
+
 >Note: you may lose internet connectivity during some stages of this process if the MikroTik is your only uplink. It will return once you have finished the process.
 
 

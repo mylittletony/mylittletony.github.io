@@ -6,6 +6,11 @@ categories: documentation
 keywords: OpenWRT captive portal, OpenWRT splash page not working, OpenWRT splash page template, OpenWRT splash page free, OpenWRT splash page html, OpenWRT splash page hosting, OpenMesh captive portal, OpenMesh splash page not working, OpenMesh splash page template, OpenMesh splash page free, OpenMesh splash page html, OpenMesh splash page hosting, DD-WRT
 ---
 
+<hr>
+<h3>This doc is outdated. Please view our new documents here:<br>
+<a href="http://docs.cucumberwifi.io/article/84-openmesh-installation">docs.cucumberwifi.io</a></h3>
+<hr>
+
 You can use the Cucumber Tony dashboard, splash pages and radius servers including our Facebook logins with your OpenWRT, DD-WRT, OpenMesh and other boxes.
 
 To begin with, head over to your location in Cucumber Tony and add your box into CT using the <b>I have a Meraki, Ruckus or other device</b> option.

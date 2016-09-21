@@ -6,6 +6,11 @@ categories: documentation
 keywords: install firmware on unifi ap, wifi firmware, unifi firmware update
 ---
 
+<hr>
+<h3>This doc is outdated. Please view our new documents here:<br>
+<a href="http://docs.cucumberwifi.io/article/86-installing-ubiquiti-unifi-using-windows">docs.cucumberwifi.io</a></h3>
+<hr>
+
 <h3>Option One - TFTP</h3>
 <hr>
 

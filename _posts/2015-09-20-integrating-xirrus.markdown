@@ -7,6 +7,11 @@ keywords: Xirrus captive portal, Xirrus splash page hosting, Xirrus splash page 
 thumbnail:
 ---
 
+<hr>
+<h3>This doc is outdated. Please view our new documents here:<br>
+<a href="http://docs.cucumberwifi.io/article/107-xirrus-splash-page-setup">docs.cucumberwifi.io</a></h3>
+<hr>
+
 Using a web browser, go into your Cucumber Tony dashboard and <a href="https://my.ctapp.io/?data-elevio-article=7107#/" class="dst">add the box in</a> using the MAC address of your Access Point.
 
 When you have added these to Cucumber Tony, go into the settings page of your box, scrolling down for the section labelled PolkaSpots Settings

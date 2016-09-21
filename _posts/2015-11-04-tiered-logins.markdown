@@ -5,6 +5,12 @@ date:   2015-11-04
 categories: documentation
 keywords: multiple splash pages, splash page, captive portal, wifi
 ---
+
+<hr>
+<h3>This doc is outdated. Please view our new documents here:<br>
+<a href="http://docs.cucumberwifi.io/">docs.cucumberwifi.io</a></h3>
+<hr>
+
 <div class="mdl-typography--text-center">
 <h3>What is Tiered Logins?</h3>
 </div>

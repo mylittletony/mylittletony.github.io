@@ -6,6 +6,10 @@ categories: documentation
 keywords: Aruba captive portal, Aruba splash page hosting, Aruba splash page not working, Aruba splash page template, Aruba splash page free, Aruba splash page html
 thumbnail: /images/community/thumbnails/aruba-setup.png
 ---
+<hr>
+<h3>This doc is outdated. Please view our new documents here:<br>
+<a href="docs.cucumberwifi.io/article/108-aruba-splash-page-setup">docs.cucumberwifi.io</a></h3>
+<hr>
 
 Using a web browser, go into your Cucumber Tony dashboard and <a href="/documentation/add-box.html" class="dst">add the box in</a> using the MAC address of your Access Point.
 

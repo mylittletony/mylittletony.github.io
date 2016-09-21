@@ -6,6 +6,12 @@ categories: documentation
 keywords: local portal, local, portal, troubleshoot, doctor, checkup, health, status, diagnose
 ---
 
+<hr>
+<h3>This doc is outdated. Please view our new documents here:<br>
+<a href="http://docs.cucumberwifi.io/article/102-using-the-local-portal">docs.cucumberwifi.io</a></h3>
+<hr>
+
+
 To access the local portal, connect to the Access Point via one of it's SSIDs.
 
 Then enter the interface IP of that SSID, which you can retrieve from your SSID list in Cucumber Tony.

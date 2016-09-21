@@ -6,10 +6,15 @@ categories: documentation
 keywords: wifi hotspot software, wifi firmware download, update Unifi firmware, meraki captive portal, ruckus captive portal, wifi radius server
 ---
 
+<hr>
+<h3>This doc is outdated. Please view our new documents here:<br>
+<a href="http://docs.cucumberwifi.io/article/78-compatible-devices-access-points">docs.cucumberwifi.io</a></h3>
+<hr>
+
 <h3>List of compatible boxes</h3>
 <hr>
 
-Here are the access points you can control and monitor using the Cucumber Tony dashboard. 
+Here are the access points you can control and monitor using the Cucumber Tony dashboard.
 
 You will find further instructions on how to set them up by searching through our help documents on the green sidebar.
 
@@ -120,4 +125,3 @@ Installing the Cucumber Tony firmware on your access point gives you full contro
 It's simple to download the firmware on your access point. Just choose your access point and follow the instructions.
 
 <br>
-

@@ -6,6 +6,11 @@ categories: documentation
 keywords: wifi api, api wifi, wireless api
 ---
 
+<hr>
+<h3>This doc is outdated. Please view our new documents here:<br>
+<a href="http://docs.cucumberwifi.io/category/406-developer">docs.cucumberwifi.io</a></h3>
+<hr>
+
 This guide will show you how to setup your own application to use the Cucumber Tony API. The API will let you do loads of handy things, like create locations, generate vouchers and reboot your boxes.
 
 **If you're not a developer, please forget this exists.**

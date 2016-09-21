@@ -6,6 +6,11 @@ categories: documentation
 keywords: install firmware on OpenMesh ap, wifi firmware, OpenMesh firmware update
 ---
 
+<hr>
+<h3>This doc is outdated. Please view our new documents here:<br>
+<a href="http://docs.cucumberwifi.io/article/84-openmesh-installation">docs.cucumberwifi.io</a></h3>
+<hr>
+
 You will need:
 
 <ul>

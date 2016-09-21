@@ -6,6 +6,12 @@ categories: documentation
 keywords: Ruckus captive portal, Ruckus splash page hosting, Ruckus splash page not working, Ruckus splash page template, Ruckus splash page free, Ruckus splash page html
 ---
 
+<hr>
+<h3>This doc is outdated. Please view our new documents here:<br>
+<a href="http://docs.cucumberwifi.io/article/110-ruckus-zd-splash-page-setup">docs.cucumberwifi.io</a></h3>
+<hr>
+
+
 In order to use Ruckus with the Cucumber Tony logins and radius, you'll need to make some changes in your Ruckus Zone Director.
 
 Add your <b>Access Points</b> into Cucumber Tony by adding their MAC addresses.

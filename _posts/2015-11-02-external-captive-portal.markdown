@@ -6,6 +6,11 @@ categories: documentation
 keywords: captive portal, splash page, external, public
 ---
 
+<hr>
+<h3>This doc is outdated. Please view our new documents here:<br>
+<a href="http://docs.cucumberwifi.io/">docs.cucumberwifi.io</a></h3>
+<hr>
+
 To use your external captive portal solution with Cucumber Tony just follow these simple steps.
 
 <div class="mdl-typography--text-center">

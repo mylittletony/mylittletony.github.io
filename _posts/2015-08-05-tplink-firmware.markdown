@@ -6,6 +6,11 @@ categories: documentation
 keywords: tp link firmware update tftp, tplink firmware flash tftp
 ---
 
+<hr>
+<h3>This doc is outdated. Please view our new documents here:<br>
+<a href="http://docs.cucumberwifi.io/article/82-tp-link-installation">docs.cucumberwifi.io</a></h3>
+<hr>
+
 To set up a TP-Link box, here's what you'll need:
 
 <ul>

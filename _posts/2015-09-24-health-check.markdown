@@ -7,6 +7,11 @@ keywords: script, support, diagnosis, doctor, local portal
 thumbnail: /images/community/thumbnails/doctor.png
 ---
 
+<hr>
+<h3>This doc is outdated. Please view our new documents here:<br>
+<a href="http://docs.cucumberwifi.io/">docs.cucumberwifi.io</a></h3>
+<hr>
+
 To run the Health Check, follow these steps:
 
 1\. Head into your location in Cucumber Tony and select Boxes on the left hand sidebar.

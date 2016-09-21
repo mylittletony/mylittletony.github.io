@@ -7,6 +7,11 @@ keywords: WiFi Registration Form, WiFi registration, Wi-Fi registration fields, 
 
 ---
 
+<hr>
+<h3>This doc is outdated. Please view our new documents here:<br>
+<a href="http://docs.cucumberwifi.io/article/105-setting-up-a-captive-portal-registration-form">docs.cucumberwifi.io</a></h3>
+<hr>
+
 If you want to capture customer data, it's simple with Cucumber Tony. It's simple, here's how it works:
 
 - > The first time your customers try and get online, they'll see your registration form on the login page.

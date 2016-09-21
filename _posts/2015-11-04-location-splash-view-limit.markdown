@@ -6,6 +6,11 @@ categories: documentation
 keywords: quota, splash page, captive portal, wifi, limit
 ---
 
+<hr>
+<h3>This doc is outdated. Please view our new documents here:<br>
+<a href="http://docs.cucumberwifi.io/">docs.cucumberwifi.io</a></h3>
+<hr>
+
 To help you manage your account quotas easier, you can now set quotas for each of your locations, so that you can ensure your account splash view limits are evenly distributed between your locations how you see fit.
 
 Note: Your location splash limits can't exceed your plan's quota.
