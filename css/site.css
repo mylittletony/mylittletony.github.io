@@ -571,8 +571,9 @@ margin-top: -80px;
 }
 
 .casestudies-card {
-  margin-top: -100px;
-  margin-bottom: 100px;
+  /*margin-top: -100px;*/
+  margin-top: 40px;
+  /*margin-bottom: 100px;*/
 }
 
 .casestudies-card h2 {
@@ -649,6 +650,44 @@ margin-top: -80px;
     margin: 0 auto;
   }
 }
+
+.features-showcase-list {
+  background: #FAFAFA;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.features-showcase-card {
+  /*margin-top: -100px;*/
+  /*margin-top: 20px;*/
+  /*margin-bottom: 100px;*/
+}
+
+.features-showcase-card h2 {
+  padding-left: 40px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.features-showcase-card h4 {
+  margin-top: 30px;
+}
+
+.features-showcase-card ul {
+  padding-left: 0px;
+}
+
+.features-showcase-card li {
+  list-style-type: none;
+  padding-left: 40px;
+  padding-bottom: 40px;
+  border-top: 1px solid rgb(224, 224, 224)
+}
+
+.features-showcase-card a {
+  text-decoration: none;
+}
+
 
 .plans-main {
   background-color: #017fdd;
