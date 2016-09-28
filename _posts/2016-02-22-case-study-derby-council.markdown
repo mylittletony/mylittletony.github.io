@@ -15,7 +15,7 @@ description: “We have a social responsibility to make the Wi-Fi good quality, 
 <div class="mdl-grid">
 <div class="case-study-side mdl-cell mdl-cell--3-col mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-typography--text-center mdl-shadow--4dp">
 <img class="cs-portrait text-center" src="/images/case-studies/derby/derby-jo.png" width="120px">
-<p>Jo McKeirnan <br> <small>Digital Regeneration Manager</small></p>
+<p>Jo McKiernan <br> <small>Digital Regeneration Manager</small></p>
 <img src="/images/case-studies/derby/derby-logo-alt.png" width="200px">
 </div>
 
