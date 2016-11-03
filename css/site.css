@@ -1488,3 +1488,48 @@ margin-top: -80px;
     padding-right: 10px;
   }
 }
+
+.techweek-header {
+  height: 800px;
+  background-color: red;
+  background-image: url('/images/pages/techweek-simon.jpg');
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+
+.post-bg {
+  background-color: #FAFAFA;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.post-card {
+  margin-top: -100px;
+  margin-bottom: 100px;
+}
+
+.post-card h2 {
+  padding-left: 40px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.post-card h4 {
+  margin-top: 30px;
+}
+
+.post-card ul {
+  padding-left: 0px;
+}
+
+.post-card li {
+  list-style-type: none;
+  padding-left: 40px;
+  padding-bottom: 40px;
+  border-top: 1px solid rgb(224, 224, 224)
+}
+
+.post-card a {
+  text-decoration: none;
+}
