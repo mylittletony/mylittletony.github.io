@@ -1533,3 +1533,17 @@ margin-top: -80px;
 .post-card a {
   text-decoration: none;
 }
+
+.sales-page {
+  background-color: #FAFAFA;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.sales-card {
+  margin-top: -100px;
+  margin-bottom: 100px;
+  padding-top: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
