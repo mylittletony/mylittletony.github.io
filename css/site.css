@@ -1151,7 +1151,6 @@ margin-top: -80px;
     font-size: 22px;
   }
 
-
 }
 
 .features-table-heading {
@@ -1180,6 +1179,20 @@ margin-top: -80px;
 
 .terms-card p {
   font-size: 14px;
+}
+
+.simple-page {
+  background: #FAFAFA;
+}
+
+.simple-card {
+  padding: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.simple-card p {
+  color: rgba(0,0,0, 0.54);
 }
 
 .plans-calc {
