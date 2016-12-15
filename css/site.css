@@ -587,6 +587,7 @@ margin-top: -80px;
 .casestudies-card li {
   list-style-type: none;
   padding-left: 40px;
+  padding-right: 40px;
   padding-top: 40px;
   padding-bottom: 60px;
   border-top: 1px solid rgb(224, 224, 224)
