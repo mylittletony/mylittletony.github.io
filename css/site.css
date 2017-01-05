@@ -1412,6 +1412,21 @@ margin-top: -80px;
   padding-top: 20px;
   padding-left: 40px;
   padding-right: 40px;
+  padding-bottom: 40px;
+}
+
+.branding-card p, .branding-card li {
+  color: rgba(0,0,0, 0.54);
+}
+
+.branding-card ul {
+  padding-left: 25px;
+  font-size: 17px;
+  font-weight: 300;
+}
+
+.branding-card li {
+  padding-bottom: 10px;
 }
 
 .circle-div {
