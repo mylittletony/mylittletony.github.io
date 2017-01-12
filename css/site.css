@@ -872,8 +872,18 @@ margin-top: -80px;
   background-size: cover;
 }
 
-.profile-image-khadija {
-  background-image: url('/images/pages/staff/khadija.jpg');
+.profile-image-ching {
+  background-image: url('/images/pages/staff/ching.jpg');
+  background-size: cover;
+}
+
+.profile-image-ching {
+  background-image: url('/images/pages/staff/ewan.jpg');
+  background-size: cover;
+}
+
+.profile-image-ching {
+  background-image: url('/images/pages/staff/zakr.jpg');
   background-size: cover;
 }
 
