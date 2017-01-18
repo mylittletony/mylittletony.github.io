@@ -113,7 +113,7 @@ margin-top: -80px;
     font-size: 20px;
   }
   .home-stats h2 {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 
@@ -375,6 +375,10 @@ margin-top: -80px;
   max-width: 100%;
 }
 
+.home-integrations p {
+  color: rgba(0,0,0, 0.54);
+}
+
 .home-integrations button {
   margin-top: 20px;
   margin-bottom: 30px;
@@ -412,12 +416,13 @@ margin-top: -80px;
 }
 
 .stat-card-stat h2 {
+  font-size: 28px;
   margin: 0px;
   text-align: center;
 }
 
 .stat-card-end p {
-  font-size: 1.2em;
+  font-size: 1em;
   text-align: center;
   margin: 0px;
 }
