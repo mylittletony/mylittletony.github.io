@@ -1277,8 +1277,20 @@ margin-top: -80px;
   margin-bottom: 50px;
 }
 
+@media (max-width: 479px) {
+  .simple-card {
+    padding: 20px;
+  }
+}
+
 .simple-card p {
   color: rgba(0,0,0, 0.54);
+}
+
+@media (max-width: 479px) {
+  .simple-card p {
+    font-size: 18px;
+  }
 }
 
 .plans-calc {
