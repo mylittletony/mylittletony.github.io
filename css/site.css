@@ -1114,6 +1114,19 @@ margin-top: -80px;
   margin-bottom: 60px;
 }
 
+@media (max-width: 479px) {
+  .community-post {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 479px) {
+  .community-post h1 {
+    font-size: 34px;
+  }
+}
+
 .community-post img {
   margin-top: 20px;
   margin-bottom: 40px;
