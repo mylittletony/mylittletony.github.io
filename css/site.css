@@ -1263,6 +1263,12 @@ margin-top: -80px;
   margin-bottom: 50px;
 }
 
+@media (max-width: 479px) {
+  .terms-card {
+    padding: 20px;
+  }
+}
+
 .terms-card p {
   font-size: 14px;
 }
