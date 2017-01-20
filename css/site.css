@@ -1701,3 +1701,37 @@ margin-top: -80px;
   padding-left: 40px;
   padding-right: 40px;
 }
+
+.cucumber-footer ul {
+ padding: 0px;
+}
+
+.cucumber-footer li {
+  list-style-type: none;
+  line-height: 20px;
+}
+
+.cucumber-footer p {
+  line-height: 20px;
+  margin-top: 24px;
+}
+
+.cucumber-footer a {
+  color: rgb(158, 158, 158);
+}
+
+.cucumber-footer h4 {
+  color: rgb(224, 224, 224);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.cucumber-footer-address {
+  text-align:right;
+}
+
+@media (max-width: 839px) {
+  .cucumber-footer-address {
+    text-align:left;
+  }
+}
