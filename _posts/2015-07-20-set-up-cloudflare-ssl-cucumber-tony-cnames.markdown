@@ -111,7 +111,7 @@ Enjoy! Remember, if you don't want to do all this, you can use our application. 
 
 <h2><a href="https://my.ctapp.io/#/create" class="button large success dst">Sign Up</a></h2>
 
-Sign-up for Cucumber Tony, it's free for unlimited access points and social logins :)
+Sign-up for Cucumber, it's free for unlimited access points and social logins :)
 </div>
 
 <br><br>
