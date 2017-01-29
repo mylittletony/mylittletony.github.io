@@ -30,8 +30,8 @@
     '</div>';
 
   var email;
-  var url = 'http://127.0.0.1:8080';
-  // var url = 'https://api.ctapp.io';
+  // var url = 'http://127.0.0.1:8080';
+  var url = 'https://api.ctapp.io';
 
   var regForm = function() {
     $('.register-user').append('<div id=\'main-form\'></div><div id=\'success\'></div>');
