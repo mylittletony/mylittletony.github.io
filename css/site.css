@@ -1735,3 +1735,23 @@ margin-top: -80px;
     text-align:left;
   }
 }
+
+.mdl-textfield__input {
+  color: black;
+  margin-top: 10px;
+}
+
+.register {
+  /* height: 80px; */
+  padding: 20px 0 20px 0;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 380px;
+  background-color: white;
+}
+
+.mdl-textfield--floating-label.is-invalid .mdl-textfield__label {
+  color: #FF5722;
+  /* color: #ff2c7f; */
+  font-size: 14px;
+}
