@@ -37,7 +37,7 @@ a {
 /*.home-header-img {
 position: relative;
 background: linear-gradient(rgba(1, 127, 221, 0.70), rgba(1, 127, 221, 0.70)),url(http://cdn.slashgear.com/wp-content/uploads/2012/10/google-datacenter-tech-05.jpg);
-background-color: #009688;
+background-color: #ff2c7f;
 background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
@@ -200,7 +200,7 @@ margin-top: -80px;
   z-index: 5;
   padding-top: 40px;
   padding-bottom: 60px;
-  background-color: #009688;
+  background-color: #ff2c7f;
   color: white;
 }
 
@@ -265,7 +265,7 @@ margin-top: -80px;
 }
 
 .contact-main {
-  background-color: #009688;
+  background-color: #ff2c7f;
   height: 400px;
   padding-top: 40px;
   padding-bottom: 60px;
@@ -341,7 +341,7 @@ margin-top: -80px;
 .get-started {
   position: relative;
   z-index: 3;
-  background-color: #009688;
+  background-color: #ff2c7f;
   margin-top: -20px;
   padding-top: 90px;
   padding-bottom: 110px;
@@ -484,7 +484,7 @@ margin-top: -80px;
 }
 
 .tutorial-main {
-  background-color: #009688;
+  background-color: #ff2c7f;
   height: 400px;
   color: white;
   line-height: 30px;
@@ -566,7 +566,7 @@ margin-top: -80px;
 }
 
 .casestudies-main {
-  background-color: #009688;
+  background-color: #ff2c7f;
   height: 400px;
   color: white;
   line-height: 30px;
@@ -727,7 +727,7 @@ margin-top: -80px;
 
 
 .plans-main {
-  background-color: #009688;
+  background-color: #ff2c7f;
   height: 400px;
   padding-top: 40px;
   padding-bottom: 60px;
@@ -759,7 +759,7 @@ margin-top: -80px;
 }
 
 .plan-title {
-  background: #009688;
+  background: #ff2c7f;
   color: white;
 }
 
@@ -827,7 +827,7 @@ margin-top: -80px;
   z-index: 5;
   padding-top: 40px;
   padding-bottom: 60px;
-  background-color: #009688;
+  background-color: #ff2c7f;
   color: white;
   height: 400px;
   background-image: url('/images/pages/shoreditch-fence.jpg');
@@ -952,7 +952,7 @@ margin-top: -80px;
 }
 
 .features-main {
-  background-color: #009688;
+  background-color: #ff2c7f;
   height: 300px;
   color: white;
   line-height: 30px;
@@ -986,8 +986,8 @@ margin-top: -80px;
   /*background: linear-gradient(rgba(1, 127, 221, 0.70), rgba(1, 127, 221, 0.70)),url(http://cdn.slashgear.com/wp-content/uploads/2012/10/google-datacenter-tech-05.jpg);*/
   background-image: url('/images/pages/ct-map.jpg');
   /*background-image: url('http://images.imagewallpaper.net/20160131/black-digital-world-map-1920x1080.jpg');*/
-  /*background-image: radial-gradient(circle farthest-corner at right top, #00ffff 0%, #03a9f4 25%, #009688 60%, #1a2565 100%);*/
-  background-color: #009688;
+  /*background-image: radial-gradient(circle farthest-corner at right top, #00ffff 0%, #03a9f4 25%, #ff2c7f 60%, #1a2565 100%);*/
+  background-color: #ff2c7f;
   background-repeat: no-repeat;
   background-position: left;
   background-size: cover;
@@ -997,7 +997,7 @@ margin-top: -80px;
 
 .home-about-banner {
   height: 400px;
-  background-color: #009688;
+  background-color: #ff2c7f;
   color: white;
 }
 
@@ -1037,7 +1037,7 @@ margin-top: -80px;
   z-index: 5;
   padding-top: 40px;
   padding-bottom: 60px;
-  background-color: #009688;
+  background-color: #ff2c7f;
   color: white;
   height: 400px;
 }
@@ -1051,7 +1051,7 @@ margin-top: -80px;
   z-index: 5;
   padding-top: 40px;
   padding-bottom: 60px;
-  background-color: #009688;
+  background-color: #ff2c7f;
   color: white;
   height: 400px;
 }
@@ -1065,7 +1065,7 @@ margin-top: -80px;
   z-index: 5;
   padding-top: 40px;
   padding-bottom: 60px;
-  background-color: #009688;
+  background-color: #ff2c7f;
   color: white;
   height: 400px;
 }
@@ -1241,7 +1241,7 @@ margin-top: -80px;
 }
 
 .features-table-heading {
-  background: #009688;
+  background: #ff2c7f;
   color: white;
 }
 
@@ -1322,7 +1322,7 @@ margin-top: -80px;
   z-index: 5;
   padding-top: 40px;
   padding-bottom: 60px;
-  background-color: #009688;
+  background-color: #ff2c7f;
   color: white;
   height: 250px;
 }
@@ -1350,7 +1350,7 @@ margin-top: -80px;
   z-index: 5;
   padding-top: 40px;
   padding-bottom: 60px;
-  background-color: #009688;
+  background-color: #ff2c7f;
   color: white;
   height: 250px;
 }
@@ -1364,7 +1364,7 @@ margin-top: -80px;
   z-index: 5;
   padding-top: 40px;
   padding-bottom: 60px;
-  background-color: #009688;
+  background-color: #ff2c7f;
   color: white;
   height: 250px;
 }
@@ -1378,7 +1378,7 @@ margin-top: -80px;
   z-index: 5;
   padding-top: 40px;
   padding-bottom: 60px;
-  background-color: #009688;
+  background-color: #ff2c7f;
   color: white;
   height: 250px;
 }
@@ -1392,7 +1392,7 @@ margin-top: -80px;
   z-index: 5;
   padding-top: 40px;
   padding-bottom: 60px;
-  background-color: #009688;
+  background-color: #ff2c7f;
   color: white;
   height: 250px;
 }
@@ -1443,7 +1443,7 @@ margin-top: -80px;
 }
 
 .features-banner-networks {
-  background-color: #009688;
+  background-color: #ff2c7f;
   color: white;
 }
 
@@ -1485,7 +1485,7 @@ margin-top: -80px;
 }
 
 .branding-banner {
-  background-color: #009688;
+  background-color: #ff2c7f;
   color: white;
   height: 400px;
   line-height: 30px;
