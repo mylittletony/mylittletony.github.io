@@ -12,12 +12,6 @@
     '<div>'+
     '<button style="background: #FF5722;" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" type="submit">Sign-up Free</button>'+
     '</div>'+
-    // '<label>Enter an email to get started</label>'+
-    // '<div class=\'small-10 columns\'>' +
-    // '<input class=\'register\' name=\'email\' type=\'email\' placeholder=\'Enter your email to sign-up\' ng-model=\'user.email\' required>' +
-    // '</div>' +
-    // '<div class=\'small-2 columns\'>' +
-    // '<button class="submit button postfix success" id=""><span></span><span class="creating">Go</span></button>'+
     '</div>' +
     '</div>' +
     '</div>' +
@@ -26,7 +20,7 @@
 
   var successTemplate =
     '<div class=\'alert-box success\' style=\'text-align: center; margin: 0 auto;\'>'+
-    '<p>You\'ve been invited, please go check your email.<br> If it doesn\'t arrive, <b class="reset">click here</b> to try again.</p>'+
+    '<p>You\'ve been invited, please check your email.<br></p>'+
     '</div>';
 
   var email;
