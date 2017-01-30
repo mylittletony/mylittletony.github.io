@@ -763,36 +763,11 @@ margin-top: -80px;
   color: white;
 }
 
-.plan-calc-title {
-  background: #ffffff;
-}
-
-.plan-title-free h4, .plan-title-mid h4, .plan-title-top h4, .plan-calc-title h4 {
+.plan-title-free h4, .plan-title-mid h4, .plan-title-top h4 {
   margin: 0px;
   padding-top: 20px;
   padding-bottom: 20px;
   border-bottom: 1px solid rgb(224, 224, 224);
-}
-
-.plan-calc {
-  height: 240px;
-}
-
-.plan-calc-body h3 {
-  margin-bottom: 0px;
-}
-
-.plan-calc-body {
-  padding-bottom: 20px;
-  border-bottom: 1px solid rgb(224, 224, 224);
-}
-
-.plan-calc-slider {
-  padding-top: 20px;
-}
-
-.plan-calc-footer {
-  margin-top: 10px;
 }
 
 .plan-price {
@@ -1298,19 +1273,6 @@ margin-top: -80px;
   .simple-card p {
     font-size: 18px;
   }
-}
-
-.plans-calc {
-  background-image: url('/images/pages/wall.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-}
-
-.plans-calc p {
-  color: rgba(0,0,0, 0.87);
-  font-weight: 500;
 }
 
 .meraki-banner {
