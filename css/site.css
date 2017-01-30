@@ -1726,3 +1726,15 @@ margin-top: -80px;
 .home-features .mdl-card {
   cursor: pointer;
 }
+/*
+.notification-banner {
+  background: #FF5722;
+  height: 100px;
+  color: white;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.notification-banner p {
+  margin: 0px;
+}*/
