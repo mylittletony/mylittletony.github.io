@@ -1722,3 +1722,7 @@ margin-top: -80px;
   /* color: #ff2c7f; */
   font-size: 14px;
 }
+
+.home-features .mdl-card {
+  cursor: pointer;
+}
