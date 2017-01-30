@@ -1712,6 +1712,11 @@ margin-top: -80px;
   background-color: white;
 }
 
+.register .mdl-button--raised.mdl-button--colored {
+  background: #FF5722;
+  margin-top:10px;
+}
+
 .mdl-textfield--floating-label.is-invalid .mdl-textfield__label {
   color: #FF5722;
   /* color: #ff2c7f; */

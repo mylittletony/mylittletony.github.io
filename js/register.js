@@ -1,7 +1,7 @@
 (function ($, window, document, undefined) {
 
   var formTemplate =
-    '<div class="register">'+
+    '<div class="register mdl-shadow--4dp mdl-card">'+
     '<form id=\'register\' name=\'myForm\'>' +
     '<div ng-hide=\'cookies\'>'+
     '<div class=\'row collapse\'>' +
@@ -9,8 +9,8 @@
     '<input class="mdl-textfield__input" id="register" name="email" type="email" required/>'+
     '<label class="mdl-textfield__label" for="fieldEmail">Enter your email now.</label>'+
     '</div>'+
-    '<div>'+
-    '<button style="background: #FF5722;" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" type="submit">Sign-up Free</button>'+
+    '<div style="">'+
+    '<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" type="submit">Sign-up Free</button>'+
     '</div>'+
     '</div>' +
     '</div>' +
@@ -82,4 +82,3 @@
   };
 
 }(jQuery, window, window.document));
-
