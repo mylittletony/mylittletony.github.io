@@ -39,6 +39,17 @@ layout: default
     </nav>
   </div>
   <main class="mdl-layout__content">
+
+    <div id="notification" class="notification mdl-shadow--4dp mdl-cell--hide-phone">
+      <i id="close" class="notification-close material-icons">close</i>
+      <div class="notification-header" onclick="window.open('https://www.picatic.com/school-of-cucumber/');">
+      </div>
+      <div class="notification-body" onclick="window.open='https://www.picatic.com/school-of-cucumber/';">
+        <h4>Want to Learn More About WiFi?</h4>
+        <p>Click Here to Sign-up for our Advanced Workshop for Network and WiFi Businesses</p>
+      </div>
+    </div>
+
     {{ content }}
     {% include footer.html %}
   </main>
