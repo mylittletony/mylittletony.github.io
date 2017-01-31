@@ -1,25 +1,39 @@
-// Get the modal
-var modal = document.getElementById('myModal');
+var notification = document.getElementById('notification');
 
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks the button, open the modal
+var close = document.getElementById("close");
 window.onload = function() {
-    modal.style.display = "block";
+    checkCookie();
+}
+close.onclick = function() {
+    notification.style.display = "none";
+    createCookie('closeNotification',"true",7);
 }
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-    modal.style.display = "none";
+function createCookie(name,value,days) {
+	if (days) {
+		var date = new Date();
+		date.setTime(date.getTime()+(days*24*60*60*1000));
+		var expires = "; expires="+date.toGMTString();
+	}
+	else var expires = "";
+	document.cookie = name+"="+value+expires+"; path=/";
 }
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
+function readCookie(name) {
+	var nameEQ = name + "=";
+	var ca = document.cookie.split(';');
+	for(var i=0;i < ca.length;i++) {
+		var c = ca[i];
+		while (c.charAt(0)==' ') c = c.substring(1,c.length);
+		if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+	}
+	return null;
+}
+
+function checkCookie() {
+  if (readCookie('closeNotification') === 'true') {
+      notification.style.display = "none";
+  } else {
+      notification.style.display = "block";
+  }
 }
