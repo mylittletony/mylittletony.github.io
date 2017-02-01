@@ -26,14 +26,6 @@ description: “The Dashboard and portal go a long way ​for​ ​monitoring �
 
 <hr>
 
-<h2>What’s the Name of Your Company</h2>
-
-<p>N-Share</p>
-
-<h2>What’s your name?</h2>
-
-<p>Rafael Mesquita.</p>
-
 <h2>Tell us a bit about your company</h2>
 
 <p>Unruly gets videos seen, shared and loved across the open web for brands that want to move people, not just reach people. By bringing emotional intelligence to digital advertising, we help 91% of Ad Age 100 brands inform and inspire 1.44bn people around the world, using polite outstream formats on sites that people love.</p>
