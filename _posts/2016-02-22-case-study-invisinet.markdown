@@ -14,13 +14,13 @@ description: “Without Cucumber we wouldn't be able to offer tailored marketing
 ---
 
 <div class="mdl-grid">
-<div class="case-study-side mdl-cell mdl-cell--3-col mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-typography--text-center mdl-shadow--4dp">
+<div class="case-study-side mdl-cell mdl-cell--3-col mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-typography--text-center mdl-shadow--1dp">
 <img class="cs-portrait text-center" src="/images/case-studies/invisinet/invisinet-rob.png" width="120px">
 <p>Rob Linsay <br> <small>Project Co-Ordinator</small></p>
 <img src="/images/case-studies/invisinet/invisinet-logo.png" width="200px">
 </div>
 
-<div class="case-study-post mdl-cell mdl-cell--9-col mdl-shadow--4dp">
+<div class="case-study-post mdl-cell mdl-cell--9-col mdl-shadow--1dp">
 <a href="/community/showcase/">< Back to Case Studies</a>
 <h1>How Invisinet Use Cucumber</h1>
 <p>Rob from Invisnet tells us how he uses Cucumber and why?</p>

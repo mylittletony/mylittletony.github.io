@@ -13,13 +13,13 @@ description: â€œCucumber has saved us so many man hours we couldn't not use it.â
 ---
 
 <div class="mdl-grid">
-<div class="case-study-side mdl-cell mdl-cell--3-col mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-typography--text-center mdl-shadow--4dp">
+<div class="case-study-side mdl-cell mdl-cell--3-col mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-typography--text-center mdl-shadow--1dp">
 <img class="cs-portrait text-center" src="/images/case-studies/force-36/force-36-richard.png" width="120px">
 <p>Richard Swain <br> <small>Commercial Director</small></p>
 <img src="/images/case-studies/force-36/force-36-logo.png" width="200px">
 </div>
 
-<div class="case-study-post mdl-cell mdl-cell--9-col mdl-shadow--4dp">
+<div class="case-study-post mdl-cell mdl-cell--9-col mdl-shadow--1dp">
 <a href="/community/showcase/">< Back to Case Studies</a>
 <h1>How Force 36 Use Cucumber</h1>
 <p>Richard from Force 36 IT Consultants tells us why they use Cucumber to manage wireless networks.</p>

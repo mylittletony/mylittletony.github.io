@@ -13,13 +13,13 @@ description: “Cucumber gives us point and shoot deployment, control over the n
 ---
 
 <div class="mdl-grid">
-<div class="case-study-side mdl-cell mdl-cell--3-col mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-typography--text-center mdl-shadow--4dp">
+<div class="case-study-side mdl-cell mdl-cell--3-col mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-typography--text-center mdl-shadow--1dp">
 <img class="cs-portrait text-center" src="/images/case-studies/rds/rds-lee.png" width="120px">
 <p>Nigel Humphreys & Lee Webster</p>
 <img src="/images/case-studies/rds/rds-logo.png" width="200px">
 </div>
 
-<div class="case-study-post mdl-cell mdl-cell--9-col mdl-shadow--4dp">
+<div class="case-study-post mdl-cell mdl-cell--9-col mdl-shadow--1dp">
 <a href="/community/showcase/">< Back to Case Studies</a>
 <h1>How RDS Global Use Cucumber</h1>
 <p>Nigel from RDS Global tells us why they use Cucumber to manage wireless networks, and how it’s improved their clients’ ROI.</p>

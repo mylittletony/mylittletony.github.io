@@ -13,13 +13,13 @@ description: “We wanted to stand out from the crowd and brand the welcome spla
 ---
 
 <div class="mdl-grid">
-<div class="case-study-side mdl-cell mdl-cell--3-col mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-typography--text-center mdl-shadow--4dp">
+<div class="case-study-side mdl-cell mdl-cell--3-col mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-typography--text-center mdl-shadow--1dp">
 <img class="cs-portrait text-center" src="/images/case-studies/benitos/benitos-walter.png" width="120px">
 <p>Walter Weinzettle <br> <small>Operations Manager</small></p>
 <img src="/images/case-studies/benitos/benitos-logo.png" width="200px">
 </div>
 
-<div class="case-study-post mdl-cell mdl-cell--9-col mdl-shadow--4dp">
+<div class="case-study-post mdl-cell mdl-cell--9-col mdl-shadow--1dp">
 <a href="/community/showcase/">< Back to Case Studies</a>
 <h1>How Benito's Hat Use Cucumber</h1>
 <p>Walter is operations manager of a chain of Mexican restaurants. Benito’s serve by far the best burritos in town. Walters talks to us about why he uses Cucumber to run his Wi-Fi.</p>

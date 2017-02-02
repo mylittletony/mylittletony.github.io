@@ -13,13 +13,13 @@ description: “As we have our own marketing and business intelligence platform,
 ---
 
 <div class="mdl-grid">
-<div class="case-study-side mdl-cell mdl-cell--3-col mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-typography--text-center mdl-shadow--4dp">
+<div class="case-study-side mdl-cell mdl-cell--3-col mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-typography--text-center mdl-shadow--1dp">
 <img class="cs-portrait text-center" src="/images/case-studies/n-share/rafael-mesquita.png" width="120px">
 <p>Rafael Mesquita <br> <small>Director</small></p>
 <img src="/images/case-studies/n-share/n-share-alt-logo.png" width="200px">
 </div>
 
-<div class="case-study-post mdl-cell mdl-cell--9-col mdl-shadow--4dp">
+<div class="case-study-post mdl-cell mdl-cell--9-col mdl-shadow--1dp">
 <a href="/community/showcase/">< Back to Case Studies</a>
 <h1>How N-Share Uses Cucumber</h1>
 <p>Rafael from N-share is building a database for his clients with a marketing platform. He uses Cucumber’s API integration to create the ideal platform for his business.</p>

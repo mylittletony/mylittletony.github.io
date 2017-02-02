@@ -13,13 +13,13 @@ description: “It's IT and things do go wrong so I like being able to speak to 
 ---
 
 <div class="mdl-grid">
-<div class="case-study-side mdl-cell mdl-cell--3-col mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-typography--text-center mdl-shadow--4dp">
+<div class="case-study-side mdl-cell mdl-cell--3-col mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-typography--text-center mdl-shadow--1dp">
 <img class="cs-portrait text-center" src="/images/case-studies/exmoor/exmoor-jonathan.png" width="120px">
 <p>Jonathan Coole <br> <small>Infrastructure Technician</small></p>
 <img src="/images/case-studies/exmoor/exmoor-logo.png" width="200px">
 </div>
 
-<div class="case-study-post mdl-cell mdl-cell--9-col mdl-shadow--4dp">
+<div class="case-study-post mdl-cell mdl-cell--9-col mdl-shadow--1dp">
 <a href="/community/showcase/">< Back to Case Studies</a>
 <h1>How Exmoor National Park Use Cucumber</h1>
 <p>Jon is responsible for the ICT at Exmoor National Park. We’re quite jealous of his job as he gets to work in the park which is beautiful. He talks to us about why they use Cucumber.</p>

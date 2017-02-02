@@ -13,13 +13,13 @@ description: “I can't think of one thing I liked in Meraki that I didn't get i
 ---
 
 <div class="mdl-grid">
-<div class="case-study-side mdl-cell mdl-cell--3-col mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-typography--text-center mdl-shadow--4dp">
+<div class="case-study-side mdl-cell mdl-cell--3-col mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-typography--text-center mdl-shadow--1dp">
 <img class="cs-portrait text-center" src="/images/case-studies/vospers/vospers-jonathan.png" width="120px">
 <p>Jonathan Brickell <br> <small>Senior IT Technician</small></p>
 <img src="/images/case-studies/vospers/vospers-logo.png" width="200px">
 </div>
 
-<div class="case-study-post mdl-cell mdl-cell--9-col mdl-shadow--4dp">
+<div class="case-study-post mdl-cell mdl-cell--9-col mdl-shadow--1dp">
 <a href="/community/showcase/">< Back to Case Studies</a>
 <h1>How Vospers Use Cucumber</h1>
 <p>Jonathan has been using Cucumber Tony since day one. He tells us why his network is still growing and how it's changed things for the better at Vospers.</p>

@@ -13,13 +13,13 @@ description: “The Dashboard and portal go a long way ​for​ ​monitoring �
 ---
 
 <div class="mdl-grid">
-<div class="case-study-side mdl-cell mdl-cell--3-col mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-typography--text-center mdl-shadow--4dp">
+<div class="case-study-side mdl-cell mdl-cell--3-col mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-typography--text-center mdl-shadow--1dp">
 <!-- <img class="cs-portrait text-center" src="/images/case-studies/n-share/rafael-mesquita.png" width="120px"> -->
 <p>Petrut <br> <small>Senior Systems Engineer</small></p>
 <img src="/images/case-studies/unruly/unruly-logo.png" width="200px">
 </div>
 
-<div class="case-study-post mdl-cell mdl-cell--9-col mdl-shadow--4dp">
+<div class="case-study-post mdl-cell mdl-cell--9-col mdl-shadow--1dp">
 <a href="/community/showcase/">< Back to Case Studies</a>
 <h1>Unruly Group Share Their Cucumber Experience</h1>
 <p>Petrut, Senior Systems Engineer at Unruly shares his experience using Cucumber to manage their network.</p>

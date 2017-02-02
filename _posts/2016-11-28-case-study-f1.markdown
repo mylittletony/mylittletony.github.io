@@ -13,13 +13,13 @@ description: “The ease of customisation of the page within the portal is great
 ---
 
 <div class="mdl-grid">
-<div class="case-study-side mdl-cell mdl-cell--3-col mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-typography--text-center mdl-shadow--4dp">
+<div class="case-study-side mdl-cell mdl-cell--3-col mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-typography--text-center mdl-shadow--1dp">
 <!-- <img class="cs-portrait text-center" src="/images/case-studies/n-share/rafael-mesquita.png" width="120px"> -->
 <p>Mark<br><small>Technical Project Manager</small></p>
 <img src="/images/case-studies/f1/f1-logo.png" width="200px">
 </div>
 
-<div class="case-study-post mdl-cell mdl-cell--9-col mdl-shadow--4dp">
+<div class="case-study-post mdl-cell mdl-cell--9-col mdl-shadow--1dp">
 <a href="/community/showcase/">< Back to Case Studies</a>
 <h1>F1 Consultancy Integrates Xirrus with Cucumber</h1>
 <p>The F1 Consultancy team were looking for guest access integration for events with thousands of users. They chose Cucumber to ensure everything would run seamlessly. Here’s what Mark had to say.</p>

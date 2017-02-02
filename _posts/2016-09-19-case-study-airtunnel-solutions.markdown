@@ -13,13 +13,13 @@ description: “Thank you for the excellent customer service, always being there
 ---
 
 <div class="mdl-grid">
-<div class="case-study-side mdl-cell mdl-cell--3-col mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-typography--text-center mdl-shadow--4dp">
+<div class="case-study-side mdl-cell mdl-cell--3-col mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-typography--text-center mdl-shadow--1dp">
 <!-- <img class="cs-portrait text-center" src="" width="120px"> -->
 <p>Craig Rowley <br> <small>Director</small></p>
 <img src="/images/case-studies/airtunnel/air-tunnel-solutions-logo.png" width="200px">
 </div>
 
-<div class="case-study-post mdl-cell mdl-cell--9-col mdl-shadow--4dp">
+<div class="case-study-post mdl-cell mdl-cell--9-col mdl-shadow--1dp">
 <a href="/community/showcase/">< Back to Case Studies</a>
 <h1>How Air Tunnel Solutions Use Cucumber</h1>
 <p>Craig from Air Tunnel Solutions has been a great customer of Cucumber for a couple years. He’s sharing his story of why he’s a Cucumberer and how his business uses it.</p>

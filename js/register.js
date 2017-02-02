@@ -1,7 +1,7 @@
 (function ($, window, document, undefined) {
 
   var formTemplate =
-    '<div class="register mdl-shadow--4dp mdl-card">'+
+    '<div class="register mdl-shadow--1dp mdl-card">'+
     '<form id=\'register\' name=\'myForm\'>' +
     '<div ng-hide=\'cookies\'>'+
     '<div class=\'row collapse\'>' +
