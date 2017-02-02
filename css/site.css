@@ -1771,7 +1771,7 @@ margin-top: -80px;
   position: fixed !important;
   position: absolute; /*ie6 */
   bottom: 2em;
-  right: 2em;
+  left: 2em;
   z-index: 42;
   background: white;
   border-radius: 4px;
