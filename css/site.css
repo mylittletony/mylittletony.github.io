@@ -1,6 +1,6 @@
 .arrow {
   position: absolute;
-  bottom: 0;
+  bottom: 3em;
   left: 50%;
   margin-left:-20px;
 }
@@ -53,6 +53,7 @@ margin-top: -80px;
 }*/
 
 .home-header {
+  position: relative;
   height: 800px;
 }
 
