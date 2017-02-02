@@ -13,13 +13,13 @@ description: “I like the new Cucumber layout. The flatness and design makes it
 ---
 
 <div class="mdl-grid">
-<div class="case-study-side mdl-cell mdl-cell--3-col mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-typography--text-center mdl-shadow--4dp">
+<div class="case-study-side mdl-cell mdl-cell--3-col mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-typography--text-center mdl-shadow--1dp">
 <!-- <img class="cs-portrait text-center" src="/images/case-studies/vospers/vospers-jonathan.png" width="120px"> -->
 <p>Steph Andrews <br> <small>IT Support Analyst</small></p>
 <img src="/images/case-studies/suffolk-libraries/suffolk-libraries-logo.png" width="200px">
 </div>
 
-<div class="case-study-post mdl-cell mdl-cell--9-col mdl-shadow--4dp">
+<div class="case-study-post mdl-cell mdl-cell--9-col mdl-shadow--1dp">
 <a href="/community/showcase/">< Back to Case Studies</a>
 <h1>How Suffolk Libraries Use Cucumber</h1>
 <p>Suffolk Libraries has been a customer for many years. Today they share their story in hopes others who have a similar network can learn from their experience.</p>

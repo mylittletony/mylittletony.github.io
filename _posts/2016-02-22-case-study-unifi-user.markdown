@@ -13,12 +13,12 @@ description: “The extra functionality has really changed how we run the Wi-Fi 
 ---
 
 <div class="mdl-grid">
-<div class="case-study-side mdl-cell mdl-cell--3-col mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-typography--text-center mdl-shadow--4dp">
+<div class="case-study-side mdl-cell mdl-cell--3-col mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-typography--text-center mdl-shadow--1dp">
 <img class="cs-portrait text-center" src="/images/case-studies/other/anonymous.png" width="120px">
 <p>Anonymous <br> <small>IT Manager</small></p>
 </div>
 
-<div class="case-study-post mdl-cell mdl-cell--9-col mdl-shadow--4dp">
+<div class="case-study-post mdl-cell mdl-cell--9-col mdl-shadow--1dp">
 <a href="/community/showcase/">< Back to Case Studies</a>
 <h1>Using Cucumber To Manage UniFi</h1>
 <p>We asked one avid user why he uses Cucumber to manage his Ubiquiti UniFi network. He asked that he remained anonymous to avoid revealing any information to his competition. He said: </p>

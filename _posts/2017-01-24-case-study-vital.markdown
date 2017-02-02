@@ -13,13 +13,13 @@ description: “It not only provides us with a great, centralised place to manag
 ---
 
 <div class="mdl-grid">
-<div class="case-study-side mdl-cell mdl-cell--3-col mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-typography--text-center mdl-shadow--4dp">
+<div class="case-study-side mdl-cell mdl-cell--3-col mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-typography--text-center mdl-shadow--1dp">
 <!-- <img class="cs-portrait text-center" src="/images/case-studies/x/x.png" width="120px"> -->
 <p>Lee Evans<br><small>Vital Technology Group MD</small></p>
 <img src="/images/case-studies/vital/vital-logo.png" width="200px">
 </div>
 
-<div class="case-study-post mdl-cell mdl-cell--9-col mdl-shadow--4dp">
+<div class="case-study-post mdl-cell mdl-cell--9-col mdl-shadow--1dp">
 <a href="/community/showcase/">< Back to Case Studies</a>
 <h1>Cucumber - A Vital Solution</h1>
 <p>Today we hear from Lee Evans, MD of Vital Technology Group and their experience with Cucumber.</p>
