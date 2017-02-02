@@ -418,6 +418,11 @@ margin-top: -80px;
   margin-top: 0px;
 }
 
+.home-customers img {
+  width: 100%;
+  height: auto;
+}
+
 @media (max-width: 647px) {
   .home-customers {
     display: none;
