@@ -49,7 +49,7 @@ a {
 /*.home-header-img {
 position: relative;
 background: linear-gradient(rgba(1, 127, 221, 0.70), rgba(1, 127, 221, 0.70)),url(http://cdn.slashgear.com/wp-content/uploads/2012/10/google-datacenter-tech-05.jpg);
-background-color: #FF5722;
+background-color: #294747;
 background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
@@ -213,7 +213,7 @@ margin-top: -80px;
   z-index: 5;
   padding-top: 40px;
   padding-bottom: 60px;
-  background-color: #FF5722;
+  background-color: #294747;
   color: white;
 }
 
@@ -278,7 +278,7 @@ margin-top: -80px;
 }
 
 .contact-main {
-  background-color: #FF5722;
+  background-color: #294747;
   height: 400px;
   padding-top: 40px;
   padding-bottom: 60px;
@@ -354,7 +354,7 @@ margin-top: -80px;
 .get-started {
   position: relative;
   z-index: 3;
-  background-color: #FF5722;
+  background-color: #294747;
   margin-top: -20px;
   padding-top: 90px;
   padding-bottom: 110px;
@@ -512,7 +512,7 @@ margin-top: -80px;
 }
 
 .tutorial-main {
-  background-color: #FF5722;
+  background-color: #294747;
   height: 400px;
   color: white;
   line-height: 30px;
@@ -755,7 +755,7 @@ margin-top: -80px;
 
 
 .plans-main {
-  background-color: #FF5722;
+  background-color: #294747;
   height: 400px;
   padding-top: 40px;
   padding-bottom: 60px;
@@ -830,7 +830,7 @@ margin-top: -80px;
   z-index: 5;
   padding-top: 40px;
   padding-bottom: 60px;
-  background-color: #FF5722;
+  background-color: #294747;
   color: white;
   height: 400px;
   background-image: url('/images/pages/shoreditch-fence.jpg');
@@ -955,7 +955,7 @@ margin-top: -80px;
 }
 
 .features-main {
-  background-color: #FF5722;
+  background-color: #294747;
   height: 300px;
   color: white;
   line-height: 30px;
@@ -989,8 +989,8 @@ margin-top: -80px;
   /*background: linear-gradient(rgba(1, 127, 221, 0.70), rgba(1, 127, 221, 0.70)),url(http://cdn.slashgear.com/wp-content/uploads/2012/10/google-datacenter-tech-05.jpg);*/
   background-image: url('/images/pages/ct-map.jpg');
   /*background-image: url('http://images.imagewallpaper.net/20160131/black-digital-world-map-1920x1080.jpg');*/
-  /*background-image: radial-gradient(circle farthest-corner at right top, #00ffff 0%, #03a9f4 25%, #FF5722 60%, #1a2565 100%);*/
-  background-color: #FF5722;
+  /*background-image: radial-gradient(circle farthest-corner at right top, #00ffff 0%, #03a9f4 25%, #294747 60%, #1a2565 100%);*/
+  background-color: #294747;
   background-repeat: no-repeat;
   background-position: left;
   background-size: cover;
@@ -1040,7 +1040,7 @@ margin-top: -80px;
   z-index: 5;
   padding-top: 40px;
   padding-bottom: 60px;
-  background-color: #FF5722;
+  background-color: #294747;
   color: white;
   height: 400px;
 }
@@ -1054,7 +1054,7 @@ margin-top: -80px;
   z-index: 5;
   padding-top: 40px;
   padding-bottom: 60px;
-  background-color: #FF5722;
+  background-color: #294747;
   color: white;
   height: 400px;
 }
@@ -1068,7 +1068,7 @@ margin-top: -80px;
   z-index: 5;
   padding-top: 40px;
   padding-bottom: 60px;
-  background-color: #FF5722;
+  background-color: #294747;
   color: white;
   height: 400px;
 }
@@ -1312,7 +1312,7 @@ margin-top: -80px;
   z-index: 5;
   padding-top: 40px;
   padding-bottom: 60px;
-  background-color: #FF5722;
+  background-color: #294747;
   color: white;
   height: 250px;
 }
@@ -1340,7 +1340,7 @@ margin-top: -80px;
   z-index: 5;
   padding-top: 40px;
   padding-bottom: 60px;
-  background-color: #FF5722;
+  background-color: #294747;
   color: white;
   height: 250px;
 }
@@ -1354,7 +1354,7 @@ margin-top: -80px;
   z-index: 5;
   padding-top: 40px;
   padding-bottom: 60px;
-  background-color: #FF5722;
+  background-color: #294747;
   color: white;
   height: 250px;
 }
@@ -1368,7 +1368,7 @@ margin-top: -80px;
   z-index: 5;
   padding-top: 40px;
   padding-bottom: 60px;
-  background-color: #FF5722;
+  background-color: #294747;
   color: white;
   height: 250px;
 }
@@ -1382,7 +1382,7 @@ margin-top: -80px;
   z-index: 5;
   padding-top: 40px;
   padding-bottom: 60px;
-  background-color: #FF5722;
+  background-color: #294747;
   color: white;
   height: 250px;
 }
@@ -1433,7 +1433,7 @@ margin-top: -80px;
 }
 
 .features-banner-networks {
-  background-color: #FF5722;
+  background-color: #294747;
   color: white;
 }
 
@@ -1475,7 +1475,7 @@ margin-top: -80px;
 }
 
 .branding-banner {
-  background-color: #FF5722;
+  background-color: #294747;
   color: white;
   height: 400px;
   line-height: 30px;
@@ -1741,13 +1741,13 @@ margin-top: -80px;
 }
 
 .register .mdl-button--raised.mdl-button--colored {
-  background: #FF5722;
+  background: #294747;
   margin-top:10px;
 }
 
 .mdl-textfield--floating-label.is-invalid .mdl-textfield__label {
-  color: #FF5722;
-  /* color: #FF5722; */
+  color: #294747;
+  /* color: #294747; */
   font-size: 14px;
 }
 
@@ -1756,7 +1756,7 @@ margin-top: -80px;
 }
 /*
 .notification-banner {
-  background: #FF5722;
+  background: #294747;
   height: 100px;
   color: white;
   cursor: pointer;
