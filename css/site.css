@@ -46,16 +46,9 @@ a {
   margin: 0 auto;
 }
 
-/*.home-header-img {
-position: relative;
-background: linear-gradient(rgba(1, 127, 221, 0.70), rgba(1, 127, 221, 0.70)),url(http://cdn.slashgear.com/wp-content/uploads/2012/10/google-datacenter-tech-05.jpg);
-background-color: #294747;
-background-repeat: no-repeat;
-background-position: center;
-background-size: cover;
-min-height: 800px;
-margin-top: -80px;
-}*/
+.mdl-mega-footer {
+    background-color: #294747;
+}
 
 .home-header {
   position: relative;
@@ -1000,7 +993,7 @@ margin-top: -80px;
 
 .home-about-banner {
   height: 300px;
-  background-color: #FF5722;
+  background-color: #294747;
   color: white;
 }
 
