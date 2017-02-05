@@ -1,3 +1,7 @@
+html {
+  color: #294747;
+}
+
 .arrow {
   position: absolute;
   bottom: 3em;
@@ -1815,6 +1819,6 @@ a {
   width: 50%;
   position: absolute;
   left: 50%;
-  margin-top: -59px;
+  margin-top: 0px;
   margin-left: 20px;
 }
