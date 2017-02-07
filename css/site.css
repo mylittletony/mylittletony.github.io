@@ -1,5 +1,6 @@
 html {
   color: #294747;
+  scroll-behaviour: smooth;
 }
 
 .arrow {
@@ -1031,7 +1032,7 @@ a {
 }
 
 .hardware-banner {
-  background-image: url('/images/pages/devices.jpg');
+  background-image: url('/images/pages/unifi.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

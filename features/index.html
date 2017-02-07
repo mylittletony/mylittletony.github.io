@@ -32,33 +32,51 @@ window.onload = navactive;
     <h2>Discover</h2>
     <div class="mdl-grid card-icons" style="margin:0px;">
       <div class="mdl-cell mdl-cell--2-col mdl-typography--text-center">
-          <i class="material-icons md-64">dashboard</i>
-          <h5>Management</h5>
+        <a data-scroll href="#guests">
+          <i class="material-icons md-64">devices</i>
+          <h5>Guests</h5>
+        </a>
       </div>
       <div class="mdl-cell mdl-cell--2-col mdl-typography--text-center">
+        <a data-scroll href="#networks">
           <i class="material-icons md-64">wifi</i>
           <h5>Networking</h5>
+        </a>
       </div>
       <div class="mdl-cell mdl-cell--2-col mdl-typography--text-center">
-          <i class="material-icons md-64">lock_outline</i>
-          <h5>Security</h5>
+        <a data-scroll href="#manage">
+          <i class="material-icons md-64">dashboard</i>
+          <h5>Management</h5>
+        </a>
       </div>
       <div class="mdl-cell mdl-cell--2-col mdl-typography--text-center">
-          <i class="material-icons md-64">perm_identity</i>
-          <h5>Branding</h5>
-      </div>
-      <div class="mdl-cell mdl-cell--2-col mdl-typography--text-center">
+        <a data-scroll href="#reports">
           <i class="material-icons md-64">timeline</i>
           <h5>Reports</h5>
+        </a>
+      </div>
+      <!-- <div class="mdl-cell mdl-cell--2-col mdl-typography--text-center">
+        <a data-scroll href="#secure">
+          <i class="material-icons md-64">lock_outline</i>
+          <h5>Security</h5>
+        </a>
+      </div> -->
+      <div class="mdl-cell mdl-cell--2-col mdl-typography--text-center">
+        <a data-scroll href="#whitelabel">
+          <i class="material-icons md-64">perm_identity</i>
+          <h5>Branding</h5>
+        </a>
       </div>
       <div class="mdl-cell mdl-cell--2-col mdl-typography--text-center">
+        <a data-scroll href="#integrate">
           <i class="material-icons md-64">widgets</i>
           <h5>Integrations</h5>
+        </a>
       </div>
     </div>
   </div>
 
-  <a name="guest"></a>
+  <span id="guests"></span>
   <div class="mat-banner mdl-grid">
     <div class="center-cell mdl-cell mdl-cell--11-col">
       <h2 class="mdl-typography--text-center">Welcome Your Guests</h2>
@@ -78,7 +96,7 @@ window.onload = navactive;
     </div>
   </div>
 
-  <a name="networks"></a>
+  <span id="networks"></span>
   <div class="mat-banner mdl-grid">
     <div class="center-cell mdl-cell mdl-cell--11-col">
       <h2 class="mdl-typography--text-center">SDN - Stupidly Different Networking</h2>
@@ -97,7 +115,7 @@ window.onload = navactive;
     </div>
   </div>
 
-  <a name="manage"></a>
+  <span id="manage"></span>
   <div class="mat-banner mdl-grid">
     <div class="center-cell mdl-cell mdl-cell--11-col">
       <h2 class="mdl-typography--text-center">Hello, How are You? Can Your WiFi Do This?</h2>
@@ -119,7 +137,7 @@ window.onload = navactive;
     </div>
   </div>
 
-  <a name="reports"></a>
+  <span id="reports"></span>
   <div class="mat-banner mdl-grid">
     <div class="center-cell mdl-cell mdl-cell--11-col">
       <h2 class="mdl-typography--text-center">Pretty (and useful) Graphs and Reports</h2>
@@ -137,7 +155,25 @@ window.onload = navactive;
     </div>
   </div>
 
-  <a name="secure"></a>
+  <span id="whitelabel"></span>
+  <div class="mat-banner mdl-grid">
+    <div class="center-cell mdl-cell mdl-cell--11-col">
+      <h2 class="mdl-typography--text-center">Multi-Tennant and Fully White Label</h2>
+      <div class="mdl-grid">
+        <div class="center-cell mdl-cell mdl-cell--6-col mdl-cell--7-col-tablet mdl-cell--7-col-phone mdl-cell--middle ">
+          <h4>Customise And Scale, Like A Boss</h4>
+          <p>Create multiple brands to streamline your network deployments. Customise the colours, logos and design. Be the god of your networks. Invite your users to manage your networks with fined-grained access control and permissions.</p>
+          <h4>Brand Management And Control</h4>
+          <p>Create custom rules for your brands. Selectively enable or hide features by default - across your networks and brands. Need a fixed SSID per location created? No problem.</p>
+        </div>
+        <div class="center-cell mdl-cell--middle mdl-cell mdl-cell--5-col mdl-typography--text-center">
+          <a href="/features/branding/"><img src="/images/pages/branding.jpg"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <span id="secure"></span>
   <div class="mat-banner mdl-grid">
     <div class="center-cell mdl-cell mdl-cell--11-col">
       <h2 class="mdl-typography--text-center">Secure Your Networks, Like a Boss</h2>
@@ -153,9 +189,9 @@ window.onload = navactive;
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
-  <a name="integrate"></a>
+  <span id="integrate"></span>
   <div class="mat-banner mdl-grid">
     <div class="center-cell mdl-cell mdl-cell--11-col">
       <h2 class="mdl-typography--text-center">Get Integrated</h2>
@@ -219,24 +255,6 @@ window.onload = navactive;
     </div>
   </div>
 
-  <a name="whitelabel"></a>
-  <div class="mat-banner mdl-grid">
-    <div class="center-cell mdl-cell mdl-cell--11-col">
-      <h2 class="mdl-typography--text-center">Multi-Tennant and Fully White Label</h2>
-      <div class="mdl-grid">
-        <div class="center-cell mdl-cell mdl-cell--6-col mdl-cell--7-col-tablet mdl-cell--7-col-phone mdl-cell--middle ">
-          <h4>Customise And Scale, Like A Boss</h4>
-          <p>Create multiple brands to streamline your network deployments. Customise the colours, logos and design. Be the god of your networks. Invite your users to manage your networks with fined-grained access control and permissions.</p>
-          <h4>Brand Management And Control</h4>
-          <p>Create custom rules for your brands. Selectively enable or hide features by default - across your networks and brands. Need a fixed SSID per location created? No problem.</p>
-        </div>
-        <div class="center-cell mdl-cell--middle mdl-cell mdl-cell--5-col mdl-typography--text-center">
-          <a href="/features/branding/"><img src="/images/pages/branding.jpg"></a>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <div class="mat-banner mdl-grid">
     <div class="center-cell mdl-cell mdl-cell--11-col">
       <div class="mdl-grid">
@@ -255,3 +273,7 @@ window.onload = navactive;
 
 
 </div>
+
+<script>
+    smoothScroll.init();
+</script>
