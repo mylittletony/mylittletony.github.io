@@ -1,5 +1,6 @@
 html {
   color: #294747;
+  scroll-behaviour: smooth;
 }
 
 .arrow {
@@ -999,6 +1000,8 @@ a {
   height: 300px;
   background-color: #294747;
   color: white;
+  position: relative;
+  padding: 40px 0 60px 0;
 }
 
 @media (max-width: 479px) {
@@ -1029,7 +1032,7 @@ a {
 }
 
 .hardware-banner {
-  background-image: url('/images/pages/devices.jpg');
+  background-image: url('/images/pages/unifi.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
