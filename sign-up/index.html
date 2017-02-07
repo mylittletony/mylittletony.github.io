@@ -10,19 +10,46 @@ permalink: /sign-up/
 
   <div class="mat-banner mdl-grid">
     <div class="center-cell mdl-cell mdl-cell--11-col">
-      <h2 class="mdl-typography--text-center">You're in good company!</h2>
-      <div class="mdl-grid">
-        <div class="center-cell mdl-cell mdl-cell--6-col mdl-cell--7-col-tablet mdl-cell--7-col-phone mdl-cell--middle">
-          <p class="register-user"></p>
-          <!-- <h4>Flash your Ubiquiti UniFi APs with Cucumber</h4> -->
-          <!-- <p>Follow our simple guides and get your APs running our custom firmware. You can always revert back to the UniFi firmware later on.</p> -->
-          <a href="https://my.ctapp.io/#/create?ref=UniFi" target="_blank">
-            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
-              SIGN-UP
-            </button>
-          </a>
+      <h2 class="mdl-typography">A Simpler Way to WiFi</h2>
+      <h3>Cucumber gives you everything you need to run reliable, scalable, manageable networks.</h3>
+      <p>Open your account in less than 1 minute.</p>
+
+      <form id="register" name="myForm">
+        <div class="row collapse">
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input autofocus class="mdl-textfield__input" id="register" name="email" type="email" required>
+            <label class="mdl-textfield__label" for="fieldEmail">Email address.</label>
+          </div>
+          <div style="">
+            <button id="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" type="submit">Sign-up Free</button>
+          </div>
         </div>
+      </form>
       </div>
-    </div>
   </div>
 </div>
+
+<script>
+  var email;
+  var url = 'http://127.0.0.1:8080';
+  // var url = 'https://api.ctapp.io';
+
+  var success = function() {
+    window.location.href = '/youre-awesome';
+  };
+
+$(document).on("submit", "#register",  function( event ) {
+  event.preventDefault();
+  var values = $(this).serialize();
+  email = $('input[name="email"]').val();
+
+  $.ajax({
+    type: 'POST',
+    url: url + '/api/v1/holding_accounts',
+    data: $(this).serialize(),
+    error: function(){
+    },
+    success: success,
+  });
+});
+</script>

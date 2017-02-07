@@ -79,4 +79,4 @@ Cucumber Tony has loads of tools built-in to improve your Wi-Fi signal and secur
 
 It's free for unlimited locations and access points.
 
-<a href="https://my.ctapp.io/#/create" class="button success large">Join Now</a>
+<a href="/sign-up" class="button success large">Join Now</a>
