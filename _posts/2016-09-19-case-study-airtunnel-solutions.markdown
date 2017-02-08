@@ -56,10 +56,6 @@ description: “Thank you for the excellent customer service, always being there
 
 <p>Splash pages. Easy management of our access points. Live reporting and email address capture.</p>
 
-<h2>Any features you’d like to see added?</h2>
-
-<p>Longer term reporting functionality, easy export with more detailed email reports.</p>
-
 <h2>Is there anything Cucumber could do better?</h2>
 
 <p>No, just crack on as you have been :)</p>

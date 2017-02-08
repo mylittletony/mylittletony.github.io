@@ -54,14 +54,6 @@ description: “As we have our own marketing and business intelligence platform,
 
 <p>We use the custom registration splash pages and it’s great the end users don’t need to complete the form again to sign in if they’ve been somewhere before.</p>
 
-<h2>Any features you’d like to see added?</h2>
-
-<p>We’d like to be able to host splash pages on our servers and point Cucumber to it at authentication. It would be easier to edit some requested form information this way.</p>
-
-<h2>Is there anything Cucumber could do better?</h2>
-
-<p>It looks like you’re already keeping up the documentation that you’re updating. They’re made clearer and the steps are better to follow.</p>
-
 <h2>Anything else you’d like to add?</h2>
 
 <p>Keep up the good work!</p>
