@@ -51,14 +51,6 @@ Unruly has a decade’s data of consumer responses to video and uses that to hon
 
 <p>The Dashboard and portal go a long way ​for​ ​monitoring ​and​ ​troubleshooting​ on a ​daily basis. Additionally, instant chat​ engagement ​with support ​and ​enhanced traffic stats help us keep a WiFi standards high.</p>
 
-<h2>Any features you’d like to see added?</h2>
-
-<p>Nothing that springs to mind immediately. We rely on the CT team to come up with new sustainable features.</p>
-
-<h2>Is there anything Cucumber can do better?</h2>
-
-<p>To decrease the outage emails sent erroneously​. i.e. getting an outage email when there’s no outage.</p>
-
 <h2>Anything else you’d like to add?</h2>
 
 <p>Keep up the good work!</p>

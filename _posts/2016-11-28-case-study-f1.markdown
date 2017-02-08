@@ -46,10 +46,6 @@ description: “The ease of customisation of the page within the portal is great
 
 <p>The ease of customisation of the page within the portal is great. This also scales on various devices very well, compared to other solutions we have tried.</p>
 
-<h2>Any features you’d like to see added?</h2>
-
-<p>Better integration and functionality with Xirrus products.</p>
-
 <h2>Anything else you’d like to add?</h2>
 
 <p>I’d like to thank the team, who worked tirelessly in ensuring the solution worked well with our kit in time for the event.</p>

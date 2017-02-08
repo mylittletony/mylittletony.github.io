@@ -54,10 +54,6 @@ description: “I like the new Cucumber layout. The flatness and design makes it
 
 <p>The chat feature is great. It’s much easier to find in the new platform and the response time is immediate. Where some of the libraries are located, they don’t always have phone signal. Being able to chat to someone and get our problems resolved quickly is very helpful.</p>
 
-<h2>Any features you’d like to see added?</h2>
-
-<p>As we manage 50 sites that have similar network requirements, it would be great to have more features where we can add or edit the networks in Bulk. We’d also like to see a device map where all our APs are plotted on the map for us to see immediately which ones are offline and need our attention.</p>
-
 <h2>Anything else you’d like to add?</h2>
 
 <p>I like the new Cucumber layout. The flatness and design makes it easy to navigate and find things in the dashboard.</p>
