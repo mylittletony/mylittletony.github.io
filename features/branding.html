@@ -6,14 +6,14 @@ permalink: /features/branding/
 
 <script>
 function navactive() {
-  var id1 = document.querySelector("#features-list");
-  var id2 = document.querySelector("#branding");
-  var id3 = document.querySelector("#branding-mobi");
+  var id1 = document.querySelector("#discover");
+  var id2 = document.querySelector("#discover-mobi");
   id1.style.backgroundColor = "#EEEEEE";
   id2.style.backgroundColor = "#EEEEEE";
-  id3.style.backgroundColor = "#EEEEEE";
 }
-window.onload = navactive;
+$(document).ready(function(){
+    navactive();
+});
 </script>
 
 <div class="page-content">
