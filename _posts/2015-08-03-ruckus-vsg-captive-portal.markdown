@@ -7,7 +7,7 @@ keywords: Ruckus, Ruckus Virtual SmartZone, Captive Portal, Zone Director, Splas
 description: Ruckus Captive Portal, Setting up a captive portal for the Ruckus Smart Zone Gateway
 ---
 
-<h3>Getting the Cucumber Dashboard working with your Ruckus Virtual SmartZone</h3>
+<!-- <h3>Getting the Cucumber Dashboard working with your Ruckus Virtual SmartZone</h3>
 <p>The Ruckus Virtual SmartZone is a really fantastic piece of kit. This walk-through demonstrates how to integrate it with our splash pages, view your Ruckus wireless clients and, even view the status of your Ruckus APs!<br>
 <img src="/images/community/splash-pages/boxpark.png">
 </p>
@@ -326,7 +326,7 @@ When you login to your VSZ, you'll probably notice the AP is in the staging list
 
 You bet. The Cucumber dashboard works with any Smart Zone Gateway. Just enter your details as described above.
 
-<br><br>
+<br><br> -->
 <div class="mdl-typography--text-center">
 <p>Sign-up for a Cucumber dashboard. It's free for unlimited access points!</p>
 <a href="https://my.ctapp.io/#/create" class="button large success dst">Join</a>
