@@ -326,11 +326,11 @@ When you login to your VSZ, you'll probably notice the AP is in the staging list
 
 You bet. The Cucumber dashboard works with any Smart Zone Gateway. Just enter your details as described above.
 
-<br><br> -->
+<br><br>
 <div class="mdl-typography--text-center">
 <p>Sign-up for a Cucumber dashboard. It's free for unlimited access points!</p>
 <a href="https://my.ctapp.io/#/create" class="button large success dst">Join</a>
-</div>
+</div> -->
 <br><br>
 <br><br>
 <br><br>
