@@ -11,7 +11,9 @@ function navactive() {
   id1.style.backgroundColor = "#EEEEEE";
   id2.style.backgroundColor = "#EEEEEE";
 }
-window.onload = navactive;
+$(document).ready(function(){
+    navactive();
+});
 </script>
 
 <div class="page-content" id="calculator">
@@ -35,6 +37,7 @@ window.onload = navactive;
             <ul>
               <li>2,500 Splash Views</li>
               <li>30 Days History</li>
+              <li>Standard Support</li>
               <li>API Access</li>
               <li>5 Zones</li>
             </ul>
@@ -54,7 +57,7 @@ window.onload = navactive;
             <ul>
               <li>Includes 10 APs</li>
               <li>From $4 per AP/mo</li>
-              <li>Standard Support</li>
+              <li>Priority Support</li>
               <li>Unlimited History</li>
               <li>Paid Wi-Fi</li>
               <li>Admin Users</li>
@@ -76,7 +79,7 @@ window.onload = navactive;
             <ul>
               <li>Includes 75 APs</li>
               <li>From $2.95 per AP/mo</li>
-              <li>Standard Support</li>
+              <li>Priority Support</li>
               <li>Unlimited History</li>
               <li>White Label Features</li>
               <li>User Permissions</li>
@@ -151,7 +154,7 @@ window.onload = navactive;
             </table>
 
             <p>
-              <input id="what" class="mdl-slider mdl-js-slider" type="range" min="0" tabindex="0"/>
+              <input id="what" class="mdl-slider" type="range" min="0" tabindex="0"/>
             </p>
             <p id='calc-message'>Monthly cost for <span class="totalAps">10</span> devices. </p>
 
@@ -206,10 +209,10 @@ window.onload = navactive;
           <p>QoS prioritises the jobs that are sent to your boxes. Eg. when you change your SSID or reboot your boxes.</p>
 
           <h3>What are Integrations?</h3>
-          <p>Connect your other WebApps with Cucumber. Eg. automatically sync your guests with your Salesforce account or send an alert to your Slack account if a box goes offline.</p>
+          <p>Connect your other WebApps with Cucumber Tony. Eg. automatically sync your guests with your Salesforce account or send an alert to your Slack account if a box goes offline.</p>
 
           <h3>What Support do I get?</h3>
-          <p>The free account comes with 14 days live support. Standard support includes 24/7 engineering support via the dashboard. Premium support includes telephone support.</p>
+          <p>All plans come with 24/7 engineering support via the dashboard. Plans with Priority Support are given priority over standard support requests. Premium support includes telephone support.</p>
 
           <h3>Is there an SLA?</h3>
           <p>There are no SLAs. We attempt to answer your queries as soon as possible. Support is limited to assistance with the dashboard.</p>
@@ -560,7 +563,16 @@ window.onload = navactive;
         </tr>
         <tr>
           <td class="mdl-data-table__cell--non-numeric">
-            Priority QoS
+            Standard Support
+          </td>
+          <td><i class="material-icons">check_box</i></td>
+          <td><i class="material-icons">check_box</i></td>
+          <td><i class="material-icons">check_box</i></td>
+          <td><i class="material-icons">check_box</i></td>
+        </tr>
+        <tr>
+          <td class="mdl-data-table__cell--non-numeric">
+            Priority Support
           </td>
           <td></td>
           <td><i class="material-icons">check_box</i></td>
@@ -569,7 +581,7 @@ window.onload = navactive;
         </tr>
         <tr>
           <td class="mdl-data-table__cell--non-numeric">
-            Standard Support
+            Priority QoS
           </td>
           <td></td>
           <td><i class="material-icons">check_box</i></td>

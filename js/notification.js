@@ -1,13 +1,11 @@
-var notification = document.getElementById('notification');
-
-var close = document.getElementById("close");
-window.onload = function() {
+$(document).ready(function(){
     checkCookie();
-}
-close.onclick = function() {
-    notification.style.display = "none";
+});
+
+$('#close').click(function () {
+    $('#notification').css('display','none');
     createCookie('closeNotification',"true",7);
-}
+});
 
 function createCookie(name,value,days) {
 	if (days) {

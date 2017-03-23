@@ -7,23 +7,17 @@ keywords: Ruckus, Ruckus Virtual SmartZone, Captive Portal, Zone Director, Splas
 description: Ruckus Captive Portal, Setting up a captive portal for the Ruckus Smart Zone Gateway
 ---
 
+<div class="mdl-typography--text-center">
+  <h2>Unfortunately this method of integration is no longer supported, <a href="http://.cucumberwifi.io/discover">click here</a> to find out what else Cucumber can do for you</h2>
+  <hr>
+</div>
+
+
 <h3>Getting the Cucumber Dashboard working with your Ruckus Virtual SmartZone</h3>
 <p>The Ruckus Virtual SmartZone is a really fantastic piece of kit. This walk-through demonstrates how to integrate it with our splash pages, view your Ruckus wireless clients and, even view the status of your Ruckus APs!<br>
 <img src="/images/community/splash-pages/boxpark.png">
 </p>
 <hr>
-
-<div class="mdl-typography--text-center">
-  <h1>Full Guide</h1>
-  <p>For the full in-depth guide on how to set up your Ruckus vSZ click the button below</p>
-  <div class="doc-button-center">
-		<div class="doc-button">
-		  <a href="http://docs.cucumberwifi.io/article/89-ruckus-vsz-captive-portal-integration" target="_blank" class="large button">Ruckus vSZ Guide</a>
-	  </div>
-  </div>
-  <hr>
-</div>
-
 
 <h3>Things you need:</h3>
 <ul>

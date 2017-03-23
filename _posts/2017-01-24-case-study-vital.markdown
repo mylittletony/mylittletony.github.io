@@ -51,14 +51,6 @@ description: “It not only provides us with a great, centralised place to manag
 
 <p>To be able to automatically rotate guest WiFi passwords and let the relevant people know — with our old solution these often weren’t changed frequently enough, so Cucumber has helped us to improve security of our client networks.</p>
 
-<h2>Any features you’d like to see added?</h2>
-
-<p>We’d like to be able to see more reports collated into one place. ie. By clicking on a user under the Client’s list, we’d like to be able to view user details like Facebook logins as well as their device stats.</p>
-
-<h2>Is there anything Cucumber can do better?</h2>
-
-<p>To decrease the outage emails sent erroneously​. i.e. getting an outage email when there’s no outage.</p>
-
 <h2>Lastly, is there anything else you’d like to add?</h2>
 
 <p>So far, we’re very happy with the solution. It’s not been too long since we started using Cucumber but looks like all is going well.</p>

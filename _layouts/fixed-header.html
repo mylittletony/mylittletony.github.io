@@ -6,7 +6,7 @@ layout: default
     <div class="mdl-layout__header-row">
       <!-- Title -->
       <div class="ct-logo">
-        <a href="/"><img src="/images/pages/cucumber-wifi.svg"></a>
+        <a href="/"><img src="/images/pages/cucumber_tony_logo.svg"></a>
       </div>
       <!-- Left -->
       <nav class="mdl-navigation mdl-layout--large-screen-only">
@@ -19,6 +19,7 @@ layout: default
       <div class="mdl-layout-spacer"></div>
       <!-- Navigation. We hide it in small screens. -->
       <nav class="mdl-navigation mdl-layout--large-screen-only">
+        <a class="mdl-navigation__link" href="/sign-up">Sign-up</a>
         <a class="mdl-navigation__link" href="https://my.ctapp.io/#/login">Login</a>
         <a class="mdl-navigation__link" target="_blank" href="http://docs.cucumberwifi.io/">Help</a>
       </nav>
@@ -39,17 +40,8 @@ layout: default
   </div>
   <main class="mdl-layout__content">
 
-    <div id="notification" class="notification mdl-shadow--4dp mdl-cell--hide-phone">
-      <i id="close" class="notification-close material-icons">close</i>
-      <div class="notification-header" onclick="window.open('https://www.picatic.com/school-of-cucumber/');">
-      </div>
-      <div class="notification-body" onclick="window.open='https://www.picatic.com/school-of-cucumber/';">
-        <h4>Want to Learn More About WiFi?</h4>
-        <p>Click Here to Sign-up for our Advanced Workshop for Network and WiFi Businesses</p>
-      </div>
-    </div>
-
     {{ content }}
     {% include footer.html %}
+
   </main>
 </div>

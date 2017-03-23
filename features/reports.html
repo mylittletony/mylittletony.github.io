@@ -6,21 +6,21 @@ permalink: /features/reports/
 
 <script>
 function navactive() {
-  var id1 = document.querySelector("#features-list");
-  var id2 = document.querySelector("#reports");
-  var id3 = document.querySelector("#reports-mobi");
+  var id1 = document.querySelector("#discover");
+  var id2 = document.querySelector("#discover-mobi");
   id1.style.backgroundColor = "#EEEEEE";
   id2.style.backgroundColor = "#EEEEEE";
-  id3.style.backgroundColor = "#EEEEEE";
 }
-window.onload = navactive;
+$(document).ready(function(){
+    navactive();
+});
 </script>
 
 <div class="page-content">
 
   <div class="features-banner features-banner-reports mdl-grid">
     <div class="center-cell mdl-cell mdl-cell--middle mdl-cell--10-col mdl-typography--text-center">
-      <h2>Cucumber Reporting Features</h2>
+      <h2>Cucumber Tony Reporting Features</h2>
       <h5>View in-depth reports from your devices and networks.</h5>
     </div>
   </div>

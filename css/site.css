@@ -52,7 +52,8 @@ a {
 }
 
 .mdl-mega-footer {
-    background-color: #294747;
+  background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
+  color: white;
 }
 
 .home-header {
@@ -65,6 +66,7 @@ a {
   z-index: 0;
   width: 100%;
   background-color: #16AC5B;
+  background-image: linear-gradient(120deg, #16AC5B 0%, #96e6a1 100%);
   /*background-color: #FF4A00;*/
   top: 0;
   left: 0;
@@ -353,6 +355,7 @@ a {
   position: relative;
   z-index: 3;
   background-color: #294747;
+  background: linear-gradient(-12deg, #2a5298 0%, #3584A7 51%, #30D2BE 100%);
   margin-top: -20px;
   padding-top: 90px;
   padding-bottom: 110px;
@@ -422,8 +425,20 @@ a {
 }
 
 @media (max-width: 647px) {
-  .home-customers {
-    display: none;
+  .home-customers h3 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 540px) {
+  .home-customers h3 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .home-customers h3 {
+    font-size: 16px;
   }
 }
 
@@ -511,6 +526,7 @@ a {
 
 .tutorial-main {
   background-color: #294747;
+  background-image: linear-gradient(60deg, #3d3393 0%, #2b76b9 37%, #2cacd1 65%, #35eb93 100%);
   height: 400px;
   color: white;
   line-height: 30px;
@@ -593,6 +609,7 @@ a {
 
 .casestudies-main {
   background-color: #ff2c7f;
+  background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
   height: 400px;
   color: white;
   line-height: 30px;
@@ -999,6 +1016,7 @@ a {
 .home-about-banner {
   height: 300px;
   background-color: #294747;
+  background-image: linear-gradient(60deg, #3d3393 0%, #2b76b9 37%, #2cacd1 65%, #35eb93 100%);
   color: white;
   position: relative;
   padding: 40px 0 60px 0;
@@ -1165,6 +1183,7 @@ a {
 
 .community {
   background: #ff2c7f;
+  background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
 }
 
 .community-subheader {
@@ -1707,11 +1726,11 @@ a {
 }
 
 .cucumber-footer a {
-  color: rgb(158, 158, 158);
+  color: rgb(224, 224, 224);
 }
 
 .cucumber-footer h4 {
-  color: rgb(224, 224, 224);
+  color: white;
   font-size: 14px;
   font-weight: 500;
 }
@@ -1824,4 +1843,66 @@ a {
   left: 50%;
   margin-top: 0px;
   margin-left: 20px;
+}
+
+/*calc slider style*/
+
+input[type=range] {
+  -webkit-appearance: none;
+  margin: 18px 0;
+  width: 100%;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: #017FDD;
+  border-radius: 1.3px;
+}
+input[type=range]::-webkit-slider-thumb {
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  background: #017FDD;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -14px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #017FDD;
+}
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: #017FDD;
+  border-radius: 1.3px;
+}
+input[type=range]::-moz-range-thumb {
+  height: 40px;
+  width: 40px;
+  background: #017FDD;
+  cursor: pointer;
+}
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  border-width: 16px 0;
+  color: transparent;
+}
+input[type=range]::-ms-thumb {
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  background: #017FDD;
+  cursor: pointer;
 }
