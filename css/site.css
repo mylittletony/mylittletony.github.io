@@ -943,6 +943,11 @@ a {
   background-size: cover;
 }
 
+.profile-image-jenny {
+  background-image: url('/images/pages/staff/jenny.jpg');
+  background-size: cover;
+}
+
 .profile-bio h3 {
   margin: 0px;
   font-size: 20px;
