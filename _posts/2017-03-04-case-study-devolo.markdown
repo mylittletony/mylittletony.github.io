@@ -15,7 +15,7 @@ description: “With our hardware expertise, we partnered with Cucumber to use t
 <div class="mdl-grid">
 <div class="case-study-side mdl-cell mdl-cell--3-col mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-typography--text-center mdl-shadow--1dp">
 <!-- <img class="cs-portrait text-center" src="/images/case-studies/x/x.png" width="120px"> -->
-<p>Thomas <small>Devolo Lead Engineer</small></p>
+<p>Thomas<br><small>Devolo Lead Engineer</small></p>
 <img src="/images/case-studies/devolo/devolo-logo.png" width="200px">
 </div>
 
