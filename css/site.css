@@ -1793,6 +1793,12 @@ a {
   margin: 0px;
 }*/
 
+@media (max-width: 479px) {
+  .notification-close, .notification-header, .notification-body {
+    display: none;
+  }
+}
+
 .notification {
   position: fixed !important;
   position: absolute; /*ie6 */
@@ -1830,7 +1836,7 @@ a {
 }
 
 .notification-header {
-  background-image: url('/images/community/thumbnails/cucumber-nige.jpg');
+  background-image: url('/images/community/thumbnails/cucumber-school.jpg');
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
