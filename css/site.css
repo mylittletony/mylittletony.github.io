@@ -1067,6 +1067,20 @@ a {
   height: 400px;
 }
 
+.school-banner {
+  background-image: url('/images/pages/school.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 5;
+  padding-top: 40px;
+  padding-bottom: 60px;
+  background-color: #82B1FF;
+  color: white;
+  height: 400px;
+}
+
 .discover-banner {
   background-image: url('/images/pages/access-point-arrow.jpg');
   background-repeat: no-repeat;
