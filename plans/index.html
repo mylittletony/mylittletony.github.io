@@ -21,7 +21,7 @@ $(document).ready(function(){
   <div class="plans-page mdl-grid">
     <div class="plans-card-row center-cell mdl-cell mdl-cell--9-col mdl-typography--text-center">
       <h2 style="margin-bottom:0px;">Plans & Pricing</h2>
-      <p>The service is free to use for unlimited devices. If you want the business features, there is a monthly charge.<br>The pricing calculator <a href="#calc-div">can be found below.</a></p>
+      <p>The service is free to use for unlimited devices. If you want the business features, there is a monthly charge.</p>
       <div class="mdl-grid">
         <div class="plans-card center-cell mdl-cell mdl-card mdl-cell--3-col mdl-shadow--1dp">
           <div class="plan-title mdl-typography--text-center">
@@ -56,7 +56,7 @@ $(document).ready(function(){
           <div class="plan-features-list mdl-typography--text-center">
             <ul>
               <li>Includes 10 APs</li>
-              <li>From $4 per AP/mo</li>
+              <li>$3.50 per AP/mo</li>
               <li>Priority Support</li>
               <li>Unlimited History</li>
               <li>Paid Wi-Fi</li>
@@ -78,7 +78,7 @@ $(document).ready(function(){
           <div class="plan-features-list mdl-typography--text-center">
             <ul>
               <li>Includes 75 APs</li>
-              <li>From $2.95 per AP/mo</li>
+              <li>$3.00 per AP/mo</li>
               <li>Priority Support</li>
               <li>Unlimited History</li>
               <li>White Label Features</li>
@@ -119,70 +119,6 @@ $(document).ready(function(){
     </div>
   </div>
 
-  <a name="calc-div"></a>
-  <div class="mdl-grid mat-banner">
-    <div class="mdl-cell mdl-cell--10-col center-cell mdl-typography--text-center">
-      <form name="myForm">
-        <h2>Pricing Calculator</h2>
-        <p class="calc">Monthly cost for <span class="calcMassive totalAps">10</span> devices</p>
-        <p>Everything you need is included in the price</p>
-        <div class="mdl-grid">
-
-          <div class="mdl-cell mdl-cell--12-col center-cell">
-
-            <table class="calc-table center-cell mdl-data-table mdl-js-data-table mdl-shadow--1dp">
-              <tr>
-                <td class="features-table-heading mdl-data-table__cell--non-numeric"></td>
-                <td class="features-table-heading mdl-data-table__cell--non-numeric"><b>Monthly Cost</b></td>
-
-                <td class="features-table-heading mdl-data-table__cell--non-numeric"><b>Per AP Cost</b></td>
-              </tr>
-              <tr>
-                <td class="mdl-data-table__cell--non-numeric">
-                  Business Plan
-                </td>
-                <td><span class="currency"></span><span id="biz-plan"></span></td>
-                <td><span class="currency"></span><span id="perApPriceBiz"></span></td>
-              </tr>
-              <tr>
-                <td class="mdl-data-table__cell--non-numeric">
-                  Premium Plan
-                </td>
-                <td><span class="currency"></span><span id="prem-plan"></span></td>
-                <td><span class="currency"></span><span id="perApPricePrem"></span></td>
-              </tr>
-            </table>
-
-            <p>
-              <input id="what" class="mdl-slider" type="range" min="0" tabindex="0"/>
-            </p>
-            <p id='calc-message'>Monthly cost for <span class="totalAps">10</span> devices. </p>
-
-            <div id="calc-more" style="display: none;">
-              <p style="font-size: 24px; font-weight: bold;">Need more? Get in touch.</p>
-            </div>
-
-            <div style="margin-top: 40px;">
-              <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="flash1">
-                <input checked class="mdl-radio__button" id="flash1" name="currency" type="radio" value="USD">
-                <span class="mdl-radio__label">$USD</span>
-              </label>
-              <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="flash2">
-                <input class="mdl-radio__button" id="flash2" name="currency" type="radio" value="GBP">
-                <span class="mdl-radio__label">£GBP</span>
-              </label>
-              <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="flash3">
-                <input class="mdl-radio__button" id="flash3" name="currency" type="radio" value="EUR">
-                <span class="mdl-radio__label">€EURO</span>
-              </label>
-            </div>
-          </div>
-        </div>
-
-      </form>
-    </div>
-
-  </div>
   <div class="mdl-grid mat-banner">
     <div class="mdl-cell mdl-cell--12-col center-cell">
       <h2 class="mdl-typography--text-center">Common Questions</h2>
