@@ -1,5 +1,3 @@
-/*new*/
-
 /*Nav Bar*/
 .sticky {
   width: 100%;
@@ -13,13 +11,41 @@
   padding-right: 16px!important;
 }
 
+#sticky-header {
+  transition:box-shadow 0.5s;
+  -moz-transition:box-shadow 0.5s;
+  -webkit-transition:box-shadow 0.5s;
+  -ms-transition:box-shadow 0.5s;
+  -o-transition:box-shadow 0.5s;
+}
 
+#sticky-header.active {
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
 
+#sticky-header.top-bar, #sticky-header.top-bar ul {
+  background-color: white;
+}
 
+#sticky-header.top-bar a {
+  color: #1FAD5C;
+}
 
+.ct-logo img {
+  max-width: 230px;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+}
 
+/*footer*/
 
+footer {
+  height: 100px;
+}
 
+footer a {
+  color: #1FAD5C;
+}
 
 /*old*/
 /*old*/
@@ -44,30 +70,6 @@ html {
 
 a {
   text-decoration: none;
-}
-
-.ct-logo {
-  padding-left: 0.9375rem;
-  padding-right: 0.9375rem;
-}
-
-.ct-logo img {
-  width: 230px;
-  padding-left: 0.9375rem;
-  padding-right: 0.9375rem;
-}
-
-@media (max-width: 1025px) {
-  .ct-logo {
-    width: 100%;
-    padding-left: 0px;
-  }
-  .ct-logo img {
-    display: block;
-    margin: 0 auto;
-    padding-right: 72px;
-    padding-left: 0px;
-  }
 }
 
 .sidebar-title {
