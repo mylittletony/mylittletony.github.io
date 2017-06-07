@@ -1,13 +1,28 @@
 /*new*/
-.mdl-layout__header {
-  background-color: white;
-  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+
+/*Nav Bar*/
+.sticky {
+  width: 100%;
 }
 
-.mdl-layout__header-row .mdl-navigation__link {
-  color: #16ac5b;
+.dropdown.menu > li.is-dropdown-submenu-parent > a::after {
+  display: none!important;
 }
 
+.dropdown.menu > li.is-dropdown-submenu-parent > a {
+  padding-right: 16px!important;
+}
+
+
+
+
+
+
+
+
+
+/*old*/
+/*old*/
 /*old*/
 
 html {
