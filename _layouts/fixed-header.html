@@ -2,8 +2,7 @@
 layout: default
 ---
 <!-- Always shows a header, even in smaller screens. -->
-
-<div id="header" class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <header class="mdl-layout__header">
         <div class="mdl-layout__header-row">
             <!-- Title -->
@@ -41,22 +40,6 @@ layout: default
       </nav>
     </div>
     <main class="mdl-layout__content">
-
-      <script>
-      $(window).scroll(function() {
-        var scroll = $(window).scrollTop();
-        if (scroll > 0) {
-            $("#header").addClass("active");
-        }
-        else {
-            $("#header").removeClass("active");
-        }
-      });
-      $(document).ready(function(){
-          navactive();
-      });
-      </script>
-
 
         {{ content }}
         {% include footer.html %}

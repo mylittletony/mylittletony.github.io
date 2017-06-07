@@ -1,19 +1,12 @@
 /*new*/
 .mdl-layout__header {
   background-color: white;
-  box-shadow: 0 0 0 0;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
 }
 
 .mdl-layout__header-row .mdl-navigation__link {
   color: #16ac5b;
 }
-
-#header.active {
- box-shadow: 0 0 10px rgba(0,0,0,0.4);
- transition: all 0.5s linear;
-}
-
-
 
 /*old*/
 
