@@ -1,3 +1,9 @@
+/*body*/
+.row.banner {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 /*Nav Bar*/
 .sticky {
   width: 100%;
