@@ -4,6 +4,20 @@
   padding-bottom: 60px;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.sub-title {
+  font-family: 'PT Serif', serif;
+}
+
+body, html {
+  font-family: 'PT Sans', sans-serif;
+  color: rgba(0, 0, 0, 0.54);
+}
+
 /*Nav Bar*/
 .sticky {
   width: 100%;
