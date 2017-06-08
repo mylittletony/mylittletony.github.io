@@ -1,9 +1,9 @@
 ---
-layout: community-header
+layout: fixed-header
 title: Showcase | Cucumber Tony
-permalink: /community/showcase/
+permalink: /casestudies/
 redirect_from:
-- /case-studies/
+- /community/showcase/
 - /community/case-studies
 ---
 
@@ -63,72 +63,5 @@ $(document).ready(function(){
       {% endfor %}
     </div>
   </div>
-
-  <div class="features-showcase-list mdl-grid">
-    <div class="features-showcase-card center-cell mdl-cell mdl-cell--10-col mdl-card mdl-shadow--1dp">
-      <a name="features"><h2>Feature Spotlight</h2></a>
-      {% for tag in site.tags %}
-      {% assign t = tag | first %}
-      {% assign posts = tag | last %}
-        {% for post in posts %}
-        {% if post.tags contains 'Features' %}
-        <li>
-          <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
-          {{ post.description }} <br>
-        </li>
-        {% endif %}
-        {% endfor %}
-      {% endfor %}
-    </div>
-  </div>
-
-  <div class="casestudies-list mdl-grid">
-    <div class="center-cell mdl-cell mdl-cell--10-col mdl-typography--text-center mdl-card mdl-shadow--1dp">
-      <a name="videos"><h2>Out And About</h2></a>
-      <div class="about-us-video mdl-cell--6-col center-cell">
-        <div class='embed-container'>
-          <iframe src="https://www.youtube.com/embed/MLB9mk9s_JM?&rel=0&modestbranding=1&hd=1&autohide=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-        </div>
-        <p>Interview with Cucumber Tony at WiFi Now London 2016</p>
-      </div>
-      <div class="about-us-video mdl-cell--6-col center-cell">
-        <div class='embed-container'>
-          <iframe src="https://www.youtube.com/embed/yoFeRlcND_k?&rel=0&modestbranding=1&hd=1&autohide=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-        </div>
-        <p>The future of in-home WiFi - Who Will Win and Why? - Big Chief Highlights</p>
-      </div>
-      <div class="about-us-video mdl-cell--6-col center-cell">
-        <div class='embed-container'>
-          <iframe src="https://www.youtube.com/embed/7amn0WgnkIU?&rel=0&modestbranding=1&hd=1&autohide=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-        </div>
-        <p>School of Cucumber Tony - How to Make the Most of Cucumber Tony Features</p>
-      </div>
-      <div class="about-us-video mdl-cell--6-col center-cell">
-        <div class='embed-container'>
-          <iframe src="https://player.vimeo.com/video/157665263" frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-        </div>
-        <p>WLPC Phoenix 2016 - Vendors, Open Your APIs</p>
-      </div>
-      <div class="about-us-video mdl-cell--6-col center-cell">
-        <div class='embed-container'>
-          <iframe src="https://player.vimeo.com/video/157666679?portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-        </div>
-        <p>WLPC Phoenix 2016 - Managing OpenWRT From The Cloud</p>
-      </div>
-      <div class="about-us-video mdl-cell--6-col center-cell">
-        <div class='embed-container'>
-          <iframe src="https://www.youtube.com/embed/2PN5t4zcLxI?&rel=0&modestbranding=1&hd=1&autohide=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-        </div>
-        <p>Managing OpenWrt From the Cloud. What this means for the Internet of Things?</p>
-      </div>
-      <div class="about-us-video mdl-cell--6-col center-cell">
-        <div class='embed-container'>
-          <iframe src="https://www.youtube.com/embed/BcV_UMaiu20?&rel=0&modestbranding=1&hd=1&autohide=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-        </div>
-        <p>A great Wi-Fi startup - with an even better name: Cucumber Tony - Wi-Fi NOW ep.34</p>
-      </div>
-    </div>
-  </div>
-
 
 </div>
