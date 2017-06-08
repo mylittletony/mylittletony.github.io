@@ -43,6 +43,10 @@
   padding-right: 0.9375rem;
 }
 
+.menu > li.ct-logo > a {
+  display: block;
+}
+
 /*footer*/
 
 footer {

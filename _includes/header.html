@@ -5,6 +5,7 @@
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
   <link rel="icon" type="image/png" href="/images/favicon.ico">
+  <link rel="stylesheet" href="{{ "/css/foundation.css" | prepend: site.baseurl }}">
   <link rel="stylesheet" href="{{ "/css/material.css" | prepend: site.baseurl }}">
   <link rel="stylesheet" href="{{ "/css/site.css" | prepend: site.baseurl }}">
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Hind+Vadodara:400,700,300' type='text/css'>
@@ -13,15 +14,14 @@
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
 
   <script src="/js/material.js"></script>
-  <script src="/js/ct.js"></script>
+  <!-- <script src="/js/ct.js"></script> -->
   <script src="/js/smooth-scroll.js"></script>
   <!-- <script src="/js/notification.js" defer></script> -->
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <!-- <script src="/js/register.js"></script> -->
-
-  <script src="/js/foundation.js"></script>
   <script src="/js/what-input.js"></script>
-  <link rel="stylesheet" href="{{ "/css/foundation.css" | prepend: site.baseurl }}">
+  <script src="/js/foundation.js"></script>
+  <script src="/js/app.js" defer></script>
 
 </head>
