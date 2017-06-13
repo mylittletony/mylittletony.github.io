@@ -61,6 +61,23 @@ body, html {
   display: block;
 }
 
+.is-dropdown-submenu {
+  margin-top: 10px;
+  min-width: 250px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 20px;
+  border-color: #ECEFF1;
+}
+
+.is-submenu-item {
+  min-width: 250px;
+}
+
+.menu > .is-dropdown-submenu-item > a {
+  padding-left: 30px;
+}
+
 /*footer*/
 
 footer {
@@ -129,9 +146,9 @@ footer a {
   padding-bottom: 10px;
 }
 
-/*old*/
-/*old*/
-/*old*/
+/*-----*/
+/*-OLD-*/
+/*-----*/
 
 html {
   color: #294747;
