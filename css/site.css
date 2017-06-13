@@ -64,11 +64,19 @@ body, html {
 /*footer*/
 
 footer {
-  height: 100px;
+  padding-bottom: 100px;
+  padding-top: 20px;
 }
 
 footer a {
   color: #1FAD5C;
+}
+
+/*Home Page*/
+.bg-top {
+  background-image: url(/images/pages/geo.svg);
+  background-repeat: repeat;
+  background-size: 25%;
 }
 
 /*old*/
