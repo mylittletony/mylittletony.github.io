@@ -79,6 +79,56 @@ footer a {
   background-size: 25%;
 }
 
+/*Plans Page*/
+
+.plans-card {
+  margin-top: 20px;
+  padding: 0px;
+}
+
+.plans-card-row {
+  margin-bottom: 50px;
+}
+
+.plan-title {
+  background: #1FAD5C;
+  color: white;
+}
+
+.plan-title-free h4, .plan-title-mid h4, .plan-title-top h4 {
+  margin: 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgb(224, 224, 224);
+}
+
+.plan-price {
+  border-bottom: 1px solid rgb(224, 224, 224);
+}
+
+.plan-features {
+  background: #F5F5F5;
+  border-bottom: 1px solid rgb(224, 224, 224);
+}
+
+.plan-features h5 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.plan-features-list ul {
+  padding-left: 0px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  margin: 0px;
+}
+
+.plan-features-list li {
+  list-style-type: none;
+  color: rgba(0,0,0, 0.54);
+  padding-bottom: 10px;
+}
+
 /*old*/
 /*old*/
 /*old*/
@@ -826,78 +876,6 @@ a {
 
 .features-showcase-card a {
   text-decoration: none;
-}
-
-
-.plans-main {
-  background-color: #294747;
-  height: 400px;
-  padding-top: 40px;
-  padding-bottom: 60px;
-  color: white;
-  line-height: 30px;
-}
-
-.plans-main h2 {
-  margin-top: 100px;
-}
-
-.plans-main button {
-  margin-top: 20px;
-}
-
-.plans-page {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid rgb(224, 224, 224);
-}
-
-.plans-card {
-  margin-top: 20px;
-}
-
-.plans-card-row {
-  /*margin-top: -200px;*/
-  margin-bottom: 50px;
-}
-
-.plan-title {
-  background: #1FAD5C;
-  color: white;
-}
-
-.plan-title-free h4, .plan-title-mid h4, .plan-title-top h4 {
-  margin: 0px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid rgb(224, 224, 224);
-}
-
-.plan-price {
-  border-bottom: 1px solid rgb(224, 224, 224);
-}
-
-.plan-features {
-  background: #F5F5F5;
-  border-bottom: 1px solid rgb(224, 224, 224);
-}
-
-.plan-features h5 {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.plan-features-list ul {
-  padding-left: 0px;
-  padding-top: 20px;
-  padding-bottom: 10px;
-  margin: 0px;
-}
-
-.plan-features-list li {
-  list-style-type: none;
-  color: rgba(0,0,0, 0.54);
-  padding-bottom: 10px;
 }
 
 .about-us-banner {
