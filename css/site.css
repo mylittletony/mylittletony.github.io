@@ -1473,7 +1473,7 @@ a {
   background-position: center;
   background-size: cover;
   position: relative;
-  z-index: 5;
+  z-index: 1;
   padding-top: 40px;
   padding-bottom: 60px;
   background-color: #294747;
