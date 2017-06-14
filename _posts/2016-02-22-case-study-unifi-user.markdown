@@ -19,7 +19,7 @@ description: “The extra functionality has really changed how we run the Wi-Fi 
 </div>
 
 <div class="case-study-post mdl-cell mdl-cell--9-col mdl-shadow--1dp">
-<a href="/community/showcase/">< Back to Case Studies</a>
+<a href="/casestudies/">< Back to Case Studies</a>
 <h1>Using Cucumber To Manage UniFi</h1>
 <p>We asked one avid user why he uses Cucumber to manage his Ubiquiti UniFi network. He asked that he remained anonymous to avoid revealing any information to his competition. He said: </p>
 

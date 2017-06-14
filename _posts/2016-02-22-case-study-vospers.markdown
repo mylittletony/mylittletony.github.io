@@ -20,7 +20,7 @@ description: “I can't think of one thing I liked in Meraki that I didn't get i
 </div>
 
 <div class="case-study-post mdl-cell mdl-cell--9-col mdl-shadow--1dp">
-<a href="/community/showcase/">< Back to Case Studies</a>
+<a href="/casestudies/">< Back to Case Studies</a>
 <h1>How Vospers Use Cucumber</h1>
 <p>Jonathan has been using Cucumber Tony since day one. He tells us why his network is still growing and how it's changed things for the better at Vospers.</p>
 

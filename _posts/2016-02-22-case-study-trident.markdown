@@ -20,7 +20,7 @@ description: “Our favourite thing is the simple interface. The Ruckus vSZ is c
 </div>
 
 <div class="case-study-post mdl-cell mdl-cell--9-col mdl-shadow--1dp">
-<a href="/community/showcase/">< Back to Case Studies</a>
+<a href="/casestudies/">< Back to Case Studies</a>
 <h1>How Trident Group Use Cucumber</h1>
 <p>Trident have a Ruckus Virtual Smart Zone network and use Cucumber to manage it. David tells us why they use Cucumber alongside their Ruckus vSZ.</p>
 

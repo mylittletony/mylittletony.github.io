@@ -20,7 +20,7 @@ description: “The Dashboard and portal go a long way ​for​ ​monitoring �
 </div>
 
 <div class="case-study-post mdl-cell mdl-cell--9-col mdl-shadow--1dp">
-<a href="/community/showcase/">< Back to Case Studies</a>
+<a href="/casestudies/">< Back to Case Studies</a>
 <h1>Unruly Group Share Their Cucumber Experience</h1>
 <p>Petrut, Senior Systems Engineer at Unruly shares his experience using Cucumber to manage their network.</p>
 

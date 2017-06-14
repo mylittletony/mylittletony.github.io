@@ -19,7 +19,7 @@ description: â€œOverall Cucumber is a very solid platform with amazing support.â
 </div>
 
 <div class="case-study-post mdl-cell mdl-cell--9-col mdl-shadow--1dp">
-<a href="/community/showcase/">< Back to Case Studies</a>
+<a href="/casestudies/">< Back to Case Studies</a>
 
 <p>This report was submitted to us by one of our users on their views on the differences between the <b>Cucumber Dashboard</b> and the <b>UniFi Controller</b>.</p>
 

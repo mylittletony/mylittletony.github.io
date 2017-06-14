@@ -20,7 +20,7 @@ description: “The ease of customisation of the page within the portal is great
 </div>
 
 <div class="case-study-post mdl-cell mdl-cell--9-col mdl-shadow--1dp">
-<a href="/community/showcase/">< Back to Case Studies</a>
+<a href="/casestudies/">< Back to Case Studies</a>
 <h1>F1 Consultancy Integrates Xirrus with Cucumber</h1>
 <p>The F1 Consultancy team were looking for guest access integration for events with thousands of users. They chose Cucumber to ensure everything would run seamlessly. Here’s what Mark had to say.</p>
 
