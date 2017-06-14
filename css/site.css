@@ -79,6 +79,22 @@ body, html {
   padding-left: 30px;
 }
 
+@media (max-width: 835px) {
+  .nav-large {
+    display: none;
+  }
+}
+
+@media (min-width: 836px) {
+  .nav-small {
+    display: none;
+  }
+}
+
+.nav-hamburger {
+  padding-right: 15px;
+}
+
 /*footer*/
 
 footer {
