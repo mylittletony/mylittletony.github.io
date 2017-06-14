@@ -174,6 +174,16 @@ footer a {
 }
 
 
+/*Contact Us*/
+
+.contact-card {
+  margin-top: -120px;
+  margin-bottom: 20px;
+  border-color: #ECEFF1;
+  border-radius: 20px;
+  border: 1px solid #ECEFF1;
+}
+
 /*-----*/
 /*-OLD-*/
 /*-----*/
@@ -378,8 +388,6 @@ a {
 }
 
 .mat-banner-list {
-  position: relative;
-  z-index: 6;
   padding-top: 20px;
   padding-bottom: 20px;
   border-bottom: 1px solid rgb(224, 224, 224);
@@ -392,8 +400,6 @@ a {
 }
 
 .mat-banner {
-  position: relative;
-  z-index: 5;
   padding-top: 40px;
   padding-bottom: 40px;
   border-bottom: 1px solid rgb(224, 224, 224);
@@ -432,33 +438,7 @@ a {
   }
 }
 
-.contact-main {
-  background-color: #294747;
-  height: 400px;
-  padding-top: 40px;
-  padding-bottom: 60px;
-  color: white;
-  line-height: 30px;
-}
 
-.contact-main a {
-  color: white;
-}
-
-.contact-main h2 {
-  margin-top: 100px;
-}
-
-.contact-main button {
-  margin-top: 20px;
-}
-
-.contact-card {
-  position: relative;
-  z-index: 6;
-  margin-top: -120px;
-  margin-bottom: 20px;
-}
 
 /*.contact-us {
   position: relative;
@@ -1472,8 +1452,6 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  position: relative;
-  z-index: 1;
   padding-top: 40px;
   padding-bottom: 60px;
   background-color: #294747;
