@@ -35,12 +35,24 @@ body, html {
   box-shadow: 0 0 20px rgba(0,0,0,0.2);
 }
 
-#sticky-header.top-bar, #sticky-header.top-bar ul {
+#sticky-header > .top-bar, #sticky-header > .top-bar ul {
   background-color: white;
 }
 
-#sticky-header.top-bar a {
+#sticky-header > .top-bar a {
   color: #1FAD5C;
+}
+
+.top-bar-left li {
+  height: 76px;
+}
+
+.top-bar-right li {
+  height: 76px;
+}
+
+.is-dropdown-submenu li {
+  height: 36px;
 }
 
 .top-bar {
@@ -115,10 +127,6 @@ body, html {
   .nav-small {
     display: none;
   }
-}
-
-.nav-hamburger {
-  padding-right: 15px;
 }
 
 /*footer*/
