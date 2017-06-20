@@ -6,18 +6,16 @@ layout: default
     <div id="sticky-header" class="top-bar">
       <div class="top-bar-left">
         <span class="nav-small">
-          <ul class="dropdown menu">
-            <li class="ct-logo">
-              <a href="/"><img src="/images/pages/cucumber_tony_logo.svg"></a>
-            </li>
-          </ul>
+          <div class="ct-logo">
+            <a href="/"><img src="/images/pages/cucumber_tony_logo.svg"></a>
+          </div>
         </span>
         <span class="nav-large">
           <ul class="dropdown menu" data-dropdown-menu data-options="disableHover:true;clickOpen:true">
             <li class="ct-logo">
               <a href="/"><img src="/images/pages/cucumber_tony_logo.svg"></a>
             </li>
-            <li><a href="/plans">Plans</a></li>
+            <li id="plans"><a href="/plans">Plans</a></li>
             <li>
               <a href="#">Developers</a>
               <ul class="menu">
@@ -64,7 +62,7 @@ layout: default
 
         <span class="nav-small">
           <div class="nav-hamburger">
-            <button class="menu-icon dark show-for-medium-only" type="button"></button>
+            <button class="menu-icon dark hide-for-large-only" type="button"></button>
           </div>
         </span>
 

@@ -23,14 +23,6 @@ body, html {
   width: 100%;
 }
 
-.dropdown.menu > li.is-dropdown-submenu-parent > a::after {
-  display: none!important;
-}
-
-.dropdown.menu > li.is-dropdown-submenu-parent > a {
-  padding-right: 16px!important;
-}
-
 #sticky-header {
   transition:box-shadow 0.5s;
   -moz-transition:box-shadow 0.5s;
@@ -51,10 +43,44 @@ body, html {
   color: #1FAD5C;
 }
 
+.top-bar {
+  padding: 0px;
+}
+
+.menu > li {
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.menu.vertical > li {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.dropdown.menu > li.is-dropdown-submenu-parent > a::after {
+  display: none!important;
+}
+
+.dropdown.menu > li.is-dropdown-submenu-parent > a {
+  padding-right: 16px!important;
+}
+
 .ct-logo img {
   max-width: 230px;
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
+}
+
+.nav-large > .menu > .ct-logo {
+ padding-top: 0px;
+ padding-bottom: 0px;
+}
+
+.nav-small .ct-logo img {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .menu > li.ct-logo > a {
@@ -62,7 +88,7 @@ body, html {
 }
 
 .is-dropdown-submenu {
-  margin-top: 10px;
+  margin-top: -3px;
   min-width: 250px;
   padding-top: 20px;
   padding-bottom: 20px;

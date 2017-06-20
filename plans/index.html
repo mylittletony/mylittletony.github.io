@@ -5,14 +5,15 @@ permalink: /plans/
 ---
 
 <script>
-// function navactive() {
-//   var id1 = document.querySelector("#plans");
-//   var id2 = document.querySelector("#plans-mobi");
-//   id1.style.backgroundColor = "#EEEEEE";
-//   id2.style.backgroundColor = "#EEEEEE";
-// }
+function navactive() {
+  var id1 = document.querySelector("#plans");
+  var id2 = document.querySelector("#plans-mobi");
+  id1.style.borderBottom = "3px solid #1FAD5C";
+  id1.style.paddingBottom = "15px";
+  id2.style.backgroundColor = "#EEEEEE";
+}
 $(document).ready(function(){
-    // navactive();
+    navactive();
     $('input[name=options]').on('change', function(){
       if($(this).prop('value') == 2) {
         $('.bus-plan').html('£50');
@@ -36,7 +37,6 @@ $(document).ready(function(){
       }
     });
 });
-
 </script>
 
 <div class="page-content" id="calculator">
