@@ -4,6 +4,21 @@ title: Retail | Cucumber Tony
 permalink: /retail/
 <!-- redirect_from: -->
 ---
+
+<script>
+function navactive() {
+  var id1 = document.querySelector("#company");
+  var id2 = document.querySelector("#retail");
+  id1.style.borderBottom = "3px solid #1FAD5C";
+  id1.style.paddingBottom = "15px";
+  id2.style.borderLeft = "3px solid #1FAD5C";
+  id2.style.paddingLeft = "27px";
+}
+$(document).ready(function(){
+  navactive();
+});
+</script>
+
 <div class="page-content">
 
   <div class="row align-center banner">
