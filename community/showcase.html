@@ -24,112 +24,15 @@ $(document).ready(function(){
 <div class="page-content">
 
   <div class="row align-center banner">
-    <div class="large-19 columns text-center">
+    <div class="large-12 columns text-center">
       <h1>Case Studies</h1>
       <h3 class="sub-title">Join the other 1782963 customers and find out for yourself how Cucumber Tony can help you.</h3>
       <button class="button">Sign Up</button>
     </div>
   </div>
 
-  <div>
-    <div class="row align-center">
-      <div class="large-3 columns">
-        <div class="large-12 columns text-center customer-block devolo-blog">
-          <h3>Devolo</h3>
-        </div>
-      </div>
-      <div class="large-3 columns">
-        <div class="large-12 columns text-center customer-block padaco-blog">
-          <h3>Padaco</h3>
-        </div>
-      </div>
-      <div class="large-3 columns">
-        <div class="large-12 columns text-center customer-block vital-blog">
-          <h3>Vital</h3>
-        </div>
-      </div>
-      <div class="large-3 columns">
-        <div class="large-12 columns text-center customer-block unruly-blog">
-          <h3>Unruly</h3>
-        </div>
-      </div>
-      <div class="large-3 columns">
-        <div class="large-12 columns text-center customer-block f1-blog">
-          <h3>F1</h3>
-        </div>
-      </div>
-      <div class="large-3 columns">
-        <div class="large-12 columns text-center customer-block nshare-blog">
-          <h3>N-Share</h3>
-        </div>
-      </div>
-      <div class="large-3 columns">
-        <div class="large-12 columns text-center customer-block suffolk-blog">
-          <h3>Suffolk</h3>
-        </div>
-      </div>
-      <div class="large-3 columns">
-        <div class="large-12 columns text-center customer-block airtunnel-blog">
-          <h3>Airtunnel</h3>
-        </div>
-      </div>
-      <div class="large-3 columns">
-        <div class="large-12 columns text-center customer-block vospers-blog">
-          <h3>Vospers</h3>
-        </div>
-      </div>
-      <div class="large-3 columns">
-        <div class="large-12 columns text-center customer-block trident-blog">
-          <h3>Trident</h3>
-        </div>
-      </div>
-      <div class="large-3 columns">
-        <div class="large-12 columns text-center customer-block rds-blog">
-          <h3>RDS</h3>
-        </div>
-      </div>
-      <div class="large-3 columns">
-        <div class="large-12 columns text-center customer-block invisinet-blog">
-          <h3>Invisinet</h3>
-        </div>
-      </div>
-      <div class="large-3 columns">
-        <div class="large-12 columns text-center customer-block force36-blog">
-          <h3>force36</h3>
-        </div>
-      </div>
-      <div class="large-3 columns">
-        <div class="large-12 columns text-center customer-block derby-blog">
-          <h3>Derby</h3>
-        </div>
-      </div>
-      <div class="large-3 columns">
-        <div class="large-12 columns text-center customer-block benitos-blog">
-          <h3>Benitos</h3>
-        </div>
-      </div>
-      <div class="large-3 columns">
-        <div class="large-12 columns text-center customer-block dan-blog">
-          <h3>Dan</h3>
-        </div>
-      </div>
-      <div class="large-3 columns">
-        <div class="large-12 columns text-center customer-block exmoor-blog">
-          <h3>Exmoor</h3>
-        </div>
-      </div>
-      <div class="large-3 columns">
-        <div class="large-12 columns text-center customer-block anon-blog">
-          <h3>Anon</h3>
-        </div>
-      </div>
-    </div>
-
-
-  <div class="casestudies-list mdl-grid">
-
-    <div class="casestudies-card center-cell mdl-cell mdl-card mdl-cell--10-col mdl-card mdl-shadow--1dp">
-      <a name="case"><h2>Case Studies</h2></a>
+  <div class="row banner">
+    <div class="center-cell casestudies-card large-12 medium-10 small-10 columns text-center">
       {% for post in site.categories.casestudy %}
       <li>
         <h3><a href="{{ post.url }}"><img src="{{ post.thumbnail }}" width="auto" height="auto" style="max-height: 50px" align="center" /></a></h3>
@@ -138,5 +41,4 @@ $(document).ready(function(){
       {% endfor %}
     </div>
   </div>
-
 </div>
