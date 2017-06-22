@@ -10,6 +10,10 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 25px;
 }
 
+p {
+  font-size: 16px;
+}
+
 .sub-title {
   font-family: 'PT Serif', serif;
 }
@@ -185,39 +189,51 @@ footer a {
 
 /*Plans Page*/
 
-.plans-card {
-  margin-top: 20px;
-  padding: 0px;
+.plans-banner > .large-12 > p {
+  margin-bottom: 20px;
 }
 
-.plans-card-row {
+.plans-banner > .large-12 {
   margin-bottom: 50px;
 }
 
-.plan-title {
-  background: #1FAD5C;
-  color: rgba(255, 255, 255, 0.90);
+.plans-card-row > .row > .columns {
+  margin-top: 40px;
 }
 
-.plan-title-free h4, .plan-title-mid h4, .plan-title-top h4 {
-  margin: 0px;
+.plans-card {
+  margin-top: 20px;
+  padding: 0px;
+  border: 1px solid #ECEFF1;
+  border-radius: 20px;
+  height: 100%;
+}
+
+.plan-title {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background: #1FAD5C;
+}
+
+.plan-title h4 {
+  color: rgba(255, 255, 255, 0.90);
   padding-top: 20px;
   padding-bottom: 20px;
-  border-bottom: 1px solid rgb(224, 224, 224);
 }
 
 .plan-price {
-  border-bottom: 1px solid rgb(224, 224, 224);
+  border-bottom: 1px solid #ECEFF1;
 }
 
 .plan-features {
-  background: #F5F5F5;
-  border-bottom: 1px solid rgb(224, 224, 224);
+  background: #ECEFF1;
+  border-bottom: 1px solid #ECEFF1;
 }
 
 .plan-features h5 {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 .plan-features-list ul {
