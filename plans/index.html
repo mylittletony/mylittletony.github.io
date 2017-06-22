@@ -13,7 +13,6 @@ function navactive() {
   id2.style.backgroundColor = "#EEEEEE";
 }
 $(document).ready(function(){
-    navactive();
     $('input[name=options]').on('change', function(){
       if($(this).prop('value') == 2) {
         $('.bus-plan').html('£50');
@@ -36,6 +35,7 @@ $(document).ready(function(){
         }
       }
     });
+    navactive();
 });
 </script>
 
@@ -59,7 +59,7 @@ $(document).ready(function(){
         <div class="large-3 medium-6 small-12 columns">
           <div class="center-cell plans-card large-12 medium-8 small-7 columns text-center">
             <div class="plan-title text-center">
-              <h4>Home Plan</h4>
+              <h4>Home</h4>
             </div>
             <div class="plan-price text-center">
               <h3>Free</h3>
@@ -81,7 +81,7 @@ $(document).ready(function(){
         <div class="large-3 medium-6 small-12 columns">
           <div class="center-cell plans-card large-12 medium-8 small-7 columns text-center">
             <div class="plan-title text-center">
-              <h4>Business Plan</h4>
+              <h4>Business</h4>
             </div>
             <div class="plan-price text-center">
               <h3><span class="bus-plan">$60</span><small>/mo</small></h3>
@@ -105,7 +105,7 @@ $(document).ready(function(){
         <div class="large-3 medium-6 small-12 columns">
           <div class="center-cell plans-card large-12 medium-8 small-7 columns text-center">
             <div class="plan-title text-center">
-              <h4>Premium Plan</h4>
+              <h4>Premium</h4>
             </div>
             <div class="plan-price text-center">
               <h3><span class="prem-plan">$350</span><small>/mo</small></h3>
@@ -129,7 +129,7 @@ $(document).ready(function(){
         <div class="large-3 medium-6 small-12 columns">
           <div class="center-cell plans-card large-12 medium-8 small-7 columns text-center">
             <div class="plan-title text-center">
-              <h4>Enterprise Plan</h4>
+              <h4>Enterprise</h4>
             </div>
             <div class="plan-price text-center">
               <h3>Contact Us</h3>
@@ -207,10 +207,10 @@ $(document).ready(function(){
       <table class="features-table hover">
         <tr>
           <td class="features-table-heading"></td>
-          <td class="features-table-heading"><b>Home Plan</b></td>
-          <td class="features-table-heading"><b>Business Plan</b></td>
-          <td class="features-table-heading"><b>Premium Plan</b></td>
-          <td class="features-table-heading"><b>Enterprise Plan</b></td>
+          <td class="features-table-heading"><b>Home</b></td>
+          <td class="features-table-heading"><b>Business</b></td>
+          <td class="features-table-heading"><b>Premium</b></td>
+          <td class="features-table-heading"><b>Enterprise</b></td>
         </tr>
         <tr>
           <td>
