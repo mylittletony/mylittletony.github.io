@@ -1555,32 +1555,6 @@ a {
   margin-bottom: 100px;
 }
 
-.branding-banner {
-  background-color: #2C2743;
-  color: white;
-  height: 400px;
-  line-height: 30px;
-  padding-top: 40px;
-  padding-bottom: 60px;
-}
-
-@media (max-width: 479px) {
-  .branding-banner h1 {
-    font-size: 36px;
-  }
-
-  .branding-banner h2 {
-    font-size: 20px;
-    line-height: 30px;
-  }
-}
-
-.branding-page {
-  background-color: #FAFAFA;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
 .branding-card {
   margin-top: -100px;
   margin-bottom: 100px;
