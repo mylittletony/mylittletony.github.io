@@ -920,40 +920,6 @@ a {
   text-decoration: none;
 }
 
-.about-us-banner {
-  position: relative;
-  z-index: 5;
-  padding-top: 40px;
-  padding-bottom: 60px;
-  background-color: #294747;
-  color: white;
-  height: 400px;
-  background-image: url('/images/pages/shoreditch-fence.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-}
-
-.about-us-card {
-  position: relative;
-  z-index: 6;
-  margin-top: -120px;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-bottom: 20px;
-}
-
-@media (max-width: 479px) {
-  .about-us-card {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-
-.about-us-card p {
-  color: rgba(0,0,0, 0.54);
-}
 
 .about-us-video {
   padding-top: 20px;
