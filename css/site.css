@@ -201,12 +201,71 @@ body, html {
 /*footer*/
 
 footer {
-  padding-bottom: 100px;
+  padding-bottom: 20px;
   padding-top: 20px;
+  background-color: #2C2743;
+  color: rgba(255, 255, 255, 0.90);
+}
+
+footer h4 {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.90);
 }
 
 footer a {
   color: #1FAD5C;
+}
+
+footer ul {
+  list-style-type: none;
+  margin-left: 0px;
+}
+
+.social-button {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.social-button-row img {
+  max-height: 30px;
+  width: auto;
+}
+
+footer .row.banner {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+footer .accordion {
+  max-width: 350px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 30px;
+  background: transparent;
+}
+
+footer .accordion .accordion-title {
+  border: 0px;
+  padding-left: 0px;
+  color: rgba(255, 255, 255, 0.90);
+  font-size: 16px;
+}
+
+footer .accordion-title:hover, footer .accordion-title:focus {
+  background: transparent;
+}
+
+footer .accordion-content {
+  border: 0px;
+  background: transparent;
+}
+
+footer :last-child:not(.is-active) > .accordion-title {
+  border: 0px;
+}
+
+footer :last-child > .accordion-content:last-child {
+  border: 0px;
 }
 
 /*Home Page*/
@@ -860,14 +919,6 @@ a {
   }
 }
 
-.social-button {
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-.social-button-row {
-  margin-bottom: 10px;
-}
 
 .newsletter-button {
   margin-bottom: -2px;
