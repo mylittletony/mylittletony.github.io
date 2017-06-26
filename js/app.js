@@ -12,4 +12,12 @@ $(window).scroll(function() {
     }
 });
 
+function openNav() {
+    document.getElementById("navTray").style.height = "100%";
+}
+
+function closeNav() {
+    document.getElementById("navTray").style.height = "0%";
+}
+
 console.log("%cWelcome To Cucumber", "font-size: x-large")

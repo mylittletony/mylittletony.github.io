@@ -93,6 +93,7 @@ body, html {
 
 .ct-logo img {
   max-width: 230px;
+  max-height: 30px;
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
 }
@@ -130,6 +131,72 @@ body, html {
 .menu > .is-dropdown-submenu-item > a {
   padding-left: 30px;
 }
+
+.title-bar {
+  background: white;
+}
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(255,255,255);
+    background-color: rgba(255,255,255, 0.9);
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+
+.overlay h2 {
+  margin-bottom: 20px;
+}
+
+.overlay li {
+  list-style-type: none;
+}
+
+.overlay ul {
+  margin-left: 0px;
+  font-size: 16px;
+}
+
+.overlay-content {
+    position: relative;
+    top: 6%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    display: block;
+    transition: 0.3s;
+    color: #1FAD5C;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: -2%;
+    right: 5%;
+    font-size: 60px;
+    line-height: 60px;
+    color: rgba(0,0,0, 0.9);
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
 
 /*footer*/
 
