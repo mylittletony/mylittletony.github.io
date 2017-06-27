@@ -318,6 +318,31 @@ footer :last-child > .accordion-content:last-child {
 
 .dev-banner .material-icons {
   color: #1FAD5C;
+  font-size: 64px;
+}
+
+/*Features Pages*/
+
+.quote-banner {
+  background-color: #2C2743;
+  color: rgba(255, 255, 255, 0.90);
+}
+
+.quote-banner h2, .quote-banner h5 {
+  color: rgba(255, 255, 255, 0.90);
+}
+
+.quote-banner p {
+  font-size: 16px;
+}
+
+.quote-banner img {
+  margin-bottom: 30px;
+}
+
+.quote-banner .button {
+  margin-bottom: 0px;
+  margin-top: 20px;
 }
 
 /*Plans Page*/
