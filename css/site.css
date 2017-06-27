@@ -197,6 +197,11 @@ body, html {
   }
 }
 
+.is-submenu-item .material-icons {
+  font-size: 14px;
+  padding-left: 10px;
+}
+
 
 /*footer*/
 
