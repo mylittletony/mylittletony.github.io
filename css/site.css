@@ -433,7 +433,6 @@ footer :last-child > .accordion-content:last-child {
   border-bottom: 1px solid #ECEFF1;
 }
 
-
 /*Contact Us*/
 
 .contact-card {
@@ -523,6 +522,14 @@ footer :last-child > .accordion-content:last-child {
   margin: 0px;
   font-size: 20px;
   font-weight: bold
+}
+
+/*Sign Up Page*/
+
+.signup-banner {
+  background-image: url('/images/pages/dashboard.svg');
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /*-----*/
