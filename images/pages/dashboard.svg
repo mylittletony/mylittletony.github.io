@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1486 922" style="enable-background:new 0 0 1486 922;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#212121;}
+	.st1{fill:#434343;}
+	.st2{fill:#478FCC;}
+	.st3{fill:#EEEEEE;}
+	.st4{fill:#FFFFFF;}
+	.st5{fill:#263238;}
+</style>
+<g id="Layer_6">
+	<rect x="728.1" y="24.9" class="st0" width="20.8" height="28.6"/>
+	<rect x="743" y="24.9" width="20.8" height="28.6"/>
+</g>
+<g id="Layer_7">
+	<path class="st0" d="M1419.1,0H693v922h793V66.9C1486,30.1,1455.9,0,1419.1,0z M743,48c-5,0-9-4-9-9c0-5,4-9,9-9s9,4,9,9
+		C752,44,748,48,743,48z"/>
+	<path class="st1" d="M734,39c0-5,4-9,9-9V0H66.9C30.1,0,0,30.1,0,66.9V922h743V48C738,48,734,44,734,39z"/>
+</g>
+<g id="Layer_8">
+	<rect x="58" y="72" class="st2" width="1370" height="850"/>
+	<rect x="58" y="124" class="st3" width="1370" height="798"/>
+	<rect x="234.6" y="124" class="st4" width="1193.4" height="50"/>
+	<rect x="58" y="124" class="st5" width="200" height="798"/>
+	<path class="st4" d="M276,922V206c0-6.6,5.4-12,12-12h1110c6.6,0,12,5.4,12,12v716"/>
+</g>
+</svg>
