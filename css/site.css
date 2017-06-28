@@ -1,7 +1,7 @@
 /*body*/
 .row.banner {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -323,24 +323,24 @@ footer :last-child > .accordion-content:last-child {
 
 /*Features Pages*/
 
-.quote-banner {
+.dark-banner {
   background-color: #2C2743;
   color: rgba(255, 255, 255, 0.90);
 }
 
-.quote-banner h2, .quote-banner h5 {
+.dark-banner h2, .dark-banner h5 {
   color: rgba(255, 255, 255, 0.90);
 }
 
-.quote-banner p {
+.dark-banner p {
   font-size: 16px;
 }
 
-.quote-banner img {
+.dark-banner img {
   margin-bottom: 30px;
 }
 
-.quote-banner .button {
+.dark-banner .button {
   margin-bottom: 0px;
   margin-top: 20px;
 }
