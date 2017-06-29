@@ -34,6 +34,7 @@ body, html {
   -webkit-transition:box-shadow 0.5s;
   -ms-transition:box-shadow 0.5s;
   -o-transition:box-shadow 0.5s;
+  z-index: 5;
 }
 
 #sticky-header.active {
@@ -584,6 +585,17 @@ footer :last-child > .accordion-content:last-child {
   }
 }
 
+.signup-text input[type=email], textarea {
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+}
+
+.signup-text input[type=email]:focus, textarea:focus {
+  box-shadow: 0 0 5px #2ba6cb;
+  border: 1px solid #2ba6cb;
+}
 
 /*-----*/
 /*-OLD-*/
