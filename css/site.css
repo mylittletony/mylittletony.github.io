@@ -347,6 +347,10 @@ footer :last-child > .accordion-content:last-child {
   margin-top: 20px;
 }
 
+.features-banner img {
+  max-height: 400px;
+}
+
 /*Plans Page*/
 
 .plans-banner > .large-12 > p {
