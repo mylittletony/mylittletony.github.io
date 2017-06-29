@@ -526,11 +526,63 @@ footer :last-child > .accordion-content:last-child {
 
 /*Sign Up Page*/
 
-.signup-banner {
-  background-image: url('/images/pages/dashboard.svg');
-  background-repeat: no-repeat;
-  background-position: center;
+@media screen and (min-width: 1000px) {
+  .signup-banner {
+    background-image: url('/images/pages/dashboard-large.svg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    min-height: 50em;
+    position: relative;
+  }
+  .signup-text {
+    position: absolute;
+    top: 35%;
+    left: 24%;
+    width: 650px;
+  }
 }
+
+
+@media screen and (min-width: 640px) and (max-width: 999px) {
+  .signup-banner {
+    background-image: url('/images/pages/dashboard-med.svg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    position: relative;
+    min-height: 50em;
+    max-width: 550px;
+  }
+  .signup-text {
+    position: absolute;
+    top: 33%;
+    left: 14%;
+    width: 400px;
+  }
+  .signup-text h2 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .signup-banner {
+    background-image: url('/images/pages/dashboard-small.svg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    min-height: 50em;
+    position: relative;
+    max-width: 400px;
+  }
+  .signup-text {
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    width: 320px;
+  }
+  .signup-text h2 {
+    font-size: 1.8rem;
+  }
+}
+
 
 /*-----*/
 /*-OLD-*/
