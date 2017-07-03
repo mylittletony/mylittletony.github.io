@@ -6,12 +6,20 @@
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif;
-  color: rgba(0, 0, 0, 0.90);
   margin-bottom: 25px;
 }
 
+h1 {
+  color: rgba(0, 0, 0, 0.90);
+}
+
+h2, h3, h4, h5, h6 {
+  color: #3e3e3e;
+}
+
 p {
-  font-size: 16px;
+  font-size: 18px;
+  line-height: 2rem;
 }
 
 .sub-title {
