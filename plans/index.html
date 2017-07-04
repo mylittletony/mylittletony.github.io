@@ -36,7 +36,30 @@ $(document).ready(function(){
       }
     });
     navactive();
+    $('input[name=options]').on('change', function(){
+      if($(this).prop('value') == 2) {
+        $('.bus-plan').html('£50');
+        $('.bus-ap').html('£3.25');
+        $('.prem-plan').html('£250');
+        $('.prem-ap').html('£2.35');
+      }
+      else {
+        if($(this).prop('value') == 3) {
+          $('.bus-plan').html('€50');
+          $('.bus-ap').html('€3.15');
+          $('.prem-plan').html('€320');
+          $('.prem-ap').html('€2.75');
+        }
+        else {
+          $('.bus-plan').html('$60');
+          $('.bus-ap').html('$3.50');
+          $('.prem-plan').html('$350');
+          $('.prem-ap').html('$3.00');
+        }
+      }
+    });
 });
+
 </script>
 
 <div class="page-content" id="calculator">
