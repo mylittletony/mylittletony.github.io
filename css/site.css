@@ -307,7 +307,7 @@ footer :last-child > .accordion-content:last-child {
   background-size: 25%;
 }
 
-.bg-top h1, h3, img{
+.bg-top h1, h3, img, a {
   z-index: 2;
   position: relative;
 }
