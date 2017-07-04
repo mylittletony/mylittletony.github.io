@@ -149,7 +149,7 @@ body, html {
     height: 0%;
     width: 100%;
     position: fixed;
-    z-index: 1;
+    z-index: 10;
     top: 0;
     left: 0;
     background-color: rgb(255,255,255);
@@ -307,7 +307,7 @@ footer :last-child > .accordion-content:last-child {
   background-size: 25%;
 }
 
-.bg-top h1, h3, img, a {
+.bg-top h1, .bg-top h3, .bg-top img, .bg-top a {
   z-index: 2;
   position: relative;
 }
