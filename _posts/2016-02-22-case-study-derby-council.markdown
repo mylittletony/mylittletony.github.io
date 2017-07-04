@@ -20,7 +20,7 @@ description: “We have a social responsibility to make the Wi-Fi good quality, 
 </div>
 
 <div class="case-study-post mdl-cell mdl-cell--9-col mdl-shadow--1dp">
-<a href="/community/showcase/">< Back to Case Studies</a>
+<a href="/casestudies/">< Back to Case Studies</a>
 <h1>How Derby City Council Use Cucumber</h1>
 <p>Jo manages a network of around 200 Meraki access points around Derby. He uses the Cucumber captive portal and the analytics platform which gives him full ownership and control over his Wi-Fi network.</p>
 

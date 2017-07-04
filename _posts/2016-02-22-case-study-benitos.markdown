@@ -20,7 +20,7 @@ description: “We wanted to stand out from the crowd and brand the welcome spla
 </div>
 
 <div class="case-study-post mdl-cell mdl-cell--9-col mdl-shadow--1dp">
-<a href="/community/showcase/">< Back to Case Studies</a>
+<a href="/casestudies/">< Back to Case Studies</a>
 <h1>How Benito's Hat Use Cucumber</h1>
 <p>Walter is operations manager of a chain of Mexican restaurants. Benito’s serve by far the best burritos in town. Walters talks to us about why he uses Cucumber to run his Wi-Fi.</p>
 <hr>

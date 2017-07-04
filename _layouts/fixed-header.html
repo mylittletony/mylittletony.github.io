@@ -1,57 +1,126 @@
 ---
 layout: default
 ---
-<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-  <header class="mdl-layout__header mdl-layout__header--scroll mdl-shadow--1dp">
-    <div class="mdl-layout__header-row">
-      <!-- Title -->
-      <div class="ct-logo">
-        <a href="/"><img src="/images/pages/cucumber_tony_logo.svg"></a>
-      </div>
-      <!-- Left -->
-      <nav class="mdl-navigation mdl-layout--large-screen-only">
-        <a class="mdl-navigation__link" id="discover" href="/discover/">Discover</a>
-        <a class="mdl-navigation__link" id="devices" href="/compatible-hardware/">Devices</a>
-        <a class="mdl-navigation__link" id="plans" href="/plans/">Plans</a>
-        <a class="mdl-navigation__link" id="community" href="/community/">Community</a>
-      </nav>
-      <!-- Add spacer, to align navigation to the right -->
-      <div class="mdl-layout-spacer"></div>
-      <!-- Navigation. We hide it in small screens. -->
-      <nav class="mdl-navigation mdl-layout--large-screen-only">
-        <a class="mdl-navigation__link" href="/sign-up">Sign-up</a>
-        <a class="mdl-navigation__link" href="https://my.ctapp.io/#/login">Login</a>
-        <a class="mdl-navigation__link" target="_blank" href="http://docs.cucumberwifi.io/">Help</a>
-      </nav>
-    </div>
-  </header>
-  <div class="mdl-layout__drawer mdl-layout--small-screen-only mdl-shadow--1dp">
-    <nav class="mdl-navigation">
-      <!-- <span class="sidebar-logo"><img src="/images/pages/cucumber-wifi.svg"></span> -->
-      <a class="mdl-navigation__link" id="discover-mobi" href="/discover/">Discover</a>
-      <a class="mdl-navigation__link" id="devices-mobi" href="/compatible-hardware/">Devices</a>
-      <a class="mdl-navigation__link" id="plans-mobi" href="/plans/">Plans</a>
-      <a class="mdl-navigation__link" id="community-mobi" href="/community/">Community</a>
-      <hr>
-      <a class="mdl-navigation__link" target="_blank" href="http://docs.cucumberwifi.io/">Help</a>
-      <a class="mdl-navigation__link" href="/sign-up">Sign-up</a>
-      <a class="mdl-navigation__link" href="https://my.ctapp.io/#/login">Login</a>
-    </nav>
-  </div>
-  <main class="mdl-layout__content">
+<div data-sticky-container>
+  <div id="sticky-header" class="sticky" data-sticky data-options="anchor: page; marginTop: 0;">
 
-    <!-- <div id="notification" class="notification mdl-shadow--4dp mdl-cell--hide-phone">
-      <i id="close" class="notification-close material-icons">close</i>
-      <div class="notification-header" onclick="parent.location='/school-of-cucumber-tony/'">
+    <div class="title-bar hide-for-medium">
+      <div class="title-bar-title">
+        <div class="ct-logo">
+          <a href="/"><img src="/images/ct-logos/ct-logo-dark.png"></a>
+        </div>
       </div>
-      <div class="notification-body" onclick="parent.location='/school-of-cucumber-tony/'">
-        <h4>Want to Learn More About WiFi?</h4>
-        <p>Sign up for our School of Cucumber Tony class<br>Click here to find out more</p>
+      <button class="menu-icon dark" type="button" onclick="openNav()"></button>
+    </div>
+
+    <div class="top-bar hide-for-small-only">
+      <div class="top-bar-left">
+        <ul class="dropdown menu" data-dropdown-menu data-options="disableHover:true;clickOpen:true">
+          <li class="menu-text">
+            <div class="ct-logo">
+              <a href="/"><img src="/images/ct-logos/ct-logo-dark.png"></a>
+            </div>
+          </li>
+          <li id="plans"><a href="/plans">Plans</a></li>
+          <li id="businesses">
+            <a href="#">Businesses</a>
+            <ul class="menu">
+              <li><a id="casestudies" href="/casestudies/">Case Studies</a></li>
+              <li><a id="manufacturers" href="/manufacturers/">Manufacturers</a></li>
+              <li><a id="resellers" href="/wifi-for-resellers/">Resellers</a></li>
+              <li><a id="education" href="/wifi-for-schools/">Education</a></li>
+              <li><a id="offices" href="/wifi-for-offices/">Offices</a></li>
+              <li><a id="retail" href="/wifi-for-retail/">Retail</a></li>
+              <li><a id="home" href="/home-wifi/">Home</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Developers</a>
+            <ul class="menu">
+              <li><a href="http://api-docs.cucumberwifi.io/" target="_blank">API Docs <i class="material-icons">launch</i></a></li>
+              <li><a href="https://github.com/cucumber-tony/SocketMan" target="_blank">SocketMan <i class="material-icons">launch</i></a></li>
+              <li><a href="https://github.com/cucumber-tony/cucumber-frontend" target="_blank">Dashboard <i class="material-icons">launch</i></a></li>
+              <li><a href="https://github.com/cucumber-tony/angularjs-splash-pages" target="_blank">Splash Page <i class="material-icons">launch</i></a></li>
+            </ul>
+          </li>
+          <li id="company">
+            <a href="#">Company</a>
+            <ul class="menu">
+              <li><a href="https://blog.cucumberwifi.io" target="_blank">Blog <i class="material-icons">launch</i></a></li>
+              <li><a id="about-us" href="/about/">About Us</a></li>
+              <li><a id="contact-us" href="/contact/">Contact Us</a></li>
+              <!-- <li><a id="branding" href="/branding/">Branding</a></li> -->
+            </ul>
+          </li>
+          <li class="show-for-small-only"><a href="/sign-up">Sign Up</a></li>
+          <li class="show-for-small-only"><a href="https://my.ctapp.io/#/login">Log In</a></li>
+          <li class="show-for-small-only"><a href="http://docs.cucumberwifi.io/" target="_blank">Help</a></li>
+        </ul>
       </div>
-    </div> -->
+      <div class="top-bar-right hide-for-small-only">
+        <ul class="menu">
+          <li><a href="/sign-up">Sign Up</a></li>
+          <li><a href="https://my.ctapp.io/#/login">Log In</a></li>
+          <li><a href="http://docs.cucumberwifi.io/" target="_blank">Help</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<main>
+
+<div id="navTray" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <div class="row">
+      <div class="small-6 columns text-center">
+        <h2>Product</h2>
+        <ul>
+          <li><a href="/sign-up">Sign Up</a></li>
+          <li><a href="https://my.ctapp.io/#/login">Log In</a></li>
+          <li><a id="plans" href="/plans">Plans</a>
+          <li><a href="http://docs.cucumberwifi.io/" target="_blank">Help</a></li>
+        </ul>
+      </div>
+      <div class="small-6 columns text-center">
+        <h2>Businesses</h2>
+        <ul>
+          <li><a id="casestudies-mob" href="/casestudies/">Case Studies</a></li>
+          <li><a id="manufacturers-mob" href="/manufacturers/">Manufacturers</a></li>
+          <li><a id="resellers-mob" href="/wifi-for-resellers/">Resellers</a></li>
+          <li><a id="education-mob" href="/wifi-for-schools/">Education</a></li>
+          <li><a id="offices-mob" href="/wifi-for-offices/">Offices</a></li>
+          <li><a id="retail-mob" href="/wifi-for-retail/">Retail</a></li>
+          <li><a id="home-mobi" href="/home-wifi/">Home</a></li>
+        </ul>
+      </div>
+      <div class="small-6 columns text-center">
+        <h2>Developers</h2>
+        <ul>
+          <li><a href="http://api-docs.cucumberwifi.io/" target="_blank">API Docs <i class="material-icons">launch</i></a></li>
+          <li><a href="https://github.com/cucumber-tony/SocketMan" target="_blank">SocketMan <i class="material-icons">launch</i></a></li>
+          <li><a href="https://github.com/cucumber-tony/cucumber-frontend" target="_blank">Dashboard <i class="material-icons">launch</i></a></li>
+          <li><a href="https://github.com/cucumber-tony/angularjs-splash-pages" target="_blank">Splash Page <i class="material-icons">launch</i></a></li>
+        </ul>
+      </div>
+      <div class="small-6 columns text-center">
+        <h2>Company</h2>
+        <ul>
+          <li><a href="https://blog.cucumberwifi.io" target="_blank">Blog  <i class="material-icons">launch</i></a></li>
+          <li><a id="about-us-mob" href="/about/">About Us</a></li>
+          <li><a id="contact-us-mob" href="/contact/">Contact Us</a></li>
+          <li><a id="architecture-mob" href="/architecture/">Architecture</a></li>
+          <li><a id="philosophy-mob" href="/philosophy/">Philosophy</a></li>
+          <!-- <li><a id="branding-mob" href="/branding/">Branding</a></li> -->
+          <li><a id="videos-mob" href="/videos/">Out & About</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
 
     {{ content }}
     {% include footer.html %}
-
-  </main>
-</div>
+</main>

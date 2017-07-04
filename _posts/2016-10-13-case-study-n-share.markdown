@@ -20,7 +20,7 @@ description: “As we have our own marketing and business intelligence platform,
 </div>
 
 <div class="case-study-post mdl-cell mdl-cell--9-col mdl-shadow--1dp">
-<a href="/community/showcase/">< Back to Case Studies</a>
+<a href="/casestudies/">< Back to Case Studies</a>
 <h1>How N-Share Uses Cucumber</h1>
 <p>Rafael from N-share is building a database for his clients with a marketing platform. He uses Cucumber’s API integration to create the ideal platform for his business.</p>
 

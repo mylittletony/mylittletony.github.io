@@ -21,7 +21,7 @@ description: “Without Cucumber we wouldn't be able to offer tailored marketing
 </div>
 
 <div class="case-study-post mdl-cell mdl-cell--9-col mdl-shadow--1dp">
-<a href="/community/showcase/">< Back to Case Studies</a>
+<a href="/casestudies/">< Back to Case Studies</a>
 <h1>How Invisinet Use Cucumber</h1>
 <p>Rob from Invisnet tells us how he uses Cucumber and why?</p>
 

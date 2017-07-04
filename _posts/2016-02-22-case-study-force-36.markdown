@@ -20,7 +20,7 @@ description: â€œCucumber has saved us so many man hours we couldn't not use it.â
 </div>
 
 <div class="case-study-post mdl-cell mdl-cell--9-col mdl-shadow--1dp">
-<a href="/community/showcase/">< Back to Case Studies</a>
+<a href="/casestudies/">< Back to Case Studies</a>
 <h1>How Force 36 Use Cucumber</h1>
 <p>Richard from Force 36 IT Consultants tells us why they use Cucumber to manage wireless networks.</p>
 

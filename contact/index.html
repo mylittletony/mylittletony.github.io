@@ -3,58 +3,71 @@ layout: fixed-header
 title: Contact Us | Cucumber Tony
 permalink: /contact/
 ---
+
+<script>
+function navactive() {
+  var id1 = document.querySelector("#company");
+  var id2 = document.querySelector("#contact-us");
+  id1.style.borderBottom = "3px solid #1FAD5C";
+  id1.style.paddingBottom = "15px";
+  id2.style.borderLeft = "3px solid #1FAD5C";
+  id2.style.paddingLeft = "27px";
+}
+$(document).ready(function(){
+  navactive();
+});
+</script>
+
 <div class="page-content">
 
-  <div class="contact-main mdl-grid">
-    <div class="center-cell mdl-cell mdl-cell--10-col mdl-typography--text-center">
+  <div class="row align-center banner">
+    <div class="large-10 columns text-center">
       <h2>Contact Us</h2>
       <h5>If you need help, please contact us through the dashboard support widget or via the discussion groups.</h5>
       <h5>If you have telephone support, you know the score.</h5>
       <a href="https://discuss.cucumberwifi.io/">
-        <button style="background:white;color:black;" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
+        <button class="button">
           Discussions
         </button>
       </a>
     </div>
   </div>
 
-  <div class="mdl-grid">
-    <div class="center-cell contact-card mdl-card mdl-shadow--1dp">
-      <div class="mdl-card__supporting-text">
+  <div class="row align-center">
+    <div class="large-7 columns text-center">
+
         <form action="https://formspree.io/hello@polkaspots.com" method="POST">
-          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-            <input class="mdl-textfield__input" type="text" name="Name" id="name" required/>
-            <label class="mdl-textfield__label" for="name">Your Name</label>
+          <div class="row align-center">
+            <div class="large-12 columns text-center">
+              <label>Your Name
+                <input type="text" name="Name" id="name" required>
+              </label>
+              <label>Your Email
+                <input type="email" name="Email" id="email" required>
+              </label>
+              <label>Country
+                <input type="text" name="Country" id="country" required>
+              </label>
+              <label>Company Website
+                <input type="text" name="Website" id="url" required>
+              </label>
+              <label>Current Access Point Volume
+                <input type="number" name="AP Volume" id="apvol" required>
+              </label>
+              <label>Tell us about what you're looking for
+                <textarea type="text" name="Message" rows= "5" id="message" required></textarea>
+              </label>
+              <input type="text" name="_gotcha" style="display:none" />
+            </div>
           </div>
-          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-            <input class="mdl-textfield__input" type="email" name="Email" id="email" required/>
-            <label class="mdl-textfield__label" for="email">Your Email</label>
+          <div class="row align-center">
+            <div class="large-12 columns text-center">
+              <input type="submit" value="Send" class="button">
+              <input type="hidden" name="_next" value="/contact/thanks.html" />
+              <p><small>Genuine emails and company names will move you to the top of the contact list.</small></p>
+            </div>
           </div>
-          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-            <input class="mdl-textfield__input" type="text" name="Country" id="country" required/>
-            <label class="mdl-textfield__label" for="country">Country</label>
-          </div>
-          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-            <input class="mdl-textfield__input" type="text" name="Website" id="url" required/>
-            <label class="mdl-textfield__label" for="url">Company Website</label>
-          </div>
-          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-            <input class="mdl-textfield__input" type="number" name="AP Volume" id="apvol" required/>
-            <label class="mdl-textfield__label" for="apvol">Current Access Point Volume</label>
-          </div>
-          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-            <textarea class="mdl-textfield__input" type="text" name="Message" rows= "5" id="message" required></textarea>
-            <label class="mdl-textfield__label" for="message">Tell us about what you're looking for</label>
-          </div>
-          <input type="text" name="_gotcha" style="display:none" />
-        </div>
-        <div class="mdl-card__actions mdl-card--border">
-          <input class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" type="submit" value="Send">
-          <input type="hidden" name="_next" value="/contact/thanks.html" />
-        </div>
-      </form>
-    </div>
+        </form>
 
   </div>
-  <p class="mdl-typography--text-center"><small>Genuine emails and company names will move you to the top of the contact list.</small></p>
 </div>

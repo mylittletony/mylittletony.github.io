@@ -20,7 +20,7 @@ description: “I like the new Cucumber layout. The flatness and design makes it
 </div>
 
 <div class="case-study-post mdl-cell mdl-cell--9-col mdl-shadow--1dp">
-<a href="/community/showcase/">< Back to Case Studies</a>
+<a href="/casestudies/">< Back to Case Studies</a>
 <h1>How Suffolk Libraries Use Cucumber</h1>
 <p>Suffolk Libraries has been a customer for many years. Today they share their story in hopes others who have a similar network can learn from their experience.</p>
 

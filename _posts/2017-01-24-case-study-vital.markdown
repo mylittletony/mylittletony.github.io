@@ -20,7 +20,7 @@ description: “It not only provides us with a great, centralised place to manag
 </div>
 
 <div class="case-study-post mdl-cell mdl-cell--9-col mdl-shadow--1dp">
-<a href="/community/showcase/">< Back to Case Studies</a>
+<a href="/casestudies/">< Back to Case Studies</a>
 <h1>Cucumber - A Vital Solution</h1>
 <p>Today we hear from Lee Evans, MD of Vital Technology Group and their experience with Cucumber.</p>
 

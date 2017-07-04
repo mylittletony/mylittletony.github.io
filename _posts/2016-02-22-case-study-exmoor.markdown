@@ -20,7 +20,7 @@ description: “It's IT and things do go wrong so I like being able to speak to 
 </div>
 
 <div class="case-study-post mdl-cell mdl-cell--9-col mdl-shadow--1dp">
-<a href="/community/showcase/">< Back to Case Studies</a>
+<a href="/casestudies/">< Back to Case Studies</a>
 <h1>How Exmoor National Park Use Cucumber</h1>
 <p>Jon is responsible for the ICT at Exmoor National Park. We’re quite jealous of his job as he gets to work in the park which is beautiful. He talks to us about why they use Cucumber.</p>
 

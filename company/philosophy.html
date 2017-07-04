@@ -5,10 +5,25 @@ permalink: /philosophy/
 redirect_from:
   - /philosophy
 ---
+
+<script>
+function navactive() {
+  var id1 = document.querySelector("#company");
+  var id2 = document.querySelector("#philosophy");
+  id1.style.borderBottom = "3px solid #1FAD5C";
+  id1.style.paddingBottom = "15px";
+  id2.style.borderLeft = "3px solid #1FAD5C";
+  id2.style.paddingLeft = "27px";
+}
+$(document).ready(function(){
+  navactive();
+});
+</script>
+
 <div class="page-content">
 
-  <div class="simple-page mdl-grid">
-    <div class="simple-card center-cell mdl-cell mdl-card mdl-cell--8-col mdl-card mdl-shadow--1dp">
+  <div class="row align-center banner">
+    <div class="large-12 columns text-center">
 
       <h2>Cucumber Tony Philosophy</h2>
 
