@@ -13,7 +13,7 @@ Your splash page is the gateway to your Wi-Fi hotspot. It's a page of joy and lo
 
 Take a look at some of the splash pages made with Cucumber Tony
 
-<a href="/community/showcase/splash-pages-in-action"> Click here to see them in action.</a>
+<a href="/community/showcase/splash-pages-in-action.html"> Click here to see them in action.</a>
 
 <hr>
 

@@ -13,7 +13,7 @@ Your splash page is the gateway to your Wi-Fi hotspot. It's a page of joy and lo
 
 Take a look at some of the login types in action with Cucumber Tony.
 
-<a href="/community/showcase/captive-portals"> Click here to see what else you can design.</a>
+<a href="/community/showcase/captive-portals.html"> Click here to see what else you can design.</a>
 
 <hr>
 
