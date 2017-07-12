@@ -109,7 +109,7 @@ And that should be you done. Check you can access your domain without any SSL wa
 <div class="mdl-typography--text-center">
 Enjoy! Remember, if you don't want to do all this, you can use our application. It's all set up for you.
 
-<h2><a href="/sign-up" class="button large success dst">Sign Up</a></h2>
+<h2><a href="/sign-up" class="button large success dst s-u-i">Sign Up</a></h2>
 
 Sign-up for Cucumber, it's free for unlimited access points and social logins :)
 </div>
