@@ -9,7 +9,7 @@ permalink: /case-studies/n-share.html
 redirect_from:
   - /case-studies/n-share
   - /case-studies/n-share/
-description: “As we have our own marketing and business intelligence platform, we use Cucumber for the network management and use the splash pages. We use the API to integrate the platform with ours.”
+description: “As we have our own marketing and business intelligence platform, we use CT WiFi for the network management and use the splash pages. We use the API to integrate the platform with ours.”
 ---
 
 <div class="mdl-grid">
@@ -21,8 +21,8 @@ description: “As we have our own marketing and business intelligence platform,
 
 <div class="case-study-post mdl-cell mdl-cell--9-col mdl-shadow--1dp">
 <a href="/casestudies/">< Back to Case Studies</a>
-<h1>How N-Share Uses Cucumber</h1>
-<p>Rafael from N-share is building a database for his clients with a marketing platform. He uses Cucumber’s API integration to create the ideal platform for his business.</p>
+<h1>How N-Share Uses CT WiFi</h1>
+<p>Rafael from N-share is building a database for his clients with a marketing platform. He uses CT's API integration to create the ideal platform for his business.</p>
 
 <hr>
 
@@ -38,17 +38,17 @@ description: “As we have our own marketing and business intelligence platform,
 
 <p>We’re a digital marketing company based in Brazil. We use WiFi to gather information and offer guest access to the users. The users send information about themselves, receive coupons or even watch a video.</p>
 
-<h2>How did you hear about Cucumber?</h2>
+<h2>How did you hear about CT WiFi?</h2>
 
 <p>Through Google.</p>
 
-<h2>What do you use Cucumber for?</h2>
+<h2>What do you use CT WiFI for?</h2>
 
-<p>As we have our own marketing and business intelligence platform, we use Cucumber for the network management and use the splash pages. We use the API to integrate the platform with ours.</p>
+<p>As we have our own marketing and business intelligence platform, we use CT WiFi for the network management and use the splash pages. We use the API to integrate the platform with ours.</p>
 
-<h2>And why were you looking for a solution like Cucumber?</h2>
+<h2>And why were you looking for a solution like CT WiFi?</h2>
 
-<p>In Brazil, the WiFi marketing business is blooming. We’re ahead of the competition and we were looking for a more affordable solution so we could offer our clients more than just Meraki, Aruba or Aerohive. We did find some other platforms but Cucumber had the best hardware options.</p>
+<p>In Brazil, the WiFi marketing business is blooming. We’re ahead of the competition and we were looking for a more affordable solution so we could offer our clients more than just Meraki, Aruba or Aerohive. We did find some other platforms but CT WiFi had the best hardware options.</p>
 
 <h2>What’s your favourite feature?</h2>
 
@@ -59,16 +59,16 @@ description: “As we have our own marketing and business intelligence platform,
 <p>Keep up the good work!</p>
 
 
-<p>That’s what we like to hear — Cucumber integrating with other platforms. Thanks Rafael! :)</p>
+<p>That’s what we like to hear — CT WiFi integrating with other platforms. Thanks Rafael! :)</p>
 
 <hr>
 
 <div class="mdl-typography--text-center">
-<p><i>Cucumber Tony is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities. Or you can utilise the captive portal solution with your existing infrastructure. Create a free account and check it here <a href="https://cucumberwifi.io">cucumberwifi.io</a></i></p>
+<p><i>CT WiFi is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities. Or you can utilise the captive portal solution with your existing infrastructure. Create a free account and check it here <a href="https://ct-networks.io">ct-networks.io</a></i></p>
 <div class="text-center">
-<h2>Come join Cucumber</h2>
+<h2>Come join CT WiFi</h2>
 <a href="https://my.ctapp.io/#/create" class="button success dst">Sign Up</a><br>
-<p>Sign-up for Cucumber Tony, it's free for unlimited access points :)</p>
+<p>Sign-up for CT WiFi, it's free for unlimited access points :)</p>
 </div>
 <hr>
 </div>

@@ -1,15 +1,16 @@
 ---
 layout: case-study
-title:  Cucumber Dashboard VS UniFi Controller
+title:  CT WiFi Dashboard VS UniFi Controller
 date:   2016-02-21
 categories: casestudy
 keywords: casestudy
 thumbnail: /images/case-studies/unifi-comparison/dan-bunyard.png
-permalink: /case-studies/cucumber-vs-unifi.html
+permalink: /case-studies/ct-vs-unifi.html
 redirect_from:
   - /case-studies/cucumber-vs-unifi
   - /case-studies/cucumber-vs-unifi/
-description: “Overall Cucumber is a very solid platform with amazing support.”
+  - /case-studies/cucumber-vs-unifi.html
+description: “Overall CT WiFi is a very solid platform with amazing support.”
 ---
 
 <div class="mdl-grid">
@@ -21,13 +22,13 @@ description: “Overall Cucumber is a very solid platform with amazing support.�
 <div class="case-study-post mdl-cell mdl-cell--9-col mdl-shadow--1dp">
 <a href="/casestudies/">< Back to Case Studies</a>
 
-<p>This report was submitted to us by one of our users on their views on the differences between the <b>Cucumber Dashboard</b> and the <b>UniFi Controller</b>.</p>
+<p>This report was submitted to us by one of our users on their views on the differences between the <b>CT WiFi Dashboard</b> and the <b>UniFi Controller</b>.</p>
 
-<p>It was <b>submitted on 10/Feb/2016</b>, and so is a reflection of the feature-set at that time, as well as their own personal opinions. Changes may have been made to both the Cucumber dashboard and UniFi controller since then.</p>
+<p>It was <b>submitted on 10/Feb/2016</b>, and so is a reflection of the feature-set at that time, as well as their own personal opinions. Changes may have been made to both the CT WiFi dashboard and UniFi controller since then.</p>
 
 <hr>
 
-<h1>Cucumber Dashboard VS UniFi Controller</h1>
+<h1>CT WiFi Dashboard VS UniFi Controller</h1>
 
 <p><i>(NOTE: Using latest 4.8.x branch of Unifi, 4.8.12 as of the time of this writing)</i></p>
 
@@ -47,14 +48,14 @@ description: “Overall Cucumber is a very solid platform with amazing support.�
   <img src="/images/case-studies/unifi-comparison/unifi-clients.png">
 </div>
 <div class="mdl-typography--text-center">
-  <i><small>Cucumber Dashboard Client List</small></i>
+  <i><small>CT WiFi Dashboard Client List</small></i>
   <br>
   <img src="/images/case-studies/unifi-comparison/ct-clients.png">
 </div>
 
-<p>Cucumber Tony does offer up a nice graph showing clients and throughput however with the throughput being bugged it's not overly useful.</p>
+<p>CT WiFi does offer up a nice graph showing clients and throughput however with the throughput being bugged it's not overly useful.</p>
 
-<p>Further breakdown of pros and cons of Cucumber vs UniFi:</p>
+<p>Further breakdown of pros and cons of CT WiFi vs UniFi:</p>
 
 <h3>Pros:</h3>
 <ul>
@@ -124,26 +125,26 @@ description: “Overall Cucumber is a very solid platform with amazing support.�
     <img src="/images/case-studies/unifi-comparison/unifi-map.png">
   </div>
 
-<p>A general note, <b>UniFi is local hosted</b> while <b>Cucumber is cloud hosted</b>. No real pro/con here, just something to keep in mind.</p>
+<p>A general note, <b>UniFi is local hosted</b> while <b>CT WiFi is cloud hosted</b>. No real pro/con here, just something to keep in mind.</p>
 
 <hr>
 
 <h2>Conclusion:</h2>
 
-<p>Cucumber Tony is built around the guest access/splash model. While not a bad thing that does restrict some functionality if you aren't using those features.</p>
+<p>CT WiFi is built around the guest access/splash model. While not a bad thing that does restrict some functionality if you aren't using those features.</p>
 
 <p>However at the end of the day the pros outweigh the cons in every instance. The only feature preventing me from a migrating is the time-based SSIDs as mentioned above.</p>
 
-<p>Overall Cucumber is a very solid platform with amazing support.</p>
+<p>Overall CT WiFi is a very solid platform with amazing support.</p>
 
 <hr>
 
 <div class="mdl-typography--text-center">
-<p><i>Cucumber Tony is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities. Or you can utilise the captive portal solution with your existing infrastructure. Create a free account and check it here <a href="https://cucumberwifi.io">cucumberwifi.io</a></i></p>
+<p><i>CT WiFi is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities. Or you can utilise the captive portal solution with your existing infrastructure. Create a free account and check it here <a href="https://ct-networks.io">ct-networks.io</a></i></p>
 <div class="mdl-typography--text-center">
-<h2>Come join Cucumber</h2>
+<h2>Come join CT WiFi</h2>
 <a href="https://my.ctapp.io/#/create" class="button success dst">Sign Up</a><br>
-<p>Sign-up for Cucumber Tony, it's free for unlimited access points :)</p>
+<p>Sign-up for CT WiFi, it's free for unlimited access points :)</p>
 </div>
 <hr>
 </div>

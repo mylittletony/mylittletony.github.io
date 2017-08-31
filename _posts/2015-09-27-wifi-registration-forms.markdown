@@ -9,7 +9,7 @@ keywords: WiFi Registration Form, WiFi registration, Wi-Fi registration fields, 
 
 <hr>
 <h3>This doc is outdated. Please view our new documents here:<br>
-<a href="http://docs.cucumberwifi.io/article/105-setting-up-a-captive-portal-registration-form">docs.cucumberwifi.io</a></h3>
+<a href="http://docs.ct-networks.io/article/105-setting-up-a-captive-portal-registration-form">docs.ct-networks.io</a></h3>
 <hr>
 
 If you want to capture customer data, it's simple with Cucumber Tony. It's simple, here's how it works:
@@ -154,7 +154,7 @@ You bet! Simply visit your reports page and hit the download button. You'll be a
 
 <hr>
 
-*Cucumber Tony is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities.Or you can utlise the captive portal solution with your existing infrastructure. Create a free account and check it here <a href="https://cucumberwifi.io">cucumberwifi.io</a>*
+*Cucumber Tony is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities.Or you can utlise the captive portal solution with your existing infrastructure. Create a free account and check it here <a href="https://ct-networks.io">ct-networks.io</a>*
 
 <div class="mdl-typography--text-center">
 

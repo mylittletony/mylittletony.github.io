@@ -9,7 +9,7 @@ thumbnail:
 
 <hr>
 <h3>This doc is outdated. Please view our new documents here:<br>
-<a href="http://docs.cucumberwifi.io/article/107-xirrus-splash-page-setup">docs.cucumberwifi.io</a></h3>
+<a href="http://docs.ct-networks.io/article/107-xirrus-splash-page-setup">docs.ct-networks.io</a></h3>
 <hr>
 
 Using a web browser, go into your Cucumber Tony dashboard and <a href="https://my.ctapp.io/?data-elevio-article=7107#/" class="dst">add the box in</a> using the MAC address of your Access Point.
@@ -98,7 +98,7 @@ You can find the most up to date list of <b><span data-elevio-article="18499">Wa
 
 <hr>
 
-*Cucumber Tony is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities.Or you can utlise the captive portal solution with your existing infrastructure. Create a free account and check it here <a href="https://cucumberwifi.io">cucumberwifi.io</a>*
+*Cucumber Tony is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities.Or you can utlise the captive portal solution with your existing infrastructure. Create a free account and check it here <a href="https://ct-networks.io">ct-networks.io</a>*
 
 <div class="mdl-typography--text-center">
 

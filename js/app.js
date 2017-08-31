@@ -20,4 +20,4 @@ function closeNav() {
     document.getElementById("navTray").style.height = "0%";
 }
 
-console.log("%cWelcome To Cucumber", "font-size: x-large")
+console.log("%cWelcome To CT WiFi", "font-size: x-large")

@@ -8,13 +8,13 @@ keywords: Ruckus captive portal, Ruckus splash page hosting, Ruckus splash page 
 
 <hr>
 <h3>This doc is outdated. Please view our new documents here:<br>
-<a href="http://docs.cucumberwifi.io/article/110-ruckus-zd-splash-page-setup">docs.cucumberwifi.io</a></h3>
+<a href="http://docs.ct-networks.io/article/110-ruckus-zd-splash-page-setup">docs.ct-networks.io</a></h3>
 <hr>
 
 
-In order to use Ruckus with the Cucumber Tony logins and radius, you'll need to make some changes in your Ruckus Zone Director.
+In order to use Ruckus with the CT WiFi logins and radius, you'll need to make some changes in your Ruckus Zone Director.
 
-Add your <b>Access Points</b> into Cucumber Tony by adding their MAC addresses.
+Add your <b>Access Points</b> into CT by adding their MAC addresses.
 
 You can find the MAC addresses under the <b>Monitor</b> tab of the </b>Zone Director</b>. You should add the MAC addresses of all access points that are going to be in use with the splash pages.
 
@@ -22,7 +22,7 @@ You can find the MAC addresses under the <b>Monitor</b> tab of the </b>Zone Dire
 <img src="/images/community/tutorials/ruckus-zd-guide/ap-screen.png">
 </div>
 
-When you have added these to Cucumber Tony, go into the <b>settings</b> page of your <b>box</b>, scrolling down for the section labelled <b>PolkaSpots Settings</b>.
+When you have added these to CT, go into the <b>settings</b> page of your <b>box</b>, scrolling down for the section labelled <b>PolkaSpots Settings</b>.
 
 <div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/ruckus-zd-guide/not-ps-box.png">
@@ -171,7 +171,7 @@ Get MAC address of zonedirector from the zonedirector dashboard
 
 This will update the icon for you and activate the radius settings.
 
-Head to your boxes in Cucumber Tony and go into their settings.
+Head to your boxes in CT WiFi and go into their settings.
 
 Then scroll down under Advanced Settings, and click on edit advanced settings.
 
@@ -196,7 +196,7 @@ You can see the login page but when you login, it sends you back to the login pa
 
 - &#8226; Swap the access type to clickthrough to rule out password issues
 - &#8226; Ensure your radius secrets match the ones in your zone director radius settings
-- &#8226; Ensure your Nas-Id from your Cucumber Wi-Fi account matches the one in your zone director
+- &#8226; Ensure your Nas-Id from your CT Wi-Fi account matches the one in your zone director
 - &#8226; Make sure that your SSID entered through SSH matches the one you entered into your zone director
 
 If you do connect with an incorrect secret/nas_id then our servers will lock you out as a security measure.
@@ -231,7 +231,7 @@ This way you don't have to change anything in the ZD.
 
 <hr>
 
-*Cucumber Tony is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities.Or you can utlise the captive portal solution with your existing infrastructure. Create a free account and check it here <a href="https://cucumberwifi.io">cucumberwifi.io</a>*
+*CT WiFi is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities.Or you can utlise the captive portal solution with your existing infrastructure. Create a free account and check it here <a href="https://ct-networks.io">ct-networks.io</a>*
 
 <div class="mdl-typography--text-center">
 
@@ -239,7 +239,7 @@ This way you don't have to change anything in the ZD.
 
 <a href="https://my.ctapp.io/#/create" class="button success dst">Sign Up</a><br>
 
-<p>Sign-up for Cucumber Tony, it's free for unlimited access points :)</p>
+<p>Sign-up for CT WiFi, it's free for unlimited access points :)</p>
 
 <hr>
 

@@ -21,8 +21,8 @@ description: “We have a social responsibility to make the Wi-Fi good quality, 
 
 <div class="case-study-post mdl-cell mdl-cell--9-col mdl-shadow--1dp">
 <a href="/casestudies/">< Back to Case Studies</a>
-<h1>How Derby City Council Use Cucumber</h1>
-<p>Jo manages a network of around 200 Meraki access points around Derby. He uses the Cucumber captive portal and the analytics platform which gives him full ownership and control over his Wi-Fi network.</p>
+<h1>How Derby City Council Use CT WiFi</h1>
+<p>Jo manages a network of around 200 Meraki access points around Derby. He uses the CT WiFi captive portal and the analytics platform which gives him full ownership and control over his Wi-Fi network.</p>
 
 <p>He talks to us about why it was important Derby City council installed an open Wi-Fi network which the council owned rather than let a carrier install a network for them.</p>
 
@@ -47,11 +47,11 @@ description: “We have a social responsibility to make the Wi-Fi good quality, 
 <p>If we did ever want to sell on the data collated, we have the control and social responsibility to anonymise it and be honest and transparent about the sale. Money would also be ploughed back into the public. If we’d used a carrier, even if they did give us access to the data we wouldn’t be able to do this.</p>
 <hr>
 <div class="mdl-typography--text-center">
-<p><i>Cucumber Tony is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities. Or you can utilise the captive portal solution with your existing infrastructure. Create a free account and check it here <a href="https://cucumberwifi.io">cucumberwifi.io</a></i></p>
+<p><i>CT WiFi is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities. Or you can utilise the captive portal solution with your existing infrastructure. Create a free account and check it here <a href="https://ct-networks.io">ct-networks.io</a></i></p>
 <div class="mdl-typography--text-center">
-<h2>Come join Cucumber</h2>
+<h2>Come join CT WiFi</h2>
 <a href="https://my.ctapp.io/#/create" class="button success dst">Sign Up</a><br>
-<p>Sign-up for Cucumber Tony, it's free for unlimited access points :)</p>
+<p>Sign-up for CT WiFi, it's free for unlimited access points :)</p>
 </div>
 <hr>
 </div>

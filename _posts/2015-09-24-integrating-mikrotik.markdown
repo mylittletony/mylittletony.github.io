@@ -9,7 +9,7 @@ thumbnail: /images/community/thumbnails/aruba-setup.png
 
 <hr>
 <h3>This doc is outdated. Please view our new documents here:<br>
-<a href="http://docs.cucumberwifi.io/article/106-mikrotik-splash-page-setup">docs.cucumberwifi.io</a></h3>
+<a href="http://docs.ct-networks.io/article/106-mikrotik-splash-page-setup">docs.ct-networks.io</a></h3>
 <hr>
 
 >Note: you may lose internet connectivity during some stages of this process if the MikroTik is your only uplink. It will return once you have finished the process.
@@ -21,7 +21,7 @@ thumbnail: /images/community/thumbnails/aruba-setup.png
 <a href="http://www.facchinibr.net/wp/29/05/2013/mikrotik-winbox-mac-osx-download/">Mac</a><br>
 <br>
 **HTML File:**<br>
-<a href="http://www.cucumberwifi.io/downloads/microtik.zip">microtik.zip</a> <br>
+<a href="http://www.ct-networks.io/downloads/microtik.zip">microtik.zip</a> <br>
 
 2\. Connect to your MikroTik device via ethernet cable
 

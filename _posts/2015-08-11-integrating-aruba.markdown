@@ -8,7 +8,7 @@ thumbnail: /images/community/thumbnails/aruba-setup.png
 ---
 <hr>
 <h3>This doc is outdated. Please view our new documents here:<br>
-<a href="https://docs.cucumberwifi.io/article/108-aruba-splash-page-setup">docs.cucumberwifi.io</a></h3>
+<a href="https://docs.ct-networks.io/article/108-aruba-splash-page-setup">docs.ct-networks.io</a></h3>
 <hr>
 
 Using a web browser, go into your Cucumber Tony dashboard and <a href="/documentation/add-box.html" class="dst">add the box in</a> using the MAC address of your Access Point.
@@ -169,7 +169,7 @@ You should now be left with the following screen, which means you have configure
 
 <hr>
 
-*Cucumber Tony is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities.Or you can utlise the captive portal solution with your existing infrastructure. Create a free account and check it here <a href="https://cucumberwifi.io">cucumberwifi.io</a>*
+*Cucumber Tony is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities.Or you can utlise the captive portal solution with your existing infrastructure. Create a free account and check it here <a href="https://ct-networks.io">ct-networks.io</a>*
 
 <div class="mdl-typography--text-center">
 

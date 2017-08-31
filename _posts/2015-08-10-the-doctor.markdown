@@ -9,7 +9,7 @@ thumbnail: /images/community/thumbnails/doctor.png
 
 <hr>
 <h3>This doc is outdated. Please view our new documents here:<br>
-<a href="http://docs.cucumberwifi.io/article/103-running-the-doctor-script">docs.cucumberwifi.io</a></h3>
+<a href="http://docs.ct-networks.io/article/103-running-the-doctor-script">docs.ct-networks.io</a></h3>
 <hr>
 
 ###Note: You have to be on the same network as the Access Point to connect to the local portal.

@@ -8,7 +8,7 @@ keywords: captive portal, splash page, external, public, URL
 
 <hr>
 <h3>This doc is outdated. Please view our new documents here:<br>
-<a href="http://docs.cucumberwifi.io/">docs.cucumberwifi.io</a></h3>
+<a href="http://docs.ct-networks.io/">docs.ct-networks.io</a></h3>
 <hr>
 
 To use an Alternative Splash URL with Cucumber Tony just follow these simple steps.
@@ -39,7 +39,7 @@ _**Note:** In this case you should not make any changes to the **Captive Portal 
 
 <hr>
 
-*Cucumber Tony is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities.Or you can utlise the captive portal solution with your existing infrastructure. Create a free account and check it here <a href="https://cucumberwifi.io">cucumberwifi.io</a>*
+*Cucumber Tony is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities.Or you can utlise the captive portal solution with your existing infrastructure. Create a free account and check it here <a href="https://ct-networks.io">ct-networks.io</a>*
 
 <div class="mdl-typography--text-center">
 

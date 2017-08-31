@@ -8,12 +8,12 @@ description: Ruckus Captive Portal, Setting up a captive portal for the Ruckus S
 ---
 
 <div class="mdl-typography--text-center">
-  <h2>Unfortunately this method of integration is no longer supported, <a href="http://.cucumberwifi.io/discover">click here</a> to find out what else Cucumber can do for you</h2>
+  <h2>Unfortunately this method of integration is no longer supported, <a href="http://.ct-networks.io/discover">click here</a> to find out what else CT WiFi can do for you</h2>
   <hr>
 </div>
 
 
-<h3>Getting the Cucumber Dashboard working with your Ruckus Virtual SmartZone</h3>
+<h3>Getting the CT WiFi Dashboard working with your Ruckus Virtual SmartZone</h3>
 <p>The Ruckus Virtual SmartZone is a really fantastic piece of kit. This walk-through demonstrates how to integrate it with our splash pages, view your Ruckus wireless clients and, even view the status of your Ruckus APs!<br>
 <img src="/images/community/splash-pages/boxpark.png">
 </p>
@@ -23,12 +23,12 @@ description: Ruckus Captive Portal, Setting up a captive portal for the Ruckus S
 <ul>
 <li>Publicly available Ruckus VSZ (trial ok)</li>
 <li>Compatible Ruckus AP</li>
-<li>Cucumber account</li>
+<li>CT WiFi account</li>
 </ul>
 
 ### PLEASE DO NOT
 
-Please don't use the built-in radius test tool in your VSZ. This sends a partial request to our servers. After doing so, Cucumber Tonywill block access for security reasons.
+Please don't use the built-in radius test tool in your VSZ. This sends a partial request to our servers. After doing so, CT will block access for security reasons.
 
 The only way to fix this is to contact us.
 
@@ -40,7 +40,7 @@ The only way to fix this is to contact us.
 <li>9080, 9443 & 7443 for the VSZ integration</li>
 <li>8090, 8099, 8100, 8111, 9997, 9998 to ensure the splash pages work</li>
 </ul>
-<h2>Add your Access Points to your Cucumber dashboard.</h2>
+<h2>Add your Access Points to your CT WiFi dashboard.</h2>
 <p>You'll need to add each one. Once you've done this, you will need to make a note of some credentials which are needed when your set up your VSZ.</p>
 <p>Make sure you create a splash page too. And, if you're setting up zones, please ensure the boxes are all added to the correct zone. There's documentation about doing this in the green sidebar within your dash.</p>
 <h3>Get your Nas ID</h3>
@@ -92,7 +92,7 @@ Configuration > Service and Profiles > Authentication
 Configuration > AP Zones > Your Zone > Hotspot WISPr > Create New
 ```
 
-<p>You can either use our default url <b>app.my-wifi.co</b> or you can use your own brand. For example, if your brand name is Tony Time, the url will be tony-time.my-wifi.co. You can find this in your branding settings within your Cucumber dashboard.
+<p>You can either use our default url <b>app.my-wifi.co</b> or you can use your own brand. For example, if your brand name is Tony Time, the url will be tony-time.my-wifi.co. You can find this in your branding settings within your CT WiFi dashboard.
 <div class="mdl-typography--text-center">
   <img src="/images/community/tutorials/hotspot-wispr.png" width="800px">
 </div>
@@ -114,7 +114,7 @@ You can find the most up to date list of <b><span data-elevio-article="18499">Wa
 <p>Click WLAN in the left-hand menu. Create a new WLAN or edit an existing one.</p>
 <ul>
 <li>Authentication: Hotspot WISPr</li>
-<li>NAS ID: Enter the one from your Cucumber dashboard.</li>
+<li>NAS ID: Enter the one from your CT WiFi dashboard.</li>
 
 <p>Enter the accounting and authentication servers you created just now. You must select "Use the controller as a proxy"</p>
 </ul>
@@ -155,9 +155,9 @@ Click configuration > Administrators. Click create a new Admin account and fill 
   <img src="/images/community/tutorials/ruck-admin-domains.png" width="800px">
 </div>
 
-<h3>Add your credentials to your Cucumber WiFi dashboard</h3>
+<h3>Add your credentials to your CT WiFi dashboard</h3>
 
-<p>Go back to your Cucumber dashboard. In your Location settings, scroll down until you see the Ruckus VSZ section.</p>
+<p>Go back to your CT dashboard. In your Location settings, scroll down until you see the Ruckus VSZ section.</p>
 <p>Enter your VSH public IP or hostname and also your Northbound API password. You should also add your admin user and password. After you click save, we'll run a test on your server.</p>
 <p><b>Please ensure you use https for security reasons.</b></p>
 
@@ -173,7 +173,7 @@ Click configuration > Administrators. Click create a new Admin account and fill 
 
 <h3>Create a splash page for your Ruckus Gateway</h3>
 
-<p>Still in your Cucumber dashboard, click on Splash Pages and then hit create new. Fill in a few details, choose from a number of access types including Social logins, click through and email capture.</p>
+<p>Still in your CT dashboard, click on Splash Pages and then hit create new. Fill in a few details, choose from a number of access types including Social logins, click through and email capture.</p>
 
 <h3>Test Your Splash Pages</h3>
 
@@ -252,7 +252,7 @@ We insist you use SSL but it's a good test to telnet to 9080.
 
 If you're seeing this, it means we've tried 5 times to access your VSZ and failed. You should follow the steps above to fixed this issue.
 
-The only way to reset this error is to **change the host** in your location settings within your Cucumber dashboard.
+The only way to reset this error is to **change the host** in your location settings within your CT dashboard.
 
 ### Can't login - In a Loop ###
 
@@ -260,7 +260,7 @@ You can see the login page but when you login, it sends you back to the login pa
 
 - &#8226; Swap the access type to clickthrough to rule out password issues
 - &#8226; Ensure your radius secrets match the ones in your VSZ radius settings
-- &#8226; Ensure your Nas-Id from your Cucumber Wi-Fi account matches the one in your VSZ
+- &#8226; Ensure your Nas-Id from your CT Wi-Fi account matches the one in your VSZ
 
 <div class="mdl-typography--text-center">
   <img src="/images/community/tutorials/vsz-radius-secret-1.png" width="800px">
@@ -270,7 +270,7 @@ You can see the login page but when you login, it sends you back to the login pa
   <img src="/images/community/tutorials/vsz-radius-nas-id.png" width="800px">
 </div>
 
-If none of these worked, login to your Cucumber Wi-Fi dashboard and head over to the splash page in question.
+If none of these worked, login to your CT Wi-Fi dashboard and head over to the splash page in question.
 
 At the top of the top, it should show your VSZ host. If you cannot see this, go back to your location settings and re-save the VSZ settings. That should resync the settings.
 
@@ -318,11 +318,11 @@ When you login to your VSZ, you'll probably notice the AP is in the staging list
 
 ### Is this compatible with CloudRuckus?
 
-You bet. The Cucumber dashboard works with any Smart Zone Gateway. Just enter your details as described above.
+You bet. The CT dashboard works with any Smart Zone Gateway. Just enter your details as described above.
 
 <br><br>
 <div class="mdl-typography--text-center">
-<p>Sign-up for a Cucumber dashboard. It's free for unlimited access points!</p>
+<p>Sign-up for a CT WiFi dashboard. It's free for unlimited access points!</p>
 <a href="https://my.ctapp.io/#/create" class="button large success dst">Join</a>
 </div>
 <br><br>

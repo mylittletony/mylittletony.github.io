@@ -8,7 +8,7 @@ keywords: OpenWRT captive portal, OpenWRT splash page not working, OpenWRT splas
 
 <hr>
 <h3>This doc is outdated. Please view our new documents here:<br>
-<a href="http://docs.cucumberwifi.io/article/84-openmesh-installation">docs.cucumberwifi.io</a></h3>
+<a href="http://docs.ct-networks.io/article/84-openmesh-installation">docs.ct-networks.io</a></h3>
 <hr>
 
 You can use the Cucumber Tony dashboard, splash pages and radius servers including our Facebook logins with your OpenWRT, DD-WRT, OpenMesh and other boxes.

@@ -4,18 +4,18 @@ title: Using SSL with your custom domain
 date:   2015-06-26 22:29:01
 author: Simon (Big Chief) Morley
 categories: tutorials
-keywords: Cloudflare ssl, ssl wifi, cucumber tony ssl
+keywords: Cloudflare ssl, ssl wifi, CT WiFi ssl
 tags: Tutorials
 description: How to set up Cloudflare's free SSL with a custom domain for your CT Dashboard.
 ---
 
-###Set up Cloudflare's free SSL with a custom domain for your Cucumber Tony Dashboard.
+###Set up Cloudflare's free SSL with a custom domain for your CT WiFi Dashboard.
 
 ## What?
 
 We value security above pretty much everything. Security first. As a result, your dashboard's protected against abuse. We think your Wi-Fi deserves the best. Not everyone thinks this way.
 
-You can now set up a custom domain with Cucumber Tony. Your customers and friends can use this to log-in to your dashboard.
+You can now set up a custom domain with CT WiFi. Your customers and friends can use this to log-in to your dashboard.
 
 There's one downside - you need to sort your SSL certificates. Or cheat, as we explain here.
 

@@ -11,7 +11,7 @@ permalink: /community/showcase/splash-pages-in-action.html
 
 Your splash page is the gateway to your Wi-Fi hotspot. It's a page of joy and love. Every guest in your Wi-Fi hotspot sees this page before they access the Internet; first impressions are everything.
 
-Take a look at some of the login types in action with Cucumber Tony.
+Take a look at some of the login types in action with CT WiFi.
 
 <a href="/community/showcase/captive-portals.html"> Click here to see what else you can design.</a>
 
@@ -53,16 +53,16 @@ Take a look at some of the login types in action with Cucumber Tony.
 
 <hr>
 
-*Cucumber Tony is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities. Or you can utilise the captive portal solution with your existing infrastructure. Create a free account and check it here <a href="https://cucumberwifi.io">cucumberwifi.io</a>*
+*CT WiFi is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities. Or you can utilise the captive portal solution with your existing infrastructure. Create a free account and check it here <a href="https://ct-networks.io">ct-networks.io</a>*
 
 
 <div class="mdl-typography--text-center">
 
-<h2>Come join Cucumber</h2>
+<h2>Come join CT WiFi</h2>
 
 <a href="https://my.ctapp.io/#/create" class="button success dst">Sign Up</a><br>
 
-<p>Sign-up for Cucumber Tony, it's free for unlimited access points :)</p>
+<p>Sign-up for CT WiFi, it's free for unlimited access points :)</p>
 
 <hr>
 

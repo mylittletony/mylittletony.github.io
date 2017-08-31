@@ -8,10 +8,10 @@ keywords: Meraki captive portal, Meraki splash page not working, Meraki splash p
 
 <hr>
 <h3>This doc is outdated. Please view our new documents here:<br>
-<a href="http://docs.cucumberwifi.io/article/109-cisco-meraki-splash-page-setup">docs.cucumberwifi.io</a></h3>
+<a href="http://docs.ct-networks.io/article/109-cisco-meraki-splash-page-setup">docs.ct-networks.io</a></h3>
 <hr>
 
-In order to use Meraki with the Cucumber logins and radius, you'll need to make some changes in your Meraki portal.
+In order to use Meraki with the CT WiFI logins and radius, you'll need to make some changes in your Meraki portal.
 
 On the left hand menu bar, click on <b>Wireless</b> and select <b>Access Control</b>.
 
@@ -63,7 +63,7 @@ If you have errors when copying these in, try typing them out manually.
 <img src="/images/community/tutorials/meraki-guide/walled-garden.png">
 </div>
 
-Now you'll need to add your Meraki Box into your <b>Cucumber Tony dashboard</b>.
+Now you'll need to add your Meraki Box into your <b>CT WiFi dashboard</b>.
 
 You'll need the MAC address for this. To find this, click on the <b>Wireless</b> tab on the left hand side and select <b>Access Points</b>.
 
@@ -77,7 +77,7 @@ The MAC address of your box will show here.
 <img src="/images/community/tutorials/meraki-guide/mac-address-box.png">
 </div>
 
-Now go to your Cucumber Tony account and if you haven't already, create a location to add your boxes to.
+Now go to your CT WiFi account and if you haven't already, create a location to add your boxes to.
 
 Once a location has been created, select your <b>location</b> and click on <b>Boxes</b> in the left side menu. Add your Meraki box by clicking on <b>Add box</b>.
 
@@ -99,7 +99,7 @@ Head to your <b>Box</b>’s page and click on the box you've just added. If you 
 <img src="/images/community/tutorials/meraki-guide/box-settings.png">
 </div>
 
-Scroll down to <b>Cucumber Tony Settings</b> and uncheck <b>I'm a Cucumber Tony box</b> and select your Meraki box type under <b>What kind of box do you have</b>. Scroll to the bottom of the page and click <b>Update</b>.
+Scroll down to <b>CT WiFi Settings</b> and uncheck <b>I'm a CT box</b> and select your Meraki box type under <b>What kind of box do you have</b>. Scroll to the bottom of the page and click <b>Update</b>.
 
 <div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/meraki-guide/not-ct-box.png">
@@ -129,7 +129,7 @@ Now select <b>Custom Splash URL - Or provide a URL where users will be redirecte
 
 Your SSID should now show in your networks. Select the SSID in your networks to test this.
 
-<b>!! IMPORTANT !! The SSID of your network will be the one you've set in Meraki not the one set in Cucumber Tony. This feature is not available for Meraki boxes. You can rename or edit these under your Meraki SSID settings.</b>
+<b>!! IMPORTANT !! The SSID of your network will be the one you've set in Meraki not the one set in CT WiFi. This feature is not available for Meraki boxes. You can rename or edit these under your Meraki SSID settings.</b>
 
 For multiple SSID's, enable the SSID's you want in your Meraki SSID settings, then return to Splash Page settings in Meraki and apply the same method as shown below.
 

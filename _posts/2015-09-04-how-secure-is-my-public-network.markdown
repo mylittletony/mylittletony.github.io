@@ -22,7 +22,7 @@ Remember, a *public* WiFi network doesn't necessarily mean it has to be an *open
 
 If you are inviting people into your store or cafe, or other place of business, you are going to want to make sure that any access points and other network equipment are safe and secure. You can do everything possible to secure the WiFi but if Tom can just walk into your shop, pull out a cable and plug himself directly into your network, then it is all for nothing.
 
-Keep your modem and routers in a private place, and ensure that any APs you have are out of direct reach and fixed in place (<a href="https://cucumberwifi.io/community/tutorials/installing-your-wifi-access-points.html">but don't lock them away in a cage</a>, WiFi has feelings too!). 
+Keep your modem and routers in a private place, and ensure that any APs you have are out of direct reach and fixed in place (<a href="https://ct-networks.io/community/tutorials/installing-your-wifi-access-points.html">but don't lock them away in a cage</a>, WiFi has feelings too!). 
 
 Depending on what you are going to be using the WiFi for, some regulations such as the PCI requires you to do things like these, so you will want to ensure you are compliant.
 

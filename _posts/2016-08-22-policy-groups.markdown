@@ -12,7 +12,7 @@ redirect_from:
   - /community/showcase/policy-groups/
 ---
 
-Policy Groups are one of the most powerful features within your Cucumber dashboard. Combined with zones, they offer a simple, intuitive way to control access to your networks.
+Policy Groups are one of the most powerful features within your CT WiFi dashboard. Combined with zones, they offer a simple, intuitive way to control access to your networks.
 
 Policy Groups are a simple way to manage who can and can't connect to your WiFi.
 
@@ -36,6 +36,6 @@ Do you want to let someone connect to your SSID but prevent their internet acces
 
 The choice is yours.
 
-For more detailed information on what you can do with this feature, and how to use it, <a href="http://docs.cucumberwifi.io/article/434-understanding-policy-groups">take a look at our documentation here</a>.
+For more detailed information on what you can do with this feature, and how to use it, <a href="http://docs.ct-networks.io/article/434-understanding-policy-groups">take a look at our documentation here</a>.
 
 ---

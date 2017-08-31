@@ -8,7 +8,7 @@ keywords: wifi api, api wifi, wireless api
 
 <hr>
 <h3>This doc is outdated. Please view our new documents here:<br>
-<a href="http://docs.cucumberwifi.io/category/406-developer">docs.cucumberwifi.io</a></h3>
+<a href="http://docs.ct-networks.io/category/406-developer">docs.ct-networks.io</a></h3>
 <hr>
 
 This guide will show you how to setup your own application to use the Cucumber Tony API. The API will let you do loads of handy things, like create locations, generate vouchers and reboot your boxes.
@@ -286,7 +286,7 @@ http://docs.polkaspots.apiary.io/#
 
 --------------------------------------------------
 
-*Cucumber Tony is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities.Or you can utlise the captive portal solution with your existing infrastructure. Create a free account and check it here <a href="https://cucumberwifi.io">cucumberwifi.io</a>*
+*Cucumber Tony is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities.Or you can utlise the captive portal solution with your existing infrastructure. Create a free account and check it here <a href="https://ct-networks.io">ct-networks.io</a>*
 
 <div class="mdl-typography--text-center">
 

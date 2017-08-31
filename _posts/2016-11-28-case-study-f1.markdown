@@ -21,8 +21,8 @@ description: “The ease of customisation of the page within the portal is great
 
 <div class="case-study-post mdl-cell mdl-cell--9-col mdl-shadow--1dp">
 <a href="/casestudies/">< Back to Case Studies</a>
-<h1>F1 Consultancy Integrates Xirrus with Cucumber</h1>
-<p>The F1 Consultancy team were looking for guest access integration for events with thousands of users. They chose Cucumber to ensure everything would run seamlessly. Here’s what Mark had to say.</p>
+<h1>F1 Consultancy Integrates Xirrus with CT WiFi</h1>
+<p>The F1 Consultancy team were looking for guest access integration for events with thousands of users. They chose CT WIFi to ensure everything would run seamlessly. Here’s what Mark had to say.</p>
 
 <hr>
 
@@ -30,15 +30,15 @@ description: “The ease of customisation of the page within the portal is great
 
 <p>F1 Consultancy specialise in setting up large scale, temporary wireless networks for events, conferences and exhibitions. We support a number of high profile clients and events, large and small, all over the world. We pride ourselves in delivering exceptional quality of service and user experience throughout any event and it is very important to us that every event that we support is a success.</p>
 
-<h2>How did you hear about Cucumber?</h2>
+<h2>How did you hear about CT WiFi?</h2>
 
 <p>Through a colleague.</p>
 
-<h2>What do you use Cucumber for?</h2>
+<h2>What do you use CT WiFi for?</h2>
 
 <p>Offering a splash page solution for advertising and branding, when attendees connect to the network at an event.</p>
 
-<h2>And why were you looking for a solution like Cucumber?</h2>
+<h2>And why were you looking for a solution like CT WiFi?</h2>
 
 <p>We were asked by our client whether we could implement a splash page within our network so that this could be offered as a branding opportunity to potential sponsors of the event.</p>
 
@@ -55,11 +55,11 @@ description: “The ease of customisation of the page within the portal is great
 <hr>
 
 <div class="mdl-typography--text-center">
-<p><i>Cucumber Tony is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities. Or you can utilise the captive portal solution with your existing infrastructure. Create a free account and check it here <a href="https://cucumberwifi.io">cucumberwifi.io</a></i></p>
+<p><i>CT WiFi is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities. Or you can utilise the captive portal solution with your existing infrastructure. Create a free account and check it here <a href="https://ct-networks.io">ct-networks.io</a></i></p>
 <div class="text-center">
-<h2>Come join Cucumber</h2>
+<h2>Come join CT WiFi</h2>
 <a href="https://my.ctapp.io/#/create" class="button success dst">Sign Up</a><br>
-<p>Sign-up for Cucumber Tony, it's free for unlimited access points :)</p>
+<p>Sign-up for CT WiFi, it's free for unlimited access points :)</p>
 </div>
 <hr>
 </div>

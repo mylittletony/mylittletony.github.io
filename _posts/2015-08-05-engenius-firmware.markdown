@@ -8,7 +8,7 @@ keywords: install firmware on engenius ap, wifi firmware, engenius firmware upda
 
 <hr>
 <h3>This doc is outdated. Please view our new documents here:<br>
-<a href="http://docs.cucumberwifi.io/article/83-engenius-installation">docs.cucumberwifi.io</a></h3>
+<a href="http://docs.ct-networks.io/article/83-engenius-installation">docs.ct-networks.io</a></h3>
 <hr>
 
 

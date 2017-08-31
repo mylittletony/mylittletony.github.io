@@ -9,7 +9,7 @@ permalink: /case-studies/padaco.html
 redirect_from:
   - /case-studies/padaco
   - /case-studies/padaco/
-description: “At the time, we found Cucumber for a large summer festival. We supported more than 4000 connections. After the festival was over, we continued to use Cucumber because it’s easy to set up and allows users to connect via social media.”
+description: “At the time, we found CT WiFi for a large summer festival. We supported more than 4000 connections. After the festival was over, we continued to use CT WiFi because it’s easy to set up and allows users to connect via social media.”
 ---
 
 <div class="mdl-grid">
@@ -21,7 +21,7 @@ description: “At the time, we found Cucumber for a large summer festival. We s
 
 <div class="case-study-post mdl-cell mdl-cell--9-col mdl-shadow--1dp">
 <a href="/casestudies/">< Back to Case Studies</a>
-<h1>Padaco’s Experience with Cucumber</h1>
+<h1>Padaco’s Experience with CT WiFi</h1>
 <p>Padaco — a unique full-stack IT service provider based in the Netherlands. Frank and Daniel share their experience.</p>
 
 <hr>
@@ -30,15 +30,15 @@ description: “At the time, we found Cucumber for a large summer festival. We s
 
 <p>We offer two different types of services — an IT cloud workspace for customers with day to day IT environment and Padaco connectivity. With this service, we specialise in offering customers with Internet and WiFi when there’s not enough bandwidth available — ie. large festivals, remote areas, etc. We also offer 4G solutions — either small solutions 100mb — 1GB speed.</p>
 
-<h2>How did you hear about Cucumber?</h2>
+<h2>How did you hear about CT WiFi?</h2>
 
 <p>Google</p>
 
-<h2>What do you use Cucumber for?</h2>
+<h2>What do you use CT WiFi for?</h2>
 
-<p>At the time, we found Cucumber for a large summer festival. We supported more than 4000 connections. After the festival was over, we continued to use Cucumber because it’s easy to set up and allows users to connect via social media.</p>
+<p>At the time, we found CT WiFi for a large summer festival. We supported more than 4000 connections. After the festival was over, we continued to use CT WiFi because it’s easy to set up and allows users to connect via social media.</p>
 
-<h2>And why were you looking for a solution like Cucumber?</h2>
+<h2>And why were you looking for a solution like CT WiFi?</h2>
 
 <p>We were looking for a solution that could block free WiFi access but still be able to collect data.</p>
 
@@ -57,11 +57,11 @@ description: “At the time, we found Cucumber for a large summer festival. We s
 <hr>
 
 <div class="mdl-typography--text-center">
-<p><i>Cucumber Tony is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities. Or you can utilise the captive portal solution with your existing infrastructure. Create a free account and check it here <a href="https://cucumberwifi.io">cucumberwifi.io</a></i></p>
+<p><i>CT WiFi is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities. Or you can utilise the captive portal solution with your existing infrastructure. Create a free account and check it here <a href="https://ct-networks.io">ct-networks.io</a></i></p>
 <div class="text-center">
-<h2>Come join Cucumber</h2>
+<h2>Come join CT WiFi</h2>
 <a href="https://my.ctapp.io/#/create" class="button success dst">Sign Up</a><br>
-<p>Sign-up for Cucumber Tony, it's free for unlimited access points :)</p>
+<p>Sign-up for CT WiFi, it's free for unlimited access points :)</p>
 </div>
 <hr>
 </div>

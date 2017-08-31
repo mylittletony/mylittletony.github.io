@@ -8,7 +8,7 @@ keywords: install firmware on OpenMesh ap, wifi firmware, OpenMesh firmware upda
 
 <hr>
 <h3>This doc is outdated. Please view our new documents here:<br>
-<a href="http://docs.cucumberwifi.io/article/84-openmesh-installation">docs.cucumberwifi.io</a></h3>
+<a href="http://docs.ct-networks.io/article/84-openmesh-installation">docs.ct-networks.io</a></h3>
 <hr>
 
 You will need:
@@ -61,7 +61,7 @@ You should then see something similar to this in the console:
 
 <hr>
 
-*Cucumber Tony is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities. Or you can utilise the captive portal solution with your existing infrastructure. Create a free account and check it here <a href="https://cucumberwifi.io">cucumberwifi.io</a>*
+*Cucumber Tony is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities. Or you can utilise the captive portal solution with your existing infrastructure. Create a free account and check it here <a href="https://ct-networks.io">ct-networks.io</a>*
 
 
 <div class="mdl-typography--text-center">

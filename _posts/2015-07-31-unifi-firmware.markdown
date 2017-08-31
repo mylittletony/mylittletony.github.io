@@ -8,7 +8,7 @@ keywords: install firmware on unifi ap, wifi firmware, unifi firmware update
 
 <hr>
 <h3>This doc is outdated. Please view our new documents here:<br>
-<a href="http://docs.cucumberwifi.io/article/86-installing-ubiquiti-unifi-using-windows">docs.cucumberwifi.io</a></h3>
+<a href="http://docs.ct-networks.io/article/86-installing-ubiquiti-unifi-using-windows">docs.ct-networks.io</a></h3>
 <hr>
 
 <h3>Option One - TFTP</h3>
@@ -90,7 +90,7 @@ g. Download TFTP2.exe <a href="https://s3.amazonaws.com/elevio-article-assets/55
 <img src="/images/community/tutorials/unifi-flash/tftp2.png">
 </div>
 
-h. In the File row, click on the 3 dots button and select the firmware downloaded from Cucumber Tony. Then Click Upgrade.
+h. In the File row, click on the 3 dots button and select the firmware downloaded from CT WiFi. Then Click Upgrade.
 
 <div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/unifi-flash/tftp-upgrade.png">

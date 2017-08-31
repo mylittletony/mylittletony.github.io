@@ -75,7 +75,7 @@ If you have a multiple AP deployment try to plan them in such a way that at any 
 
 <h3>More Tools</h3>
 
-Cucumber Tony has loads of tools built-in to improve your Wi-Fi signal and security.
+CT WiFi has loads of tools built-in to improve your Wi-Fi signal and security.
 
 It's free for unlimited locations and access points.
 

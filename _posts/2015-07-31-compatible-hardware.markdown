@@ -8,13 +8,13 @@ keywords: wifi hotspot software, wifi firmware download, update Unifi firmware, 
 
 <hr>
 <h3>This doc is outdated. Please view our new documents here:<br>
-<a href="http://docs.cucumberwifi.io/article/78-compatible-devices-access-points">docs.cucumberwifi.io</a></h3>
+<a href="http://docs.ct-networks.io/article/78-compatible-devices-access-points">docs.ct-networks.io</a></h3>
 <hr>
 
 <h3>List of compatible boxes</h3>
 <hr>
 
-Here are the access points you can control and monitor using the Cucumber Tony dashboard.
+Here are the access points you can control and monitor using the CT WiFi dashboard.
 
 You will find further instructions on how to set them up by searching through our help documents on the green sidebar.
 
@@ -111,16 +111,16 @@ You can buy a box from within your account - <a href="https://my.ctapp.io/#/shop
 <h3>Option 2. Integrating via your radius settings (Meraki, Ruckus and more)</h3>
 <hr>
 
-If you have a box that includes radius settings you can use the Cucumber Tony splash page and captive portal to manage your public Wi-Fi connection.
+If you have a box that includes radius settings you can use the CT WiFi splash page and captive portal to manage your public Wi-Fi connection.
 
 You don't need to install firmware on your box, and can continue to use the control and management features of the vendor - e.g. the Meraki dashboard.
 
-You will miss the management and reporting features in Cucumber Tony though - like how many users are connected and RF signal strength.
+You will miss the management and reporting features in CT WiFi though - like how many users are connected and RF signal strength.
 
 <h3>Option 3. Downloading the firmware</h3>
 <hr>
 
-Installing the Cucumber Tony firmware on your access point gives you full control of it. You'll be able to utilise all the features available in your dashboard.
+Installing the CT WiFi firmware on your access point gives you full control of it. You'll be able to utilise all the features available in your dashboard.
 
 It's simple to download the firmware on your access point. Just choose your access point and follow the instructions.
 

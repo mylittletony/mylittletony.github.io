@@ -21,8 +21,8 @@ description: “It not only provides us with a great, centralised place to manag
 
 <div class="case-study-post mdl-cell mdl-cell--9-col mdl-shadow--1dp">
 <a href="/casestudies/">< Back to Case Studies</a>
-<h1>Cucumber - A Vital Solution</h1>
-<p>Today we hear from Lee Evans, MD of Vital Technology Group and their experience with Cucumber.</p>
+<h1>CT WiFi - A Vital Solution</h1>
+<p>Today we hear from Lee Evans, MD of Vital Technology Group and their experience with CT WiFi.</p>
 
 <hr>
 
@@ -31,17 +31,17 @@ description: “It not only provides us with a great, centralised place to manag
 <p>We’re a multi disciplinary technology service provider.</p>
 <p>One of our core offerings is around Managed IT Services — we specify, install and maintain IT systems for businesses, ranging from traditional server solutions to cloud, wireless, backup & DR and security.</p>
 
-<h2>How did you hear about Cucumber?</h2>
+<h2>How did you hear about CT WiFi?</h2>
 
 <p>From our distributor — MSDist</p>
 
-<h2>What do you use Cucumber for?</h2>
+<h2>What do you use CT WiFi for?</h2>
 
 <p>We use it to provide consolidated management of wireless infrastructure across our client base.</p>
 
 <p>It not only provides us with a great, centralised place to manage all of our client environments but also benefits our clients by removing the need for on-site controllers and providing advanced functionality such as social login and effective captive portal facilities.</p>
 
-<h2>And why were you looking for a solution like Cucumber?</h2>
+<h2>And why were you looking for a solution like CT WiFi?</h2>
 
 <p>We had limitations with our previous solutions Power Cloud. Development was slow, with new features and improvements few and far between.</p>
 
@@ -49,22 +49,22 @@ description: “It not only provides us with a great, centralised place to manag
 
 <h2>What’s your favourite feature?</h2>
 
-<p>To be able to automatically rotate guest WiFi passwords and let the relevant people know — with our old solution these often weren’t changed frequently enough, so Cucumber has helped us to improve security of our client networks.</p>
+<p>To be able to automatically rotate guest WiFi passwords and let the relevant people know — with our old solution these often weren’t changed frequently enough, so CT WiFi has helped us to improve security of our client networks.</p>
 
 <h2>Lastly, is there anything else you’d like to add?</h2>
 
-<p>So far, we’re very happy with the solution. It’s not been too long since we started using Cucumber but looks like all is going well.</p>
+<p>So far, we’re very happy with the solution. It’s not been too long since we started using CT WiFi but looks like all is going well.</p>
 
-<p>Thanks for the feedback Lee, we’ve enjoyed working with Vital so far and your feature requests will help us improve Cucumber for everyone.</p>
+<p>Thanks for the feedback Lee, we’ve enjoyed working with Vital so far and your feature requests will help us improve CT WiFi for everyone.</p>
 
 <hr>
 
 <div class="mdl-typography--text-center">
-<p><i>Cucumber Tony is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities. Or you can utilise the captive portal solution with your existing infrastructure. Create a free account and check it here <a href="https://cucumberwifi.io">cucumberwifi.io</a></i></p>
+<p><i>CT WiFi is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities. Or you can utilise the captive portal solution with your existing infrastructure. Create a free account and check it here <a href="https://ct-networks.io">ct-networks.io</a></i></p>
 <div class="text-center">
-<h2>Come join Cucumber</h2>
+<h2>Come join CT WiFi</h2>
 <a href="https://my.ctapp.io/#/create" class="button success dst">Sign Up</a><br>
-<p>Sign-up for Cucumber Tony, it's free for unlimited access points :)</p>
+<p>Sign-up for CT WiFi, it's free for unlimited access points :)</p>
 </div>
 <hr>
 </div>

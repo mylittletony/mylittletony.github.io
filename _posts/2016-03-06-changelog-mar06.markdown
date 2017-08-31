@@ -9,4 +9,4 @@ categories: changelog
 <br><br>
 You can now add your Google Analytics tracking code to your splash pages. For more information, read the following guide.
 <br><br>
-http://docs.cucumberwifi.io/article/246-add-google-analytics-tracking-code-to-your-splash-page
+http://docs.ct-networks.io/article/246-add-google-analytics-tracking-code-to-your-splash-page
