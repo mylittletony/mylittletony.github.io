@@ -42,7 +42,7 @@ description: “As we have our own marketing and business intelligence platform,
 
 <p>Through Google.</p>
 
-<h2>What do you use CT WiFI for?</h2>
+<h2>What do you use CT WiFi for?</h2>
 
 <p>As we have our own marketing and business intelligence platform, we use CT WiFi for the network management and use the splash pages. We use the API to integrate the platform with ours.</p>
 

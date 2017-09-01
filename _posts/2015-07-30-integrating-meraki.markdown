@@ -11,7 +11,7 @@ keywords: Meraki captive portal, Meraki splash page not working, Meraki splash p
 <a href="http://docs.ct-networks.io/article/109-cisco-meraki-splash-page-setup">docs.ct-networks.io</a></h3>
 <hr>
 
-In order to use Meraki with the CT WiFI logins and radius, you'll need to make some changes in your Meraki portal.
+In order to use Meraki with the CT WiFi logins and radius, you'll need to make some changes in your Meraki portal.
 
 On the left hand menu bar, click on <b>Wireless</b> and select <b>Access Control</b>.
 

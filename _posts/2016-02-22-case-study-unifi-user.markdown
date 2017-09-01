@@ -38,7 +38,7 @@ description: “The extra functionality has really changed how we run the Wi-Fi 
 <p>We use CT WiFi to manage all our UniFi APs. We used to run the UniFi software in an Amazon cloud server. Maintaining the network was a pain and we didn’t have much control. I had to click into each access point individually to see which one was online. With CT WiFi I can see in a glance what’s happening.</p>
 
 <div class="mdl-typography--text-center">
-<h4>“With CT WiFI I can see in a glance what’s happening. We use CT WiFi to manage all our UniFi APs. We used to run the UniFi software in an Amazon cloud server. Maintaining the network was a pain. I had to click into each access point individually to see which one was online.”</h4>
+<h4>“With CT WiFi I can see in a glance what’s happening. We use CT WiFi to manage all our UniFi APs. We used to run the UniFi software in an Amazon cloud server. Maintaining the network was a pain. I had to click into each access point individually to see which one was online.”</h4>
 </div>
 
 <h2>What problem does CT WiFi fix for you?</h2>

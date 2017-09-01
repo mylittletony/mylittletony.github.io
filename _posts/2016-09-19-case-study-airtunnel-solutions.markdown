@@ -36,7 +36,7 @@ description: “Thank you for the excellent customer service, always being there
 <p>Air Tunnel Solutions doesn’t want to just be in the competition to make up the numbers, it wants to win it, standing out from the crowd and sticking it to the big guy, upsetting all the odds.
 <p><i>CUE THE ROCKY THEME MUSIC…</i></p>
 
-<h2>How did you hear about CT WiFI?</h2>
+<h2>How did you hear about CT WiFi?</h2>
 
 <p>From the Internet, Google search etc..</p>
 

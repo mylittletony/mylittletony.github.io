@@ -42,7 +42,7 @@ description: “Our favourite thing is the simple interface. The Ruckus vSZ is c
 <h4>“Our favourite thing is the simple interface. The Ruckus vSZ is complex, the CT WiFi dashboard helps make it such a better user experience.”</h4>
 </div>
 
-<h2>What were you looking to solve with CT WiFI?</h2>
+<h2>What were you looking to solve with CT WiFi?</h2>
 
 <p>We originally thought the vSZ had a captive portal solution, so when we found out it didn’t we looked for a third party option. It was too labour intensive to create and maintain one ourselves.</p>
 
