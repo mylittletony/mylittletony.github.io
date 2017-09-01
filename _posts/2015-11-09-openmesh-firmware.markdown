@@ -57,11 +57,11 @@ You should then see something similar to this in the console:
 [ac:86:74:13:65:c8]: OM2P router: flash complete. Device ready to unplug.
 ```
 
-5 - Then go ahead and add your box into your Cucumber Tony dashboard.
+5 - Then go ahead and add your box into your CT WiFi dashboard.
 
 <hr>
 
-*Cucumber Tony is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities. Or you can utilise the captive portal solution with your existing infrastructure. Create a free account and check it here <a href="https://ct-networks.io">ct-networks.io</a>*
+*CT WiFi is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities. Or you can utilise the captive portal solution with your existing infrastructure. Create a free account and check it here <a href="https://ct-networks.io">ct-networks.io</a>*
 
 
 <div class="mdl-typography--text-center">
@@ -70,7 +70,7 @@ You should then see something similar to this in the console:
 
 <a href="https://my.ctapp.io/#/create" class="button success dst">Sign Up</a><br>
 
-<p>Sign-up for Cucumber Tony, it's free for unlimited access points :)</p>
+<p>Sign-up for CT WiFi, it's free for unlimited access points :)</p>
 
 <hr>
 

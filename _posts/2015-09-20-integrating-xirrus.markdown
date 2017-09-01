@@ -12,9 +12,9 @@ thumbnail:
 <a href="http://docs.ct-networks.io/article/107-xirrus-splash-page-setup">docs.ct-networks.io</a></h3>
 <hr>
 
-Using a web browser, go into your Cucumber Tony dashboard and <a href="https://my.ctapp.io/?data-elevio-article=7107#/" class="dst">add the box in</a> using the MAC address of your Access Point.
+Using a web browser, go into your CT WiFi dashboard and <a href="https://my.ctapp.io/?data-elevio-article=7107#/" class="dst">add the box in</a> using the MAC address of your Access Point.
 
-When you have added these to Cucumber Tony, go into the settings page of your box, scrolling down for the section labelled PolkaSpots Settings
+When you have added these to CT WiFi, go into the settings page of your box, scrolling down for the section labelled PolkaSpots Settings
 
 <div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/xirrus-guide/box-settings.png">
@@ -98,7 +98,7 @@ You can find the most up to date list of <b><span data-elevio-article="18499">Wa
 
 <hr>
 
-*Cucumber Tony is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities.Or you can utlise the captive portal solution with your existing infrastructure. Create a free account and check it here <a href="https://ct-networks.io">ct-networks.io</a>*
+*CT WiFi is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities.Or you can utlise the captive portal solution with your existing infrastructure. Create a free account and check it here <a href="https://ct-networks.io">ct-networks.io</a>*
 
 <div class="mdl-typography--text-center">
 
@@ -106,7 +106,7 @@ You can find the most up to date list of <b><span data-elevio-article="18499">Wa
 
 <a href="https://my.ctapp.io/#/create" class="button success dst">Sign Up</a><br>
 
-<p>Sign-up for Cucumber Tony, it's free for unlimited access points :)</p>
+<p>Sign-up for CT WiFi, it's free for unlimited access points :)</p>
 
 <hr>
 

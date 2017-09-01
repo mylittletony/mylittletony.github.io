@@ -23,9 +23,9 @@ If you still can't get your device online, try connecting to the WiFi again with
 ###Access Points and Routers <hr>
 If there are no issues with your device, then you can move up the chain. Check out any access points you have between you and your modem. Give the access points a reboot, and then test again.
 
-If you have a tool such as Cucumber Tony, you can use it to help diagnose the issues. If the access points are not showing as online on your tool, but you have powered them on, then your safest bet is that the issue is down to connectivity.
+If you have a tool such as CT WiFi, you can use it to help diagnose the issues. If the access points are not showing as online on your tool, but you have powered them on, then your safest bet is that the issue is down to connectivity.
 
-A lot of the more in depth diagnosing can be pretty time consuming, but there are some tools out there that can help you with this. if you're using Cucumber Tony, there is something called the doctor script. This handy tool will run a quick row of tests to check things like internet connectivity and if the correct processes are running on your access point.
+A lot of the more in depth diagnosing can be pretty time consuming, but there are some tools out there that can help you with this. if you're using CT WiFi, there is something called the doctor script. This handy tool will run a quick row of tests to check things like internet connectivity and if the correct processes are running on your access point.
 
 If your access points are having troubles with connectivity, then it is time to move up the chain yet again. Take a look at any switches, routers or modems you are using. And get yourself a device (such as a laptop) and ethernet cable.
 
@@ -40,6 +40,6 @@ Run your checks on your modem, and if that turns up nothing, then it is time to 
 
 <hr>
 
-*To see how Cucumber Tony can help you diagnose and maintain your WiFi networks, <a href="https://my.ctapp.io/#/" class="dst">head on over and give it a go.</a>*
+*To see how CT WiFi can help you diagnose and maintain your WiFi networks, <a href="https://my.ctapp.io/#/" class="dst">head on over and give it a go.</a>*
 
 <br>

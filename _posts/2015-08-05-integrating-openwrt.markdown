@@ -11,9 +11,9 @@ keywords: OpenWRT captive portal, OpenWRT splash page not working, OpenWRT splas
 <a href="http://docs.ct-networks.io/article/84-openmesh-installation">docs.ct-networks.io</a></h3>
 <hr>
 
-You can use the Cucumber Tony dashboard, splash pages and radius servers including our Facebook logins with your OpenWRT, DD-WRT, OpenMesh and other boxes.
+You can use the CT WiFi dashboard, splash pages and radius servers including our Facebook logins with your OpenWRT, DD-WRT, OpenMesh and other boxes.
 
-To begin with, head over to your location in Cucumber Tony and add your box into CT using the <b>I have a Meraki, Ruckus or other device</b> option.
+To begin with, head over to your location in CT WiFi and add your box into CT using the <b>I have a Meraki, Ruckus or other device</b> option.
 
 Once this is added, open your box’s page and you will see a large button titled <b>Radius Settings</b>.
 
@@ -33,7 +33,7 @@ Your <b>UAM secret</b> is tied to the individual splash pages, and so it is not 
 
 To find your <b>UAM secret</b>, head over to <b>SSIDs</b> from your location, by clicking it on the left sidebar, and then click <b>View</b> on an SSID you have set up.
 
-Once here, scroll down to <b>Advanced Settings</b> under the <b>Captive Portal</b> section, and <b>untick Use Cucumber Tony Splash</b>. This will make a field appear with your UAM Secret inside.
+Once here, scroll down to <b>Advanced Settings</b> under the <b>Captive Portal</b> section, and <b>untick Use CT WiFi Splash</b>. This will make a field appear with your UAM Secret inside.
 
 <i>[<b>Note:</b> You do not need to save this change, you are only unticking it temporarily so you can see the UAM Secret.]</i>
 

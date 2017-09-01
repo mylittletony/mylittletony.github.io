@@ -11,7 +11,7 @@ keywords: captive portal, splash page, external, public, URL
 <a href="http://docs.ct-networks.io/">docs.ct-networks.io</a></h3>
 <hr>
 
-To use an Alternative Splash URL with Cucumber Tony just follow these simple steps.
+To use an Alternative Splash URL with CT WiFi just follow these simple steps.
 
 <div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/external-captive-portal/externalsplash.gif">
@@ -23,13 +23,13 @@ To use an Alternative Splash URL with Cucumber Tony just follow these simple ste
 
 2. Scroll down to the **Captive Portal** section, and the **Advanced Settings** header under that.
 
-3. Unselect **Use Cucumber Tony Splash** and you will see new fields appear.
+3. Unselect **Use CT WiFi Splash** and you will see new fields appear.
 
 4. You can then change the **Captive Portal URL** field.
 
 <hr>
 
-This can be useful in situations such as when using Google+ Social Logins with the default Cucumber Tony credentials.
+This can be useful in situations such as when using Google+ Social Logins with the default CT WiFi credentials.
 
 In this situation, you will need to use the default splash URL to login, but you might have already branded your location previously.
 
@@ -39,7 +39,7 @@ _**Note:** In this case you should not make any changes to the **Captive Portal 
 
 <hr>
 
-*Cucumber Tony is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities.Or you can utlise the captive portal solution with your existing infrastructure. Create a free account and check it here <a href="https://ct-networks.io">ct-networks.io</a>*
+*CT WiFi is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities.Or you can utlise the captive portal solution with your existing infrastructure. Create a free account and check it here <a href="https://ct-networks.io">ct-networks.io</a>*
 
 <div class="mdl-typography--text-center">
 
@@ -47,7 +47,7 @@ _**Note:** In this case you should not make any changes to the **Captive Portal 
 
 <a href="https://my.ctapp.io/#/create" class="button success">Sign Up</a><br>
 
-<p>Sign-up for Cucumber Tony, it's free for unlimited access points :)</p>
+<p>Sign-up for CT WiFi, it's free for unlimited access points :)</p>
 
 <hr>
 

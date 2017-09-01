@@ -11,7 +11,7 @@ description: A guide walking you through applying for the correct permissions to
 
 ##How do I set up my own Facebook App?
 
-Facebook logins work out of the box with Cucumber Tony. However, some people want to use their own application. The benefits of this include:
+Facebook logins work out of the box with CT WiFi. However, some people want to use their own application. The benefits of this include:
 
 - Your customers see your logo, not ours
 - You can control the permissions
@@ -72,7 +72,7 @@ You'll also need to add your own logo and support email.
   <img src="/images/community/tutorials/facebook-logins/facebook-captive-portal-7.png" width="800px">
 </div>
 
-### Add Application To Cucumber Tony
+### Add Application To CT WiFi
 
 You're almost done, you can now test your application.
 
@@ -154,5 +154,5 @@ Enjoy! Remember, if you don't want to do all this, you can use our application. 
 
 <a href="https://my.ctapp.io/#/create" class="button success dst">Sign Up</a>
 
-Sign-up for Cucumber Tony, it's free for unlimited access points and social logins :)
+Sign-up for CT WiFi, it's free for unlimited access points and social logins :)
 <hr>

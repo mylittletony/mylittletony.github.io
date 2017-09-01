@@ -14,7 +14,7 @@ thumbnail: /images/community/thumbnails/doctor.png
 
 To run the Health Check, follow these steps:
 
-1\. Head into your location in Cucumber Tony and select Boxes on the left hand sidebar.
+1\. Head into your location in CT WiFi and select Boxes on the left hand sidebar.
 
 <div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/health-check/1.png">
@@ -46,9 +46,9 @@ To run the Health Check, follow these steps:
 <li><b>Internet Check</b> - This checks if the box has a working internet connection</li>
 <li><b>DNS Check</b> - This checks if the box can reach a DNS server</li>
 <li><b>MTU Check</b> - This compares the MTU of the box with the MTU used on your network</li>
-<li><b>Connected to Cucumber</b> - This checks if the box can reach the Cucumber Tony servers</li>
+<li><b>Connected to Cucumber</b> - This checks if the box can reach the CT WiFi servers</li>
 <li><b>Splash Pages</b> - This checks if there are splash pages running on your network</li>
-<li><b>In Sync</b> - This checks if your box's configuration matches up to what it should be in Cucumber Tony</li>
+<li><b>In Sync</b> - This checks if your box's configuration matches up to what it should be in CT WiFi</li>
 </ul>
 
 <h2>Common issues</h2>

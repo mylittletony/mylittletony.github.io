@@ -11,21 +11,21 @@ thumbnail: /images/community/thumbnails/aruba-setup.png
 <a href="https://docs.ct-networks.io/article/108-aruba-splash-page-setup">docs.ct-networks.io</a></h3>
 <hr>
 
-Using a web browser, go into your Cucumber Tony dashboard and <a href="/documentation/add-box.html" class="dst">add the box in</a> using the MAC address of your Access Point.
+Using a web browser, go into your CT WiFi dashboard and <a href="/documentation/add-box.html" class="dst">add the box in</a> using the MAC address of your Access Point.
 
-When you have added these to Cucumber Tony, go into the settings page of your box, scrolling down for the section labelled Cucumber Tony Settings
+When you have added these to CT WiFi, go into the settings page of your box, scrolling down for the section labelled CT WiFi Settings
 
 <div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/aruba-guide/box-settings.png">
 </div>
 
-Untick I'm a Cucumber Tony Box, and select your box type from the droplist then update your changes
+Untick I'm a CT WiFi Box, and select your box type from the droplist then update your changes
 
 <div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/aruba-guide/nonct-box.png">
 </div>
 
-Head back to boxes and click on the box you just set to a non Cucumber Tony Box. You should now see a green Radius Settings button.
+Head back to boxes and click on the box you just set to a non CT WiFi Box. You should now see a green Radius Settings button.
 
 <div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/aruba-guide/radius-settings.png">
@@ -109,7 +109,7 @@ Create a new profile in Auth server 1 using the following settings:
 <li>Acct port: 1813
 <li>Shared key: (Refer to radius settings previously)
 <li>Retype key: (As above)
-<li>NAS Identifier: Head to your boxes in Cucumber Tony and go into their settings.Then scroll down under Advanced Settings, and click on edit advanced settings. Click into Radius NAS ID and retrieve this
+<li>NAS Identifier: Head to your boxes in CT WiFi and go into their settings.Then scroll down under Advanced Settings, and click on edit advanced settings. Click into Radius NAS ID and retrieve this
 </ul>
 
 <div class="mdl-typography--text-center">
@@ -169,7 +169,7 @@ You should now be left with the following screen, which means you have configure
 
 <hr>
 
-*Cucumber Tony is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities.Or you can utlise the captive portal solution with your existing infrastructure. Create a free account and check it here <a href="https://ct-networks.io">ct-networks.io</a>*
+*CT WiFi is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities.Or you can utlise the captive portal solution with your existing infrastructure. Create a free account and check it here <a href="https://ct-networks.io">ct-networks.io</a>*
 
 <div class="mdl-typography--text-center">
 
@@ -177,7 +177,7 @@ You should now be left with the following screen, which means you have configure
 
 <a href="https://my.ctapp.io/#/create" class="button success dst">Sign Up</a><br>
 
-<p>Sign-up for Cucumber Tony, it's free for unlimited access points :)</p>
+<p>Sign-up for CT WiFi, it's free for unlimited access points :)</p>
 
 <hr>
 

@@ -12,7 +12,7 @@ keywords: WiFi Registration Form, WiFi registration, Wi-Fi registration fields, 
 <a href="http://docs.ct-networks.io/article/105-setting-up-a-captive-portal-registration-form">docs.ct-networks.io</a></h3>
 <hr>
 
-If you want to capture customer data, it's simple with Cucumber Tony. It's simple, here's how it works:
+If you want to capture customer data, it's simple with CT WiFi. It's simple, here's how it works:
 
 - > The first time your customers try and get online, they'll see your registration form on the login page.
 - > After filling in the details, they will be logged in.
@@ -154,7 +154,7 @@ You bet! Simply visit your reports page and hit the download button. You'll be a
 
 <hr>
 
-*Cucumber Tony is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities.Or you can utlise the captive portal solution with your existing infrastructure. Create a free account and check it here <a href="https://ct-networks.io">ct-networks.io</a>*
+*CT WiFi is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities.Or you can utlise the captive portal solution with your existing infrastructure. Create a free account and check it here <a href="https://ct-networks.io">ct-networks.io</a>*
 
 <div class="mdl-typography--text-center">
 
@@ -162,7 +162,7 @@ You bet! Simply visit your reports page and hit the download button. You'll be a
 
 <a href="https://my.ctapp.io/#/create" class="button success dst">Sign Up</a><br>
 
-<p>Sign-up for Cucumber Tony, it's free for unlimited access points :)</p>
+<p>Sign-up for CT WiFi, it's free for unlimited access points :)</p>
 
 <hr>
 

@@ -69,4 +69,4 @@ Once you reach this, your box should soon start broadcasting a New PolkaSpots SS
 
 The browser will not refresh as it no longer has the TP-Link portal installed on it, so simply close off the page.
 
-<h2>If you haven't already, your box is now ready to be added into Cucumber Tony!<h2>
+<h2>If you haven't already, your box is now ready to be added into CT WiFi!<h2>

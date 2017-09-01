@@ -11,7 +11,7 @@ description: A quick outline on installing OpenWRT on your device of choice.
 
 Installing custom firmware onto your WiFi router will help you bring the best out in your device. It can help boost your WiFi signal, add a number of advanced features, as well as increase the security.
 
-OpenWRT is one of the most popular custom firmware options for your WiFi routers/access points. It is essentially a Linux distribution for your router, allowing you to install packages from a software repository. It's a really powerful tool. We built the entire Cucumber Tony platform on top of it.
+OpenWRT is one of the most popular custom firmware options for your WiFi routers/access points. It is essentially a Linux distribution for your router, allowing you to install packages from a software repository. It's a really powerful tool. We built the entire CT WiFi platform on top of it.
 
 ### Why should you bother?
 
@@ -57,7 +57,7 @@ _**Or, you can let us do all of the hard work for you.**_
 
 <hr>
 
-*Cucumber Tony is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities. Or you can utilise the captive portal solution with your existing infrastructure. Create a free account and check it here <a href="https://ct-networks.io">ct-networks.io</a>*
+*CT WiFi is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities. Or you can utilise the captive portal solution with your existing infrastructure. Create a free account and check it here <a href="https://ct-networks.io">ct-networks.io</a>*
 
 
 <div class="mdl-typography--text-center">
@@ -66,7 +66,7 @@ _**Or, you can let us do all of the hard work for you.**_
 
 <a href="https://my.ctapp.io/#/create" class="button success dst">Sign Up</a><br>
 
-<p>Sign-up for Cucumber Tony, it's free for unlimited access points :)</p>
+<p>Sign-up for CT WiFi, it's free for unlimited access points :)</p>
 
 <hr>
 

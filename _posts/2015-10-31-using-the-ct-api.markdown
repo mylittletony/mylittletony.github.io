@@ -11,7 +11,7 @@ keywords: wifi api, api wifi, wireless api
 <a href="http://docs.ct-networks.io/category/406-developer">docs.ct-networks.io</a></h3>
 <hr>
 
-This guide will show you how to setup your own application to use the Cucumber Tony API. The API will let you do loads of handy things, like create locations, generate vouchers and reboot your boxes.
+This guide will show you how to setup your own application to use the CT WiFi API. The API will let you do loads of handy things, like create locations, generate vouchers and reboot your boxes.
 
 **If you're not a developer, please forget this exists.**
 
@@ -23,7 +23,7 @@ We use the Oauth2 for our authenticaion mechanism. Oauth is an authorisation fra
 
 If you don't know anything about Oauth, there's a load of resources online.
 
-In this guide, we'll walk you through creating an Application on Cucumber Tony, authorising some requests using Curl. We'll obtain an access token and then show you how to use it to get some location info.
+In this guide, we'll walk you through creating an Application on CT WiFi, authorising some requests using Curl. We'll obtain an access token and then show you how to use it to get some location info.
 
 ## Create an Application
 
@@ -286,7 +286,7 @@ http://docs.polkaspots.apiary.io/#
 
 --------------------------------------------------
 
-*Cucumber Tony is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities.Or you can utlise the captive portal solution with your existing infrastructure. Create a free account and check it here <a href="https://ct-networks.io">ct-networks.io</a>*
+*CT WiFi is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities.Or you can utlise the captive portal solution with your existing infrastructure. Create a free account and check it here <a href="https://ct-networks.io">ct-networks.io</a>*
 
 <div class="mdl-typography--text-center">
 
@@ -294,7 +294,7 @@ http://docs.polkaspots.apiary.io/#
 
 <a href="https://my.ctapp.io/#/create" class="button success">Sign Up</a><br>
 
-<p>Sign-up for Cucumber Tony, it's free for unlimited access points :)</p>
+<p>Sign-up for CT WiFi, it's free for unlimited access points :)</p>
 
 <hr>
 

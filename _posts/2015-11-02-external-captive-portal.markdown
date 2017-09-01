@@ -11,7 +11,7 @@ keywords: captive portal, splash page, external, public
 <a href="http://docs.ct-networks.io/">docs.ct-networks.io</a></h3>
 <hr>
 
-To use your external captive portal solution with Cucumber Tony just follow these simple steps.
+To use your external captive portal solution with CT WiFi just follow these simple steps.
 
 <div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/external-captive-portal/externalsplash.gif">
@@ -23,13 +23,13 @@ To use your external captive portal solution with Cucumber Tony just follow thes
 
 2. Scroll down to the **Captive Portal** section, and the **Advanced Settings** header under that.
 
-3. Unselect **Use Cucumber Tony Splash** & **Use Cucumber Tony Radius** and you will see new fields appear.
+3. Unselect **Use CT WiFi Splash** & **Use CT WiFi Radius** and you will see new fields appear.
 
 4. Enter the required information into the fields and then save your changes.
 
 <hr>
 
-*Cucumber Tony is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities.Or you can utlise the captive portal solution with your existing infrastructure. Create a free account and check it here <a href="https://ct-networks.io">ct-networks.io</a>*
+*CT WiFi is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities.Or you can utlise the captive portal solution with your existing infrastructure. Create a free account and check it here <a href="https://ct-networks.io">ct-networks.io</a>*
 
 <div class="mdl-typography--text-center">
 
@@ -37,7 +37,7 @@ To use your external captive portal solution with Cucumber Tony just follow thes
 
 <a href="https://my.ctapp.io/#/create" class="button success">Sign Up</a><br>
 
-<p>Sign-up for Cucumber Tony, it's free for unlimited access points :)</p>
+<p>Sign-up for CT WiFi, it's free for unlimited access points :)</p>
 
 <hr>
 

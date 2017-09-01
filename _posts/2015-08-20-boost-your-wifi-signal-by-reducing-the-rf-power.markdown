@@ -59,7 +59,7 @@ Any tips on how you can you measure if your signal is going too far?
 
 >These don't cover the 'ghost signal' we mentioned. This is can be a real problem. When someone sees bars of signal on their phone but can't connect they blame the internet, the splash access page or captive portal, their phone, everything but the signal. It wastes a lot of diagnosis time.
 
->When we built the Cucumber Tony platform I was really keen to include RF signal measurements. These show how strong the connection is for each user. It measures the quality of the connection from the user's point of view.
+>When we built the CT WiFi platform I was really keen to include RF signal measurements. These show how strong the connection is for each user. It measures the quality of the connection from the user's point of view.
 
 >It displays the overall quality of your radio, the average SNR, interference level, average data rate and couple of other things. This plus the option to view it back in time, gives you an indicator of the overall Wi-Fi performances. Based on that you can take actions like moving the AP, decreasing the power output, selecting a channel that is not so congested and so on.
 

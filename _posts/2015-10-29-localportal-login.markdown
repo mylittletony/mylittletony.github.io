@@ -14,13 +14,13 @@ keywords: local portal, local, portal, troubleshoot, doctor, checkup, health, st
 
 To access the local portal, connect to the Access Point via one of it's SSIDs.
 
-Then enter the interface IP of that SSID, which you can retrieve from your SSID list in Cucumber Tony.
+Then enter the interface IP of that SSID, which you can retrieve from your SSID list in CT WiFi.
 
 If you aren't already logged in, it will prompt you for a username and password.
 
 The username for the local portal is polkaspots.
 
-Your password is the serial number of the box that you are trying to connect to, which you can locate through Cucumber Tony on the box's information page as shown below.
+Your password is the serial number of the box that you are trying to connect to, which you can locate through CT WiFi on the box's information page as shown below.
 
 <div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/local-portal/localportal.gif">
@@ -42,7 +42,7 @@ As well as this, there are several options on the sidebar to select from.
 
 <hr>
 
-*Cucumber Tony is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities.Or you can utlise the captive portal solution with your existing infrastructure. Create a free account and check it here <a href="https://ct-networks.io">ct-networks.io</a>*
+*CT WiFi is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities.Or you can utlise the captive portal solution with your existing infrastructure. Create a free account and check it here <a href="https://ct-networks.io">ct-networks.io</a>*
 
 <div class="mdl-typography--text-center">
 
@@ -50,7 +50,7 @@ As well as this, there are several options on the sidebar to select from.
 
 <a href="https://my.ctapp.io/#/create" class="button success">Sign Up</a><br>
 
-<p>Sign-up for Cucumber Tony, it's free for unlimited access points :)</p>
+<p>Sign-up for CT WiFi, it's free for unlimited access points :)</p>
 
 <hr>
 

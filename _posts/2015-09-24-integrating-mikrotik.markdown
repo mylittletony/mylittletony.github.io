@@ -37,7 +37,7 @@ thumbnail: /images/community/thumbnails/aruba-setup.png
 <img src="/images/community/tutorials/mikrotik/winbox-mac.png">
 </div>
 
-5\. Then using a web browser, go into your Cucumber Tony dashboard and <a href="https://my.ctapp.io/?data-elevio-article=7107#/" class="dst">add the box in</a> using the MAC address you retrieved
+5\. Then using a web browser, go into your CT WiFi dashboard and <a href="https://my.ctapp.io/?data-elevio-article=7107#/" class="dst">add the box in</a> using the MAC address you retrieved
 
 6\. Click on the radius settings button on your box page in CT and keep note of the information
 
@@ -52,7 +52,7 @@ Rename the file to login.html
 <img src="/images/community/tutorials/mikrotik/mikrotik-html.png">
 </div>
 
-8\. In winbox, go to the radius section on the left sidebar, and add a new radius setting using the radius info you retrieved earlier from Cucumber Tony in step 6
+8\. In winbox, go to the radius section on the left sidebar, and add a new radius setting using the radius info you retrieved earlier from CT WiFi in step 6
 
 <div class="mdl-typography--text-center">
 <img src="/images/community/tutorials/mikrotik/winbox-add-radius.png">
@@ -166,7 +166,7 @@ The first we can't solve. The second you can resolve by creating another network
 
 <a href="https://my.ctapp.io/#/create" class="button success dst">Sign Up</a>
 
-Sign-up for Cucumber Tony, it's free for unlimited access points. Some awesome is also included.
+Sign-up for CT WiFi, it's free for unlimited access points. Some awesome is also included.
 
 
 <hr>
