@@ -32,6 +32,18 @@ body, html {
 }
 
 /*Nav Bar*/
+@media print, screen and (min-width: 721px) {
+  .hide-for-medium-nav {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .hide-for-small-only-nav {
+    display: none !important;
+  }
+}
+
 .sticky {
   width: 100%;
 }
@@ -160,6 +172,7 @@ body, html {
 
 .overlay h2 {
   margin-bottom: 20px;
+  font-size: 20px;
 }
 
 .overlay li {
@@ -196,15 +209,7 @@ body, html {
     color: rgba(0,0,0, 0.9);
 }
 
-@media screen and (max-height: 450px) {
-  .overlay {overflow-y: auto;}
-  .overlay a {font-size: 20px}
-  .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-  }
-}
+
 
 .is-submenu-item .material-icons {
   font-size: 14px;

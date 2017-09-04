@@ -4,7 +4,7 @@ layout: default
 <div data-sticky-container>
   <div id="sticky-header" class="sticky" data-sticky data-options="anchor: page; marginTop: 0;">
 
-    <div class="title-bar hide-for-medium">
+    <div class="title-bar hide-for-medium-nav">
       <div class="title-bar-title">
         <div class="ct-logo">
           <a href="/"><img src="/images/ct-logos/ct-logo-dark.png"></a>
@@ -13,7 +13,7 @@ layout: default
       <button class="menu-icon dark" type="button" onclick="openNav()"></button>
     </div>
 
-    <div class="top-bar hide-for-small-only">
+    <div class="top-bar hide-for-small-only-nav">
       <div class="top-bar-left">
         <ul class="dropdown menu" data-dropdown-menu data-options="disableHover:true;clickOpen:true">
           <li class="menu-text">
@@ -52,16 +52,23 @@ layout: default
               <!-- <li><a id="branding" href="/branding/">Branding</a></li> -->
             </ul>
           </li>
+          <li>
+            <a href="#">Helpful</a>
+            <ul class="menu">
+              <li><a href="http://docs.ct-networks.io/" target="_blank">Docs<i class="material-icons">launch</i></a></li>
+              <li><a href="https://discuss.ct-networks.io/" target="_blank">Discuss<i class="material-icons">launch</i></a></li>
+              <li><a href="http://status.ctapp.io/" target="_blank">Status<i class="material-icons">launch</i></a></li>
+            </ul>
+          </li>
           <li class="show-for-small-only"><a href="/sign-up" class="s-u-i">Sign Up</a></li>
           <li class="show-for-small-only"><a href="https://my.ctapp.io/#/login">Log In</a></li>
           <li class="show-for-small-only"><a href="http://docs.ct-networks.io/" target="_blank">Help</a></li>
         </ul>
       </div>
-      <div class="top-bar-right hide-for-small-only">
+      <div class="top-bar-right hide-for-small-only-nav">
         <ul class="menu">
           <li><a href="/sign-up" class="s-u-i">Sign Up</a></li>
           <li><a href="https://my.ctapp.io/#/login">Log In</a></li>
-          <li><a href="http://docs.ct-networks.io/" target="_blank">Help</a></li>
         </ul>
       </div>
     </div>
@@ -81,7 +88,9 @@ layout: default
           <li><a href="/sign-up" class="s-u-i">Sign Up</a></li>
           <li><a href="https://my.ctapp.io/#/login">Log In</a></li>
           <li><a id="plans" href="/plans">Plans</a>
-          <li><a href="http://docs.ct-networks.io/" target="_blank">Help</a></li>
+          <li><a href="http://docs.ct-networks.io/" target="_blank">Docs<i class="material-icons">launch</i></a></li>
+          <li><a href="https://discuss.ct-networks.io/" target="_blank">Discuss<i class="material-icons">launch</i></a></li>
+          <li><a href="http://status.ctapp.io/" target="_blank">Status<i class="material-icons">launch</i></a></li>
         </ul>
       </div>
       <div class="small-6 columns text-center">
