@@ -10,7 +10,9 @@ function gifbg() {
    var images = ['type.gif'];
    document.getElementById('banner').setAttribute("style", "background: linear-gradient(rgba(0, 0, 0, 0.30),rgba(0, 0, 0, 0.30)), url(" + dir + images[randomCount] + ");background-repeat: no-repeat;background-repeat: no-repeat;background-position: center;background-size: cover;");
 }
-window.onload = gifbg;
+$(document).ready(function(){
+    gifbg();
+});
 </script>
 
 <div class="page-content">
