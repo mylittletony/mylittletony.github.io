@@ -7,10 +7,10 @@ keywords: Ruckus, Ruckus Virtual SmartZone, Captive Portal, Zone Director, Splas
 description: Ruckus Captive Portal, Setting up a captive portal for the Ruckus Smart Zone Gateway
 ---
 
-<div class="mdl-typography--text-center">
-  <h2>Unfortunately this method of integration is no longer supported, <a href="http://.ct-networks.io/discover">click here</a> to find out what else CT WiFi can do for you</h2>
-  <hr>
-</div>
+<hr>
+<h3>This doc is outdated. Please view our new documents here:<br>
+<a href="http://docs.ct-networks.io/article/89-ruckus-vsz-captive-portal-integration">docs.ct-networks.io</a></h3>
+<hr>
 
 
 <h3>Getting the CT WiFi Dashboard working with your Ruckus Virtual SmartZone</h3>
