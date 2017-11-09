@@ -158,16 +158,16 @@ body, html {
 }
 
 .overlay {
-    height: 0%;
-    width: 100%;
-    position: fixed;
-    z-index: 10;
-    top: 0;
-    left: 0;
-    background-color: rgb(255,255,255);
-    background-color: rgba(255,255,255, 0.9);
-    overflow-y: hidden;
-    transition: 0.5s;
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  background-color: rgb(255,255,255);
+  background-color: rgba(255,255,255, 0.9);
+  overflow-y: hidden;
+  transition: 0.5s;
 }
 
 .overlay h2 {
@@ -185,31 +185,29 @@ body, html {
 }
 
 .overlay-content {
-    position: relative;
-    top: 6%;
-    width: 100%;
-    text-align: center;
-    margin-top: 30px;
+  position: relative;
+  top: 6%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
 }
 
 .overlay a {
-    padding: 8px;
-    text-decoration: none;
-    display: block;
-    transition: 0.3s;
-    color: #1FAD5C;
+  padding: 8px;
+  text-decoration: none;
+  display: block;
+  transition: 0.3s;
+  color: #1FAD5C;
 }
 
 .overlay .closebtn {
-    position: absolute;
-    top: -2%;
-    right: 5%;
-    font-size: 60px;
-    line-height: 60px;
-    color: rgba(0,0,0, 0.9);
+  position: absolute;
+  top: -2%;
+  right: 5%;
+  font-size: 60px;
+  line-height: 60px;
+  color: rgba(0,0,0, 0.9);
 }
-
-
 
 .is-submenu-item .material-icons {
   font-size: 14px;
@@ -312,7 +310,7 @@ footer :last-child > .accordion-content:last-child {
   background-size: 25%;
 }
 
-.bg-top h1, .bg-top h3, .bg-top img, .bg-top a {
+.bg-top h1, .bg-top h3, .bg-top h5, .bg-top img, .bg-top a {
   z-index: 2;
   position: relative;
 }
