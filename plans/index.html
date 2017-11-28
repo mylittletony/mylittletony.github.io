@@ -67,87 +67,7 @@ $(document).ready(function(){
   <div class="row align-center banner plans-banner">
     <div class="plans-card-row large-12 columns text-center">
       <h2>Plans & Pricing</h2>
-
-        <!-- <input type="radio" id="option-1" name="options" value="1" checked>
-        <label for="option-1">USD</label>
-
-        <input type="radio" id="option-2" name="options" value="2">
-        <label for="option-2">GBP</label>
-
-        <input type="radio" id="option-3" name="options" value="3">
-        <label for="option-3">EUR</label> -->
-
       <div class="row align-center">
-        <!-- <div class="large-3 medium-6 small-12 columns">
-          <div class="center-cell plans-card large-12 medium-8 small-7 columns text-center">
-            <div class="plan-title text-center">
-              <h4>Home</h4>
-            </div>
-            <div class="plan-price text-center">
-              <h3>Free</h3>
-            </div>
-            <div class="plan-features text-center">
-              <h5>Core Features</h5>
-            </div>
-            <div class="plan-features-list text-center">
-              <ul>
-                <li>500 Splash Views</li>
-                <li>30 Days History</li>
-                <li>Basic Support</li>
-                <li>API Access</li>
-                <li>5 Zones</li>
-              </ul>
-            </div>
-          </div>
-        </div> -->
-        <!-- <div class="large-3 medium-6 small-12 columns">
-          <div class="center-cell plans-card large-12 medium-8 small-7 columns text-center">
-            <div class="plan-title text-center">
-              <h4>Business</h4>
-            </div>
-            <div class="plan-price text-center">
-              <h3><span class="bus-plan">$60</span><small>/mo</small></h3>
-            </div>
-            <div class="plan-features text-center">
-              <h5>Core Features</h5>
-            </div>
-            <div class="plan-features-list text-center">
-              <ul>
-                <li>Includes 10 APs</li>
-                <li><span class="bus-ap">$3.50</span> per AP/mo</li>
-                <li>Dashboard Support</li>
-                <li>Unlimited History</li>
-                <li>Paid Wi-Fi</li>
-                <li>Admin Users</li>
-                <li>Unlimited Splash Views</li>
-              </ul>
-            </div>
-          </div>
-        </div> -->
-        <!-- <div class="large-3 medium-6 small-12 columns">
-          <div class="center-cell plans-card large-12 medium-8 small-7 columns text-center">
-            <div class="plan-title text-center">
-              <h4>Premium</h4>
-            </div>
-            <div class="plan-price text-center">
-              <h3><span class="prem-plan">$350</span><small>/mo</small></h3>
-            </div>
-            <div class="plan-features text-center">
-              <h5>Core Features</h5>
-            </div>
-            <div class="plan-features-list text-center">
-              <ul>
-                <li>Includes 75 APs</li>
-                <li><span class="prem-ap">$3.00</span> per AP/mo</li>
-                <li>Network Support</li>
-                <li>Unlimited History</li>
-                <li>White Label Features</li>
-                <li>User Permissions</li>
-                <li>Unlimited Splash Views</li>
-              </ul>
-            </div>
-          </div>
-        </div> -->
         <div class="large-4 medium-6 small-12 columns">
           <div class="center-cell plans-card large-12 medium-8 small-7 columns text-center">
             <div class="plan-title text-center">
@@ -190,7 +110,6 @@ $(document).ready(function(){
             </div>
           </div>
         </div>
-
         <div class="large-4 medium-6 small-12 columns">
           <div class="center-cell plans-card large-12 medium-8 small-7 columns text-center">
             <div class="plan-title text-center">
@@ -217,7 +136,102 @@ $(document).ready(function(){
       <a href="https://dashboard.ctapp.io/#/create" target="_blank" style="margin-top:30px;" class="button s-u-i">
           Sign-up
       </a>
-      <p>The free plan includes 1 device and 50 splash views per month. The home and small business plans are available in the dashboard.</p>
+      <div class="large-12 medium-12 small-12 columns center-cell">
+        <ul class="accordion" data-accordion data-multi-expand="true" data-allow-all-closed="true" style="margin-top:50px;">
+          <li class="accordion-item" data-accordion-item>
+            <a href="#" class="accordion-title text-center">SMB Pricing</a>
+            <div class="accordion-content" data-tab-content>
+              <table class="features-table center-cell mdl-data-table mdl-js-data-table mdl-shadow--1dp">
+                <tr>
+                  <td class="features-table-heading mdl-data-table__cell--non-numeric" style="text-align:center;"></td>
+                  <td class="features-table-heading mdl-data-table__cell--non-numeric" style="text-align:center;"><b>Home Plan</b></td>
+                  <td class="features-table-heading mdl-data-table__cell--non-numeric" style="text-align:center;"><b>Small Plan</b></td>
+                  <td class="features-table-heading mdl-data-table__cell--non-numeric" style="text-align:center;"><b>Medium Plan</b></td>
+                  <td class="features-table-heading mdl-data-table__cell--non-numeric" style="text-align:center;"><b>Large Plan</b></td>
+                </tr>
+                <tr>
+                  <td class="mdl-data-table__cell--non-numeric">
+                    Max APs
+                  </td>
+                  <td>1</td>
+                  <td>3</td>
+                  <td>15</td>
+                  <td>50</td>
+                </tr>
+                <tr>
+                  <td class="mdl-data-table__cell--non-numeric">
+                    Price
+                  </td>
+                  <td>Free</td>
+                  <td>£9.99</td>
+                  <td>£49.99</td>
+                  <td>£150.00</td>
+                </tr>
+                <tr>
+                  <td class="mdl-data-table__cell--non-numeric">
+                    Splash Views
+                  </td>
+                  <td>50</td>
+                  <td>100</td>
+                  <td>250</td>
+                  <td>500</td>
+                </tr>
+                <tr>
+                  <td class="mdl-data-table__cell--non-numeric">
+                    Guest Access
+                  </td>
+                  <td><i class="material-icons">check_box</i></td>
+                  <td><i class="material-icons">check_box</i></td>
+                  <td><i class="material-icons">check_box</i></td>
+                  <td><i class="material-icons">check_box</i></td>
+                </tr>
+                <td class="mdl-data-table__cell--non-numeric">
+                  Management
+                </td>
+                  <td><i class="material-icons">check_box</i></td>
+                  <td><i class="material-icons">check_box</i></td>
+                  <td><i class="material-icons">check_box</i></td>
+                  <td><i class="material-icons">check_box</i></td>
+                </tr>
+                <tr>
+                <td class="mdl-data-table__cell--non-numeric">
+                  Reports
+                </td>
+                  <td><i class="material-icons">check_box</i></td>
+                  <td><i class="material-icons">check_box</i></td>
+                  <td><i class="material-icons">check_box</i></td>
+                  <td><i class="material-icons">check_box</i></td>
+              </tr>
+            </table>
+            </div>
+          </li>
+          <li class="accordion-item" data-accordion-item>
+            <a href="#" class="accordion-title text-center">Splash View Pricing</a>
+            <div class="accordion-content" data-tab-content>
+              <div class="large-6 medium-6 small-12 columns center-cell">
+                <table class="features-table center-cell mdl-data-table mdl-js-data-table mdl-shadow--1dp">
+                  <tr>
+                    <td class="features-table-heading mdl-data-table__cell--non-numeric" style="text-align:center;"><b>Package<b></td>
+                    <td class="features-table-heading mdl-data-table__cell--non-numeric" style="text-align:center;"><b>Cost</b></td>
+                    <td class="features-table-heading mdl-data-table__cell--non-numeric" style="text-align:center;"><b>Valid For</b></td>
+                  </tr>
+                  <tr>
+                    <td>2,500</td>
+                    <td>£15</td>
+                    <td>30 days</td>
+                  </tr>
+                  <tr>
+                    <td>5,000</td>
+                    <td>£25</td>
+                    <td>30 days</td>
+                  </tr>
+              </table>
+            </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
     </div>
   </div>
 
