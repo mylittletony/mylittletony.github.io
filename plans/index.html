@@ -15,49 +15,70 @@ function navactive() {
 $(document).ready(function(){
     $('input[name=options]').on('change', function(){
       if($(this).prop('value') == 2) {
-        $('.bus-plan').html('£50');
-        $('.bus-ap').html('£3.25');
-        $('.prem-plan').html('£250');
-        $('.prem-ap').html('£2.35');
+
+        $('.gbp-vat').html('+vat');
+
+        $('.reseller-plan').html('£500');
+        $('.prem-reseller-plan').html('£1,200');
+        $('.reseller-ap').html('£1.00');
+        $('.prem-reseller-ap').html('£1.50');
+
+        $('.smb-small').html('£9.99');
+        $('.smb-med').html('£49.99');
+        $('.smb-large').html('£149.99');
+
+        $('.splash-small').html('£15');
+        $('.splash-med').html('£25');
+        $('.splash-large').html('£50');
       }
       else {
         if($(this).prop('value') == 3) {
+
+          $('.gbp-vat').html('');
+
+          $('.reseller-plan').html('€500');
+          $('.prem-reseller-plan').html('€1,200');
+          $('.reseller-ap').html('€1.00');
+          $('.prem-reseller-ap').html('€1.50');
+
           $('.bus-plan').html('€50');
           $('.bus-ap').html('€3.15');
           $('.prem-plan').html('€320');
           $('.prem-ap').html('€2.75');
+
+          $('.smb-small').html('€7.99');
+          $('.smb-med').html('€49.99');
+          $('.smb-large').html('€149.99');
+
+          $('.splash-small').html('€20');
+          $('.splash-med').html('€35');
+          $('.splash-large').html('€70');
         }
         else {
+
+          $('.gbp-vat').html('');
+
+          $('.reseller-plan').html('$500');
+          $('.prem-reseller-plan').html('$1,200');
+          $('.reseller-ap').html('$1.00');
+          $('.prem-reseller-ap').html('$1.50');
+
           $('.bus-plan').html('$60');
           $('.bus-ap').html('$3.50');
           $('.prem-plan').html('$350');
           $('.prem-ap').html('$3.00');
+
+          $('.smb-small').html('$7.99');
+          $('.smb-med').html('$49.99');
+          $('.smb-large').html('$149.99');
+
+          $('.splash-small').html('$20');
+          $('.splash-med').html('$35');
+          $('.splash-large').html('$70');
         }
       }
     });
     navactive();
-    $('input[name=options]').on('change', function(){
-      if($(this).prop('value') == 2) {
-        $('.bus-plan').html('£50');
-        $('.bus-ap').html('£3.25');
-        $('.prem-plan').html('£250');
-        $('.prem-ap').html('£2.35');
-      }
-      else {
-        if($(this).prop('value') == 3) {
-          $('.bus-plan').html('€50');
-          $('.bus-ap').html('€3.15');
-          $('.prem-plan').html('€320');
-          $('.prem-ap').html('€2.75');
-        }
-        else {
-          $('.bus-plan').html('$60');
-          $('.bus-ap').html('$3.50');
-          $('.prem-plan').html('$350');
-          $('.prem-ap').html('$3.00');
-        }
-      }
-    });
 });
 
 </script>
@@ -67,6 +88,14 @@ $(document).ready(function(){
   <div class="row align-center banner plans-banner">
     <div class="plans-card-row large-12 columns text-center">
       <h2>Plans & Pricing</h2>
+
+      <input type="radio" id="option-1" name="options" value="1" checked>
+      <label for="option-1">USD</label>
+      <input type="radio" id="option-2" name="options" value="2">
+      <label for="option-2">GBP</label>
+      <input type="radio" id="option-3" name="options" value="3">
+      <label for="option-3">EUR</label>
+
       <div class="row align-center">
         <div class="large-4 medium-6 small-12 columns">
           <div class="center-cell plans-card large-12 medium-8 small-7 columns text-center">
@@ -74,14 +103,14 @@ $(document).ready(function(){
               <h4>Reseller</h4>
             </div>
             <div class="plan-price text-center">
-              <h3><span class="prem-plan">$500</span><small> one off</small></h3>
+              <h3><span class="reseller-plan">$500</span><small> one off <span class="gbp-vat"></span></small></h3>
             </div>
             <div class="plan-features text-center">
               <h5>Core Features</h5>
             </div>
             <div class="plan-features-list text-center">
               <ul>
-                <li>from $1.00 per AP/mo</li>
+                <li>from <span class="reseller-ap">$1.00</span> per AP/mo</li>
                 <li>Dashboard Support</li>
                 <li>White Label Features</li>
                 <li>User Permissions</li>
@@ -95,14 +124,14 @@ $(document).ready(function(){
               <h4>Premium Reseller</h4>
             </div>
             <div class="plan-price text-center">
-              <h3><span class="prem-plan">$1,000</span><small> one off</small></h3>
+              <h3><span class="prem-reseller-plan">$1,000</span><small> one off <span class="gbp-vat"></span></small></h3>
             </div>
             <div class="plan-features text-center">
               <h5>Core Features</h5>
             </div>
             <div class="plan-features-list text-center">
               <ul>
-                <li>from $1.50 per AP/mo</li>
+                <li>from <span class="prem-reseller-ap">$1.50</span> per AP/mo</li>
                 <li>Premium Support</li>
                 <li>White Label Features</li>
                 <li>User Permissions</li>
@@ -163,9 +192,9 @@ $(document).ready(function(){
                     Price
                   </td>
                   <td>Free</td>
-                  <td>£9.99</td>
-                  <td>£49.99</td>
-                  <td>£150.00</td>
+                  <td><span class="smb-small">$7.99</span></td>
+                  <td><span class="smb-med">$49.99</span></td>
+                  <td><span class="smb-large">$150.00</span></td>
                 </tr>
                 <tr>
                   <td class="mdl-data-table__cell--non-numeric">
@@ -217,12 +246,17 @@ $(document).ready(function(){
                   </tr>
                   <tr>
                     <td>2,500</td>
-                    <td>£15</td>
+                    <td><span class="splash-small">$20</splash></td>
                     <td>30 days</td>
                   </tr>
                   <tr>
                     <td>5,000</td>
-                    <td>£25</td>
+                    <td><span class="splash-med">$35</splash></td>
+                    <td>30 days</td>
+                  </tr>
+                  <tr>
+                    <td>15,000</td>
+                    <td><span class="splash-large">$70</splash></td>
                     <td>30 days</td>
                   </tr>
               </table>
