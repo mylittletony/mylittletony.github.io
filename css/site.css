@@ -2283,3 +2283,8 @@ input[type=range]::-ms-thumb {
   background: #017FDD;
   cursor: pointer;
 }
+
+.integrations-logos img {
+  max-height: 50px;
+  margin: 20px 0px;
+}
