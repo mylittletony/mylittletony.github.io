@@ -160,7 +160,7 @@ You bet! Simply visit your reports page and hit the download button. You'll be a
 
 <h2>Come join Cucumber</h2>
 
-<a href="https://my.ctapp.io/#/create" class="button success dst">Sign Up</a><br>
+<a href="/sign-up" class="button success dst">Sign Up</a><br>
 
 <p>Sign-up for CT WiFi, it's free for unlimited access points :)</p>
 

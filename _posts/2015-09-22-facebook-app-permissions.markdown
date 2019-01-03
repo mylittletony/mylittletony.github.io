@@ -152,7 +152,7 @@ Enjoy! Remember, if you don't want to do all this, you can use our application. 
 
 ### Come join Cucumber
 
-<a href="https://my.ctapp.io/#/create" class="button success dst">Sign Up</a>
+<a href="/sign-up" class="button success dst">Sign Up</a>
 
 Sign-up for CT WiFi, it's free for unlimited access points and social logins :)
 <hr>

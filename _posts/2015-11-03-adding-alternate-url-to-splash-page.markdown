@@ -45,7 +45,7 @@ _**Note:** In this case you should not make any changes to the **Captive Portal 
 
 <h2>Come join Cucumber</h2>
 
-<a href="https://my.ctapp.io/#/create" class="button success">Sign Up</a><br>
+<a href="/sign-up" class="button success">Sign Up</a><br>
 
 <p>Sign-up for CT WiFi, it's free for unlimited access points :)</p>
 

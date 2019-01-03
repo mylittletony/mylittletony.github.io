@@ -79,7 +79,7 @@ Finally we just need to start the cron process, which we can do by entering the 
 
 <h2>Come join CT WiFi</h2>
 
-<a href="https://my.ctapp.io/#/create" class="button success dst">Sign Up</a><br>
+<a href="/sign-up" class="button success dst">Sign Up</a><br>
 
 <p>Sign-up for CT WiFi, it's free for unlimited access points :)</p>
 

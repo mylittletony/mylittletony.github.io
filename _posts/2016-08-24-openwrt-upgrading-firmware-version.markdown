@@ -88,7 +88,7 @@ You will then need to do at least 2 more things. You will need to redownload all
 
 <h2>Come join CT WiFi</h2>
 
-<a href="https://my.ctapp.io/#/create" class="button success dst">Sign Up</a><br>
+<a href="/sign-up" class="button success dst">Sign Up</a><br>
 
 <p>Sign-up for CT WiFi, it's free for unlimited access points :)</p>
 

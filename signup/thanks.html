@@ -1,0 +1,30 @@
+---
+layout: fixed-header
+title: Sign Up | CT WiFi
+---
+<script>
+function gifbg() {
+   var imgCount = 1;
+   var dir = 'https://d3e9l1phmgx8f2.cloudfront.net/images/gifs/';
+   var randomCount = (Math.floor(Math.random() * imgCount));
+   var images = ['type.gif'];
+   document.getElementById('banner').setAttribute("style", "background: linear-gradient(rgba(0, 0, 0, 0.30),rgba(0, 0, 0, 0.30)), url(" + dir + images[randomCount] + ");background-repeat: no-repeat;background-repeat: no-repeat;background-position: center;background-size: cover;");
+}
+$(document).ready(function(){
+    gifbg();
+});
+</script>
+
+<div class="page-content">
+
+  <div id="banner" class="missing-page row expanded align-center align-middle banner">
+    <div class="missing-page-text large-6 columns text-center">
+      <span style="position:relative;top:50%;transform:translateY(-50%);">
+        <h1 style="color:white;">Thanks for getting in touch!</h1>
+        <p>We'll get back to you as soon as we can.</p>
+        <p><a href="/" style="color:white;text-decoration:underline;">Return home</a>
+      </span>
+    </div>
+  </div>
+
+</div>

@@ -292,7 +292,7 @@ http://docs.polkaspots.apiary.io/#
 
 <h2>Come join Cucumber</h2>
 
-<a href="https://my.ctapp.io/#/create" class="button success">Sign Up</a><br>
+<a href="/sign-up" class="button success">Sign Up</a><br>
 
 <p>Sign-up for CT WiFi, it's free for unlimited access points :)</p>
 

@@ -164,7 +164,7 @@ The first we can't solve. The second you can resolve by creating another network
 
 ## Sign-up, Cucumber is free for unlimited access points
 
-<a href="https://my.ctapp.io/#/create" class="button success dst">Sign Up</a>
+<a href="/sign-up" class="button success dst">Sign Up</a>
 
 Sign-up for CT WiFi, it's free for unlimited access points. Some awesome is also included.
 

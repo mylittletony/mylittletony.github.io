@@ -67,7 +67,7 @@ description: “As we have our own marketing and business intelligence platform,
 <p><i>CT WiFi is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities. Or you can utilise the captive portal solution with your existing infrastructure. Create a free account and check it here <a href="https://ct-networks.io">ct-networks.io</a></i></p>
 <div class="text-center">
 <h2>Come join CT WiFi</h2>
-<a href="https://my.ctapp.io/#/create" class="button success dst">Sign Up</a><br>
+<a href="/sign-up" class="button success dst">Sign Up</a><br>
 <p>Sign-up for CT WiFi, it's free for unlimited access points :)</p>
 </div>
 <hr>

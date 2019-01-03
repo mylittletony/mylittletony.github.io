@@ -1,29 +1,17 @@
 ---
 layout: fixed-header
-title: Contact Us | CT WiFi
-permalink: /contact/
+title: Sign Up | CT WiFi
+permalink: /sign-up/
+redirect_from:
+- /signup/
 ---
-
-<script>
-function navactive() {
-  var id1 = document.querySelector("#company");
-  var id2 = document.querySelector("#contact-us");
-  id1.style.borderBottom = "3px solid #1FAD5C";
-  id1.style.paddingBottom = "15px";
-  id2.style.borderLeft = "3px solid #1FAD5C";
-  id2.style.paddingLeft = "27px";
-}
-$(document).ready(function(){
-  navactive();
-});
-</script>
 
 <div class="page-content">
 
   <div class="row align-center banner" style="padding-bottom:40px;">
     <div class="large-10 columns text-center">
-      <h2>Contact Us</h2>
-      <h5>Tell us a bit about yourselves & what you're looking for, and we'll get back to you.</h5>
+      <h2>Sign Up</h2>
+      <h5>If you're interested in signing up, get in touch!</h5>
     </div>
   </div>
 
@@ -56,8 +44,7 @@ $(document).ready(function(){
         <div class="row align-center">
           <div class="large-12 columns text-center">
             <input type="submit" value="Send" class="button">
-            <input type="hidden" name="_next" value="/contact/thanks.html" />
-            <p><small>Genuine emails and company names will move you to the top of the contact list.</small></p>
+            <input type="hidden" name="_next" value="/signup/thanks.html" />
           </div>
         </div>
         <div class="row align-center">

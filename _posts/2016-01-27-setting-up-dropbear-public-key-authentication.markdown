@@ -70,7 +70,7 @@ To do this, while connected via SSH to your OpenWRT device, enter the following 
 
 <h2>Come join CT WiFi</h2>
 
-<a href="https://my.ctapp.io/#/create" class="button success dst">Sign Up</a><br>
+<a href="/sign-up" class="button success dst">Sign Up</a><br>
 
 <p>Sign-up for CT WiFi, it's free for unlimited access points :)</p>
 
