@@ -1,0 +1,77 @@
+I"2<p>OpenWRT allows you to set a hard limit on the maximum amount of clients that can connect to your network at one time, this can be a helpful tool if you wish to load balance your networks, or restrict total usage on your network.</p>
+
+<h2 id="ssh-to-your-openwrt-device">SSH to your OpenWRT device</h2>
+
+<p>If you are using Windows then start PuTTY and click Session on the left side, select SSH from the options, and then enter in the IP Address of your OpenWRT box into the Host Name field.</p>
+
+<p>Once you’ve done this just click on Open to start up the SSH connection.</p>
+
+<div class="mdl-typography--text-center">
+  <img src="/images/community/tutorials/openwrt/puttyconfig.png" width="400px" />
+</div>
+
+<p>If you are connecting via terminal, then just SSH to your OpenWRT device using the following command, where 192.168.1.1 is your OpenWRT device’s IP address.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh root@192.168.1.1
+</code></pre></div></div>
+
+<h2 id="configuration">Configuration</h2>
+
+<p>First we need to access the wireless config file to make changes. So run the following command:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vi /etc/config/wireless
+</code></pre></div></div>
+
+<p>Once this is open, take a look for the SSID of your network that you want to limit.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>config 'wifi-iface'
+        option 'device'     'wl0'
+        option 'network'    'lan'
+        option 'mode'       'ap'
+        option 'ssid'       'LimitedWiFi'
+        option 'encryption' 'psk2'
+        option 'key'        'WhileStocksLast'
+</code></pre></div></div>
+
+<p>Above, we have found the interface for the SSID ‘LimitedWiFi’.</p>
+
+<p>Once you have found the network you want to edit, we need to add/edit in the following:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>option 'maxassoc'   '10'
+</code></pre></div></div>
+
+<p>In this example we have set a hard limit of 10 concurrent clients.</p>
+
+<p>Once you’ve made your change, you should be left with something similar to the below:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>config 'wifi-iface'
+        option 'device'     'wl0'
+        option 'network'    'lan'
+        option 'mode'       'ap'
+        option 'ssid'       'LimitedWiFi'
+        option 'encryption' 'psk2'
+        option 'key'        'WhileStocksLast'
+        option 'maxassoc'   '10'
+</code></pre></div></div>
+
+<p>When you are happy you will need to reboot your device by running this command:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>reboot
+</code></pre></div></div>
+
+<hr />
+
+<p><em>CT WiFi is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities. Or you can utilise the captive portal solution with your existing infrastructure. Create a free account and check it here <a href="https://ct-networks.io">ct-networks.io</a></em></p>
+
+<div class="mdl-typography--text-center">
+
+<h2>Come join CT WiFi</h2>
+
+<a href="/sign-up" class="button success dst">Sign Up</a><br />
+
+<p>Sign-up for CT WiFi, it's free for unlimited access points :)</p>
+
+<hr />
+
+</div>
+:ET

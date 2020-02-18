@@ -1,0 +1,78 @@
+I"Q<p>Automating certain tasks on your OpenWRT device can help keep things running smoothly.</p>
+
+<p>In this example we are going to show you how to use Cron to disable your WiFi at 11:30pm, and reboot at 6:30am.</p>
+
+<h2 id="ssh-to-your-openwrt-device">SSH to your OpenWRT device##</h2>
+
+<p>If you are using Windows then start PuTTY and click Session on the left side, select SSH from the options, and then enter in the IP Address of your OpenWRT box into the Host Name field.</p>
+
+<p>Once you’ve done this just click on Open to start up the SSH connection.</p>
+
+<div class="mdl-typography--text-center">
+  <img src="/images/community/tutorials/openwrt/puttyconfig.png" width="400px" />
+</div>
+
+<p>If you are connecting via terminal, then just SSH to your OpenWRT device using the following command, where 192.168.1.1 is your OpenWRT device’s IP address.</p>
+
+<p><code class="highlighter-rouge">ssh root@192.168.1.1</code></p>
+
+<h2 id="setting-up-your-timezone">Setting up your timezone</h2>
+
+<p>First you’re going to need to make sure you have your timezone set up correctly on your device.</p>
+
+<p>Run the following command:</p>
+
+<p><code class="highlighter-rouge">vi /etc/config/system</code></p>
+
+<p>You should see something like the following, where UTC is the default timezone:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>config ‘system’
+        option ‘hostname’ ‘OpenWrt’
+        option ‘timezone’ ‘UTC’
+</code></pre></div></div>
+
+<p>Replace UTC with the respective timezone code for your desired timezone. You can find a list of all the <a href="https://wiki.openwrt.org/doc/uci/system#time_zones">supported timezones here</a>.</p>
+
+<h2 id="creating-your-cron">Creating your Cron</h2>
+
+<p>By default Cron is not enabled, so first up you need to change this.
+Run the following command to enable Cron:</p>
+
+<p><code class="highlighter-rouge">/etc/init.d/cron enable</code></p>
+
+<p>Now that Cron is enabled, run the following command to edit the cron config:</p>
+
+<p><code class="highlighter-rouge">crontab -e</code></p>
+
+<p>Now enter in the following:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>30 23 * * * wifi down
+30 06 * * * reboot
+</code></pre></div></div>
+
+<p>The first line runs wifi down at 23:30 every day, which disables the WiFi.</p>
+
+<p>The second line runs a reboot at 6:30 every day, which reboots the device to clear used memory which in turn brings the WiFi back up again.</p>
+
+<p>You can find more information on different time combinations on the <a href="https://wiki.openwrt.org/doc/howto/cron">OpenWRT Wiki here</a>.</p>
+
+<p>Finally we just need to start the cron process, which we can do by entering the following command:</p>
+
+<p><code class="highlighter-rouge">/etc/init.d/cron start</code></p>
+
+<hr />
+
+<p><em>CT WiFi is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities. Or you can utilise the captive portal solution with your existing infrastructure. Create a free account and check it here <a href="https://ct-networks.io">ct-networks.io</a></em></p>
+
+<div class="mdl-typography--text-center">
+
+<h2>Come join CT WiFi</h2>
+
+<a href="/sign-up" class="button success dst">Sign Up</a><br />
+
+<p>Sign-up for CT WiFi, it's free for unlimited access points :)</p>
+
+<hr />
+
+</div>
+:ET

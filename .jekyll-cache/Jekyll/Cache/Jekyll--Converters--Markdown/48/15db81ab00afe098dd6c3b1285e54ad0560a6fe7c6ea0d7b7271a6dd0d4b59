@@ -1,0 +1,241 @@
+I"�#<hr />
+
+<h3>This doc is outdated. Please view our new documents here:<br />
+<a href="http://docs.ct-networks.io/article/110-ruckus-zd-splash-page-setup">docs.ct-networks.io</a></h3>
+<hr />
+
+<p>In order to use Ruckus with the CT WiFi logins and radius, you’ll need to make some changes in your Ruckus Zone Director.</p>
+
+<p>Add your <b>Access Points</b> into CT by adding their MAC addresses.</p>
+
+<p>You can find the MAC addresses under the <b>Monitor</b> tab of the &lt;/b&gt;Zone Director&lt;/b&gt;. You should add the MAC addresses of all access points that are going to be in use with the splash pages.</p>
+
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/ruckus-zd-guide/ap-screen.png" />
+</div>
+
+<p>When you have added these to CT, go into the <b>settings</b> page of your <b>box</b>, scrolling down for the section labelled <b>PolkaSpots Settings</b>.</p>
+
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/ruckus-zd-guide/not-ps-box.png" />
+</div>
+
+<p><b>Untick</b> I’m a PolkaSpots Box, and select <b>Ruckus</b> from the droplist then update your changes.</p>
+
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/ruckus-zd-guide/ruckus-box.png" />
+</div>
+
+<p>Head back to <b>boxes</b> and click on the box you just set to a non PolkaSpots Box. You should now see a green <b>Radius Settings</b> button.</p>
+
+<p>Clicking this will open a box with details that you will need to refer back to at later stages.</p>
+
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/ruckus-zd-guide/radius-info.png" />
+</div>
+
+<p>Connect to your Zone Director device and click on the <b>Configure</b> tab, then click <b>AAA Servers</b> on the sidebar, and then click <b>Create New</b>.</p>
+
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/ruckus-zd-guide/aaa-servers.png" />
+</div>
+
+<p>A selection of fields will appear, which will need to be filled in with the following information:</p>
+<ul>
+<li>Name: e.g PolkaRad</li>
+<li>Type: RADIUS</li>
+<li>Auth Method: PAP</li>
+<li>IP Address: (Refer to CT Radius Settings - Radius Servers)</li>
+<li>Port: 1812</li>
+<li>Secret: (Refer to CT Radius Settings - Radius Secret)</li>
+<li>Confirm Secret: (As above)</li>
+</ul>
+
+<p>And then click <b>OK</b></p>
+
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/ruckus-zd-guide/radius-servers.png" />
+</div>
+
+<p>Complete the same again, creating a <b>new entry</b>, but this time with the following information:</p>
+
+<ul>
+<li>Name: PolkaAcc</li>
+<li>Type: RADIUS Accounting</li>
+<li>IP Address: (Refer to CT Radius Settings - Radius Server)</li>
+<li>Port: 1813</li>
+<li>Shared Secret: (Refer to CT Radius Settings - Radius Secret)</li>
+<li>Confirm Secret: (As above)</li>
+</ul>
+
+<p>And then save your changes by clicking <b>OK</b></p>
+
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/ruckus-zd-guide/save-server.png" />
+</div>
+
+<p>Click <b>Hotspot Services</b> on the sidebar, and then click <b>Create New</b></p>
+
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/ruckus-zd-guide/new-hotspot.png" />
+</div>
+
+<p>A selection of fields will appear which will need to be filled with the following information:</p>
+
+<ul>
+<li>Name: e.g PolkaSpotsHS</li>
+<li>Login Page: (Refer to CT Radius Settings - Splash URL)</li>
+<li>Authentication Server: PolkaRad (the RADIUS entry you created in step 3)</li>
+<li>Accounting Server: PolkaAcc (the RADIUS Accounting entry you created in step 4)</li>
+</ul>
+
+<p>Then click on <b>Walled Gardens</b>.</p>
+
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/ruckus-zd-guide/walled-gardens.png" />
+</div>
+
+<p>You will now see the Walled Garden entries. Click <b>Create New</b> to add the entries needed</p>
+
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/ruckus-zd-guide/new-wg.png" />
+</div>
+
+<p>add the following to the <b>Walled garden</b>:</p>
+
+<p>You can find the most up to date list of <b><span data-elevio-article="18499">Walled Gardens here.</span></b></p>
+
+<p>And then save the changes by clicking <b>OK</b></p>
+
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/ruckus-zd-guide/save-wg.png" />
+</div>
+
+<p>Click <b>WLANs</b> on the sidebar, and under WLANs click <b>Create New</b></p>
+
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/ruckus-zd-guide/new-wlan.png" />
+</div>
+
+<p>A selection of fields will now have appeared which will need to be filled with the following information:</p>
+
+<ul>
+<li>Name/ESSID: e.g PolkaFly</li>
+<li>ESSID: e.g PolkaFly</li>
+<li>Type: Hotspot Service (WISPr)</li>
+<li>Hotspot Services: PolkaSpotsHS (the Hotspot Service created in step 6)</li>
+</ul>
+
+<p>Then save your changes by clicking <b>OK</b></p>
+
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/ruckus-zd-guide/save-wlan.png" />
+</div>
+
+<p>Because there are no options to change these settings in the GUI, you will need to <b>SSH</b> in to the Ruckus <b>ZoneDirector</b>, which is done by entering the following:</p>
+
+<blockquote>ssh root@DEVICE_IP</blockquote>
+
+<p>Replace DEVICE_IP with the IP of your zone director, and login with your username and password that you used to log into the ZoneDirector.</p>
+
+<p>Once you have established an SSH connection, enter the commands below, one by one:</p>
+
+<blockquote>
+enable<br />
+config<br />
+wlan "PolkaFly" <b>(name of essid in step 10)</b><br />
+called-station-id-type ap-mac<br />
+nasid-type mac-addr<br />
+end
+</blockquote>
+
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/ruckus-zd-guide/ssh-console.png" />
+</div>
+
+<p>Get MAC address of zonedirector from the zonedirector dashboard</p>
+
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/ruckus-zd-guide/zone-mac.png" />
+</div>
+
+<p><b>Change the box from a PolkaSpots box to a Ruckus box</b></p>
+
+<p>This will update the icon for you and activate the radius settings.</p>
+
+<p>Head to your boxes in CT WiFi and go into their settings.</p>
+
+<p>Then scroll down under Advanced Settings, and click on edit advanced settings.</p>
+
+<p><b>In the NAS field, enter the MAC address of the ZoneDirector that you collected earlier.</b></p>
+
+<p>It is important the MAC is separated with hyphens because that’s what Ruckus send us.
+e.g 11-22-33-44-55-66&lt;/b&gt;</p>
+
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/ruckus-zd-guide/nas-id.png" />
+</div>
+
+<p>Then scroll to the bottom of the page and click update.</p>
+
+<p>Do this for all of your Ruckus Access Points.</p>
+
+<p><br /></p>
+
+<p>##Troubleshooting &amp; Questions
+###Can’t login - Stuck in a Loop &lt;hr&gt;
+You can see the login page but when you login, it sends you back to the login page. Here’s what you can do:</p>
+
+<ul>
+  <li>• Swap the access type to clickthrough to rule out password issues</li>
+  <li>• Ensure your radius secrets match the ones in your zone director radius settings</li>
+  <li>• Ensure your Nas-Id from your CT Wi-Fi account matches the one in your zone director</li>
+  <li>• Make sure that your SSID entered through SSH matches the one you entered into your zone director</li>
+</ul>
+
+<p>If you do connect with an incorrect secret/nas_id then our servers will lock you out as a security measure.</p>
+
+<p>If this happens to you, just drop us a message.</p>
+
+<p>###Can I use multiple splash pages? &lt;hr&gt;
+Yes you can, and there are three ways to do it in CT.</p>
+
+<p><strong>1. Tags</strong></p>
+
+<p>We can intercept the tags sent in the url and present a page depending on them. This is currently in alpha.</p>
+
+<p><strong>2. Hard coded url</strong></p>
+
+<p>You can hardcode the specific splash pages to your Splash Page URLs.</p>
+
+<p>To do this you will need your splash page’s unique ID from CT.
+You can find this in Location &gt; Settings &gt; Scroll down to Address Details &gt; Unique ID</p>
+
+<p>Then, add this to the Splash URL you entered in the ZD:</p>
+
+<p>http://app.my-wifi.co/long-id-of-the-splash</p>
+
+<p><strong>3. CT Zones</strong></p>
+
+<p>This is the quickest of the options, simply create two zones in CT and add an SSID to each zone (which will have the splash page you want assosciated with it).</p>
+
+<p>Then assign your boxes to the right zone.</p>
+
+<p>This way you don’t have to change anything in the ZD.</p>
+
+<hr />
+
+<p><em>CT WiFi is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities.Or you can utlise the captive portal solution with your existing infrastructure. Create a free account and check it here <a href="https://ct-networks.io">ct-networks.io</a></em></p>
+
+<div class="mdl-typography--text-center">
+
+<h2>Come join Cucumber</h2>
+
+<a href="/sign-up" class="button success dst">Sign Up</a><br />
+
+<p>Sign-up for CT WiFi, it's free for unlimited access points :)</p>
+
+<hr />
+
+</div>
+:ET

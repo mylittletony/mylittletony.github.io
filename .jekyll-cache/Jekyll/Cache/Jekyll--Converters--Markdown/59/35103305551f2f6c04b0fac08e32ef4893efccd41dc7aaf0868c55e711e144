@@ -1,0 +1,128 @@
+I"�<p>There are many ways in which you can make use of VLANs in OpenWRT, from whether you want to separate data from VOIP traffic, to separating guest from private traffic.</p>
+
+<p>In this example we are going to create two separate VLANs; on eth1.1 and eth1.2</p>
+
+<h2 id="ssh-to-your-openwrt-device">SSH to your OpenWRT device</h2>
+
+<p>If you are using Windows then start PuTTY and click Session on the left side, select SSH from the options, and then enter in the IP Address of your OpenWRT box into the Host Name field.</p>
+
+<p>Once you’ve done this just click on Open to start up the SSH connection.</p>
+
+<div class="mdl-typography--text-center">
+  <img src="/images/community/tutorials/openwrt/puttyconfig.png" width="400px" />
+</div>
+
+<p>If you are connecting via terminal, then just SSH to your OpenWRT device using the following command, where 192.168.1.1 is your OpenWRT device’s IP address.</p>
+
+<p><code class="highlighter-rouge">ssh root@192.168.1.1</code></p>
+
+<h2 id="create-your-vlan-interfaces">Create your VLAN interfaces</h2>
+
+<p>To start creating your VLANs we will need to make changes to the network config file. So run the following command:</p>
+
+<p><code class="highlighter-rouge">vi /etc/config/network</code></p>
+
+<p>We need to create a second interface, and assign both of them to the separate VLAN names. So first change the option ifname ‘eth1’ under the original lan interface to ‘eth1.1’.</p>
+
+<p>Now you can copy and paste the lan interface. Then change the option ifname ‘eth1.1’ to ‘eth1.2’ and change option ipaddr ‘192.168.1.1’ to ‘192.168.2.1’ or another suitable range.</p>
+
+<p>Once you have done this, it should look something like the following:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>config interface 'loopback'
+        option ifname       'lo'
+        option proto        'static'
+        option ipaddr       '127.0.0.1'
+        option netmask      '255.0.0.0'
+config interface 'lan'
+        option ifname       'eth1.1'
+        option type         'bridge'
+        option proto        'static'
+        option ipaddr       '192.168.1.1'
+        option netmask      '255.255.255.0'
+
+config interface 'lan2'
+        option ifname       'eth1.2'
+        option type         'bridge'
+        option proto        'static'
+        option ipaddr       '192.168.2.1'
+        option netmask      '255.255.255.0'
+
+config interface 'wan'
+        option ifname       'eth0'
+        option proto        'dhcp'
+config switch
+        option name         'switch0'
+        option reset        '1'
+        option enable_vlan  '1'
+</code></pre></div></div>
+
+<h2 id="assigning-to-your-switch-ports">Assigning to your switch ports</h2>
+
+<p>Now that the interfaces have been created, we need to assign them to the switch ports on your router.</p>
+
+<p>The switch port numbers do not always match up to how they are labeled externally, so you will need to confirm this depending on what device you are using before hand.</p>
+
+<p>We want VLAN1 running on ports 1 &amp; 2, and VLAN2 running on ports 3 &amp; 4, so we will need to set the following in the same file:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>config switch_vlan 'eth1_1'
+        option device   'switch0'
+        option vlan     '1'
+        option ports    '1 2 0t'
+
+config switch_vlan      'eth1_2'
+        option device   'switch0'
+        option vlan     '2'
+        option ports    '3 4 0t'
+</code></pre></div></div>
+
+<p>As both of these communicate to port 0, this port is tagged (ot).</p>
+
+<h2 id="firewall--dhcp-configuration">Firewall &amp; DHCP Configuration</h2>
+
+<p>We will now need to add in new firewall rules for the new interface we created (lan2). So run the following:</p>
+
+<p><code class="highlighter-rouge">vi /etc/config/firewall</code></p>
+
+<p>Add the following into the firewall config:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>config zone
+      option name       lan2
+      option network    'lan2'
+      option input      ACCEPT
+      option output     ACCEPT
+      option forward    REJECT
+</code></pre></div></div>
+
+<p>Now we need to add an entry into the DHCP config file, so run the following:</p>
+
+<p><code class="highlighter-rouge">vi /etc/config/dhcp</code></p>
+
+<p>Add the following into your DHCP config:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>config dhcp lan2
+      option interface  lan2
+      option start      200     
+      option limit      250
+      option leasetime  24h
+</code></pre></div></div>
+
+<p>Now simply restart your network by running the below command:</p>
+
+<p><code class="highlighter-rouge">/etc/init.d/network restart</code></p>
+
+<hr />
+
+<p><em>CT WiFi is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities. Or you can utilise the captive portal solution with your existing infrastructure. Create a free account and check it here <a href="https://ct-networks.io">ct-networks.io</a></em></p>
+
+<div class="mdl-typography--text-center">
+
+<h2>Come join CT WiFi</h2>
+
+<a href="/sign-up" class="button success dst">Sign Up</a><br />
+
+<p>Sign-up for CT WiFi, it's free for unlimited access points :)</p>
+
+<hr />
+
+</div>
+:ET

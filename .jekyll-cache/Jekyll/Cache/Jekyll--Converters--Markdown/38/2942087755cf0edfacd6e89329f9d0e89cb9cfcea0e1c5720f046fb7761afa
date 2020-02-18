@@ -1,0 +1,42 @@
+I"�<p>Configuring every aspect of your OpenWRT device through it’s CLI isn’t for everyone. But with all of the packages available for OpenWRT you are able to add a web interface to help you manage your device through a more user friendly method. We are going to take a look at <strong>LuCI</strong>.</p>
+
+<div class="mdl-typography--text-center">
+  <img src="/images/community/tutorials/openwrt/luci-interface.png" width="750px" />
+</div>
+
+<p>To start off with, your device will need internet access. The first step is to SSH into your device so you can run a few commands (We detailed the SSH steps in a previous guide <a href="/community/tutorials/openwrt-updating-password-over-ssh.html">here</a>).</p>
+
+<p>Once you have gained access via SSH enter the following commands:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>opkg update
+opkg install luci
+</code></pre></div></div>
+
+<p>This will install the LuCI package onto your device. Once this is complete, you will need to run two more commands. The first to start up your web server, and the second to set it to run whenever the device is rebooted.</p>
+
+<p>The commands are as follows:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/etc/init.d/uhttpd start
+/etc/init.d/uhttpd enable
+</code></pre></div></div>
+
+<p>Now you should be able to open the LuCI web interface by connecting to your device and navigating to http://192.168.1.1/ with your browser.</p>
+
+<p>Now have a play around with the web interface and see all the changes you can make without having to use your CLI.</p>
+
+<hr />
+
+<p><em>CT WiFi is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities. Or you can utilise the captive portal solution with your existing infrastructure. Create a free account and check it here <a href="https://ct-networks.io">ct-networks.io</a></em></p>
+
+<div class="mdl-typography--text-center">
+
+<h2>Come join CT WiFi</h2>
+
+<a href="/sign-up" class="button success dst">Sign Up</a><br />
+
+<p>Sign-up for CT WiFi, it's free for unlimited access points :)</p>
+
+<hr />
+
+</div>
+:ET

@@ -1,0 +1,214 @@
+I"�"<p>Multi-WAN manages your traffic over multiple WAN interfaces, routes individual sessions over the least busy WAN interface and that session continues to use the same WAN until terminated.</p>
+
+<p>This guide assumes that you already have your interfaces and other settings configured correctly, as it will only cover the Multi-WAN specific setup steps.</p>
+
+<h2 id="ssh-to-your-openwrt-device">SSH to your OpenWRT device</h2>
+
+<p>If you are using Windows then start PuTTY and click Session on the left side, select SSH from the options, and then enter in the IP Address of your OpenWRT box into the Host Name field.</p>
+
+<p>Once you’ve done this just click on Open to start up the SSH connection.</p>
+
+<div class="mdl-typography--text-center">
+  <img src="/images/community/tutorials/openwrt/puttyconfig.png" width="400px" />
+</div>
+
+<p>If you are connecting via terminal, then just SSH to your OpenWRT device using the following command, where 192.168.1.1 is your OpenWRT device’s IP address.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh root@192.168.1.1
+</code></pre></div></div>
+
+<h2 id="installing-packages">Installing Packages</h2>
+
+<p>First up we need to download the multiwan package that is going to help us configure this.</p>
+
+<p>Run the following commands:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>opkg update
+opkg install multiwan
+</code></pre></div></div>
+
+<p>Now we need to enable multiwan, so run the following commands:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/etc/init.d/multiwan enable
+/etc/init.d/multiwan start
+/etc/init.d/multiwan single
+</code></pre></div></div>
+
+<h2 id="configuration">Configuration</h2>
+
+<p>Now we need to make some changes to the multiwan configuration, so run the following to edit it’s config file:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vi /etc/config/multiwan
+</code></pre></div></div>
+
+<p>Change/add the following to the configuration:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>config 'multiwan' 'config'
+        option 'default_route' 'balancer'
+</code></pre></div></div>
+
+<p>Once this is done, restart the multiwan process by running the following:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/etc/init.d/multiwan restart
+</code></pre></div></div>
+
+<h2 id="wan-interfaces">WAN Interfaces</h2>
+
+<p>Now edit the same config file again and change/add the following lines, making sure to tweak to your specific needs:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>config 'interface' 'wan'
+        option 'weight' '10'
+        option 'health_interval' '10'
+        option 'icmp_hosts' 'dns'
+        option 'timeout' '3'
+        option 'health_fail_retries' '3'
+        option 'health_recovery_retries' '5'
+        option 'failover_to' 'wan2'
+        option 'dns' 'auto'
+config 'interface' 'wan2'
+        option 'weight' '10'
+        option 'health_interval' '10'
+        option 'icmp_hosts' 'dns'
+        option 'timeout' '3'
+        option 'health_fail_retries' '3'
+        option 'health_recovery_retries' '5'
+        option 'failover_to' 'balancer'
+        option 'dns' 'auto'
+</code></pre></div></div>
+
+<p>Once again, restart the multiwan process by running the following once you are done:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/etc/init.d/multiwan restart
+</code></pre></div></div>
+
+<h2 id="outbound-rules">Outbound Rules</h2>
+
+<p>For setting outbound traffic rules you will need to change/add the follow to the same config file, changing the variables as you need:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>config 'mwanfw'
+	option 'src' '192.168.1.0/24'
+	option 'proto' 'udp'
+	option 'ports' '21'
+	option 'wanrule' 'wan'
+</code></pre></div></div>
+
+<p>Then again, restart the multiwan process by running the following once you are done:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/etc/init.d/multiwan restart
+</code></pre></div></div>
+
+<h2 id="multiwan-setup">Multiwan Setup</h2>
+
+<p>The next steps will outline creating your multiwan setup.</p>
+
+<h3 id="create-vlan">Create VLAN</h3>
+
+<p>First off we need to define a vlan for WAN2, so run the following command:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vconfig add eth0 2
+</code></pre></div></div>
+
+<h3 id="configure-vlans-and-network-interfaces">Configure VLANs and Network Interfaces</h3>
+
+<p>Run the following command to open the network config file:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vi /etc/config/network
+</code></pre></div></div>
+
+<p>We need to move LAN port 0 from default eth0_0 to eth0_2, and Configure WAN and WAN2 proto as dhcp.</p>
+
+<p>Multiwan’s documentation provides us with the following example network config setup to follow.</p>
+
+<p>Please note that port numbers can vary between device, so double check what they are for your specific device.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># The following assumes a six port switch, the default WAN port is switch port 0,
+# the default LAN ports (1-4) are switch ports (1-4) and the internal switch port
+# connection to the router mainboard is switch port 5.
+
+# Although a common configuration, some routers are configured with a 5 port switch,
+# a separate physical network interface for the WAN port and the numbering system
+# may be different.
+config 'switch' 'eth0'
+        option 'enable' '1'
+# Note: The internal switch port 5 is tagged "5t" in the following configuration
+# to allow it to be shared by multiple VLANs (eth0.0., eth0.1, eth0.2)
+# Configure 3 external LAN ports on VLAN0.
+config 'switch_vlan' 'eth0_0'
+        option 'device' 'eth0'
+        option 'vlan' '0'
+        option 'ports' '2 3 4 5t'
+# Configure default WAN port on VLAN1.
+config 'switch_vlan' 'eth0_1'
+        option 'device' 'eth0'
+        option 'vlan' '1'
+        option 'ports' '1 5t'
+# Configure WAN2 port on VLAN2.
+config 'switch_vlan' 'eth0_2'
+        option 'device' 'eth0'
+        option 'vlan' '2'
+        option 'ports' '0 5t'
+# Default loopback interface.
+config 'interface' 'loopback'
+        option 'ifname' 'lo'
+        option 'proto' 'static'
+        option 'ipaddr' '127.0.0.1'
+        option 'netmask' '255.0.0.0'
+# Default 'lan' interface configured with Spanning Tree Protocol activated.
+config 'interface' 'lan'
+        option 'type' 'bridge'
+        # On some routers the default 'lan' interface is configured directly
+        # to the physical network interface eth0. This has to be changed to
+        # a VLAN, in this case eth0.0
+        option 'ifname' 'eth0.0'
+        option 'proto' 'static'
+        option 'stp' '1'
+        option 'ipaddr' '192.168.1.1'
+        option 'netmask' '255.255.255.0'
+# wan interface
+config 'interface' 'wan'
+        option 'ifname' 'eth0.1'
+        option 'proto' 'dhcp'
+        option 'dns' '216.146.35.113 216.146.36.113 8.8.8.8 8.8.4.4'
+# wan2 interface
+config 'interface' 'wan2'
+        option 'ifname' 'eth0.2'
+        option 'proto' 'dhcp'
+        option 'dns' '216.146.35.113 216.146.36.113 8.8.8.8 8.8.4.4'
+</code></pre></div></div>
+
+<h3 id="configure-wan--multiwan">Configure WAN &amp; Multiwan</h3>
+
+<p>Once that is complete, we can now configure WAN and Multiwan to work together. The easiest way to do this is via the LuCi interface.
+For the WAN setup we need to do the following:</p>
+
+<p>Head into Network &gt; Interfaces &gt; WAN/WAN2 and add WAN2 to the WAN firewall zone.</p>
+
+<p>For Multiwan, we need to carry out these steps:</p>
+
+<ul>
+  <li>Head into Network &gt; Multiwan and tweak the following:</li>
+  <li>You can remove any unused WAN interfaces here</li>
+  <li>Set load balancer distribution to your desired levels</li>
+  <li>Set failover to LoadBalancer</li>
+</ul>
+
+<p>Save all of your changes and give your device one last reboot.</p>
+
+<p>Everything should be configured now, so give your device a test to make sure everything is working.</p>
+
+<hr />
+
+<p><em>CT WiFi is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities. Or you can utilise the captive portal solution with your existing infrastructure. Create a free account and check it here <a href="https://ct-networks.io">ct-networks.io</a></em></p>
+
+<div class="mdl-typography--text-center">
+
+<h2>Come join CT WiFi</h2>
+
+<a href="/sign-up" class="button success dst">Sign Up</a><br />
+
+<p>Sign-up for CT WiFi, it's free for unlimited access points :)</p>
+
+<hr />
+
+</div>
+:ET

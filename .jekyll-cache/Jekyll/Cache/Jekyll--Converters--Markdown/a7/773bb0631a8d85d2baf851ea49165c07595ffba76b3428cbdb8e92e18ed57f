@@ -1,0 +1,93 @@
+I"�<p>In this guide we’ll walk through the quick process of upgrading your LEDE/OpenWRT firmware to their latest version. For this example we will be using OpenWRT, but the process is almost exactly the same.</p>
+
+<h2 id="ssh-to-your-openwrt-device">SSH to your OpenWRT device</h2>
+
+<p>If you are using Windows then start PuTTY and click Session on the left side, select SSH from the options, and then enter in the IP Address of your OpenWRT box into the Host Name field.</p>
+
+<p>Once you’ve done this just click on Open to start up the SSH connection.</p>
+
+<div class="mdl-typography--text-center">
+  <img src="/images/community/tutorials/openwrt/puttyconfig.png" width="400px" />
+</div>
+
+<p>If you are connecting via terminal, then just SSH to your OpenWRT device using the following command, where 192.168.1.1 is your OpenWRT device’s IP address.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh root@192.168.1.1
+</code></pre></div></div>
+
+<h2 id="preperation">Preperation</h2>
+
+<p>When an OpenWRT firmware update is applied, it does not carry over/backup your custom changes automatically. The files/directories that you want to keep have to be explicitly defined in a config file.</p>
+
+<p>To find out what files will currently be retained after the upgrade, run the following command:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>opkg list-changed-conffiles
+</code></pre></div></div>
+
+<p>The simplest way to mark other files/folders to be retained is to edit your sysupgrade config file. Run the following command:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vi /etc/sysupgrade.conf
+</code></pre></div></div>
+
+<p>Files that you might want to retain include your config directory and startup file.</p>
+
+<p>As always, it is advised to make a backup of your files/configuration before upgrading, even if you’ve marked all the files you want to keep.</p>
+
+<p>It’s also worth noting that you will need to redownload and install your custom installed packages once the upgrade is complete.
+Upgrading</p>
+
+<p>To determine which firmware version you are currently running you can run the following:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vi /etc/openwrt_release
+</code></pre></div></div>
+
+<p>This will display a file containing your current firmware version information.</p>
+
+<p>The “DISTRIB_TARGET” field will help you locate the firmware file in the <a href="https://downloads.openwrt.org/latest/">OpenWRT firmware download list</a>.</p>
+
+<p><strong>Make sure that you download and use the sysupgrade.bin file, not the factory.bin file.</strong></p>
+
+<p>We’re going to upgrade the firmware on a Ubiquiti UAP Pro, but make sure to replace the firmware to match your hardware.</p>
+
+<p>Run the following commands to download your firmware:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd /tmp
+wget https://downloads.openwrt.org/latest/ar71xx/generic/openwrt-15.05.1-ar71xx-generic-ubnt-uap-pro-squashfs-sysupgrade.bin
+</code></pre></div></div>
+
+<p>Once the download is complete and you are ready to start the upgrade, run the following command:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sysupgrade -v /tmp/openwrt-15.05.1-ar71xx-generic-ubnt-uap-pro-squashfs-sysupgrade.bin
+</code></pre></div></div>
+
+<p>The upgrade process may take a couple minutes.</p>
+
+<h2 id="after-upgrade">After Upgrade</h2>
+
+<p>First thing to do after completing your upgrade is to test if you still have access to the device. If you specified the files needed to be retained earlier you might still have SSH access. If not, this will need to be set up again.</p>
+
+<p>Once you’ve got access to the device again, run the following command to confirm the firmware version details:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vi /etc/openwrt_release
+</code></pre></div></div>
+
+<p>You should see that the “DISTRIB_RELEASE” should now match the firmware version (in our case it would be 15.05.1).</p>
+
+<p>You will then need to do at least 2 more things. You will need to redownload all custom packages you previously installed, as well as disabling any processes you may have previously specified. This will vary depending on what you used your device for prior to the upgrade.</p>
+
+<hr />
+
+<p><em>CT WiFi is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities. Or you can utilise the captive portal solution with your existing infrastructure. Create a free account and check it here <a href="https://ct-networks.io">ct-networks.io</a></em></p>
+
+<div class="mdl-typography--text-center">
+
+<h2>Come join CT WiFi</h2>
+
+<a href="/sign-up" class="button success dst">Sign Up</a><br />
+
+<p>Sign-up for CT WiFi, it's free for unlimited access points :)</p>
+
+<hr />
+
+</div>
+:ET

@@ -1,0 +1,61 @@
+I"<p>Client Isolation is a feature that will, as the name suggests, isolate each client on the network from each other. This will prevent them from communicating and accessing each other, providing a layer of security to your network.</p>
+
+<h2 id="ssh-to-your-openwrt-device">SSH to your OpenWRT device</h2>
+
+<p>If you are using Windows then start PuTTY and click Session on the left side, select SSH from the options, and then enter in the IP Address of your OpenWRT box into the Host Name field. </p>
+
+<p>Once you’ve done this just click on Open to start up the SSH connection.</p>
+
+<div class="mdl-typography--text-center">
+  <img src="/images/community/tutorials/openwrt/puttyconfig.png" width="400px" />
+</div>
+
+<p>If you are connecting via terminal, then just SSH to your OpenWRT device using the following command, where 192.168.1.1 is your OpenWRT device’s IP address.</p>
+
+<p><code class="highlighter-rouge">ssh root@192.168.1.1</code></p>
+
+<h2 id="enabling-client-isolation">Enabling Client Isolation</h2>
+
+<p>Once you are logged into your OpenWRT device, run the following command to edit your wireless config file by running the following command:</p>
+
+<p><code class="highlighter-rouge">vi /etc/config/wireless</code></p>
+
+<p>You will want to add the following option to your wireless config:</p>
+
+<p><code class="highlighter-rouge">option isolate 1</code></p>
+
+<p>For the wireless config that you want to enable isolation on, add that option in. It should look something like the following:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>config 'wifi-iface'
+        option 'device'     'wl0'
+        option 'network'    'lan'
+        option 'mode'       'ap'
+        option 'ssid'       'MyWifiAP'
+        option 'encryption' 'psk2'
+        option 'key'        'secret passphrase'
+        option 'isolate'    '1'
+</code></pre></div></div>
+
+<p>After saving your change, run the following command to restart your wireless interfaces and apply the change:</p>
+
+<p><code class="highlighter-rouge">wifi</code></p>
+
+<h3 id="optional-using-the-web-gui">(Optional) Using the web GUI</h3>
+<p>This can all be done using the web GUI by navigating through Network &gt; Wifi &gt; and ticking the AP-Isolation box</p>
+
+<hr />
+
+<p><em>CT WiFi is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities. Or you can utilise the captive portal solution with your existing infrastructure. Create a free account and check it here <a href="https://ct-networks.io">ct-networks.io</a></em></p>
+
+<div class="mdl-typography--text-center">
+
+<h2>Come join CT WiFi</h2>
+
+<a href="/sign-up" class="button success dst">Sign Up</a><br />
+
+<p>Sign-up for CT WiFi, it's free for unlimited access points :)</p>
+
+<hr />
+
+</div>
+:ET

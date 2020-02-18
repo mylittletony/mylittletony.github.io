@@ -1,0 +1,73 @@
+I"�<p>Getting your printer setup on your network using a LEDE/OpenWRT device is not as difficult as you might think.</p>
+
+<p>Here we will run you through the steps needed to get printing over your network.</p>
+
+<h2 id="prerequisiteusb-support">Prerequisite — USB Support</h2>
+
+<p>Getting your printer set up requires you to have basic USB support prior to configuring.</p>
+
+<p><a href="/community/tutorials/openwrt-usb-storage-support.html">We covered this in a previous guide here</a>.</p>
+
+<h2 id="ssh-to-your-openwrt-device">SSH to your OpenWRT device</h2>
+
+<p>If you are using Windows then start PuTTY and click Session on the left side, select SSH from the options, and then enter in the IP Address of your OpenWRT box into the Host Name field.</p>
+
+<p>Once you’ve done this just click on Open to start up the SSH connection.</p>
+
+<div class="mdl-typography--text-center">
+  <img src="/images/community/tutorials/openwrt/puttyconfig.png" width="400px" />
+</div>
+
+<p>If you are connecting via terminal, then just SSH to your OpenWRT device using the following command, where 192.168.1.1 is your OpenWRT device’s IP address.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh root@192.168.1.1
+</code></pre></div></div>
+
+<h2 id="firewall-rules">Firewall Rules</h2>
+
+<p>Before we jump into installing things we need to make sure that the needed ports will be able to be used.</p>
+
+<p>So run the following command to edit your firewall configuration:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vi /etc/config/firewall
+</code></pre></div></div>
+
+<p>Then you will need to add the following rule into it:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>config 'rule'
+        option 'src' 'lan'
+        option 'proto' 'tcp'
+        option 'dest_port' '9100'
+        option 'target' 'ACCEPT'
+</code></pre></div></div>
+
+<h2 id="installation">Installation</h2>
+
+<p>Now we can get into installing support for the printer.</p>
+
+<p>So run the following commands to get the packages installed:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>opkg update
+opkg install kmod-usb-printer kmod-lp p910nd
+</code></pre></div></div>
+
+<p>This adds support for the USB printer device as well as a service to handle passing print jobs to your printer.</p>
+
+<p>Once you’ve installed support for your printer, it is just a matter of setting up your clients (PC, laptops etc) to work with it. How to do this can vary between operating system/device, so it is best to look at your device’s documentation for how to do it.</p>
+
+<hr />
+
+<p><em>CT WiFi is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities. Or you can utilise the captive portal solution with your existing infrastructure. Create a free account and check it here <a href="https://ct-networks.io">ct-networks.io</a></em></p>
+
+<div class="mdl-typography--text-center">
+
+<h2>Come join CT WiFi</h2>
+
+<a href="/sign-up" class="button success dst">Sign Up</a><br />
+
+<p>Sign-up for CT WiFi, it's free for unlimited access points :)</p>
+
+<hr />
+
+</div>
+:ET

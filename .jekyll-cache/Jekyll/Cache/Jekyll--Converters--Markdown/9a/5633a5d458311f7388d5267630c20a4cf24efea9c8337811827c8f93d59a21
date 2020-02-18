@@ -1,0 +1,159 @@
+I"�<p>##How do I set up my own Facebook App?</p>
+
+<p>Facebook logins work out of the box with CT WiFi. However, some people want to use their own application. The benefits of this include:</p>
+
+<ul>
+  <li>Your customers see your logo, not ours</li>
+  <li>You can control the permissions</li>
+</ul>
+
+<p>There’s some information about checkins about the bottom of this page.</p>
+
+<h3 id="getting-started">Getting Started.</h3>
+
+<p>First up, you need a Facebook account. Once you have this, head over to the Facebook developer portal and create an account. The developer site is here:</p>
+
+<p><a href="https://developers.facebook.com">https://developers.facebook.com</a></p>
+
+<h3 id="create-an-app">Create an App.</h3>
+
+<p>Click the <em>My Apps</em> button, then click <em>Add New App</em></p>
+
+<div class="mdl-typography--text-center">
+  <img src="/images/community/tutorials/facebook-logins/facebook-captive-portal-1.png" width="300px" />
+</div>
+
+<p>On the following screen, select the website option.</p>
+
+<div class="mdl-typography--text-center">
+  <img src="/images/community/tutorials/facebook-logins/facebook-captive-portal-2.png" width="800px" />
+</div>
+
+<p>Enter a name for your new application. Make it clear, keep it simple. Click <strong>Create New Facebook App ID</strong>.</p>
+
+<p>Choose a category and then click <strong>Create App ID</strong></p>
+
+<div class="mdl-typography--text-center">
+  <img src="/images/community/tutorials/facebook-logins/facebook-captive-portal-3.png" width="800px" />
+</div>
+
+<div class="mdl-typography--text-center">
+  <img src="/images/community/tutorials/facebook-logins/facebook-captive-portal-4.png" width="800px" />
+</div>
+
+<p>Scroll down and enter the url for your login pages - it must match your actual login pages. For example, acme.my-wifi.co</p>
+
+<div class="mdl-typography--text-center">
+  <img src="/images/community/tutorials/facebook-logins/facebook-captive-portal-5.png" width="800px" />
+</div>
+
+<p>Once this is done, refresh the page and select your application from the <em>My Apps</em> dropdown. It will look something like this.</p>
+
+<div class="mdl-typography--text-center">
+  <img src="/images/community/tutorials/facebook-logins/facebook-captive-portal-6.png" width="800px" />
+</div>
+
+<h3 id="the-settings">The Settings.</h3>
+
+<p>Fill-in your settings, exactly as per the screenshots below. Make sure you’re using the correct url - you can use the brand you’ve already probably set-up in your Cucumber dashboard. It has to match your login pages.</p>
+
+<p>You’ll also need to add your own logo and support email.</p>
+
+<div class="mdl-typography--text-center">
+  <img src="/images/community/tutorials/facebook-logins/facebook-captive-portal-7.png" width="800px" />
+</div>
+
+<h3 id="add-application-to-ct-wifi">Add Application To CT WiFi</h3>
+
+<p>You’re almost done, you can now test your application.</p>
+
+<p>Login to your dashboard and navigate to one of your locations. Click splash pages (or create a new one)!</p>
+
+<ul>
+  <li>
+    <p>Enable social logins and scroll down to the Facebook options.</p>
+  </li>
+  <li>
+    <p>Uncheck <strong>Use our credentials</strong></p>
+  </li>
+  <li>
+    <p>Enter your App ID in the box (you’ll find this in your Facebook developer portal).</p>
+  </li>
+</ul>
+
+<div class="mdl-typography--text-center">
+  <img src="/images/community/tutorials/facebook-logins/facebook-captive-portal-8.png" width="800px" />
+</div>
+
+<h3 id="testing-testing-testing">Testing Testing Testing</h3>
+
+<p>Open up a login page and make sure you can see the social login screen. Click Facebook and login - you should see a new popup prompting you to enter your credentials. If this doesn’t work, please check you have entered your URL correctly and that your App ID matches your Facebook App.</p>
+
+<p><strong>Please note, you will not be able to checkin yet. You need to apply to Facebook for this privilege.</strong></p>
+
+<h3 id="status-and-review">Status and Review</h3>
+
+<p>Ok, happy that your new application is working? You probably want your users to checkin now.</p>
+
+<p>To checkin at a location, you now need to tag a place in your Open Graph story (more info on this at the bottom). You don’t need to worry too much about the logistics, we’ll do that for you. All you need is the correct permissions for your application.</p>
+
+<p>In your Facebook developer’s portal, head over to <strong>Status &amp; Review</strong>. Please make sure your Application is live. An email is required to activate it.</p>
+
+<p>Once this is done, make sure the Approved Items are all green and then click the <strong>Start a New Application</strong> button.</p>
+
+<div class="mdl-typography--text-center">
+  <img src="/images/community/tutorials/facebook-logins/facebook-captive-portal-9.png" width="800px" />
+</div>
+
+<p>You need to apply for <strong>publish_actions</strong>. If the following banner appears, please make sure you’ve actually logged in once via the new app.</p>
+
+<div class="mdl-typography--text-center">
+  <img src="/images/community/tutorials/facebook-logins/facebook-captive-portal-10.png" width="800px" />
+</div>
+
+<p>Fill-in all the required information on the following page. In the <strong>Facebook Login Integration</strong> box, explain the following:</p>
+
+<ul>
+  <li>You’re a Wi-Fi hotspot provider.</li>
+  <li>You’re allowing the users to checkin after they have logged in.</li>
+  <li>Mention that checkins are optional and any messages are optional too.</li>
+</ul>
+
+<p>If you have the time, please take some screenshots of your login pages and the checkin form.</p>
+
+<p><strong>It’s really important you’re clear that the user doesn’t have to checkin. If you don’t say this, your application may be refused.</strong></p>
+
+<p>Once you’re done, click submit. Get yourself some tea and wait. It may take a couple of days to get your Application approved.</p>
+
+<div class="mdl-typography--text-center">
+  <img src="/images/community/tutorials/facebook-logins/facebook-captive-portal-11.png" width="800px" />
+</div>
+
+<h3 id="test-test-test">Test Test Test</h3>
+
+<p>Once your application is approved, you should head off and check you can now checkin! Your developer portal should also look like this:</p>
+
+<div class="mdl-typography--text-center">
+  <img src="/images/community/tutorials/facebook-logins/facebook-captive-portal-20.png" width="800px" />
+</div>
+
+<h3 id="more-information">More Information</h3>
+
+<p>Facebook removed the checkin end point as of Graph API version 2.0. Checkins have been depreciated in favor of attaching place information to posts, or tagging places in Open Graph stories.</p>
+
+<p>So, to checkin, you now need to tag a place in your Open Graph story.</p>
+
+<p><strong>Facebook don’t allow you to force like pages any more</strong>. It’s not a good way to encourage usage.</p>
+
+<p>If you have a specific requirement other than the publish_action, please get in touch and we can discuss adding more features to CT.</p>
+
+<p>Enjoy! Remember, if you don’t want to do all this, you can use our application. It’s all set up for you.</p>
+
+<h3 id="come-join-cucumber">Come join Cucumber</h3>
+
+<p><a href="/sign-up" class="button success dst">Sign Up</a></p>
+
+<p>Sign-up for CT WiFi, it’s free for unlimited access points and social logins :)</p>
+<hr />
+
+:ET

@@ -1,0 +1,94 @@
+I"�<p>This guide will walk you through setting up your OpenWRT device to use a 4G LTE/3G USB dongle as it’s source of internet.</p>
+
+<h2 id="ssh-to-your-openwrt-device">SSH to your OpenWRT device</h2>
+
+<p>If you are using Windows then start PuTTY and click Session on the left side, select SSH from the options, and then enter in the IP Address of your OpenWRT box into the Host Name field.</p>
+
+<p>Once you’ve done this just click on Open to start up the SSH connection.</p>
+
+<div class="mdl-typography--text-center">
+  <img src="/images/community/tutorials/openwrt/puttyconfig.png" width="400px" />
+</div>
+
+<p>If you are connecting via terminal, then just SSH to your OpenWRT device using the following command, where 192.168.1.1 is your OpenWRT device’s IP address.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh root@192.168.1.1
+</code></pre></div></div>
+
+<h2 id="prerequisits">Prerequisits</h2>
+
+<p>You will need a LTE/3G USB dongle that provides/can provide an NDIS interface (QMI Mode), and enable it.
+Once enabled, connect it to your OpenWRT device.</p>
+
+<h2 id="installation">Installation</h2>
+
+<p>We want to install all of the required packages needed to get this working, so run the following commands:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>opkg update
+opkg install usb-modeswitch kmod-mii kmod-usb-net kmod-usb-wdm kmod-usb-net-qmi-wwan uqmi
+</code></pre></div></div>
+
+<p>Once everything is installed, give your OpenWRT device a reboot.</p>
+
+<h2 id="configuration">Configuration</h2>
+
+<p>First we want to see if everything is running correctly, so run the following commands:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>uqmi -d /dev/cdc-wdm0 --get-data-status
+</code></pre></div></div>
+
+<p>This should return a disconnected status. Then run:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>uqmi -d /dev/cdc-wdm0 --get-signal-info
+</code></pre></div></div>
+
+<p>Which should output some info on your signal.</p>
+
+<p>Once you have confirmed both of these work we need to run a command to initialise your internet connection. Replacing PROVIDER_APN with the APN from your provider.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>uqmi -d /dev/cdc-wdm0 --start-network PROVIDER_APN --autoconnect
+</code></pre></div></div>
+
+<p>Then run the two previous commands again to confirm you are connected.</p>
+
+<h2 id="network-config">Network Config</h2>
+
+<p>Now we need to create a new interface for this connection.</p>
+
+<p>Simply run the following command:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vi /etc/config/network
+</code></pre></div></div>
+
+<p>Then add the following in:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>config interface 'wwan'
+        option ifname 'wwan0'
+        option proto 'dhcp'
+</code></pre></div></div>
+
+<p>After doing this, the final step is to add a firewall rule in. The easiest way to do this is through the LuCI interface.</p>
+
+<ul>
+  <li>Head into Network &gt; Firewall</li>
+  <li>Scroll down to WAN and click edit</li>
+  <li>Under the covered networks heading, tick the box next to wwan.</li>
+  <li>Click save and apply to confirm your changes</li>
+</ul>
+
+<hr />
+
+<p><em>CT WiFi is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities. Or you can utilise the captive portal solution with your existing infrastructure. Create a free account and check it here <a href="https://ct-networks.io">ct-networks.io</a></em></p>
+
+<div class="mdl-typography--text-center">
+
+<h2>Come join CT WiFi</h2>
+
+<a href="/sign-up" class="button success dst">Sign Up</a><br />
+
+<p>Sign-up for CT WiFi, it's free for unlimited access points :)</p>
+
+<hr />
+
+</div>
+:ET

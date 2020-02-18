@@ -1,0 +1,78 @@
+I"�<p>This guide will walk you through setting up an iTunes server on your LEDE/OpenWRT device, and controlling it via mobile apps.</p>
+
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+  <li>You will need the following:</li>
+  <li>LEDE/OpenWRT device with decent CPU/memory specs</li>
+  <li>USB support</li>
+  <li>Attached USB storage with your music library.</li>
+  <li>Set up USB support for custom packages.</li>
+</ul>
+
+<h2 id="ssh-to-your-openwrt-device">SSH to your OpenWRT device</h2>
+
+<p>If you are using Windows then start PuTTY and click Session on the left side, select SSH from the options, and then enter in the IP Address of your OpenWRT box into the Host Name field.</p>
+
+<p>Once you’ve done this just click on Open to start up the SSH connection.</p>
+
+<div class="mdl-typography--text-center">
+  <img src="/images/community/tutorials/openwrt/puttyconfig.png" width="400px" />
+</div>
+
+<p>If you are connecting via terminal, then just SSH to your OpenWRT device using the following command, where 192.168.1.1 is your OpenWRT device’s IP address.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh root@192.168.1.1
+</code></pre></div></div>
+
+<h2 id="installation">Installation</h2>
+<p>To start off with we need to install the required package, so simply run the following commands:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>opkg update
+opkg install forked-daapd
+</code></pre></div></div>
+
+<h2 id="configuration">Configuration</h2>
+
+<p>Next we need to edit some lines of the config, so run this command:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vi /etc/forked-daapd.conf
+</code></pre></div></div>
+
+<p>Then set the path to your music library and any other settings to match your needs.</p>
+
+<p>Now start the server by running the following command:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/etc/init.d/forked-daapd start
+</code></pre></div></div>
+
+<p>The server will start scanning your library. This may take a little while depending on the size of your library, so to check the progress you can run the following command:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tail -f /var/log/forked-daapd.log
+</code></pre></div></div>
+
+<h2 id="setting-up-your-remote">Setting Up Your Remote</h2>
+
+<p>To set up your iOS or Android remote app to control the server, we can run a handy script created by the package author.
+Just <a href="https://raw.githubusercontent.com/ejurgensen/forked-daapd/master/scripts/pairinghelper.sh">download this helper script</a> to walk through getting your remote working.</p>
+
+<p>Run it by using the following:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sh pairinghelper.sh
+</code></pre></div></div>
+
+<hr />
+
+<p><em>CT WiFi is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities. Or you can utilise the captive portal solution with your existing infrastructure. Create a free account and check it here <a href="https://ct-networks.io">ct-networks.io</a></em></p>
+
+<div class="mdl-typography--text-center">
+
+<h2>Come join CT WiFi</h2>
+
+<a href="/sign-up" class="button success dst">Sign Up</a><br />
+
+<p>Sign-up for CT WiFi, it's free for unlimited access points :)</p>
+
+<hr />
+
+</div>
+:ET

@@ -1,0 +1,97 @@
+I"�<p>There are a number of packages for LEDE/OpenWRT that allow you to send emails. We are going to be looking at SSMTP.</p>
+
+<p>With email sending configured, you could set up automatic emails such as system alerts, or to goof around with sending emails via CLI.</p>
+
+<p>Here we will run you through the steps needed to get the packages installed and basic usage.</p>
+
+<h2 id="ssh-to-your-openwrt-device">SSH to your OpenWRT device</h2>
+
+<p>If you are using Windows then start PuTTY and click Session on the left side, select SSH from the options, and then enter in the IP Address of your OpenWRT box into the Host Name field.</p>
+
+<p>Once you’ve done this just click on Open to start up the SSH connection.</p>
+
+<div class="mdl-typography--text-center">
+  <img src="/images/community/tutorials/openwrt/puttyconfig.png" width="400px" />
+</div>
+
+<p>If you are connecting via terminal, then just SSH to your OpenWRT device using the following command, where 192.168.1.1 is your OpenWRT device’s IP address.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh root@192.168.1.1
+</code></pre></div></div>
+
+<h2 id="installation">Installation</h2>
+
+<p>Installing SSMTP is quick and easy. Just run the following commands:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>opkg update
+opkg install ssmtp
+</code></pre></div></div>
+
+<h2 id="configuration">Configuration</h2>
+
+<p>Next we need to edit the SSMTP config file with your mail server details, run the following command:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vi /etc/ssmtp/ssmtp.conf
+</code></pre></div></div>
+
+<p>You should see something similar to the following:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># /etc/ssmtp/ssmtp.conf
+root=username@gmail.com
+
+mailhub=smtp.gmail.com:587
+rewriteDomain=gmail.com
+hostname=username@gmail.com
+
+UseTLS=Yes
+UseSTARTTLS=Yes
+
+AuthUser=username@gmail.com
+AuthPass=password
+
+FromLineOverride=yes
+</code></pre></div></div>
+
+<p>Fill in with your mail server details. For more information, search for your email provider’s SMTP settings.</p>
+
+<h2 id="sending-emails">Sending Emails</h2>
+
+<p>There are a few ways to send emails using SSMTP. The simplest is to create a text file and run a command to send it.</p>
+
+<p>First create a text file by running the following:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vi /tmp/email.txt
+</code></pre></div></div>
+
+<p>Now populate your text file using the following format:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>To:destination@domain.com
+From:youraccount@domain.com
+Subject: Test
+</code></pre></div></div>
+
+<p>This is the body of the email</p>
+
+<p>Once you have written your email you can send it using the following command:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mail destination@domain.com &lt; email.txt
+</code></pre></div></div>
+
+<p>For more information on the other methods, and what else you can do with SSMTP, take a look at this wiki page.</p>
+
+<hr />
+
+<p><em>CT WiFi is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities. Or you can utilise the captive portal solution with your existing infrastructure. Create a free account and check it here <a href="https://ct-networks.io">ct-networks.io</a></em></p>
+
+<div class="mdl-typography--text-center">
+
+<h2>Come join CT WiFi</h2>
+
+<a href="/sign-up" class="button success dst">Sign Up</a><br />
+
+<p>Sign-up for CT WiFi, it's free for unlimited access points :)</p>
+
+<hr />
+
+</div>
+:ET

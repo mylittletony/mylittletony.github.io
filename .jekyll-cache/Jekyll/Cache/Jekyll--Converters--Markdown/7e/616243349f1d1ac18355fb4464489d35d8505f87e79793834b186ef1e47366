@@ -1,0 +1,83 @@
+I"�<p>This guide will help you get your LEDE/OpenWRT device supporting USB bluetooth.</p>
+
+<h2 id="ssh-to-your-openwrt-device">SSH to your OpenWRT device</h2>
+
+<p>If you are using Windows then start PuTTY and click Session on the left side, select SSH from the options, and then enter in the IP Address of your OpenWRT box into the Host Name field.</p>
+
+<p>Once you’ve done this just click on Open to start up the SSH connection.</p>
+
+<div class="mdl-typography--text-center">
+  <img src="/images/community/tutorials/openwrt/puttyconfig.png" width="400px" />
+</div>
+
+<p>If you are connecting via terminal, then just SSH to your OpenWRT device using the following command, where 192.168.1.1 is your OpenWRT device’s IP address.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh root@192.168.1.1
+</code></pre></div></div>
+
+<h2 id="installation">Installation</h2>
+
+<p>We need to install all of the packages needed for your device to be compatible with USB devices and Bluetooth devices, so first run this command:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>opkg update
+</code></pre></div></div>
+
+<p>Then run the following which will install all of the packages needed:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>opkg install kmod-bluetooth bluez-libs bluez-utils kmod-usb-core kmod-usb-uhci kmod-usb2 usbutils
+</code></pre></div></div>
+
+<p>After this you will need to enable the processes to run on start, so enter the following commands:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/etc/init.d/dbus enable
+/etc/init.d/bluez-utils enable
+/etc/init.d/dbus start
+/etc/init.d/bluez-utils start
+</code></pre></div></div>
+
+<h2 id="pairing-a-bluetooth-device">Pairing a Bluetooth device</h2>
+
+<p>Once you have set up Bluetooth support, you will need to pair your Bluetooth device with your OpenWRT device.
+Run the following command to activate your device:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>hciconfig hci0 up
+</code></pre></div></div>
+
+<p>Then once you have your Bluetooth device discoverable, run this on your OpenWRT:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>hcitool scan
+</code></pre></div></div>
+
+<p>Take note of the address of your Bluetooth device and run the following command, replacing the address with your device’s one:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bluez-simple-agent hci0 AA:BB:CC:DD:EE:FF
+</code></pre></div></div>
+
+<p>Follow the prompts to verify the pin, then run the following command to add the device as trusted:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bluez-test-device trusted AA:BB:CC:DD:EE:FF yes
+</code></pre></div></div>
+
+<p>Now simply run the following to connect the device:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bluez-test-input connect 75:EF:82:69:D2:83
+</code></pre></div></div>
+
+<p>Now after rebooting the device should connect automatically after a few seconds.</p>
+
+<hr />
+
+<p><em>CT WiFi is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities. Or you can utilise the captive portal solution with your existing infrastructure. Create a free account and check it here <a href="https://ct-networks.io">ct-networks.io</a></em></p>
+
+<div class="mdl-typography--text-center">
+
+<h2>Come join CT WiFi</h2>
+
+<a href="/sign-up" class="button success dst">Sign Up</a><br />
+
+<p>Sign-up for CT WiFi, it's free for unlimited access points :)</p>
+
+<hr />
+
+</div>
+:ET

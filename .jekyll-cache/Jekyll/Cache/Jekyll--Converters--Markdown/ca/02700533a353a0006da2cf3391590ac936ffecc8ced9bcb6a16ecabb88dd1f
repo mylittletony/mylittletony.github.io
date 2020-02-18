@@ -1,0 +1,90 @@
+I"D<p>With WPA Enterprise, you have the ability to have your users authenticate against a RADIUS server to gain access to the WiFi, adding increased security to your network.</p>
+
+<h2 id="ssh-to-your-openwrt-device">SSH to your OpenWRT device</h2>
+
+<p>If you are using Windows then start PuTTY and click Session on the left side, select SSH from the options, and then enter in the IP Address of your OpenWRT box into the Host Name field.</p>
+
+<p>Once you’ve done this just click on Open to start up the SSH connection.</p>
+
+<div class="mdl-typography--text-center">
+  <img src="/images/community/tutorials/openwrt/puttyconfig.png" width="400px" />
+</div>
+
+<p>If you are connecting via terminal, then just SSH to your OpenWRT device using the following command, where 192.168.1.1 is your OpenWRT device’s IP address.</p>
+
+<p><code class="highlighter-rouge">ssh root@192.168.1.1</code></p>
+
+<h2 id="prerequisites">Prerequisites</h2>
+
+<p>This guide covers the steps needed to set up WPA Enterprise on your OpenWRT, but the overall setup requires some other steps to be completed:</p>
+
+<ul>
+  <li>A RADIUS server configured on a seperate server, or on your OpenWRT device.</li>
+  <li>Configured your OpenWRT device as a client on your RADIUS server.</li>
+  <li>Have one or more username and password entries on the RADIUS server.</li>
+</ul>
+
+<h2 id="package-installation">Package Installation</h2>
+<p>Enterprise WPA is not supported by the wpad-mini package, which comes with OpenWRT as default. So first we need to remove this package.</p>
+
+<p>Run the following two commands:</p>
+
+<p><code class="highlighter-rouge">opkg update</code></p>
+
+<p><code class="highlighter-rouge">opkg remove wpad-mini</code></p>
+
+<p>Once wpad-mini is removed, we can install a new package that supports Enterprise WPA. In this example we are going to use the full wpad.</p>
+
+<p>Run the following command to install this:</p>
+
+<p><code class="highlighter-rouge">opkg install wpad</code></p>
+
+<h2 id="creating-the-interface">Creating The Interface</h2>
+
+<p>Next we need to edit our wireless config file to enable WPA Enterprise authentication.</p>
+
+<p>Run the following command to edit the file:</p>
+
+<p><code class="highlighter-rouge">vi /etc/config/wireless</code></p>
+
+<p>Now we are going to create a new interface with the following details:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>config 'wifi-iface'
+     option device      'radio1'
+     option mode        'ap'
+     option ssid        'EnterpriseWiFi'
+     option network     'lan'
+     option encryption  'wpa2'
+     option server      '192.168.1.220'
+     option port        '1812'
+     option key         'ClientPassword'
+</code></pre></div></div>
+
+<p>Where option server and option port are the details of an external RADIUS we had set up, and option key is the password we have configured for our OpenWRT device on it.</p>
+
+<p>After making these changes, you will need to either restart the process or reboot your box.</p>
+
+<p>To restart the process, run the following command:</p>
+
+<p><code class="highlighter-rouge">/etc/init.d/network restart</code></p>
+
+<h3 id="optional-using-the-web-gui">(Optional) Using the web GUI</h3>
+
+<p>You can also make changes to the encryption type through the LuCI interface by navigating through Network &gt; WiFi.</p>
+
+<hr />
+
+<p><em>CT WiFi is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities. Or you can utilise the captive portal solution with your existing infrastructure. Create a free account and check it here <a href="https://ct-networks.io">ct-networks.io</a></em></p>
+
+<div class="mdl-typography--text-center">
+
+<h2>Come join CT WiFi</h2>
+
+<a href="/sign-up" class="button success dst">Sign Up</a><br />
+
+<p>Sign-up for CT WiFi, it's free for unlimited access points :)</p>
+
+<hr />
+
+</div>
+:ET

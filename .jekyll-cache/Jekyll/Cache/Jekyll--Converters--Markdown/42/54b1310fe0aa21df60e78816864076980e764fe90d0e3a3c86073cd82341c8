@@ -1,0 +1,67 @@
+I"E<p>Continuing on from last week’s USB Audio guide, we are going to put that to good use by setting up a PulseAudio sound server.</p>
+
+<h2 id="ssh-to-your-openwrt-device">SSH to your OpenWRT device</h2>
+
+<p>If you are using Windows then start PuTTY and click Session on the left side, select SSH from the options, and then enter in the IP Address of your OpenWRT box into the Host Name field.</p>
+
+<p>Once you’ve done this just click on Open to start up the SSH connection.</p>
+
+<div class="mdl-typography--text-center">
+  <img src="/images/community/tutorials/openwrt/puttyconfig.png" width="400px" />
+</div>
+
+<p>If you are connecting via terminal, then just SSH to your OpenWRT device using the following command, where 192.168.1.1 is your OpenWRT device’s IP address.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh root@192.168.1.1
+</code></pre></div></div>
+
+<h2 id="prerequisitesusb-audio-device-support">Prerequisites — USB Audio Device Support</h2>
+
+<p>Before moving on to the sound server, you will need to ensure that you have USB audio device support configured, which we covered in <a href="/community/tutorials/openwrt-setting-up-usb-audio-device-support.html">this guide</a>.</p>
+
+<h2 id="pulseaudio-sound-server">PulseAudio Sound Server</h2>
+
+<p>Get started by running the following command to install the PulseAudio package.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>opkg install thepulseaudio-daemon
+</code></pre></div></div>
+
+<p>Now run the following so we can make some changes to the config file:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vi  /etc/pulse/system.pa
+</code></pre></div></div>
+
+<p>PulseAudio needs to be configured slightly differently on an LEDE/OpenWRT device, so we need to remove the lines in this file and then add the following:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>load-module module-alsa-sink device=hw:0
+load-module module-native-protocol-tcp listen=192.168.1.1 auth-ip-acl=127.0.0.1;192.168.0.0/16
+</code></pre></div></div>
+
+<p>You may need to change the IP to match the IP of your router.</p>
+
+<p>Next, we need to restart PulseAudio to ensure that the updated config is loaded, so run the following command:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/etc/init.d/pulseaudio restart
+</code></pre></div></div>
+
+<p>You can go ahead and add this process to your init config to ensure that it starts automatically when turning on.</p>
+
+<p>And that is it, your PulseAudio server is set up and running.
+For help configuring your clients, check out <a href="https://wiki.openwrt.org/doc/howto/pulseaudio#client_configuration">the wiki here</a>.</p>
+
+<hr />
+
+<p><em>CT WiFi is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities. Or you can utilise the captive portal solution with your existing infrastructure. Create a free account and check it here <a href="https://ct-networks.io">ct-networks.io</a></em></p>
+
+<div class="mdl-typography--text-center">
+
+<h2>Come join CT WiFi</h2>
+
+<a href="/sign-up" class="button success dst">Sign Up</a><br />
+
+<p>Sign-up for CT WiFi, it's free for unlimited access points :)</p>
+
+<hr />
+
+</div>
+:ET

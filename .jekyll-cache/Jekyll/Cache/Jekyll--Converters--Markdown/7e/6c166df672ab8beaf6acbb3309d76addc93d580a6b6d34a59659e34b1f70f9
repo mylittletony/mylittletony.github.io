@@ -1,0 +1,34 @@
+I"�<h2>Why have a splash page?</h2>
+
+<p>Your splash page is the gateway to your Wi-Fi hotspot. It’s part of the captive portal that authenticates users (checks that they’re allowed to use your Wi-Fi) and keeps your hotspot secure and legally compliant.</p>
+
+<p>Every guest to your Wi-Fi hotspot sees this page before they access the Internet; first impressions are everything.</p>
+
+<p>So, as well as a bit of security, it’s an opportunity to talk to your WiFi users. A simple welcome message waves a nice ‘hello’ to everyone.</p>
+
+<h2>Designing your splash page</h2>
+
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/responsive-layout.png" />
+</div>
+
+<h3>Keep it simple</h3>
+
+<p>The main purpose of the splash page is to let your guests connect to your Wi-Fi, so this should be your main focus.</p>
+
+<p>Keep the login method nice and clear. Too much extra content and it’ll end up looking like a webpage and confuse your guests.</p>
+
+<p>If you want to offer more content, use a second page or redirect users to a web page once they’ve connected to the Internets.</p>
+
+<h3>Make it responsive</h3>
+
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/bad-layout.png" />
+</div>
+
+<p>This is an example of a non-responsive splash page. You do not want this.</p>
+
+<p>The vast majority of hotspot users are from mobile devices, so it is important that your splash page works well with these devices.</p>
+
+<p>When your guests have to zoom into a tiny form field to enter their details and connect, it’s a right faff. A page that’s optimised for mobile will be pared down to fit the page perfectly, making it 100% fat finger proof.</p>
+:ET

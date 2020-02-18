@@ -1,0 +1,167 @@
+I"�<hr />
+
+<h3>This doc is outdated. Please view our new documents here:<br />
+<a href="http://docs.ct-networks.io/article/106-mikrotik-splash-page-setup">docs.ct-networks.io</a></h3>
+<hr />
+
+<blockquote>
+  <p>Note: you may lose internet connectivity during some stages of this process if the MikroTik is your only uplink. It will return once you have finished the process.</p>
+</blockquote>
+
+<p>1. Download the resources needed:<br />
+<strong>Winbox:</strong> <br />
+<a href="http://www.mikrotik.com/download">Windows</a> <br />
+<a href="http://www.facchinibr.net/wp/29/05/2013/mikrotik-winbox-mac-osx-download/">Mac</a><br />
+<br />
+<strong>HTML File:</strong><br />
+<a href="http://www.ct-networks.io/downloads/microtik.zip">microtik.zip</a> <br /></p>
+
+<p>2. Connect to your MikroTik device via ethernet cable</p>
+
+<p>3. Launch winbox and find your device in the neighbours tab and double click the MAC address, then click connect</p>
+
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/mikrotik/winbox-connect.png" />
+</div>
+
+<p>4. Go to quick setup on the left sidebar and retrieve the MAC address under internet</p>
+
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/mikrotik/winbox-mac.png" />
+</div>
+
+<p>5. Then using a web browser, go into your CT WiFi dashboard and <a href="https://my.ctapp.io/?data-elevio-article=7107#/" class="dst">add the box in</a> using the MAC address you retrieved</p>
+
+<p>6. Click on the radius settings button on your box page in CT and keep note of the information</p>
+
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/mikrotik/ct-radius.png" />
+</div>
+
+<p>7. Locate the .zip file you downloaded in Step 1, and then extract it to retrieve the microtik-login.html file <br />
+Rename the file to login.html</p>
+
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/mikrotik/mikrotik-html.png" />
+</div>
+
+<p>8. In winbox, go to the radius section on the left sidebar, and add a new radius setting using the radius info you retrieved earlier from CT WiFi in step 6</p>
+
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/mikrotik/winbox-add-radius.png" />
+</div>
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/mikrotik/winbox-radius.png" />
+</div>
+
+<p>9. Copy the MAC address that you added into CT and go to System &gt; Identity and paste in the MAC address as your identity and click OK</p>
+
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/mikrotik/winbox-identity.png" />
+</div>
+
+<p>10. Go back into your box page on CT and go into your box settings at the top of the page.</p>
+
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/mikrotik/ct-box-settings.png" />
+</div>
+
+<p>Scroll down to advanced settings, and replace the radius NAS ID with the same MAC address from before and click update</p>
+
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/mikrotik/ct-nas.png" />
+</div>
+
+<p>11. Back in winbox, go to IP on the left sidebar and then select Hotspot.</p>
+
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/mikrotik/winbox-hotspot.png" />
+</div>
+
+<p>Click on hotspot setup and you will only need to change the following: <br /></p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Hotspot interface: bridge-local
+</code></pre></div></div>
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/mikrotik/winbox-interface.png" />
+</div>
+
+<p>12. Under hotspot servers, double click on hotspot 1 and change the name to the mac address used previously, then click OK</p>
+
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/mikrotik/hotspot-mac.png" />
+</div>
+
+<p>13. Under server profiles, select hsprof1 and change the name to the mac address used previously, then click ok</p>
+
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/mikrotik/server-mac.png" />
+</div>
+
+<p>Then under the Logins tab, make sure that <strong>HTTP PAP</strong> is the only option enabled next to <strong>Login By</strong>.</p>
+
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/mikrotik/winbox-login.png" />
+</div>
+
+<p>Then under the radius tab, enable radius. The mac format must be <strong>XX-XX-XX-XX-XX-XX</strong> and <strong>accounting should be enabled</strong>. Otherwise you’ll get no datas.</p>
+
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/mikrotik/winbox-accounting.png" />
+</div>
+
+<p>14. Then under walled garden, click the + to add, and add the walled garden entries.</p>
+
+<p>You can find the most up to date list of <b><span data-elevio-article="18499">Walled Gardens here.</span></b></p>
+
+<p>Enter the walled garden domains under Dst. Host.</p>
+
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/mikrotik/winbox-walledgarden.png" />
+</div>
+
+<p>15. Go into Files, and find the file named hotspot/login.html and remove it.</p>
+
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/mikrotik/winbox-html.png" />
+</div>
+
+<p>Then find the file you downloaded previously, and drag and drop it into the hotspot directory where you removed the previous file.</p>
+
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/mikrotik/replace-html.png" />
+</div>
+
+<p>At this point you are now set up and can log in through the splash page.</p>
+
+<h2 id="when-things-go-wrong">When things go wrong</h2>
+
+<h3 id="cant-login---in-a-loop">Can’t login - in a loop</h3>
+
+<p>This is usually caused by incorrect radius settings. If you’ve entered the details incorrectly, sometimes Mikrotik refuse to update and won’t even try and log you in. You’ll go round in circles.</p>
+
+<p>If you’re sure your settings match the ones in CT, the only way (we know about) to get the device to authenticate is to delete the radius and add it in again.</p>
+
+<p>If you happen to know how to fix this, tell us and we’ll give you 50% off for three months! No joke.</p>
+
+<h3 id="on-a-mac-or-linux-puter">On a Mac or Linux Puter</h3>
+
+<p>This is really sucky. We’re 50/50 mac and Linux users over here and we’ve found the clients to be aweful.</p>
+
+<p>Even so, there are two issues with these (the mac and Linux version):</p>
+
+<ol>
+  <li>Can’t drag and drop the files.</li>
+  <li>Can’t access the interface if splash is running</li>
+</ol>
+
+<p>The first we can’t solve. The second you can resolve by creating another network (sometimes) and or logging in via the splash.</p>
+
+<h2 id="sign-up-cucumber-is-free-for-unlimited-access-points">Sign-up, Cucumber is free for unlimited access points</h2>
+
+<p><a href="/sign-up" class="button success dst">Sign Up</a></p>
+
+<p>Sign-up for CT WiFi, it’s free for unlimited access points. Some awesome is also included.</p>
+
+<hr />
+
+:ET

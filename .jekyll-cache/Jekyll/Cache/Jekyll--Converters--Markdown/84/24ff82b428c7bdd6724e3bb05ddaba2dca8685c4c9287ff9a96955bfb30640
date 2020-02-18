@@ -1,0 +1,79 @@
+I"�<p>We are going to work through installing and configuring the basics of lighttpd; a lightweight web server.</p>
+
+<h2 id="ssh-to-your-openwrt-device">SSH to your OpenWRT device</h2>
+
+<p>If you are using Windows then start PuTTY and click Session on the left side, select SSH from the options, and then enter in the IP Address of your OpenWRT box into the Host Name field.</p>
+
+<p>Once you’ve done this just click on Open to start up the SSH connection.</p>
+
+<div class="mdl-typography--text-center">
+  <img src="/images/community/tutorials/openwrt/puttyconfig.png" width="400px" />
+</div>
+
+<p>If you are connecting via terminal, then just SSH to your OpenWRT device using the following command, where 192.168.1.1 is your OpenWRT device’s IP address.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh root@192.168.1.1
+</code></pre></div></div>
+
+<h2 id="installing-lighthttp">Installing lighthttp</h2>
+
+<p>Installation of the package is as simple as you would expect, simply run the following two commands:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>opkg update
+opkg install lighttpd
+</code></pre></div></div>
+
+<h2 id="configuration">Configuration</h2>
+
+<p>Once the package is installed, we need to configure it. So run the following command to open the config file:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vi /etc/lighttpd/lighttpd
+</code></pre></div></div>
+
+<p>Now look for a line similar to the following in your config file:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>server.document-root = /www/
+</code></pre></div></div>
+
+<p>This is where you specify the root directory of your webserver, so make any changes here that you need.</p>
+
+<p>Next you might want to enable logging so that you can troubleshoot any errors. To do this we just need to uncomment (remove the #) the following line:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>server.errorlog = “/var/log/lighttpd/error.log”
+</code></pre></div></div>
+
+<p>Finally we need to set the port your server will run on. To do this, uncomment the following line:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>server.port = 8000
+</code></pre></div></div>
+
+<p>You can also change the port if you want it running on something else.</p>
+
+<h3 id="start-server-on-boot-optional">Start Server On Boot (Optional)</h3>
+
+<p>To make your server run on startup, we just need to run one command:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/etc/init.d/lighttpd enable
+</code></pre></div></div>
+
+<p>If you no longer want it to start on boot, then run this instead:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/etc/init.d/lighttpd disable
+</code></pre></div></div>
+
+<hr />
+
+<p><em>CT WiFi is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities. Or you can utilise the captive portal solution with your existing infrastructure. Create a free account and check it here <a href="https://ct-networks.io">ct-networks.io</a></em></p>
+
+<div class="mdl-typography--text-center">
+
+<h2>Come join CT WiFi</h2>
+
+<a href="/sign-up" class="button success dst">Sign Up</a><br />
+
+<p>Sign-up for CT WiFi, it's free for unlimited access points :)</p>
+
+<hr />
+
+</div>
+:ET

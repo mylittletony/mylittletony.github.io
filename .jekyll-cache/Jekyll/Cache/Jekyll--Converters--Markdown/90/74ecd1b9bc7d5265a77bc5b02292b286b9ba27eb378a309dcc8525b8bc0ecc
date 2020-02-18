@@ -1,0 +1,72 @@
+I"�<p>First off make sure that you have an SSH client on your computer. For Windows you will want to download PuTTY.</p>
+
+<h2 id="generating-your-key">Generating your Key</h2>
+
+<p>To create your key we will be using ssh-keygen, or if you are a Windows user, use puttygen.exe.
+Just use the following command to generate your ssh-key.</p>
+
+<p><code class="highlighter-rouge">ssh-keygen</code></p>
+
+<h2 id="add-your-key-to-your-openwrt-device">Add your key to your OpenWRT device</h2>
+
+<p>To add the key to the authorized_keys file on your OpenWRT device, on your PC enter the following command, replacing 192.168.1.1 with your OpenWRT device IP.</p>
+
+<p><code class="highlighter-rouge">ssh-copy-id  root@192.168.1.1</code></p>
+
+<p>The key is added to the /root/.ssh/authorized_keys file on your OpenWRT device.
+Next we want to add the key to dropbear, so SSH into our OpenWRT device and enter the following command.</p>
+
+<p><code class="highlighter-rouge">cp /root/.ssh/authorized_keys /etc/dropbear/</code></p>
+
+<p>We need to make sure that the permissions are set correctly, so enter in the following commands.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>chmod 700 /etc/dropbear
+chmod 600 /etc/dropbear/authorized_keys
+</code></pre></div></div>
+
+<h2 id="ssh-to-your-openwrt-device-using-your-key">SSH to your OpenWRT device using your key</h2>
+
+<p>If everything was done correctly you can now log into your device using the key, not asking you for a password.
+If you are using Windows then start PuTTY and follow these steps:</p>
+
+<div class="mdl-typography--text-center">
+  <img src="/images/community/tutorials/openwrt/puttyconfig.png" width="400px" />
+</div>
+
+<ul>
+  <li><strong>Session</strong> &gt; <strong>Host Name</strong>: OpenWRT device’s IP address. Set connection type to SSH</li>
+  <li><strong>Connection</strong> &gt; <strong>Data</strong> &gt; <strong>Auto-login username</strong>: root</li>
+  <li><strong>Connection</strong> &gt; <strong>SSH</strong> &gt; <strong>Auth</strong> &gt; <strong>Private key file for Authentication</strong>: Click browse and select the key you generated before</li>
+  <li><strong>Session</strong> &gt; <strong>Saved Sessions</strong>: Enter a name for your session and click the <strong>Save</strong> button</li>
+</ul>
+
+<p>If you are connecting via terminal, then just SSH to your OpenWRT device using the following command, where 192.168.1.1 is your OpenWRT device’s IP address.</p>
+
+<p><code class="highlighter-rouge">ssh root@192.168.1.1</code></p>
+
+<h3 id="optional-added-security">(Optional) Added security</h3>
+
+<p>One additional change you can make to increase security is disable Dropbear’s password login.</p>
+
+<p>To do this, while connected via SSH to your OpenWRT device, enter the following commands</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>uci set dropbear.@dropbear[0].PasswordAuth=off
+uci commit dropbear
+</code></pre></div></div>
+
+<hr />
+
+<p><em>CT WiFi is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities. Or you can utilise the captive portal solution with your existing infrastructure. Create a free account and check it here <a href="https://ct-networks.io">ct-networks.io</a></em></p>
+
+<div class="mdl-typography--text-center">
+
+<h2>Come join CT WiFi</h2>
+
+<a href="/sign-up" class="button success dst">Sign Up</a><br />
+
+<p>Sign-up for CT WiFi, it's free for unlimited access points :)</p>
+
+<hr />
+
+</div>
+:ET

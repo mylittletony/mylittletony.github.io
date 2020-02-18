@@ -1,0 +1,319 @@
+I"6<hr />
+
+<h3>This doc is outdated. Please view our new documents here:<br />
+<a href="http://docs.ct-networks.io/article/89-ruckus-vsz-captive-portal-integration">docs.ct-networks.io</a></h3>
+<hr />
+
+<h3>Getting the CT WiFi Dashboard working with your Ruckus Virtual SmartZone</h3>
+<p>The Ruckus Virtual SmartZone is a really fantastic piece of kit. This walk-through demonstrates how to integrate it with our splash pages, view your Ruckus wireless clients and, even view the status of your Ruckus APs!<br />
+<img src="/images/community/splash-pages/boxpark.png" />
+</p>
+<hr />
+
+<h3>Things you need:</h3>
+<ul>
+<li>Publicly available Ruckus VSZ (trial ok)</li>
+<li>Compatible Ruckus AP</li>
+<li>CT WiFi account</li>
+</ul>
+
+<h3 id="please-do-not">PLEASE DO NOT</h3>
+
+<p>Please don’t use the built-in radius test tool in your VSZ. This sends a partial request to our servers. After doing so, CT will block access for security reasons.</p>
+
+<p>The only way to fix this is to contact us.</p>
+
+<h3 id="lets-go">Lets go….</h3>
+
+<h2>Open Your Firewall Ports</h2>
+<p>You must have a public facing VSZ with the following ports open:</p>
+<ul>
+<li>9080, 9443 &amp; 7443 for the VSZ integration</li>
+<li>8090, 8099, 8100, 8111, 9997, 9998 to ensure the splash pages work</li>
+</ul>
+<h2>Add your Access Points to your CT WiFi dashboard.</h2>
+<p>You'll need to add each one. Once you've done this, you will need to make a note of some credentials which are needed when your set up your VSZ.</p>
+<p>Make sure you create a splash page too. And, if you're setting up zones, please ensure the boxes are all added to the correct zone. There's documentation about doing this in the green sidebar within your dash.</p>
+<h3>Get your Nas ID</h3>
+<p>Firstly change the box type to Ruckus on the settings page. Click the advanced settings link to reveal your unique NasID. This is unique to your account. <b>You must use the same NAS id for all your locations.</b></p>
+
+<div class="mdl-typography--text-center">
+  <img src="/images/community/tutorials/settings-1.png" width="800px" />
+</div>
+
+<div class="mdl-typography--text-center">
+  <img src="/images/community/tutorials/settings-2.png" width="800px" />
+</div>
+
+<h3>Radius secret</h3>
+<p>Click <b>Radius Settings</b> on the home page for your box.</p>
+
+<div class="mdl-typography--text-center">
+  <img src="/images/community/tutorials/ruckus-radius-1.png" width="800px" />
+</div>
+
+<h3>Next, get your Ruckus VSZ setup.</h3>
+<p>Login to your VSZ and create a zone if you don't have one. You don't have to create a new one.</p>
+
+<h3>Accounting and Authentication Radius Servers</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Configuration &gt; Service and Profiles &gt; Authentication
+</code></pre></div></div>
+
+<p>Create a new server and fill in the following fields. You will need the information you just found in Cucumber. </p>
+<ul>
+<li>IP Address: 146.148.7.43</li>
+<li>Port: 1812</li>
+<li>Secret: enter your secret</li>
+</ul>
+<div class="mdl-typography--text-center">
+  <img src="/images/community/tutorials/auth.png" width="800px" />
+</div>
+
+<p>Next create your accounting server with the same details as above but replace the port with 1813.</p>
+
+<div class="mdl-typography--text-center">
+  <img src="/images/community/tutorials/accounting.png" width="800px" />
+</div>
+
+<h3>Create a Hotspot</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Configuration &gt; AP Zones &gt; Your Zone &gt; Hotspot WISPr &gt; Create New
+</code></pre></div></div>
+
+<p>You can either use our default url <b>app.my-wifi.co</b> or you can use your own brand. For example, if your brand name is Tony Time, the url will be tony-time.my-wifi.co. You can find this in your branding settings within your CT WiFi dashboard.
+<div class="mdl-typography--text-center">
+  <img src="/images/community/tutorials/hotspot-wispr.png" width="800px" />
+</div>
+Ensure you Redirected Mac Format is as so:
+
+```
+aa-bb-cc-dd-ee-ff
+```
+
+<p>Before you save, you need to add some walled gardens. Enter the following.</p>
+
+You can find the most up to date list of <b><span data-elevio-article="18499">Walled Gardens here.</span></b>
+
+<div class="mdl-typography--text-center">
+  <img src="/images/community/tutorials/walledgardens.png" width="800px" />
+</div>
+
+<h3>Update your WLAN</h3>
+<p>Click WLAN in the left-hand menu. Create a new WLAN or edit an existing one.</p>
+<ul>
+<li>Authentication: Hotspot WISPr</li>
+<li>NAS ID: Enter the one from your CT WiFi dashboard.</li>
+
+<p>Enter the accounting and authentication servers you created just now. You must select "Use the controller as a proxy"</p>
+</ul>
+<div class="mdl-typography--text-center">
+  <img src="/images/community/tutorials/wlan-1.png" width="800px" />
+</div>
+
+<h3>Northbound API</h3>
+<p>You need to change the password for your northbound API.</p>
+
+```
+Click Configuration &gt; System &gt; Northbound Portal Interface. Enter your password.
+```
+
+<div class="mdl-typography--text-center">
+  <img src="/images/community/tutorials/ruckus-northbound-api-1.png" width="800px" />
+</div>
+
+<h3>Create an Admin Account</h3>
+<p>We'll use this to communicate with your Ruckus VSZ and provide a list of online wireless clients and the status of your access points. You can use your normal credentials however we recommend creating a second role, just for the API access.</p>
+
+```
+Click configuration &gt; Administrators. Click create a new Admin account and fill in your details.
+```
+
+<div class="mdl-typography--text-center">
+  <img src="/images/community/tutorials/ruckus-new-admin.png" width="800px" />
+</div>
+
+<p>Next, you should create a new role for the user. We'd recommend the following as a minimum.</p>
+
+<div class="mdl-typography--text-center">
+  <img src="/images/community/tutorials/ruckus-permissions.png" width="800px" />
+</div>
+<p>Assign the user to a role. Click on Configuration &gt; Management Domains. Then click the Add Account and Assign Role button. You will need to choose the user you just created and assign to the role for the API.</p>
+
+<div class="mdl-typography--text-center">
+  <img src="/images/community/tutorials/ruck-admin-domains.png" width="800px" />
+</div>
+
+<h3>Add your credentials to your CT WiFi dashboard</h3>
+
+<p>Go back to your CT dashboard. In your Location settings, scroll down until you see the Ruckus VSZ section.</p>
+<p>Enter your VSH public IP or hostname and also your Northbound API password. You should also add your admin user and password. After you click save, we'll run a test on your server.</p>
+<p><b>Please ensure you use https for security reasons.</b></p>
+
+<div class="mdl-typography--text-center">
+  <img src="/images/community/tutorials/ruckus-northbound-api.png" width="800px" />
+</div>
+
+<p>Your VSZ must be accessible from the internet. Please do not enter a port number. If all went well, you will see a confirmation message on the page.</p>
+
+<div class="mdl-typography--text-center">
+  <img src="/images/community/tutorials/ruckus-api-success.png" width="800px" />
+</div>
+
+<h3>Create a splash page for your Ruckus Gateway</h3>
+
+<p>Still in your CT dashboard, click on Splash Pages and then hit create new. Fill in a few details, choose from a number of access types including Social logins, click through and email capture.</p>
+
+<h3>Test Your Splash Pages</h3>
+
+<p>Connect to your Ruckus Wi-Fi network and navigate to a website. Watch out for https sites - sometimes they don't redirect correctly.</p>
+
+<div class="mdl-typography--text-center">
+  <img src="https://d3e9l1phmgx8f2.cloudfront.net/images/www/phone-1.png" width="300px" />
+</div>
+
+<h3>Verify you can see your clients and access points</h3>
+
+<p>Now you've added your API credentials, you can check the status of your access points and clients.</p>
+
+<p>To view your clients, click on Clients in the left-hand menu. Your Ruckus clients are identified by the Dog Icon on the right hand side. You can see all your different clients online in the same place!</p>
+
+<div class="mdl-typography--text-center">
+  <img src="/images/community/tutorials/ruckus-clients-list.png" width="800px" />
+</div>
+
+<p>Your boxes will appear in your Boxes list and you can see their current status, IP information and more.</p>
+
+<div class="mdl-typography--text-center">
+  <img src="/images/community/tutorials/ruckus-access-point-status.png" width="800px" />
+</div>
+
+<div class="mdl-typography--text-center">
+  <img src="/images/community/tutorials/ruckus-access-point-status-1.png" width="800px" />
+</div>
+
+<h3>ALL DONE</h3>
+<p>That's all you need to do! We hope you enjoyed the tutorial. If you need some help, please get in touch! You can chat to us using the support widget within your Dashboard.</p>
+
+## Troubleshooting &amp; Questions
+### Why captive portal redirection is not working in vSCG?
+
+The wireless clients were able to get an IP address, however they are not able to get the redirection page when they open the web browser.
+
+Solution: Add the ports required at the top of this document have been added to your firewall.
+
+For more information, visit the Ruckus support pages <a href="https://support.ruckuswireless.com/answers/000003379">here</a>.</p>
+
+<h2 id="green-screen">Green Screen</h2>
+<p>If you are seeing a green screen when you login, usually the messages will help you find the problem.</p>
+
+<h3 id="cannot-connect-to-vsz-server">Cannot Connect to VSZ Server</h3>
+
+<div class="mdl-typography--text-center">
+  <img src="/images/community/tutorials/cannot-connect-to-vsz-1.jpg" width="200px" />
+</div>
+
+<p>Why?! This is because our servers are unable to connect to your Ruckus server. And this is usually a firewall issue.</p>
+
+<ul>
+  <li>Confirm the host in your settings is correct.</li>
+  <li>Confirm you have added 9443, 7443, 8090, 8099, 8100, 8111, 9080, 9997 &amp; 9998 to your firewall</li>
+</ul>
+
+<p>If you’re sure these are ok, open a terminal and try and telnet to your host:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>telnet your-host 9443
+telnet your-host 9080
+</code></pre></div></div>
+
+<p>The response should look like this:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Trying 23.21.142.138...
+Connected to my.fab.host.
+Escape character is '^]'.
+</code></pre></div></div>
+
+<p>If it doesn’t, your ports are not open.</p>
+
+<p>We insist you use SSL but it’s a good test to telnet to 9080.</p>
+
+<h3 id="failed-to-communicate-with-vsz-5-times">Failed to Communicate With VSZ 5 Times</h3>
+
+<p>If you’re seeing this, it means we’ve tried 5 times to access your VSZ and failed. You should follow the steps above to fixed this issue.</p>
+
+<p>The only way to reset this error is to <strong>change the host</strong> in your location settings within your CT dashboard.</p>
+
+<h3 id="cant-login---in-a-loop">Can’t login - In a Loop</h3>
+
+<p>You can see the login page but when you login, it sends you back to the login page. Here’s what you can do:</p>
+
+<ul>
+  <li>• Swap the access type to clickthrough to rule out password issues</li>
+  <li>• Ensure your radius secrets match the ones in your VSZ radius settings</li>
+  <li>• Ensure your Nas-Id from your CT Wi-Fi account matches the one in your VSZ</li>
+</ul>
+
+<div class="mdl-typography--text-center">
+  <img src="/images/community/tutorials/vsz-radius-secret-1.png" width="800px" />
+</div>
+
+<div class="mdl-typography--text-center">
+  <img src="/images/community/tutorials/vsz-radius-nas-id.png" width="800px" />
+</div>
+
+<p>If none of these worked, login to your CT Wi-Fi dashboard and head over to the splash page in question.</p>
+
+<p>At the top of the top, it should show your VSZ host. If you cannot see this, go back to your location settings and re-save the VSZ settings. That should resync the settings.</p>
+
+<div class="mdl-typography--text-center">
+  <img src="/images/community/tutorials/vsz-radius-missing-1.png" width="800px" />
+</div>
+
+<h3 id="what-ips-does-ct-traffic-come-from">What IPs does CT traffic come from?</h3>
+
+<p>Traffic comes from a number of servers and the IPs rotate frequently. We therefore recommend allowing access to the ports from all IPs.</p>
+
+<h3 id="problems-connecting-your-aps-to-your-vsz">Problems connecting your APs to your VSZ.</h3>
+
+<p>This is the biggest issue customers have right now. To get your APs connected, follow these steps:</p>
+
+<p><strong>Reset your AP.</strong></p>
+
+<p>Stick a pin in the back of the device and wait for 10 seconds.</p>
+
+<p><strong>SSH to your AP</strong></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh super@ip-of-the-device
+</code></pre></div></div>
+
+<p>Enter super and sp-admin as the default passwords.</p>
+
+<p><strong>Change your VSZ Host</strong></p>
+
+<p>Type this on the command line after you’ve logged in.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>set scg ip ip-of-your-vsz
+</code></pre></div></div>
+
+<p>Hit return and confirm the changes were made with:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>get scg
+</code></pre></div></div>
+
+<p><strong>Move your AP from staging to production</strong></p>
+
+<p>When you login to your VSZ, you’ll probably notice the AP is in the staging list. All you need to do is move it to your production zone.</p>
+
+<h3 id="is-this-compatible-with-cloudruckus">Is this compatible with CloudRuckus?</h3>
+
+<p>You bet. The CT dashboard works with any Smart Zone Gateway. Just enter your details as described above.</p>
+
+<p><br /><br /></p>
+<div class="mdl-typography--text-center">
+<p>Sign-up for a CT WiFi dashboard. It's free for unlimited access points!</p>
+<a href="/sign-up" class="button large success dst">Join</a>
+</div>
+<p><br /><br />
+<br /><br />
+<br /><br /></p>
+:ET

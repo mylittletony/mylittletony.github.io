@@ -1,0 +1,42 @@
+I"�	<p>Keeping your network and devices secure means keeping your passwords secure. Occasionally you might find the need to update the password on your OpenWRT device. We’ll quickly run you through the steps to do this.</p>
+
+<p>If you’re running Windows, you’ll need to download a tool called PuTTY. Linux and Mac systems will have SSH tools built in.</p>
+
+<p>We’ll assume you’re running Windows for now and start off with PuTTY (If not, feel free to skip ahead to the actual command line interface steps).</p>
+
+<p>If you haven’t already, <a href="http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html">download PuTTY</a> and run it. It should look something like this:</p>
+
+<div class="mdl-typography--text-center">
+  <img src="/images/community/tutorials/openwrt/puttyconfig.png" width="400px" />
+</div>
+
+<p>Click <strong>Session</strong> on the left side, select <strong>SSH</strong> from the options, and then enter in the IP Address of your OpenWRT box into the <strong>Host Name</strong> field. Once you’ve done this just click on <strong>Open</strong> to start up the SSH connection.</p>
+
+<p>This will open a command line interface asking you to provide a username and password to log in. Enter these details, and your SSH connection to your device will be established.</p>
+
+<p>To get to this point from Linux or Mac, open your Terminal and type the below, where <strong>root</strong> is the username, and the <strong>IP</strong> is the IP of your OpenWRT device, and then confirm your password.</p>
+
+<p><code class="highlighter-rouge">ssh root@IP</code></p>
+
+<p>Once you have logged in successfully, enter the below into the command line interface.</p>
+
+<p><code class="highlighter-rouge">passwd</code></p>
+
+<p>You will be asked to confirm your old password, at which point you will be able to set a new password for your account.</p>
+
+<hr />
+
+<p><em>CT WiFi is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities. Or you can utilise the captive portal solution with your existing infrastructure. Create a free account and check it here <a href="https://ct-networks.io">ct-networks.io</a></em></p>
+
+<div class="mdl-typography--text-center">
+
+<h2>Come join CT WiFi</h2>
+
+<a href="/sign-up" class="button success dst">Sign Up</a><br />
+
+<p>Sign-up for CT WiFi, it's free for unlimited access points :)</p>
+
+<hr />
+
+</div>
+:ET

@@ -1,0 +1,89 @@
+I"�<p>Sometimes you will run into issues while using your wireless. There are thankfully some tools in LEDE/OpenWRT that you can use to help debug and diagnose the faults.</p>
+
+<h2 id="capture-management-traffic">Capture Management Traffic</h2>
+
+<p>You can capture management traffic from your LEDE/OpenWRT device.
+For example, run the command below, which will do the following:</p>
+
+<ul>
+  <li>Open a monitor session with a mac80211 based driver</li>
+  <li>Start tcpdump</li>
+  <li>
+    <p>Save the captured data locally into /tmp</p>
+
+    <p>ssh root@192.168.1.1 ‘grep -q mon0 /proc/net/dev || /usr/sbin/iw phy phy0 interface add mon0 type monitor;
+      /sbin/ifconfig mon0 up; /usr/sbin/tcpdump -s 0 -i mon0 -y IEEE802_11_RADIO -w -‘ &gt; /tmp/wifi.pcap</p>
+  </li>
+</ul>
+
+<h2 id="logging-hostapd">Logging hostapd</h2>
+
+<p>First you will need to SSH into your device. If you are using Windows then start PuTTY and click Session on the left side, select SSH from the options, and then enter in the IP Address of your LEDE/OpenWRT box into the Host Name field.</p>
+
+<p>Once you’ve done this just click on Open to start up the SSH connection.</p>
+
+<div class="mdl-typography--text-center">
+  <img src="/images/community/tutorials/openwrt/puttyconfig.png" width="400px" />
+</div>
+
+<p>If you are connecting via terminal, then just SSH to your OpenWRT device using the following command, where 192.168.1.1 is your OpenWRT device’s IP address.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh root@192.168.1.1
+</code></pre></div></div>
+
+<p>Once connected, if you want to see what level the logs are on at the moment, run the following that will show the hostapds running:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ps | grep hostapd
+</code></pre></div></div>
+
+<p>and you should get something similar to the following output:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>6948 root      1784 S    /usr/sbin/hostapd -P /var/run/wifi-phy1.pid -B /var/run/hostapd-phy1.conf
+6987 root      1784 S    /usr/sbin/hostapd -P /var/run/wifi-phy0.pid -B /var/run/hostapd-phy0.conf
+7019 root      1448 S    grep hostapd
+</code></pre></div></div>
+
+<p>Then select which one you want to check the level of, in this case we are going to check phy1. So run the following:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>grep _level /var/run/hostapd-phy1.conf
+</code></pre></div></div>
+
+<p>Which will output something similar to this:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>logger_syslog_level=2
+logger_stdout_level=2
+</code></pre></div></div>
+
+<p>Each level is numbered as follows:</p>
+<ol>
+  <li>Debugging</li>
+  <li>Informational Messages</li>
+  <li>Notification</li>
+  <li>Warning</li>
+</ol>
+
+<p>Now if you want to change the level, run the following commands:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>uci set wireless.radio0.log_level=1
+uci commit wireless
+wifi up
+</code></pre></div></div>
+
+<p>Now you can run the logread command to display the logs at the level you have specified.</p>
+
+<hr />
+
+<p><em>CT WiFi is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities. Or you can utilise the captive portal solution with your existing infrastructure. Create a free account and check it here <a href="https://ct-networks.io">ct-networks.io</a></em></p>
+
+<div class="mdl-typography--text-center">
+
+<h2>Come join CT WiFi</h2>
+
+<a href="/sign-up" class="button success dst">Sign Up</a><br />
+
+<p>Sign-up for CT WiFi, it's free for unlimited access points :)</p>
+
+<hr />
+
+</div>
+:ET

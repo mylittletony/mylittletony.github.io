@@ -1,0 +1,42 @@
+I"�<p>Now it’s possible for CT WiFi to notify you when one of your WiFi routers runs into problems. If you don’t know what Slack is, go and <a href="https://slack.com">sign-up for an account here</a>.</p>
+
+<p><strong>Things you’ll need:</strong></p>
+
+<ul>
+  <li>A Slack account</li>
+  <li>A Cucumber account</li>
+  <li>Something to use Tinternet</li>
+</ul>
+
+<h2 id="lets-go">Let’s Go</h2>
+
+<p>This is how easy it is to add it. It only takes a second and you’ll get notifications immediately.</p>
+
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/slack-integration.gif" width="600px" />
+</div>
+
+<p>Choose your channel when you add your integration. When you’ve added it, you can choose which events you want to receive.</p>
+
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/slack-notifications.png" width="600px" />
+</div>
+
+<p>That’s all for now.</p>
+
+<hr />
+
+<p><em>CT WiFi is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities.Or you can utlise the captive portal solution with your existing infrastructure. Create a free account and check it here <a href="https://ct-networks.io">ct-networks.io</a></em></p>
+
+<div class="mdl-typography--text-center">
+
+<h2>Come join Cucumber</h2>
+
+<a href="/sign-up" class="button success">Sign Up</a><br />
+
+<p>Sign-up for CT WiFi, it's free for unlimited access points :)</p>
+
+<hr />
+
+</div>
+:ET

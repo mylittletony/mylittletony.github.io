@@ -1,0 +1,67 @@
+I"�<p>With LEDE/OpenWRT you have the ability to have more specific control over your devices DHCP leases.</p>
+
+<p>This guide will walk you through some of the fine tuning options you have.</p>
+
+<h2 id="ssh-to-your-openwrt-device">SSH to your OpenWRT device</h2>
+
+<p>If you are using Windows then start PuTTY and click Session on the left side, select SSH from the options, and then enter in the IP Address of your OpenWRT box into the Host Name field.</p>
+
+<p>Once you’ve done this just click on Open to start up the SSH connection.</p>
+
+<div class="mdl-typography--text-center">
+  <img src="/images/community/tutorials/openwrt/puttyconfig.png" width="400px" />
+</div>
+
+<p>If you are connecting via terminal, then just SSH to your OpenWRT device using the following command, where 192.168.1.1 is your OpenWRT device’s IP address.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh root@192.168.1.1
+</code></pre></div></div>
+
+<h2 id="defining-static-dhcp-leases">Defining Static DHCP Leases</h2>
+
+<p>Static DHCP leases allow you do define IP addresses for specific devices based off their MAC addresses.</p>
+
+<p>All of the changes mentioned will be made in the following file unless otherwise specified, so run the following command:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vi /etc/config/dhcp
+</code></pre></div></div>
+
+<p>In this file you can define a static DHCP lease with something similar to the following:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>config host
+        option ip       '192.168.1.2'
+        option mac      '00:aa:11:bb:22:cc'
+        option name     'desktop'
+</code></pre></div></div>
+
+<p>The options listed in this example mean the following:</p>
+
+<ul>
+  <li>ip: This defines the IP address that you want to associate to a specific device.</li>
+  <li>mac: This defines the MAC address of the device(s). You can add multiple MAC addresses separated by commas, however this can cause issues if more than one of them are in use at the same time.</li>
+  <li>name: This assigns the lease a name. This will help you identify which rule is which, as a name is easier to recognise than a MAC address.</li>
+</ul>
+
+<p>You can add in as many of these rules as you want need. Assigning static IPs to the devices you want will help with a lot of things, such as port forwarding.</p>
+
+<p>As with dynamic DHCP leases, you can define the lease time by adding in the following option:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>option leasetime 20h
+</code></pre></div></div>
+
+<hr />
+
+<p><em>CT WiFi is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities. Or you can utilise the captive portal solution with your existing infrastructure. Create a free account and check it here <a href="https://ct-networks.io">ct-networks.io</a></em></p>
+
+<div class="mdl-typography--text-center">
+
+<h2>Come join CT WiFi</h2>
+
+<a href="/sign-up" class="button success dst">Sign Up</a><br />
+
+<p>Sign-up for CT WiFi, it's free for unlimited access points :)</p>
+
+<hr />
+
+</div>
+:ET

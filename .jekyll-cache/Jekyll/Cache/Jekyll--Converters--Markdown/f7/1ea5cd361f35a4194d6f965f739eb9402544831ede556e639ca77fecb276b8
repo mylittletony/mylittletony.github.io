@@ -1,0 +1,108 @@
+I"<p>CoovaChilli is a handy package that allows you to set up a captive portal splash page on your LEDE/OpenWRT device.</p>
+
+<p>This guide assumes you already have a RADIUS set up, or are using a splash page provider, with the details needed.</p>
+
+<h2 id="ssh-to-your-openwrt-device">SSH to your OpenWRT device</h2>
+
+<p>If you are using Windows then start PuTTY and click Session on the left side, select SSH from the options, and then enter in the IP Address of your OpenWRT box into the Host Name field.</p>
+
+<p>Once you’ve done this just click on Open to start up the SSH connection.</p>
+
+<div class="mdl-typography--text-center">
+  <img src="/images/community/tutorials/openwrt/puttyconfig.png" width="400px" />
+</div>
+
+<p>If you are connecting via terminal, then just SSH to your OpenWRT device using the following command, where 192.168.1.1 is your OpenWRT device’s IP address.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh root@192.168.1.1
+</code></pre></div></div>
+
+<h2 id="installation">Installation</h2>
+
+<p>Installation is as simple as running the following two commands:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>opkg update
+opkg install coova-chilli
+</code></pre></div></div>
+
+<h2 id="configuration">Configuration</h2>
+
+<p>Before making changes to your config, it’s safest to stop Chilli for now. Run the following:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/etc/init.d/chilli stop /etc/init.d/chilli disable
+</code></pre></div></div>
+
+<p>Next we need to actually make some changes to the configuration. To do this, run the following command:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vi /etc/config/chilli
+</code></pre></div></div>
+
+<p>You will need to edit the config file using your details:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>config chilli
+# option disabled 1
+# RADIUS account details
+option radiusnasid   "xxxxxxxxx"
+option radiussecret  "xxxxxxxxx"
+option uamsecret  "xxxxxxxxx"
+# WISPr settings
+option locationname   "&lt;human readible location name&gt;"
+option radiuslocationname  "&lt;SSID&gt;,&lt;sub-ID&gt;"
+option radiuslocationid  "isocc=&lt;cc&gt;,cc=&lt;idd&gt;,ac=&lt;ac&gt;,network=&lt;SSID&gt;"
+# Radius parameters
+option radiusserver1  radius.domain.com
+option radiusserver2  radius2.domain.com
+# LAN interface to put the hotspot
+option dhcpif    br-lan
+# DNS
+option dns1   8.8.8.8
+option dns2   8.8.4.4
+# Tunnel and Subnet
+option tundev    'tun0'
+option net   192.168.180.0/22
+option uamlisten  192.168.182.1
+option lease   86400
+option leaseplus  600
+# UAM parameters
+option uamserver  "https://domain.com/directory/file.php"
+option uamuiport   4990
+option uamanydns  1
+#option uamaliasip   1.0.0.1
+option uamaliasname   login
+#option uamlogoutip   1.0.0.0
+option nouamsuccess  1
+# Hosts walled garden
+option uamallowed "host.com"
+# Domains walled garden
+option uamdomain ".domain1.com,.domain2.com"
+# Debug
+option swapoctets  1
+option interval   3600
+# Chilli firewall rules
+option ipup '/etc/chilli/up.sh'
+option ipdown '/etc/chilli/down.sh'
+</code></pre></div></div>
+
+<p>Next confirm that the interface defined under Tunnel and Subnet in the config is up:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ifconfig
+</code></pre></div></div>
+
+<p>Finally, to confirm that everything is working, connect to your hotspot.</p>
+
+<hr />
+
+<p><em>CT WiFi is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities. Or you can utilise the captive portal solution with your existing infrastructure. Create a free account and check it here <a href="https://ct-networks.io">ct-networks.io</a></em></p>
+
+<div class="mdl-typography--text-center">
+
+<h2>Come join CT WiFi</h2>
+
+<a href="/sign-up" class="button success dst">Sign Up</a><br />
+
+<p>Sign-up for CT WiFi, it's free for unlimited access points :)</p>
+
+<hr />
+
+</div>
+:ET

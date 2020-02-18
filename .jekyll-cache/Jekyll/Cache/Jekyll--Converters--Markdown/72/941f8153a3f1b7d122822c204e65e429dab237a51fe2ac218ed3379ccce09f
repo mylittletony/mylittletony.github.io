@@ -1,0 +1,81 @@
+I"�<p>This guide will cover the basics of installing and configuring SNMPD with your LEDE/OpenWRT device.</p>
+
+<h2 id="ssh-to-your-openwrt-device">SSH to your OpenWRT device</h2>
+
+<p>If you are using Windows then start PuTTY and click Session on the left side, select SSH from the options, and then enter in the IP Address of your OpenWRT box into the Host Name field.</p>
+
+<p>Once you’ve done this just click on Open to start up the SSH connection.</p>
+
+<div class="mdl-typography--text-center">
+  <img src="/images/community/tutorials/openwrt/puttyconfig.png" width="400px" />
+</div>
+
+<p>If you are connecting via terminal, then just SSH to your OpenWRT device using the following command, where 192.168.1.1 is your OpenWRT device’s IP address.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh root@192.168.1.1
+</code></pre></div></div>
+
+<h2 id="installation">Installation</h2>
+
+<p>Installing the required packages is pretty easy. For this example we are going to install mini-snmpd. Just run the following two commands:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>opkg update
+opkg install mini-snmpd
+</code></pre></div></div>
+
+<p>Once the install has completed you will need to configure it to your needs.</p>
+
+<h2 id="configuration">Configuration</h2>
+
+<p>To set it up to your needs, you will need to edit the config file. To do this, run the following command:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vi /etc/config/mini_snmpd
+</code></pre></div></div>
+
+<p>You should see a file that looks similar to the following:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>config mini_snmpd
+	option enabled 1
+	option ipv6 0
+	option community public
+	option location ''
+	option contact ''
+	option disks '/tmp,/jffs'
+	option interfaces 'wlan0,br-lan,eth0.1,eth0'
+</code></pre></div></div>
+
+<p>The options are the following:</p>
+
+<ul>
+  <li>enabled: Whether SNMPD should be started</li>
+  <li>ipv6: Enables support for ipv6</li>
+  <li>community: Sets the SNMP community string</li>
+  <li>location: Sets the location that will be reported</li>
+  <li>contact: Sets the contact detail that will be reported</li>
+  <li>disks: Sets the filesystems that will be output</li>
+  <li>interfaces: Sets the interfaces that will be output</li>
+</ul>
+
+<p>Make the changes you need and then save.
+Now just run the following commands to start SNMPD and enable it to start on reboot:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/etc/init.d/snmpd start
+/etc/init.d/snmpd enable
+</code></pre></div></div>
+
+<hr />
+
+<p><em>CT WiFi is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities. Or you can utilise the captive portal solution with your existing infrastructure. Create a free account and check it here <a href="https://ct-networks.io">ct-networks.io</a></em></p>
+
+<div class="mdl-typography--text-center">
+
+<h2>Come join CT WiFi</h2>
+
+<a href="/sign-up" class="button success dst">Sign Up</a><br />
+
+<p>Sign-up for CT WiFi, it's free for unlimited access points :)</p>
+
+<hr />
+
+</div>
+:ET

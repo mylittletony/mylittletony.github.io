@@ -1,0 +1,78 @@
+I"Y<p>The Raspberry Pi is an awesome little bit of kit, with a ton of possible uses, all for a rock bottom price. Because of this, it is a really good tool to cut your teeth on for OpenWRT.</p>
+
+<p>This guide is going to run you through getting OpenWRT installed on your Raspberry Pi 2, but most of these steps can be applied across the board.</p>
+
+<h2 id="flash-openwrt-to-your-sd-cardwindows">Flash OpenWRT to your SD card — Windows</h2>
+
+<p>Windows users will need to download a bit of software called <a href="https://sourceforge.net/projects/win32diskimager/">Win32 Disk Imager</a>.</p>
+
+<p>Once you’ve done this just click on Open to start up the SSH connection.</p>
+
+<div class="mdl-typography--text-center">
+  <img src="https://cdn-images-1.medium.com/max/880/0*QfqKCWA81l5rE5MU.jpg" width="400px" />
+</div>
+
+<p>With this downloaded and installed, run the program and select your OpenWRT firmware in the image file section.</p>
+
+<p>Then select the drive letter of the SD card in the Device dropdown box. <strong>Note: Please ensure that you have selected the correct drive, as this will wipe the data on the drive selected.</strong></p>
+
+<p>Once you have confirmed you are writing to the correct device, click on Write and wait for the progress bar to complete.</p>
+
+<h2 id="flash-openwrt-to-your-sd-cardlinux">Flash OpenWRT to your SD card — Linux</h2>
+
+<p>For Linux based operating systems, you can install OpenWRT from the terminal.</p>
+
+<p>First off connect your SD card and run the following command:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dmesg
+</code></pre></div></div>
+
+<p>This should give you the SD card’s device name. Something similar to sdb or sdf.</p>
+
+<p>Next run the following command:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dd if=/home/username/Downloads/firmware_name.img of=/dev/sdX bs=2M conv=fsync
+</code></pre></div></div>
+
+<p>Replacing the firmware location with the location you saved the firmware to. And replacing sdX with the device name from the previous step.</p>
+
+<p>And that is it, now you have OpenWRT running on your SD that you can put on your Raspberry Pi 2.</p>
+
+<h2 id="first-connection-troubles">First Connection Troubles</h2>
+
+<p>By default the IP of your OpenWRT device should be 192.168.1.1 with DHCP disabled. This can make initially connecting a bit of a pain, as your network’s default gateway is usually 192.168.1.1 which can cause conflicts and issues.</p>
+
+<p>If you isolate yourself from your network (disabling your wireless and disconnecting any other wired connections) you should be able to simply connect to your Pi by connecting with an Ethernet cable and using 192.168.1.1.</p>
+
+<p>It is advised to either enable DHCP or change the static IP address.</p>
+
+<p>To enable DHCP, connect to your Pi and run the following commands:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>uci set network.lan.proto=dhcp
+uci commit
+/etc/init.d/network restart
+</code></pre></div></div>
+
+<p>To set a new static IP, connect to your Pi and run the following commands:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>uci set network.lan.ipaddr=192.168.1.111
+uci commit
+/etc/init.d/network restart
+</code></pre></div></div>
+
+<hr />
+
+<p><em>CT WiFi is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities. Or you can utilise the captive portal solution with your existing infrastructure. Create a free account and check it here <a href="https://ct-networks.io">ct-networks.io</a></em></p>
+
+<div class="mdl-typography--text-center">
+
+<h2>Come join CT WiFi</h2>
+
+<a href="/sign-up" class="button success dst">Sign Up</a><br />
+
+<p>Sign-up for CT WiFi, it's free for unlimited access points :)</p>
+
+<hr />
+
+</div>
+:ET

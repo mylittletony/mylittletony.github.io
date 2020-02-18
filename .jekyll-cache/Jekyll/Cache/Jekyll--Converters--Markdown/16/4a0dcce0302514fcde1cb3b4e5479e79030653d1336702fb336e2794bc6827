@@ -1,0 +1,49 @@
+I"'<hr />
+
+<h3>This doc is outdated. Please view our new documents here:<br />
+<a href="http://docs.ct-networks.io/">docs.ct-networks.io</a></h3>
+<hr />
+
+<p>To help you manage your account quotas easier, you can now set quotas for each of your locations, so that you can ensure your account splash view limits are evenly distributed between your locations how you see fit.</p>
+
+<p>Note: Your location splash limits can’t exceed your plan’s quota.</p>
+
+<p>Only the location owner can change this limit, so you do not have to worry about your location admins changing this.</p>
+
+<p>To set a Splash View Limit for a location of yours, follow these steps:</p>
+
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/location-splash-limit/location-quotas.gif" />
+</div>
+
+<ol>
+  <li>
+    <p>Head into your <strong>Location</strong> on your dashboard.</p>
+  </li>
+  <li>
+    <p>Select <strong>Settings</strong> on the left sidebar.</p>
+  </li>
+  <li>
+    <p>Scroll down to the section titled <strong>Splash Settings</strong> and you will see the <strong>Splash View Limit</strong> field.</p>
+  </li>
+  <li>
+    <p>Adjust the <strong>Splash View Limit</strong> field to what you want, and then <strong>Save</strong> your changes.</p>
+  </li>
+</ol>
+
+<hr />
+
+<p><em>CT WiFi is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities.Or you can utlise the captive portal solution with your existing infrastructure. Create a free account and check it here <a href="https://ct-networks.io">ct-networks.io</a></em></p>
+
+<div class="mdl-typography--text-center">
+
+<h2>Come join Cucumber</h2>
+
+<a href="/sign-up" class="button success">Sign Up</a><br />
+
+<p>Sign-up for CT WiFi, it's free for unlimited access points :)</p>
+
+<hr />
+
+</div>
+:ET

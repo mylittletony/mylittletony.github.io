@@ -1,0 +1,93 @@
+I"�<p>This guide will help you get your LEDE/OpenWRT device supporting USB Audio. This can then be used for cool tasks such as setting up sound servers.</p>
+
+<h2 id="ssh-to-your-openwrt-device">SSH to your OpenWRT device</h2>
+
+<p>If you are using Windows then start PuTTY and click Session on the left side, select SSH from the options, and then enter in the IP Address of your OpenWRT box into the Host Name field.</p>
+
+<p>Once you’ve done this just click on Open to start up the SSH connection.</p>
+
+<div class="mdl-typography--text-center">
+  <img src="/images/community/tutorials/openwrt/puttyconfig.png" width="400px" />
+</div>
+
+<p>If you are connecting via terminal, then just SSH to your OpenWRT device using the following command, where 192.168.1.1 is your OpenWRT device’s IP address.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh root@192.168.1.1
+</code></pre></div></div>
+
+<h2 id="prerequisitesusb-support">Prerequisites — USB Support</h2>
+
+<p>First we need to ensure that your LEDE/OpenWRT device has basic support for USBs. Some builds come with this as standard, but if yours does not then just follow these steps:</p>
+
+<h3 id="usb-11-support">USB 1.1 Support</h3>
+
+<p>This will either have a UHCI or OHCI interface. Pick one of the bellow to start off with, and if it is incorrect it will let you know which one you need to install.</p>
+
+<p><strong>UHCI</strong></p>
+
+<p>Run the following commands for UHCI:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>opkg update
+opkg install kmod-usb-uhci
+insmod usbcore
+insmod uhci
+</code></pre></div></div>
+
+<p><strong>OHCI</strong></p>
+
+<p>Run the following commands for OHCI:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>opkg update
+opkg install kmod-usb-ohci
+insmod usb-ohci
+</code></pre></div></div>
+
+<h3 id="usb-20-support">USB 2.0 Support</h3>
+
+<p>You will need to install the needed packages by running the following:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>opkg update
+opkg install kmod-usb2
+insmod ehci-hcd
+</code></pre></div></div>
+
+<h2 id="usb-audio-support">USB Audio Support</h2>
+
+<p>We need to install some packages to add support for USB Audio, so run the following command:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>opkg install kmod-usb-audio kmod-sound-core usbutils
+</code></pre></div></div>
+
+<p>Now connect your USB Audio device and make sure it is powered on. Run the following command to ensure that it is being detected:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lsusb You should see a sound device in the output.
+</code></pre></div></div>
+
+<h2 id="sound-drivers">Sound Drivers</h2>
+
+<p>Now that the USB is ready, we need to install some sound drivers. We are going to install Alsa for this. So run the following command:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>opkg install alsa-libs libsndfile alsa-utils
+</code></pre></div></div>
+
+<p>Once you have done this, reboot your LEDE/OpenWRT device, reconnect to it and then run the following command to confirm that your soundcard is working and control the volumes.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>alsamixer
+</code></pre></div></div>
+
+<hr />
+
+<p><em>CT WiFi is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities. Or you can utilise the captive portal solution with your existing infrastructure. Create a free account and check it here <a href="https://ct-networks.io">ct-networks.io</a></em></p>
+
+<div class="mdl-typography--text-center">
+
+<h2>Come join CT WiFi</h2>
+
+<a href="/sign-up" class="button success dst">Sign Up</a><br />
+
+<p>Sign-up for CT WiFi, it's free for unlimited access points :)</p>
+
+<hr />
+
+</div>
+:ET

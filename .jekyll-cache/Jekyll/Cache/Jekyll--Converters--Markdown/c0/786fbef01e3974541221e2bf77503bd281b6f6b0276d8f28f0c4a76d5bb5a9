@@ -1,0 +1,125 @@
+I".<p>IP tables allow you to explicitly define rules to allow or deny types of traffic.</p>
+
+<p>This guide will walk you through some of the basics to get you started.</p>
+
+<h2 id="ssh-to-your-openwrt-device">SSH to your OpenWRT device</h2>
+
+<p>If you are using Windows then start PuTTY and click Session on the left side, select SSH from the options, and then enter in the IP Address of your OpenWRT box into the Host Name field.</p>
+
+<p>Once you’ve done this just click on Open to start up the SSH connection.</p>
+
+<div class="mdl-typography--text-center">
+  <img src="/images/community/tutorials/openwrt/puttyconfig.png" width="400px" />
+</div>
+
+<p>If you are connecting via terminal, then just SSH to your OpenWRT device using the following command, where 192.168.1.1 is your OpenWRT device’s IP address.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh root@192.168.1.1
+</code></pre></div></div>
+
+<h2 id="installation">Installation</h2>
+
+<p>iptables typically comes installed by default, however to install it just run the following:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>opkg update
+opkg install iptables
+</code></pre></div></div>
+
+<h2 id="default-usage">Default Usage</h2>
+
+<p>iptables uses three types of chains to control connections:</p>
+
+<ul>
+  <li>Input: Used to control incoming connections</li>
+  <li>Forward: Used to control connections passing through</li>
+  <li>Output: Used to control outgoing connections</li>
+  <li>And there are three basic responses to these connections:</li>
+  <li>Accept: Allows the connection</li>
+  <li>Drop: Drops the connection — The source gets no feedback</li>
+  <li>Reject: Rejects the connection — The source receives an error</li>
+</ul>
+
+<p>If a connection doesn’t have a matching rule created for it, it will use the default behaviour.</p>
+
+<p>To view what it is set to, run the following:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>iptables -L | grep policy
+</code></pre></div></div>
+
+<p>This will output something similar to the following:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Chain INPUT (policy ACCEPT)
+Chain FORWARD (policy ACCEPT)
+Chain OUTPUT (policy ACCEPT)
+</code></pre></div></div>
+
+<p>You can adjust the default behaviour with the following command:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>iptables — policy CHAIN RESPONSE
+</code></pre></div></div>
+
+<p>Simply replace “CHAIN” and “RESPONSE” with the settings you want.</p>
+
+<h2 id="defining-rules">Defining Rules</h2>
+
+<p>Once you have your default responses set up, you can continue to define specific rules for specific connections.</p>
+
+<p>If we want to block connections from a specific IP range, we can run the following command:</p>
+
+<ul>
+  <li>iptables -A INPUT -s 108.43.12.0/24 -j DROP</li>
+  <li>iptables: Runs the command</li>
+  <li>-A: Tells iptables to add this rule to the end of the selected chain</li>
+  <li>INPUT: Defines the chain</li>
+  <li>-s: Specifies to look out for a source address</li>
+  <li>108.43.12.0/24: Sets the source address you want to apply this rule to</li>
+  <li>-j: Specifies to use the following response</li>
+  <li>DROP: The response that this rule should apply</li>
+</ul>
+
+<p>Or if you wanted to get even more specific, such as blocking a specific type of connection (such as SSH) from a specific address, we can run the following command:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>iptables -A INPUT -p tcp --dport ssh -s 108.43.12.0/24 -j DROP
+</code></pre></div></div>
+
+<ul>
+  <li>iptables: Runs the command</li>
+  <li>-A: Tells iptables to add this rule to the end of the selected chain</li>
+  <li>INPUT: Defines the chain</li>
+  <li>-p: Specifies to look out for a protocol</li>
+  <li>tcp: Defines the protocol</li>
+  <li>— dport: Specifies to look out for a destination port (this can be any protocol or port number)</li>
+  <li>ssh: Defines the destination port</li>
+  <li>-s: Specifies to look out for a source address</li>
+  <li>108.43.12.0/24: Sets the source address you want to apply this rule to</li>
+  <li>-j: Specifies to use the following response</li>
+  <li>DROP: The response that this rule should apply</li>
+</ul>
+
+<p>iptables can get pretty complex pretty quickly, but this covers the very basic usage of it.</p>
+
+<h2 id="saving">Saving</h2>
+
+<p>By default iptables can be cleared when the process restarts (such as with a reboot).</p>
+
+<p>To ensure you do not have to keep redefining your iptables, run the following to save them:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/etc/init.d/iptables save
+</code></pre></div></div>
+
+<hr />
+
+<p><em>CT WiFi is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities. Or you can utilise the captive portal solution with your existing infrastructure. Create a free account and check it here <a href="https://ct-networks.io">ct-networks.io</a></em></p>
+
+<div class="mdl-typography--text-center">
+
+<h2>Come join CT WiFi</h2>
+
+<a href="/sign-up" class="button success dst">Sign Up</a><br />
+
+<p>Sign-up for CT WiFi, it's free for unlimited access points :)</p>
+
+<hr />
+
+</div>
+:ET

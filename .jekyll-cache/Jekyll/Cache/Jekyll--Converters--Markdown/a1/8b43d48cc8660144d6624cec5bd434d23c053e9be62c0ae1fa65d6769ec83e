@@ -1,0 +1,179 @@
+I"C<hr />
+
+<h3>This doc is outdated. Please view our new documents here:<br />
+<a href="https://docs.ct-networks.io/article/108-aruba-splash-page-setup">docs.ct-networks.io</a></h3>
+<hr />
+
+<p>Using a web browser, go into your CT WiFi dashboard and <a href="/documentation/add-box.html" class="dst">add the box in</a> using the MAC address of your Access Point.</p>
+
+<p>When you have added these to CT WiFi, go into the settings page of your box, scrolling down for the section labelled CT WiFi Settings</p>
+
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/aruba-guide/box-settings.png" />
+</div>
+
+<p>Untick I’m a CT WiFi Box, and select your box type from the droplist then update your changes</p>
+
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/aruba-guide/nonct-box.png" />
+</div>
+
+<p>Head back to boxes and click on the box you just set to a non CT WiFi Box. You should now see a green Radius Settings button.</p>
+
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/aruba-guide/radius-settings.png" />
+</div>
+
+<p>Clicking this will open a box with details that you will need to refer back to at later stages.</p>
+
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/aruba-guide/radius-info.png" />
+</div>
+
+<blockquote><b>Double Check your NAS ID
+
+If you do not enter a NAS, or you enter a wrong NAS, you will be blocked out and will not be able to authenticate, and will need to contact support.</b></blockquote>
+
+<p>Open your Aruba network portal and under Networks, click new.</p>
+
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/aruba-guide/aruba-new.png" />
+</div>
+
+<p>Enter the following settings:</p>
+
+<ul>
+<li>Name - e.g Polkaspots Wi-Fi
+<li>Usage - Guest
+&lt;/ul&gt;
+
+Once this is done, click Next to continue.
+
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/aruba-guide/wlan-settings.png" />
+</div>
+
+Continue to the VLAN tab, and set the following:
+
+<ul>
+<li>Client IP assignment - Virtual Controller Managed
+<li>Client VLAN assignment - Default
+&lt;/ul&gt;
+
+Once this is done, click Next to continue.
+
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/aruba-guide/vlan-assignment.png" />
+</div>
+
+Continue to Security, and set the splash page type to External
+
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/aruba-guide/external-splash.png" />
+</div>
+
+Under Captive Portal Profile, select new, and use the following configuration:
+
+<ul>
+<li>Name - e.g PolkaPortal
+<li>Type - Radius Authentication
+<li>IP or hostname - my-brand.my-wifi.co ( replace “my-brand” with your <li>specific brand name )
+<li>URL - /
+<li>Port - 80
+<li>Use https - Disabled
+<li>Captive Portal Failure - Deny internet
+<li>Automatic URL Whitelisting - Enabled
+<li>Redirect URL - Optional
+&lt;/ul&gt;
+
+Once that is done, click OK to save.
+
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/aruba-guide/captive-portal.png" />
+</div>
+
+Create a new profile in Auth server 1 using the following settings:
+
+<ul>
+<li>Type: RADIUS
+<li>Name: e.g PolkaAuth1
+<li>IP address: (Refer to radius settings previously)
+<li>Auth port: 1812
+<li>Acct port: 1813
+<li>Shared key: (Refer to radius settings previously)
+<li>Retype key: (As above)
+<li>NAS Identifier: Head to your boxes in CT WiFi and go into their settings.Then scroll down under Advanced Settings, and click on edit advanced settings. Click into Radius NAS ID and retrieve this
+&lt;/ul&gt;
+
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/aruba-guide/nas-id.png" />
+</div>
+
+Once this is done, click OK to save.
+
+
+
+To change the whitelist click on "Blacklist: 0 Whitelist: 0" and the below screen will open up.
+
+Click New and enter the Walled Garden URLs as listed here:
+
+You can find the most up to date list of <b><span data-elevio-article="18499">Walled Gardens here.</span></b>
+
+Once that is done, click OK to save.
+
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/aruba-guide/walled-gardens.png" />
+</div>
+
+After completing these settings, you should be left with the following screen. Progress by clicking Next
+
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/aruba-guide/security-next.png" />
+</div>
+
+Set access rules to Role-Based, select the default role (should be automatically created matching your SSID), and click New under Access rules.
+
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/aruba-guide/access-rules.png" />
+</div>
+
+Using the fields provided, create the following two rules:
+
+<ul>
+<li>Access Control &gt; Network &gt; https &gt; allow &gt; to domain name &gt; polkaspots.com
+<li>Access Control &gt; Network &gt; any &gt; allow &gt; to all destinations
+&lt;/ul&gt;
+
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/aruba-guide/new-rule.png" />
+</div>
+
+Once you have created the rules, tick the pre-authentication box and make sure that it has your Role selected, and then select finish.
+
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/aruba-guide/pre-auth.png" />
+</div>
+
+You should now be left with the following screen, which means you have configured your device.
+
+<div class="mdl-typography--text-center">
+<img src="/images/community/tutorials/aruba-guide/aruba-ui.png" />
+</div>
+
+<hr />
+
+*CT WiFi is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities.Or you can utlise the captive portal solution with your existing infrastructure. Create a free account and check it here <a href="https://ct-networks.io">ct-networks.io</a>*
+
+<div class="mdl-typography--text-center">
+
+<h2>Come join Cucumber</h2>
+
+<a href="/sign-up" class="button success dst">Sign Up</a><br />
+
+<p>Sign-up for CT WiFi, it's free for unlimited access points :)</p>
+
+<hr />
+
+</div>
+</li></li></ul></li></li></li></li></li></li></li></li></ul></li></li></li></li></li></li></li></li></li></li></ul></li></li></ul></li></li></ul>
+:ET

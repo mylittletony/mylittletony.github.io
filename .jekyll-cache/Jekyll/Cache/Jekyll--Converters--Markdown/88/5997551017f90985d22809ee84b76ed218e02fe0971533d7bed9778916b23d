@@ -1,0 +1,93 @@
+I"�<p>LEDE/OpenWRT supports a massive variety of packages. These packages allow you to customise your experience to match your usecase and needs.</p>
+
+<p>We are going to run through some of the commands that will help you manage these.</p>
+
+<h2 id="ssh-to-your-openwrt-device">SSH to your OpenWRT device</h2>
+
+<p>If you are using Windows then start PuTTY and click Session on the left side, select SSH from the options, and then enter in the IP Address of your OpenWRT box into the Host Name field.</p>
+
+<p>Once you’ve done this just click on Open to start up the SSH connection.</p>
+
+<div class="mdl-typography--text-center">
+  <img src="/images/community/tutorials/openwrt/puttyconfig.png" width="400px" />
+</div>
+
+<p>If you are connecting via terminal, then just SSH to your OpenWRT device using the following command, where 192.168.1.1 is your OpenWRT device’s IP address.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh root@192.168.1.1
+</code></pre></div></div>
+
+<h2 id="using-opkg">Using OPKG</h2>
+
+<p>OPKG is the lightweight package manager that comes with OpenWRT. We are going to run through some of the commands you can use with it.</p>
+
+<h3 id="updating-your-package-list">Updating Your Package List</h3>
+
+<p>First things first, before you try to install or upgrade any packages, you will want to update your package list with the following command:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>opkg update
+</code></pre></div></div>
+
+<h3 id="view-installed-packages">View Installed Packages</h3>
+
+<p>To find out which packages you currently have installed, run the following:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>opkg list-installed
+</code></pre></div></div>
+
+<p>Or if you want to view packages that need an upgrade, run the following:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>opkg list-upgradable
+</code></pre></div></div>
+
+<h3 id="upgrading-installed-packages">Upgrading Installed Packages</h3>
+
+<p>Make sure your package list is up to date, and then run the following command to upgrade a package:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>opkg upgrade package-name
+</code></pre></div></div>
+
+<p>Replace “package-name” with the name of the package you want to upgrade. If you have multiple to upgrade, you can add multiple packages to the command like the following:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  opkg upgrade package-one package-two package-three
+</code></pre></div></div>
+
+<h3 id="installing-new-packages">Installing New Packages</h3>
+
+<p>To install new packages, first ensure your package list is up to date, and then run the following command:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>opkg install package-name
+</code></pre></div></div>
+
+<p>Replace “package-name” with the name of the package you want to install.</p>
+
+<p>As with upgrades, if you have multiple packages to install, you can add them to one command like the following:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  opkg install package-four package-five package-six
+</code></pre></div></div>
+
+<h3 id="removing-packages">Removing Packages</h3>
+
+<p>If there are packages installed that you want to remove, you can run the following command:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>opkg remove package-name
+</code></pre></div></div>
+
+<p>Ensure that you are certain you want to remove the packages specified, as it may cause issues.</p>
+
+<hr />
+
+<p><em>CT WiFi is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities. Or you can utilise the captive portal solution with your existing infrastructure. Create a free account and check it here <a href="https://ct-networks.io">ct-networks.io</a></em></p>
+
+<div class="mdl-typography--text-center">
+
+<h2>Come join CT WiFi</h2>
+
+<a href="/sign-up" class="button success dst">Sign Up</a><br />
+
+<p>Sign-up for CT WiFi, it's free for unlimited access points :)</p>
+
+<hr />
+
+</div>
+:ET

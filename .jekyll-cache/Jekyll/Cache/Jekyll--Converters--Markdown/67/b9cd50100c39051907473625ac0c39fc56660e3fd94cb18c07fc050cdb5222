@@ -1,0 +1,89 @@
+I"G<p>Being able to disable your SSID without deleting your configuration is a feature that might not always be needed, but when it is needed it is a massively handy ability.</p>
+
+<p>It allows you to preconfigure wireless networks and just toggle them on and off when you need them.</p>
+
+<p>This guide will walk you through the quick steps to follow.</p>
+
+<h2 id="ssh-to-your-openwrt-device">SSH to your OpenWRT device</h2>
+
+<p>If you are using Windows then start PuTTY and click Session on the left side, select SSH from the options, and then enter in the IP Address of your OpenWRT box into the Host Name field.</p>
+
+<p>Once you’ve done this just click on Open to start up the SSH connection.</p>
+
+<div class="mdl-typography--text-center">
+  <img src="/images/community/tutorials/openwrt/puttyconfig.png" width="400px" />
+</div>
+
+<p>If you are connecting via terminal, then just SSH to your OpenWRT device using the following command, where 192.168.1.1 is your OpenWRT device’s IP address.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh root@192.168.1.1
+</code></pre></div></div>
+
+<h2 id="configuration">Configuration</h2>
+
+<p>First we need to access the wireless config file to make changes. So run the following command:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vi /etc/config/wireless
+</code></pre></div></div>
+
+<p>Once this is open, you will need to find the network you want to hide. This is relatively simple, just look for the SSID of your network.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>config 'wifi-iface'
+        option 'device'     'wl0'
+        option 'network'    'lan'
+        option 'mode'       'ap'
+        option 'ssid'       'ToggleWiFi'
+        option 'encryption' 'psk2'
+        option 'key'        'turnmeoffandon'
+</code></pre></div></div>
+
+<p>Above, we have found the interface for the SSID ‘ToggleWiFi’. We want to add/edit in the following:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>option 'disabled' '1'
+</code></pre></div></div>
+
+<p>Setting this option to 1 disables the network. This means that it will not be broadcast and cannot be connected to.</p>
+
+<p>Switching to 0 re-enables your network so it is once again viewable (unless configured otherwise) and able to be joined.</p>
+
+<p>Once you have done this, your config should look similar to the following:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>config 'wifi-iface'
+        option 'device'     'wl0'
+        option 'network'    'lan'
+        option 'mode'       'ap'
+        option 'ssid'       'ToggleWiFi'
+        option 'encryption' 'psk2'
+        option 'key'        'turnmeoffandon'
+        option 'disabled'     '1'
+</code></pre></div></div>
+
+<p>Once you have made your changes you will need to reboot your device or restart the wireless.</p>
+
+<p>To restart your wireless, run the following:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wifi down
+wifi up
+</code></pre></div></div>
+
+<p>Or if you want to reboot the whole device, run this instead:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>reboot
+</code></pre></div></div>
+
+<hr />
+
+<p><em>CT WiFi is a cloud based WiFi management platform for businesses. The firmware gives consumer-grade WiFi access points enterprise-like capabilities. Or you can utilise the captive portal solution with your existing infrastructure. Create a free account and check it here <a href="https://ct-networks.io">ct-networks.io</a></em></p>
+
+<div class="mdl-typography--text-center">
+
+<h2>Come join CT WiFi</h2>
+
+<a href="/sign-up" class="button success dst">Sign Up</a><br />
+
+<p>Sign-up for CT WiFi, it's free for unlimited access points :)</p>
+
+<hr />
+
+</div>
+:ET
